@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+/PieAncientEuropeVI/Assets/Art
+/PieAncientEuropeVI/Assets/*.FPK
+*.pyc
+*.bak
+*.mp3
+*.tga
+*.thm
+*.ttf
+/PieAncientEuropeVI/Resource
