@@ -4463,10 +4463,6 @@
 					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
 					<UnitType>UNIT_HORSE_ARCHER_SCYTHS</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_HEAVY_HORSEMAN</UnitClassType>
-					<UnitType>UNIT_HEAVY_HORSEMAN_HUN</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>

@@ -1855,7 +1855,7 @@ def doUnitSupply(pCity, iPlayer):
                     Einheiten = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
                     lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:Einheiten]
                     for iI in lUnitIndex2:
-                        pUnit = lUnitsAll[lUnitIndex[iI]]
+                        pUnit = lUnitsAll[lUnitIndex2[iI]]
                         pUnit.jumpToNearestValidPlot()
                         if pPlayer.isHuman():
                             CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
@@ -4177,10 +4177,9 @@ def getHolyRelic(pCity, iPlayer):
 
                 if bRelic:
                     CvUtil.spawnUnit(gc.getInfoTypeForString("UNIT_RELIC"), pCity.plot(), pPlayer)
-
-                if pPlayer.isHuman():
-                    CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_INFO_RELIC", (pCity.getName(),)), None, 2,
-                                             gc.getUnitInfo(gc.getInfoTypeForString("UNIT_RELIC")).getButton(), ColorTypes(8), pCity.getX(), pCity.getY(), True, True)
+                    if pPlayer.isHuman():
+                        CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_INFO_RELIC", (pCity.getName(),)), None, 2,
+                                                 gc.getUnitInfo(gc.getInfoTypeForString("UNIT_RELIC")).getButton(), ColorTypes(8), pCity.getX(), pCity.getY(), True, True)
 
 # onCityRazed: Missionar erstellen
 def getCityMissionar(pCity, iPlayer):

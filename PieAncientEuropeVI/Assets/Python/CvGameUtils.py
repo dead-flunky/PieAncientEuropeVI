@@ -110,11 +110,11 @@ class CvGameUtils:
         return TechTypes.NO_TECH
 
     def canRazeCity(self, argsList):
-        iRazingPlayer, pCity = argsList
+        # iRazingPlayer, pCity = argsList
         return True
 
     def canDeclareWar(self, argsList):
-        iAttackingTeam, iDefendingTeam = argsList
+        # iAttackingTeam, iDefendingTeam = argsList
         return True
 
     def skipProductionPopup(self, argsList):
@@ -769,7 +769,8 @@ class CvGameUtils:
         # Buildings, die pro Ressource baubar sind
         elif eBuilding == gc.getInfoTypeForString("BUILDING_SCHMIEDE_BRONZE"):
             pPlayer = gc.getPlayer(pCity.getOwner())
-            iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE"))
+            # iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE"))
+            iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE"))
             iAnz1 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
             iAnz2 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COAL"))
             iAnz2 += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_ZINN"))
@@ -779,7 +780,7 @@ class CvGameUtils:
 
         elif eBuilding == gc.getInfoTypeForString("BUILDING_SCHMIEDE_MESSING"):
             pPlayer = gc.getPlayer(pCity.getOwner())
-            iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_MESSING"))
+            iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_MESSING"))
             iAnz1 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
             iAnz2 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_ZINK"))
             iCheck = min(iAnz1, iAnz2)
@@ -788,7 +789,7 @@ class CvGameUtils:
 
         elif eBuilding == gc.getInfoTypeForString("BUILDING_GOLDSCHMIED"):
             pPlayer = gc.getPlayer(pCity.getOwner())
-            iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_GOLDSCHMIED"))
+            iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_GOLDSCHMIED"))
             iAnz = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_GOLD"))
             iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_SILVER"))
             iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_PEARL"))
@@ -3800,9 +3801,13 @@ class CvGameUtils:
             return 11
         elif iUnitType == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
             return 12
+        elif iUnitType == gc.getInfoTypeForString("UNIT_ORTHODOX_MISSIONARY"):
+            return 13
+        elif iUnitType == gc.getInfoTypeForString("UNIT_ISLAMIC_MISSIONARY"):
+            return 14
         return -1
-    # Kult eines Kultisten herausfinden
 
+    # Kult eines Kultisten herausfinden
     def getUnitKult(self, iUnitType):
         if iUnitType == gc.getInfoTypeForString("UNIT_EXECUTIVE_1"):
             return 0
@@ -3870,3 +3875,12 @@ class CvGameUtils:
                                     return
 
                         (loopCity, pIter) = pVassal.nextCity(pIter, False)
+
+    def getBuildingClassCountPlusOtherCitiesMaking(self, pPlayer, pCity, eBuilding, eBuildingClass):
+        iAnzB = pPlayer.getBuildingClassCountPlusMaking(eBuildingClass)
+        for iOrderCurrentCity in range(pCity.getOrderQueueLength()):
+            pOrder = pCity.getOrderFromQueue(iOrderCurrentCity)
+            if pOrder.eOrderType == OrderTypes.ORDER_CONSTRUCT and pOrder.iData1 == eBuilding:
+                iAnzB -= 1
+                break
+        return iAnzB

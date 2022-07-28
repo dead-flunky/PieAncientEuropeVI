@@ -610,7 +610,7 @@ class CvMainInterface:
 
         iCount = 0
 
-        # Increase Specialists...
+        # Increase Specialists
         i = 0
         iXShiftVal = 0
         iYShiftVal = 0
