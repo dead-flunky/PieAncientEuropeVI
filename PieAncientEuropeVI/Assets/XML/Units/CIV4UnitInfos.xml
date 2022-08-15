@@ -13989,7 +13989,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -14207,7 +14207,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -17696,7 +17696,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG3</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -17888,7 +17888,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG3</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -18080,7 +18080,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG3</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>

@@ -104,7 +104,7 @@
 			<Type>SPECIALBUILDING_METAL_CASTING</Type>
 			<Description>TXT_KEY_BUILDING_METAL_CASTING</Description>
 			<ObsoleteTech>NONE</ObsoleteTech>
-			<TechPrereq>TECH_METAL_CASTING</TechPrereq>
+			<TechPrereq>TECH_BRONZE_WORKING</TechPrereq>
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits>

@@ -1064,16 +1064,6 @@
 			<fInterfaceScale>0.0</fInterfaceScale>
 			<NIF/>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/button_curinghut_meat.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CURINGHUT_FISH</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.0</fScale>
-			<fInterfaceScale>0.0</fInterfaceScale>
-			<NIF/>
-			<KFM/>
 			<Button>Art/Interface/Buttons/Builds/button_curinghut.dds</Button>
 		</BuildingArtInfo>
 		 <BuildingArtInfo>
@@ -1996,7 +1986,7 @@
 			<fInterfaceScale>0.47</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Forge.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,9</Button>
+			<Button>,Art/Interface/Buttons/TechTree/IronWorking.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,10</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GUSS_BLEI</Type>
@@ -2307,6 +2297,16 @@
 			<NIF>Art/Structures/Buildings/scriptorium/library.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_bischofsbib.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_LIBRARY3</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.0</fScale>
+			<fInterfaceScale>0.0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/building_palastbib.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_BANK</Type>

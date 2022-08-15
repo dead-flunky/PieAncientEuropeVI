@@ -31,7 +31,7 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/Copper/Copper.nif</NIF>
 			<KFM>Art/Terrain/Resources/Copper/Copper.kfm</KFM>
-			<Button>,Art/Interface/Buttons/WorldBuilder/Copper.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,5,12</Button>
+			<Button>Art/Interface/Buttons/Bonus/button_bonus_copper_ore.dds</Button>
 			<FontButtonIndex>2</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
@@ -243,6 +243,16 @@
 			<FontButtonIndex>24</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_IVORY</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Elephant/Elephant.nif</NIF>
+			<KFM>Art/Terrain/Resources/Elephant/Elephant.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Elephant/Elephant_FX.nif</SHADERNIF>
+			<Button>,Art/Interface/Buttons/WorldBuilder/Ivory.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,13</Button>
+			<FontButtonIndex>25</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SILK</Type>
 			<fScale>0.8</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
@@ -315,25 +325,6 @@
 			<FontButtonIndex>33</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_IVORY</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Elephant/Elephant.nif</NIF>
-			<KFM>Art/Terrain/Resources/Elephant/Elephant.kfm</KFM>
-			<SHADERNIF>Art/Terrain/Resources/Elephant/Elephant_FX.nif</SHADERNIF>
-			<Button>,Art/Interface/Buttons/WorldBuilder/Ivory.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,13</Button>
-			<FontButtonIndex>25</FontButtonIndex>
-		</BonusArtInfo>
-		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_IVORY2</Type>
-			<fScale>0.7</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Bones/animal_skeleton.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Bonus/button_bonus_elfenbein.dds</Button>
-			<FontButtonIndex>40</FontButtonIndex>
-		</BonusArtInfo>
-		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_HUNDE</Type>
 			<fScale>0.9</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -343,22 +334,13 @@
 			<FontButtonIndex>34</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_CURED_FISH</Type>
-			<fScale>1.0</fScale>
+			<Type>ART_DEF_BONUS_IRON2</Type>
+			<fScale>.8</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Wheat/Wheat.nif</NIF>
+			<NIF>Art/Terrain/Resources/Iron/Iron.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Bonus/bonus_cured_fish.dds</Button>
+			<Button>Art/Interface/Buttons/Bonus/button_bonus_iron.dds</Button>
 			<FontButtonIndex>36</FontButtonIndex>
-		</BonusArtInfo>
-		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_CURED_MEAT</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Wheat/Wheat.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Bonus/bonus_cured_meat.dds</Button>
-			<FontButtonIndex>38</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SCULPTURE</Type>
@@ -368,6 +350,15 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Bonus/bonus_sculpture.dds</Button>
 			<FontButtonIndex>39</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_IVORY2</Type>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Bones/animal_skeleton.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Bonus/button_bonus_elfenbein.dds</Button>
+			<FontButtonIndex>40</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_MUSIC</Type>

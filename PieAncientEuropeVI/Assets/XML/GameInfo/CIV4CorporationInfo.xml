@@ -165,7 +165,7 @@
                         <iSpreadCost>15</iSpreadCost>
                         <iMaintenance>1</iMaintenance>
                         <PrereqBonuses>
-                                <BonusType>BONUS_IRON</BonusType>
+                                <BonusType>BONUS_IRON2</BonusType>
                                 <BonusType>BONUS_BRONZE</BonusType>
                                 <BonusType>BONUS_HORSE</BonusType>
                         </PrereqBonuses>

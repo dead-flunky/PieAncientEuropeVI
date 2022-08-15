@@ -7917,12 +7917,12 @@ Tumba de Tholos
     <Spanish>Orfebre</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_BUILDING_CURINGHUT_FISH</Tag>
-    <English>Fish Curinghut</English>
-    <French>Fumoir &#224; poisson</French>
-    <German>R&#228;ucherfischh&#252;tte</German>
-    <Italian>Affumicatoio di pesce</Italian>
-    <Spanish>Ahumadero de pescado</Spanish>
+    <Tag>TXT_KEY_BUILDING_FORGE</Tag>
+    <English>Weaponsmith</English>
+    <French>Armuriers</French>
+    <German>Waffenschmiede</German>
+    <Italian>Armaioli</Italian>
+    <Spanish>Armeros</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_JUWELIER</Tag>
@@ -8125,20 +8125,20 @@ Tumba de Tholos
     <Spanish>Joyas</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_BONUS_CURED_FISH</Tag>
-    <English>Cured Fish</English>
-    <French>Poisson fum&#233;</French>
-    <German>R&#228;ucherfisch</German>
-    <Italian>Pesce affumicato</Italian>
-    <Spanish>Pescado ahumado</Spanish>
+    <Tag>TXT_KEY_BONUS_IRON_ORE</Tag>
+    <English>Iron Ore</English>
+    <French>Minerai de Fer</French>
+    <German>Eisenerz</German>
+    <Italian>Minerale di Ferro</Italian>
+    <Spanish>Mineral de Hierro</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_BONUS_CURED_MEAT</Tag>
-    <English>Cured Meat</English>
-    <French>Viande fum&#233;e</French>
-    <German>R&#228;ucherfleisch</German>
-    <Italian>Carne affumicata</Italian>
-    <Spanish>Carne ahumada</Spanish>
+    <Tag>TXT_KEY_BUILDING_LIBRARY3</Tag>
+    <English>Palace Library</English>
+    <French>Biblioth&#232;que du Palais</French>
+    <German>Palastbibliothek</German>
+    <Italian>Biblioteca del Palazzo</Italian>
+    <Spanish>Biblioteca del Palacio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_FURRIER</Tag>
