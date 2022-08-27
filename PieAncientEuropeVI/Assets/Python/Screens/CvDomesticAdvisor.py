@@ -322,8 +322,8 @@ class CvDomesticAdvisor:
         screen.setTableInt("CityListBackground", 2, i, unicode(pLoopCity.getPopulation()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
         # Cultivation status
-        # text = u"%d/%d" % (PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,-1), PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)) # Limit bei CityStatus
-        text = u"%d" % PAE_Cultivation.getCityCultivatedBonuses(pLoopCity, -1)
+        text = u"%d/%d" % (PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,-1), PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)) # Limit bei CityStatus
+        #text = u"%d" % PAE_Cultivation.getCityCultivatedBonuses(pLoopCity, -1)
         screen.setTableInt("CityListBackground", 3, i, text, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
         # Settled Slaves

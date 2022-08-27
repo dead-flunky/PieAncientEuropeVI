@@ -1855,7 +1855,7 @@ def doUnitSupply(pCity, iPlayer):
 										Einheiten = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
 										lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:Einheiten]
 										for iI in lUnitIndex2:
-												pUnit = lUnitsAll[lUnitIndex2[iI]]
+												pUnit = lUnitsAll[lUnitIndex2]
 												pUnit.jumpToNearestValidPlot()
 												if pPlayer.isHuman():
 														CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
