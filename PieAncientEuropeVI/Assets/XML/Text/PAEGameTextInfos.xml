@@ -7067,27 +7067,27 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_SLAVES_ERSATZ</Tag>
-    <English>A standing slave could take his place and continue the work.</English>
+    <English>An available slave could take his place and continue the work.</English>
     <French>Un esclave disponible a pu le remplacer et continuer son travail.</French>
-    <German>Ein stehender Sklave konnte seinen Platz einnehmen und die Arbeit fortsetzen.</German>
-    <Italian>A standing slave could take his place and continue the work.</Italian>
-    <Spanish>Un esclavo parado tom&#243; su lugar y continua el trabajo.</Spanish>
+    <German>Ein verf&#252;gbarer Sklave konnte seinen Platz einnehmen und die Arbeit fortsetzen.</German>
+    <Italian>Uno schiavo disponibile potrebbe prendere il suo posto e continuare il lavoro.</Italian>
+    <Spanish>Un esclavo disponible tom&#243; su lugar y continua el trabajo.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_GLADS_ERSATZ</Tag>
-    <English>A standing slave could take his place as an exhibition fighter.</English>
+    <English>An available slave could take his place as an exhibition fighter.</English>
     <French>Un esclave disponible a pu le remplacer en tant que gladiateur.</French>
-    <German>Ein stehender Sklave konnte seinen Platz als Schauk&#228;mpfer einnehmen.</German>
-    <Italian>A standing slave could take his place as an exhibition fighter.</Italian>
-    <Spanish>Un esclavo parado tom&#243; su lugar como un luchador de espect&#225;culo.[NEWLINE]</Spanish>
+    <German>Ein verf&#252;gbarer Sklave konnte seinen Platz als Schauk&#228;mpfer einnehmen.</German>
+    <Italian>Uno schiavo disponibile potrebbe prendere il suo posto come combattente di esibizione.</Italian>
+    <Spanish>Un esclavo disponible tom&#243; su lugar como un luchador de espect&#225;culo.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_GLADS_ERSATZ2</Tag>
-    <English>A standing slave could take his place as a gladiator.</English>
+    <English>An available slave could take his place as a gladiator.</English>
     <French>Un esclave disponible a pu le remplacer en tant que gladiateur.</French>
-    <German>Ein stehender Sklave konnte seinen Platz als Gladiator einnehmen.</German>
-    <Italian>A standing slave could take his place as a gladiator.</Italian>
-    <Spanish>Un esclavo parado tom&#243; su lugar como un gladiador.[NEWLINE]</Spanish>
+    <German>Ein verf&#252;gbarer Sklave konnte seinen Platz als Gladiator einnehmen.</German>
+    <Italian>Uno schiavo disponibile potrebbe prendere il suo posto come gladiatore.</Italian>
+    <Spanish>Un esclavo disponible tom&#243; su lugar como un gladiador.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_MERCENARIES_ASSIGN_BONUS</Tag>
@@ -7894,7 +7894,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>[ICON_TRADE] The city of %s1 offers a special order and requires %s2.</English>
     <French>[ICON_TRADE] La ville de %s1 a une commande sp&#233;ciale et d&#233;sire &#234;tre approvisionn&#233;e en %s2.</French>
     <German>[ICON_TRADE] Die Stadt %s1 bietet einen Sonderauftrag an und verlangt nach %s2.</German>
-    <Italian>[ICON_TRADE] The city of %s1 offers a special order and requires %s2.</Italian>
+    <Italian>[ICON_TRADE] La citt&#224; di %s1 offre un ordine speciale e richiede %s2.</Italian>
     <Spanish>[ICON_TRADE] La ciudad de %s1 ofrece una orden especial y requiere %s2.</Spanish>
   </TEXT>
   <TEXT>
@@ -7902,7 +7902,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>[ICON_TRADE] %s1 was able to complete a special order from a city.</English>
     <French>[ICON_TRADE] %s1 a pu honorer la commande sp&#233;ciale d'une ville.</French>
     <German>[ICON_TRADE] %s1 konnte einen Sonderauftrag einer Stadt abschlie&#223;en.</German>
-    <Italian>[ICON_TRADE] %s1 was able to complete a special order from a city.</Italian>
+    <Italian>[ICON_TRADE] %s1 &#232; riuscito a completare un ordine speciale da una citt&#224;.</Italian>
     <Spanish>[ICON_TRADE] %s1 fue capaz de completar una orden especial de una ciudad.</Spanish>
   </TEXT>
   <TEXT>
@@ -7910,7 +7910,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>[ICON_TRADE] You could complete a special order!</English>
     <French>[ICON_TRADE] Une commande sp&#233;ciale peut &#234;tre honor&#233;e!</French>
     <German>[ICON_TRADE] Ihr konntet einen Spezialauftrag abschlie&#223;en!</German>
-    <Italian>[ICON_TRADE] You could complete a special order!</Italian>
+    <Italian>[ICON_TRADE] Potresti completare un ordine speciale!</Italian>
     <Spanish>[ICON_TRADE] &#161;Se podr&#237;a completar una orden especial!</Spanish>
   </TEXT>
   <TEXT>
@@ -7923,11 +7923,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_TRADE_SPECIAL_6</Tag>
-    <English>[ICON_TRADE] Thankfully, the city gives you some of its treasures.</English>
-    <French>[ICON_TRADE] La cit&#233; reconnaissante vous remet avec plaisir une partie de ses richesses.</French>
-    <German>[ICON_TRADE] Voller Dankbarkeit &#252;bergibt Euch die Stadt einige ihrer Kostbarkeiten.</German>
-    <Italian>[ICON_TRADE] Thankfully, the city gives you some of its treasures.</Italian>
-    <Spanish>[ICON_TRADE] Afortunadamente, la ciudad da algunos de sus tesoros.</Spanish>
+    <English>[ICON_TRADE] Thankfully, the city of %s1 gives you some of its treasures.</English>
+    <French>[ICON_TRADE] La ville de %s1 reconnaissante vous remet avec plaisir une partie de ses richesses.</French>
+    <German>[ICON_TRADE] Voller Dankbarkeit &#252;bergibt Euch die Stadt %s1 einige ihrer Kostbarkeiten.</German>
+    <Italian>[ICON_TRADE] Piena di gratitudine, la citt&#224; di %s1 ti presenta alcuni dei suoi tesori.</Italian>
+    <Spanish>[ICON_TRADE] Afortunadamente, la ciudad de %s1 da algunos de sus tesoros.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_CITY_EMIGRANTS_3</Tag>
@@ -7995,11 +7995,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_SLAVE_HEAD</Tag>
-    <English>[COLOR_HIGHLIGHT_TEXT]Use head as a trophy[COLOR_REVERT][NEWLINE]Reduces the war weariness and increases the morale of the unit</English>
-    <French>[COLOR_HIGHLIGHT_TEXT]Monter t&#234;te en troph&#233;e[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de l'unit&#233;</French>
-    <German>[COLOR_HIGHLIGHT_TEXT]Kopf als Troph&#228;e verwenden[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Einheit</German>
-    <Italian>[COLOR_HIGHLIGHT_TEXT]Usa la testa come trofeo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale dell'unit&#224;</Italian>
-    <Spanish>[COLOR_HIGHLIGHT_TEXT]Usa la cabeza como trofeo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.</Spanish>
+    <English>[COLOR_HIGHLIGHT_TEXT]Sacrifice slaves and use head as a trophy[COLOR_REVERT][NEWLINE]Reduces the war weariness and increases the morale of the unit</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Sacrifier d'esclaves et monter t&#234;te en troph&#233;e[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de l'unit&#233;</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Sklaven opfern und Kopf als Troph&#228;e verwenden[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Einheit</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Sacrificio di schiavo e usa la testa come trofeo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale dell'unit&#224;</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrificio de esclavos y usa la cabeza como trofeo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_SLAVE_FIGHT4XP</Tag>
@@ -8339,19 +8339,27 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM3</Tag>
-    <English>Merchants possible: %d1. (You own %d2 trading [NUM2:post:posts], Leaderhead: +%d3, Civic: +%d4, Techs: +%d5. Maximum allowed: %d6)</English>
-    <French>Marchands possibles: %d1 (Vous poss&#233;dez %d2 [NUM2:Comptoir:Comptoirs], Chef d'&#201;tat: +%d3, Type d'&#201;tat: +%d4, techs: +%d5. Maximum autoris&#233;: %d6)</French>
-    <German>H&#228;ndler m&#246;glich: %d1 (Du besitzt %d2 Handelsposten, Staatsoberhaupt: +%d3, Staatsform: +%d4, Techs: +%d5. Maximum erlaubt: %d6)</German>
+    <English>Merchants possible: %d1. (You own %d2 trading [NUM2:post:posts], Leaderhead: +%d3, Civic: +%d4, Techs: +%d5. Max allowed: %d6)</English>
+    <French>Marchands possibles: %d1 (Vous poss&#233;dez %d2 [NUM2:Comptoir:Comptoirs], Chef d'&#201;tat: +%d3, Type d'&#201;tat: +%d4, techs: +%d5. Max autoris&#233;: %d6)</French>
+    <German>H&#228;ndler m&#246;glich: %d1 (Du besitzt %d2 Handelsposten, Staatsoberhaupt: +%d3, Staatsform: +%d4, Techs: +%d5. Maximal erlaubt: %d6)</German>
     <Italian>Commercianti possibili: %d1 (Possiedi %d2 [NUM2:Stazione Commerciale:Stazioni Commerciali], Capo di stato: +%d3, Tipo di stato: +%d4, Tec: +%d5. Massimo consentito: %d6)</Italian>
     <Spanish>Comerciantes posibles: %d1 (Usted posee %d2 [NUM2:Puesto Comercial:Puestos Comerciales], Jefe de estado: +%d3, Tipo de estado: +%d4, T&#233;c: +%d5. M&#225;ximo permitido: %d6)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM4</Tag>
-    <English>You own %d1 [NUM1:merchant:merchants] (Trade wagon, Trade Caravan, Merchantman)</English>
-    <French>Vous poss&#233;dez %d1 [NUM1:Marchand:Marchands] (Convoi commercial, Caravane marchande, Navire marchand)</French>
-    <German>Du besitzt %d1 H&#228;ndler (Handelskarren, Handelskarawanen, Handelsschiffe)</German>
-    <Italian>Possiedi %d1 [NUM1:Commerciante:Commercianti] (Carro commerciale, Carovana Commerciale, Bastimento)</Italian>
-    <Spanish>Usted posee %d1 [NUM1:Comerciante:Comerciantes] (Mercader, Caravanas Comerciales, Mercantes)</Spanish>
+    <English>You own %d1 [NUM1:merchant:merchants] (%d2 Trade [NUM2:Wagon:Wagons], %d3 Trade [NUM3:Caravan:Caravans], %d4 Merchant[NUM4:man:men])</English>
+    <French>Vous poss&#233;dez %d1 [NUM1:Marchand:Marchands] (%d2 [NUM2:Charrette commerciale:Charrettes commerciales], %d3 [NUM3:Caravane marchande:Caravanes marchandes], %d4 [NUM4:Navire marchand:Navires marchands])</French>
+    <German>Du besitzt %d1 H&#228;ndler (%d2 Handelskarren, %d3 Handelskarawan[NUM3:e:en], %d4 Handels[NUM4:schiff:schiffe])</German>
+    <Italian>Possiedi %d1 Commerciant[NUM1:e:i] (%d2 Carr[NUM2:o:i] commercial[NUM2:e:i], %d3 Carovan[NUM3:a:e] commercial[NUM3:e:i], %d4 Bastiment[NUM4:o:i])</Italian>
+    <Spanish>Usted posee %d1 Comerciant[NUM1:e:es] (%d2 Mercad[NUM2:er:eres], %d3 Caravan[NUM3:a:as] Comercia[NUM3:l:les], %d4 Mercant[NUM4:e:es])</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERO_MOVE_INTO_CITY_POPUP</Tag>
+    <English>[COLOR_HIGHLIGHT_TEXT]Heroes[COLOR_REVERT] (through combat) and units with the Art of [COLOR_HIGHLIGHT_TEXT]Rhetoric[COLOR_REVERT] (through promotion) can reduce the riot of newly conquered cities to just one turn.[NEWLINE]If you move normal units into such cities, the timer per unit decreases by one (at least 2 turns of riot remain).</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Des h&#233;ros[COLOR_REVERT] (par combat) et les unit&#233;s avec l'Art de la [COLOR_HIGHLIGHT_TEXT]Rh&#233;torique[COLOR_REVERT] (par promotion) peuvent r&#233;duire l'&#233;meute des villes nouvellement conquises &#224; un seul tour.[NEWLINE]Si vous d&#233;placez des unit&#233;s normales dans de telles villes, le temps par unit&#233; diminue de un (il reste au moins 2 tours d'&#233;meute).</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Helden[COLOR_REVERT] (durch Kampf) und Einheiten mit der Kunst der [COLOR_HIGHLIGHT_TEXT]Rhetorik[COLOR_REVERT] (durch Bef&#246;rderung) k&#246;nnen die Unruhen neu eroberter St&#228;dte auf nur eine Runde reduzieren.[NEWLINE]Bewegt man normale Einheiten in solche St&#228;dte, sinkt der Timer pro Einheit um eins (min 2 Runden Unruhe verbleiben).</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Gli eroi[COLOR_REVERT] (attraverso il combattimento) e le unit&#224; con l'Arte di [COLOR_HIGHLIGHT_TEXT]Retorica[COLOR_REVERT] (attraverso la promozione) possono ridurre la rivolta delle citt&#224; appena conquistate a un solo turno.[NEWLINE]Se sposti unit&#224; normali in tali citt&#224;, il timer per unit&#224; diminuisce di uno (rimangono almeno 2 turni di rivolta).</Italian>
+    <Spanish>Los [COLOR_HIGHLIGHT_TEXT]H&#233;roes[COLOR_REVERT] (a trav&#233;s del combate) y las unidades con el Arte de la [COLOR_HIGHLIGHT_TEXT]Ret&#243;rica[COLOR_REVERT] (a trav&#233;s de la promoci&#243;n) pueden reducir el mot&#237;n de las ciudades reci&#233;n conquistadas a solo un turno.[NEWLINE]Si mueves unidades normales a tales ciudades, el tiempo por unidad se reduce en uno (quedan al menos 2 turnos de disturbios).</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_HORSEMAN_MACEDON4</Tag>
@@ -8395,11 +8403,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_EROBERT</Tag>
-    <English>A unit %s1 was captured.</English>
-    <French>Une unit&#233; %s1 a &#233;t&#233; captur&#233;.</French>
-    <German>Eine Einheit %s1 wurde erobert.</German>
-    <Italian>Una unit&#224; %s1 &#232; stata catturata.</Italian>
-    <Spanish>Una unidad %s1 fue capturado.</Spanish>
+    <English>A unit %s1_unit was captured.</English>
+    <French>Vous avez captur&#233; [NUM1:un:une:des:des] %s1_unit.</French>
+    <German>Eine Einheit %s1_unit wurde erobert.</German>
+    <Italian>Una unit&#224; %s1_unit &#232; stata catturata.</Italian>
+    <Spanish>Una unidad %s1_unit fue capturado.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_BUILDLIMES_1</Tag>
@@ -8555,11 +8563,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM2</Tag>
-    <English>Sales value = base value + population + distance + wonder bonus + attitude + availability-corruption</English>
-    <French>Valeur des ventes = valeur de base + population + distance + bonus merveille + attitude + disponibilit&#233;-corruption</French>
-    <German>Verkaufspreis = Basiswert + Population + Distanz + Wunderbonus + Haltung + Verf&#252;gbarkeit-Korruption</German>
-    <Italian>Valore di vendita = valore base + popolazione + distanza + bonus di meraviglia + atteggiamento + disponibilit&#224;-corruzione</Italian>
-    <Spanish>Valor de ventas = valor base + poblaci&#243;n + distancia + bonificaci&#243;n de maravilla + actitud + disponibilidad-corrupci&#243;n</Spanish>
+    <English>Sales value = base value + population + distance + wonder bonus + attitude + availability - corruption</English>
+    <French>Valeur des ventes = valeur de base + population + distance + bonus merveille + attitude + disponibilit&#233; - corruption</French>
+    <German>Verkaufspreis = Basiswert + Population + Distanz + Wunderbonus + Haltung + Verf&#252;gbarkeit - Korruption</German>
+    <Italian>Valore di vendita = valore base + popolazione + distanza + bonus di meraviglia + atteggiamento + disponibilit&#224; - corruzione</Italian>
+    <Spanish>Valor de ventas = valor base + poblaci&#243;n + distancia + bonificaci&#243;n de maravilla + actitud + disponibilidad - corrupci&#243;n</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>

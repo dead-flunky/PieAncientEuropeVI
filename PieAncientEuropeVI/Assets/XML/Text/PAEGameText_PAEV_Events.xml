@@ -2464,4 +2464,28 @@
     <Italian>I rematori della tua liburna si sono ammutinati e hanno sopraffatto i sorveglianti.</Italian>
     <Spanish>Los remeros de tu liburna se han unido y abrumado a los capataces.</Spanish>
   </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_EVENT_HORSESHOE_2</Tag>
+    <English>We will utilize the improved shoes for all of our mounted units.</English>
+    <French>Nous utiliserons ces nouveaux fers sur toutes nos montures.</French>
+    <German>Wir werden alle unsere berittenen Einheiten mit den verbesserten Hufeisen ausstatten.</German>
+    <Italian>Utilizzeremo i ferri migliorati per tutte le nostre unit&#224; montate.</Italian>
+    <Spanish>Utilizaremos esas herraduras mejoradas en todas nuestras unidades montadas.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_EVENT_TRIGGER_HORSESHOE_2</Tag>
+    <English>A brilliant smith has developed significant innovation in the design of horseshoes.</English>
+    <French>Un ing&#233;nieux mar&#233;chal-ferrant a d&#233;velopp&#233; une innovation capitale dans le domaine des fers &#224; cheval.</French>
+    <German>Ein brillanter Schmied hat eine bahnbrechende neue Hufeisenform entwickelt.</German>
+    <Italian>Un brillante fabbro ha sviluppato un'innovazione importante nel progetto dei ferri di cavallo.</Italian>
+    <Spanish>Un herrero genial ha desarrollado una importante innovaci&#243;n en el dise&#241;o de las herraduras.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_EVENTTRIGGER_HORSESHOE2</Tag>
+    <English>A master smith has developed improved horseshoes, boosting the chance for %s1_civ_adjective mounted units to strike and then escape.</English>
+    <French>Un ma&#238;tre mar&#233;chal-ferrant a d&#233;velopp&#233; de nouveaux fers permettant &#224; la cavalerie %s1:2_civ_adjectiv de fuir plus facilement apr&#232;s une attaque.</French>
+    <German>Ein Meisterschmied hat verbesserte Hufeisen entwickelt, die es den berittenen %s1:2_civ_adjective Einheiten erm&#246;glichen, schneller anzugreifen und anschlie&#223;end den R&#252;ckzug anzutreten.</German>
+    <Italian>Un maestro fabbro ha sviluppato dei migliori ferri di cavallo, aumentando le probabilit&#224; delle unit&#224; montate %s1_civ_adjective di colpire e poi fuggire.</Italian>
+    <Spanish>Un maestro herrero ha desarrollado unas herraduras mejoradas, que aumentan las posibilidades de que las unidades montadas %s1:4 ataquen y escapen.</Spanish>
+  </TEXT>
 </Civ4GameText>

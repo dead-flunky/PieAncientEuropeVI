@@ -2956,6 +2956,7 @@
 			<Description>TXT_KEY_UNIT_SETTLER</Description>
 			<Civilopedia>TXT_KEY_UNIT_SETTLER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SETTLER_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bAnimal>0</bAnimal>
 			<bFood>1</bFood>
@@ -3130,7 +3131,7 @@
 			<Capture>UNITCLASS_SLAVE</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_EMIGRANT</Description>
@@ -3180,7 +3181,7 @@
 			<FlankingStrikes/>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_SETTLE</UnitAIType>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -3205,8 +3206,8 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_STADT</PrereqBuilding>
-			<PrereqTech>TECH_COLONIZATION2</PrereqTech>
+			<PrereqBuilding>NONE</PrereqBuilding>
+			<PrereqTech>TECH_COLONIZATION</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses/>
@@ -3218,7 +3219,7 @@
 			</ProductionTraits>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>0</iCost>
+			<iCost>100</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -6979,7 +6980,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -7180,7 +7181,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -7582,7 +7583,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -7790,7 +7791,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -8014,7 +8015,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -8226,7 +8227,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -8876,7 +8877,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -9084,7 +9085,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -9546,7 +9547,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -9746,7 +9747,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -10326,7 +10327,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -10759,7 +10760,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -11629,7 +11630,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -11825,7 +11826,7 @@
 			<PrereqBuilding>BUILDING_STADT</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -12207,7 +12208,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -12308,18 +12309,18 @@
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_ELITE1</Class>
-			<Type>UNIT_MARDUK_PRIEST</Type>
+			<Class>UNITCLASS_SPECIAL1</Class>
+			<Type>UNIT_GARDE_ASSUR</Type>
 			<UniqueNames/>
 			<Special>SPECIALUNIT_FUSSTRUPPEN</Special>
 			<Capture>NONE</Capture>
 			<Combat>UNITCOMBAT_SWORDSMAN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_MARDUK_PRIEST</Description>
-			<Civilopedia>TXT_KEY_UNIT_MARDUK_PRIEST_PEDIA</Civilopedia>
+			<Description>TXT_KEY_UNIT_GARDE_ASSUR</Description>
+			<Civilopedia>TXT_KEY_UNIT_GARDE_ASSUR_PEDIA</Civilopedia>
 			<Strategy/>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bAnimal>0</bAnimal>
@@ -12364,15 +12365,11 @@
 			<FlankingStrikes/>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<UnitAIType>UNITAI_CITY_COUNTER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -12389,22 +12386,21 @@
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
-			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<PrereqTech>TECH_VASALLENTUM</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>80</iCost>
+			<iCost>100</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
+			<iMoves>2</iMoves>
 			<bNoRevealMap>0</bNoRevealMap>
 			<iAirRange>0</iAirRange>
 			<iAirUnitCap>0</iAirUnitCap>
@@ -12423,7 +12419,7 @@
 			<FeatureImpassables/>
 			<TerrainPassableTechs/>
 			<FeaturePassableTechs/>
-			<iCombat>8</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iAirCombat>0</iAirCombat>
 			<iAirCombatLimit>0</iAirCombatLimit>
@@ -12438,7 +12434,7 @@
 			<iCollateralDamageLimit>0</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>0</iCollateralDamageMaxUnits>
 			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
+			<iCityDefense>50</iCityDefense>
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
 			<iHillsDefense>0</iHillsDefense>
@@ -12450,12 +12446,7 @@
 			<FeatureDefenses/>
 			<UnitClassAttackMods/>
 			<UnitClassDefenseMods/>
-			<UnitCombatMods>
-				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_SPEARMAN</UnitCombatType>
-					<iUnitCombatMod>50</iUnitCombatMod>
-				</UnitCombatMod>
-			</UnitCombatMods>
+			<UnitCombatMods/>
 			<UnitCombatCollateralImmunes/>
 			<DomainMods/>
 			<BonusProductionModifiers/>
@@ -12492,6 +12483,174 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
+			<LeaderPromotion>NONE</LeaderPromotion>
+			<iLeaderExperience>0</iLeaderExperience>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_ELITE1</Class>
+			<Type>UNIT_MARDUK_PRIEST</Type>
+			<UniqueNames/>
+			<Special>SPECIALUNIT_FUSSTRUPPEN</Special>
+			<Capture>NONE</Capture>
+			<Combat>NONE</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_RESERVE</DefaultUnitAI>
+			<Invisible>NONE</Invisible>
+			<SeeInvisible>NONE</SeeInvisible>
+			<Description>TXT_KEY_UNIT_MARDUK_PRIEST</Description>
+			<Civilopedia>TXT_KEY_UNIT_MARDUK_PRIEST_PEDIA</Civilopedia>
+			<Strategy/>
+			<Help>TXT_KEY_UNIT_MARDUK_PRIEST_HELP</Help>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bAnimal>0</bAnimal>
+			<bFood>0</bFood>
+			<bNoBadGoodies>0</bNoBadGoodies>
+			<bOnlyDefensive>0</bOnlyDefensive>
+			<bNoCapture>0</bNoCapture>
+			<bQuickCombat>0</bQuickCombat>
+			<bRivalTerritory>0</bRivalTerritory>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bSpy>0</bSpy>
+			<bSabotage>0</bSabotage>
+			<bDestroy>0</bDestroy>
+			<bStealPlans>0</bStealPlans>
+			<bInvestigate>0</bInvestigate>
+			<bCounterSpy>0</bCounterSpy>
+			<bFound>0</bFound>
+			<bGoldenAge>0</bGoldenAge>
+			<bInvisible>0</bInvisible>
+			<bFirstStrikeImmune>0</bFirstStrikeImmune>
+			<bNoDefensiveBonus>0</bNoDefensiveBonus>
+			<bIgnoreBuildingDefense>0</bIgnoreBuildingDefense>
+			<bCanMoveImpassable>0</bCanMoveImpassable>
+			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+			<bFlatMovementCost>0</bFlatMovementCost>
+			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+			<bNukeImmune>0</bNukeImmune>
+			<bPrereqBonuses>0</bPrereqBonuses>
+			<bPrereqReligion>0</bPrereqReligion>
+			<bMechanized>0</bMechanized>
+			<bSuicide>0</bSuicide>
+			<bHiddenNationality>0</bHiddenNationality>
+			<bAlwaysHostile>0</bAlwaysHostile>
+			<UnitClassUpgrades/>
+			<UnitClassTargets/>
+			<UnitCombatTargets/>
+			<UnitClassDefenders/>
+			<UnitCombatDefenders/>
+			<FlankingStrikes/>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<NotUnitAIs/>
+			<Builds/>
+			<ReligionSpreads/>
+			<CorporationSpreads/>
+			<GreatPeoples/>
+			<Buildings/>
+			<ForceBuildings/>
+			<HolyCity>NONE</HolyCity>
+			<ReligionType>NONE</ReligionType>
+			<StateReligion>NONE</StateReligion>
+			<PrereqReligion>NONE</PrereqReligion>
+			<PrereqCorporation>NONE</PrereqCorporation>
+			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
+			<PrereqTech>TECH_CODE_OF_LAWS</PrereqTech>
+			<TechTypes/>
+			<BonusType>NONE</BonusType>
+			<PrereqBonuses/>
+			<ProductionTraits/>
+			<Flavors/>
+			<iAIWeight>0</iAIWeight>
+			<iCost>80</iCost>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<bNoRevealMap>0</bNoRevealMap>
+			<iAirRange>0</iAirRange>
+			<iAirUnitCap>0</iAirUnitCap>
+			<iDropRange>0</iDropRange>
+			<iNukeRange>-1</iNukeRange>
+			<iWorkRate>0</iWorkRate>
+			<iBaseDiscover>0</iBaseDiscover>
+			<iDiscoverMultiplier>0</iDiscoverMultiplier>
+			<iBaseHurry>0</iBaseHurry>
+			<iHurryMultiplier>0</iHurryMultiplier>
+			<iBaseTrade>0</iBaseTrade>
+			<iTradeMultiplier>0</iTradeMultiplier>
+			<iGreatWorkCulture>0</iGreatWorkCulture>
+			<iEspionagePoints>0</iEspionagePoints>
+			<TerrainImpassables/>
+			<FeatureImpassables/>
+			<TerrainPassableTechs/>
+			<FeaturePassableTechs/>
+			<iCombat>0</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>0</iAirCombat>
+			<iAirCombatLimit>0</iAirCombatLimit>
+			<iXPValueAttack>2</iXPValueAttack>
+			<iXPValueDefense>1</iXPValueDefense>
+			<iFirstStrikes>0</iFirstStrikes>
+			<iChanceFirstStrikes>0</iChanceFirstStrikes>
+			<iInterceptionProbability>0</iInterceptionProbability>
+			<iEvasionProbability>0</iEvasionProbability>
+			<iWithdrawalProb>0</iWithdrawalProb>
+			<iCollateralDamage>0</iCollateralDamage>
+			<iCollateralDamageLimit>0</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>0</iCollateralDamageMaxUnits>
+			<iCityAttack>0</iCityAttack>
+			<iCityDefense>0</iCityDefense>
+			<iAnimalCombat>0</iAnimalCombat>
+			<iHillsAttack>0</iHillsAttack>
+			<iHillsDefense>0</iHillsDefense>
+			<TerrainNatives/>
+			<FeatureNatives/>
+			<TerrainAttacks/>
+			<TerrainDefenses/>
+			<FeatureAttacks/>
+			<FeatureDefenses/>
+			<UnitClassAttackMods/>
+			<UnitClassDefenseMods/>
+			<UnitCombatMods/>
+			<UnitCombatCollateralImmunes/>
+			<DomainMods/>
+			<BonusProductionModifiers/>
+			<iBombRate>0</iBombRate>
+			<iBombardRate>0</iBombardRate>
+			<SpecialCargo>NONE</SpecialCargo>
+			<DomainCargo>NONE</DomainCargo>
+			<iCargo>0</iCargo>
+			<iConscription>2</iConscription>
+			<iCultureGarrison>5</iCultureGarrison>
+			<iExtraCost>1</iExtraCost>
+			<iAsset>2</iAsset>
+			<iPower>6</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MARDUK_PRIEST</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<FreePromotions/>
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
@@ -12767,7 +12926,7 @@
 			<PrereqBuilding>BUILDING_PROVINZ</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -12968,7 +13127,7 @@
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
 			<PrereqTech>TECH_ARMOR</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -13163,7 +13322,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -13995,7 +14154,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -14213,7 +14372,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -14624,7 +14783,7 @@
 			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -14838,7 +14997,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -15057,7 +15216,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -15270,7 +15429,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -15483,7 +15642,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -15692,7 +15851,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -16711,7 +16870,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -16908,7 +17067,7 @@
 			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_WURFAXT</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -17092,7 +17251,7 @@
 			<PrereqBuilding>BUILDING_PROVINZ</PrereqBuilding>
 			<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -17303,7 +17462,7 @@
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
 			<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -17510,7 +17669,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -17702,7 +17861,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -17894,7 +18053,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -18086,7 +18245,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -18282,7 +18441,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -18470,7 +18629,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -18658,7 +18817,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -19035,7 +19194,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -19575,7 +19734,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -19878,7 +20037,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -20212,7 +20371,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -21883,7 +22042,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -22076,7 +22235,7 @@
 			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -22269,7 +22428,7 @@
 			<PrereqBuilding>BUILDING_STADT</PrereqBuilding>
 			<PrereqTech>TECH_EISENWAFFEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -22458,7 +22617,7 @@
 			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG6</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -23016,7 +23175,7 @@
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG5</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -23208,7 +23367,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -23400,7 +23559,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -23594,7 +23753,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -23822,7 +23981,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_BERUFSSOLDATEN</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -24011,7 +24170,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_PRINCIPAT</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -24196,7 +24355,7 @@
 			<PrereqBuilding>BUILDING_CASTRA_PRAETORIA</PrereqBuilding>
 			<PrereqTech>TECH_PRINCIPAT</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -24668,7 +24827,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -24850,7 +25009,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -25033,7 +25192,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -26607,7 +26766,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -26802,7 +26961,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -26997,7 +27156,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -27201,7 +27360,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -27406,7 +27565,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -27612,7 +27771,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -27855,7 +28014,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -28046,7 +28205,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -29673,7 +29832,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -29859,7 +30018,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -30047,7 +30206,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -30233,7 +30392,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -30419,7 +30578,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -30607,7 +30766,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -34116,7 +34275,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -34387,7 +34546,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -34661,7 +34820,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -34933,7 +35092,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -35216,7 +35375,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -35486,7 +35645,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -35751,7 +35910,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -36028,7 +36187,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -36293,7 +36452,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -36558,7 +36717,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -38395,7 +38554,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -38660,7 +38819,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -38925,7 +39084,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -39202,7 +39361,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -39515,7 +39674,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -39661,7 +39820,7 @@
 			<UniqueNames/>
 			<Special>NONE</Special>
 			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_AXEMAN</Combat>
+			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Invisible>NONE</Invisible>
@@ -39787,7 +39946,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -40285,7 +40444,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -40549,7 +40708,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -42145,7 +42304,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -42929,7 +43088,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -43197,7 +43356,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -43719,7 +43878,7 @@
 			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -44586,7 +44745,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -44846,7 +45005,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -45139,7 +45298,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -45399,7 +45558,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -45671,7 +45830,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -45943,7 +46102,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -46203,7 +46362,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -46474,7 +46633,7 @@
 			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -46737,7 +46896,7 @@
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -47004,7 +47163,7 @@
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>100</iCost>
+			<iCost>200</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -47394,6 +47553,264 @@
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_LIGHT_CAVALRY</Class>
+			<Type>UNIT_LIGHT_CAVALRY</Type>
+			<UniqueNames/>
+			<Special>NONE</Special>
+			<Capture>NONE</Capture>
+			<Combat>UNITCOMBAT_MOUNTED</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
+			<Invisible>NONE</Invisible>
+			<SeeInvisible>NONE</SeeInvisible>
+			<Description>TXT_KEY_UNIT_LIGHT_CAVALRY</Description>
+			<Civilopedia>TXT_KEY_UNIT_LIGHT_CAVALRY_PEDIA</Civilopedia>
+			<Strategy/>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bAnimal>0</bAnimal>
+			<bFood>0</bFood>
+			<bNoBadGoodies>0</bNoBadGoodies>
+			<bOnlyDefensive>0</bOnlyDefensive>
+			<bNoCapture>0</bNoCapture>
+			<bQuickCombat>0</bQuickCombat>
+			<bRivalTerritory>0</bRivalTerritory>
+			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bSpy>0</bSpy>
+			<bSabotage>0</bSabotage>
+			<bDestroy>0</bDestroy>
+			<bStealPlans>0</bStealPlans>
+			<bInvestigate>0</bInvestigate>
+			<bCounterSpy>0</bCounterSpy>
+			<bFound>0</bFound>
+			<bGoldenAge>0</bGoldenAge>
+			<bInvisible>0</bInvisible>
+			<bFirstStrikeImmune>0</bFirstStrikeImmune>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<bIgnoreBuildingDefense>0</bIgnoreBuildingDefense>
+			<bCanMoveImpassable>0</bCanMoveImpassable>
+			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+			<bFlatMovementCost>0</bFlatMovementCost>
+			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+			<bNukeImmune>0</bNukeImmune>
+			<bPrereqBonuses>0</bPrereqBonuses>
+			<bPrereqReligion>0</bPrereqReligion>
+			<bMechanized>0</bMechanized>
+			<bSuicide>0</bSuicide>
+			<bHiddenNationality>0</bHiddenNationality>
+			<bAlwaysHostile>0</bAlwaysHostile>
+			<UnitClassUpgrades/>
+			<UnitClassTargets/>
+			<UnitCombatTargets/>
+			<UnitClassDefenders/>
+			<UnitCombatDefenders/>
+			<FlankingStrikes>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_ARCHER</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_COMPOSITE_ARCHER</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_REFLEX_ARCHER</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_PELTIST</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_SKIRMISHER</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_BALLISTA</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_CATAPULT</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+				<FlankingStrike>
+					<FlankingStrikeUnitClass>UNITCLASS_FIRE_CATAPULT</FlankingStrikeUnitClass>
+					<iFlankingStrength>100</iFlankingStrength>
+				</FlankingStrike>
+			</FlankingStrikes>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_PILLAGE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<NotUnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</NotUnitAIs>
+			<Builds/>
+			<ReligionSpreads/>
+			<CorporationSpreads/>
+			<GreatPeoples/>
+			<Buildings/>
+			<ForceBuildings/>
+			<HolyCity>NONE</HolyCity>
+			<ReligionType>NONE</ReligionType>
+			<StateReligion>NONE</StateReligion>
+			<PrereqReligion>NONE</PrereqReligion>
+			<PrereqCorporation>NONE</PrereqCorporation>
+			<PrereqBuilding>BUILDING_STADT</PrereqBuilding>
+			<PrereqTech>TECH_HUFEISEN2</PrereqTech>
+			<TechTypes/>
+			<BonusType>BONUS_IRON2</BonusType>
+			<PrereqBonuses/>
+			<ProductionTraits/>
+			<Flavors/>
+			<iAIWeight>0</iAIWeight>
+			<iCost>200</iCost>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>3</iMoves>
+			<bNoRevealMap>0</bNoRevealMap>
+			<iAirRange>0</iAirRange>
+			<iAirUnitCap>0</iAirUnitCap>
+			<iDropRange>0</iDropRange>
+			<iNukeRange>-1</iNukeRange>
+			<iWorkRate>0</iWorkRate>
+			<iBaseDiscover>0</iBaseDiscover>
+			<iDiscoverMultiplier>0</iDiscoverMultiplier>
+			<iBaseHurry>0</iBaseHurry>
+			<iHurryMultiplier>0</iHurryMultiplier>
+			<iBaseTrade>0</iBaseTrade>
+			<iTradeMultiplier>0</iTradeMultiplier>
+			<iGreatWorkCulture>0</iGreatWorkCulture>
+			<iEspionagePoints>0</iEspionagePoints>
+			<TerrainImpassables/>
+			<FeatureImpassables/>
+			<TerrainPassableTechs/>
+			<FeaturePassableTechs/>
+			<iCombat>20</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>0</iAirCombat>
+			<iAirCombatLimit>0</iAirCombatLimit>
+			<iXPValueAttack>2</iXPValueAttack>
+			<iXPValueDefense>1</iXPValueDefense>
+			<iFirstStrikes>0</iFirstStrikes>
+			<iChanceFirstStrikes>0</iChanceFirstStrikes>
+			<iInterceptionProbability>0</iInterceptionProbability>
+			<iEvasionProbability>0</iEvasionProbability>
+			<iWithdrawalProb>20</iWithdrawalProb>
+			<iCollateralDamage>100</iCollateralDamage>
+			<iCollateralDamageLimit>80</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
+			<iCityAttack>-50</iCityAttack>
+			<iCityDefense>-50</iCityDefense>
+			<iAnimalCombat>0</iAnimalCombat>
+			<iHillsAttack>0</iHillsAttack>
+			<iHillsDefense>0</iHillsDefense>
+			<TerrainNatives/>
+			<FeatureNatives/>
+			<TerrainAttacks>
+				<TerrainAttack>
+					<TerrainType>TERRAIN_SWAMP</TerrainType>
+					<iTerrainAttack>-20</iTerrainAttack>
+				</TerrainAttack>
+			</TerrainAttacks>
+			<TerrainDefenses>
+				<TerrainDefense>
+					<TerrainType>TERRAIN_SWAMP</TerrainType>
+					<iTerrainDefense>-20</iTerrainDefense>
+				</TerrainDefense>
+			</TerrainDefenses>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>-20</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
+					<iFeatureAttack>-50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureAttack>-50</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>-20</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
+					<iFeatureDefense>-50</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>-50</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+			<UnitClassAttackMods/>
+			<UnitClassDefenseMods/>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_AXEMAN</UnitCombatType>
+					<iUnitCombatMod>20</iUnitCombatMod>
+				</UnitCombatMod>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
+					<iUnitCombatMod>20</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<UnitCombatCollateralImmunes/>
+			<DomainMods/>
+			<BonusProductionModifiers/>
+			<iBombRate>0</iBombRate>
+			<iBombardRate>0</iBombardRate>
+			<SpecialCargo>NONE</SpecialCargo>
+			<DomainCargo>NONE</DomainCargo>
+			<iCargo>0</iCargo>
+			<iConscription>0</iConscription>
+			<iCultureGarrison>5</iCultureGarrison>
+			<iExtraCost>1</iExtraCost>
+			<iAsset>2</iAsset>
+			<iPower>8</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>6</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_CAVALRY</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<FreePromotions/>
+			<LeaderPromotion>NONE</LeaderPromotion>
+			<iLeaderExperience>0</iLeaderExperience>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_CAMEL_ARCHER</Class>
 			<Type>UNIT_ARABIA_CAMELARCHER</Type>
 			<UniqueNames/>
@@ -47522,7 +47939,7 @@
 			<BonusType>BONUS_CAMEL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -47787,7 +48204,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_CAMEL</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -48048,7 +48465,7 @@
 			<TechTypes/>
 			<BonusType>BONUS_CAMEL</BonusType>
 			<PrereqBonuses>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -49037,7 +49454,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_MANUFAKTUREN2</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -52624,7 +53041,7 @@
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>1</iAIWeight>
-			<iCost>60</iCost>
+			<iCost>80</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -52820,7 +53237,7 @@
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>1</iAIWeight>
-			<iCost>90</iCost>
+			<iCost>100</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -53237,7 +53654,7 @@
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>1</iAIWeight>
-			<iCost>120</iCost>
+			<iCost>140</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -53626,12 +54043,12 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>1</iAIWeight>
-			<iCost>160</iCost>
+			<iCost>180</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -53817,7 +54234,7 @@
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
@@ -54015,12 +54432,12 @@
 			<BonusType>BONUS_COAL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>180</iCost>
+			<iCost>220</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54199,12 +54616,12 @@
 			<BonusType>BONUS_COAL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>180</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54390,12 +54807,12 @@
 			<BonusType>BONUS_SLAVES</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_BRONZE</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>200</iCost>
+			<iCost>300</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54575,12 +54992,12 @@
 			<PrereqBuilding>BUILDING_WERFT</PrereqBuilding>
 			<PrereqTech>TECH_WARSHIPS2</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
 			<iAIWeight>0</iAIWeight>
-			<iCost>200</iCost>
+			<iCost>240</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54763,7 +55180,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_PIRACY</PrereqTech>
 			</TechTypes>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -62062,7 +62479,7 @@
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG5</PrereqTech>
 			<TechTypes/>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_IRON2</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>

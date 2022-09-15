@@ -1271,14 +1271,6 @@
     </Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_FREE</Tag>
-    <English></English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
     <Tag>TXT_KEY_CIV_ROME_DESC</Tag>
     <English>Romans</English>
     <French>Romains</French>
@@ -2432,12 +2424,12 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_HUFEISEN</Tag>
-    <English>Horseshoes</English>
-    <French>Fer &#224; cheval</French>
-    <German>Hufeisen</German>
-    <Italian>Ferro di Cavallo</Italian>
+    <English>Hoof boots</English>
+    <French>Bottes &#224; sabots</French>
+    <German>Hufschuhe</German>
+    <Italian>Stivali da zoccolo</Italian>
     <Spanish>
-<Text>Herraduras</Text><Gender>Female</Gender><Plural>1</Plural>
+<Text>Botas de pezu&#241;a</Text><Gender>Female</Gender><Plural>1</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -4704,11 +4696,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_CURINGHUT</Tag>
-    <English>Meat Curinghut</English>
-    <French>Fumoir &#224; viande</French>
-    <German>R&#228;ucherfleischh&#252;tte</German>
-    <Italian>Affumicatoio di carne</Italian>
-    <Spanish>Ahumadero de carne</Spanish>
+    <English>Curinghut</English>
+    <French>Fumoir</French>
+    <German>R&#228;ucherh&#252;tte</German>
+    <Italian>Affumicatoio</Italian>
+    <Spanish>Ahumadero</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_PAPYRUSPOST</Tag>
@@ -5180,26 +5172,26 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_SCHMIEDE_BRONZE</Tag>
-    <English>Bronze Foundry</English>
+    <English>Bronze Forge</English>
     <French>
-<Text>Fonderie de bronze</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Forge de bronze</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
-    <German>Bronzegie&#223;erei</German>
-    <Italian>Fonderia del Bronzo</Italian>
+    <German>Bronzeschmiede</German>
+    <Italian>Fucina del Bronzo</Italian>
     <Spanish>
-<Text>Fundici&#243;n de Bronce</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Fragua de Bronce</Text><Gender>Female</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_SCHMIEDE_IRON</Tag>
-    <English>Iron Foundry</English>
+    <English>Iron Forge</English>
     <French>
-<Text>Fonderie de fer</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Forge de fer</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
     <German>Eisenschmiede</German>
-    <Italian>Fonderia del Ferro</Italian>
+    <Italian>Fucina del Ferro</Italian>
     <Spanish>
-<Text>Fundici&#243;n de Hierro</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Fragua de Hierro</Text><Gender>Female</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -6029,7 +6021,9 @@
   <TEXT>
     <Tag>TXT_KEY_UNIT_HYENA</Tag>
     <English>Horde of hyenas</English>
-    <French>Horde de hy&#232;nes</French>
+    <French>
+<Text>Horde de hy&#232;nes</Text><Gender>Female</Gender><Plural>0</Plural>
+    </French>
     <German>Hy&#228;nenhorde</German>
     <Italian>Orda di iene</Italian>
     <Spanish>
@@ -6643,7 +6637,7 @@
   <TEXT>
     <Tag>TXT_KEY_UNIT_TRADE_MERCHANT</Tag>
     <English>Trade wagon</English>
-    <French>Convoi commercial</French>
+    <French>Charrette commerciale</French>
     <German>Handelskarren</German>
     <Italian>Carro commerciale</Italian>
     <Spanish>Mercader</Spanish>
@@ -9979,5 +9973,15 @@
     <German>Brunnen</German>
     <Italian>Pozzo</Italian>
     <Spanish>Pozo</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_HUFEISEN2</Tag>
+    <English>Horseshoes</English>
+    <French>Fer &#224; cheval</French>
+    <German>Hufeisen</German>
+    <Italian>Ferro di Cavallo</Italian>
+    <Spanish>
+<Text>Herraduras</Text><Gender>Female</Gender><Plural>1</Plural>
+    </Spanish>
   </TEXT>
 </Civ4GameText>

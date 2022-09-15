@@ -452,6 +452,18 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_MARMOR_WERKSTATT</Type>
+			<Description>TXT_KEY_BUILDING_MARMOR_WERKSTATT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_MARMOR_WERKSTATT</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_BILDHAUER</Type>
 			<Description>TXT_KEY_BUILDING_BILDHAUER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

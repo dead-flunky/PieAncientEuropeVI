@@ -2281,7 +2281,8 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_GRANARY2"),
 				gc.getInfoTypeForString("BUILDING_SCHMIEDE_MESSING"),
 				gc.getInfoTypeForString("BUILDING_GOLDSCHMIED"),
-				gc.getInfoTypeForString("BUILDING_JUWELIER")
+				gc.getInfoTypeForString("BUILDING_JUWELIER"),
+				gc.getInfoTypeForString("BUILDING_BILDHAUER")
 		]
 		if bLager:
 				iRand = 30
@@ -2314,8 +2315,8 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_PAPYRUSPOST"),
 				gc.getInfoTypeForString("BUILDING_MUREX"),
 				gc.getInfoTypeForString("BUILDING_GERBEREI"),
-				gc.getInfoTypeForString("BUILDING_BILDHAUER"),
-				gc.getInfoTypeForString("BUILDING_FURRIER")
+				gc.getInfoTypeForString("BUILDING_FURRIER"),
+				gc.getInfoTypeForString("BUILDING_MARMOR_WERKSTATT")
 		]
 		lBuildings2 = [
 				gc.getInfoTypeForString("BUILDING_GUSS_BLEI"),
@@ -2478,8 +2479,8 @@ def bonusMissingCity3x3(pCity, eBuilding):
 
 
 def onEmigrantBuilt(city, unit):
-		# iPlayer = city.getOwner()
-		# pPlayer = gc.getPlayer(iPlayer)
+		#iPlayer = city.getOwner()
+		#pPlayer = gc.getPlayer(iPlayer)
 		pPlot = city.plot()
 		iPop = city.getPopulation()
 		# Einheit die richtige Kultur geben
@@ -2502,7 +2503,7 @@ def onEmigrantBuilt(city, unit):
 		# Pop senken, Nahrungslager leeren
 		city.setFood(0)
 
-		if iPop > 1:
+		if iPop > 1: # and pPlayer.isHuman():
 				city.changePopulation(-1)
 
 		doCheckCityState(city)
@@ -3993,9 +3994,9 @@ def doCheckCivilWar(pCity):
 
 				iChance = CvUtil.myRandom(100, "iRandCityCivilWarChances")
 
-				# Chance, dass der Civil War endet: HI 1:20, KI 1:10
+				# Chance, dass der Civil War endet: HI 1:20, KI 1:5
 				# End of Civil War
-				if iPop <= iMilitaryUnits + iUnitsExtraCalc or iChance < 5 or not bHuman and iChance < 10:
+				if iPop <= iMilitaryUnits + iUnitsExtraCalc or iChance < 5 or not bHuman and iChance < 20:
 						# ***TEST***
 						#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("End Civil War",0)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 						pCity.setNumRealBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR"), 0)
@@ -4014,7 +4015,7 @@ def doCheckCivilWar(pCity):
 								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_INFO_CIVIL_WAR_6", (pCity.getName(), iMilitaryUnits, iPop)), "AS2D_REVOLTSTART",
 																				 2, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
 
-						# Chance, dass diese Runde nix passiert: HI 50%, KI 75%
+						# Chance, dass diese Runde nix passiert: HI 25%, KI 50%
 						if iChance < 25 or bHuman and iChance < 50:
 
 								iRand = CvUtil.myRandom(iPop + iMilitaryUnits, "iRandCityCivilWarUnitsVsPop")

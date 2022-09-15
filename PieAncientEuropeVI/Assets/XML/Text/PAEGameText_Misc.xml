@@ -1577,6 +1577,22 @@
     <Spanish>Esclavos</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_PLAYER_OPTION_MODDER_3</Tag>
+    <English>Do not split city building menu</English>
+    <French>Pas de menu de construction de ville partag&#233;</French>
+    <German>Kein geteiltes Stadtbaumen&#252;</German>
+    <Italian>Non dividere il menu della costruzione della citt&#224;</Italian>
+    <Spanish>No dividir el men&#250; de construcci&#243;n de la ciudad</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PLAYER_OPTION_MODDER_3_HELP</Tag>
+    <English>In PAE, the city building menu is divided into two halves. The units are shown on the left and the buildings on the right side.</English>
+    <French>Dans PAE, le menu de construction est divis&#233; en deux moiti&#233;s. Les unit&#233;s sont repr&#233;sent&#233;es &#224; gauche et les b&#226;timents &#224; droite.</French>
+    <German>In PAE ist das Baumen&#252; in zwei H&#228;lften geteilt. Links werden die Einheiten und rechts die Geb&#228;ude angezeigt.</German>
+    <Italian>In PAE, il menu build &#232; diviso in due met&#224;. Le unit&#224; sono mostrate a sinistra e gli edifici a destra.</Italian>
+    <Spanish>En PAE, el men&#250; de compilaci&#243;n se divide en dos mitades. Las unidades se muestran a la izquierda y los edificios a la derecha.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_PROMOTION_RANG_ROM_EQUES_1</Tag>
     <English>Curator</English>
     <French>Curator</French>

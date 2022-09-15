@@ -15,6 +15,7 @@
 <!-- UNIT_EGYPT_RAM_CHARIOT: Egypt -->
 <!-- UNIT_BRAHMANE: India -->
 <!-- UNIT_CAMP: Skythen, Hunnen, Parther -->
+<!-- UNIT_GARDE_ASSUR: Assur, Babylon, Sumer -->
 <!-- UNIT_SEEVOLK: Neutral -->
 <!-- UNIT_SEEVOLK_1: Neutral -->
 <!-- UNIT_SEEVOLK_2: Neutral -->
@@ -52,8 +53,8 @@
 <!-- UNIT_SPARTA_2: Sparta, Griechen -->
 <!-- UNIT_COMPANION_CAVALRY: Makedon -->
 <!-- UNIT_AMAZONE: Hethiter -->
-<!-- UNIT_PHILISTER: Israel, Phoen -->
 <!-- UNIT_MARDUK_PRIEST: Babylon, Sumer -->
+<!-- UNIT_PHILISTER: Israel, Phoen -->
 <!-- UNIT_UNSTERBLICH_2: Perser -->
 <!-- UNIT_LIBYAN_AMAZON: Berber -->
 <!-- UNIT_INDIAN_NAYAR: India -->
@@ -1215,6 +1216,15 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iInstanceCostModifier>3</iInstanceCostModifier>
 			<DefaultUnit>UNIT_HORSE_PERSIA_NOBLE2</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_LIGHT_CAVALRY</Type>
+			<Description>TXT_KEY_CHARL_UNIT_LIGHT_CAVALRY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<DefaultUnit>UNIT_LIGHT_CAVALRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CAMEL_ARCHER</Type>

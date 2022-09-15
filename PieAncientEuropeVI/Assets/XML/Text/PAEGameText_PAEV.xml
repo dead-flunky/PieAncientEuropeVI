@@ -540,11 +540,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_EMIGRANT_HELP</Tag>
-    <English>[ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)[NEWLINE][ICON_BULLET]When built: city pop -1</English>
-    <French>[ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville</French>
-    <German>[ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1</German>
-    <Italian>[ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1</Italian>
-    <Spanish>[ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1</Spanish>
+    <English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villagesat no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)</English>
+    <French>[ICON_BULLET]Constructible si la ville est malheureuse ou malsaine[NEWLINE][ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des villages sans frais[NEWLINE][ICON_BULLET]Peut rejoindre des villages (acc&#233;l&#232;re leur croissance)</French>
+    <German>[ICON_BULLET]Baubar, wenn die Stadt ungl&#252;cklich oder ungesund ist[NEWLINE][ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1, leert den Nahrungsspeicher[NEWLINE][ICON_BULLET]Kann ohne Kosten H&#252;tten errichten[NEWLINE][ICON_BULLET]Kann sich H&#252;tten anschlie&#223;en (beschleunigt deren Wachstum)</German>
+    <Italian>[ICON_BULLET]Costruibile se la citt&#224; &#232; infelice o malata[NEWLINE][ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1, svuota la riserva di cibo[NEWLINE][ICON_BULLET]Pu&#242; costruire villaggi gratuitamente[NEWLINE][ICON_BULLET]Pu&#242; unirti a villaggi (accelerer&#224; la loro crescita)</Italian>
+    <Spanish>[ICON_BULLET]Construible si la ciudad es infeliz o insalubre[NEWLINE][ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1, borra el almacenamiento de alimentos[NEWLINE][ICON_BULLET]Puede construir aldeas sin costo alguno.[NEWLINE][ICON_BULLET]Puede unirse a pueblos (acelera su crecimiento)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_CULTIVATE_BONUS_FROM_CITY</Tag>
@@ -1756,11 +1756,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_INFO_10</Tag>
-    <English>~600 AD</English>
-    <French>~600 ap JC. </French>
-    <German>~600 n. Chr.</German>
-    <Italian>~ 600 d.C.</Italian>
-    <Spanish>~600 d.C.</Spanish>
+    <English>~600 AD-Early Middle Ages</English>
+    <French>~600 ap JC.-D&#233;but du moyen &#226;ge</French>
+    <German>~600 n. Chr.-Fr&#252;hmittelalter</German>
+    <Italian>~ 600 d.C.-Alto medioevo</Italian>
+    <Spanish>~600 d.C.-Edad media temprana</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_CROSSBOW</Tag>
@@ -2273,6 +2273,78 @@
     <German>[ICON_BULLET]Erlaubt das Verbreiten von [COLOR_HIGHLIGHT_TEXT]Krabben[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Muscheln[COLOR_REVERT].</German>
     <Italian>[ICON_BULLET]Consente di spargere [COLOR_HIGHLIGHT_TEXT]Granchi[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Conchiglie[COLOR_REVERT].</Italian>
     <Spanish>[ICON_BULLET]Permite que [COLOR_HIGHLIGHT_TEXT]Cangrejos[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]Conchas[COLOR_REVERT] se propaguen.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_SETTLER_HELP</Tag>
+    <English>[ICON_BULLET]Can join a city (+1 pop)[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)</English>
+    <French>[ICON_BULLET]Peut rejoindre une ville (+1 pop)[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)</French>
+    <German>[ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop)[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)</German>
+    <Italian>[ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop)[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)</Italian>
+    <Spanish>[ICON_BULLET]Puede unirse a una ciudad (+1 hab.)[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_MARDUK_PRIEST_HELP</Tag>
+    <English>[ICON_BULLET]Every trained unit in the city where that unit is located gets the promotion [LINK=PROMOTION_BLESSED]Blessed[\LINK] (+25%[ICON_STRENGTH] on first combat).</English>
+    <French>[ICON_BULLET]Chaque unit&#233; entra&#238;n&#233;e dans la ville o&#249; se trouve cette unit&#233; obtient la promotion [LINK=PROMOTION_BLESSED]Blessed[\LINK] (+25 %[ICON_STRENGTH] au premier combat).</French>
+    <German>[ICON_BULLET]Jede ausgebildete Einheit in der Stadt, in der sich diese Einheit aufh&#228;lt, bekommt die Bef&#246;rderung [LINK=PROMOTION_BLESSED]Gesegnet[\LINK] (+25%[ICON_STRENGTH] beim ersten Kampf).</German>
+    <Italian>[ICON_BULLET]Ogni unit&#224; addestrata nella citt&#224; in cui si trova quell'unit&#224; riceve la promozione [LINK=PROMOTION_BLESSED]Benedetto[\LINK] (+25%[ICON_STRENGTH] al primo combattimento).</Italian>
+    <Spanish>[ICON_BULLET]Cada unidad entrenada en la ciudad donde se encuentra esa unidad obtiene la promoci&#243;n [LINK=PROMOTION_BLESSED]Bendecida[\LINK] (+25%[ICON_STRENGTH] en el primer combate).</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_SCHMIEDE_BRONZE_HELP</Tag>
+    <English>[ICON_BULLET]The number of bronze forges that can be built is equal to the combined number of copper and lead or tin in the trade network</English>
+    <French>[ICON_BULLET]Le nombre de forges de bronze pouvant &#234;tre construites est &#233;gal au nombre combin&#233; de cuivre et de plomb ou d'&#233;tain dans le r&#233;seau commercial</French>
+    <German>[ICON_BULLET]Die Anzahl baubarer Bronzeschmieden entspricht der gemeinsamen Anzahl von Kupfer und Blei oder Zinn im Handelsnetz</German>
+    <Italian>[ICON_BULLET]Il numero di fucine di bronzo che possono essere costruite &#232; uguale al numero combinato di rame e piombo o stagno nella rete commerciale</Italian>
+    <Spanish>[ICON_BULLET]La cantidad de forjas de bronce que se pueden construir es igual a la cantidad combinada de cobre y plomo o esta&#241;o en la red comercial.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_SCHMIEDE_MESSING_HELP</Tag>
+    <English>[ICON_BULLET]The number of brass forges that can be built is equal to the combined number of copper and zinc in the trade network</English>
+    <French>[ICON_BULLET]Le nombre de forges de laiton pouvant &#234;tre construites est &#233;gal au nombre combin&#233; de cuivre et de zinc dans le r&#233;seau commercial</French>
+    <German>[ICON_BULLET]Die Anzahl baubarer Messingschmieden entspricht der gemeinsamen Anzahl von Kupfer und Zink im Handelsnetz</German>
+    <Italian>[ICON_BULLET]Il numero di fucine di ottone che possono essere costruite &#232; uguale al numero combinato di rame e zinco nella rete commerciale</Italian>
+    <Spanish>[ICON_BULLET]La cantidad de forjas de lat&#243;n que se pueden construir es igual a la cantidad combinada de cobre y zinc en la red comercial.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_GOLDSCHMIED_HELP</Tag>
+    <English>[ICON_BULLET]The number of goldsmiths that can be built corresponds to the number of gold, silver, pearls, gems and amber in the trade network</English>
+    <French>[ICON_BULLET]Le nombre d'orf&#232;vres pouvant &#234;tre construits correspond au nombre d'or, d'argent, de perles, de pierres pr&#233;cieuses et d'ambre dans le r&#233;seau commercial</French>
+    <German>[ICON_BULLET]Die Anzahl baubarer Goldschmieden entspricht der Anzahl Gold, Silber, Perlen, Edelsteine und Bernstein im Handelsnetz</German>
+    <Italian>[ICON_BULLET]Il numero di orefici realizzabili corrisponde al numero di oro, argento, perle, gemme e ambre presenti nella rete commerciale</Italian>
+    <Spanish>[ICON_BULLET]La cantidad de orfebres que se pueden construir corresponde a la cantidad de oro, plata, perlas, gemas y &#225;mbar en la red comercial.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROMOTION_OIL_ON_WATER_HELP</Tag>
+    <English>[ICON_BULLET]Wave Oil can be loaded in a port city once Olives are available in the trade network.[NEWLINE][ICON_BULLET]Cost: half ship production cost</English>
+    <French>[ICON_BULLET]Coque huil&#233;e peut &#234;tre charg&#233;e dans une ville portuaire une fois que les olives sont disponibles dans le r&#233;seau commercial.[NEWLINE][ICON_BULLET]Co&#251;t : co&#251;t de production de la moiti&#233; du navire</French>
+    <German>[ICON_BULLET]Wellen-&#214;l kann in einer Hafenstadt aufgeladen werden, sobald Oliven im Handelsnetz verf&#252;gbar sind.[NEWLINE][ICON_BULLET]Kosten: halbe Schiffsproduktionskosten</German>
+    <Italian>[ICON_BULLET]Olio pu&#242; essere caricato in una citt&#224; portuale una volta che le olive sono disponibili nella rete commerciale.[NEWLINE][ICON_BULLET]Costo: met&#224; del costo di produzione della nave</Italian>
+    <Spanish>[ICON_BULLET]Olio se puede cargar en una ciudad portuaria una vez que las aceitunas est&#233;n disponibles en la red comercial.[NEWLINE][ICON_BULLET]Costo: mitad del costo de producci&#243;n del barco</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROMOTION_KOMPASS_HELP</Tag>
+    <English>[ICON_BULLET]Can be purchased in a port city with access to Magnetite.[NEWLINE][ICON_BULLET]Cost: 20 [ICON_GOLD]</English>
+    <French>[ICON_BULLET]Peut &#234;tre achet&#233; dans une ville portuaire avec acc&#232;s &#224; la Magn&#233;tite.[NEWLINE][ICON_BULLET]Co&#251;t : 20 [ICON_GOLD]</French>
+    <German>[ICON_BULLET]Kann in einer Hafenstadt mit Zugang zu Magnetit erworben werden.[NEWLINE][ICON_BULLET]Kosten: 20 [ICON_GOLD]</German>
+    <Italian>[ICON_BULLET]Pu&#242; essere acquistato in una citt&#224; portuale con accesso a Magnetite.[NEWLINE][ICON_BULLET]Costo: 20 [ICON_GOLD]</Italian>
+    <Spanish>[ICON_BULLET]Se puede comprar en una ciudad portuaria con acceso a Magnetita.[NEWLINE][ICON_BULLET]Costo: 20 [ICON_GOLD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PROMOTION_KOMPASS</Tag>
+    <English>Magnetic Compass</English>
+    <French>Compas Magn&#233;tique</French>
+    <German>Magnetkompass</German>
+    <Italian>Bussola Magnetica</Italian>
+    <Spanish>Br&#250;jula</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUTTON_BUY_KOMPASS</Tag>
+    <English>Equip your ship with a [COLOR_HIGHLIGHT_TEXT]Magnetic Compass[COLOR_REVERT] for 20[ICON_GOLD].</English>
+    <French>&#201;quipez votre vaisseau d'une [COLOR_HIGHLIGHT_TEXT]Boussole Magn&#233;tique[COLOR_REVERT] pour 20[ICON_GOLD].</French>
+    <German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.</German>
+    <Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].</Italian>
+    <Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_SARGON1</Tag>
@@ -7814,11 +7886,11 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_ORTHODOX_TEMPLE</Tag>
-    <English>Orthodox Church</English>
-    <French>Eglise orthodoxe</French>
-    <German>Orthodoxe Kirche</German>
-    <Italian>Chiesa ortodossa</Italian>
-    <Spanish>Iglesia Ortodoxa</Spanish>
+    <English>Agia</English>
+    <French>Agia</French>
+    <German>Agia</German>
+    <Italian>Agia</Italian>
+    <Spanish>Agia</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Tag>
@@ -8171,5 +8243,35 @@ Tumba de Tholos
     <German>Brombeerhecke</German>
     <Italian>Siepe di mora</Italian>
     <Spanish>Seto de mora</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_LIGHT_CAVALRY</Tag>
+    <English>Light Cavalry</English>
+    <French>
+<Text>Cavalerie l&#233;g&#232;re</Text><Gender>Female</Gender><Plural>0</Plural>
+    </French>
+    <German>Leichte Kavallerie</German>
+    <Italian>
+<Text>Cavalleria leggera:Cavallerie leggere</Text><Gender>Female</Gender><Plural>0:1</Plural>
+    </Italian>
+    <Spanish>
+<Text>Caballer&#237;a ligera:Caballer&#237;as ligeras</Text><Gender>Female</Gender><Plural>0:1</Plural>
+    </Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_MARMOR_WERKSTATT</Tag>
+    <English>Marble Workshop</English>
+    <French>Atelier de Marbre</French>
+    <German>Marmor-Werkstatt</German>
+    <Italian>Laboratorio di Marmo</Italian>
+    <Spanish>Taller de Marmol</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_GARDE_ASSUR</Tag>
+    <English>Saglute</English>
+    <French>Saglute</French>
+    <German>Saglute</German>
+    <Italian>Saglute</Italian>
+    <Spanish>Saglute</Spanish>
   </TEXT>
 </Civ4GameText>

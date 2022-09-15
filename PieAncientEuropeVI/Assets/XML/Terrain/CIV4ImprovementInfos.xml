@@ -555,7 +555,16 @@
 			</BonusTypeStructs>
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
-			<TechYieldChanges/>
+			<TechYieldChanges>
+				<TechYieldChange>
+					<PrereqTech>TECH_ARCHERY</PrereqTech>
+					<TechYields>
+						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+					</TechYields>
+				</TechYieldChange> 
+			</TechYieldChanges>
 			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>

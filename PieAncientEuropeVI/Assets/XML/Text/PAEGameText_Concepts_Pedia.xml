@@ -3808,7 +3808,7 @@ Si vous poss&#233;dez moins de 9 postes de traite ou jouez &#224; un jeu OCC, vo
 [H1]Echange[\H1]
 Ce mod permet l'achat et la vente des ressources. Elles sont alors disponibles dans le r&#233;seau d'&#233;changes pour 3 tours. L'unit&#233; n'est pas consomm&#233;e par cette action, elle peut de plus recevoir des instructions pour &#233;changer automatiquement.
 
-[ICON_BULLET] Convoi commercial (Roues &#224; rayons)
+[ICON_BULLET] Charrette commerciale (Roues &#224; rayons)
 [ICON_BULLET] Caravane (Domestication de chameaux)
 [ICON_BULLET] Keftion (Construction navale)
 [ICON_BULLET] Gaulos (Colonisation)
@@ -3817,7 +3817,7 @@ Ce mod permet l'achat et la vente des ressources. Elles sont alors disponibles d
 Achetez une ressource locale dans une de vos villes et vendez-la ailleurs. Maximisez vos revenus en vendant des biens que votre partenaire commercial ne poss&#232;de pas. De m&#234;me, achetez &#224; l'&#233;tranger les biens qui vous manquent pour les vendre dans vos villes et en b&#233;n&#233;ficier quelques tours.
 
 [ICON_BULLET]Conseil : &#233;changer du bronze permet de recruter les unit&#233;s correspondantes sans en poss&#233;der soi-m&#234;me
-[ICON_BULLET]Conseil : chargez directement des biens cultivables d'un convoi commercial &#224; un Chariot de c&#233;r&#233;ales et diffusez-les dans votre empire
+[ICON_BULLET]Conseil : chargez directement des biens cultivables d'une Charrette commerciale &#224; un Chariot de c&#233;r&#233;ales et diffusez-les dans votre empire
 
 Modificateurs :
 [ICON_BULLET] +1% par population
@@ -6860,7 +6860,7 @@ If the Foreign Trading Post post is taken over by the culture of a foreign natio
     </English>
     <French>
 [H1]Ressources bonus en territoire neutre[\H1]
-Les ressources de bonus sur un terrain neutre (ou dans vos fronti&#232;res) peuvent &#234;tre g&#233;r&#233;es par un Poste de traite &#233;tranger. Le Poste de traite &#233;tranger peut &#234;tre construit par un convoi ou une caravane. L'unit&#233; est dissoute et cr&#233;e un comptoir commercial et une route.
+Les ressources de bonus sur un terrain neutre (ou dans vos fronti&#232;res) peuvent &#234;tre g&#233;r&#233;es par un Poste de traite &#233;tranger. Le Poste de traite &#233;tranger peut &#234;tre construit par une charrette commerciale ou une caravane. L'unit&#233; est dissoute et cr&#233;e un comptoir commercial et une route.
 Si le comptoir est repris par la culture d'un pays &#233;tranger, il est dissout.
     </French>
     <German>

@@ -837,5 +837,13 @@
       <WaterLevelDecals><WaterLevelDecalPath>Art/Interface/Screens/WorldPicker/PAE_IberianConquest.dds</WaterLevelDecalPath></WaterLevelDecals>
       <WaterLevelGloss><WaterLevelGlossPath>Art/Interface/Screens/WorldPicker/MapBlank.dds</WaterLevelGlossPath></WaterLevelGloss>
     </WorldPickerInfo>
+    <WorldPickerInfo>
+      <MapName>PAE_Barbaricum_RiseOfIndia</MapName>
+      <ModelFile>Art/Interface/Screens/WorldPicker/GlobeFLAT.nif</ModelFile>
+      <Sizes><Size>1.0</Size></Sizes>
+      <Climates><ClimatePath>Art/Interface/Screens/WorldPicker/MapBlank.dds</ClimatePath></Climates>
+      <WaterLevelDecals><WaterLevelDecalPath>Art/Interface/Screens/WorldPicker/PAE_Barbaricum_India.dds</WaterLevelDecalPath></WaterLevelDecals>
+      <WaterLevelGloss><WaterLevelGlossPath>Art/Interface/Screens/WorldPicker/MapBlank.dds</WaterLevelGlossPath></WaterLevelGloss>
+    </WorldPickerInfo>
   </WorldPickerInfos>
 </Civ4WorldPickerInfos>

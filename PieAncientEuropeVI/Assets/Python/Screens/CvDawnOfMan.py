@@ -215,6 +215,9 @@ class CvDawnOfMan:
         elif sScenarioName == "IberianConquest":
             szDawnText1 = "TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE"
             szDawnText2 = "TXT_KEY_DAWN_OF_MAN_IBERIAN_CONQUEST"
+        elif sScenarioName == "BarbaricumRiseOfIndia":
+            szDawnText1 = "TXT_KEY_BARBARICUM_RISE_OF_INDIA_TITLE"
+            szDawnText2 = "TXT_KEY_BARBARICUM_RISE_OF_INDIA"
         else:
             szDawnText1 = "TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE"
             szDawnText2 = "TXT_KEY_DAWN_OF_MAN_TEXT"

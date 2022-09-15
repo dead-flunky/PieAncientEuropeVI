@@ -168,6 +168,10 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
+					<UnitType>UNIT_GARDE_ASSUR</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
 					<UnitType>UNIT_STATTHALTER_SUMER</UnitType>
 				</Unit>
@@ -835,6 +839,10 @@
 			</Buildings>
 			<Units>
 				<Unit>
+					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
+					<UnitType>UNIT_GARDE_ASSUR</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_ELITE1</UnitClassType>
 					<UnitType>UNIT_MARDUK_PRIEST</UnitType>
 				</Unit>
@@ -1058,6 +1066,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
+					<UnitType>UNIT_GARDE_ASSUR</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_ELITE1</UnitClassType>
 					<UnitType>UNIT_LIBYAN_AMAZON</UnitType>

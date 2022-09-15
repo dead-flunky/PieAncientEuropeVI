@@ -1636,7 +1636,7 @@
 	</Define>
 	<Define>
 		<DefineName>USE_MODDERS_PLAYEROPTION_3</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>CITY_AIR_UNIT_CAPACITY</DefineName>

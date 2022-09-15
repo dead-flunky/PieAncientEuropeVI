@@ -210,9 +210,9 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_CURINGHUT_STRATEGY</Tag>
-    <English>The [COLOR_BUILDING_TEXT]curing huts[COLOR_REVERT] are able to cure fish and meat. This cured food has a positive effect on the health of your city population.</English>
+    <English>[COLOR_BUILDING_TEXT]Curing huts[COLOR_REVERT] are able to cure fish and meat. This cured food has a positive effect on the health of your city population.</English>
     <French>Les [COLOR_BUILDING_TEXT]Fumoirs[COLOR_REVERT] augmentes le temps de conservation du poisson et de la viande. Les pr&#233;parations fum&#233;es favorisent la bonne sant&#233; de la population.</French>
-    <German>Mit den [COLOR_BUILDING_TEXT]R&#228;ucherh&#252;tten[COLOR_REVERT] k&#246;nnen Fisch und Fleisch l&#228;nger haltbar gemacht werden, was sich positiv auf die Gesundheit der Bev&#246;lkerung auswirkt.</German>
+    <German>[COLOR_BUILDING_TEXT]R&#228;ucherh&#252;tten[COLOR_REVERT] k&#246;nnen Fisch und Fleisch l&#228;nger haltbar machen, was sich positiv auf die Gesundheit der Bev&#246;lkerung auswirkt.</German>
     <Italian>[COLOR_BUILDING_TEXT]L'affumicatoio[COLOR_REVERT] pu&#242; fumare pesce e carne. Questa carne affumicata ha un effetto positivo sulla salute della popolazione della tua citt&#224;.</Italian>
     <Spanish>El [COLOR_BUILDING_TEXT]ahumadero[COLOR_REVERT] puede ahumar pescado y carne. Esta carne ahumada tiene un efecto positivo en la salud de la poblaci&#243;n de tu ciudad.</Spanish>
   </TEXT>
@@ -627,7 +627,7 @@
   <TEXT>
     <Tag>TXT_KEY_UNIT_TRADE_MERCHANT_STRATEGY</Tag>
     <English>[COLOR_UNIT_TEXT]Trade wagons, caravans and merchantmen[COLOR_REVERT] can buy and sell goods between two cities and fill the state fund! Trade wagons are capable of transporting [COLOR_UNIT_TEXT]ships[COLOR_REVERT] across the country.</English>
-    <French>[COLOR_UNIT_TEXT]Les caravanes et les convois et navires commerciaux[COLOR_REVERT] peuvent faire n&#233;goce de richesses entre deux villes et ainsi remplir les caisses du pays! Les convois commerciaux sont capables de transborder des [COLOR_UNIT_TEXT]Navires[COLOR_REVERT] par voie de terre.</French>
+    <French>[COLOR_UNIT_TEXT]Les caravanes, les charrettes et les navires commerciaux[COLOR_REVERT] peuvent faire n&#233;goce de richesses entre deux villes et ainsi remplir les caisses du pays! Les charrettes commerciales sont capables de transborder des [COLOR_UNIT_TEXT]Navires[COLOR_REVERT] par voie de terre.</French>
     <German>[COLOR_UNIT_TEXT]Handelkarren, Handelskarwanen und Handelsschiffe[COLOR_REVERT] k&#246;nnen G&#252;ter zwischen zwei St&#228;dten ein- und verkaufen und so die Staatskasse f&#252;llen! Handelskarren sind f&#228;hig [COLOR_UNIT_TEXT]Schiffe[COLOR_REVERT] &#252;ber Land zu transportieren.</German>
     <Italian>[COLOR_UNIT_TEXT]Roulotte, convogli e navi commerciali[COLOR_REVERT] possono scambiare ricchezza tra due citt&#224; e riempire le casse del paese! I convogli commerciali sono in grado di trasbordare [COLOR_UNIT_TEXT]Navi[COLOR_REVERT] via terra.</Italian>
     <Spanish>Los [COLOR_UNIT_TEXT]mercantes, caravanas de comercio y mercaderes[COLOR_REVERT] pueden comprar y vender mercanc&#237;as entre ciudades para llenar el tesoro. Los mercantes pueden transportar [COLOR_UNIT_TEXT]barcos[COLOR_REVERT].</Spanish>

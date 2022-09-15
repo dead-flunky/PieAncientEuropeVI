@@ -83,7 +83,7 @@
   <TEXT>
     <Tag>TXT_KEY_HINT_107</Tag>
     <English>Merchant carts, merchant ships and caravans can trade goods from one city to another. International trade is more lucrative than regional trade, brings additional research points and can arise paved trade roads.</English>
-    <French>Les convois commerciaux, les navires marchands et les caravanes peuvent &#233;changer des marchandises d'une ville &#224; l'autre. Le commerce international est plus lucratif que le commerce r&#233;gional, apporte des points de recherche suppl&#233;mentaires et peut d&#233;boucher sur des routes commerciales pav&#233;es.</French>
+    <French>Les charrettes commerciales, les navires marchands et les caravanes peuvent &#233;changer des marchandises d'une ville &#224; l'autre. Le commerce international est plus lucratif que le commerce r&#233;gional, apporte des points de recherche suppl&#233;mentaires et peut d&#233;boucher sur des routes commerciales pav&#233;es.</French>
     <German>Mit Handelskarren, Handelsschiffen und Karawanen k&#246;nnen Waren von einer Stadt zur n&#228;chsten gehandelt werden. Internationaler Handel ist lukrativer als regionaler Handel, bringt zus&#228;tzlich Forschungspunkte und l&#228;sst befestigte Handelsstra&#223;en entstehen.</German>
     <Italian>I mercantili, le navi mercantili e le roulotte possono scambiare merci da una citt&#224; all'altra. Il commercio internazionale &#232; pi&#249; redditizio del commercio regionale, porta ulteriori punti di ricerca e pu&#242; sorgere strade commerciali asfaltate.</Italian>
     <Spanish>Los carros mercantes, los barcos mercantes y las caravanas pueden intercambiar bienes de una ciudad a otra. El comercio internacional es m&#225;s lucrativo que el comercio regional, trae puntos de investigaci&#243;n adicionales y puede surgir caminos comerciales pavimentados.</Spanish>
@@ -295,5 +295,13 @@
     <German>Territoriale S&#246;ldner sind stark und selten, deshalb steigen die Baukosten um 100% pro Einheit.</German>
     <Italian>I mercenari territoriali sono forti e rari, quindi i costi di costruzione aumentano del 100% per unit&#224;.</Italian>
     <Spanish>Los mercenarios territoriales son fuertes y raros, por lo que los costos de construcci&#243;n aumentan en un 100% por unidad.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_HINT_134</Tag>
+    <English>With [CTRL-Z] you uncover the whole map (chipotle in Civilization.ini must be activated).</English>
+    <French>Avec [CTRL-Z] vous d&#233;couvrez toute la carte (le chipotle dans Civilization.ini doit &#234;tre activ&#233;).</French>
+    <German>Mit [STRG-Z] deckst du die ganze Karte auf (chipotle in der Civilization.ini muss aktiviert sein).</German>
+    <Italian>Con [CTRL-Z] si scopre l'intera mappa (&#232; necessario attivare chipotle in Civilization.ini).</Italian>
+    <Spanish>Con [CTRL-Z] descubres todo el mapa (Chipotle en Civilization.ini debe estar activado).</Spanish>
   </TEXT>
 </Civ4GameText>

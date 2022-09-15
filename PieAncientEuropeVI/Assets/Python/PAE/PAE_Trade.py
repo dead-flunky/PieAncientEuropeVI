@@ -263,11 +263,13 @@ def doBuildTradeRoad(pUnit, pCity):
 								if pPlotTradeRoad != None:
 										pPlotTradeRoad.setRouteType(iRouteType)
 										if pBuyer.isHuman():
-												CyInterface().addMessage(iBuyer, True, 10, CyTranslator().getText("TXT_KEY_TRADE_ROUTE_BUILT", (pSeller.getName(), pSeller.getCivilizationShortDescriptionKey(), pCity.getName(), pCity2.getName())),
-																								 "AS2D_WELOVEKING", 2, "Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds", ColorTypes(10), pPlotTradeRoad.getX(), pPlotTradeRoad.getY(), True, True)
+												sMessage = CyTranslator().getText("TXT_KEY_TRADE_ROUTE_BUILT", (pSeller.getName(), pSeller.getCivilizationShortDescriptionKey(), pCity.getName(), pCity2.getName()))
+												CyInterface().addMessage(iBuyer, True, 10, sMessage, "AS2D_WELOVEKING", 2, "Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds", ColorTypes(10), pPlotTradeRoad.getX(), pPlotTradeRoad.getY(), True, True)
+												CvUtil.pyPrint(sMessage)
 										if pSeller.isHuman() and iBuyer != iSeller:
-												CyInterface().addMessage(iSeller, True, 10, CyTranslator().getText("TXT_KEY_TRADE_ROUTE_BUILT2", (pCity.getName(), pCity2.getName())), "AS2D_WELOVEKING",
-																								 2, "Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds", ColorTypes(10), pPlotTradeRoad.getX(), pPlotTradeRoad.getY(), True, True)
+												sMessage = CyTranslator().getText("TXT_KEY_TRADE_ROUTE_BUILT2", (pCity.getName(), pCity2.getName()))
+												CyInterface().addMessage(iSeller, True, 10, sMessage, "AS2D_WELOVEKING", 2, "Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds", ColorTypes(10), pPlotTradeRoad.getX(), pPlotTradeRoad.getY(), True, True)
+												CvUtil.pyPrint(sMessage)
 										if iBuyer != iSeller and iSeller == gc.getGame().getActivePlayer() or iBuyer == gc.getGame().getActivePlayer():
 												CyAudioGame().Play2DSound("AS2D_WELOVEKING")
 
@@ -291,8 +293,9 @@ def doBuildTradeRoad(pUnit, pCity):
 						if iAnz >= iMax:
 								pCity.setNumRealBuilding(iBuilding, 1)
 								if pCity.getOwner() == gc.getGame().getActivePlayer():
-										CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_TRADE_ROUTE_HANDELSZENTRUM", (pCity.getName(),)),
-																						 "AS2D_WELOVEKING", 2, gc.getBuildingInfo(iBuilding).getButton(), ColorTypes(10), pCity.getX(), pCity.getY(), True, True)
+										sMessage = CyTranslator().getText("TXT_KEY_TRADE_ROUTE_HANDELSZENTRUM", (pCity.getName(),))
+										CyInterface().addMessage(pCity.getOwner(), True, 10, sMessage, "AS2D_WELOVEKING", 2, gc.getBuildingInfo(iBuilding).getButton(), ColorTypes(10), pCity.getX(), pCity.getY(), True, True)
+										CvUtil.pyPrint(sMessage)
 
 # Gibt Plot zurueck, auf dem das naechste Handelsstrassen-Stueck entstehen soll bzw. ob die Strasse schon fertig ist. Von Pie.
 
@@ -1491,8 +1494,10 @@ def doUpdateCitiesWithSpecialBonus(iGameTurn):
 														pTeam = gc.getTeam(pPlayer.getTeam())
 														iActivePlayer = gc.getGame().getActivePlayer()
 														if pTeam.isHasMet(gc.getPlayer(iActivePlayer).getTeam()):
-																CyInterface().addMessage(iActivePlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_1",
-																																																				 (loopCity.getName(), gc.getBonusInfo(eBonus).getDescription())), None, 2, None, ColorTypes(13), 0, 0, False, False)
+																# Die Stadt % verlangt nicht mehr nach % und hat den Auftrag zurueckgezogen
+																sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_1", (loopCity.getName(), gc.getBonusInfo(eBonus).getDescription()))
+																CyInterface().addMessage(iActivePlayer, True, 10, sMessage, None, 2, None, ColorTypes(13), 0, 0, False, False)
+																CvUtil.pyPrint(sMessage)
 								(loopCity, pIter) = loopPlayer.nextCity(pIter, False)
 
 
@@ -1548,8 +1553,10 @@ def addCityWithSpecialBonus(iGameTurn):
 						pTeam = gc.getTeam(pPlayer.getTeam())
 						iActivePlayer = gc.getGame().getActivePlayer()
 						if pTeam.isHasMet(gc.getPlayer(iActivePlayer).getTeam()):
-								CyInterface().addMessage(iActivePlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_2",
-																																												 (pCity.getName(), gc.getBonusInfo(eBonus).getDescription())), None, 2, None, ColorTypes(11), 0, 0, False, False)
+								# Die Stadt %s1 bietet einen Sonderauftrag an und verlangt nach %s2.
+								sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_2", (pCity.getName(), gc.getBonusInfo(eBonus).getDescription()))
+								CyInterface().addMessage(iActivePlayer, True, 10, sMessage, None, 2, None, ColorTypes(11), 0, 0, False, False)
+								CvUtil.pyPrint(sMessage)
 						break
 				else:
 						iTry += 1
@@ -1570,9 +1577,15 @@ def _doCheckCitySpecialBonus(pUnit, pCity, eBonus):
 				iPlayer = pUnit.getOwner()
 				pPlayer = gc.getPlayer(iPlayer)
 				if iPlayer != gc.getGame().getActivePlayer():
-						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_3", (pPlayer.getName(),)), None, 2, None, ColorTypes(13), 0, 0, False, False)
+						# %s1 konnte einen Sonderauftrag einer Stadt abschließen.
+						sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_3", (pPlayer.getName(),))
+						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, sMessage, None, 2, None, ColorTypes(13), 0, 0, False, False)
+						CvUtil.pyPrint(sMessage)
 				else:
-						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_4", ("",)), "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
+						# Ihr konntet einen Spezialauftrag abschließen!
+						sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_4", ("",))
+						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, sMessage, "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
+						CvUtil.pyPrint(sMessage)
 
 				# Belohnungen
 				lGift = []
@@ -1678,9 +1691,12 @@ def _doCheckCitySpecialBonus(pUnit, pCity, eBonus):
 								pTeamMerchant.setResearchProgress(iTech, gc.getTechInfo(iTech).getResearchCost()-1, iPlayer)
 						pTeamMerchant.setHasTech(iTech, 1, iPlayer, 0, 1)
 						if pPlayer.isHuman():
+								# Gratulation! Voller Dankbarkeit wurdet Ihr mit dem Wissen "[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]" belohnt!
+								sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_POPUP_GETTING_TECH_2", (gc.getTechInfo(iTech).getDescription(), ))
+								CvUtil.pyPrint(sMessage)
 								popupInfo = CyPopupInfo()
 								popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-								popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_POPUP_GETTING_TECH_2", (gc.getTechInfo(iTech).getDescription(), )))
+								popupInfo.setText(sMessage)
 								popupInfo.addPopup(iPlayer)
 						else:
 								pPlayer.clearResearchQueue()
@@ -1705,12 +1721,18 @@ def _doCheckCitySpecialBonus(pUnit, pCity, eBonus):
 										iNewUnitAIType = UnitAITypes.UNITAI_ATTACK
 										# Message : Stadt schenkt Truppen
 										if pPlayer.isHuman():
-												CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_5", ("",)), "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
+												# Hoch erfreut schließen sich einige abenteuerlustige Einwohner Eurem großzügigen Reich an.
+												sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_5", ("",))
+												CvUtil.pyPrint(sMessage)
+												CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, sMessage, "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
 								else:
 										iNewUnitAIType = UnitAITypes.NO_UNITAI
 										# Message : Stadt schenkt Kostbarkeiten
 										if pPlayer.isHuman():
-												CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_6", ("",)), "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
+												# Voller Dankbarkeit übergibt Euch die Stadt % einige ihrer Kostbarkeiten.
+												sMessage = CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_SPECIAL_6", (pCity.getName(),))
+												CvUtil.pyPrint(sMessage)
+												CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, sMessage, "AS2D_WELOVEKING", 2, None, ColorTypes(13), 0, 0, False, False)
 								# Create unit
 								pPlayer.initUnit(iNewUnit, pCity.getX(), pCity.getY(), iNewUnitAIType, DirectionTypes.DIRECTION_SOUTH)
 
