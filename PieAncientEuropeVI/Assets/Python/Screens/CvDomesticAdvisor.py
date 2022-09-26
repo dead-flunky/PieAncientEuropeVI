@@ -322,7 +322,10 @@ class CvDomesticAdvisor:
 				screen.setTableInt("CityListBackground", 2, i, unicode(pLoopCity.getPopulation()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Cultivation status
-				text = u"%d/%d" % (PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,-1), PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)) # Limit bei CityStatus
+				iAnz1 = PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,0)
+				iAnz2 = PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)
+				text = u"%d/%d" % (iAnz1, iAnz2) # Limit bei CityStatus
+				if iAnz1 < iAnz2: text = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + text + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				#text = u"%d" % PAE_Cultivation.getCityCultivatedBonuses(pLoopCity, -1)
 				screen.setTableInt("CityListBackground", 3, i, text, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
@@ -758,6 +761,9 @@ class CvDomesticAdvisor:
 				screen.setTableText("CityListBackground", 1, i, szName, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Cultivation status
+				iAnz1 = PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,0)
+				iAnz2 = PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)
+				
 				j = 0
 				List = self.getBonuses()
 				for eBonus in List:
@@ -767,7 +773,10 @@ class CvDomesticAdvisor:
 						else:
 								PossiblePlots = PAE_Cultivation.getCityCultivatablePlots(pLoopCity, eBonus)
 								if len(PossiblePlots):
-										szText = localText.getText("TXT_KEY_COLOR_GRAY", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+										if iAnz1 < iAnz2:
+												szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+										else:
+												szText = localText.getText("TXT_KEY_COLOR_GRAY", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 								else:
 										szText = u""
 

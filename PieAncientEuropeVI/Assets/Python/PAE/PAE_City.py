@@ -9,6 +9,7 @@ from CvPythonExtensions import (CyGlobalContext, CyInterface,
 																isNationalWonderClass, InterfaceMessageTypes)
 # import CvEventInterface
 import CvUtil
+import random
 
 import PAE_Sklaven
 import PAE_Unit
@@ -1089,7 +1090,8 @@ def doEmigrant(pCity, pUnit):
 		iPlayerHC = pCity.findHighestCulture()
 		if iPlayerHC == -1:
 				iPlayerHC = pCity.getOwner()
-		iCulture = pPlot.getCulture(iPlayerHC) / (pCity.getPopulation()+1)
+		iCulture = pPlot.getCulture(iPlayerHC) / pCity.getPopulation()
+		if pCity.getPopulation() == 1: iCulture /= 2
 
 		# ***TEST***
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("PlayerHC",iPlayerHC)), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -1098,7 +1100,7 @@ def doEmigrant(pCity, pUnit):
 
 		# der Stadt Kultur nehmen und geben
 		if pPlot.getCulture(iPlayerHC) > iCulture:
-				pPlot.changeCulture(iPlayerHC, -iCulture, 1)
+				#pPlot.changeCulture(iPlayerHC, -iCulture, 1)
 				pPlot.changeCulture(iPlayerCulture, iCulture, 1)
 				# pUnit.doCommand(CommandTypes.COMMAND_DELETE, -1, -1)
 		pUnit.kill(True, -1)  # RAMK_CTD
@@ -1763,7 +1765,7 @@ def doUnitSupply(pCity, iPlayer):
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iCityUnits",iCityUnits)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iMaintainUnits",iMaintainUnits)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
-		# ab PAE Patch 3: nur HI
+		# ab PAE5 Patch 3: nur HI
 		# Handicap: 0 (Settler) - 8 (Deity) ; 5 = King
 		if gc.getGame().getHandicapType() < 5 or pPlayer.isHuman():
 				# choose units
@@ -1791,75 +1793,81 @@ def doUnitSupply(pCity, iPlayer):
 						if iMaintainUnits == 0:
 								break
 				numUnits = len(lUnitsAll)
-				if iMaintainUnits > 0 and numUnits > 0:
-						# harm units
-						lUnitIndex = CvUtil.shuffle(numUnits, gc.getGame().getSorenRand())[:iMaintainUnits]
 
-						# while len(lUnitIndex)<iMaintainUnits and iI < 3*numUnits:
-						# iI += 1
-						# iRand = CvUtil.myRandom(numUnits, "nextUnitSupply")
-						# if not iRand in lUnitIndex:
-						# lUnitIndex.append(iRand)
+				if iMaintainUnits <= 0 or numUnits <= 0:
+						return
 
-						# Betrifft Stadt
-						# 20%: -1 Pop
-						# 10%: FEATURE_SEUCHE
-						iRand = CvUtil.myRandom(10, "seuche")
-						# - 1 Pop
-						if iRand < 2 and popCity > 1:
-								pCity.changePopulation(-1)
-								# bCheckCityState = True
-								if pPlayer.isHuman():
-										CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_2", (pCity.getName(), (pCity.getYieldRate(
-												0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
-						# Seuche
-						elif iRand == 2:
-								pCityPlot.setFeatureType(gc.getInfoTypeForString("FEATURE_SEUCHE"), 1)
-								if pPlayer.isHuman():
-										CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_3", (pCity.getName(), (pCity.getYieldRate(
-												0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
-						# less food
-						elif pCity.getFood() > 10:
-								# Warnung und -20% Food Storage
-								iFoodStoreChange = pCity.getFood() / 100 * 20
-								pCity.changeFood(-iFoodStoreChange)
-								if pPlayer.isHuman():
-										CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_1", (pCity.getName(), (pCity.getYieldRate(
-												0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
-						# ------
+				# harm units
+				#lUnitIndex = CvUtil.shuffle(numUnits, gc.getGame().getSorenRand())[:iMaintainUnits]
 
-						# Betrifft Einheiten
-						iJumpedOut = 0
-						for iI in lUnitIndex:
-								pUnit = lUnitsAll[iI]
-								# Unit nicht mehr killen (Weihnachtsbonus :D ab 7.12.2012)
-								iDamage = pUnit.getDamage()
-								if iDamage < 70:
-										pUnit.changeDamage(30, False)
-										if gc.getPlayer(pUnit.getOwner()).isHuman():
-												CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_CITY",
-																																																	 (pCity.getName(), pUnit.getName(), 30)), None, 2, None, ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
-								else:
-										iJumpedOut += 1
-										if pUnit.getDamage() < 85:
-												pUnit.setDamage(85, pUnit.getOwner())
+				# Shuffle List
+				random.shuffle(lUnitsAll)
+
+				# while len(lUnitIndex)<iMaintainUnits and iI < 3*numUnits:
+				# iI += 1
+				# iRand = CvUtil.myRandom(numUnits, "nextUnitSupply")
+				# if not iRand in lUnitIndex:
+				# lUnitIndex.append(iRand)
+
+				# Betrifft Stadt
+				# 20%: -1 Pop
+				# 10%: FEATURE_SEUCHE
+				iRand = CvUtil.myRandom(10, "seuche")
+				# - 1 Pop
+				if iRand < 2 and popCity > 1:
+						pCity.changePopulation(-1)
+						# bCheckCityState = True
+						if pPlayer.isHuman():
+								CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_2", (pCity.getName(), (pCity.getYieldRate(
+										0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+				# Seuche
+				elif iRand == 2:
+						pCityPlot.setFeatureType(gc.getInfoTypeForString("FEATURE_SEUCHE"), 1)
+						if pPlayer.isHuman():
+								CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_3", (pCity.getName(), (pCity.getYieldRate(
+										0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+				# less food
+				elif pCity.getFood() > 10:
+						# Warnung und -20% Food Storage
+						iFoodStoreChange = pCity.getFood() / 100 * 20
+						pCity.changeFood(-iFoodStoreChange)
+						if pPlayer.isHuman():
+								CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_1", (pCity.getName(), (pCity.getYieldRate(
+										0) * iFactor - iCityUnits)*(-1))), None, 2, "Art/Interface/Buttons/General/button_alert_new.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+				# ------
+
+				# Betrifft Einheiten
+				iJumpedOut = 0
+				for iI in range(iMaintainUnits):
+						pUnit = lUnitsAll[iI]
+						# Unit nicht mehr killen (Weihnachtsbonus :D ab 7.12.2012)
+						iDamage = pUnit.getDamage()
+						if iDamage < 70:
+								pUnit.changeDamage(30, False)
+								if gc.getPlayer(pUnit.getOwner()).isHuman():
+										CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_CITY",
+																																															 (pCity.getName(), pUnit.getName(), 30)), None, 2, None, ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
+						else:
+								iJumpedOut += 1
+								if pUnit.getDamage() < 85:
+										pUnit.setDamage(85, pUnit.getOwner())
+								pUnit.jumpToNearestValidPlot()
+								if gc.getPlayer(pUnit.getOwner()).isHuman():
+										CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
+																																															 (pCity.getName(), pUnit.getName())), None, 2, pUnit.getButton(), ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
+
+				# Wenn die Stadt durch Buildings stark heilt
+				if iJumpedOut == 0:
+						# Chance rauszuwerfen 33%
+						if CvUtil.myRandom(3, "toomany1") == 1:
+								iAnzahl = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
+								#lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:iAnzahl]
+								for iI in range(iAnzahl):
+										pUnit = lUnitsAll[iI]
 										pUnit.jumpToNearestValidPlot()
-										if gc.getPlayer(pUnit.getOwner()).isHuman():
-												CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
-																																																	 (pCity.getName(), pUnit.getName())), None, 2, pUnit.getButton(), ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
-
-						# Wenn die Stadt durch Buildings stark heilt
-						if iJumpedOut == 0:
-								# Chance rauszuwerfen 33%
-								if CvUtil.myRandom(3, "toomany1") == 1:
-										Einheiten = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
-										lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:Einheiten]
-										for iI in lUnitIndex2:
-												pUnit = lUnitsAll[lUnitIndex2]
-												pUnit.jumpToNearestValidPlot()
-												if pPlayer.isHuman():
-														CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
-																																																				(pCity.getName(), pUnit.getName())), "AS2D_STRIKE", 2, pUnit.getButton(), ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
+										if pPlayer.isHuman():
+												CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
+																																																		(pCity.getName(), pUnit.getName())), "AS2D_STRIKE", 2, pUnit.getButton(), ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 
 
 def doJewRevolt(pCity):
@@ -2186,16 +2194,20 @@ def removeCivicBuilding(pCity):
 				if not pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_BERUFSARMEE")):
 						if CvUtil.myRandom(10, "removeCivicBuilding") == 1:
 								pCity.setNumRealBuilding(building, 0)
-								szText = "TXT_KEY_MESSAGE_CITY_CIVIC_BARRACKS"
 								# Meldung
 								if pPlayer.isHuman():
 										# Dies soll doppelte Popups in PB-Spielen vermeiden.
 										if iPlayer == gc.getGame().getActivePlayer():
-												CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(szText, (pCity.getName(), )), None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+												szText = CyTranslator().getText("TXT_KEY_MESSAGE_CITY_CIVIC_BARRACKS", (pCity.getName(), ))
+												# Ingame Message
+												CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+												# PopUp
 												popupInfo = CyPopupInfo()
 												popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-												popupInfo.setText(CyTranslator().getText(szText, (pCity.getName(), )))
+												popupInfo.setText(szText)
 												popupInfo.addPopup(iPlayer)
+												# Log
+												CvUtil.pyPrint(szText)
 								return
 
 
@@ -2236,12 +2248,16 @@ def removeNoBonusNoBuilding(pCity):
 								if pPlayer.isHuman():
 										# Dies soll doppelte Popups in PB-Spielen vermeiden.
 										if iPlayer == gc.getGame().getActivePlayer():
-												CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(
-														building).getDescription())), None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+												szText = CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription()))
+												# Ingame Message
+												CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+												# Pop up
 												popupInfo = CyPopupInfo()
 												popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-												popupInfo.setText(CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription())))
+												popupInfo.setText(szText)
 												popupInfo.addPopup(iPlayer)
+												# Log
+												CvUtil.pyPrint(szText)
 								return
 
 		lBuildings = [
@@ -2268,12 +2284,16 @@ def removeNoBonusNoBuilding(pCity):
 										if pPlayer.isHuman():
 												# Dies soll doppelte Popups in PB-Spielen vermeiden.
 												if iPlayer == gc.getGame().getActivePlayer():
-														CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_3", (pCity.getName(), "", gc.getBuildingInfo(
-																building).getDescription())), None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														szText = CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_3", (pCity.getName(), "", gc.getBuildingInfo(building).getDescription()))
+														# Ingame message
+														CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														# Pop Up
 														popupInfo = CyPopupInfo()
 														popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-														popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_3", (pCity.getName(), "", gc.getBuildingInfo(building).getDescription())))
+														popupInfo.setText(szText)
 														popupInfo.addPopup(iPlayer)
+														# Log
+														CvUtil.pyPrint(szText)
 										return
 
 		# Resourcen, die im Handelsnetz sein muessen
@@ -2282,7 +2302,9 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_SCHMIEDE_MESSING"),
 				gc.getInfoTypeForString("BUILDING_GOLDSCHMIED"),
 				gc.getInfoTypeForString("BUILDING_JUWELIER"),
-				gc.getInfoTypeForString("BUILDING_BILDHAUER")
+				gc.getInfoTypeForString("BUILDING_BILDHAUER"),
+				gc.getInfoTypeForString("BUILDING_GUSS_IRON"),
+				gc.getInfoTypeForString("BUILDING_FORGE")
 		]
 		if bLager:
 				iRand = 30
@@ -2297,13 +2319,17 @@ def removeNoBonusNoBuilding(pCity):
 										# Meldung
 										if pPlayer.isHuman():
 												if iPlayer == gc.getGame().getActivePlayer():
-														CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_1", (pCity.getName(), gc.getBonusInfo(bonus).getDescription(),
-																																																																						gc.getBuildingInfo(building).getDescription())), None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														# In %s1_city wurde durch das Fehlen der Bonusresource %s2_resource das Gebäude %s3_building abgebaut.
+														szText = CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_1", (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription()))
+														# Ingame message
+														CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														# Pop up
 														popupInfo = CyPopupInfo()
 														popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-														popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_1", (pCity.getName(),
-																							gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription())))
+														popupInfo.setText(szText)
 														popupInfo.addPopup(iPlayer)
+														# Log
+														CvUtil.pyPrint(szText)
 										return
 
 		# Resourcen, die im Stadtkreis sein muessen
@@ -2322,8 +2348,7 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_GUSS_BLEI"),
 				gc.getInfoTypeForString("BUILDING_GUSS_COPPER"),
 				gc.getInfoTypeForString("BUILDING_GUSS_ZINN"),
-				gc.getInfoTypeForString("BUILDING_GUSS_ZINK"),
-				gc.getInfoTypeForString("BUILDING_GUSS_IRON")
+				gc.getInfoTypeForString("BUILDING_GUSS_ZINK")
 		]
 		# Buildings mit 3x3 Radius
 		lBuildings3 = [
@@ -2347,17 +2372,24 @@ def removeNoBonusNoBuilding(pCity):
 												# Dies soll doppelte Popups in PB-Spielen vermeiden.
 												if iPlayer == gc.getGame().getActivePlayer():
 														if building in lBuildings2:
+																# In %s1_city wurde durch das Fehlen der Rohstoffe von %s2_resource das Gebäude %s3_building abgebaut
 																szText = "TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_5"
 														elif building in lBuildings3:
+																# In %s1 wurde auf Grund fehlender Güter das Gebäude %s3 abgebaut.
 																szText = "TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_4"
 														else:
+																# In %s1_city wurde durch das Fehlen der Bonusresource %s2_resource das Gebäude %s3_building abgebaut.
 																szText = "TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_1"
-														CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(
-																building).getDescription())), None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														szText = CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription()))
+														# Ingame message
+														CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, gc.getBuildingInfo(building).getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+														# Pop up
 														popupInfo = CyPopupInfo()
 														popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-														popupInfo.setText(CyTranslator().getText(szText, (pCity.getName(), gc.getBonusInfo(bonus).getDescription(), gc.getBuildingInfo(building).getDescription())))
+														popupInfo.setText(szText)
 														popupInfo.addPopup(iPlayer)
+														# Log
+														CvUtil.pyPrint(szText)
 										return
 
 
@@ -2516,7 +2548,7 @@ def doEmigrantSpawn(pCity):
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
 		popCity = pCity.getPopulation()
-		popNeu = max(1, popCity - 2)
+		popNeu = max(1, popCity - 1)
 		text = ""
 		bRevoltDanger = False
 		iChance = 4

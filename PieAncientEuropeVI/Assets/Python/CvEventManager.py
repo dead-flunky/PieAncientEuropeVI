@@ -3001,14 +3001,16 @@ class CvEventManager:
 												# ***TEST***
 												#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Rebell holt sich Bausklaven zu sich (Zeile 1947)",1)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 								if not bWinnerIsDead:
-										# pWinner may get bonus experience etc, if pLoser is not being domesticated and pLoser is not Treibgut
-										# ------- Feature 1: Generalseinheiten bekommen +1XP, wenn im selben Stack eine angreifende Einheit siegt (10%)
-										# ------- Feature 2: Eine Generalseinheit bekommt HERO Promotion wenn eine Einheit einen General oder einen Held besiegt.
-										# ------------------ Ist kein General im Stack bekommt die Promotion die Gewinner-Unit
-										# ------------------ Und Gewinner bekommt additional +3 XP
-										iPromoHero = gc.getInfoTypeForString("PROMOTION_HERO")
+
 										# ------- Diese Features betreffen nur attackierende Einheiten (keine defensiven)
 										if pWinner.isMadeAttack() and not bWinnerAnimal and pWinner.getUnitAIType() != UnitAITypes.UNITAI_EXPLORE:
+
+												# pWinner may get bonus experience etc, if pLoser is not being domesticated and pLoser is not Treibgut
+												# ------- Feature 1: Generalseinheiten bekommen +1XP, wenn im selben Stack eine angreifende Einheit siegt (10%)
+												# ------- Feature 2: Eine Generalseinheit bekommt HERO Promotion wenn eine Einheit einen General oder einen Held besiegt.
+												# ------------------ Ist kein General im Stack bekommt die Promotion die Gewinner-Unit
+												# ------------------ Und Gewinner bekommt additional +3 XP
+												iPromoHero = gc.getInfoTypeForString("PROMOTION_HERO")
 												iPromoLeader = gc.getInfoTypeForString("PROMOTION_LEADER")
 												bPromoHero = False
 												bPromoHeroDone = False
@@ -3018,10 +3020,11 @@ class CvEventManager:
 														bPromoHeroDone = PAE_Unit.doUnitGetsHero(pWinner, pLoser)
 												# for each general who accompanies the stack: +1 XP
 												# one general gets the hero promo, if not possessing
-												bLeaderAnwesend = PAE_Unit.getExperienceForLeader(pWinner, pLoser, bPromoHero and not bPromoHeroDone)
-												# Eine Einheit mit Mercenary-Promo kann diese verlieren, wenn ein General im Stack ist (5% Chance)
-												if bLeaderAnwesend:
-														PAE_Unit.removeMercenaryPromo(pWinner)
+												PAE_Unit.getExperienceForLeader(pWinner, pLoser, bPromoHero and not bPromoHeroDone)
+
+												# Eine Einheit mit Mercenary-Promo kann diese verlieren
+												PAE_Unit.removeMercenaryPromo(pWinner)
+
 										# end if pWinner.isMadeAttack
 
 										if bLoserAnimal:

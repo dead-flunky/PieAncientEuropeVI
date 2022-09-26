@@ -201,18 +201,22 @@ def doBuildTradeRoad(pUnit, pCity):
 		# if not gc.getTeam(pBuyer.getTeam()).isHasTech(iTech) or not gc.getTeam(pSeller.getTeam()).isHasTech(iTech): return
 
 		# Chance
-		if pBuyer.hasBonus(eBonus):
-				iChance = 10
-		else:
-				iChance = 20
+		#if pBuyer.hasBonus(eBonus):
+
 		# wenn die Stadt den Bonus bereits hat
 		if CvUtil.hasBonusIgnoreFreeBonuses(pCity, eBonus):
-				iChance -= 10
-		# Better resources increase chance
-		if eBonus in L.LBonusLuxury:
-				iChance += 15
-		elif eBonus in L.LBonusRarity:
-				iChance += 30
+				iChance = 10
+		else:
+				# Better resources increase chance
+				if eBonus in L.LBonusLuxury:
+						iChance = 30
+				elif eBonus in L.LBonusRarity:
+						iChance = 40
+				elif eBonus in L.LBonusStrategic:
+						iChance = 50
+				else:
+						iChance = 20
+						
 
 		iRand = CvUtil.myRandom(100, "Handelsstrasse")
 		# Debug

@@ -197,6 +197,11 @@
       <Civilopedia>TXT_KEY_CONCEPT_UNITCOST_PEDIA</Civilopedia>
     </ConceptInfo>
     <ConceptInfo>
+      <Type>CONCEPT_UNIT_BUILDING_PROMO</Type>
+      <Description>TXT_KEY_CONCEPT_BUILDING_PROMO</Description>
+      <Civilopedia>TXT_KEY_CONCEPT_BUILDING_PROMO_PEDIA</Civilopedia>
+    </ConceptInfo>
+    <ConceptInfo>
       <Type>CONCEPT_UNIT_RANKING</Type>
       <Description>TXT_KEY_CONCEPT_UNIT_RANKING</Description>
       <Civilopedia>TXT_KEY_CONCEPT_UNIT_RANKING_PEDIA</Civilopedia>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
   <TEXT>
+    <Tag>TXT_KEY_CONCEPT_BUILDING_PROMO</Tag>
+    <English>Units-Training Centers</English>
+    <French>Unit&#233;s-Camps d'Entra&#238;nements</French>
+    <German>Einheiten-Ausbildungsst&#228;tten</German>
+    <Italian>Unit&#224;-Centri di Addestramento</Italian>
+    <Spanish>Unidades-Centros de Entrenamiento</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_PEDIA_CATEGORY_CONCEPT_PAE</Tag>
     <English>PAE Game Concepts</English>
     <French>Concepts de PAE</French>

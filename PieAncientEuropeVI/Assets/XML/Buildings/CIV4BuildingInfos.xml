@@ -117,7 +117,7 @@
 			<iDefense>10</iDefense>
 			<iBombardDefense>0</iBombardDefense>
 			<iAllCityDefense>0</iAllCityDefense>
-			<iEspionageDefense>20</iEspionageDefense>
+			<iEspionageDefense>0</iEspionageDefense>
 			<iAsset>0</iAsset>
 			<iPower>0</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
@@ -279,7 +279,7 @@
 			<iDefense>10</iDefense>
 			<iBombardDefense>0</iBombardDefense>
 			<iAllCityDefense>0</iAllCityDefense>
-			<iEspionageDefense>20</iEspionageDefense>
+			<iEspionageDefense>0</iEspionageDefense>
 			<iAsset>0</iAsset>
 			<iPower>0</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
@@ -14814,6 +14814,7 @@
 			<Description>TXT_KEY_BUILDING_GUSS_IRON</Description>
 			<Civilopedia>TXT_KEY_TECH_METAL_CASTING_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_GUSS_IRON_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_IRON</ArtDefineTag>
 			<MovieDefineTag/>

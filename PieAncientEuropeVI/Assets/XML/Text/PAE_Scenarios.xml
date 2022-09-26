@@ -3579,28 +3579,28 @@
     <Spanish>elmyre</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_SCENARIO_EURASIA_XXXL_RANDOM</Tag>
-    <English>The largest possible Eurasia map (205x120 tiles). Random starting locations and resources.[NEWLINE][NEWLINE]by brettschmitt</English>
-    <French>La plus grande carte Eurasie possible (205x120). Les positions de d&#233;part et les ressources sont al&#233;atoires.[NEWLINE][NEWLINE]by brettschmitt</French>
-    <German>Die gr&#246;&#223;tm&#246;gliche Eurasia Karte (205x120 Felder). Startpositionen und Ressourcen zuf&#228;llig.[NEWLINE][NEWLINE]by brettschmitt</German>
-    <Italian>La carta Eurasia pi&#249; grande possibile (205x120 grafici). Le posizioni di partenza e le risorse sono casuali.[NEWLINE][NEWLINE]by brettschmitt</Italian>
-    <Spanish>La carta de Eurasia m&#225;s grande posible (205x120 azulejos). Las posiciones iniciales y los recursos son aleatorios.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
+    <Tag>TXT_KEY_FREE</Tag>
+    <English></English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_SCENARIO_EURASIA_XXXL</Tag>
-    <English>The largest possible Eurasia map (205x120 tiles). Random starting locations.[NEWLINE][NEWLINE]by brettschmitt</English>
-    <French>La plus grande carte Eurasie possible (205x120). Les positions de d&#233;part sont al&#233;atoires.[NEWLINE][NEWLINE]by brettschmitt</French>
-    <German>Die gr&#246;&#223;tm&#246;gliche Eurasia Karte (205x120 Felder). Startpositionen zuf&#228;llig.[NEWLINE][NEWLINE]by brettschmitt</German>
-    <Italian>La carta Eurasia pi&#249; grande possibile (205x120 grafici). Le posizioni di partenza sono casuali.[NEWLINE][NEWLINE]by brettschmitt</Italian>
-    <Spanish>La carta de Eurasia m&#225;s grande posible (205x120 azulejos). Las posiciones iniciales son aleatorios.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
+    <Tag>TXT_KEY_FREE</Tag>
+    <English></English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_SCENARIO_EURASIA_XXL</Tag>
-    <English>A huge Eurasia map (170x100 tiles). Random starting locations.[NEWLINE][NEWLINE]by brettschmitt</English>
-    <French>Carte immense (170x100). Les positions de d&#233;part sont al&#233;atoires.[NEWLINE][NEWLINE]by brettschmitt</French>
-    <German>Eine sehr gro&#223;e Eurasia Karte (170x100 Felder). Startpositionen zuf&#228;llig.[NEWLINE][NEWLINE]by brettschmitt</German>
-    <Italian>Un mapa muy grande de Eurasia (170x100 grafici). Le posizioni di partenza sono casuali.[NEWLINE][NEWLINE]by brettschmitt</Italian>
-    <Spanish>Un enorme mapa de Eurasia (170x100 azulejos). Las posiciones iniciales son aleatorios.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
+    <Tag>TXT_KEY_FREE</Tag>
+    <English></English>
+    <French></French>
+    <German></German>
+    <Italian></Italian>
+    <Spanish></Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCENARIO_EURASIA_XL</Tag>

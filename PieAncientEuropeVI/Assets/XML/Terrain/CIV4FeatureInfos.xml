@@ -248,9 +248,9 @@
 			<Civilopedia>TXT_KEY_FEATURE_SAVANNA_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_SAVANNA</ArtDefineTag>
 			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>0</iYieldChange>
-				<iYieldChange>0</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -494,7 +494,7 @@
 			<Civilopedia>TXT_KEY_FEATURE_DICHTERWALD_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_DICHTERWALD</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>-1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 				<iYieldChange>2</iYieldChange>
 				<iYieldChange>0</iYieldChange>
 			</YieldChanges>

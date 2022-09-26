@@ -25,7 +25,7 @@ gc = CyGlobalContext()
 # [PlayerID, UnitID]
 PAEInstanceFightingModifier = []
 
-
+# Naval unit movement
 def onUnitMoveOnSea(pUnit):
 		pPlot = pUnit.plot()
 		# ------ Seewind -----
@@ -73,7 +73,7 @@ def onUnitMoveOnSea(pUnit):
 		# ------ Verletzte Schiffe
 		iDamage = pUnit.getDamage()
 		if iDamage > 10:
-				pUnit.changeMoves(iDamage/2)
+				pUnit.changeMoves(iDamage/3)
 		# Beladene Schiffe (nicht mehr ab Patch 4)
 		#iCargo = pUnit.getCargo()
 		# if iCargo > 0:
@@ -2062,17 +2062,38 @@ def getExperienceForLeader(pWinner, pLoser, bPromoHero):
 																CyInterface().addMessage(iWinnerPlayer, True, 10, txtPopUpHero, "AS2D_WELOVEKING", 2, pLoopUnit.getButton(), ColorTypes(8), pWinner.getX(), pWinner.getY(), True, True)
 		return bLeaderAnwesend
 
+def isLeaderAnwesend(iPlayer,pPlot):
+		iPromo = gc.getInfoTypeForString("PROMOTION_LEADER")
+		iNumUnits = pPlot.getNumUnits()
+		for i in range(iNumUnits):
+				pLoopUnit = pPlot.getUnit(i)
+				if pLoopUnit.getOwner() == iPlayer and pLoopUnit.isHasPromotion(iPromo):
+						return True
+		return False
+
+def isHeroAnwesend(iPlayer,pPlot):
+		iPromo = gc.getInfoTypeForString("PROMOTION_HERO")
+		iNumUnits = pPlot.getNumUnits()
+		for i in range(iNumUnits):
+				pLoopUnit = pPlot.getUnit(i)
+				if pLoopUnit.getOwner() == iPlayer and pLoopUnit.isHasPromotion(iPromo):
+						return True
+		return False
 
 def removeMercenaryPromo(pWinner):
-		iWinnerPlayer = pWinner.getOwner()
-		pWinnerPlayer = gc.getPlayer(iWinnerPlayer)
-		iPromoMercenary = gc.getInfoTypeForString("PROMOTION_MERCENARY")
-		if pWinner.isHasPromotion(iPromoMercenary):
-				if CvUtil.myRandom(20, "PROMOTION_MERCENARY") == 0:
-						pWinner.setHasPromotion(iPromoMercenary, False)
-						if pWinnerPlayer.isHuman():
-								CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_HERO_6", (pWinner.getName(),)),
-																				 "AS2D_WELOVEKING", 2, pWinner.getButton(), ColorTypes(8), pWinner.getX(), pWinner.getY(), True, True)
+		iPlayer = pWinner.getOwner()
+		pPlayer = gc.getPlayer(iPlayer)
+		iPromo = gc.getInfoTypeForString("PROMOTION_MERCENARY")
+		if pWinner.isHasPromotion(iPromo):
+				iChance = 2
+				if isLeaderAnwesend(iPlayer,pWinner.plot()) or isHeroAnwesend(iPlayer,pWinner.plot()):
+						iChance = 5
+				
+				if iChance > CvUtil.myRandom(10, "removing Mercenary promo"):
+						pWinner.setHasPromotion(iPromo, False)
+						if pPlayer.isHuman():
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_HERO_6", (pWinner.getName(),)),
+								"AS2D_WELOVEKING", 2, pWinner.getButton(), ColorTypes(8), pWinner.getX(), pWinner.getY(), True, True)
 
 
 def doHunterHero(pWinner, pLoser):

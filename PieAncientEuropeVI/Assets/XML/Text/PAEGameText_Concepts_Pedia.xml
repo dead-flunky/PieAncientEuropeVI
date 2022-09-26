@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
   <TEXT>
+    <Tag>TXT_KEY_CONCEPT_BUILDING_PROMO_PEDIA</Tag>
+    <English>There are 9 types of promotions that bring an advantage to a specific terrain or situation: Desert Combat, Swamp Combat, Forest Combat, Jungle Combat, Hill Combat, City Defense, City Attack, Sea Warfare, and Pillage.[NEWLINE][NEWLINE]Once a unit has reached level 5 of such a promotion, it can build a Training Center in a city. All units created in that city will then automatically receive level 1 of this promotion. The level 5 unit obtains this building as a trainer and is therefore consumed.</English>
+    <French>Il existe 9 types de promotions qui apportent un avantage &#224; un terrain ou &#224; une situation sp&#233;cifique : Bataille du D&#233;sert, Bataille des Marais, Bataille de la For&#234;t, Bataille de la Jungle, Bataille des Collines, D&#233;fense de la Ville, Attaque de la Ville, Guerre Maritime et Pillage.[NEWLINE][NEWLINE]Une fois qu'une unit&#233; a atteint le niveau 5 d'une telle promotion, elle peut construire un Camp d'Entra&#238;nement dans une ville. Toutes les unit&#233;s cr&#233;&#233;es dans cette ville recevront alors automatiquement le niveau 1 de cette promotion. L'unit&#233; de niveau 5 obtient ce b&#226;timent en tant que formateur et est donc consomm&#233;e.</French>
+    <German>Es gibt 9 Arten von Bef&#246;rderungen, die einem bestimmten Gel&#228;nde oder einer bestimmten Situation einen Vorteil bringen: W&#252;stenkampf, Sumpfkampf, Waldkampf, Dschungelkampf, H&#252;gelkampf, Stadtverteidigung, Stadtangriff, Seekrieg und Brandschatzen.[NEWLINE][NEWLINE]Sobald eine Einheit Stufe 5 einer solchen Bef&#246;rderung erreicht hat, kann sie in einer Stadt eine Ausbildungsst&#228;tte errichten. Alle Einheiten, die in dieser Stadt erstellt werden, erhalten dann automatisch Stufe 1 dieser Bef&#246;rderung. Die Stufe 5-Einheit bezieht dieses Geb&#228;ude als Ausbildner und wird daher verbraucht.</German>
+    <Italian>Ci sono 9 tipi di promozioni che portano un vantaggio su un terreno o una situazione specifica: Battaglia nel Deserto, Battaglia nella Palude, Battaglia nella Foresta, Battaglia nella Giungla, Battaglia in Collina, Difesa della Citt&#224;, Attacco in Citt&#224;, Guerra in Mare e Saccheggio.[NEWLINE][NEWLINE]Una volta che un'unit&#224; ha raggiunto il livello 5 di tale promozione, pu&#242; costruire una Centro di Addestramento in una citt&#224;. Tutte le unit&#224; create in quella citt&#224; riceveranno automaticamente il livello 1 di questa promozione. L'unit&#224; di livello 5 ottiene questo edificio come allenatore e viene quindi consumata.</Italian>
+    <Spanish>Hay 9 tipos de promociones que otorgan una ventaja a un terreno o situaci&#243;n espec&#237;ficos: Batalla del Desierto, Batalla del Pantano, Batalla del Bosque, Batalla de la Jungla, Batalla de la Colina, Defensa de la Ciudad, Ataque de la Ciudad, Guerra Mar&#237;tima y Pillaje.[NEWLINE][NEWLINE]Una vez que una unidad alcanza el nivel 5 de dicha promoci&#243;n, puede construir un Centro de Entrenamiento en una ciudad. Todas las unidades creadas en esa ciudad recibir&#225;n autom&#225;ticamente el nivel 1 de esta promoci&#243;n. La unidad de nivel 5 obtiene este edificio como entrenador y por lo tanto se consume.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CONCEPT_PAE_TECHS_PEDIA</Tag>
     <English>
 [H1]Technologies[\H1]
@@ -7514,7 +7522,7 @@ D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for ea
 
 2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
 
-3) +1 Gold wagon 
+3) +2 Gold wagon 
 
 [H2]History[\H2]
 The Olympiad begins 776 BC. The first year consists of the Olympic Games in Olympia, the second year the Pythian Games in Delphi, the third year the Nemean Games in Nemea and the fourth year the Isthmic Games in Corinth. After that, a new Olympiad starts again with the Olympics in Olympia.
@@ -7567,7 +7575,7 @@ D) Dans le cas d'un Stade pr&#233;sent dans chacune des 10 villes participantes,
 
 2.) Si la ville avait un Stade lors de sa victoire, celui-ci g&#233;n&#233;rera perp&#233;tuellement +1 [ICON_CULTURE]
 
-3) +1 chariot de butin
+3) +2 chariot de butin
 
 [H2]Et dans l'Histoire...[\H2]
 
@@ -7582,12 +7590,12 @@ A partir de 393 ap. J-C et l'interdiction de toute c&#233;r&#233;monie pa&#239;e
 
 Das Projekt Panhellenische Spiele startet eine Olympiade, die alle 4 Runden stattfindet.
 
-Alle St&#228;dte mit dem Glauben an Griechische G&#246;tter nehmen daran teil. Hat ein Spieler die Technologie Imperialismus erforscht, nehmen auch seine St&#228;dte mit dem Glauben an R&#246;mische G&#246;tter teil.
+Alle St&#228;dte mit dem Glauben an Griechische G&#246;tter nehmen daran teil. Hat ein Spieler die Technologie Imperialismus erforscht, nehmen auch dessen St&#228;dte mit dem Glauben an R&#246;mischen G&#246;ttern teil.
 
 
 [H2]Voraussetzungen:[\H2]
 
-1.) mind. 2 Civs
+1.) mindestens 2 Zivilisationen
 
 2.) Glaube an Griechische G&#246;tter muss in der Stadt vorhanden sein
 
@@ -7596,7 +7604,7 @@ Alle St&#228;dte mit dem Glauben an Griechische G&#246;tter nehmen daran teil. H
 
 [H2]Berechnung (alle 4 Runden):[\H2]
 
-1.) Glaube an Griechische G&#246;tter (oder R&#246;mische G&#246;tter mit Imperialismus) vorhanden: 1 Ticket
+1.) Glaube an Griechische G&#246;tter (oder R&#246;mische G&#246;tter ab Imperialismus) vorhanden: 1 Ticket
 
 2.) Besitzt die Stadt ein Stadion: +1 Ticket
 
@@ -7621,7 +7629,7 @@ D) Besitzen alle 10 teilnehmenden St&#228;dte ein Stadion, ist die Ticketanzahl 
 
 2.) Falls ein Stadion in der Stadt vorhanden ist, bekommt es dauerhaft +1 [ICON_CULTURE]
 
-3) +1 Goldkarren 
+3) +2 Goldkarren 
 
 [H2]Geschichtliches[\H2]
 Die Olympiade beginnt mit den Olympischen Spielen 776 v. Chr. und besteht im ersten Jahr aus den Olympischen Spielen in Olympia, im zweiten Jahr den Pythischen Spielen in Delphi, dem dritten Jahr den Nemeischen Spielen in Nemea und im vierten Jahr aus den Isthmischen Spielen in Korinth. Danach beginnt eine neue Olympiade wieder mit den Olympischen Spielen in Olympia.
@@ -7674,7 +7682,7 @@ D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for ea
 
 2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
 
-3) +1 Gold wagon 
+3) +2 Gold wagon 
 
 [H2]History[\H2]
 The Olympiad begins 776 BC. The first year consists of the Olympic Games in Olympia, the second year the Pythian Games in Delphi, the third year the Nemean Games in Nemea and the fourth year the Isthmic Games in Corinth. After that, a new Olympiad starts again with the Olympics in Olympia.
@@ -7727,7 +7735,7 @@ D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for ea
 
 2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
 
-3) +1 Gold wagon 
+3) +2 Gold wagon 
 
 [H2]History[\H2]
 The Olympiad begins 776 BC. The first year consists of the Olympic Games in Olympia, the second year the Pythian Games in Delphi, the third year the Nemean Games in Nemea and the fourth year the Isthmic Games in Corinth. After that, a new Olympiad starts again with the Olympics in Olympia.

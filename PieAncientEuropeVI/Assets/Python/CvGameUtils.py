@@ -673,8 +673,10 @@ class CvGameUtils:
 
 				# PAE Emigrants
 				if eUnit == gc.getInfoTypeForString("UNIT_EMIGRANT"):
-						if pCity.goodHealth() - pCity.badHealth(False) <= 0 and pCity.happyLevel() - pCity.unhappyLevel(0) <= 0:
-							return True
+						if pCity.getPopulation() < 6:
+								return True
+						if pCity.goodHealth() - pCity.badHealth(False) > 0 and pCity.happyLevel() - pCity.unhappyLevel(0) > 0:
+								return True
 
 				return False
 
@@ -774,33 +776,42 @@ class CvGameUtils:
 				# Buildings, die pro Ressource baubar sind
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_SCHMIEDE_BRONZE"):
 						pPlayer = gc.getPlayer(pCity.getOwner())
-						# iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE"))
+						#iAnzB = pPlayer.getBuildingClassCountPlusMaking(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE")) => BTS Befehl funkt nicht richtig (Gebäude wird ständig unterbrochen)
 						iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE"))
-						iAnz1 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
-						iAnz2 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COAL"))
-						iAnz2 += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_ZINN"))
+						iAnz1 = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
+						iAnz2 = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_COAL"))
+						iAnz2 += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_ZINN"))
 						iCheck = min(iAnz1, iAnz2)
-						if iCheck == 0 or iAnzB > iCheck:
+						if iCheck == 0 or iAnzB >= iCheck:
 								return True
 
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_SCHMIEDE_MESSING"):
 						pPlayer = gc.getPlayer(pCity.getOwner())
 						iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_MESSING"))
-						iAnz1 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
-						iAnz2 = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_ZINK"))
+						iAnz1 = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_COPPER"))
+						iAnz2 = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_ZINK"))
 						iCheck = min(iAnz1, iAnz2)
-						if iCheck == 0 or iAnzB > iCheck:
+						if iCheck == 0 or iAnzB >= iCheck:
 								return True
 
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_GOLDSCHMIED"):
 						pPlayer = gc.getPlayer(pCity.getOwner())
 						iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_GOLDSCHMIED"))
-						iAnz = pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_GOLD"))
-						iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_SILVER"))
-						iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_PEARL"))
-						iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_GEMS"))
-						iAnz += pPlayer.countOwnedBonuses(gc.getInfoTypeForString("BONUS_BERNSTEIN"))
-						if iAnzB > iAnz:
+						iAnz = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GOLD"))
+						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_SILVER"))
+						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_PEARL"))
+						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GEMS"))
+						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_BERNSTEIN"))
+						if iAnzB >= iAnz:
+								return True
+
+				elif eBuilding == gc.getInfoTypeForString("BUILDING_GUSS_IRON"):
+						pPlayer = gc.getPlayer(pCity.getOwner())
+						iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_GUSS_IRON"))
+						iAnz = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_IRON"))
+						#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Building",iAnzB)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+						#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Bonus",iAnz)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+						if iAnzB >= iAnz:
 								return True
 
 				# Buildings, die ihre notwendige Ressource im Stadtradius brauchen
@@ -812,7 +823,6 @@ class CvGameUtils:
 						gc.getInfoTypeForString("BUILDING_GUSS_COPPER"),
 						gc.getInfoTypeForString("BUILDING_GUSS_ZINN"),
 						gc.getInfoTypeForString("BUILDING_GUSS_ZINK"),
-						gc.getInfoTypeForString("BUILDING_GUSS_IRON"),
 						gc.getInfoTypeForString("BUILDING_GERBEREI"),
 						gc.getInfoTypeForString("BUILDING_FURRIER"),
 						gc.getInfoTypeForString("BUILDING_MARMOR_WERKSTATT")

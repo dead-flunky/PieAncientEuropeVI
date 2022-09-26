@@ -2326,7 +2326,7 @@
 			<fInterfaceScale>0.58</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/scriptorium/library.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/button_building_bank.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/button_building_geldstube.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SCHULE</Type>
