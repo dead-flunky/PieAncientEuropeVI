@@ -257,6 +257,14 @@
     <Spanish>Los recursos de bonificaci&#243;n en terreno neutral pueden vincularse a un puesto de comercio o fortaleza (arcilla o piedra) junto con una unidad estacionada. Si una fortaleza est&#225; vac&#237;a y no est&#225; en el &#225;rea cultural, la trama vuelve a ser neutral. Si un puesto de comercio es ocupado por la cultura extranjera, entonces el puesto de comercio desaparece.</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_HINT_135</Tag>
+    <English>Endless turns can be eliminated with [CTRL-C]. All units of the AI get the order "skip turn".</English>
+    <French>Les tours sans fin peuvent &#234;tre &#233;limin&#233;s avec [CTRL-C]. Toutes les unit&#233;s de l'IA re&#231;oivent l'ordre "sauter le tour".</French>
+    <German>Mit [STRG-C] k&#246;nnen Endless-Turns behoben werden. Dabei bekommen alle Einheiten der KI den Befehl "Runde &#252;berspringen".</German>
+    <Italian>I turni senza fine possono essere eliminati con [CTRL-C]. Tutte le unit&#224; dell'IA ricevono l'ordine "salta".</Italian>
+    <Spanish>Los giros interminables se pueden eliminar con [CTRL-C]. Todas las unidades de la IA reciben la orden "saltar ronda".</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_HINT_129</Tag>
     <English>Press [CTRL + P] to activate or deactivate the message, when a player's on turn.</English>
     <French>Appuyez sur [CTRL + P] pour activer ou d&#233;sactiver les messages lors du tour d'un autre joueur.</French>

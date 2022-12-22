@@ -1992,43 +1992,43 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_PILLAGE1</Tag>
-    <English>Marauder I</English>
-    <French>Maraudeur I</French>
-    <German>Marodeur I</German>
-    <Italian>Saccheggiatore I</Italian>
-    <Spanish>Saqueador I</Spanish>
+    <English>Pillage I</English>
+    <French>Pillage I</French>
+    <German>Brandschatzen I</German>
+    <Italian>Saccheggio I</Italian>
+    <Spanish>Pillaje I</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_PILLAGE2</Tag>
-    <English>Marauder II</English>
-    <French>Maraudeur II</French>
-    <German>Marodeur II</German>
-    <Italian>Saccheggiatore II</Italian>
-    <Spanish>Saqueador II</Spanish>
+    <English>Pillage II</English>
+    <French>Pillage II</French>
+    <German>Brandschatzen II</German>
+    <Italian>Saccheggio II</Italian>
+    <Spanish>Pillaje II</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_PILLAGE3</Tag>
-    <English>Marauder III</English>
-    <French>Maraudeur III</French>
-    <German>Marodeur III</German>
-    <Italian>Saccheggiatore III</Italian>
-    <Spanish>Saqueador III</Spanish>
+    <English>Pillage III</English>
+    <French>Pillage III</French>
+    <German>Brandschatzen III</German>
+    <Italian>Saccheggio III</Italian>
+    <Spanish>Pillaje III</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_PILLAGE4</Tag>
-    <English>Marauder IV</English>
-    <French>Maraudeur IV</French>
-    <German>Marodeur IV</German>
-    <Italian>Saccheggiatore IV</Italian>
-    <Spanish>Saqueador IV</Spanish>
+    <English>Pillage IV</English>
+    <French>Pillage IV</French>
+    <German>Brandschatzen IV</German>
+    <Italian>Saccheggio IV</Italian>
+    <Spanish>Pillaje IV</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_PILLAGE5</Tag>
-    <English>Marauder V</English>
-    <French>Maraudeur V</French>
-    <German>Marodeur V</German>
-    <Italian>Saccheggiatore V</Italian>
-    <Spanish>Saqueador V</Spanish>
+    <English>Pillage V</English>
+    <French>Pillage V</French>
+    <German>Brandschatzen V</German>
+    <Italian>Saccheggio V</Italian>
+    <Spanish>Pillaje V</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_DESERT1</Tag>
@@ -9326,9 +9326,9 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_PROMO_PILLAGE</Tag>
-    <English>Training Center for Marauders</English>
+    <English>Training Center for Pillagers</English>
     <French>Camp d'entra&#238;nement (Pillage)</French>
-    <German>Ausbildungsst&#228;tte f&#252;r Marodeure</German>
+    <German>Ausbildungsst&#228;tte f&#252;r Brandschatzer</German>
     <Italian>Centro di Addestramento per i Saccheggiatori</Italian>
     <Spanish>Centro de Entrenamiento para Saqueadores</Spanish>
   </TEXT>

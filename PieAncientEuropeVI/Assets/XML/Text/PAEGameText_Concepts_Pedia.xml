@@ -97,7 +97,7 @@ Lisez tous les concepts li&#233;s &#224; PAE pour plus d'informations.
 [ICON_BULLET] Achte auf den Forschungs/Steuersatz!
 [ICON_BULLET] Halte deine St&#228;dte gl&#252;cklich und gesund!
 [ICON_BULLET] Auf Karten mit frei w&#228;hlbaren Civs (z.B. alle Europakarten) sollten diese selbst gew&#228;hlt werden, da sie sonst nicht gleichm&#228;&#223;ig verteilt werden (z.B. k&#246;nnten Athen, Sparta und Theben auf engem Raum starten, w&#228;hrend Italien leer bleibt)
-[ICON_BULLET] Armeen k&#246;nnen ab 30-40 Einheiten rebellieren (siehe: [LINK=CONCEPT_REBELLION]Rebellionen[\LINK]) und ben&#246;tigen ab 10-20 Einheiten Versorgung durch Versorgungsw&#228;gen (siehe: [LINK=CONCEPT_PAE_SUPPLY]Versorgung[\LINK])
+[ICON_BULLET] Armeen k&#246;nnen ab 30-40 Einheiten rebellieren (siehe: [LINK=CONCEPT_REBELLION]Rebellionen[\LINK]) und ben&#246;tigen ab 10-20 Einheiten Versorgung durch Versorgungswagen (siehe: [LINK=CONCEPT_PAE_SUPPLY]Versorgung[\LINK])
 
 Lese die PAE-Konzepte f&#252;r detaillierte Informationen.
     </German>
@@ -439,71 +439,56 @@ Las siguientes unidades nunca causar&#225;n desertificaci&#243;n:
 [H1]The death of a general[\H1]
 The death of some leaders or generals have often brought the country into turmoil (Caesar), or even in worst cases, cut up (Alexander).
 
-Therefore, in this mod there will be a chance of riot for each city.
+Therefore, there is a 10% chance that a city will plunge into a [LINK=CONCEPT_CIVIL_WAR]Civil War[\LINK].
+If you have adopted the [LINK=CIVIC_POLYARCHIE]polyarchy[\LINK] form of government, the cities are spared a civil war.
 
-Calculation per city :
-[ICON_BULLET] If the player has no more living general : 100%
-[ICON_BULLET] If at least one living general exists : 100 / (nb living generals + 1) %
+Furthermore, each city (status: city) gets +1 [ICON_UNHAPPY]. Defeating an enemy general also gives cities +1 [ICON_HAPPY]. This means that the more generals you lose without being victorious yourself, the unhappier the cities become. This in turn means that they can [LINK=UNIT_EMIGRANT]emigrate[\LINK] out of dissatisfaction or start a [LINK=CONCEPT_CIVIL_WAR]civil war[\LINK].
 
-Consequences :
-[ICON_BULLET] The city gets [ICON_UNHAPPY] for 2-4 turns
-[ICON_BULLET] The city falls into revolt during 1 or 2 turns (Probability: 66%)
+The bonuses [ICON_UNHAPPY] or [ICON_HAPPY] expire over time (chance 5% per turn).
     </English>
     <French>
 [H1]Mort d'un g&#233;n&#233;ral[\H1]
 L'histoire nous a montr&#233; que la mort d'un grand meneur d'hommes ou d'un g&#233;n&#233;ral est souvent la cause de troubles (C&#233;sar) ou pire, de l'&#233;clatement d'une nation (Alexandre).
 
-Dans ce mod, il y a donc une possibilit&#233; de r&#233;volte dans chaque ville &#224; la mort d'un g&#233;n&#233;ral.
+Par cons&#233;quent, il y a 10 % de chances qu'une ville plonge dans une [LINK=CONCEPT_CIVIL_WAR]Guerre civile[\LINK].
+Si vous avez adopt&#233; la [LINK=CIVIC_POLYARCHIE]polyarchie[\LINK] forme de gouvernement, les villes sont &#233;pargn&#233;es d'une guerre civile.
 
-Probabilit&#233; qu'une ville soit touch&#233;e :
-[ICON_BULLET] S'il ne reste plus de g&#233;n&#233;ral vivant : 100%
-[ICON_BULLET] S'il en reste au moins 1 : 100 / (nb g&#233;n&#233;raux vivants + 1) %
+De plus, chaque ville (statut : ville) obtient +1 [ICON_UNHAPPY]. Vaincre un g&#233;n&#233;ral ennemi donne &#233;galement aux villes +1 [ICON_HAPPY]. Cela signifie que plus vous perdez de g&#233;n&#233;raux sans &#234;tre vous-m&#234;me victorieux, plus les villes deviennent malheureuses. Cela signifie qu'ils peuvent [LINK=UNIT_EMIGRANT]&#233;migrer[\LINK] par m&#233;contentement ou d&#233;clencher une [LINK=CONCEPT_CIVIL_WAR]guerre civile[\LINK].
 
-Cons&#233;quences :
-[ICON_BULLET] R&#233;duit le bonheur de la ville pendant 2 &#224; 4 tours
-[ICON_BULLET] 66% de chances que la ville se r&#233;volte pendant 1 ou 2 tours
+Les bonus [ICON_UNHAPPY] ou [ICON_HAPPY] expirent avec le temps (chance 5 % par tour).
     </French>
     <German>
 [H1]Der Tod eines Generals[\H1]
 Der Tod so mancher Anf&#252;hrer oder Gener&#228;le hat oftmals das Land in Aufruhr gebracht (Caesar), ja in den schlimmsten F&#228;llen sogar zerteilt (Alexander).
 
-Deshalb gibt es in dieser Mod f&#252;r jede Stadt eine Chance der Aufruhr, die sich wie folgt berechnen l&#228;sst:
+Daher gibt es eine Chance von 10%, dass eine Stadt in einen [LINK=CONCEPT_CIVIL_WAR]B&#252;rgerkrieg[\LINK] st&#252;rzt.
+Hat man die Regierungsform [LINK=CIVIC_POLYARCHIE]Polyarchie[\LINK] angenommen, bleiben die St&#228;dte von einem B&#252;rgerkrieg verschont.
 
-Berechnung pro Stadt:
-[ICON_BULLET] Hat der Spieler keinen lebenden General: 100%
-[ICON_BULLET] Wenn mindestens ein General lebt: 100 / (Anzahl der Gener&#228;le +1) %
+Weiters erh&#228;lt jede Stadt (Status: Stadt) +1 [ICON_UNHAPPY]. Besiegt man einen gegnerischen General bekommen St&#228;dte wiederum +1 [ICON_HAPPY]. Das bedeutet, je mehr Gener&#228;le man verliert, ohne selbst siegreich zu sein, desto ungl&#252;cklicher werden die St&#228;dte. Das wiederum bedeutet, dass sie wegen Unzufriedenheit [LINK=UNIT_EMIGRANT]auswandern[\LINK] oder einen [LINK=CONCEPT_CIVIL_WAR]B&#252;rgerkrieg[\LINK] anzetteln k&#246;nnen.
 
-Auswirkungen:
-[ICON_BULLET] Die Stadt wird f&#252;r 2-4 Runden [ICON_UNHAPPY]
-[ICON_BULLET] Die Stadt f&#228;llt 1 oder 2 Runden in Revolte (Wahrscheinlichkeit: 66%)
+Die Boni [ICON_UNHAPPY] oder [ICON_HAPPY] verfallen im Laufe der Zeit (Chance 5% pro Runde).
     </German>
     <Italian>
 [H1] La morte del generale [\H1]
 La morte di cos&#236; tanti leader o generali ha spesso portato il paese nel caos (Cesare), anche nel peggiore dei casi anche tagliati (Alexander).
 
-Pertanto, in questo mod per ogni citt&#224; una possibilit&#224; di scontri, che pu&#242; essere calcolato come segue:
+Pertanto, c'&#232; una probabilit&#224; del 10% che una citt&#224; precipiti in una [LINK=CONCEPT_CIVIL_WAR]guerra civile[\LINK].
+Se hai adottato la forma di governo [LINK=CIVIC_POLYARCHIE]poliarchia[\LINK], alle citt&#224; viene risparmiata una guerra civile.
 
-Calcolo per citt&#224;:
-[ICON_BULLET] Se il giocatore non ha vivere Generale: 100%
-[ICON_BULLET] Se almeno una generale Alive: 100 / (numero di generali +1)%
+Inoltre, ogni citt&#224; (stato: citt&#224;) ottiene +1 [ICON_UNHAPPY]. Sconfiggere un generale nemico d&#224; anche alle citt&#224; +1 [ICON_HAPPY]. Ci&#242; significa che pi&#249; generali perdi senza vincere tu stesso, pi&#249; infelici diventano le citt&#224;. Questo a sua volta significa che possono [LINK=UNIT_EMIGRANT]emigrare[\LINK] per insoddisfazione o iniziare una [LINK=CONCEPT_CIVIL_WAR]guerra civile[\LINK].
 
-effetti:
-[ICON_BULLET] La citt&#224; &#232; per 2-4 turni [ICON_UNHAPPY]
-[ICON_BULLET] La citt&#224; cade 1 o 2 giri in rivolta (probabilit&#224;: 66%)
+I bonus [ICON_UNHAPPY] o [ICON_HAPPY] scadono nel tempo (probabilit&#224; 5% per turno).
     </Italian>
     <Spanish>
 [H1]La muerte de un general[\H1]
 La muerte de algunos l&#237;deres o generales a menudo han llevado al pa&#237;s al caos (C&#233;sar); o incluso en el peor de los casos, a su divisi&#243;n (Alejandro).
 
-Es por eso, que en este mod, habr&#225; una posibilidad de disturbios en cada ciudad.
+Por lo tanto, existe un 10 % de probabilidad de que una ciudad se sumerja en una [LINK=CONCEPT_CIVIL_WAR]Guerra civil[\LINK].
+Si has adoptado la forma de gobierno de [LINK=CIVIC_POLYARCHIE]poliarqu&#237;a[\LINK], las ciudades se librar&#225;n de una guerra civil.
 
-C&#225;lculo por ciudad :
-[ICON_BULLET] Si el jugador no tiene m&#225;s generales vivos : 100%
-[ICON_BULLET] Si al menos existe un general vivo : 100 / (n&#186; de generales vivos + 1) %
+Adem&#225;s, cada ciudad (estado: ciudad) obtiene +1 [ICON_UNHAPPY]. Derrotar a un general enemigo tambi&#233;n otorga a las ciudades +1 [ICON_HAPPY]. Esto significa que cuantos m&#225;s generales pierdas sin salir victorioso, m&#225;s infelices ser&#225;n las ciudades. Esto a su vez significa que pueden [LINK=UNIT_EMIGRANT]emigrar[\LINK] por insatisfacci&#243;n o iniciar una [LINK=CONCEPT_CIVIL_WAR]guerra civil[\LINK].
 
-Consecuencias :
-[ICON_BULLET] La ciudad se vuelve [ICON_UNHAPPY] por 2-4 turnos
-[ICON_BULLET] La ciudad cae en revuelta durante 1 o 2 turnos (Probabilidad: 66%)
+Las bonificaciones [ICON_UNHAPPY] o [ICON_HAPPY] caducan con el tiempo (probabilidad del 5 % por turno).
     </Spanish>
   </TEXT>
   <TEXT>
@@ -2656,7 +2641,7 @@ PAE includes its own experience system (ranking) where certain types can be succ
 
 [H2]Units with status: Veteran[\H2]
 
-1) Can be commended to new units (special units). See Units: Veterans
+1) Can be commended to new units (special units). See [LINK=CONCEPT_VETERANS]Units: Veterans[\LINK]
 
 2) Can be incorporated as a reservist (specialist) in cities, where they can retreat as a veteran unit at any time for a battle
 
@@ -2671,7 +2656,7 @@ PAE includes its own experience system (ranking) where certain types can be succ
 
 1) Elite units have a very high combat power and so they require a longer recovery period and therefore they end a winning battle with a maximum of 70% health.
 
-2) Can be commended to new special elite units. See Units: Elites
+2) Can be commended to new special elite units. See [LINK=CONCEPT_UNIT_ELITE]Units: Elites[\LINK]
 
 3) Can become tired of war. See below.
 
@@ -2722,7 +2707,7 @@ PAE a son propre syst&#232;me de rang, qui avance automatiquement apr&#232;s une
 
 [H2]Unit&#233;s avec statut: V&#233;t&#233;ran[\H2]
 
-1) Peut &#234;tre recommand&#233; &#224; de nouvelles unit&#233;s (unit&#233;s sp&#233;ciales). Voir Unit&#233;s: Anciens combattants
+1) Peut &#234;tre recommand&#233; &#224; de nouvelles unit&#233;s (unit&#233;s sp&#233;ciales). Voir [LINK=CONCEPT_VETERANS]Unit&#233;s: Anciens combattants[\LINK]
 
 2) Peut &#234;tre incorpor&#233; en tant que r&#233;serviste (sp&#233;cialiste) dans les villes, o&#249; il peut se retirer en tant que v&#233;t&#233;ran &#224; tout moment pour une bataille
 
@@ -2737,7 +2722,7 @@ PAE a son propre syst&#232;me de rang, qui avance automatiquement apr&#232;s une
 
 1) Les unit&#233;s d'&#233;lite ont une tr&#232;s grande puissance de combat et n&#233;cessitent donc une p&#233;riode de r&#233;cup&#233;ration plus longue. Elles terminent donc une bataille gagnante avec un maximum de 70% de points de vie.
 
-2) Peut &#234;tre recommand&#233; &#224; de nouvelles unit&#233;s d'&#233;lite sp&#233;ciales. Voir les unit&#233;s: les &#233;lites
+2) Peut &#234;tre recommand&#233; &#224; de nouvelles unit&#233;s d'&#233;lite sp&#233;ciales. Voir les [LINK=CONCEPT_UNIT_ELITE]unit&#233;s: les &#233;lites[\LINK]
 
 3) Peut devenir fatigu&#233; de la guerre. Voir ci-dessous.
 
@@ -2788,7 +2773,7 @@ PAE beinhaltet ein eigenes Erfahrungssystem (Rang), wo bestimmte Bef&#246;rderun
 
 [H2]Einheiten mit dem Status: Veteran[\H2]
 
-1) K&#246;nnen zu neuen Einheiten (Spezialeinheiten) belobigt werden. Siehe Einheiten: Veteranen
+1) K&#246;nnen zu neuen Einheiten (Spezialeinheiten) belobigt werden. Siehe [LINK=CONCEPT_VETERANS]Einheiten: Veteranen[\LINK]
 
 2) K&#246;nnen als Reservisten (Spezialist) in St&#228;dte eingegliedert werden, wo sie jederzeit als Veteraneinheit wieder in den Kampf ziehen k&#246;nnen.
 
@@ -2803,7 +2788,7 @@ PAE beinhaltet ein eigenes Erfahrungssystem (Rang), wo bestimmte Bef&#246;rderun
 
 1) Haben eine sehr hohe Kampfkraft, daf&#252;r ben&#246;tigen sie auch eine l&#228;ngere Erholungsphase und beenden daher einen gewonnenen Kampf mit maximal 70% Gesundheit.
 
-2) K&#246;nnen zu neuen besonderen Elite-Einheiten belobigt werden. Siehe Einheiten: Eliten
+2) K&#246;nnen zu neuen besonderen Elite-Einheiten belobigt werden. Siehe [LINK=CONCEPT_UNIT_ELITE]Einheiten: Eliten[\LINK]
 
 3) K&#246;nnen kriegsm&#252;de werden. Siehe unten.
 
@@ -2853,7 +2838,7 @@ PAE ha un sistema di un'esperienza privata ( Rank) , in cui alcuni tipi possono 
 
 [H2]Unit&#224; con status: Veterano[\H2]
 
-1) Pu&#242; essere lodato in nuove unit&#224; (unit&#224; speciali). Vedi Unit&#224;: Veterani
+1) Pu&#242; essere lodato in nuove unit&#224; (unit&#224; speciali). Vedi [LINK=CONCEPT_VETERANS]Unit&#224;: Veterani[\LINK]
 
 2) Pu&#242; essere incorporato come riservista (specialista) nelle citt&#224;, dove possono ritirarsi come unit&#224; veterana in qualsiasi momento per una battaglia
 
@@ -2868,7 +2853,7 @@ PAE ha un sistema di un'esperienza privata ( Rank) , in cui alcuni tipi possono 
 
 1) Le unit&#224; elite hanno una potenza di combattimento molto alta e quindi richiedono un periodo di recupero pi&#249; lungo e quindi finiscono una battaglia vincente con un massimo del 70% di salute.
 
-2) Pu&#242; essere lodato per nuove unit&#224; speciali d'&#233;lite. Vedi Unit&#224;: Elite
+2) Pu&#242; essere lodato per nuove unit&#224; speciali d'&#233;lite. Vedi [LINK=CONCEPT_UNIT_ELITE]Unit&#224;: Elite[\LINK]
 
 3) Pu&#242; diventare stanco della guerra. Vedi sotto.
 
@@ -2919,7 +2904,7 @@ Rango 6&#186;: Legendaria    (+5% fuerza, 30% de probabilidad*)
 
 [H2]Unidades con estado: Veterano[\H2]
 
-1) Puede encomendarse a unidades nuevas (unidades especiales). Ver Unidades: Veteranos
+1) Puede encomendarse a unidades nuevas (unidades especiales). Ver [LINK=CONCEPT_VETERANS]Unidades: Veteranos[\LINK]
 
 2) Se puede incorporar como un reservista (especialista) en las ciudades, donde pueden retirarse como una unidad de veteranos en cualquier momento para una batalla
 
@@ -2934,7 +2919,7 @@ Rango 6&#186;: Legendaria    (+5% fuerza, 30% de probabilidad*)
 
 1) Las unidades de &#233;lite tienen una potencia de combate muy alta, por lo que requieren un per&#237;odo de recuperaci&#243;n m&#225;s largo y, por lo tanto, terminan una batalla ganadora con un m&#225;ximo de 70% de vida.
 
-2) Puede recomendarse a nuevas unidades especiales de &#233;lite. Ver Unidades: Elites
+2) Puede recomendarse a nuevas unidades especiales de &#233;lite. Ver [LINK=CONCEPT_UNIT_ELITE]Unidades: Elites[\LINK]
 
 3) Puede cansarse de la guerra. Vea abajo.
 
@@ -3942,7 +3927,7 @@ Automatische Handelsrouten werden automatisch deaktiviert sofern eine Handelssta
 
 
 [H1]Spezialauftr&#228;ge[\H1]
-Nimm profitable aber zeitabh&#228;ngige Sonderauftr&#228;ge fremder St&#228;dte an. Schaffst du in einer bestimmten Zeit einen Sonderauftrag abzuschlie&#223;en, bekommst du prim&#228;r eine (eroberbare) Technologie dieser CIV oder wenn es keine gibt, 5 Einheiten (Sklaven, Pferde, Kamele, Reiter, Goldkarren und eventuell sogar eine seiner Spezialeinheiten). Diese Auftr&#228;ge sind aber nicht f&#252;r dich ma&#223;geschneidert. Es kann also sein, dass eine weit entfernte Stadt ein Gut ben&#246;tigt, das von dir nicht erschlossen ist.
+Nimm profitable aber zeitabh&#228;ngige Sonderauftr&#228;ge fremder St&#228;dte an. Schaffst du in einer bestimmten Zeit einen Sonderauftrag abzuschlie&#223;en, bekommst du prim&#228;r eine (eroberbare) Technologie dieser CIV oder wenn es keine gibt, 5 Einheiten (Sklaven, Pferde, Kamele, Reiter, Goldkarren und eventuell sogar eine der hiesigen Spezialeinheiten). Diese Auftr&#228;ge sind aber nicht f&#252;r dich ma&#223;geschneidert. Es kann also sein, dass eine weit entfernte Stadt ein Gut ben&#246;tigt, das von dir nicht erschlossen ist.
 
 
 [H1]Handelsstra&#223;en[\H1]
@@ -7198,7 +7183,7 @@ Pro Versorgungsticket, das fehlt, um alle Einheiten zu versorgen, kommt jede Run
 
 [H1]ST&#196;DTE[\H1]
 St&#228;dte k&#246;nnen nur eine bestimmte Anzahl an Einheiten nahrungsmitteltechnisch versorgen (min. 5).
-Die Anzahl der versorgbaren Einheiten entspricht der Nahrungsproduktion dieser Stadt (der Nahrungsverbrauch durch die Bev&#246;lkerung ist daf&#252;r egal). Produziert eine Stadt nicht gen&#252;gend Nahrung, um alle Einheiten zu versorgen, k&#246;nnen die &#252;brigen allerdings noch &#252;ber Versorgungseinheiten (Versorgungsw&#228;gen, Druiden und Brahmanen) versorgt werden. Dabei wird f&#252;r jede Nahrungseinheit, die der Stadt zur Versorgung aller Truppen fehlt, ein Versorgungsticket aus einem der Versorger entfernt.
+Die Anzahl der versorgbaren Einheiten entspricht der Nahrungsproduktion dieser Stadt (der Nahrungsverbrauch durch die Bev&#246;lkerung ist daf&#252;r egal). Produziert eine Stadt nicht gen&#252;gend Nahrung, um alle Einheiten zu versorgen, k&#246;nnen die &#252;brigen allerdings noch &#252;ber Versorgungseinheiten (Versorgungswagen, Druiden und Brahmanen) versorgt werden. Dabei wird f&#252;r jede Nahrungseinheit, die der Stadt zur Versorgung aller Truppen fehlt, ein Versorgungsticket aus einem der Versorger entfernt.
 Reichen auch die zus&#228;tzlichen Versorger nicht aus, um alle Truppen zu versorgen, nehmen so viele Einheiten 30 HP Schaden, wie [ICON_FOOD]/Versorgungstickets fehlen. W&#252;rde die Einheit dadurch sterben, muss sie die Stadt stark geschw&#228;cht verlassen (man kann durch mangelnde Versorgung also keine Einheiten verlieren). Verl&#228;sst keine Einheit die Stadt, gibt es dennoch eine Chance von 33%, dass einige Einheiten (maximal so viele, wie nicht versorgt werden konnten) aus der Stadt geworfen werden. So besteht immer die M&#246;glichkeit, dass Einheiten die Stadt verlassen m&#252;ssen (auch wenn die Heilung in der Stadt durch Geb&#228;ude so hoch ist, dass keine Einheit stark geschw&#228;cht wird). Es sind auf jeden Fall 5 Einheiten, die versorgt werden k&#246;nnen.
 
 Neben den Einheiten nimmt bei einer Versorgungsknappheit auch die Stadt selbst Schaden:
@@ -7577,7 +7562,7 @@ D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for ea
 
 1.) The victorious city receives the building [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. It disappears automatically when the next Olympiad is resolved. This building grants for the 4 turns of the cycle unique advantages to the city (-100% maintenance cost, +1 trade road) and to the nation (+1 [ICON_HAPPY])
 
-2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
+2.) If the city has a Stadion, there is a chance of 25% to get permanent an additional bonus of +1 [ICON_CULTURE]
 
 3) +2 Gold wagon 
 
@@ -7630,7 +7615,7 @@ D) Dans le cas d'un Stade pr&#233;sent dans chacune des 10 villes participantes,
 
 1.) La ville gagnante acquiert le b&#226;timent [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. Il sera d&#233;truit automatiquement lors de l'Olympiade suivante. Ce b&#226;timent gratifie la ville de plusieurs bonus pour la dur&#233;e d'un cycle (-100% co&#251;t d'entretien, +1 route commerciale passive) et r&#233;jouit l'ensemble du peuple vainqueur (+1 [ICON_HAPPY])
 
-2.) Si la ville avait un Stade lors de sa victoire, celui-ci g&#233;n&#233;rera perp&#233;tuellement +1 [ICON_CULTURE]
+2.) Si la ville avait un Stade lors de sa victoire, il y a 25 % de chances qu'il obtienne +1 [ICON_CULTURE] en permanence
 
 3) +2 chariot de butin
 
@@ -7684,7 +7669,7 @@ D) Besitzen alle 10 teilnehmenden St&#228;dte ein Stadion, ist die Ticketanzahl 
 
 1.) Die Siegerstadt erh&#228;lt das Geb&#228;ude [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. Es verschwindet automatisch wieder bei der n&#228;chsten Olympiade. Dieses Geb&#228;ude bietet f&#252;r die Dauer des Zyklus einmalige Boni f&#252;r die Stadt (-100% Unterhaltskosten, +1 Handesweg) und der stolzen Nation (+1 [ICON_HAPPY])
 
-2.) Falls ein Stadion in der Stadt vorhanden ist, bekommt es dauerhaft +1 [ICON_CULTURE]
+2.) Falls ein Stadion in der Stadt vorhanden ist, besteht eine Chance von 25%, dass es dauerhaft zus&#228;tzlich +1 [ICON_CULTURE] bekommt
 
 3) +2 Goldkarren 
 
@@ -7696,110 +7681,110 @@ Als die R&#246;mer im Jahr 148 v. Chr. Griechenland eroberten, verloren die Olym
 Im Jahr 393 n. Chr. wurden alle heidnischen Zeremonien, darunter auch die Olympische Spiele, vom r&#246;mischen Kaiser Theodosius I. verboten. Der Kultbetrieb in Olympia wurde aber wohl bis zum Anfang des 5. Jahrhunderts n. Chr. aufrechterhalten. Erst Theodosius II. verbot die Olympischen Spiele im Jahr 426 n. Chr. endg&#252;ltig.
     </German>
     <Italian>
-[H1]The panhellenic Games[\H1]
+[H1]I Giochi panellenici[\H1]
 
-The project Panhellenic Games begins a 4-years Olympiad, which takes 4 turns ingame.
+Il progetto Panhellenic Games inizia un'Olimpiade di 4 anni, che si svolge in 4 turni di gioco.
 
-All cities with the religion Greek Gods compete. If the player has researched Imperialism, his cities with Roman Gods are also allowed in the competion.
-
-
-[H2]Requirement:[\H2]
-
-1.) at least 2 civs
-
-2.) the religion Greek Gods must be present in those cities
-
-3.) From Imperialism onward, the religion Roman Gods also qualifies
+Tutte le citt&#224; con la religione degli dei greci competono. Se il giocatore ha ricercato Imperialismo, anche le sue citt&#224; con divinit&#224; romane sono ammesse alla competizione.
 
 
-[H2]Calculation (every 4th turn):[\H2]
+[H2]Requisito:[\H2]
 
-1.) Greek Gods known in the city (or Roman Gods with Imperialism): 1 ticket
+1.) almeno 2 civilt&#224;
 
-2.) the city possesses a Stadion: +1 ticket
+2.) la religione degli dei greci deve essere presente in quelle citt&#224;
 
-3.) the city possesses a Gymnasion or Gymnasium: +1 ticket
-
-A competing city receives between 1 and 3 tickets. 
-
-Examples:
-
-A) 10 cities are taking part, none have a Stadion or Gymnasion. Chance for each city: 1:10 (10%)
-
-B) 1 of the 10 has a Stadion. Chance for the city with the Stadion. 2:11 (18%), 1:11 (9%) for the others
-
-C) 1 of the 10 has a Stadion and a Gym. Chance for this city: 3:12 (25%), 1:12 (8%) for the others
-
-D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for each city: 2:20 same as 1:10 (10%)
+3.) Dall'imperialismo in poi, si qualifica anche la religione "Dei Romani"
 
 
-[H2] Winner:[\H2]
+[H2]Calcolo (ogni 4 turni):[\H2]
 
-1.) The victorious city receives the building [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. It disappears automatically when the next Olympiad is resolved. This building grants for the 4 turns of the cycle unique advantages to the city (-100% maintenance cost, +1 trade road) and to the nation (+1 [ICON_HAPPY])
+1.) Divinit&#224; greche conosciute in citt&#224; (o divinit&#224; romane con l'imperialismo): 1 biglietto
 
-2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
+2.) la citt&#224; possiede uno Stadion: +1 biglietto
 
-3) +2 Gold wagon 
+3.) la citt&#224; possiede un Gymnasion o Gymnasium: +1 biglietto
 
-[H2]History[\H2]
-The Olympiad begins 776 BC. The first year consists of the Olympic Games in Olympia, the second year the Pythian Games in Delphi, the third year the Nemean Games in Nemea and the fourth year the Isthmic Games in Corinth. After that, a new Olympiad starts again with the Olympics in Olympia.
+Una citt&#224; concorrente riceve da 1 a 3 biglietti.
 
-When the Romans in 148 BC BC conquered Greece, the Olympic Games lost their pan-Hellenic character. From now on, non-Greek athletes were also allowed to participate.
+Esempi:
 
-In 393 AD all pagan ceremonies, including the Olympic Games, were banned by the Roman emperor Theodosius I. The cult activity in Olympia was probably maintained until the beginning of the 5th century AD. Only Theodosius II finally banned the Olympic Games in 426 AD.
+A) Partecipano 10 citt&#224;, nessuna ha Stadion o Gymnasion. Possibilit&#224; per ogni citt&#224;: 1:10 (10%)
+
+B) 1 su 10 ha uno Stadion. Occasione per la citt&#224; con lo Stadion. 2:11 (18%), 1:11 (9%) per gli altri
+
+C) 1 su 10 ha uno Stadion e una Palestra. Chance per questa citt&#224;: 3:12 (25%), 1:12 (8%) per le altre
+
+D) Ognuna delle 10 citt&#224; ha uno Stadion, il numero di biglietti &#232; 20. Possibilit&#224; per ogni citt&#224;: 2:20 come 1:10 (10%)
+
+
+[H2] Vincitore:[\H2]
+
+1.) La citt&#224; vittoriosa riceve l'edificio [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. Scompare automaticamente quando si risolve la prossima Olimpiade. Questo edificio garantisce per i 4 turni del ciclo vantaggi unici alla citt&#224; (-100% costi di manutenzione, +1 strada commerciale) e alla nazione (+1 [ICON_HAPPY])
+
+2.) Se la citt&#224; ha uno Stadion, c'&#232; una probabilit&#224; del 25% di ottenere un bonus aggiuntivo permanente di +1 [ICON_CULTURE]
+
+3) Carro d'oro +2
+
+[H2]Cronologia[\H2]
+Le Olimpiadi iniziano nel 776 a.C. Il primo anno &#232; costituito dai Giochi Olimpici ad Olimpia, il secondo anno dai Giochi Pitici a Delfi, il terzo anno dai Giochi Nemei a Nemea e il quarto anno dai Giochi Istmici a Corinto. Dopodich&#233;, riparte una nuova Olimpiade con le Olimpiadi di Olimpia.
+
+Quando i Romani nel 148 aC conquistarono la Grecia, i Giochi Olimpici persero il loro carattere panellenico. D'ora in poi, anche gli atleti non greci potevano partecipare.
+
+Nel 393 d.C. tutte le cerimonie pagane, inclusi i Giochi Olimpici, furono bandite dall'imperatore romano Teodosio I. L'attivit&#224; di culto ad Olimpia fu probabilmente mantenuta fino all'inizio del V secolo d.C. Solo Teodosio II band&#236; definitivamente i Giochi Olimpici nel 426 d.C.
     </Italian>
     <Spanish>
-[H1]The panhellenic Games[\H1]
+[H1]Los Juegos Panhel&#233;nicos[\H1]
 
-The project Panhellenic Games begins a 4-years Olympiad, which takes 4 turns ingame.
+El proyecto Juegos Panhel&#233;nicos comienza una Olimpiada de 4 a&#241;os, que toma 4 turnos dentro del juego.
 
-All cities with the religion Greek Gods compete. If the player has researched Imperialism, his cities with Roman Gods are also allowed in the competion.
-
-
-[H2]Requirement:[\H2]
-
-1.) at least 2 civs
-
-2.) the religion Greek Gods must be present in those cities
-
-3.) From Imperialism onward, the religion Roman Gods also qualifies
+Todas las ciudades con la religi&#243;n Dioses griegos compiten. Si el jugador ha investigado Imperialismo, sus ciudades con dioses romanos tambi&#233;n est&#225;n permitidas en la competencia.
 
 
-[H2]Calculation (every 4th turn):[\H2]
+[H2]Requisito:[\H2]
 
-1.) Greek Gods known in the city (or Roman Gods with Imperialism): 1 ticket
+1.) al menos 2 civilizaciones
 
-2.) the city possesses a Stadion: +1 ticket
+2.) la religi&#243;n de los dioses griegos debe estar presente en esas ciudades
 
-3.) the city possesses a Gymnasion or Gymnasium: +1 ticket
-
-A competing city receives between 1 and 3 tickets. 
-
-Examples:
-
-A) 10 cities are taking part, none have a Stadion or Gymnasion. Chance for each city: 1:10 (10%)
-
-B) 1 of the 10 has a Stadion. Chance for the city with the Stadion. 2:11 (18%), 1:11 (9%) for the others
-
-C) 1 of the 10 has a Stadion and a Gym. Chance for this city: 3:12 (25%), 1:12 (8%) for the others
-
-D) Each of the 10 city has a Stadion, the number of tickets is 20. Chance for each city: 2:20 same as 1:10 (10%)
+3.) Desde el imperialismo en adelante, la religi&#243;n de los dioses romanos tambi&#233;n califica
 
 
-[H2] Winner:[\H2]
+[H2]C&#225;lculo (cada 4 turnos):[\H2]
 
-1.) The victorious city receives the building [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. It disappears automatically when the next Olympiad is resolved. This building grants for the 4 turns of the cycle unique advantages to the city (-100% maintenance cost, +1 trade road) and to the nation (+1 [ICON_HAPPY])
+1.) Dioses griegos conocidos en la ciudad (o dioses romanos con imperialismo): 1 entrada
 
-2.) If the city had already a Stadion, it produces from now on +1 [ICON_CULTURE]
+2.) la ciudad posee un Stadion: +1 entrada
 
-3) +2 Gold wagon 
+3.) la ciudad posee Gymnasion o Gymnasium: +1 entrada
 
-[H2]History[\H2]
-The Olympiad begins 776 BC. The first year consists of the Olympic Games in Olympia, the second year the Pythian Games in Delphi, the third year the Nemean Games in Nemea and the fourth year the Isthmic Games in Corinth. After that, a new Olympiad starts again with the Olympics in Olympia.
+Una ciudad competidora recibe entre 1 y 3 entradas.
 
-When the Romans in 148 BC BC conquered Greece, the Olympic Games lost their pan-Hellenic character. From now on, non-Greek athletes were also allowed to participate.
+Ejemplos:
 
-In 393 AD all pagan ceremonies, including the Olympic Games, were banned by the Roman emperor Theodosius I. The cult activity in Olympia was probably maintained until the beginning of the 5th century AD. Only Theodosius II finally banned the Olympic Games in 426 AD.
+A) Participan 10 ciudades, ninguna tiene Stadion o Gymnasion. Oportunidad para cada ciudad: 1:10 (10%)
+
+B) 1 de los 10 tiene Estadio. Oportunidad para la ciudad con el Stadion. 2:11 (18%), 1:11 (9%) para los dem&#225;s
+
+C) 1 de los 10 tiene Estadio y Gimnasio. Probabilidad para esta ciudad: 3:12 (25%), 1:12 (8%) para las dem&#225;s
+
+D) Cada una de las 10 ciudades tiene un Estadio, el n&#250;mero de entradas es 20. Oportunidad para cada ciudad: 2:20 igual que 1:10 (10%)
+
+
+[H2] Ganador:[\H2]
+
+1.) La ciudad victoriosa recibe el edificio [LINK=BUILDING_OLYMPIONIKE]Periodonike[\LINK]. Desaparece autom&#225;ticamente cuando se resuelve la siguiente Olimpiada. Este edificio otorga ventajas &#250;nicas para la ciudad durante los 4 turnos del ciclo (-100% costo de mantenimiento, +1 v&#237;a comercial) y para la naci&#243;n (+1 [ICON_HAPPY])
+
+2.) Si la ciudad tiene un Stadion, existe una probabilidad del 25% de obtener una bonificaci&#243;n adicional permanente de +1 [ICON_CULTURE]
+
+3) +2 Carro de oro
+
+[H2]Historial[\H2]
+La Olimpiada comienza en el 776 a. El primer a&#241;o consta de los Juegos Ol&#237;mpicos en Olimpia, el segundo a&#241;o los Juegos P&#237;ticos en Delfos, el tercer a&#241;o los Juegos de Nemea en Nemea y el cuarto a&#241;o los Juegos Istmicos en Corinto. Despu&#233;s de eso, una nueva Olimpiada comienza nuevamente con los Juegos Ol&#237;mpicos en Olimpia.
+
+Cuando los romanos en el 148 aC conquistaron Grecia, los Juegos Ol&#237;mpicos perdieron su car&#225;cter panhel&#233;nico. A partir de ahora, tambi&#233;n se permiti&#243; la participaci&#243;n de atletas no griegos.
+
+En el a&#241;o 393 dC todas las ceremonias paganas, incluidos los Juegos Ol&#237;mpicos, fueron prohibidas por el emperador romano Teodosio I. La actividad de culto en Olimpia probablemente se mantuvo hasta principios del siglo V dC. Solo Teodosio II finalmente prohibi&#243; los Juegos Ol&#237;mpicos en el a&#241;o 426 d.C.
     </Spanish>
   </TEXT>
   <TEXT>
@@ -7862,42 +7847,42 @@ Um diese Siegvariante erfolgreich zu meistern, musst du die von Antipatros von S
 7. Die Zeusstatue des Phidias von Olympia (mit Griechische G&#246;tter)
     </German>
     <Italian>
-[H1]The Seven Wonders of the Ancient World[\H1]
+[H1]Le sette meraviglie del mondo antico[\H1]
 
-To successfully master this type of victory, you have to possess the seven monumental buildings handed down by Antipatros of Sidon. Since various wonders require a certain religion, it is difficult to create them all yourself. Therefore, it is enough if you gradually conquer these wonders.
+Per dominare con successo questo tipo di vittoria, devi possedere i sette edifici monumentali tramandati da Antipatro di Sidone. Poich&#233; varie meraviglie richiedono una certa religione, &#232; difficile crearle tutte da soli. Pertanto, &#232; sufficiente conquistare gradualmente queste meraviglie.
 
-1. The Hanging Gardens of Semiramis at Babylon (or Nineveh) (with Sumerian gods)
+1. I giardini pensili di Semiramide a Babilonia (o Ninive) (con divinit&#224; sumere)
 
-2. The Colossus of Rhodes (with bronze)
+2. Il Colosso di Rodi (con bronzo)
 
-3. The Mauseleum of King Mausolus II at Halicarnassus (with marble)
+3. Il Mauseleo del re Mausolo II ad Alicarnasso (con marmo)
 
-4. The Lighthouse on the island of Pharos next to Alexandria (with a fortified port)
+4. Il faro sull'isola di Pharos vicino ad Alessandria (con porto fortificato)
 
-5. The Pyramids of Giza in Egypt (with Egyptian gods)
+5. Le piramidi di Giza in Egitto (con divinit&#224; egizie)
 
-6. The Temple of Artemis at Ephesus (with Greek gods)
+6. Il Tempio di Artemide ad Efeso (con divinit&#224; greche)
 
-7. The Statue of Zeus of Phidias at Olympia (with Greek gods)
+7. La statua di Zeus di Fidia ad Olimpia (con divinit&#224; greche)
     </Italian>
     <Spanish>
-[H1]The Seven Wonders of the Ancient World[\H1]
+[H1]Las Siete Maravillas del Mundo Antiguo[\H1]
 
-To successfully master this type of victory, you have to possess the seven monumental buildings handed down by Antipatros of Sidon. Since various wonders require a certain religion, it is difficult to create them all yourself. Therefore, it is enough if you gradually conquer these wonders.
+Para dominar con &#233;xito este tipo de victoria, debes poseer los siete edificios monumentales heredados por Antipatros de Sid&#243;n. Dado que varias maravillas requieren una determinada religi&#243;n, es dif&#237;cil crearlas todas usted mismo. Por lo tanto, es suficiente si conquistas gradualmente estas maravillas.
 
-1. The Hanging Gardens of Semiramis at Babylon (or Nineveh) (with Sumerian gods)
+1. Los jardines colgantes de Semiramis en Babilonia (o N&#237;nive) (con dioses sumerios)
 
-2. The Colossus of Rhodes (with bronze)
+2. El Coloso de Rodas (con bronce)
 
-3. The Mauseleum of King Mausolus II at Halicarnassus (with marble)
+3. El mausoleo del rey Mausolo II en Halicarnaso (con m&#225;rmol)
 
-4. The Lighthouse on the island of Pharos next to Alexandria (with a fortified port)
+4. El Faro de la isla de Faros junto a Alejandr&#237;a (con puerto fortificado)
 
-5. The Pyramids of Giza in Egypt (with Egyptian gods)
+5. Las pir&#225;mides de Giza en Egipto (con dioses egipcios)
 
-6. The Temple of Artemis at Ephesus (with Greek gods)
+6. El Templo de Artemisa en &#201;feso (con dioses griegos)
 
-7. The Statue of Zeus of Phidias at Olympia (with Greek gods)
+7. La estatua de Zeus de Fidias en Olimpia (con dioses griegos)
     </Spanish>
   </TEXT>
   <TEXT>
@@ -8028,7 +8013,7 @@ Ab der Klassik:
 [ICON_BULLET] Langschwertk&#228;mpfer (Langschwert + Eisen)
 [ICON_BULLET] Axtwerfer (Wurfaxt + Eisen)
 
-Berittene Einheiten und Streitw&#228;gen
+Berittene Einheiten und Streitwagen
 Vor der Klassik:
 [ICON_BULLET] Scheibenradwagen (Streitwagen)
 [ICON_BULLET] Streitwagensch&#252;tze (Pferdedomestizierung + Kurzbogen + Pferde)
@@ -10785,9 +10770,9 @@ In PAE, the combat unit versus unit has a variety of additional effects:
 
 Battle on land:
 
-1) Fighting experience: Each victorious unit is given the chance to increase its level of experience. The levels are: trained, experienced, routined, veteran, elite and legend. More about this in the PAE concepts under Units: Combat Experience
+1) Fighting experience: Each victorious unit is given the chance to increase its level of experience. The levels are: trained, experienced, routined, veteran, elite and legend. More about this in the PAE concepts under [LINK=CONCEPT_COMBAT2]Units: Combat[\LINK]
 
-2) War weariness: Units that already have the status of a veteran and therefore fought for their empire a long time can suffer from war frustration. For more details, see: Units: War weariness
+2) War weariness: Units that already have the status of a veteran and therefore fought for their empire a long time can suffer from war frustration. For more details, see: [LINK=CONCEPT_COMBAT3]Units: War weariness[\LINK]
 
 3) Mercenaries: Veteran units fighting on their own feet can lose this promotion after a battle. The chance is 25%. If the unit has a loyalty promotion, leadership, or is itself a commander, then 50%. If the victorious unit is part of a stack with a warlords, the chance increases by 5%.
 
@@ -10799,7 +10784,7 @@ Battle on land:
 
 7) Desertation: Each winning unit gains a chance to conquer the enemy unit. Loyal units are not conquerable. Depending on whether the victorious unit is loyal, has leadership or is itself a commander, a hero or a mercenary. Furthermore, it depends on whether one of the state leaders is charismatic.
 
-8) Heroes: If a unit defeats a hero or a leader, he gets himself a hero.
+8) Heroes: If a unit defeats a hero or a leader, he gets himself a hero. See [LINK=CONCEPT_PAE_PROMOTION_HERO]Units: Heroes[\LINK]
 
 9) Leaders: If a unit is victorious in a stack with a leader, one leader of this stack receives +1 XP.
 
@@ -10813,13 +10798,13 @@ Battle on land:
 
 14) Defeated elephant units damage their own ranks. See below.
 
-15) Combat against commissioned mercenaries: One of these units is the leader. If you defeat this unit you can subject him to torture. Depending on the opportunity, he reveals his or one of the potential clients.
+15) Combat against [LINK=CONCEPT_MERCENARY]commissioned mercenaries[\LINK]: One of these units is the leader. If you defeat this unit you can subject him to torture. Depending on the opportunity, he reveals his or one of the potential clients.
 
-16) Leader's death: see Units: Leader's death
+16) Leader's death: see [LINK=CONCEPT_GENERALDEATH]Units: Leader's death[\LINK]
 
 17) Culture: Victorious units leave culture on the victorious plot. It may happen that this plot its cultural owner. But this holds only if the plot is in reach of the cultural influence of a city.
 
-18) Slaves: defeated units can be enslaved (from Tech: Enslavement). Slaves can be used for many productive things. See Units: Slaves.
+18) Slaves: defeated units can be enslaved (from Tech: Enslavement). Slaves can be used for many productive things. See [LINK=CONCEPT_SLAVE]Units: Slaves[\LINK].
 
 19) Deflecting cities: If a unit is defeated in a city, the number of defenders and besieders is compared. If the ratio is more than 1: 4, the city can surrender. This does not apply to barbaric cities.
 
@@ -10831,11 +10816,13 @@ Battle on land:
 
 23) Technological insights: If you win against a unit which technology has not yet explored by you, you'll automatically gain research points for this technology.
 
-24) Blessed units will lose this promotion after each combat (whether attacker or defender). See Unit: Promotions
+24) Blessed units will lose this promotion after each combat (whether attacker or defender). See [LINK=CONCEPT_PROMOTIONS]Unit: Promotions[\LINK]
 
 25) Fear: Chariots, mounted units, camel riders, and war elephants cause fear in stacks of foot soldiers only. This fear is lost only when a unit in the stack wins against such anxiety-promoting units. Druids with slave sacrifice and warlords (Generals) with the gift of rhetoric (promotion) can also reassure anxious units and restore their morale.
 
 26) Deportations: Conquered or vanished cities produce emigrants who can be brought and settled into your empire. This feature is only active until technology of Assimilation.
+
+27) Ranking system: Some CIVs have a strictly hierarchical system in their army. For each battle won, such a unit increases in military rank. See [LINK=CONCEPT_UNIT_RANKING]Units: Military Rank[\LINK]
 
 
 Battle on water:
@@ -10899,9 +10886,9 @@ Les combats entre unit&#233;s dans PAE s'accompagnent d'effets tr&#232;s vari&#2
 
 Combat sur terre :
 
-1) Exp&#233;rience de guerre : A chaque victoire, une unit&#233; est en mesure d'augmenter son degr&#233;s d'exp&#233;rience. Les diff&#233;rents degr&#233;s sont : entra&#238;n&#233;, exp&#233;riment&#233;, aguerri, v&#233;t&#233;ran, &#233;lite et l&#233;gendaire. Voir les concepts de PAE &#8211; Unit&#233;s : exp&#233;rience au combat 
+1) Exp&#233;rience de guerre : A chaque victoire, une unit&#233; est en mesure d'augmenter son degr&#233;s d'exp&#233;rience. Les diff&#233;rents degr&#233;s sont : entra&#238;n&#233;, exp&#233;riment&#233;, aguerri, v&#233;t&#233;ran, &#233;lite et l&#233;gendaire. Voir les concepts de [LINK=CONCEPT_COMBAT2]PAE &#8211; Unit&#233;s : exp&#233;rience au combat[\LINK]
 
-2) Lassitude de guerre : les unit&#233;s ayant atteint le statut de v&#233;t&#233;ran par un long service dans l'arm&#233;e de leur empire peuvent se fatiguer de faire la guerre. Voir &#8211; Unit&#233;s : Lassitude de guerre
+2) Lassitude de guerre : les unit&#233;s ayant atteint le statut de v&#233;t&#233;ran par un long service dans l'arm&#233;e de leur empire peuvent se fatiguer de faire la guerre. Voir &#8211; [LINK=CONCEPT_COMBAT3]Unit&#233;s : Lassitude de guerre[\LINK]
 
 3) Mercenaires : les v&#233;t&#233;rans qui combattent pour eux-m&#234;mes peuvent se d&#233;faire de cette promotion apr&#232;s un combat (25% de chance). Si l'unit&#233; a la promotion All&#233;geance, la probabilit&#233; est de 50%. Si l'unit&#233; victorieuse est sur la m&#234;me case qu'un seigneur de guerre, les probabilit&#233;s augmentent de 5%.
 
@@ -10913,7 +10900,7 @@ Combat sur terre :
 
 7) D&#233;sertion : chaque victoire d'une d'unit&#233; lui offre une chance de s'emparer de l'ennemi. Les unit&#233;s Loyal ne sont pas capturables. Les chances de s'emparer de l'unit&#233; ennemie varient si l'un des dirigeants impliqu&#233; est charismatique ou selon le niveau de votre unit&#233; : poss&#232;de les promotions Loyaut&#233; ou Commandement, ou le statut de commandant, h&#233;ros ou mercenaire.
 
-8) H&#233;ros : une unit&#233; victorieuse d'un h&#233;ros devient elle-m&#234;me un h&#233;ros.
+8) H&#233;ros : une unit&#233; victorieuse d'un h&#233;ros devient elle-m&#234;me un h&#233;ros. Voir [LINK=CONCEPT_PAE_PROMOTION_HERO]Unit&#233;s : H&#233;ros[\LINK]
 
 9) Meneur d'homme : Si une unit&#233; vainc avec un commandant dans son groupe, un des commandants de ce groupe re&#231;oit +I XP.
 
@@ -10927,13 +10914,13 @@ Combat sur terre :
 
 14) Les unit&#233;s d'&#233;l&#233;phants vaincues endommagent leurs propres rangs. Voir ci-dessous.
 
-15) Combat contre des mercenaires en mission : L'un d'entre eux est le chef. S'il est vaincu, vous pouvez le faire torturer. Il est probable qu'il r&#233;v&#232;le un ou plusieurs de ses potentiels commanditaires.
+15) Combat contre des [LINK=CONCEPT_MERCENARY]mercenaires en mission[\LINK] : L'un d'entre eux est le chef. S'il est vaincu, vous pouvez le faire torturer. Il est probable qu'il r&#233;v&#232;le un ou plusieurs de ses potentiels commanditaires.
 
-16) Mort du meneur d'homme : voir &#8211; Unit&#233; : mort d'un g&#233;n&#233;ral
+16) Mort du meneur d'homme : voir &#8211; [LINK=CONCEPT_GENERALDEATH]Unit&#233; : mort d'un g&#233;n&#233;ral[\LINK]
 
 17) Culture : la culture d'une unit&#233; victorieuse influence la case du combat. Parfois, des territoires ennemis voisins sont convertis &#224; la culture de l'unit&#233;. Seulement valable si ces cases sont aussi influenc&#233;es par une ville de m&#234;me culture.
 
-18) Esclaves : une unit&#233; victorieuse peut asservir son adversaire (Tech. : Esclavage). Les esclaves sont utiles pour quantit&#233;s d'activit&#233;s de production. Voir Unit&#233;s : Esclaves.
+18) Esclaves : une unit&#233; victorieuse peut asservir son adversaire (Tech. : Esclavage). Les esclaves sont utiles pour quantit&#233;s d'activit&#233;s de production. Voir [LINK=CONCEPT_SLAVE]Unit&#233;s : Esclaves[\LINK].
 
 19) D&#233;fection d'une ville : lorsqu'une unit&#233; en garnison est vaincue, les nombres de d&#233;fenseurs et d'assaillants sont compar&#233;s. Si le rapport est de 1 pour 4 ou plus en faveur des assi&#233;geants, la ville risque de faire d&#233;fection. Ne s'applique pas aux villes barbares.
 
@@ -10945,11 +10932,13 @@ Combat sur terre :
 
 23) D&#233;couverte intuitive : une victoire contre une unit&#233; dont vous n'avez d&#233;couvert la technologie rapporte des points de recherche pour cette technologie.
 
-24) Une unit&#233; b&#233;nie perd cette promotion apr&#232;s tout combat (en attaque ou en d&#233;fense). Voir Unit&#233;s : Promotions.
+24) Une unit&#233; b&#233;nie perd cette promotion apr&#232;s tout combat (en attaque ou en d&#233;fense). Voir [LINK=CONCEPT_PROMOTIONS]Unit&#233;s : Promotions[\LINK].
 
 25) P&#233;toche : Les chars, unit&#233;s mont&#233;es, chameliers et &#233;l&#233;phants de guerre ne font peur qu'aux fantassins group&#233;s. Cette crainte n'est perdue que lorsqu'une unit&#233; du groupe gagne contre de telles unit&#233;s ayant favoris&#233; l'anxi&#233;t&#233;. Druides avec sacrifice d'esclaves et les seigneurs de la guerre (g&#233;n&#233;raux) avec le don de rh&#233;torique (promotion) peuvent &#233;galement rassurer les unit&#233;s anxieuses et leur redonner le moral.
 
 26) D&#233;portations: les villes conquises ou disparues produisent des &#233;migrants qui peuvent &#234;tre amen&#233;s et install&#233;s dans votre empire. Cette fonctionnalit&#233; n'est active que jusqu'&#224; la technologie d'assimilation.
+
+27) Syst&#232;me de classement : Certaines races ont un syst&#232;me strictement hi&#233;rarchique dans leur arm&#233;e. Pour chaque bataille gagn&#233;e, une telle unit&#233; augmente son rang militaire. Voir [LINK=CONCEPT_UNIT_RANKING]Unit&#233;s : rang militaire[\LINK]
 
 
 Combat sur mer:
@@ -11012,9 +11001,9 @@ In PAE hat der Kampf Einheit gegen Einheit verschiedenste zus&#228;tzliche Auswi
 
 Kampf zu Land:
 
-1) Kampferfahrung: Jede siegreiche Einheit erh&#228;lt die Chance einen Erfahrungsstufe h&#246;her zu steigen. Die Stufen sind: Trainiert, Kampferfahren, Routiniert, Veteran, Elite und Legende. Mehr dar&#252;ber in den PAE Konzepten unter Einheiten: Kampferfahrung
+1) Kampferfahrung: Jede siegreiche Einheit erh&#228;lt die Chance einen Erfahrungsstufe h&#246;her zu steigen. Die Stufen sind: Trainiert, Kampferfahren, Routiniert, Veteran, Elite und Legende. Mehr dar&#252;ber in den PAE Konzepten unter [LINK=CONCEPT_COMBAT2]Einheiten: Kampf[\LINK]
 
-2) Kriegsm&#252;digkeit: Einheiten, die bereits den Status eines Veterans haben und daher schon langfristig f&#252;r das eigene Reich k&#228;mpfen, k&#246;nnen an Kriegsverdruss leiden. N&#228;heres unter Einheiten: Kriegsm&#252;digkeit
+2) Kriegsm&#252;digkeit: Einheiten, die bereits den Status eines Veterans haben und daher schon langfristig f&#252;r das eigene Reich k&#228;mpfen, k&#246;nnen an Kriegsverdruss leiden. N&#228;heres unter [LINK=CONCEPT_COMBAT3]Einheiten: Kriegsm&#252;digkeit[\LINK]
 
 3) S&#246;ldner: Veterane Einheiten, die auf eigenen F&#252;&#223;en k&#228;mpfen, k&#246;nnen nach dem Kampf diese Eigenschaft verlieren. Die Chance betr&#228;gt 25%. Besitzt die Einheit eine Loyalit&#228;ts-Bef&#246;rderung, F&#252;hrerschaft oder ist selbst Feldherr, dann 50%. Wenn die siegreiche Einheit in einem Stack eines anwesenden Feldherrn ist, erh&#246;ht sich die Chance nochmals um 5%.
 
@@ -11026,11 +11015,11 @@ Kampf zu Land:
 
 7) &#220;berlauf: Jede siegreiche Einheit erh&#228;lt eine Chance, die gegnerische Einheit zu erobern. Loyale Einheiten sind nicht eroberbar. Je nachdem ob die siegreiche Einheit loyal ist, F&#252;hrerschaft besitzt oder selbst ein Feldherr, ein Held oder ein S&#246;ldner ist. Desweiteren kommt es drauf an, ob einer der Staatsoberh&#228;upter charismatisch ist.
 
-8) Helden: Besiegt eine Einheit einen Helden oder Feldherren, wird er selbst zum Held gek&#252;rt.
+8) Helden: Besiegt eine Einheit einen Helden oder Feldherren, wird er selbst zum Held gek&#252;rt. Siehe [LINK=CONCEPT_PAE_PROMOTION_HERO]Einheiten: Helden[\LINK]
 
 9) Feldherren: Sofern eine Einheit in einem Stack mit einem Feldherren siegreich ist, erh&#228;lt ein Feldherr dieses Stacks zus&#228;tzlich +1 XP.
 
-10) Flucht: Jede besiegte Einheit besitzt die Chance zu fliehen. Fluchtbef&#246;rderungen erh&#246;hen die Chance zur Flucht. Siehe unten. Caution: units (chariots, ships) that flee during defense lose their load!
+10) Flucht: Jede besiegte Einheit besitzt die Chance zu fliehen. Fluchtbef&#246;rderungen erh&#246;hen die Chance zur Flucht. Siehe unten. Achtung: Einheiten mit Ladung (Streitwagen, Schiffe) verlieren dabei ihre geladenen Einheiten!
 
 11) Berittene Einheiten: siehe unten
 
@@ -11038,15 +11027,15 @@ Kampf zu Land:
 
 13) Brennende Schweine sterben, nachdem sie eingesetzt wurden.
 
-14) Besiegte Elefanteneinheiten richten Schaden in eigenen Reihen an. Siehe unten.
+14) Besiegte Elefanteneinheiten richten Schaden in ihren eigenen Reihen an. Siehe unten.
 
-15) Kampf gegen beauftragte S&#246;ldner: Einer der Einheiten ist der Anf&#252;hrer. Besiegt man diese Einheit kann man diese einer Folter unterziehen. Je nach Chance verr&#228;t er seinen oder einen der m&#246;glichen Auftraggeber.
+15) Kampf gegen [LINK=CONCEPT_MERCENARY]beauftragte S&#246;ldner[\LINK]: Einer der Einheiten ist der Anf&#252;hrer. Besiegt man diese Einheit kann man diese einer Folter unterziehen. Je nach Chance verr&#228;t er seinen oder einen der m&#246;glichen Auftraggeber.
 
-16) Generalstod: siehe Einheiten: Generalstod
+16) Generalstod: siehe [LINK=CONCEPT_GENERALDEATH]Einheiten: Generalstod[\LINK]
 
 17) Kultur: Siegreiche Einheiten hinterlassen Kulturpunkte auf dem siegreichen Plot. Daher kann es vorkommen, dass dieser Plot zur eigenen Kultur &#252;berspringt. Dies h&#228;lt aber nur an, sofern der Plot im kulturellen Einfluss einer eigenen Stadt liegt.
 
-18) Sklaven: Besiegte Einheiten k&#246;nnen versklavt werden (ab Tech: Sklaventum). Sklaven k&#246;nnen f&#252;r viele produktive Sachen eingesetzt werden. Siehe Einheiten: Sklaven.
+18) Sklaven: Besiegte Einheiten k&#246;nnen versklavt werden (ab Tech: Sklaventum). Sklaven k&#246;nnen f&#252;r viele produktive Sachen eingesetzt werden. Siehe [LINK=CONCEPT_SLAVE]Einheiten: Sklaven[\LINK].
 
 19) &#220;berlaufende St&#228;dte: Wird eine Einheit in einer Stadt besiegt, so werden die Anzahl der Verteidiger und Belagerer verglichen. Liegt das Verh&#228;ltnis &#252;ber 1:4 so kann die Stadt &#252;berlaufen. Dies gilt nicht f&#252;r barbarische St&#228;dte.
 
@@ -11058,11 +11047,13 @@ Kampf zu Land:
 
 23) Technologische Erkenntnis: Gewinnt man gegen eine Einheit, dessen Technologie noch nicht erforscht hat, gewinnt man automatisch Forschungspunkte f&#252;r diese Technologie.
 
-24) Gesegnete Einheiten verlieren diese Bef&#246;rderung nach jedem Kampf (egal ob Angreifer oder Verteidiger). Siehe Einheiten-Bef&#246;rderungen
+24) Gesegnete Einheiten verlieren diese Bef&#246;rderung nach jedem Kampf (egal ob Angreifer oder Verteidiger). Siehe [LINK=CONCEPT_PROMOTIONS]Einheiten-Bef&#246;rderungen[\LINK]
 
 25) Angst: Streitwagen, Berittene Einheiten, Kamelreiter und Kriegselefanten erzeugen bei Stacks, die nur aus Fu&#223;soldaten bestehen, Angst. Diese Angst geht erst dann verloren, wenn eine Einheit im Stack gegen eine solche angstbereitende Einheiten gewinnt. Druiden mit Sklavenopferung und Heerf&#252;hrer (Gener&#228;le) mit der Gabe der Rhetorik (Bef&#246;rderung) k&#246;nnen ebenfalls beruhigend auf &#228;ngstliche Einheiten wirken und deren Moral wieder st&#228;rken.
 
 26) Deportationen: Eroberte oder vernichtete St&#228;dte erzeugen Auswanderer, die ins eigene Reich gebracht und angesiedelt werden k&#246;nnen. Diese Feature ist nur bis zur Technologie Assimilation aktiv.
+
+27) Rangsystem: Einige V&#246;lker haben in ihrer Armee ein streng hierarchisches System. F&#252;r jeden gewonnenen Kampf steigt eine solche Einheit in ihrem milit&#228;rischen Rang auf. Siehe [LINK=CONCEPT_UNIT_RANKING]Einheiten: Milit&#228;rrang[\LINK]
 
 
 Kampf zu Wasser:
@@ -11126,9 +11117,9 @@ In PAE, il combattiment&#224; unit&#224; contro unit&#224; ha una serie di effet
 
 Combattimento sulla terraferma:
 
-1) Esperienza di combattimento: Ogni unit&#224; vittoriosa ha la possibilit&#224; di aumentare il suo livello di esperienza. I livelli sono: addestrato, esperto, di routine, veterano, &#233;lite e leggenda. Maggiori informazioni su questo nei concetti PAE in Unit&#224;: Esperienza di combattimento
+1) Esperienza di combattimento: Ogni unit&#224; vittoriosa ha la possibilit&#224; di aumentare il suo livello di esperienza. I livelli sono: addestrato, esperto, di routine, veterano, &#233;lite e leggenda. Maggiori informazioni su questo nei concetti PAE in [LINK=CONCEPT_COMBAT2]Unit&#224;: Esperienza di combattimento[\LINK]
 
-2) Stanchezza di guerra: le unit&#224; che hanno gi&#224; lo status di veterani e quindi hanno combattuto a lungo per il loro impero possono soffrire di frustrazione bellica. Per maggiori dettagli, vedi: Unit&#224;: Stanchezza di guerra
+2) Stanchezza di guerra: le unit&#224; che hanno gi&#224; lo status di veterani e quindi hanno combattuto a lungo per il loro impero possono soffrire di frustrazione bellica. Per maggiori dettagli, vedi: [LINK=CONCEPT_COMBAT3]Unit&#224;: Stanchezza di guerra[\LINK]
 
 3) Mercenari: le unit&#224; veterane che combattono da sole possono perdere questa promozione dopo una battaglia. La possibilit&#224; &#232; del 25%. Se l'unit&#224; ha la promozione Lealt&#224;, Leadership o &#232; essa stessa un comandante, allora la probabilit&#224; &#232; del 50%. Se l'unit&#224; vittoriosa fa parte di un gruppo con un signore della guerra, la probabilit&#224; aumenta del 5%.
 
@@ -11140,7 +11131,7 @@ Combattimento sulla terraferma:
 
 7) Diserzione: ogni unit&#224; vincente ha la possibilit&#224; di conquistare l'unit&#224; nemica. Le unit&#224; fedeli non sono conquistabili. A seconda che l'unit&#224; vittoriosa sia leale, abbia un comando o sia essa stessa un comandante, un eroe o un mercenario. Inoltre, la caratteristica del tratto carismatico dei capi di stato influenza la possibilit&#224; di diserzione per entrambe le parti.
 
-8) Eroi: se un'unit&#224; sconfigge un eroe o un leader, ottiene un eroe.
+8) Eroi: se un'unit&#224; sconfigge un eroe o un leader, ottiene un eroe. Vedi [LINK=CONCEPT_PAE_PROMOTION_HERO]Unit&#224;: Eroi[\LINK]
 
 9) Comandanti: se un'unit&#224; vince in un gruppo con un comandante, un comandante di questo gruppo riceve +1 XP.
 
@@ -11154,13 +11145,13 @@ Combattimento sulla terraferma:
 
 14) Le unit&#224; di elefanti sconfitte danneggiano i propri ranghi. Vedi sotto.
 
-15) Combattimento contro mercenari su commissione: Una di queste unit&#224; &#232; il leader. Se sconfiggi questa unit&#224; puoi sottoporla a tortura. A seconda dell'opportunit&#224;, rivela il suo o uno dei potenziali mandanti.
+15) Combattimento contro [LINK=CONCEPT_MERCENARY]mercenari su commissione[\LINK]: Una di queste unit&#224; &#232; il leader. Se sconfiggi questa unit&#224; puoi sottoporla a tortura. A seconda dell'opportunit&#224;, rivela il suo o uno dei potenziali mandanti.
 
-16) Morte del Comandante: vedi Unit&#224;: Morte del Comandante
+16) Morte del Comandante: vedi [LINK=CONCEPT_GENERALDEATH]Unit&#224;: Morte del Comandante[\LINK]
 
 17) Cultura: la cultura di un'unit&#224; vittoriosa ne influenza la cultura della casella del combattimento. A volte i territori nemici vicini vengono convertiti alla cultura dell'unit&#224;. Valido solo se queste caselle sono influenzate anche da una citt&#224; della stessa cultura.
 
-18) Schiavi: un'unit&#224; vittoriosa pu&#242; rendere schiavo il suo avversario (Tecnologia: Schiavit&#249;). Gli schiavi sono utili per molte attivit&#224; produttive. Vedere Unit&#224;: Schiavo.
+18) Schiavi: un'unit&#224; vittoriosa pu&#242; rendere schiavo il suo avversario (Tecnologia: Schiavit&#249;). Gli schiavi sono utili per molte attivit&#224; produttive. Vedere [LINK=CONCEPT_SLAVE]Unit&#224;: Schiavo[\LINK].
 
 19) Defezione della citt&#224;: quando un'unit&#224; presidiata viene sconfitta, viene confrontato il numero di difensori e attaccanti. Se il rapporto &#232; 1:4 o pi&#249; a favore degli assedianti, la citt&#224; potrebbe arrendersi. Non si applica alle citt&#224; barbariche.
 
@@ -11172,11 +11163,13 @@ Combattimento sulla terraferma:
 
 23) Scoperta intuitiva: la vittoria contro un'unit&#224; di cui non hai scoperto la tecnologia fa guadagnare punti ricerca per quella tecnologia.
 
-24) Un'unit&#224; benedetta perde questa promozione dopo qualsiasi combattimento (in attacco o in difesa). Vedi Unit&#224;: promozioni.
+24) Un'unit&#224; benedetta perde questa promozione dopo qualsiasi combattimento (in attacco o in difesa). Vedi [LINK=CONCEPT_PROMOTIONS]Unit&#224;: promozioni[\LINK].
 
 25) Terrore: carri, unit&#224; a cavallo, cammellieri ed elefanti da guerra spaventano solo gruppi di soldati a piedi. Questa paura permane finch&#233; un'unit&#224; del gruppo a piedi vince contro una unit&#224; che provoca paura. I druidi con il sacrificio degli schiavi e i signori della guerra (generali) con il dono della retorica (promozione) possono anche rassicurare le unit&#224; impaurite e aumentare il loro morale.
 
 26) Deportazioni: le citt&#224; conquistate o scomparse producono emigranti che possono essere portati e stabiliti nel tuo impero. Questa funzione &#232; attiva solo fino alla tecnologia di assimilazione.
+
+27) Sistema di classificazione: alcune razze hanno un sistema strettamente gerarchico nel proprio esercito. Per ogni battaglia vinta, tale unit&#224; aumenta di rango militare. Vedi [LINK=CONCEPT_UNIT_RANKING]Unit&#224;: grado militare[\LINK]
 
 
 Combattimento in mare:
@@ -11238,9 +11231,9 @@ En PAE, el combate entre unidadees tiene varios efectos adicionales:
 
 Batallas terrestres:
 
-1) Experiencia de combate: Toda unidad victoriosa tiene una oportunidad de incrementar su nivel de experiencia. Los niveles son: entrenada, experimentada, aguerrida, veterana, elite y legendaria. M&#225;s sobre esto en los conceptos PAE bajo Unidades: Experincia de combate
+1) Experiencia de combate: Toda unidad victoriosa tiene una oportunidad de incrementar su nivel de experiencia. Los niveles son: entrenada, experimentada, aguerrida, veterana, elite y legendaria. M&#225;s sobre esto en los conceptos PAE bajo [LINK=CONCEPT_COMBAT2]Unidades: Experincia de combate[\LINK]
 
-2) Hast&#237;o b&#233;lico: Las unidades que adquirieron el status de veteranas y siguen luchando por su imperio por un largo tiempo pueden sufrir hast&#237;o b&#233;lico. Para m&#225;s detalles, mirar: Unidades: Hast&#237;o b&#233;lico.
+2) Hast&#237;o b&#233;lico: Las unidades que adquirieron el status de veteranas y siguen luchando por su imperio por un largo tiempo pueden sufrir hast&#237;o b&#233;lico. Para m&#225;s detalles, mirar: [LINK=CONCEPT_COMBAT3]Unidades: Hast&#237;o b&#233;lico.[\LINK]
 
 3) Mercenarios: Unidades veteranas que luchan por su cuenta tienen una oportunidad de perder esa promoci&#243;n tras cada batalla. La probabilidad es del 25%. Si la unidad tiene el rango de lealtad, liderazgo o es &#233;l mismo un comandante, ser&#225; del 50%. Si la unidad victoriosa pertenece a un grupo con un general, la probabilidad se incrementa un 5%.
 
@@ -11252,7 +11245,7 @@ Batallas terrestres:
 
 7) Deserci&#243;n: Cada unida victoriosa tiene una oportunidad de conquistar una unidad enemiga. Unidades leales no son conquistables. Dependiendo de si la unidad victoriosa es leal, tiene liderazgo o es un comandante, un h&#233;roe o un mercenario. Adem&#225;s, depende de si uno de los l&#237;deres estatales es carism&#225;tico.
 
-8) H&#233;roes: Si una unidad derrota a un h&#233;roe o un l&#237;der, &#233;l mismo se convertir&#225; en un h&#233;roe.
+8) H&#233;roes: Si una unidad derrota a un h&#233;roe o un l&#237;der, &#233;l mismo se convertir&#225; en un h&#233;roe. Ver [LINK=CONCEPT_PAE_PROMOTION_HERO]Unidades: H&#233;roes[\LINK]
 
 9) L&#237;deres: Si una unidad gana una batalla estando en una pila con un l&#237;der, el l&#237;der de &#233;sta pila conseguir&#225; +1 XP.
 
@@ -11266,13 +11259,13 @@ Batallas terrestres:
 
 14) Los elefantes derrotados producen da&#241;o a sus propias unidadess. Ver abajo.
 
-15) Combates contra mercenarios contratados (pabell&#243;n b&#225;rbaro): Una de esas unidades es el l&#237;der. Si derrotas a esa unidad, puedes someterlo a tortura. Dependiendo de la oportunidad, revelar&#225; uno de sus potenciales clientes.
+15) Combates contra [LINK=CONCEPT_MERCENARY]mercenarios contratados[\LINK] (pabell&#243;n b&#225;rbaro): Una de esas unidades es el l&#237;der. Si derrotas a esa unidad, puedes someterlo a tortura. Dependiendo de la oportunidad, revelar&#225; uno de sus potenciales clientes.
 
-16) Muerte de generales: ver Unidades: Muerte de generales.
+16) Muerte de generales: ver [LINK=CONCEPT_GENERALDEATH]Unidades: Muerte de generales.[\LINK]
 
 17) Cultura: Unidades victoriosas transmiten su cultura a la casilla. Puede pasar que una casilla vecina de un oponente pase a nuestra propia cultura. Pero solo suceder&#225; si esa casilla est&#225; en la influencia cultura de alguna de nuestras ciudades.
 
-18) Esclavos: Unidades derrotadas pueden ser esclavizadas (desde la tecnolog&#237;a: Esclavitud). Los esclavos pueden ser usados para muchas tareas productivas. Ver Unidades: Esclavos.
+18) Esclavos: Unidades derrotadas pueden ser esclavizadas (desde la tecnolog&#237;a: Esclavitud). Los esclavos pueden ser usados para muchas tareas productivas. Ver [LINK=CONCEPT_SLAVE]Unidades: Esclavos[\LINK].
 
 19) Ciudades desertoras: Si una unidad es derrotada en una ciudad, el n&#250;mero de defensores y atacantes se compara. Si la proporci&#243;n es m&#225;s de 1 : 4, la ciudad puede rendirse. Esto no se aplica a las ciudades b&#225;rbaras.
 
@@ -11284,11 +11277,13 @@ Batallas terrestres:
 
 23) Perspectivas tecnol&#243;gicas: Si gana contra una unidad cuya tecnolog&#237;a a&#250;n no ha sido explorada, obtendr&#225; autom&#225;ticamente puntos de investigaci&#243;n para esta tecnolog&#237;a.
 
-24) Las unidades bendecidas perder&#225;n esta promoci&#243;n despu&#233;s de cada combate (ya sea atacante o defensor). Ver Unidad: Promociones
+24) Las unidades bendecidas perder&#225;n esta promoci&#243;n despu&#233;s de cada combate (ya sea atacante o defensor). Ver [LINK=CONCEPT_PROMOTIONS]Unidad: Promociones[\LINK]
 
 25) Temor: Los carros, las unidades montadas, los jinetes de camellos y los elefantes de guerra causan miedo solo en las pilas de soldados de a pie. Este miedo se pierde solo cuando una unidad en la pila gana contra tales unidades que promueven la ansiedad. Druidas con sacrificio de esclavos y los se&#241;ores de la guerra (generales) con el don de la ret&#243;rica (promoci&#243;n) tambi&#233;n pueden tranquilizar a las unidades ansiosas y recuperar su moral.
 
 26) Deportaciones: las ciudades conquistadas o desaparecidas producen emigrantes que pueden ser tra&#237;dos y asentados en su imperio. Esta caracter&#237;stica solo est&#225; activa hasta la tecnolog&#237;a de asimilaci&#243;n.
+
+27) Sistema de clasificaci&#243;n: Algunas razas tienen un sistema estrictamente jer&#225;rquico en su ej&#233;rcito. Por cada batalla ganada, dicha unidad aumenta en rango militar. Ver [LINK=CONCEPT_UNIT_RANKING]Unidades: Rango militar[\LINK]
 
 
 Batalla en el agua:
@@ -13897,48 +13892,48 @@ Religionssymbol ... Staatsreligion dieser CIV (mit Stern = Besitzer der Heiligen
 Technologie ... derzeitige Forschung dieser CIV (immer sichtbar bei uns, unseren Vasallen und CIVs mit den daf&#252;r notwendigen Spionagepunkten (siehe Passive Spionage))
     </German>
     <Italian>
-Left to right:
+Da sinistra a destra:
 
-1st position:
-? ... unknown player
-* ... active player (player on turn)
-Numbers ... Number of points in network players
+1a posizione:
+? ... giocatore sconosciuto
+* ... giocatore attivo (giocatore di turno)
+Numeri... Numero di punti in rete giocatori
 
-1st symbol: Attitude towards the player (Smiley: Furious, Annoyed, Careful, Pleased, Friendly)
-2nd symbol: button from head of state
-3rd symbol: button of civilization
-4th: short description of the civilization
-[ICON_SILVER_STAR] ... vassal (hegemon is always above vassals)
-[ICON_STRENGTH] ... CIV has more power points than us
-[ICON_DEFENSIVEPACT] ... we have an active defensive alliance with this CIV
-[ICON_ESPIONAGE] ... this CIV has invested more spy points against us than we against them
-(WAR) ... we are at war with this CIV
-[ICON_OPENBORDERS] ... with this CIV we have open borders
-[ICON_TRADE] ... we can trade resources with this CIV
-Religion symbol ... state religion of this CIV (with star = owner of the Holy City)
-Technology ... current research of this CIV (always visible to us, our vassals and CIVs with the necessary espionage points (see Passive Espionage))
+1. simbolo: Atteggiamento nei confronti del giocatore (Smiley: Furioso, Infastidito, Attento, Compiaciuto, Amichevole)
+2. simbolo: bottone del capo di stato
+3. simbolo: pulsante della civilt&#224;
+4. breve descrizione della civilt&#224;
+[ICON_SILVER_STAR] ... vassallo (l'egemone &#232; sempre al di sopra dei vassalli)
+[ICON_STRENGTH] ... CIV ha pi&#249; punti di potere di noi
+[ICON_DEFENSIVEPACT] ... abbiamo un'alleanza difensiva attiva con questo CIV
+[ICON_ESPIONAGE] ... questo CIV ha investito pi&#249; punti spia contro di noi che noi contro di loro
+(GUERRA) ... siamo in guerra con questo CIV
+[ICON_OPENBORDERS] ... con questo CIV abbiamo frontiere aperte
+[ICON_TRADE] ... possiamo scambiare risorse con questo CIV
+Simbolo di religione ... religione di stato di questo CIV (con asterisco = proprietario della Citt&#224; Santa)
+Tecnologia ... ricerca attuale di questo CIV (sempre visibile a noi, ai nostri vassalli e CIV con i punti di spionaggio necessari (vedi Spionaggio passivo))
     </Italian>
     <Spanish>
-Left to right:
+De izquierda a derecha:
 
-1st position:
-? ... unknown player
-* ... active player (player on turn)
-Numbers ... Number of points in network players
+1er puesto:
+? ... jugador desconocido
+* ... jugador activo (jugador en turno)
+N&#250;meros... N&#250;mero de puntos en jugadores de la red
 
-1st symbol: Attitude towards the player (Smiley: Furious, Annoyed, Careful, Pleased, Friendly)
-2nd symbol: button from head of state
-3rd symbol: button of civilization
-4th: short description of the civilization
-[ICON_SILVER_STAR] ... vassal (hegemon is always above vassals)
-[ICON_STRENGTH] ... CIV has more power points than us
-[ICON_DEFENSIVEPACT] ... we have an active defensive alliance with this CIV
-[ICON_ESPIONAGE] ... this CIV has invested more spy points against us than we against them
-(WAR) ... we are at war with this CIV
-[ICON_OPENBORDERS] ... with this CIV we have open borders
-[ICON_TRADE] ... we can trade resources with this CIV
-Religion symbol ... state religion of this CIV (with star = owner of the Holy City)
-Technology ... current research of this CIV (always visible to us, our vassals and CIVs with the necessary espionage points (see Passive Espionage))
+1. s&#237;mbolo: Actitud hacia el jugador (Emoticono: Furioso, Molesto, Cuidadoso, Satisfecho, Amigable)
+2. s&#237;mbolo: bot&#243;n del jefe de estado
+3. s&#237;mbolo: bot&#243;n de civilizaci&#243;n
+4. breve descripci&#243;n de la civilizaci&#243;n
+[ICON_SILVER_STAR] ... vasallo (la potencia hegem&#243;nica siempre est&#225; por encima de los vasallos)
+[ICON_STRENGTH] ... CIV tiene m&#225;s puntos de poder que nosotros
+[ICON_DEFENSIVEPACT] ... tenemos una alianza defensiva activa con este CIV
+[ICON_ESPIONAGE] ... este CIV ha invertido m&#225;s puntos de espionaje contra nosotros que nosotros contra ellos
+(GUERRA) ... estamos en guerra con este CIV
+[ICON_OPENBORDERS] ... con este CIV tenemos fronteras abiertas
+[ICON_TRADE] ... podemos intercambiar recursos con este CIV
+S&#237;mbolo de religi&#243;n ... religi&#243;n estatal de este CIV (con estrella = propietario de la Ciudad Santa)
+Tecnolog&#237;a ... investigaci&#243;n actual de este CIV (siempre visible para nosotros, nuestros vasallos y CIV con los puntos de espionaje necesarios (ver Espionaje Pasivo))
     </Spanish>
   </TEXT>
   <TEXT>
@@ -14067,86 +14062,86 @@ Plutarch, Vit. Caes. 55:
 Als Caesar nach dem B&#252;rgerkrieg nach Rom zur&#252;ckkehrte, lie&#223; er in der Stadt eine Volksz&#228;hlung durchf&#252;hren. Statt der ehemals 320.000 lebten nur noch 150.000 Einwohner in der Stadt. Mehr als die H&#228;lfte der R&#246;mer hatte ihr Leben bei diesem Aufstand verloren.
     </German>
     <Italian>
-[H1]Civil War[\H1]
+[H1]Guerra civile[\H1]
 
-Requirements for a civil war in a city:
+Requisiti per una guerra civile in una citt&#224;:
 
-1. Too high taxes
+1. Tasse troppo alte
 
-2. Dissatisfaction
+2. Insoddisfazione
 
-3. Pollution
+3. Inquinamento
 
-4. General death
-
-
-Impact and calculation:
-
-1. The population decreases by 1: Chance >= (units + population) / units
-
-2. All stationed units are injured (up to 25% damage)
-
-3. An already heavily injured stationed unit dies (degree of injury &#62; 80%). Chance &#60; (units + population) / units
-
-4. No impact (AI: chance 1:2, HI: chance 1:4)
-
-5. The civil war ends without effects (AI: chance 1:10, HI: chance: 1:20)
+4. Morte generale
 
 
-Measures to restore order:
+Impatto e calcolo:
 
-1. A general enters the city
+1. La popolazione diminuisce di 1: Probabilit&#224; >= (unit&#224; + popolazione) / unit&#224;
 
-2. A unit with rhetoric promotion enters the city
+2. Tutte le unit&#224; di stanza sono ferite (fino al 25% di danno)
 
-3. Population = stationed military units*
+3. Un'unit&#224; di stanza gi&#224; gravemente ferita muore (grado di lesione &#62; 80%). Possibilit&#224; &#60; (unit&#224; + popolazione) / unit&#224;
 
-*In the capital or in provincial capitals, stationed military units count twice (e.g. in a Pop 8 city, only 4 units are required).
+4. Nessun impatto (AI: chance 1:2, HI: chance 1:4)
+
+5. La guerra civile finisce senza effetti (AI: chance 1:10, HI: chance: 1:20)
 
 
-Plutarch, Vit. Caes. 55:
-When Caesar returned to Rome after the Civil War, he had a census carried out in the city. Instead of the former 320.000, only 150.000 inhabitants lived in the city. More than half of the Romans had lost their lives at that riot.
+Misure per ristabilire l'ordine:
+
+1. Un generale entra in citt&#224;
+
+2. Un'unit&#224; con promozione retorica entra in citt&#224;
+
+3. Popolazione = unit&#224; militari stazionate*
+
+*Nel capoluogo o nei capoluoghi di provincia le unit&#224; militari stazionate contano due volte (es. in una citt&#224; Pop 8 sono necessarie solo 4 unit&#224;).
+
+
+Plutarco, Vit. Ces. 55:
+Quando Cesare torn&#242; a Roma dopo la guerra civile, fece eseguire un censimento nella citt&#224;. Invece dei precedenti 320.000, in citt&#224; vivevano solo 150.000 abitanti. Pi&#249; della met&#224; dei romani aveva perso la vita in quella rivolta.
     </Italian>
     <Spanish>
-[H1]Civil War[\H1]
+[H1]Guerra Civil[\H1]
 
-Requirements for a civil war in a city:
+Requisitos para una guerra civil en una ciudad:
 
-1. Too high taxes
+1. Impuestos demasiado altos
 
-2. Dissatisfaction
+2. Insatisfacci&#243;n
 
-3. Pollution
+3. Contaminaci&#243;n
 
-4. General death
-
-
-Impact and calculation:
-
-1. The population decreases by 1: Chance >= (units + population) / units
-
-2. All stationed units are injured (up to 25% damage)
-
-3. An already heavily injured stationed unit dies (degree of injury &#62; 80%). Chance &#60; (units + population) / units
-
-4. No impact (AI: chance 1:2, HI: chance 1:4)
-
-5. The civil war ends without effects (AI: chance 1:10, HI: chance: 1:20)
+4. Muerte general
 
 
-Measures to restore order:
+Impacto y c&#225;lculo:
 
-1. A general enters the city
+1. La poblaci&#243;n disminuye en 1: Chance >= (unidades + poblaci&#243;n) / unidades
 
-2. A unit with rhetoric promotion enters the city
+2. Todas las unidades estacionadas resultan heridas (hasta un 25 % de da&#241;o)
 
-3. Population = stationed military units*
+3. Muere una unidad estacionada ya gravemente lesionada (grado de lesi&#243;n &#62; 80%). Probabilidad &#60; (unidades + poblaci&#243;n) / unidades
 
-*In the capital or in provincial capitals, stationed military units count twice (e.g. in a Pop 8 city, only 4 units are required).
+4. Sin impacto (AI: probabilidad 1:2, HI: probabilidad 1:4)
+
+5. La guerra civil termina sin efectos (AI: chance 1:10, HI: chance: 1:20)
 
 
-Plutarch, Vit. Caes. 55:
-When Caesar returned to Rome after the Civil War, he had a census carried out in the city. Instead of the former 320.000, only 150.000 inhabitants lived in the city. More than half of the Romans had lost their lives at that riot.
+Medidas para restablecer el orden:
+
+1. Un general entra en la ciudad
+
+2. Ingresa a la ciudad una unidad con promoci&#243;n ret&#243;rica
+
+3. Poblaci&#243;n = unidades militares estacionadas*
+
+*En la capital o en las capitales de provincia, las unidades militares estacionadas cuentan dos veces (por ejemplo, en una ciudad Pop 8, solo se requieren 4 unidades).
+
+
+Plutarco, Vit. Caes. 55:
+Cuando C&#233;sar volvi&#243; a Roma despu&#233;s de la Guerra Civil, mand&#243; hacer un censo en la ciudad. En lugar de los 320.000 anteriores, solo 150.000 habitantes viv&#237;an en la ciudad. M&#225;s de la mitad de los romanos hab&#237;an perdido la vida en ese mot&#237;n.
     </Spanish>
   </TEXT>
   <TEXT>

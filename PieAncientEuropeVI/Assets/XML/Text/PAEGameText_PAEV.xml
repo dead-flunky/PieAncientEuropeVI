@@ -539,12 +539,44 @@
     <Spanish>Estratega</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_INFO_THING_CITY_4</Tag>
+    <English>A humorous and charismatic chief runs the Thing in %s1_city (%s2_civ_desc). A welcome change for many tribal leaders to attend here in the years to come.</English>
+    <French>Un chef plein d'humour et charismatique dirige le Thing &#224; %s1_city (%s2_civ_desc). Un changement bienvenu pour de nombreux chefs tribaux &#224; venir ici dans les ann&#233;es &#224; venir.</French>
+    <German>Ein humorvolles und charismatisches Stammesoberhaupt leitet das Thing in %s1_city (%s2_civ_desc). Eine wohltuende Abwechslung f&#252;r viele Stammesf&#252;hrer hier in den kommenden Jahren beizuwohnen.</German>
+    <Italian>Un capo umoristico e carismatico dirige la Thing a %s1_city (%s2_civ_desc). Un gradito cambiamento per molti leader tribali che parteciperanno qui negli anni a venire.</Italian>
+    <Spanish>Un jefe humor&#237;stico y carism&#225;tico dirige el Thing en %s1_city (%s2_civ_desc). Un cambio bienvenido para que muchos l&#237;deres tribales asistan aqu&#237; en los pr&#243;ximos a&#241;os.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INFO_THING_CITY_5</Tag>
+    <English>A very hospitable chieftain is currently hosting the Thing in %s1_city (%s2_civ_desc). This attracts a number of citizens to his city.</English>
+    <French>Un chef tr&#232;s hospitalier h&#233;berge actuellement la Thing &#224; %s1_city (%s2_civ_desc). Cela attire un certain nombre de citoyens dans sa ville.</French>
+    <German>Ein sehr gastfreundlicher Stammesf&#252;hrer l&#228;dt derzeit zum Thing in %s1_city (%s2_civ_desc) ein. Das lockt etliche B&#252;rger in seine Stadt.</German>
+    <Italian>Un capotrib&#249; molto ospitale sta attualmente ospitando la Thing a %s1_city (%s2_civ_desc). Questo attira un numero di cittadini nella sua citt&#224;.</Italian>
+    <Spanish>Un cacique muy hospitalario alberga actualmente la Thing en %s1_city (%s2_civ_desc). Esto atrae a un n&#250;mero de ciudadanos a su ciudad.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_UNIT_EMIGRANT_HELP</Tag>
     <English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy (from Pop 6)[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villagesat no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)</English>
     <French>[ICON_BULLET]Constructible si la ville est malheureuse ou malsaine (de la Pop 6)[NEWLINE][ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des villages sans frais[NEWLINE][ICON_BULLET]Peut rejoindre des villages (acc&#233;l&#232;re leur croissance)</French>
     <German>[ICON_BULLET]Baubar, wenn die Stadt ungl&#252;cklich oder ungesund ist (ab Pop 6)[NEWLINE][ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1, leert den Nahrungsspeicher[NEWLINE][ICON_BULLET]Kann ohne Kosten H&#252;tten errichten[NEWLINE][ICON_BULLET]Kann sich H&#252;tten anschlie&#223;en (beschleunigt deren Wachstum)</German>
     <Italian>[ICON_BULLET]Costruibile se la citt&#224; &#232; infelice o malata (dalla Pop 6)[NEWLINE][ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1, svuota la riserva di cibo[NEWLINE][ICON_BULLET]Pu&#242; costruire villaggi gratuitamente[NEWLINE][ICON_BULLET]Pu&#242; unirti a villaggi (accelerer&#224; la loro crescita)</Italian>
     <Spanish>[ICON_BULLET]Construible si la ciudad es infeliz o insalubre (de la Pop 6)[NEWLINE][ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1, borra el almacenamiento de alimentos[NEWLINE][ICON_BULLET]Puede construir aldeas sin costo alguno.[NEWLINE][ICON_BULLET]Puede unirse a pueblos (acelera su crecimiento)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INFO_THING_CITY_3</Tag>
+    <English>The Thing in %s1_city (%s2_civ_desc) is attended by a promising seer. A number of tribal leaders and citizens will make use of them in the years to come.</English>
+    <French>La Thing &#224; %s1_city (%s2_civ_desc) est suivie par un voyant prometteur. Un certain nombre de chefs tribaux et de citoyens les utiliseront dans les ann&#233;es &#224; venir.</French>
+    <German>Dem Thing in %s1_city (%s2_civ_desc) wohnt ein vielversprechender Seher bei. Etliche Stammesf&#252;hrer und B&#252;rger werden sich diesen in den kommenden Jahren zu nutzen machen.</German>
+    <Italian>Il Thing in %s1_city (%s2_civ_desc) &#232; assistito da un promettente veggente. Un certo numero di leader tribali e cittadini ne faranno uso negli anni a venire.</Italian>
+    <Spanish>El Thing en %s1_city (%s2_civ_desc) es atendido por un vidente prometedor. Varios l&#237;deres tribales y ciudadanos har&#225;n uso de ellos en los pr&#243;ximos a&#241;os.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INFO_THING_CITY_2</Tag>
+    <English>Currently, there is a good council meeting in %s1_city (%s2_civ_desc). Many tribal leaders will take advantage of this.</English>
+    <French>Actuellement, il y a une bonne r&#233;union du conseil &#224; %s1_city (%s2_civ_desc) en ce moment. De nombreux chefs tribaux en profiteront.</French>
+    <German>Derzeit tagt ein guter Rat in %s1_city (%s2_civ_desc). Viele Stammesf&#252;hrer werden diesen in Anspruch nehmen.</German>
+    <Italian>Un buon consiglio si sta attualmente incontrando a %s1_city (%s2_civ_desc). Molti leader tribali ne trarranno vantaggio.</Italian>
+    <Spanish>Actualmente se est&#225;n reuniendo buenos consejos en %s1_city (%s2_civ_desc). Muchos l&#237;deres tribales se aprovechar&#225;n de esto.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_CULTIVATE_BONUS_FROM_CITY</Tag>
@@ -1844,10 +1876,10 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BONUS_NOT_CULTIVABLE</Tag>
-    <English>(not currently cultivable)</English>
-    <French>(pas actuellement cultivable)</French>
-    <German>(zur Zeit nicht kultivierbar)</German>
-    <Italian>(attualmente non coltivabile)</Italian>
+    <English>(currently uncultivable)</English>
+    <French>(actuellement incultivable)</French>
+    <German>(momentan nicht kultivierbar)</German>
+    <Italian>(attualmente incoltivabile)</Italian>
     <Spanish>(actualmente no cultivable)</Spanish>
   </TEXT>
   <TEXT>
@@ -2233,6 +2265,14 @@
     <German>[ICON_BULLET]Kein B&#252;rgerkrieg in St&#228;dten durch fehlende Staatsreligion</German>
     <Italian>[ICON_BULLET]Nessuna guerra civile nelle citt&#224; a causa della mancanza di religione di stato</Italian>
     <Spanish>[ICON_BULLET]No hay guerra civil en las ciudades debido a la falta de religi&#243;n estatal</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_INFO_THING_CITY_1</Tag>
+    <English>A wealthy clan in %s1_city (%s2_civ_desc) is celebrating the Thing with lavish celebrations. In the near future, many pilgrims and those seeking advice will come to visit the city.</English>
+    <French>Un riche clan de %s1_city (%s2_civ_desc) c&#233;l&#232;bre le Thing avec de somptueuses c&#233;l&#233;brations. Dans un avenir proche, de nombreux p&#232;lerins et personnes en qu&#234;te de conseils viendront visiter la ville.</French>
+    <German>Eine wohlhabende Sippe in %s1_city (%s2_civ_desc) untermalt das Thing mit gro&#223;z&#252;gigen Feierlichkeiten. In n&#228;chster Zeit werden viele Pilger und Ratsuchende die Stadt besuchen kommen.</German>
+    <Italian>Un ricco clan di %s1_city (%s2_civ_desc) sta celebrando il Thing con sontuosi festeggiamenti. Nel prossimo futuro, molti pellegrini e coloro che cercano consigli verranno a visitare la citt&#224;.</Italian>
+    <Spanish>Un clan rico en %s1_city (%s2_civ_desc) est&#225; celebrando el Thing con lujosas celebraciones. En un futuro pr&#243;ximo vendr&#225;n a visitar la ciudad muchos peregrinos y aquellos que buscan consejo.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_HORSE_SWAP</Tag>
@@ -3857,6 +3897,14 @@
     <Spanish>Ninguno</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_BUILDING_HAREM</Tag>
+    <English>Palace Harem</English>
+    <French>Palais Harem</French>
+    <German>Palastharem</German>
+    <Italian>Harem di Palazzo</Italian>
+    <Spanish>Har&#233;n de Palacio</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_LEADER_TOMYRIS</Tag>
     <English>Tomyris, Queen of the Scythians</English>
     <French>Tomyris, reine des Scythes</French>
@@ -3911,6 +3959,14 @@
     <German>Apotheke</German>
     <Italian>Apoteca</Italian>
     <Spanish>Apotheca</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_SCHULE_ASSUR</Tag>
+    <English>Assyrian Academy</English>
+    <French>Acad&#233;mie Assyrienne</French>
+    <German>Assyrische Akademie</German>
+    <Italian>Accademia Assira</Italian>
+    <Spanish>Academia Asiria</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_TORSION</Tag>
@@ -6870,11 +6926,11 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_ACADEMY_6</Tag>
-    <English>Neoplatonic school of philosophy</English>
-    <French>&#201;cole n&#233;oplatonicienne de la philosophie</French>
-    <German>Neoplatonische Philosophenschule</German>
-    <Italian>Scuola neoplatonica di filosofia</Italian>
-    <Spanish>La escuela neoplat&#243;nica de la filosof&#237;a</Spanish>
+    <English>Academy</English>
+    <French>Acad&#233;mie</French>
+    <German>Akademie</German>
+    <Italian>Accademia</Italian>
+    <Spanish>Academia</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_ROME_LIMITANEI_GARDE</Tag>
@@ -7216,9 +7272,9 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_FORM_NAVAL_FULL_SPEED</Tag>
-    <English>Full speed ahead!</English>
+    <English>Full speed!</English>
     <French>Pleine vitesse!</French>
-    <German>Volle Kraft voraus!</German>
+    <German>Volle Fahrt!</German>
     <Italian>Avanti tutta!</Italian>
     <Spanish>&#161;M&#225;xima velocidad adelante!</Spanish>
   </TEXT>
@@ -7755,6 +7811,22 @@ Tumba de Tholos
     <Spanish>Gran Serapeion de Alejandr&#237;a</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_BUILDING_THING_CITY_HELP</Tag>
+    <English>[ICON_BULLET]This building automatically switches to a city with a Thingstead every 10 turns.</English>
+    <French>[ICON_BULLET]Ce b&#226;timent bascule automatiquement vers une ville avec un Thing tous les 10 tours.</French>
+    <German>[ICON_BULLET]Diese Geb&#228;ude wechselt automatisch alle 10 Runden in eine Stadt mit Thingst&#228;tte.</German>
+    <Italian>[ICON_BULLET]Questo edificio passa automaticamente a una citt&#224; con Thing ogni 10 turni.</Italian>
+    <Spanish>[ICON_BULLET]Este edificio cambia autom&#225;ticamente a una ciudad Thing cada 10 turnos.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_THING_CITY</Tag>
+    <English>Thing meetings</English>
+    <French>Rencontres de Thing</French>
+    <German>Thing Tagungen</German>
+    <Italian>Riunioni di Thing</Italian>
+    <Spanish>Reuniones de Thing</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_BUILDING_NATIONAL_EPIC_ETRUSC</Tag>
     <English>Virgil's Aeneid</English>
     <French>En&#233;ide de Virgile</French>
@@ -8005,7 +8077,7 @@ Tumba de Tholos
     <Spanish>Orfebre</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_BUILDING_FORGE</Tag>
+    <Tag>TXT_KEY_BUILDING_FORGE_WEAPONS</Tag>
     <English>Weaponsmith</English>
     <French>Armuriers</French>
     <German>Waffenschmiede</German>

@@ -2020,7 +2020,7 @@
     <Tag>TXT_KEY_EVENT_SOELDNER_5</Tag>
     <English>Let them recruit some Egypt chariots.</English>
     <French>Laissez-les recruter des chars de guerre &#233;gyptiens.</French>
-    <German>Dann sollen sie ein paar &#228;gyptische Streitw&#228;gen anwerben.</German>
+    <German>Dann sollen sie ein paar &#228;gyptische Streitwagen anwerben.</German>
     <Italian>Poi li hanno un paio di carri egiziani reclutare.</Italian>
     <Spanish>Dejadles reclutar algunos Carros egipcios.</Spanish>
   </TEXT>
@@ -2028,7 +2028,7 @@
     <Tag>TXT_KEY_EVENT_SOELDNER_OTHER_5</Tag>
     <English>Our %s1_civ_adjective friends enable us to recruit [COLOR_HIGHLIGHT_TEXT]Egypt Mercenary Chariots[COLOR_REVERT]!</English>
     <French>Nos amis %s1:3_civ_adjective nous autorise &#224; recruter des [COLOR_HIGHLIGHT_TEXT]mercenaires &#233;gyptiens[COLOR_REVERT].</French>
-    <German>Unsere %s1:2_civ_adjective Freunde erm&#246;glichen es uns, [COLOR_HIGHLIGHT_TEXT]&#228;gyptische S&#246;ldnerstreitw&#228;gen[COLOR_REVERT] anzuwerben!</German>
+    <German>Unsere %s1:2_civ_adjective Freunde erm&#246;glichen es uns, [COLOR_HIGHLIGHT_TEXT]&#228;gyptische S&#246;ldnerstreitwagen[COLOR_REVERT] anzuwerben!</German>
     <Italian>I nostri amici %s1:2_civ_adjective ci permettono di reclutare [COLOR_HIGHLIGHT_TEXT]calessini mercenari egiziani[COLOR_REVERT]!</Italian>
     <Spanish>&#161;Nuestros amigos %s1:3 nos permiten reclutar [COLOR_HIGHLIGHT_TEXT]carros mercenarios egipcios[COLOR_REVERT]!</Spanish>
   </TEXT>
@@ -2466,26 +2466,26 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_EVENT_HORSESHOE_2</Tag>
-    <English>We will utilize the improved shoes for all of our mounted units.</English>
-    <French>Nous utiliserons ces nouveaux fers sur toutes nos montures.</French>
-    <German>Wir werden alle unsere berittenen Einheiten mit den verbesserten Hufeisen ausstatten.</German>
-    <Italian>Utilizzeremo i ferri migliorati per tutte le nostre unit&#224; montate.</Italian>
-    <Spanish>Utilizaremos esas herraduras mejoradas en todas nuestras unidades montadas.</Spanish>
+    <English>We will be equipping all of our mounted units with the upgraded stirrups.</English>
+    <French>Nous &#233;quiperons toutes nos unit&#233;s mont&#233;es avec les &#233;triers am&#233;lior&#233;s.</French>
+    <German>Wir werden alle unsere berittenen Einheiten mit den verbesserten Steigb&#252;geln ausstatten.</German>
+    <Italian>Doteremo tutte le nostre unit&#224; montate con le staffe migliorate.</Italian>
+    <Spanish>Equiparemos todas nuestras unidades montadas con los estribos mejorados.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_EVENT_TRIGGER_HORSESHOE_2</Tag>
-    <English>A brilliant smith has developed significant innovation in the design of horseshoes.</English>
-    <French>Un ing&#233;nieux mar&#233;chal-ferrant a d&#233;velopp&#233; une innovation capitale dans le domaine des fers &#224; cheval.</French>
-    <German>Ein brillanter Schmied hat eine bahnbrechende neue Hufeisenform entwickelt.</German>
-    <Italian>Un brillante fabbro ha sviluppato un'innovazione importante nel progetto dei ferri di cavallo.</Italian>
-    <Spanish>Un herrero genial ha desarrollado una importante innovaci&#243;n en el dise&#241;o de las herraduras.</Spanish>
+    <English>A brilliant blacksmith has developed a groundbreaking new stirrup shape.</English>
+    <French>Un brillant forgeron a mis au point une nouvelle forme d'&#233;trier r&#233;volutionnaire.</French>
+    <German>Ein brillanter Schmied hat eine bahnbrechende neue Steigb&#252;gelform entwickelt.</German>
+    <Italian>Un brillante fabbro ha sviluppato una nuova e rivoluzionaria forma della staffa.</Italian>
+    <Spanish>Un herrero brillante ha desarrollado una nueva e innovadora forma de estribo.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_EVENTTRIGGER_HORSESHOE2</Tag>
-    <English>A master smith has developed improved horseshoes, boosting the chance for %s1_civ_adjective mounted units to strike and then escape.</English>
-    <French>Un ma&#238;tre mar&#233;chal-ferrant a d&#233;velopp&#233; de nouveaux fers permettant &#224; la cavalerie %s1:2_civ_adjectiv de fuir plus facilement apr&#232;s une attaque.</French>
-    <German>Ein Meisterschmied hat verbesserte Hufeisen entwickelt, die es den berittenen %s1:2_civ_adjective Einheiten erm&#246;glichen, schneller anzugreifen und anschlie&#223;end den R&#252;ckzug anzutreten.</German>
-    <Italian>Un maestro fabbro ha sviluppato dei migliori ferri di cavallo, aumentando le probabilit&#224; delle unit&#224; montate %s1_civ_adjective di colpire e poi fuggire.</Italian>
-    <Spanish>Un maestro herrero ha desarrollado unas herraduras mejoradas, que aumentan las posibilidades de que las unidades montadas %s1:4 ataquen y escapen.</Spanish>
+    <English>A master smith has developed improved stirrups, boosting the chance for %s1_civ_adjective mounted units to charge faster and then retreat without immediately falling off their horses.</English>
+    <French>Un ma&#238;tre forgeron a d&#233;velopp&#233; des &#233;triers am&#233;lior&#233;s qui permettent aux unit&#233;s %s1:2_civ_adjective mont&#233;es de charger plus rapidement puis de battre en retraite sans tomber imm&#233;diatement de leurs chevaux.</French>
+    <German>Ein Meisterschmied hat verbesserte Steigb&#252;gel entwickelt, die es den berittenen %s1:2_civ_adjective Einheiten erm&#246;glichen, schneller anzugreifen und anschlie&#223;end den R&#252;ckzug anzutreten ohne gleich vom Pferd zu fallen.</German>
+    <Italian>Un maestro fabbro ha sviluppato dei migliori staffa di cavallo, aumentando le probabilit&#224; delle unit&#224; montate %s1_civ_adjective di colpire e poi fuggire senza cadere immediatamente da cavallo.</Italian>
+    <Spanish>Un maestro herrero ha desarrollado estribos mejorados, que aumentan las posibilidades de que las unidades montadas %s1:4 ataquen y luego se retiren sin caerse inmediatamente de sus caballos.</Spanish>
   </TEXT>
 </Civ4GameText>

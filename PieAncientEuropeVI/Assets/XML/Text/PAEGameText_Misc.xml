@@ -9,6 +9,150 @@
     <Spanish>Tudos unidades de combate cercano</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_1</Tag>
+    <English>The city of %s1 is appalled by the General's tragic death!</English>
+    <French>La ville de %s1 est constern&#233;e par la mort tragique du g&#233;n&#233;ral !</French>
+    <German>Die Stadt %s1 ist entsetzt vom tragischen Tod des Generals!</German>
+    <Italian>La citt&#224; di %s1 &#232; sconvolta dalla tragica morte del Generale!</Italian>
+    <Spanish>&#161;La ciudad de %s1 est&#225; consternada por la tr&#225;gica muerte del general!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_1</Tag>
+    <English>The city of %s1 celebrates the death of the enemy general!</English>
+    <French>La ville de %s1 c&#233;l&#232;bre la mort du g&#233;n&#233;ral ennemi !</French>
+    <German>Die Stadt %s1 feiert den Tod des gegnerischen Generals!</German>
+    <Italian>La citt&#224; di %s1 festeggia la morte del generale nemico!</Italian>
+    <Spanish>&#161;La ciudad de %s1 celebra la muerte del general enemigo!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_2</Tag>
+    <English>The residents of %s1 are very concerned about this calamity!</English>
+    <French>Les habitants de %s1 sont tr&#232;s inquiets de cette calamit&#233; !</French>
+    <German>Die Bewohner von %s1 machen sich gro&#223;e Sorgen wegen diesem Ungl&#252;ck!</German>
+    <Italian>I residenti di %s1 sono molto preoccupati per questa calamit&#224;!</Italian>
+    <Spanish>&#161;Los residentes de %s1 est&#225;n muy preocupados por esta calamidad!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_3</Tag>
+    <English>The citizens of %s1 see dark times ahead!</English>
+    <French>Les citoyens de %s1 voient des temps sombres devant eux !</French>
+    <German>Die B&#252;rger von %s1 sehen d&#252;stere Zeiten auf sich zukommen!</German>
+    <Italian>I cittadini di %s1 vedono davanti a s&#233; tempi bui!</Italian>
+    <Spanish>&#161;Los ciudadanos de %s1 ven tiempos oscuros por delante!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_4</Tag>
+    <English>The residents of the city %s1 now fear for their future!</English>
+    <French>Les habitants de la ville %s1 craignent d&#233;sormais pour leur avenir !</French>
+    <German>Die Bewohner der Stadt %s1 bangen nun um ihre Zukunft!</German>
+    <Italian>I residenti della citt&#224; %s1 ora temono per il loro futuro!</Italian>
+    <Spanish>&#161;Los residentes de la ciudad %s1 ahora temen por su futuro!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_5</Tag>
+    <English>The city of %s1 mourns the loss of the general!</English>
+    <French>La ville de %s1 pleure la perte du g&#233;n&#233;ral !</French>
+    <German>Die Stadt %s1 trauert dem General sehr nach!</German>
+    <Italian>La citt&#224; di %s1 piange la perdita del generale!</Italian>
+    <Spanish>&#161;La ciudad de %s1 lamenta la p&#233;rdida del general!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_6</Tag>
+    <English>The residents of %s1 are devastated by the General's tragic death!</English>
+    <French>Les habitants de %s1 sont d&#233;vast&#233;s par la mort tragique du G&#233;n&#233;ral !</French>
+    <German>Die Einwohner von %s1 sind best&#252;rzt vom tragischen Tod des Generals!</German>
+    <Italian>Gli abitanti di %s1 sono sconvolti dalla tragica morte del Generale!</Italian>
+    <Spanish>&#161;Los residentes de %s1 est&#225;n devastados por la tr&#225;gica muerte del General!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_7</Tag>
+    <English>Fear and terror now grip the residents of %s1!</English>
+    <French>La peur et la terreur envahissent d&#233;sormais les habitants de %s1 !</French>
+    <German>Angst und Schrecken ersch&#252;ttern nun die Bewohner von %s1!</German>
+    <Italian>La paura e il terrore ora attanagliano i residenti di %s1!</Italian>
+    <Spanish>&#161;El miedo y el terror ahora se apoderan de los residentes de %s1!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_8</Tag>
+    <English>The citizens of %s1 fear for their existence!</English>
+    <French>Les citoyens de %s1 craignent pour leur existence !</French>
+    <German>Die B&#252;rger von %s1 f&#252;rchten um ihr Dasein!</German>
+    <Italian>I cittadini di %s1 temono per la loro esistenza!</Italian>
+    <Spanish>&#161;Los ciudadanos de %s1 temen por su existencia!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_9</Tag>
+    <English>The city of %s1 fears the worst!</English>
+    <French>La ville de %s1 craint le pire !</French>
+    <German>Die Stadt %s1 bef&#252;rchtet Schlimmstes!</German>
+    <Italian>La citt&#224; di %s1 teme il peggio!</Italian>
+    <Spanish>&#161;La ciudad de %s1 teme lo peor!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_2</Tag>
+    <English>The city of %s1 celebrates the defeat of the fallen general!</English>
+    <French>La ville de %s1 c&#233;l&#232;bre la d&#233;faite du g&#233;n&#233;ral d&#233;chu !</French>
+    <German>Die Stadt %s1 bejubelt den Sieg &#252;ber den gefallenen General!</German>
+    <Italian>La citt&#224; di %s1 festeggia la sconfitta del generale caduto!</Italian>
+    <Spanish>&#161;La ciudad de %s1 celebra la derrota del general ca&#237;do!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_3</Tag>
+    <English>The residents of the city of %s1 breathe a sigh of relief again!</English>
+    <French>Les habitants de la ville de %s1 poussent &#224; nouveau un soupir de soulagement !</French>
+    <German>Die Bewohner der Stadt %s1 atmen wieder erleichtert auf!</German>
+    <Italian>Gli abitanti della citt&#224; di %s1 tirano di nuovo un sospiro di sollievo!</Italian>
+    <Spanish>&#161;Los residentes de la ciudad de %s1 respiran aliviados nuevamente!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_4</Tag>
+    <English>The fears of the residents of the city of %s1 are slowly fading away!</English>
+    <French>Les craintes des habitants de la ville de %s1 s'estompent petit &#224; petit !</French>
+    <German>Die &#196;ngste der Einwohner der Stadt %s1 schwinden allm&#228;hlich dahin!</German>
+    <Italian>Le paure dei residenti della citt&#224; di %s1 stanno lentamente svanendo!</Italian>
+    <Spanish>&#161;Los miedos de los residentes de la ciudad de %s1 se est&#225;n desvaneciendo lentamente!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_5</Tag>
+    <English>The fear in %s1 is a thing of the past!</English>
+    <French>La peur en %s1 appartient au pass&#233; !</French>
+    <German>Die Angst in %s1 geh&#246;rt der Vergangenheit an!</German>
+    <Italian>La paura in %s1 appartiene al passato!</Italian>
+    <Spanish>&#161;El miedo en %s1 es cosa del pasado!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_6</Tag>
+    <English>The people of %s1 hold an annual festival for the significant victory!</English>
+    <French>Les habitants de %s1 organisent un festival annuel pour la victoire significative !</French>
+    <German>Die Menschen in %s1 richten f&#252;r den bedeutenden Sieg ein allj&#228;hrliches Fest aus!</German>
+    <Italian>La gente di %s1 organizza un festival annuale per la significativa vittoria!</Italian>
+    <Spanish>&#161;La gente de %s1 celebra un festival anual por la importante victoria!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_7</Tag>
+    <English>The great worries and fears in %s1 have been overcome!</English>
+    <French>Les grands soucis et peurs de %s1 ont &#233;t&#233; surmont&#233;s !</French>
+    <German>Die gro&#223;en Sorgen und &#196;ngste in %s1 sind &#252;berwunden!</German>
+    <Italian>Le grandi preoccupazioni e paure in %s1 sono state superate!</Italian>
+    <Spanish>&#161;Se han superado las grandes preocupaciones y miedos de %s1!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_8</Tag>
+    <English>The relief in the alleys of %s1 is palpable!</English>
+    <French>Le soulagement dans les ruelles du %s1 est palpable !</French>
+    <German>Die Erleichterung in den Gassen von %s1 ist deutlich sp&#252;rbar!</German>
+    <Italian>Il sollievo nei vicoli di %s1 &#232; palpabile!</Italian>
+    <Spanish>&#161;El alivio en los callejones de %s1 es palpable!</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_9</Tag>
+    <English>The death of the enemy general gives the city %s1 courage and joie de vivre again!</English>
+    <French>La mort du g&#233;n&#233;ral ennemi redonne &#224; la ville %s1 courage et joie de vivre !</French>
+    <German>Der Tod des gegnerischen Generals schenkt der Stadt %s1 wieder Mut und Lebensfreude!</German>
+    <Italian>La morte del generale nemico ridona alla citt&#224; %s1 coraggio e gioia di vivere!</Italian>
+    <Spanish>&#161;La muerte del general enemigo le devuelve a la ciudad %s1 coraje y alegr&#237;a de vivir!</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_PROMOTION_RANG_ROM_LATE_3</Tag>
     <English>Ordinarius</English>
     <French>Ordinarius</French>
@@ -23,6 +167,38 @@
     <German>Centenarius</German>
     <Italian>Centenarius</Italian>
     <Spanish>Centenarius</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUTTON_REPAIR_SHIP</Tag>
+    <English>Repair the damaged ship in the shipyard immediately (1 turn, -%d1 [ICON_GOLD]).</English>
+    <French>R&#233;parez imm&#233;diatement le navire endommag&#233; dans le chantier naval (1 tour, -%d1 [ICON_GOLD]).</French>
+    <German>Das besch&#228;digte Schiff in der Werft sofort reparieren (1 Runde, -%d1 [ICON_GOLD]).</German>
+    <Italian>Ripara immediatamente la nave danneggiata nel cantiere navale (1 turno, -%d1 [ICON_GOLD]).</Italian>
+    <Spanish>Repara inmediatamente el barco da&#241;ado en el astillero (1 turno, -%d1 [ICON_GOLD]).</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUTTON_GREAT_PROPHET_HOLY_CITY</Tag>
+    <English>Rename this city to the Holy City of %c</English>
+    <French>Renomme cette ville en Ville Sainte de %c</French>
+    <German>Benennt diese Stadt zur Heiligen Stadt von %c</German>
+    <Italian>Rinomina questa citt&#224; in Citt&#224; Santa di %c</Italian>
+    <Spanish>Cambie el nombre de esta ciudad a la Ciudad Santa de %c</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_GREAT_PROPHET_HOLY_CITY</Tag>
+    <English>The city %s1 has been declared to the Holy City of the religion "%s2".</English>
+    <French>La ville %s1 a &#233;t&#233; d&#233;clar&#233;e la Ville Sainte pour la religion "%s2".</French>
+    <German>Die Stadt %s1 wurde f&#252;r die Religion "%s2" zur Heiligen Stadt ernannt.</German>
+    <Italian>La citt&#224; %s1 &#232; stata dichiarata Citt&#224; Santa per la religione "%s2".</Italian>
+    <Spanish>La ciudad %s1 ha sido declarada Ciudad Santa para la religi&#243;n "%s2".</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_ACTION_FOREST_RAM</Tag>
+    <English>Use the forest to construct a [COLOR_HIGHLIGHT_TEXT]battering ram[COLOR_REVERT].</English>
+    <French>Utilise la for&#234;t pour construire un [COLOR_HIGHLIGHT_TEXT]b&#233;lier[COLOR_REVERT].</French>
+    <German>Nutzt den Wald f&#252;r den Bau eines [COLOR_HIGHLIGHT_TEXT]Rammbocks[COLOR_REVERT].</German>
+    <Italian>Usa la foresta per costruire un [COLOR_HIGHLIGHT_TEXT]ariete[COLOR_REVERT].</Italian>
+    <Spanish>Usa el bosque para construir un [COLOR_HIGHLIGHT_TEXT]ariete[COLOR_REVERT].</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PEDIA_REL_UNIT</Tag>
