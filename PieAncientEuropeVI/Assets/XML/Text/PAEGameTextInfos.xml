@@ -49,6 +49,14 @@
     <Spanish>%F1 %s2</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_DOMESTIC_ADVISOR_AVAILABLE_SLAVES</Tag>
+    <English>Available Slaves: %d1</English>
+    <French>Esclaves disponibles : %d1</French>
+    <German>Verf&#252;gbare Sklaven: %d1</German>
+    <Italian>Slave disponibili: %d1</Italian>
+    <Spanish>Esclavos disponibles: %d1</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_NO_BONUS_STORED</Tag>
     <English>None</English>
     <French>Aucune</French>
@@ -244,48 +252,53 @@
     <Tag>TXT_KEY_DAWN_OF_MAN_TEXT</Tag>
     <English>
 The sun rises on the year %s1_year. %s3_leader, your people have vested absolute power in you, hoping the gentle grace of the gods will never leave you! Try to build a Civilization to stand the test of time!
-1) Try to found a religion or catch one.
+1) In the course of the game, try to found a religion (using certain technologies) or get it from neighbors.
 2) Build a palace as soon as you can (Tech: Leadership). After that, you can afford the upkeep costs of other cities.
-3) Produce culture to expand your influence (Religion, Palace, Cult, etc.)
-4) Attention: Improvements cost money!
-5) It is recommended to read the concept text [LINK=CONCEPT_IMPORTANT_FACTS]Important Facts[\LINK] before playing.
+3) You can only create settlers, who can found additional cities, with Internal Colonization (technology).
+4) Produce culture to expand your influence (Religion, Palace, Cult, etc.)
+5) Improvements cost money!
+6) It is recommended to read the concept text [LINK=CONCEPT_IMPORTANT_FACTS]Important Facts[\LINK] before playing.
 [H2]All features can be found in the civilopedia under PAE concepts.[\H2]
     </English>
     <French>
 Le soleil se l&#232;ve sur l'an %s1_year. %s3_leader, votre peuple vous a confi&#233; le pouvoir absolu et s'en remet &#224; vous pour b&#226;tir une civilisation qui r&#233;sistera &#224; l'&#233;preuve du temps !
-1) Essayez de fonder une religion ou d'en adopter une
+1) Au cours du jeu, essayez de fonder une religion (en utilisant certaines technologies) ou de l'obtenir aupr&#232;s de voisins.
 2) Construisez un palais d&#232;s que possible pour r&#233;duire les co&#251;ts d'entretien des autres villes (Tech. : 	
 Principe d'autorit&#233;)
-3) Produisez de la culture pour &#233;tendre votre zone d'influence (Religion, Palais, Cultes, Monument, etc.)
-4) Attention, les am&#233;nagements co&#251;tent de l'or !
-5) Il est conseill&#233; de lire le concept [LINK=CONCEPT_IMPORTANT_FACTS]A lire ![\LINK] avant de jouer
+3) Vous ne pouvez cr&#233;er que des colons, qui peuvent fonder des villes suppl&#233;mentaires, avec une colonisation interne (technologie).
+4) Produisez de la culture pour &#233;tendre votre zone d'influence (Religion, Palais, Cultes, Monument, etc.)
+5) Les am&#233;nagements co&#251;tent de l'or !
+6) Il est conseill&#233; de lire le concept [LINK=CONCEPT_IMPORTANT_FACTS]A lire ![\LINK] avant de jouer
 [H2]Toutes les sp&#233;cificit&#233;s de ce MOD sont d&#233;crites dans la Civilop&#233;dia (Concepts du Pie's Mod)[\H2]
     </French>
     <German>
 Die Sonne erhellt das Jahr %s1_year. %s3_leader, Euer Volk hat Euch absolute Macht verliehen und hofft, dass Euch die G&#246;tter wohlgesonnen bleiben! Versuche eine Zivilisation zu errichten, welche die Zeit &#252;berdauern wird!
-1) Versuche zuerst eine Religion zu gr&#252;nden oder zu erhalten.
+1) Versuche im Laufe des Spiels eine Religion zu gr&#252;nden (mittels bestimmter Technologien) oder von Nachbarn zu erhalten.
 2) Baue so bald wie m&#246;glich einen Palast (Tech: F&#252;hrerschaft). Danach kann man sich auch den Unterhalt weiterer St&#228;dte leisten.
-3) Erzeuge Kultur, um deinen Machtbereich auszudehnen (Religion, Palast, Kult, etc.)
-4) Achtung: Modernisierungen kosten Geld!
-5) Es wird empfohlen, vor dem Spielen den Konzepttext [LINK=CONCEPT_IMPORTANT_FACTS]Wichtige Fakten[\LINK] zu lesen.
+3) Siedler, die weitere St&#228;dte gr&#252;nden k&#246;nnen, kannst du erst mit Binnenkolonisierung (Technologie) erstellen.
+4) Erzeuge Kultur, um deinen Machtbereich auszudehnen (Religion, Palast, Kulte, etc.)
+5) Modernisierungen kosten Geld!
+6) Es wird empfohlen, vor dem Spielen [LINK=CONCEPT_IMPORTANT_FACTS]Wichtige Fakten[\LINK] in den PAE Spielkonzepten zu lesen.
 [H2]Alle Features werden in der Zivilop&#228;die unter PAE Konzepte erkl&#228;rt.[\H2]
     </German>
     <Italian>
 Il sole sorge sull'anno %s1_year. %s3_leader, il tuo popolo ha acquisito potere assoluto in te, sperando che la gentile grazia degli dei non ti lascer&#224; mai! Prova a costruire una civilt&#224; per resistere alla prova del tempo!
-1) Prova a fondare una religione o catturane una.
+1) Nel corso del gioco, cerca di fondare una religione (usando determinate tecnologie) o di ottenerla dai vicini.
 2) Costruisci un palazzo appena puoi (Tech: Comando). Successivamente, puoi permetterti i costi di manutenzione di altre citt&#224;.
-3) Produci cultura per espandere la tua influenza (Religione, Palazzo, Culto, ecc.)
-4) Attenzione: i miglioramenti costano denaro!
-5) Si consiglia di leggere il testo del concetto [LINK=CONCEPT_IMPORTANT_FACTS] Fatti importanti [\LINK] prima di giocare.
+3) Puoi solo creare coloni, che possono fondare citt&#224; aggiuntive, con colonizzazione interna (tecnologia).
+4) Produci cultura per espandere la tua influenza (Religione, Palazzo, Culto, ecc.)
+5) I miglioramenti costano denaro!
+6) Si consiglia di leggere il testo del concetto [LINK=CONCEPT_IMPORTANT_FACTS] Fatti importanti [\LINK] prima di giocare.
 [H2]Tutte le funzionalit&#224; possono essere trovate nella civilopedia sotto concetti PAE.[\H2]
     </Italian>
     <Spanish>
 El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferido poder absoluto, &#161;esperando en que la noble gracia de los dioses nunca te abandone!
-1) Intenta fundar una religi&#243;n o captura una.
+1) En el transcurso del juego, trata de fundar una religi&#243;n (usando ciertas tecnolog&#237;as) o cons&#237;guela de los vecinos.
 2) Construye un palacio tan pronto como puedas (Tec: Liderazgo). Despu&#233;s de eso, ser&#225;s capaz de afrontar los costes de mantenimiento de otras ciudades.
-3) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)
-4) &#161;Atenci&#243;n: Las mejoras cuestan dinero!
-5) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.
+3) Solo puedes crear colonos, que pueden fundar ciudades adicionales, con colonizaci&#243;n interna (tecnolog&#237;a).
+4) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)
+5) &#161;Las mejoras cuestan dinero!
+6) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.
 [H2]Todas las caracter&#237;sticas pueden ser encontradas en la civilopedia sobre los conceptos del PAE.[\H2]
     </Spanish>
   </TEXT>
@@ -7531,11 +7544,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_TECH_BY_UNIT</Tag>
-    <English>You were able to gain +%d2[ICON_RESEARCH] to the technology of %s1!</English>
-    <French>Vous avez progress&#233; de +%d2[ICON_RESEARCH] dans la recherche de la technologie %s1 !</French>
-    <German>Ihr konntet zur Technologie %s1 +%d2[ICON_RESEARCH] dazugewinnen!</German>
-    <Italian>You were able to gain +%d2[ICON_RESEARCH] to the technology of %s1!</Italian>
-    <Spanish>&#161;Fuiste capaz de ganar +%d2[ICON_RESEARCH] para la tecnolog&#237;a de %s1!</Spanish>
+    <English>For defeating a unit of the unknown warfare "%s1", you could gain +%d2[ICON_RESEARCH] to this technology.</English>
+    <French>Pour avoir vaincu une unit&#233; de la guerre inconnue "%s1", vous pourriez gagner +%d2[ICON_RESEARCH] &#224; cette technologie.</French>
+    <German>F&#252;r den Sieg gegen eine Einheit der Euch unbekannten Kriegsf&#252;hrung "%s1", konntet Ihr +%d2[ICON_RESEARCH] zu dieser Technologie dazugewinnen.</German>
+    <Italian>Sconfiggendo un'unit&#224; della guerra sconosciuta "%s1", potresti guadagnare +%d2[ICON_RESEARCH] a questa tecnologia.</Italian>
+    <Spanish>Por derrotar a una unidad de guerra desconocida "%s1", podr&#237;as ganar +%d2[ICON_RESEARCH] para esta tecnolog&#237;a.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_BONUSVERBREITUNG_REPLACE</Tag>
@@ -8360,6 +8373,14 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <German>[COLOR_HIGHLIGHT_TEXT]Helden[COLOR_REVERT] (durch Kampf) und Einheiten mit der Kunst der [COLOR_HIGHLIGHT_TEXT]Rhetorik[COLOR_REVERT] (durch Bef&#246;rderung) k&#246;nnen die Unruhen neu eroberter St&#228;dte auf nur eine Runde reduzieren.[NEWLINE]Bewegt man normale Einheiten in solche St&#228;dte, sinkt der Timer pro Einheit um eins (min 2 Runden Unruhe verbleiben).</German>
     <Italian>[COLOR_HIGHLIGHT_TEXT]Gli eroi[COLOR_REVERT] (attraverso il combattimento) e le unit&#224; con l'Arte di [COLOR_HIGHLIGHT_TEXT]Retorica[COLOR_REVERT] (attraverso la promozione) possono ridurre la rivolta delle citt&#224; appena conquistate a un solo turno.[NEWLINE]Se sposti unit&#224; normali in tali citt&#224;, il timer per unit&#224; diminuisce di uno (rimangono almeno 2 turni di rivolta).</Italian>
     <Spanish>Los [COLOR_HIGHLIGHT_TEXT]H&#233;roes[COLOR_REVERT] (a trav&#233;s del combate) y las unidades con el Arte de la [COLOR_HIGHLIGHT_TEXT]Ret&#243;rica[COLOR_REVERT] (a trav&#233;s de la promoci&#243;n) pueden reducir el mot&#237;n de las ciudades reci&#233;n conquistadas a solo un turno.[NEWLINE]Si mueves unidades normales a tales ciudades, el tiempo por unidad se reduce en uno (quedan al menos 2 turnos de disturbios).</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_UNIT_GREAT_PROPHET_HELP</Tag>
+    <English>[ICON_BULLET]Can relocate Holy Cities of polytheistic religions to the capital. (Requirement: ownership of the Holy City, religion must be spread in city)</English>
+    <French>[ICON_BULLET]Peut d&#233;placer les villes saintes des religions polyth&#233;istes vers la capitale. (Exigence : propri&#233;t&#233; de la Ville Sainte, la religion doit &#234;tre r&#233;pandue dans la capitale)</French>
+    <German>[ICON_BULLET]Kann Heilige St&#228;dte polytheistischer Religionen in die Hauptstadt verlagern. (Voraussetzung: Besitz der Heiligen Stadt, Religion muss in der Hauptstadt verbreitet sein)</German>
+    <Italian>[ICON_BULLET]Pu&#242; trasferire le citt&#224; sante delle religioni politeiste nella capitale. (Requisito: propriet&#224; della Citt&#224; Santa, la religione deve essere diffusa nel capoluogo)</Italian>
+    <Spanish>[ICON_BULLET]Puede trasladar Ciudades Santas de religiones polite&#237;stas a la capital. (Requisito: propiedad de la Ciudad Santa, la religi&#243;n debe estar muy extendida en la capital)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_HORSEMAN_MACEDON4</Tag>
