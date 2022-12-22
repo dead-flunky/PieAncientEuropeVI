@@ -2016,6 +2016,7 @@ class CvEventManager:
 						elif iData2 == 2:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
 						pUnit.finishMoves()
+						pUnit.setImmobileTimer(2)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
 

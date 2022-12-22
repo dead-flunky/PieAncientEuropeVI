@@ -32543,7 +32543,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<bNoRevealMap>0</bNoRevealMap>
-			<iAirRange>0</iAirRange>
+			<iAirRange>1</iAirRange>
 			<iAirUnitCap>0</iAirUnitCap>
 			<iDropRange>0</iDropRange>
 			<iNukeRange>-1</iNukeRange>
@@ -32562,8 +32562,8 @@
 			<FeaturePassableTechs/>
 			<iCombat>3</iCombat>
 			<iCombatLimit>100</iCombatLimit>
-			<iAirCombat>0</iAirCombat>
-			<iAirCombatLimit>0</iAirCombatLimit>
+			<iAirCombat>1</iAirCombat>
+			<iAirCombatLimit>40</iAirCombatLimit>
 			<iXPValueAttack>2</iXPValueAttack>
 			<iXPValueDefense>1</iXPValueDefense>
 			<iFirstStrikes>0</iFirstStrikes>
