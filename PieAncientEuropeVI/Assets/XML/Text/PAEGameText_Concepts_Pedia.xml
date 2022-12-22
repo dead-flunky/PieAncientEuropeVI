@@ -3786,6 +3786,15 @@ Trade routes only arise when a trade between two different nations is completed.
 
 Trade routes have the advantage of increasing the movement by +1 (such as Roman Roads or Royal Roads) and giving the plot +1 [ICON_COMMERCE].
 
+Chance to build a trade route:
+
+The trading partner owns the resource: 5%
+Otherwise:
+[ICON_BULLET]Normal: 10%
+[ICON_BULLET]Luxury: 20%
+[ICON_BULLET]Strategic: 25%
+[ICON_BULLET]Rarity: 30%
+
 
 [H1]Trade centers[\H1]
 A city is considered a trade center if the city plot leads away several active trade routes. If the city lies inland it needs 3 leading trade routes. A city by the sea needs only 2 leading trade routes. The trading center itself is a building that is automatically put into the city, when a trade is made there. It increases the gold gain on passive trade routes by 100%.
@@ -3859,6 +3868,15 @@ Si vous &#233;changez des marchandises dans la ville B (avec des marchandises de
 Les routes commerciales ne surviennent que lorsqu'un commerce entre deux nations diff&#233;rentes est achev&#233;.
 
 Les routes commerciales ont l'avantage d'augmenter le mouvement de +1 (telles les routes romaines ou les routes royales) et de donner +1 [ICON_COMMERCE] &#224; la case.
+
+Possibilit&#233; de construire une route commerciale :
+
+Le partenaire commercial est propri&#233;taire de la ressource : 5 %
+Autrement:
+[ICON_BULLET]Normale : 10 %
+[ICON_BULLET]Luxe : 20 %
+[ICON_BULLET]Strat&#233;gique : 25 %
+[ICON_BULLET]Raret&#233; : 30 %
 
 
 [H1]Centres de n&#233;goce[\H1]
@@ -3934,6 +3952,15 @@ Handelsstra&#223;en entstehen nur wenn ein Handel zwischen 2 verschiedenen Natio
 
 Handelsstra&#223;en bringen den Vorteil, dass sie die Bewegung um +1 erh&#246;hen (so wie Befestigte Stra&#223;en bzw. K&#246;nigliche Stra&#223;en) und dem Feld +1 [ICON_COMMERCE] geben.
 
+Chance f&#252;r den Bau einer Handelsstra&#223;e:
+
+Der Handelspartner besitzt die Resource: 5%
+Andernfalls:
+[ICON_BULLET]Normal: 10%
+[ICON_BULLET]Luxus: 20%
+[ICON_BULLET]Strategisch: 25%
+[ICON_BULLET]Rarit&#228;t: 30%
+
 
 [H1]Handelszentren[\H1]
 Eine Stadt gilt als Handelszentrum, wenn vom Stadtplot mehrere Handelsstra&#223;en wegf&#252;hren. Liegt die Stadt im Binnenland so ben&#246;tigt sie 3 wegf&#252;hrende Handelsstra&#223;en. Eine Stadt am Meer ben&#246;tigt nur 2 wegf&#252;hrende Handelsstra&#223;en. Das Handelszentrum selbst ist ein Geb&#228;ude, das automatisch in die Stadt gesetzt wird, wenn in der Stadt ein Handel vollzogen wird. Es erh&#246;ht den Goldgewinn bei passiven Handelsrouten um 100%.
@@ -4004,6 +4031,16 @@ Se scambi merci nella citt&#224; B (con merci dalla citt&#224; A), &#232; possib
 Le rotte commerciali vengono stabilite solo quando viene completato un commercio tra due nazioni diverse.
 
 Le rotte commerciali hanno il vantaggio di aumentare il movimento di +1 (come strade romane o strade reali) e di dare alla casella il bonus di +1 [ICON_COMMERCE].
+
+Possibilit&#224; di costruire una rotta commerciale:
+
+Il partner commerciale possiede la risorsa: 5%
+Altrimenti:
+[ICON_BULLET]Normale: 10%
+[ICON_BULLET]Lusso: 20%
+[ICON_BULLET]Strategico: 25%
+[ICON_BULLET]Rarit&#224;: 30%
+
 
 [H1] Centri commerciali [\H1]
 Una citt&#224; &#232; considerata un centro commerciale se pi&#249; rotte commerciali attive iniziano dalle caselle della citt&#224;. Se la citt&#224; &#232; nell'entroterra, hai bisogno di 3 rotte commerciali principali. Una citt&#224; sul mare ha bisogno solo di 2 rotte commerciali principali. Il centro commerciale stesso &#232; un edificio che viene costruito automaticamente in citt&#224; quando vengono soddisfatti i requisiti. Aumenta del 100% il guadagno d'oro sulle rotte commerciali passive.
@@ -4077,6 +4114,16 @@ Si intercambia bienes en la ciudad B (con bienes de la ciudad A), se puede crear
 Las rutas comerciales solo surgen cuando se completa un comercio entre dos naciones diferentes.
 
 Las rutas comerciales tienen la ventaja de aumentar el movimiento en +1 (como las carreteras romanas o caminos reales) y dar la trama +1 [ICON_COMMERCE].
+
+Posibilidad de construir una ruta comercial:
+
+El socio comercial posee el recurso: 5%
+De lo contrario:
+[ICON_BULLET]Normal: 10 %
+[ICON_BULLET]Lujo: 20 %
+[ICON_BULLET]Estrat&#233;gico: 25 %
+[ICON_BULLET]Rareza: 30 %
+
 
 [H1]Centros comerciales[\H1]
 Una ciudad se considera un centro comercial si la trama de la ciudad aleja varias rutas comerciales activas. Si la ciudad se encuentra tierra adentro, necesita 3 rutas comerciales principales. Una ciudad junto al mar necesita solo 2 rutas comerciales principales. El centro de comercio en s&#237; es un edificio que se coloca autom&#225;ticamente en la ciudad, cuando se hace un comercio all&#237;. Aumenta la ganancia de oro en las rutas comerciales pasivas en un 100%.
@@ -6932,6 +6979,8 @@ Neutral and hostile terrain (improvements and income will be confiscated from th
 [ICON_BULLET] Oasis: +10
 [ICON_BULLET] Wells: +10
 
+Enemy territory gives the provisioner more recharge bonus because plundering and expropriation take place on enemy territory.
+
 The improvement will not be destroyed in the progress, but by pillaging it, you may get an additional, one-time bonus (although the plot will merely provide the normal supply afterwards).
 Neutral or hostile terrain without improvements (apart from oasis) provides no bonus.
 A river always adds +10 in addition to the other bonuses.
@@ -7020,6 +7069,8 @@ Terrain neutre et hostile (dans ces situations, les am&#233;nagements et le rend
 [ICON_BULLET] P&#226;turage : 10
 [ICON_BULLET] Oasis : 10
 [ICON_BULLET] Puits : 10
+
+Le territoire ennemi donne au fournisseur plus de bonus de recharge car le pillage et l'expropriation ont lieu sur le territoire ennemi.
 
 L'am&#233;nagement ne sera pas d&#233;truit . Gr&#226;ce au pillage de l'am&#233;nagement, un bonus ponctuel est ajout&#233; &#224; l'approvisionnement lors de ce tour( voir ci-dessous ) , mais le terrain pill&#233; ne livre plus de ravitaillement par la suite.
 Les terrains neutres ou hostiles sans am&#233;nagement (&#224; l'exception des oasis ) n'apportent aucun bonus.
@@ -7111,6 +7162,8 @@ Neutrales und feindliches Terrain (dabei werden die Modernisierungen und der Ert
 [ICON_BULLET] Oase: +10
 [ICON_BULLET] Brunnen: +10
 
+Feindiches Gebiet bringt dem Versorger mehr Aufladebonus, weil auf feindlichem Terrain Pl&#252;nderungen und Enteignungen stattfinden.
+
 Die Modernisierung wird dabei nicht vernichtet. Durch die Pl&#252;nderung von Modernisierungen l&#228;sst sich zwar ein zus&#228;tzlicher, einmaliger Bonus erreichen (siehe unten), doch das Feld liefert dann keinen r&#252;ndlichen Bonus mehr.
 Neutrales oder feindliches Terrain ohne Modernisierungen (au&#223;er Oasen) bringt keinen Bonus.
 Ein Fluss gibt immer einen Bonus von +10 zus&#228;tzlich zu den anderen Boni.
@@ -7200,6 +7253,8 @@ Terreno neutrale e ostile ( in questo caso la modernizzazione e il reddito deriv
 [ICON_BULLET] oasi : +10
 [ICON_BULLET] Fontana : +10
 
+Il territorio nemico d&#224; al provveditore pi&#249; bonus di ricarica perch&#233; il saccheggio e l'espropriazione avvengono sul territorio nemico.
+
 La modernizzazione non sar&#224; distrutta . Attraverso il saccheggio di modernizzazione , un ulteriore bonus una tantum pu&#242; infatti raggiungere ( vedi sotto) , ma il campo fornisce quindi alcun bonus r&#252;ndlichen pi&#249; .
 Terreno neutro o ostile senza modernizzazione ( tranne oasi ) non porta alcun bonus.
 Un fiume &#232; sempre un bonus di +10 in aggiunta agli altri bonus .
@@ -7288,6 +7343,8 @@ Terreno hostil y neutral (mejoras e ingresos ser&#225;n confiscados a la pila):
 [ICON_BULLET] Pastizal: +10
 [ICON_BULLET] Pozos: +10
 [ICON_BULLET] Oasis: +10
+
+El territorio enemigo le da al aprovisionador m&#225;s bonificaci&#243;n de recarga porque el saqueo y la expropiaci&#243;n tienen lugar en territorio enemigo.
 
 La mejora no ser&#225; destruida en el progreso, pero saque&#225;ndola, puedes obtener una sola bonificaci&#243;n adicional (aunque la casilla proporcionar&#225; simplemente el aprovisionamiento normal despu&#233;s de todo).
 Terreno neutral u hostil sin mejoras (aparte de oasis) no proporcionan bonus.

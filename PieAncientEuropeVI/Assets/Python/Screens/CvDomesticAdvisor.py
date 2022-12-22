@@ -459,9 +459,15 @@ class CvDomesticAdvisor:
 				ButtonX = (260 * self.nTableWidth) / self.nNormalizedTableWidth
 				MarginX = (56 * self.nTableWidth) / self.nNormalizedTableWidth
 				ColWidth = (56 * self.nTableWidth) / self.nNormalizedTableWidth
+				
+				player = gc.getPlayer(gc.getGame().getActivePlayer())
 
 				# Get the screen and the player
 				screen = self.getScreen()
+
+				szText = localText.getText("TXT_KEY_DOMESTIC_ADVISOR_AVAILABLE_SLAVES", (player.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_SLAVE")), ))
+				screen.setLabel("AvailableSlavesText", "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY,
+						80, 30, 0, FontTypes.MENU_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_MILITARY_SCREEN).getActionInfoIndex(), -1)
 
 				# Zoom to City
 				screen.setTableColumnHeader("CityListBackground", 0, "", (20 * self.nTableWidth) / self.nNormalizedTableWidth)

@@ -8,7 +8,7 @@ from CvPythonExtensions import (CyGlobalContext, CyInterface, CyGame,
 																ButtonPopupTypes, plotDirection,
 																CyAudioGame, InterfaceDirtyBits,
 																plotDistance, FontSymbols, DomainTypes,
-																MissionTypes, MissionAITypes)
+																MissionTypes, MissionAITypes, OrderTypes)
 # import CvEventInterface
 import CvUtil
 import PAE_Unit
@@ -205,17 +205,17 @@ def doBuildTradeRoad(pUnit, pCity):
 
 		# wenn die Stadt den Bonus bereits hat
 		if CvUtil.hasBonusIgnoreFreeBonuses(pCity, eBonus):
-				iChance = 10
+				iChance = 5
 		else:
 				# Better resources increase chance
 				if eBonus in L.LBonusLuxury:
-						iChance = 30
-				elif eBonus in L.LBonusRarity:
-						iChance = 40
-				elif eBonus in L.LBonusStrategic:
-						iChance = 50
-				else:
 						iChance = 20
+				elif eBonus in L.LBonusRarity:
+						iChance = 30
+				elif eBonus in L.LBonusStrategic:
+						iChance = 25
+				else:
+						iChance = 10
 						
 
 		iRand = CvUtil.myRandom(100, "Handelsstrasse")
@@ -664,17 +664,17 @@ def doPopupChooseBonus(pUnit, pCity):
 # Basis value for each bonus
 # auch in TXT_KEY_TRADE_ADVISOR_WERT_PANEL
 
-
+# Basiswert
 def getBonusValue(eBonus):
 		if eBonus == -1 or eBonus in L.LBonusUntradeable:
 				return 0
 		if eBonus in L.LBonusCorn + L.LBonusLivestock + L.LBonusPlantation + L.LBonusCultivatableCoast:
-				return 20
+				return 10
 		elif eBonus in L.LBonusLuxury:
-				return 40
+				return 20
 		elif eBonus in L.LBonusRarity:
-				return 50
-		return 30  # strategic bonus ressource
+				return 25
+		return 15  # strategic bonus ressource
 
 
 # Price player pays for buying bonus
@@ -768,7 +768,7 @@ def calculateBonusSellingPrice(pUnit, pCity, bCalcOnly, iBonus2=-1):
 		# Zwischensumme
 		iSum = iBasis * (iPop + iModifier)/100 + iBasis*iDistance // (75 - iBasis)
 
-		iKorruption = pCity.calculateDistanceMaintenance() * 2
+		iKorruption = pCity.calculateDistanceMaintenance()
 
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iBasis",iBasis)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iBasis + iPop + Modi",(iBasis * (iPop + iModifier)/100))), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -776,7 +776,39 @@ def calculateBonusSellingPrice(pUnit, pCity, bCalcOnly, iBonus2=-1):
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iKorruption",iKorruption)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iSum",int(iSum - iKorruption))), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
-		return int(iSum - iKorruption)
+		iSum -= iKorruption
+		return max(2,iSum) # 2 Gold solls zur Not immer geben, falls es mal beziehungstechnisch ins Minus geht
+
+def calcBonusProfit(pCityFrom, pCityTo, iBonus):
+		iBasis = getBonusValue(iBonus)  # Grundwert
+		iBuyer = pCityTo.getOwner()
+		iSeller = pCityFrom.getOwner()
+		if iBuyer == iSeller: return iBasis
+
+		iModifier = 100
+
+		iDistance = plotDistance(pCityFrom.getX(), pCityFrom.getY(), pCityTo.getX(), pCityTo.getY()) - 1
+		iPop = pCityTo.getPopulation()
+
+		# Stadt hat dieses Bonusgut nicht im Handelsnetz
+		if not pCityTo.hasBonus(iBonus): iModifier += 20
+		# Wunderbonus
+		iModifier += pCityTo.getNumWorldWonders() * 5
+		# Furious = 0, Annoyed = 1, Cautious = 2, Pleased = 3, Friendly = 4
+		if iSeller != iBuyer: iModifier += 5 * gc.getPlayer(iSeller).AI_getAttitude(iBuyer)
+
+		# Zwischensumme
+		iSum = iBasis * (iPop + iModifier)/100 + iBasis*iDistance // (75 - iBasis)
+
+		iKorruption = pCityTo.calculateDistanceMaintenance()
+		
+		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCityFrom.getName(),iBasis)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCityTo.getName(),iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+		
+		iSum -= iKorruption
+		iSum -= iBasis
+		
+		return max(2,iSum)
 # --- End of price stuff (trade) ---
 
 
@@ -903,6 +935,13 @@ def doPopupAutomatedTradeRoute(pUnit, iType, iData1, iData2):
 				popupInfo.setData1(iUnitOwner)
 				popupInfo.setData2(pUnit.getID())
 				popupInfo.setData3(iType == 3)
+
+				if iType == 6:
+						iBonus = int(CvUtil.getScriptData(pUnit, ["autB1"], -1))
+						iX1 = int(CvUtil.getScriptData(pUnit, ["autX1"], -1))
+						iY1 = int(CvUtil.getScriptData(pUnit, ["autY1"], -1))
+						pCityPlot1 = CyMap().plot(iX1, iY1)
+
 				for eBonus in lGoods:
 						if eBonus != -1:
 								sBonusDesc = gc.getBonusInfo(eBonus).getDescription()
@@ -915,25 +954,21 @@ def doPopupAutomatedTradeRoute(pUnit, iType, iData1, iData2):
 												iBonusOwned = gc.getPlayer(iUnitOwner).getNumAvailableBonuses(eBonus)
 												#sText = CyTranslator().getText("TXT_KEY_BUY_BONUS", (sBonusDesc, iPrice, iBonusOwned))
 										else:
-												iX1 = CvUtil.getScriptData(pUnit, ["autX1"], -1)
-												iY1 = CvUtil.getScriptData(pUnit, ["autY1"], -1)
-												pCityPlot1 = CyMap().plot(iX1, iY1)
 												iBonusOwned = gc.getPlayer(pCityPlot1.getOwner()).getNumAvailableBonuses(eBonus)
 												#sText = CyTranslator().getText("TXT_KEY_BUY_BONUS2", (sBonusDesc, iPrice, iBonusOwned))
 
 										if iType == 6:
-												if not "iX1" in locals():
-														iX1 = CvUtil.getScriptData(pUnit, ["autX1"], -1)
-														iY1 = CvUtil.getScriptData(pUnit, ["autY1"], -1)
-														pCityPlot1 = CyMap().plot(iX1, iY1)
 
-												pFirstCity = pCityPlot1.getPlotCity()
-												iPrice2 = calculateBonusSellingPrice(pUnit, pFirstCity, 1, eBonus)
+												# Profite auswerten
+												iProfit1 = calcBonusProfit(pCityPlot1.getPlotCity(), pCity, iBonus) # Bonus 1
+												iProfit2 = calcBonusProfit(pCity, pCityPlot1.getPlotCity(), eBonus) # möglicher Bonus hier
+												iProfit = iProfit1 + iProfit2
 
+												# Anzeige mit Profit des Handels (Bonus1<->Bonus2)
 												if iData1 != iUnitOwner:
-														sText = CyTranslator().getText("TXT_KEY_BUY_BONUS_SELL", (sBonusDesc, iPrice, iBonusOwned, iPrice2-iPrice))
+														sText = CyTranslator().getText("TXT_KEY_BUY_BONUS_SELL", (sBonusDesc, iPrice, iBonusOwned, iProfit))
 												else:
-														sText = CyTranslator().getText("TXT_KEY_BUY_BONUS2_SELL", (sBonusDesc, iPrice, iBonusOwned, iPrice2-iPrice))
+														sText = CyTranslator().getText("TXT_KEY_BUY_BONUS2_SELL", (sBonusDesc, iPrice, iBonusOwned, iProfit))
 										else:
 												if iData1 != iUnitOwner:
 														sText = CyTranslator().getText("TXT_KEY_BUY_BONUS", (sBonusDesc, iPrice, iBonusOwned))
@@ -1048,8 +1083,8 @@ def doAutomateMerchant(pUnit):
 		# DEBUG
 		iHumanPlayer = gc.getGame().getActivePlayer()
 		#CyInterface().addMessage(iHumanPlayer, True, 10, "Player: " + str(pUnit.getOwner()) + " Unit-ID: " + str(pUnit.getID()), None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
-		# if pUnit.getOwner() == iHumanPlayer:
-		#  CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is active", None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
+		#if pUnit.getOwner() == iHumanPlayer:
+		#	CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is active", None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 		bTradeRouteActive = int(CvUtil.getScriptData(pUnit, ["autA", "t"], 0))
 		if bTradeRouteActive:  # and pUnit.getGroup().getLengthMissionQueue() == 0:
 
@@ -1515,7 +1550,6 @@ def addCityWithSpecialBonus(iGameTurn):
 
 		LSpecialBonuses = L.LBonusLuxury + L.LBonusRarity
 
-		lAllSpecialBonuses = []
 		lNewCities = []
 		for i in range(gc.getMAX_PLAYERS()):
 				loopPlayer = gc.getPlayer(i)
@@ -1529,26 +1563,27 @@ def addCityWithSpecialBonus(iGameTurn):
 												if iTurn == -1:
 														lNewCities.append(loopCity)
 										(loopCity, pIter) = loopPlayer.nextCity(pIter, False)
-						# get available special bonuses
-						for iBonus in LSpecialBonuses:
-								if loopPlayer.hasBonus(iBonus) and iBonus not in lAllSpecialBonuses:
-										lAllSpecialBonuses.append(iBonus)
 
-		lNewBonus = []
 		iTry = 0
 		while lNewCities and iTry < 3:
+
 				# Stadt auswaehlen
 				pCity = lNewCities[CvUtil.myRandom(len(lNewCities), "city addCityWithSpecialBonus")]
-				# Dauer auswaehlen
-				iTurns = lTurns[CvUtil.myRandom(len(lTurns), "turns addCityWithSpecialBonus")]
+
 				# Bonusgut herausfinden
-				for iBonus in lAllSpecialBonuses:
+				lNewBonus = []
+				for iBonus in LSpecialBonuses:
 						if not pCity.hasBonus(iBonus):
 								lNewBonus.append(iBonus)
+
 				# Bonus setzen wenn die Stadt nicht eh schon alles hat.
 				if len(lNewBonus) > 0:
 						# Globale Variable setzen
 						iCitiesSpecialBonus += 1
+						
+						# Dauer auswaehlen
+						iTurns = lTurns[CvUtil.myRandom(len(lTurns), "turns addCityWithSpecialBonus")]
+						
 						CvUtil.addScriptData(pCity, "tst", iGameTurn+iTurns)
 						eBonus = lNewBonus[CvUtil.myRandom(len(lNewBonus), "bonus addCityWithSpecialBonus")]
 						CvUtil.addScriptData(pCity, "tsb", eBonus)
@@ -1907,7 +1942,16 @@ def getPossibleTradeUnits(pPlayer):
 		return min(iAnz, iAnzMax)
 
 
-def canCreateTradeUnit(pPlayer):
-		if getCountTradeUnits(pPlayer) < getPossibleTradeUnits(pPlayer):
+def canCreateTradeUnit(pPlayer, pCity):
+		iAnz = getCountTradeUnits(pPlayer)
+		
+		# check Order Queue in dieser Stadt
+		for iOrderCurrentCity in range(pCity.getOrderQueueLength()):
+				pOrder = pCity.getOrderFromQueue(iOrderCurrentCity)
+				if pOrder.eOrderType == OrderTypes.ORDER_TRAIN and pOrder.iData1 in L.LTradeUnits:
+						iAnz -= 1
+						break
+		
+		if iAnz < getPossibleTradeUnits(pPlayer):
 				return True
 		return False

@@ -31,7 +31,7 @@
 			<Help/>
 			<PrereqTech>TECH_ROMAN_ROADS</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>40</iCost>
+			<iCost>20</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>NONE</ImprovementType>
 			<RouteType>ROUTE_RAILROAD</RouteType>
@@ -50,7 +50,7 @@
 			<Help/>
 			<PrereqTech>TECH_PERSIAN_ROAD</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>30</iCost>
+			<iCost>15</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>NONE</ImprovementType>
 			<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
@@ -124,7 +124,7 @@
 			<Help/>
 			<PrereqTech>TECH_IRRIGATION</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>20</iCost>
+			<iCost>12</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_BRUNNEN</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -142,28 +142,9 @@
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
-			<iTime>300</iTime>
-			<iCost>5</iCost>
+			<iTime>100</iTime>
+			<iCost>2</iCost>
 			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_H</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_CAMP2</Type>
-			<Description>TXT_KEY_BUILD_CAMP</Description>
-			<Help/>
-			<PrereqTech>NONE</PrereqTech>
-			<iTime>1</iTime>
-			<iCost>0</iCost>
-			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -181,7 +162,7 @@
 			<Help/>
 			<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
 			<iTime>300</iTime>
-			<iCost>8</iCost>
+			<iCost>4</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_LUMBER_CAMP</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -206,13 +187,6 @@
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_SAVANNA</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>100</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>0</bRemove>
-				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
@@ -403,7 +377,7 @@
 			<Help/>
 			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>30</iCost>
+			<iCost>25</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_SALTMINE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -422,7 +396,7 @@
 			<Help/>
 			<PrereqTech>TECH_KULTIVIERUNG</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>25</iCost>
+			<iCost>20</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -477,7 +451,7 @@
 			<Help/>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>20</iCost>
+			<iCost>15</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_OLIVE_PRESS</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -587,7 +561,7 @@
 			<Help>TXT_KEY_BUILD_COTTAGE_HELP</Help>
 			<PrereqTech>TECH_STAATENBILDUNG</PrereqTech>
 			<iTime>300</iTime>
-			<iCost>15</iCost>
+			<iCost>10</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -606,7 +580,7 @@
 			<Help/>
 			<PrereqTech>TECH_AGRICULTURE2</PrereqTech>
 			<iTime>300</iTime>
-			<iCost>15</iCost>
+			<iCost>10</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_COTTAGE_HILL</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -681,8 +655,8 @@
 			<Description>TXT_KEY_BUILD_TURM</Description>
 			<Help/>
 			<PrereqTech>TECH_HOLZWEHRANLAGEN</PrereqTech>
-			<iTime>200</iTime>
-			<iCost>10</iCost>
+			<iTime>30</iTime>
+			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_TURM</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -700,8 +674,8 @@
 			<Description>TXT_KEY_BUILD_TURM2</Description>
 			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
 			<PrereqTech>TECH_BUERGERSOLDATEN</PrereqTech>
-			<iTime>400</iTime>
-			<iCost>25</iCost>
+			<iTime>60</iTime>
+			<iCost>10</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_TURM2</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -719,8 +693,8 @@
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
 			<PrereqTech>TECH_DEFENCES</PrereqTech>
-			<iTime>600</iTime>
-			<iCost>50</iCost>
+			<iTime>120</iTime>
+			<iCost>20</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -738,8 +712,8 @@
 			<Description>TXT_KEY_BUILD_FORT2</Description>
 			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
 			<PrereqTech>TECH_WEHRTECHNIK</PrereqTech>
-			<iTime>800</iTime>
-			<iCost>75</iCost>
+			<iTime>180</iTime>
+			<iCost>30</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_FORT2</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -1041,7 +1015,7 @@
 			<Type>BUILD_LIMES2_1</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_1</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1060,7 +1034,7 @@
 			<Type>BUILD_LIMES2_2</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_2</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1079,7 +1053,7 @@
 			<Type>BUILD_LIMES2_3</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_3</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1098,7 +1072,7 @@
 			<Type>BUILD_LIMES2_4</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_4</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1117,7 +1091,7 @@
 			<Type>BUILD_LIMES2_5</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_5</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1136,7 +1110,7 @@
 			<Type>BUILD_LIMES2_6</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_6</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1155,7 +1129,7 @@
 			<Type>BUILD_LIMES2_7</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_7</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1174,7 +1148,7 @@
 			<Type>BUILD_LIMES2_8</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_8</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>200</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>
@@ -1193,7 +1167,7 @@
 			<Type>BUILD_LIMES2_9</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES2_9</Description>
 			<Help/>
-			<PrereqTech>TECH_DEFENCES_2</PrereqTech>
+			<PrereqTech>TECH_LIMES</PrereqTech>
 			<iTime>350</iTime>
 			<iCost>20</iCost>
 			<bKill>0</bKill>

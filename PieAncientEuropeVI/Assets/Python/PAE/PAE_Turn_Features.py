@@ -209,11 +209,10 @@ def doPlotFeatures():
 																if iPlotOwner == -1:
 																		loopPlot.setCulture(iOwner, 1, True)
 																		loopPlot.setOwner(iOwner)
+																		continue
 														# Kultur bei Forts
 														# else:
 														#  doCheckFortCulture(loopPlot)
-
-														continue
 
 												# Check nur alle x Runden (Tier-Spawn)
 												if iGameTurn % 2 == 0:
@@ -322,12 +321,12 @@ def doPlotFeatures():
 																if bRageBarbs:
 																		iTurns = 5
 																else:
-																		iTurns = 10
+																		iTurns = 9
 																if gc.getGame().getGameTurn() % iTurns == 0:
-																		iAnzUnits = PAE_Barbaren.countNearbyUnits(loopPlot, 2, iBarbPlayer)
-																		if iAnzUnits < 6:
-																				# Einheiten) setzen
-																				PAE_Barbaren.createBarbUnit(loopPlot)
+																		#iAnzUnits = PAE_Barbaren.countNearbyUnits(loopPlot, 2, iBarbPlayer)
+																		#if iAnzUnits < 6:
+																		# Einheiten) setzen
+																		PAE_Barbaren.createBarbUnit(loopPlot)
 														continue
 												# Baerenhoehle
 												elif iPlotImprovement == impCave:
@@ -439,6 +438,9 @@ def doPlotFeatures():
 
 		# Olympiade / Olympic Games / Panhellenic Games
 		doOlympicGames()
+
+		# Besonderes Thing
+		doThing()
 
 
 # Tiere erstellen
@@ -904,8 +906,6 @@ def doPlaceDeepOcean():
 								pPlot.setTerrainType(iDeepOcean, False, bRebuildGraphics)
 
 # Panhellenische Spiele / Olympiade
-
-
 def doOlympicGames():
 		# wurde das Projekt erstellt?
 		if gc.getGame().getProjectCreatedCount(gc.getInfoTypeForString("PROJECT_OLYMPIC_GAMES")) > 0:
@@ -997,8 +997,9 @@ def doOlympicGames():
 								# Olympionike in die Stadt stellen
 								pCity.setNumRealBuilding(iBuildingOlympionike, 1)
 
-								# Stadion verbessern +1 Kultur
+								# Stadion verbessern +1 Kultur (Chance 25%)
 								if pCity.isHasBuilding(iBuildingStadion):
+									if CvUtil.myRandom(4, "Olympia_ChanceOfStationCulture") == 1:
 										iCulture = pCity.getBuildingCommerceChange(iBuildingClassStadion, CommerceTypes.COMMERCE_CULTURE) + 1
 										pCity.setBuildingCommerceChange(iBuildingClassStadion, CommerceTypes.COMMERCE_CULTURE, iCulture)
 
@@ -1056,6 +1057,99 @@ def doOlympicGames():
 																						 xSound, 2, "Art/Interface/Buttons/Buildings/button_building_olympionike.dds", ColorTypes(iColor), pCity.plot().getX(), pCity.plot().getY(), bShow, bShow)
 # -- Olympiade Ende --
 
+# Besonderes Thing
+def doThing():
+		# kann es Things geben?
+		if gc.getGame().countKnownTechNumTeams(gc.getInfoTypeForString("TECH_CODE_OF_LAWS")) > 0:
+
+				# alle 10 Runden
+				iTurns = 10
+
+				if gc.getGame().getElapsedGameTurns() % iTurns == 1:
+
+						# Inits
+						lCities4BonusBuilding = []
+						lHumans = []
+						lPlayers = []
+
+						iTechRequired = gc.getInfoTypeForString("TECH_CODE_OF_LAWS")
+						iTechObsolete = gc.getInfoTypeForString("TECH_DIVINE_RIGHT")
+						iBuildingRequired = gc.getInfoTypeForString("BUILDING_THING")
+						iBuilding = gc.getInfoTypeForString("BUILDING_THING_CITY")
+
+						# Los gehts
+						iNumPlayers = gc.getMAX_PLAYERS()
+						for iPlayer in range(iNumPlayers):
+								pPlayer = gc.getPlayer(iPlayer)
+								if pPlayer is not None and not pPlayer.isNone() and pPlayer.isAlive():  # and not pPlayer.isBarbarian():
+									if iPlayer in L.LCivGermanen and pPlayer.getStateReligion() not in L.LMonoReligions:
+
+										# Hat der Spieler noch nicht die richtige Tech erforscht, isser nicht dabei
+										if not gc.getTeam(pPlayer.getTeam()).isHasTech(iTechRequired):
+												continue
+
+										# Hat der Spieler bereits die obsolet machende Tech erforscht, is der Spass vorbei
+										if gc.getTeam(pPlayer.getTeam()).isHasTech(iTechObsolete):
+												continue
+
+										# Cities
+										iNumCities = pPlayer.getNumCities()
+										for iCity in range(iNumCities):
+												pCity = pPlayer.getCity(iCity)
+												if not pCity.isNone():
+
+														# Aktuelles Bonusgebäude entfernen
+														if pCity.isHasBuilding(iBuilding):
+																pCity.setNumRealBuilding(iBuilding, 0)
+
+														# Hat die Stadt das notwendige Gebäude?
+														if pCity.isHasBuilding(iBuildingRequired):
+
+																# Liste für Spielermeldungen
+																if pPlayer.isHuman():
+																		if iPlayer not in lHumans:
+																				lHumans.append(iPlayer)
+
+																# Liste verschiedener CIVs
+																if iPlayer not in lPlayers:
+																		lPlayers.append(iPlayer)
+
+																# Stadt an den Spielen zulassen
+																lCities4BonusBuilding.append(pCity)
+
+
+						# Choose new Bonus City
+						# erst ab 2 CIVs
+						if len(lPlayers) > 1:
+								iRand = CvUtil.myRandom(len(lCities4BonusBuilding), "CityOfThing")
+								pCity = lCities4BonusBuilding[iRand]
+
+								# Olympionike in die Stadt stellen
+								pCity.setNumRealBuilding(iBuilding, 1)
+
+								# Meldung an alle beteiligten Spieler
+								for iPlayer in lHumans:
+										xSound = None
+										iColor = 14  # graublau
+										bShow = False
+										
+										#Text
+										i = 1 + CvUtil.myRandom(5, "CityOfThingText1-5")
+										Text = "TXT_KEY_INFO_THING_CITY_" + str(i)
+										sText = CyTranslator().getText(Text, (pCity.getName(), gc.getPlayer(pCity.getOwner()).getCivilizationShortDescription(0)))
+										
+										# Extra PopUp wenn HI der Gewinner ist
+										if iPlayer == pCity.getOwner():
+												xSound = "AS2D_WELOVEKING"
+												iColor = 10  # cyan
+												bShow = True
+												popupInfo = CyPopupInfo()
+												popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
+												popupInfo.setText(sText)
+												popupInfo.addPopup(iPlayer)
+										# Ingame Text
+										CyInterface().addMessage(iPlayer, True, 15, sText, xSound, 2, "Art/Interface/Buttons/Buildings/button_thing.dds", ColorTypes(iColor), pCity.plot().getX(), pCity.plot().getY(), bShow, bShow)
+# -- Besonderes Thing Ende --
 
 # Kultur bei Forts (Feature deaktiviert: nur Vorteil für HI)
 def doCheckFortCulture(pPlot):

@@ -179,23 +179,42 @@ def removePagans(pCity):
 		# Religion
 		elif lReli:
 				iRand = CvUtil.myRandom(len(lReli), "removePaganReli")
-				iRange = gc.getNumBuildingInfos()
-				for iBuildingLoop in range(iRange):
-						if pCity.isHasBuilding(iBuildingLoop):
-								pBuilding = gc.getBuildingInfo(iBuildingLoop)
-								if pBuilding.getPrereqReligion() == lReli[iRand]:
-										# Holy City
-										if pBuilding.getHolyCity() == -1:
-												# Wunder sollen nicht betroffen werden
-												iBuildingClass = pBuilding.getBuildingClassType()
-												if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
-														pCity.setNumRealBuilding(iBuildingLoop, 0)
 
-				pCity.setHasReligion(lReli[iRand], 0, 0, 0)
-				text = gc.getReligionInfo(lReli[iRand]).getText()
+				# PAE 6.14: Reli der Heiligen Stadt erst zuletzt austreiben
+				iReli = lReli[iRand]
+				pHolyCity = gc.getGame().getHolyCity(iReli)
+				bHolyCity = False
+				bLastCityOfReligion = False
+				if not pHolyCity.isNone() and pCity.getID() == pHolyCity.getID():
+						bHolyCity = True
+						bLastCityOfReligion = True
+						(loopCity, pIter) = pPlayer.firstCity(False)
+						while loopCity:
+								if not loopCity.isNone():
+										if loopCity.isHasReligion(iReli):
+												bLastCityOfReligion = False
+												break
+								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
-		# Meldung
-		if pPlayer.isHuman() and text != "":
-				iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
-				CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_CULTS_"+str(iRand), (text, pCity.getName())),
-																 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+				if not bLastCityOfReligion or bHolyCity and bLastCityOfReligion:
+
+						iRange = gc.getNumBuildingInfos()
+						for iBuildingLoop in range(iRange):
+								if pCity.isHasBuilding(iBuildingLoop):
+										pBuilding = gc.getBuildingInfo(iBuildingLoop)
+										if pBuilding.getPrereqReligion() == iReli:
+												# Holy City
+												if pBuilding.getHolyCity() == -1:
+														# Wunder sollen nicht betroffen werden
+														iBuildingClass = pBuilding.getBuildingClassType()
+														if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
+																pCity.setNumRealBuilding(iBuildingLoop, 0)
+
+						pCity.setHasReligion(iReli, 0, 0, 0)
+						text = gc.getReligionInfo(iReli).getText()
+
+						# Meldung
+						if pPlayer.isHuman() and text != "":
+								iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_CULTS_"+str(iRand), (text, pCity.getName())),
+																				 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)

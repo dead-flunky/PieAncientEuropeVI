@@ -1029,10 +1029,10 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, gc.getBonusInfo(eBonus).getButton(), iX +
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, eBonus, -1, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_KUESTE"):
-								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_PROMO_OIL").getPath(), iX +
-																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 701, -1, False)
-								fX += X_INCREMENT
+						#elif i == gc.getInfoTypeForString("TECH_KUESTE"):
+						#		screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_PROMO_OIL").getPath(), iX +
+						#											 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 701, -1, False)
+						#		fX += X_INCREMENT
 						# Reservisten
 						elif i == gc.getInfoTypeForString("TECH_RESERVISTEN"):
 								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/MainScreen/CityScreen/Great_Engineer.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,7,6",
@@ -1069,12 +1069,11 @@ class CvTechChooser:
 
 						# Limes
 						elif i == gc.getInfoTypeForString("TECH_LIMES"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Buildings/button_building_limes.dds", iX +
-																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 733, 0, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_DEFENCES_2"):
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Buildings/button_building_hadrianswall.dds",
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 733, 1, False)
+								fX += X_INCREMENT
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Buildings/button_building_limes.dds", iX +
+																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 733, 0, False)
 								fX += X_INCREMENT
 						# Salae/Sold oder Dezimierung
 						elif i == gc.getInfoTypeForString("TECH_CURRENCY"):

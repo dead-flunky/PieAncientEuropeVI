@@ -1545,18 +1545,8 @@
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 			</TerrainBooleans>
-			<FeatureBooleans>
-				<FeatureBoolean>
-					<FeatureType>FEATURE_SAVANNA</FeatureType>
-					<bFeature>1</bFeature>
-				</FeatureBoolean>
-			</FeatureBooleans>
-			<FeatureTerrainBooleans>
-				<FeatureTerrainBoolean>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bFeatureTerrain>1</bFeatureTerrain>
-				</FeatureTerrainBoolean>
-			</FeatureTerrainBooleans>
+			<FeatureBooleans/>
+			<FeatureTerrainBooleans/>
 		</BonusInfo>
 		<BonusInfo>
 			<Type>BONUS_HUNDE</Type>
@@ -1690,7 +1680,7 @@
 			<Type>BONUS_SALT</Type>
 			<Description>TXT_KEY_BONUS_SALT</Description>
 			<Civilopedia>TXT_KEY_BONUS_SALT_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_LUXURY</BonusClassType>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SALT2</ArtDefineTag>
 			<TechReveal>TECH_MINING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>

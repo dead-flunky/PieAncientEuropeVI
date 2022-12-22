@@ -4000,6 +4000,7 @@ def getCityStatus(pCity, iPlayer, iCity, bReturnButton):
 
 # City Civil War
 def doCheckCivilWar(pCity):
+		if pCity.isNone(): return
 		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
 				# ***TEST***
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("CIVIL WAR",pCity.getX())), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -4225,3 +4226,17 @@ def getCityMissionar(pCity, iPlayer):
 def isCityState(iPlayer):
 		# city states / Stadtstaaten
 		return gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE"))
+
+def doCheckDyingGeneral(pCity, bOnCityAcquired):
+		eBuildingStadt = gc.getInfoTypeForString("BUILDING_STADT")
+		if pCity.isHasBuilding(eBuildingStadt):
+				eBuildingClass = gc.getBuildingInfo(eBuildingStadt).getBuildingClassType()
+				if bOnCityAcquired:
+						pCity.setBuildingHappyChange(eBuildingClass, 0)
+						return
+				iHappy = pCity.getBuildingHappyChange(eBuildingClass)
+				if iHappy != 0:
+						if CvUtil.myRandom(20, "iRandCityRelic") == 1:
+								if iHappy < 0: iHappy += 1
+								else: iHappy -= 1
+								pCity.setBuildingHappyChange(eBuildingClass, iHappy)

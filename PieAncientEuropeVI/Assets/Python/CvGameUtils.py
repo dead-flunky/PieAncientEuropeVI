@@ -668,7 +668,7 @@ class CvGameUtils:
 				if eUnit in L.LTradeUnits:
 						iPlayer = pCity.getOwner()
 						pPlayer = gc.getPlayer(iPlayer)
-						if not PAE_Trade.canCreateTradeUnit(pPlayer):
+						if not PAE_Trade.canCreateTradeUnit(pPlayer, pCity):
 								return True
 
 				# PAE Emigrants
@@ -1590,6 +1590,41 @@ class CvGameUtils:
 								self.PAE_AI_Cities_Slaves = []
 								self.PAE_AI_Cities_Slavemarket = []
 
+
+						# Hunter: Lager oder Beobachtungsturm
+						if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+								# Lager / Camp
+								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+										if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
+												if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
+														pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+														pUnit.finishMoves()
+														return True
+								# Beobachtungsturm / Spähturm / Look-out
+								#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
+								#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
+								#				if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iOwner, 2):
+								#						# Check, ob im Umkreis Türme sind
+								#						bTurm = False
+								#						eTurm = gc.getInfoTypeForString("IMPROVEMENT_TURM")
+								#						iRange = 3
+								#						iX = pPlot.getX()
+								#						iY = pPlot.getY()
+								#						for i in range(-iRange, iRange+1):
+								#								for j in range(-iRange, iRange+1):
+								#										loopPlot = plotXY(iX, iY, i, j)
+								#										if loopPlot is not None and not loopPlot.isNone():
+								#												if loopPlot.getImprovementType() == eTurm:
+								#														bTurm = True
+								#														break
+								#								if bTurm: break
+
+								#						if not bTurm:
+								#								pPlot.setImprovementType(eTurm)
+								#								pUnit.finishMoves()
+								#								return True
+
+
 						# Barbs -------------------------
 						if iUnitType == gc.getInfoTypeForString("UNIT_TREIBGUT"):
 								# CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 15, CyTranslator().getText("TXT_KEY_MESSAGE_TEST", ("TreibgutAI",)), None, 2, None, ColorTypes(11), pUnit.getX(), pUnit.getY(), False, False)
@@ -1621,7 +1656,7 @@ class CvGameUtils:
 												pUnit.setHasPromotion(iPromo, False)
 												pUnit.setHasPromotion(iPromo2, False)
 
-								# ab hier mit BarbUnits aus der Funktion raus
+								# ab hier mit BarbUnits raus aus der Funktion
 								return False
 						# -------------------------------
 
@@ -1656,6 +1691,30 @@ class CvGameUtils:
 										if self.doSpreadStrategicBonus_AI(pUnit, gc.getInfoTypeForString("BUILDING_CAMEL_STABLE"), gc.getInfoTypeForString("BONUS_CAMEL")):
 												return True
 
+						# Great Prophet makes Capital to Holy City (769)
+						elif iUnitType == gc.getInfoTypeForString("UNIT_PROPHET"):
+								pCapital = pOwner.getCapitalCity()
+								iReligions = gc.getNumReligionInfos()
+								for iReligion in range(iReligions):
+										if iReligion in L.LRelisRemapCapital:
+												if gc.getGame().isReligionFounded(iReligion):
+														pHolyCity = gc.getGame().getHolyCity(iReligion)
+														if not pHolyCity.isNone() and pHolyCity.getID() == pCapital.getID(): 
+																continue
+														else:
+																# Es darf auch dann die Heilige Stadt gesetzt werden, wenn sie zB zerstört wurde
+																if pCapital.isHasReligion(iReligion) and (pHolyCity.isNone() or pHolyCity.getOwner() == iOwner):
+																		gc.getGame().setHolyCity(iReligion, pCapital, 0)
+																		
+																		for iPlayer in range(gc.getMAX_PLAYERS()):
+																				if not gc.getPlayer(iPlayer).isNone() and gc.getPlayer(iPlayer).isHuman():
+																						CyInterface().addMessage(iPlayer, True, 10,
+																							CyTranslator().getText("TXT_KEY_MESSAGE_GREAT_PROPHET_HOLY_CITY", (pCapital.getName(),gc.getReligionInfo(iReligion).getDescription())),
+																							"AS2D_WELOVEKING", 2, "Art/Interface/Buttons/Actions/button_action_holycity.dds", ColorTypes(13), pCapital.getX(), pCapital.getY(), True, True)
+																		
+																		pUnit.kill(True, -1)
+																		return True
+
 						# Trade and cultivation (Boggy). First, try cultivation. If unsuccessfull, try trade.
 						# if pUnit.getUnitAIType() ==
 						# gc.getInfoTypeForString("UNITAI_MERCHANT") and iUnitType != gc.getInfoTypeForString("UNIT_MERCHANT"):
@@ -1666,18 +1725,19 @@ class CvGameUtils:
 										return True
 
 								#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, "CultivationUnit: False", None, 2, None, ColorTypes(5), 0, 0, False, False)
-								if not pUnit.plot().isCity():
+								if iUnitType != gc.getInfoTypeForString("UNIT_WORKBOAT") and not pUnit.plot().isCity():
 										pCity = PAE_Unit.getNearestCity(pUnit)
 										if pCity != None:
 												pUnit.getGroup().pushMoveToMission(pCity.getX(), pCity.getY())
 												return True
+										pUnit.getGroup().pushMission(MissionTypes.MISSION_SKIP, 0, 0, 0, True, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
+										return True
 
-								if pOwner.getUnitClassCount(pUnit.getUnitClassType()) > 1:
+								if pOwner.getUnitClassCount(pUnit.getUnitClassType()) > 3:
 										pOwner.changeGold(25)
 										pUnit.kill(True, -1)
-								else:
-										pUnit.getGroup().pushMission(MissionTypes.MISSION_SKIP, 0, 0, 0, True, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
-								return True
+										return True
+
 
 						if iUnitType in L.LTradeUnits:
 
@@ -1702,14 +1762,13 @@ class CvGameUtils:
 								#        return True
 
 								bTradeRouteActive = int(CvUtil.getScriptData(pUnit, ["autA", "t"], 0))
-								# if bTradeRouteActive:
-								#  PAE_Trade.doAutomateMerchant(pUnit)
-								# else:
-								if not bTradeRouteActive:
-										if not PAE_Trade.doAssignTradeRoute_AI(pUnit):
-												pOwner.changeGold(25)
-												pUnit.kill(True, -1)  # RAMK_CTD
-												return True
+								if bTradeRouteActive:
+										PAE_Trade.doAutomateMerchant(pUnit)
+										return True
+								elif not PAE_Trade.doAssignTradeRoute_AI(pUnit):
+										pOwner.changeGold(25)
+										pUnit.kill(True, -1)  # RAMK_CTD
+										return True
 
 								if pUnit.getDamage() > 0:
 										pUnit.getGroup().pushMission(MissionTypes.MISSION_HEAL, 0, 0, 0, True, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
@@ -1722,7 +1781,7 @@ class CvGameUtils:
 								pCity = PAE_Unit.getNearestCity(pUnit)
 								if pCity != None and not pCity.isNone():
 										pUnit.getGroup().pushMoveToMission(pCity.getX(), pCity.getY())
-										if pUnit.getX() == pCity().getX() and pUnit.getY() == pCity.getY():
+										if pUnit.getX() == pCity.getX() and pUnit.getY() == pCity.getY():
 												pCity.changeFood(PAE_Unit.getUnitSupplyFood())
 												pUnit.kill(True, -1)  # RAMK_CTD
 										return True
@@ -2495,6 +2554,15 @@ class CvGameUtils:
 														if pOwner.getGold() > iCost:
 																pOwner.changeGold(-iCost)
 																pUnit.setHasPromotion(iPromo, True)
+																pUnit.finishMoves()
+																return True
+										# Schiff reparieren
+										if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_WERFT")):
+												iCost = pUnit.getDamage()
+												if pOwner.getGold() > iCost + 200:
+														if CvUtil.myRandom(2, "AI_Ship_Repair") == 1:
+																pOwner.changeGold(-iCost)
+																pUnit.setDamage(0, -1)
 																pUnit.finishMoves()
 																return True
 
@@ -3495,7 +3563,7 @@ class CvGameUtils:
 						elif iData1 == 764:
 								return CyTranslator().getText("TXT_KEY_POPUP_VASALLEN_BUTTON", ())
 
-						# Verbrannte Erde
+						# General: Verbrannte Erde
 						elif iData1 == 765:
 								return CyTranslator().getText("TXT_KEY_ACTION_BURN_FOREST", ())
 
@@ -3509,6 +3577,23 @@ class CvGameUtils:
 						# Magnetkompass
 						elif iData1 == 767:
 								return CyTranslator().getText("TXT_KEY_BUTTON_BUY_KOMPASS", ())
+
+						# Schiff reparieren
+						elif iData1 == 768:
+								return CyTranslator().getText("TXT_KEY_BUTTON_REPAIR_SHIP", (iData2,))
+
+						# Great Prophet Holy City
+						elif iData1 == 769:
+								return CyTranslator().getText("TXT_KEY_BUTTON_GREAT_PROPHET_HOLY_CITY", (gc.getReligionInfo(iData2).getDescription(),)) + u" %c" % (gc.getReligionInfo(iData2).getChar())
+
+						# General: Ramme bauen
+						elif iData1 == 770:
+								return CyTranslator().getText("TXT_KEY_ACTION_FOREST_RAM", ())
+
+						# Hunter: Lager oder Beobachtungsturm
+						elif iData1 == 771:
+								if iData2 == 1: return CyTranslator().getText("TXT_KEY_BUILD_CAMP", ())
+								if iData2 == 2: return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
 
 						# CITY_TAB replacements
 						elif iData1 == 88000:

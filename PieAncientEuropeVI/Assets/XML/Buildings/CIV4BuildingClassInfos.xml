@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!-- +++++++ BUILDINGCLASS_SPECIAL1 ++++++ -->
+<!-- BUILDING_SCHULE_ASSUR: Assyrer, Babylon, Sumer -->
 <!-- BUILDING_HOSPITAL_ROME: Rom, Etrusker -->
 <!-- BUILDING_ACROPOLIS: Griechen, Ath, Spa, Theb -->
 <!-- BUILDING_WARFT: Kelten, Germanen, Briten, Gallier, Vandalen -->
@@ -8,11 +9,12 @@
 <!-- BUILDING_NURAGHE: Iberer -->
 <!-- BUILDING_UNDERGROUND_CITY: Hethiter -->
 <!-- BUILDING_MUREX: Phoen, Karthago, Lyder -->
+<!-- BUILDING_NECROPOLIS_EGYPT: Egypt, Nubia -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL2 ++++++ -->
 <!-- BUILDING_NECROPOLIS: Etrusker, Rom, Griechen (Theb, Athen, Spa), Iberer, Phoen, Karthago, Israel, Hethiter -->
-<!-- BUILDING_NECROPOLIS_EGYPT: Egypt, Nubia -->
+<!-- BUILDING_HAREM: Egypt, Nubia, Assyrer, Babylon, Perser -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL3 ++++++ -->
-<!-- BUILDING_SCHULE: Hethiter, Phoen, Perser, Babylon, Sumer, Karthago, Egypt, Berber, Iberer, Nubier, Lyder, Inder -->
+<!-- BUILDING_SCHULE: Assyrer, Babylon, Sumer, Hethiter, Phoen, Perser, Karthago, Egypt, Berber, Iberer, Nubier, Lyder, Inder -->
 <!-- BUILDING_GYMNASION: Griechen,  Ath,Theb,Spar, Makedon -->
 <!-- BUILDING_GYMNASIUM: Rom, Etrusker -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL4 ++++++ -->
@@ -27,10 +29,10 @@
 <!-- +++++++ BUILDINGCLASS_SPECIAL6 ++++++ -->
 <!-- BUILDING_ROMAN_FORUM: Etrus, Rom -->
 <!-- BUILDING_AGORA: Griechen, Ath, Spa, Theb -->
-<!-- BUILDING_ZIGGURAT: Assur, Babylon, Perser, Sumer -->
+<!-- BUILDING_ZIGGURAT: Assyrer, Babylon, Perser, Sumer -->
 <!-- BUILDING_NUBIAN_DEFFUFA: Nubia -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL7 ++++++ -->
-<!-- BUILDING_SANITATION: Rom, Griechen, Ath,Theb,Spa, Makedon, Phoen, Persia, Babylon, Sumer, Karthago -->
+<!-- BUILDING_SANITATION: Rom, Griechen, Ath,Theb,Spa, Makedon, Phoen, Assyrer, Persia, Babylon, Sumer, Karthago -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL8 ++++++ -->
 <!-- frei -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL9 (Nationalwunder) ++++++ -->
@@ -1346,6 +1348,18 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_THING_CITY</Type>
+			<Description>TXT_KEY_BUILDING_THING_CITY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>1</bMonument>
+			<DefaultBuilding>BUILDING_THING_CITY</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_OLYMPIONIKE</Type>
 			<Description>TXT_KEY_BUILDING_OLYMPIONIKE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -1489,18 +1503,6 @@
 			<bMonument>0</bMonument>
 			<DefaultBuilding>BUILDING_SPECIAL10</DefaultBuilding>
 			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-												<Type>BUILDINGCLASS_JAIN_TEMPLE</Type>
-												<Description>TXT_KEY_BUILDING_JAIN_TEMPLE</Description>
-												<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-												<iMaxTeamInstances>-1</iMaxTeamInstances>
-												<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-												<iExtraPlayerInstances>0</iExtraPlayerInstances>
-												<bNoLimit>0</bNoLimit>
-												<bMonument>1</bMonument>
-												<DefaultBuilding>BUILDING_JAIN_TEMPLE</DefaultBuilding>
-												<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 												<Type>BUILDINGCLASS_HINDU_TEMPLE</Type>
@@ -1656,18 +1658,6 @@
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
 			<DefaultBuilding>BUILDING_CHRISTIAN_SHRINE</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_ORTHODOX_TEMPLE</Type>
-			<Description>TXT_KEY_BUILDING_ORTHODOX_TEMPLE</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<bNoLimit>0</bNoLimit>
-			<bMonument>1</bMonument>
-			<DefaultBuilding>BUILDING_ORTHODOX_TEMPLE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
@@ -2297,7 +2287,7 @@
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_ACADEMY_6</Type>
 			<Description>TXT_KEY_BUILDING_ACADEMY_6</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>

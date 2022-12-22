@@ -419,11 +419,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MAIN_EMIGRATE_AB_3</Tag>
-    <English>Emigration (from pop 6 on)</English>
-    <French>Emigration (si popul. &#62; 6)</French>
-    <German>Auswanderung (ab Pop 6)</German>
-    <Italian>Emigrazione (dal pop 6)</Italian>
-    <Spanish>Emigraci&#243;n (desde 6 en ad.)</Spanish>
+    <English>Emigration (from pop 4 on)</English>
+    <French>Emigration (&#224; p. de 4 hab.)</French>
+    <German>Auswanderung (ab Pop 4)</German>
+    <Italian>Emigrazione (dal pop 4)</Italian>
+    <Spanish>Emigraci&#243;n (desde 4 en ad.)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MAIN_EMIGRATE_NO_DANGER</Tag>
@@ -8531,35 +8531,35 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL1</Tag>
-    <English>Base value: 50 [ICON_GOLD]</English>
-    <French>Valeur base: 50 [ICON_GOLD]</French>
-    <German>Basiswert: 50 [ICON_GOLD]</German>
-    <Italian>Valore base: 50 [ICON_GOLD]</Italian>
-    <Spanish>Valor base: 50 [ICON_GOLD]</Spanish>
+    <English>Base value: 25 [ICON_GOLD]</English>
+    <French>Valeur base: 25 [ICON_GOLD]</French>
+    <German>Basiswert: 25 [ICON_GOLD]</German>
+    <Italian>Valore base: 25 [ICON_GOLD]</Italian>
+    <Spanish>Valor base: 25 [ICON_GOLD]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL2</Tag>
-    <English>Base value: 40 [ICON_GOLD]</English>
-    <French>Valeur base: 40 [ICON_GOLD]</French>
-    <German>Basiswert: 40 [ICON_GOLD]</German>
-    <Italian>Valore base: 40 [ICON_GOLD]</Italian>
-    <Spanish>Valor base: 40 [ICON_GOLD]</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL3</Tag>
-    <English>Base value: 30 [ICON_GOLD]</English>
-    <French>Valeur base: 30 [ICON_GOLD]</French>
-    <German>Basiswert: 30 [ICON_GOLD]</German>
-    <Italian>Valore base: 30 [ICON_GOLD]</Italian>
-    <Spanish>Valor base: 30 [ICON_GOLD]</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL4</Tag>
     <English>Base value: 20 [ICON_GOLD]</English>
     <French>Valeur base: 20 [ICON_GOLD]</French>
     <German>Basiswert: 20 [ICON_GOLD]</German>
     <Italian>Valore base: 20 [ICON_GOLD]</Italian>
     <Spanish>Valor base: 20 [ICON_GOLD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL3</Tag>
+    <English>Base value: 15 [ICON_GOLD]</English>
+    <French>Valeur base: 15 [ICON_GOLD]</French>
+    <German>Basiswert: 15 [ICON_GOLD]</German>
+    <Italian>Valore base: 15 [ICON_GOLD]</Italian>
+    <Spanish>Valor base: 15 [ICON_GOLD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TRADE_ADVISOR_WERT_PANEL4</Tag>
+    <English>Base value: 10 [ICON_GOLD]</English>
+    <French>Valeur base: 10 [ICON_GOLD]</French>
+    <German>Basiswert: 10 [ICON_GOLD]</German>
+    <Italian>Valore base: 10 [ICON_GOLD]</Italian>
+    <Spanish>Valor base: 10 [ICON_GOLD]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM2</Tag>

@@ -26,15 +26,6 @@
 			<FontButtonIndex>1</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_COPPER</Type>
-			<fScale>.8</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Copper/Copper.nif</NIF>
-			<KFM>Art/Terrain/Resources/Copper/Copper.kfm</KFM>
-			<Button>Art/Interface/Buttons/Bonus/button_bonus_copper_ore.dds</Button>
-			<FontButtonIndex>2</FontButtonIndex>
-		</BonusArtInfo>
-		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_HORSE</Type>
 			<fScale>1.1</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
@@ -332,6 +323,15 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Bonus/button_bonus_hunde.dds</Button>
 			<FontButtonIndex>34</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_COPPER</Type>
+			<fScale>.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Copper/Copper.nif</NIF>
+			<KFM>Art/Terrain/Resources/Copper/Copper.kfm</KFM>
+			<Button>Art/Interface/Buttons/Bonus/button_bonus_copper.dds</Button>
+			<FontButtonIndex>35</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_IRON2</Type>

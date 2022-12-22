@@ -37,7 +37,7 @@ def onEndGameTurn(iGameTurn):
 		# Konsul Lucius Postumius Albinus fällt im Kampf gegen Boier
 		if iGameTurn == 40:
 				iBoier = 7
-				if not gc.getTeam(gc.getPlayer(iBoier)).isAtWar(gc.getPlayer(iRome)):
+				if not gc.getTeam(gc.getPlayer(iBoier).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
 						gc.getTeam(gc.getPlayer(iBoier).getTeam()).declareWar(gc.getPlayer(iRome).getTeam(), False, 5)
 
 				gc.getPlayer(iRome).AI_setAttitudeExtra(iBoier, -30)
@@ -70,7 +70,7 @@ def onEndGameTurn(iGameTurn):
 		# 214 v.Chr.: Syrakus erklärt Rom den Krieg
 		if iGameTurn == 65:
 				iSyracus = 21
-				if not gc.getTeam(gc.getPlayer(iSyracus)).isAtWar(gc.getPlayer(iRome)):
+				if not gc.getTeam(gc.getPlayer(iSyracus).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
 						gc.getTeam(gc.getPlayer(iSyracus).getTeam()).declareWar(gc.getPlayer(iRome).getTeam(), False, 5)
 
 						# Meldung an die Spieler
@@ -372,7 +372,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 		if iGameTurn == 50:
 				if iPlayer == iRome and gc.getPlayer(iPlayer).isHuman():
 						pPlot = CyMap().plot(58, 58)
-						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iCarthago)).isAtWar(gc.getPlayer(iRome)):
+						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iCarthago).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
 
 								# Stadt wird barbarisch + Einheiten
 								PAE_City.doRenegadeCity(pPlot.getPlotCity(), gc.getBARBARIAN_PLAYER(), None)
@@ -455,7 +455,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 						iTeamCarthago = gc.getPlayer(iCarthago).getTeam()
 						iTeamMessana = gc.getPlayer(iMessana).getTeam()
 						pTeamMessana = gc.getTeam(iTeamMessana)
-						if pTeamMessana.isVassal(iTeamCarthago) and gc.getTeam(gc.getPlayer(iCarthago)).isAtWar(gc.getPlayer(iRome)):
+						if pTeamMessana.isVassal(iTeamCarthago) and gc.getTeam(iTeamCarthago).isAtWar(gc.getPlayer(iRome).getTeam()):
 
 								# Plot für die Einheiten
 								Landungsplot = CyMap().plot(19, 46)
@@ -484,7 +484,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 		if iGameTurn == 90:
 				if iPlayer == iRome:
 						pPlot = CyMap().plot(62, 53)
-						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iRome)).isAtWar(gc.getPlayer(iCarthago)):
+						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iRome).getTeam()).isAtWar(gc.getPlayer(iCarthago).getTeam()):
 
 								# Stadt wird barbarisch + Einheiten
 								PAE_City.doRenegadeCity(pPlot.getPlotCity(), gc.getBARBARIAN_PLAYER(), None)
@@ -526,7 +526,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 		if iGameTurn == 125:
 				if iPlayer == iCarthago:
 						pPlot = CyMap().plot(19, 46)  # TXT_KEY_CITY_NAME_CARTHAGO_NOVO
-						if pPlot.getOwner() == iCarthago and gc.getTeam(gc.getPlayer(iCarthago)).isAtWar(gc.getPlayer(iRome)):
+						if pPlot.getOwner() == iCarthago and gc.getTeam(gc.getPlayer(iCarthago).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
 
 								# Plot für die Landungseinheiten
 								lPlots = [
@@ -587,7 +587,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 		if iGameTurn == 150:
 				if iPlayer == iRome:
 						pPlot = CyMap().plot(54, 62)  # Florentia
-						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iRome)).isAtWar(gc.getPlayer(iCarthago)):
+						if pPlot.getOwner() == iRome and gc.getTeam(gc.getPlayer(iRome).getTeam()).isAtWar(gc.getPlayer(iCarthago).getTeam()):
 
 								# Plot für die Landungseinheiten
 								lPlots = [
@@ -635,7 +635,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 		# Rom landet in Afrika bei Utica
 		if iGameTurn == 183:
 				if iPlayer == iCarthago and not gc.getPlayer(iRome).isHuman():
-						if gc.getTeam(gc.getPlayer(iCarthago)).isAtWar(gc.getPlayer(iRome)):
+						if gc.getTeam(gc.getPlayer(iCarthago).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
 
 								# Plot für die Landungseinheiten
 								lPlots = [

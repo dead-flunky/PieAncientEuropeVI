@@ -332,7 +332,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_AXEWARRIOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -341,7 +341,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_AXEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -350,7 +350,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_AXEMAN2</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -359,7 +359,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_WURFAXT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -368,7 +368,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_KURZSCHWERT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -377,7 +377,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SCHILDTRAEGER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -431,7 +431,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SWORDSMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -449,7 +449,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_HASTATI</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -458,7 +458,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_PRINCIPES</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -467,7 +467,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>2</iInstanceCostModifier>
 			<DefaultUnit>UNIT_TRIARII</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -476,7 +476,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_PILUMNI</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -485,7 +485,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_LEGION</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -494,7 +494,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_LEGION2</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -593,7 +593,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_ROME_COMITATENSES</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -620,7 +620,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_ROME_LIMITANEI</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -665,7 +665,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_LIGHT_SPEARMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -674,7 +674,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SPEARMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -917,7 +917,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_PELTIST</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -925,7 +925,7 @@
 			<Description>TXT_KEY_UNIT_HUNTER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_HUNTER</DefaultUnit>
 		</UnitClassInfo>
@@ -935,7 +935,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>1</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SKIRMISHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -944,7 +944,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
+			<iInstanceCostModifier>2</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SCORPION</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -1506,15 +1506,6 @@
 			<DefaultUnit>UNIT_CHRISTIAN_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_ORTHODOX_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<DefaultUnit>UNIT_ORTHODOX_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_ISLAMIC_MISSIONARY</Type>
 			<Description>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -1603,15 +1594,6 @@
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_BUDDHIST_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_MISSIONARY_JAINISMUS</Type>
-			<Description>TXT_KEY_UNIT_MISSIONARY_JAINISMUS</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iInstanceCostModifier>0</iInstanceCostModifier>
-			<DefaultUnit>UNIT_MISSIONARY_JAINISMUS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_EXECUTIVE_1</Type>

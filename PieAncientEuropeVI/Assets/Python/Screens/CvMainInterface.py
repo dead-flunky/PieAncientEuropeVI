@@ -628,7 +628,7 @@ class CvMainInterface:
 																		19, 19, WidgetTypes.WIDGET_CHANGE_SPECIALIST, i, 1, ButtonStyles.BUTTON_STYLE_CITY_PLUS)
 								screen.hide(szName)
 
-								iCount = iCount + 1
+								iCount += 1
 
 				iCount = 0
 
@@ -650,7 +650,7 @@ class CvMainInterface:
 																		19, 19, WidgetTypes.WIDGET_CHANGE_SPECIALIST, i, -1, ButtonStyles.BUTTON_STYLE_CITY_MINUS)
 								screen.hide(szName)
 
-								iCount = iCount + 1
+								iCount += 1
 
 				iCount = 0
 
@@ -677,7 +677,7 @@ class CvMainInterface:
 										screen.addCheckBoxGFC(szName, gc.getSpecialistInfo(i).getTexture(), "", xResolution + 5 - (74+iXShiftVal) - (SPECIALIST_STACK_WIDTH * j),
 																					(yResolution - 253 - (30 * iYShiftVal)), 24, 24, WidgetTypes.WIDGET_CITIZEN, i, j, ButtonStyles.BUTTON_STYLE_LABEL)
 										screen.hide(szName)
-								iCount = iCount + 1
+								iCount += 1
 
 						screen.addPanel("SpecialistBackground", u"", u"", True, False, xResolution - 243, yResolution-455, 230, 30, PanelStyles.PANEL_STYLE_STANDARD)
 						screen.setStyle("SpecialistBackground", "Panel_City_Header_Style")
@@ -1126,7 +1126,7 @@ class CvMainInterface:
 												screen.show(szString4)
 												# Min/Max Sliders - end
 
-												iCount = iCount + 1
+												iCount += 1
 
 												if gc.getActivePlayer().isCommerceFlexible(eCommerce):
 														screen.enable(szString1, True)
@@ -1589,7 +1589,7 @@ class CvMainInterface:
 														screen.show(szStringIcon)
 												# ----------------------
 
-										iCount = iCount + 1
+										iCount += 1
 
 						if iVisibleUnits > self.numPlotListButtons() * iMaxRows:
 								screen.enable("PlotListMinus", bLeftArrow)
@@ -1881,7 +1881,7 @@ class CvMainInterface:
 
 												szButton = gc.getPlayer(pHeadSelectedCity.getOwner()).getUnitButton(eLoopUnit)
 												self.iconsLeft[rowLeft].append(([szButton, WidgetTypes.WIDGET_TRAIN, i, -1, False], pHeadSelectedCity.canTrain(eLoopUnit, False, False), cityTab, bManufaktur))
-												iCount = iCount + 1
+												iCount += 1
 												bFound = True
 
 								iCount = 0
@@ -1898,7 +1898,7 @@ class CvMainInterface:
 														szButton = gc.getBuildingInfo(eLoopBuilding).getButton()
 														self.iconsRight[rowRight].append(([szButton, WidgetTypes.WIDGET_CONSTRUCT, i, -1, False],
 																														 pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False), cityTab, False))
-														iCount = iCount + 1
+														iCount += 1
 														bFound = True
 
 								iCount = 0
@@ -1918,7 +1918,7 @@ class CvMainInterface:
 														szButton = gc.getBuildingInfo(eLoopBuilding).getButton()
 														self.iconsRight[rowRight].append(([szButton, WidgetTypes.WIDGET_CONSTRUCT, i, -1, False],
 																														 pHeadSelectedCity.canConstruct(eLoopBuilding, False, False, False), cityTab, False))
-														iCount = iCount + 1
+														iCount += 1
 														bFound = True
 
 								iCount = 0
@@ -1933,7 +1933,7 @@ class CvMainInterface:
 										if pHeadSelectedCity.canCreate(i, False, True):
 												szButton = gc.getProjectInfo(i).getButton()
 												self.iconsRight[rowRight].append(([szButton, WidgetTypes.WIDGET_CREATE, i, -1, False], pHeadSelectedCity.canCreate(i, False, False), cityTab, False))
-												iCount = iCount + 1
+												iCount += 1
 												bFound = True
 
 								# Processes
@@ -1941,7 +1941,7 @@ class CvMainInterface:
 										if pHeadSelectedCity.canMaintain(i, False):
 												szButton = gc.getProcessInfo(i).getButton()
 												self.iconsRight[rowRight].append(([szButton, WidgetTypes.WIDGET_MAINTAIN, i, -1, False], True, cityTab, False))
-												iCount = iCount + 1
+												iCount += 1
 												bFound = True
 
 								# if numIcons > 15:
@@ -1994,19 +1994,19 @@ class CvMainInterface:
 														#  if g_pSelectedUnit.plot().getOwner() == g_pSelectedUnit.getOwner():
 														#    screen.disableMultiListButton( "BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton() )
 
-														iCount = iCount + 1
+														iCount += 1
 
 										if CyInterface().canCreateGroup():
 												screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 														"INTERFACE_BUTTONS_CREATEGROUP").getPath(), 0, WidgetTypes.WIDGET_CREATE_GROUP, -1, -1, False)
 												screen.show("BottomButtonContainer")
-												iCount = iCount + 1
+												iCount += 1
 
 										if CyInterface().canDeleteGroup():
 												screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 														"INTERFACE_BUTTONS_SPLITGROUP").getPath(), 0, WidgetTypes.WIDGET_DELETE_GROUP, -1, -1, False)
 												screen.show("BottomButtonContainer")
-												iCount = iCount + 1
+												iCount += 1
 
 										############################################ Unit Buttons #############################################
 										pUnit = g_pSelectedUnit
@@ -2032,7 +2032,7 @@ class CvMainInterface:
 												# if pUnit.getUnitAIType() == gc.getInfoTypeForString("UNITAI_MISSIONARY"):
 												#   screen.appendMultiListButton( "BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_spread_rel.dds", 0, WidgetTypes.WIDGET_GENERAL, 731, 731, False )
 												#   screen.show( "BottomButtonContainer" )
-												#   iCount = iCount + 1
+												#   iCount += 1
 
 												# ----------
 												# Haendler in die naechste fremde Stadt schicken
@@ -2040,7 +2040,7 @@ class CvMainInterface:
 												#   if iUnitType != gc.getInfoTypeForString("UNIT_GREAT_SPY"):
 												#     screen.appendMultiListButton( "BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_merchant.dds", 0, WidgetTypes.WIDGET_GENERAL, 732, 732, False )
 												#     screen.show( "BottomButtonContainer" )
-												#     iCount = iCount + 1
+												#     iCount += 1
 
 												# ----------
 												# Inquisitor
@@ -2050,16 +2050,35 @@ class CvMainInterface:
 																		"INTERFACE_GODS_PERSICUTION").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 665, 665, False)
 																screen.show("BottomButtonContainer")
 																screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																iCount = iCount + 1
+																iCount += 1
 																return
 
 												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind
 												elif iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+														pPlot = pUnit.plot()
+
+														# Build Option: Lager oder Beobachtungsturm
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+																if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
+																		if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
+																				screen.appendMultiListButton(
+																						"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, False)
+																				screen.show("BottomButtonContainer")
+																				iCount += 1
+														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
+														#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
+														#				if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iUnitOwner, 2):
+														#						screen.appendMultiListButton(
+														#								"BottomButtonContainer", "Art/Interface/Buttons/Builds/button_turm.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 2, False)
+														#						screen.show("BottomButtonContainer")
+														#						iCount += 1
+
+														# Info Button (range of cities)
 														bOK = False
 														(loopCity, pIter) = pUnitOwner.firstCity(False)
 														while loopCity:
-																if PAE_Unit.huntingDistance(loopCity.plot(), pUnit.plot()):
+																if PAE_Unit.huntingDistance(loopCity.plot(), pPlot):
 																		bOK = True
 																		break
 																(loopCity, pIter) = pUnitOwner.nextCity(pIter, False)
@@ -2085,7 +2104,7 @@ class CvMainInterface:
 																				"BottomButtonContainer", ",Art/Interface/Buttons/Buildings/Barracks.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,7,1", 0, WidgetTypes.WIDGET_GENERAL, 721, 14, False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 																return
 												# --------------------
 												# Camel/Kamel (not in city)
@@ -2098,11 +2117,11 @@ class CvMainInterface:
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Buildings/button_camel_stable.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 4, False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 																elif bCity:
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_camel_stable_gray.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 5, False)
 																		screen.show("BottomButtonContainer")
-																		iCount = iCount + 1
+																		iCount += 1
 																return
 												"""
 												# Elefant
@@ -2129,17 +2148,17 @@ class CvMainInterface:
 																			screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Builds/button_elefantenstall.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 1, False)
 																			screen.show("BottomButtonContainer")
 																			screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																			iCount = iCount + 1
+																			iCount += 1
 																	else:
 																			screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_elestall_grau.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 2, False)
 																			screen.show("BottomButtonContainer")
-																			iCount = iCount + 1
+																			iCount += 1
 																	return
 														# not in city
 														#else:
 														#    screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_elestall_grau.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 3, False)
 														#    screen.show("BottomButtonContainer")
-														#    iCount = iCount + 1
+														#    iCount += 1
 														#    return
 												"""
 												# ---- End ------
@@ -2156,7 +2175,7 @@ class CvMainInterface:
 												#        if pUnitOwner.isCivic(gc.getInfoTypeForString("CIVIC_ANIMISM")):
 												#            screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_cult_grey.dds", 0, WidgetTypes.WIDGET_GENERAL, 749, 1, False)
 												#            screen.show("BottomButtonContainer")
-												#            iCount = iCount + 1
+												#            iCount += 1
 
 												# --------------------
 
@@ -2173,7 +2192,7 @@ class CvMainInterface:
 																																		 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_FIRE_CATAPULT"), False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# PAE 6.9 GREEKS and Perioikian hoplite (SPARTA)
 																if iCivType in L.LGreeks or iCivType == gc.getInfoTypeForString("CIVILIZATION_SPARTA"):
@@ -2184,7 +2203,7 @@ class CvMainInterface:
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																# Veterans
 																if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT4")):
@@ -2195,15 +2214,15 @@ class CvMainInterface:
 																		#    if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PRINCIPAT")):
 																		#      screen.appendMultiListButton( "BottomButtonContainer", "Art/Interface/Buttons/Units/button_praetorian2.dds", 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN2"), False )
 																		#      screen.show( "BottomButtonContainer" )
-																		#      iCount = iCount + 1
+																		#      iCount += 1
 																		#    elif pTeam.isHasTech(gc.getInfoTypeForString("TECH_FEUERWEHR")):
 																		#      screen.appendMultiListButton( "BottomButtonContainer", "Art/Interface/Buttons/Units/button_cohortes_urbanae.dds", 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"), False )
 																		#      screen.show( "BottomButtonContainer" )
-																		#      iCount = iCount + 1
+																		#      iCount += 1
 																		#    elif pTeam.isHasTech(gc.getInfoTypeForString("TECH_LORICA_SEGMENTATA")):
 																		#      screen.appendMultiListButton( "BottomButtonContainer", "Art/Interface/Buttons/Units/button_cohors_equitata.dds", 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"), False )
 																		#      screen.show( "BottomButtonContainer" )
-																		#      iCount = iCount + 1
+																		#      iCount += 1
 
 																		# Eliteeinheiten
 																		if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT5")):
@@ -2215,7 +2234,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN_RIDER"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Elite Palatini or Clibanari or Cataphracti -> Scholae
 																						elif (iUnitType == gc.getInfoTypeForString("UNIT_ROME_PALATINI") or
 																										iUnitType == gc.getInfoTypeForString("UNIT_CLIBANARII_ROME") or
@@ -2225,7 +2244,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																				else:
 																						# Elite Limitanei -> Imperial Guard
 																						if iUnitType == gc.getInfoTypeForString("UNIT_ROME_LIMITANEI"):
@@ -2233,21 +2252,21 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ROME_LIMITANEI_GARDE"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Elite Comitatenses -> Palatini
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES") or iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_palatini.dds", 0,
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ROME_PALATINI"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Elite Cohorte praetoriae + Cohors urbana -> Praetorian Garde
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN") or iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN2") or iUnitType == gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION_EVOCAT"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_praetorian3.dds", 0,
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN3"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Elite Assyrer und Babylon: Quradu
 																						elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ASSYRIA") or iCivType == gc.getInfoTypeForString("CIVILIZATION_BABYLON"):
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
@@ -2256,7 +2275,7 @@ class CvMainInterface:
 																																																														 ).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ELITE_ASSUR"), False)
 																												screen.show("BottomButtonContainer")
 																												screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																												iCount = iCount + 1
+																												iCount += 1
 																						# Elite Sumerer: Gardu
 																						elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
@@ -2265,7 +2284,7 @@ class CvMainInterface:
 																																																														 ).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ELITE_SUMER"), False)
 																												screen.show("BottomButtonContainer")
 																												screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																												iCount = iCount + 1
+																												iCount += 1
 																						# Stammesfürst
 																						elif iCivType in L.LNorthern:
 																								# Stammesfuerst
@@ -2276,7 +2295,7 @@ class CvMainInterface:
 																																										 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), False)
 																												screen.show("BottomButtonContainer")
 																												screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																												iCount = iCount + 1
+																												iCount += 1
 
 																		# weiter mit Veteran
 
@@ -2293,7 +2312,7 @@ class CvMainInterface:
 																																								 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ARCHER_LEGION"), False)
 																										screen.show("BottomButtonContainer")
 																										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																										iCount = iCount + 1
+																										iCount += 1
 																						# Arquites -> Equites Sagittarii (Horse Archer)
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_LEGION"):
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HORSE_ARCHER")):
@@ -2301,7 +2320,7 @@ class CvMainInterface:
 																																								 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HORSE_ARCHER_ROMAN"), False)
 																										screen.show("BottomButtonContainer")
 																										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																										iCount = iCount + 1
+																										iCount += 1
 
 																				else:
 
@@ -2315,7 +2334,7 @@ class CvMainInterface:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_praetorian.dds", 0,
 																																												 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN"), False)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 
 																						# Triari -> Praetorians
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_TRIARII") and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
@@ -2325,7 +2344,7 @@ class CvMainInterface:
 																																								 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN"), False)
 																										screen.show("BottomButtonContainer")
 																										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																										iCount = iCount + 1
+																										iCount += 1
 																						# Principes, Hastati, Pilumni -> Triarii
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_PRINCIPES") or iUnitType == gc.getInfoTypeForString("UNIT_HASTATI") or iUnitType == gc.getInfoTypeForString("UNIT_PILUMNI"):
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
@@ -2333,7 +2352,7 @@ class CvMainInterface:
 																																								 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_TRIARII"), False)
 																										screen.show("BottomButtonContainer")
 																										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																										iCount = iCount + 1
+																										iCount += 1
 																						# Hasta Warrior -> Celeres
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_HASTA"):
 																								# if pUnit.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS"):
@@ -2341,7 +2360,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_CELERES"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# GREEKS
 																		elif iCivType in L.LGreeks:
@@ -2352,14 +2371,14 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																				# Reflex -> Elite
 																				elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_archer_greek.dds", 0,
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# SPARTA
 																		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SPARTA"):
@@ -2368,7 +2387,7 @@ class CvMainInterface:
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_SPARTA_1"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# PERSIA
 																		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_PERSIA"):
@@ -2378,7 +2397,7 @@ class CvMainInterface:
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_UNSTERBLICH_2"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# MACEDONIA
 																		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
@@ -2391,28 +2410,28 @@ class CvMainInterface:
 																																						 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Hetairoi -> Ilearchos
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_unit_companion2.dds", 0,
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Ilearchos -> Ile basilikoi
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_unit_companion4.dds", 0,
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Ile basilikoi -> Hipparchos
 																						elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_unit_hippeus4.dds", 0,
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																				# Ende Berittene
 
 																				#  Lochagos (Pezhetairoi) -> Hetairoi
@@ -2420,28 +2439,28 @@ class CvMainInterface:
 																				#  screen.appendMultiListButton("BottomButtonContainer", ",Art/Interface/Buttons/Units/Keshik.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,2,11", 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), False)
 																				#  screen.show("BottomButtonContainer")
 																				#  screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				#  iCount = iCount + 1
+																				#  iCount += 1
 																				#  Hypaspist -> Argyraspidai (Silberschild)
 																				elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST"):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_unit_hypa2.dds", 0,
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HYPASPIST2"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 																				#  Argyraspidai -> Royal Hypaspist
 																				elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST2"):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_unit_hypa3.dds", 0,
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HYPASPIST3"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 																				# Reflex -> Elite
 																				elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_archer_greek.dds", 0,
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# EGYPT
 																		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_EGYPT") or iCivType == gc.getInfoTypeForString("CIVILIZATION_NUBIA"):
@@ -2453,7 +2472,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# Schildtraeger
 																		if iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"):
@@ -2465,13 +2484,13 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_FUERST_DAKER"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ISRAEL"):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_israel_maccaber.dds",
 																																						 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_MACCABEE"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# Axeman
 																		elif iUnitType == gc.getInfoTypeForString("UNIT_AXEMAN2"):
@@ -2481,7 +2500,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_BERSERKER_GERMAN"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# Spearman
 																		elif iUnitType == gc.getInfoTypeForString("UNIT_SPEARMAN"):
@@ -2493,7 +2512,7 @@ class CvMainInterface:
 																																						 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_RADSCHA"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Greeks
 																						elif iCivType in L.LGreeks:
 																								# Spearman -> Hoplit
@@ -2501,14 +2520,14 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HOPLIT"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 																						# Karthago
 																						elif iCivType == gc.getInfoTypeForString("CIVILIZATION_CARTHAGE") or iCivType == gc.getInfoTypeForString("CIVILIZATION_PHON"):
 																								screen.appendMultiListButton("BottomButtonContainer", gc.getUnitInfo(gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT")
 																																																										 ).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																				# Harier
 																				if iCivType == gc.getInfoTypeForString("CIVILIZATION_GERMANEN"):
@@ -2517,7 +2536,7 @@ class CvMainInterface:
 																																						 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_GERMAN_HARIER"), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# Swordsman
 																		elif iUnitType == gc.getInfoTypeForString("UNIT_SWORDSMAN"):
@@ -2526,7 +2545,7 @@ class CvMainInterface:
 																																				 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_INDIAN_NAYAR"), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Steppenreiter -> Geissel Gottes
 																		elif iUnitType == gc.getInfoTypeForString("UNIT_MONGOL_KESHIK"):
@@ -2534,7 +2553,7 @@ class CvMainInterface:
 																																		 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN_HUN"), False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 
 																		# Allgemein Veteran -> Reservist
 																		if bCity:
@@ -2543,7 +2562,7 @@ class CvMainInterface:
 																								screen.appendMultiListButton(
 																										"BottomButtonContainer", ",Art/Interface/MainScreen/CityScreen/Great_Engineer.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,7,6", 0, WidgetTypes.WIDGET_GENERAL, 724, 724, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																# if Veteran/Routiniert -> Elite / Reservist -----------------------
 
@@ -2559,7 +2578,7 @@ class CvMainInterface:
 																																				 0, WidgetTypes.WIDGET_GENERAL, 756, 0, True)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 												# end if can move (Routiniert, Veteran, Elite) and Domain Land
 
@@ -2574,7 +2593,7 @@ class CvMainInterface:
 														screen.show("BottomButtonContainer")
 														if bCapital:
 																screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-														iCount = iCount + 1
+														iCount += 1
 
 												# --------------------
 												# BEGIN Horse <-> Unit
@@ -2618,12 +2637,12 @@ class CvMainInterface:
 														if bButtonDown:
 																screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HORSE_DOWN").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 666, 666, False)
 																screen.show("BottomButtonContainer")
-																iCount = iCount + 1
+																iCount += 1
 														# Swordsman -> Horse
 														elif bButtonUp:
 																screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HORSE_UP").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 667, 667, False)
 																screen.show("BottomButtonContainer")
-																iCount = iCount + 1
+																iCount += 1
 												# Ende Horse <-> Unit
 
 												# ------------------
@@ -2651,32 +2670,32 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_TRADE_COLLECT").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, iData, True)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																				# Bonusgut kaufen oder stehlen (freundliches Terrain, Vasallenterrain)
 																				elif not bCity:
 																						# Kaufen
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_TRADE_BUY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 2, True)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																						# Stehlen
-																						if gc.getTeam(pUnitOwner.getTeam()).getEspionagePointsAgainstTeam(gc.getPlayer(pPlot.getOwner()).getTeam()) > 100:
+																						if pTeam.getEspionagePointsAgainstTeam(gc.getPlayer(pPlot.getOwner()).getTeam()) > 100:
 																								screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																										"INTERFACE_TRADE_COLLECT_SPY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 3, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																		if bCity:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_TRADE_BUY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 1, True)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																elif bCity:
 																		iPrice = PAE_Trade.calculateBonusSellingPrice(pUnit, pPlot.getPlotCity(), 0)
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																				"INTERFACE_TRADE_SELL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 741, int(iPrice), False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 																# Wenn der Karren ein Bonusgut aufgeladen hat
 																# Bonus tauschen, nur auf eigenem Terrain
 																elif pPlot.getOwner() == iUnitOwner:
@@ -2684,12 +2703,12 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 738, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		else:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_TRADE_COLLECT_IMPOSSIBLE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 739, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# Cultivate bonus onto plot
 																if eBonus != -1 and PAE_Cultivation.isBonusCultivatable(pUnit):
@@ -2697,7 +2716,7 @@ class CvMainInterface:
 																				"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 738, bCity)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 
 														# Buy / sell goods in cities (domestic or foreign)
 														if bCity:
@@ -2712,14 +2731,14 @@ class CvMainInterface:
 																								"INTERFACE_TRADE_SELL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 741, int(iPrice), False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 																				# Buy
 																				else:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_TRADE_BUY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 740, 740, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 												# Set or Cancel automated trade route
 												if iUnitType in L.LTradeUnits:
@@ -2728,14 +2747,14 @@ class CvMainInterface:
 																screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																		"INTERFACE_TRADE_AUTO_STOP").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 748, 748, False)
 																screen.show("BottomButtonContainer")
-																iCount = iCount + 1
+																iCount += 1
 														else:
 																# Set Automated Trade Route
 																screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																		"INTERFACE_TRADE_AUTO_START").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 744, 744, False)
 																screen.show("BottomButtonContainer")
 																screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																iCount = iCount + 1
+																iCount += 1
 
 														# Escorte / Begleitschutz anfordern
 														# if iUnitType == gc.getInfoTypeForString("UNIT_CARAVAN") or iUnitType == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT"):
@@ -2749,7 +2768,7 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", gc.getPromotionInfo(iPromo).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 762, iCost, False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 
 												# END Merchant -----
 
@@ -2765,7 +2784,7 @@ class CvMainInterface:
 																						"INTERFACE_GOLDKARREN").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 677, 1, False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 																				return
 
 														# button zur next gov city
@@ -2774,48 +2793,48 @@ class CvMainInterface:
 																screen.show("BottomButtonContainer")
 																if pPlot.getOwner() == pUnit.getOwner():
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																iCount = iCount + 1
+																iCount += 1
 
 												# --------- Einheiten in einer Stadt
 												if bCity and pUnit.canMove():
 														pCity = g_pSelectedUnit.plot().getPlotCity()
 														# In der eigenen Stadt
 														if pCity.getOwner() == iUnitOwner:
-																pTeam = gc.getTeam(pUnitOwner.getTeam())
 
-																# Provinzstatthalter / Tribut
-																if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
-
-																		bAllowed = True
-																		PAE_City.PAEStatthalterTribut.setdefault(iUnitOwner, 0)
-																		if PAE_City.PAEStatthalterTribut[iUnitOwner] == 1:
-																				bAllowed = False
-
+																if pUnit.isMilitaryHappiness():
 																		# Provinzstatthalter / Tribut
-																		if bAllowed:
-																				if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_POLYARCHY")):
-																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_statthalter_main.dds",
-																																				 0, WidgetTypes.WIDGET_GENERAL, 737, 737, False)
-																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
-																# --------------------------------------------------------
+																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
 
-																# Vasallen freilassen/entlassen oder denen eine Stadt schenken
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_VASALLENTUM")):
-																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PALACE")):
-																				if len(PAE_Vassal.getVassals(iUnitOwner)):
-																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Civics/civic_buerger.dds", 0, WidgetTypes.WIDGET_GENERAL, 764, 764, False)
-																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
-																# ------------------------------------------------
+																				bAllowed = True
+																				PAE_City.PAEStatthalterTribut.setdefault(iUnitOwner, 0)
+																				if PAE_City.PAEStatthalterTribut[iUnitOwner] == 1:
+																						bAllowed = False
 
-																# Soeldner anheuern / Mercenaries (in der eigenen Stadt)
-																if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")):
-																		if not pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
-																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																						"INTERFACE_MERCENARIES_CITYBUTTON").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 707, 707, False)
-																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				# Provinzstatthalter / Tribut
+																				if bAllowed:
+																						if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_POLYARCHY")):
+																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_statthalter_main.dds",
+																																						 0, WidgetTypes.WIDGET_GENERAL, 737, 737, False)
+																								screen.show("BottomButtonContainer")
+																								iCount += 1
+																		# --------------------------------------------------------
+
+																		# Vasallen freilassen/entlassen oder denen eine Stadt schenken
+																		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_VASALLENTUM")):
+																				if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PALACE")):
+																						if len(PAE_Vassal.getVassals(iUnitOwner)):
+																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Civics/civic_buerger.dds", 0, WidgetTypes.WIDGET_GENERAL, 764, 764, False)
+																								screen.show("BottomButtonContainer")
+																								iCount += 1
+																		# ------------------------------------------------
+
+																		# Soeldner anheuern / Mercenaries (in der eigenen Stadt)
+																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")):
+																				if not pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
+																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
+																								"INTERFACE_MERCENARIES_CITYBUTTON").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 707, 707, False)
+																						screen.show("BottomButtonContainer")
+																						iCount += 1
 																# --------------------------------------------------------
 
 																# Statthalter ansiedeln / Held / Hero / Feldherr / General
@@ -2826,13 +2845,13 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Buildings/button_building_statthalter.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 757, 0, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																elif pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO")) or pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
 																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")) or pCity.canConstruct(gc.getInfoTypeForString("BUILDING_PROVINZPALAST"), False, False, True):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Buildings/button_building_statthalter.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 757, 1, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																# --------------------------------------------------------
 
 																# Sklaven in der Stadt
@@ -2860,23 +2879,23 @@ class CvMainInterface:
 																		if bFarms:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2farm.dds", 0, WidgetTypes.WIDGET_GENERAL, 734, 1, True)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		else:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2farm_gr.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 734, 1, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		# Sklave -> SPECIALIST_SLAVE_PROD
 																		if bMines:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2mine2.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 734, 2, True)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		else:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2mine2_gr.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 734, 2, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		# ------------
 
 																		# Sklaven -> Gladiator
@@ -2884,7 +2903,7 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_GLADIATOR").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 669, 669, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																		# Sklaven -> Schule (Gymnasion hat bereits +5 Forschung)
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_SCHULE")
@@ -2895,7 +2914,7 @@ class CvMainInterface:
 																								"INTERFACE_SLAVE2SCHOOL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 679, 679, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Bibliothek
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_LIBRARY")
@@ -2906,7 +2925,7 @@ class CvMainInterface:
 																								"INTERFACE_SLAVE2LIBRARY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 729, 729, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Bordell / Freudenhaus
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_BORDELL")
@@ -2916,7 +2935,7 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_SLAVE2BORDELL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 668, 668, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Theater
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_THEATER")
@@ -2926,7 +2945,7 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_SLAVE2THEATRE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 670, 670, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Brotmanufaktur
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_BROTMANUFAKTUR")
@@ -2937,7 +2956,7 @@ class CvMainInterface:
 																								"INTERFACE_SLAVE2BROTMANUFAKTUR").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 755, 755, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Manufaktur
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_CORP3")
@@ -2946,14 +2965,14 @@ class CvMainInterface:
 																				# if iFood < 5:
 																				#    screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2MANUFAKTUR_FOOD").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 680, 680, False)
 																				#    screen.show("BottomButtonContainer")
-																				#    iCount = iCount + 1
+																				#    iCount += 1
 
 																				iProd = pCity.getBuildingYieldChange(gc.getBuildingInfo(iBuilding1).getBuildingClassType(), 1)
 																				if iProd < 5:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_SLAVE2MANUFAKTUR_PROD").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 681, 681, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> Palast
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_PALACE")
@@ -2961,7 +2980,7 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_SLAVES_PALACE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 692, 692, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																		# Sklaven -> Tempel
 																		for iBuilding in L.LTemples:
@@ -2969,7 +2988,7 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																								"INTERFACE_SLAVES_TEMPLE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 693, 693, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																						break
 
 																		# Sklaven -> Feuerwehr
@@ -2982,7 +3001,7 @@ class CvMainInterface:
 																								"INTERFACE_SLAVES_FEUERWEHR").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 696, 696, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# Sklaven -> An den Sklavenmarkt verkaufen
 																		iBuilding1 = gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")
@@ -2990,7 +3009,7 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_SELL_SLAVES").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 694, 694, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																# ---- Ende Sklaven (eigene Stadt)
 
 																# Kauf einer edlen Ruestung (eigene Stadt)
@@ -3016,7 +3035,7 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																												"INTERFACE_EDLE_RUESTUNG2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 699, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																# Ende Kauf einer Edlen Ruestung
 
 																# Terrain Promos - Ausbildner / Trainer (in City) ID 719
@@ -3029,7 +3048,7 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iBuilding).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 719, iBuilding, False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 																# Auswanderer / Emigrant -> in der eigenen Stadt
 																if iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
@@ -3041,46 +3060,63 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_DISBAND_CITY2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 673, 673, False)
 																		screen.show("BottomButtonContainer")
-																		iCount = iCount + 1
+																		iCount += 1
 																		# zuwandern / immigrate
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																				"INTERFACE_EMIGRANT").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 672, 672, False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 																# Siedler -> in der eigenen Stadt
 																elif iUnitType == gc.getInfoTypeForString("UNIT_SETTLER"):
 																		# Stadt aufloesen / disband city
 																		if pUnitOwner.getNumCities() > 1 and pCity.getPopulation() < 3 and not pCity.isCapital():
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_DISBAND_CITY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 673, 673, True)
-																				iCount = iCount + 1
+																				iCount += 1
+																# Great Prophet Holy City
+																elif iUnitType == gc.getInfoTypeForString("UNIT_PROPHET") and pCity.isCapital():
+																		iReligions = gc.getNumReligionInfos()
+																		for iReligion in range(iReligions):
+																				if iReligion in L.LRelisRemapCapital:
+																						if gc.getGame().isReligionFounded(iReligion):
+																								pHolyCity = gc.getGame().getHolyCity(iReligion)
+																								if not pHolyCity.isNone() and pHolyCity.getID() == pCity.getID(): 
+																										continue
+																								else:
+																										# Es darf auch dann die Heilige Stadt gesetzt werden, wenn sie zB zerstört wurde
+																										if pCity.isHasReligion(iReligion) and (pHolyCity.isNone() or pHolyCity.getOwner() == iUnitOwner):
+																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_holycity.dds",
+																														0, WidgetTypes.WIDGET_GENERAL, 769, iReligion, False)
+																												screen.show("BottomButtonContainer")
+																												iCount += 1
+
 
 																# Reservist -> Veteran (in der eigenen Stadt)
 																iReservists = pCity.getFreeSpecialistCount(gc.getInfoTypeForString("SPECIALIST_RESERVIST"))  # SPECIALIST_RESERVIST
 																if iReservists >= 1:
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_city_reservists.dds", 0, WidgetTypes.WIDGET_GENERAL, 725, 725, False)
 																		screen.show("BottomButtonContainer")
-																		iCount = iCount + 1
+																		iCount += 1
 
 																# Nahrung abliefern
 																if iUnitType == gc.getInfoTypeForString("UNIT_SUPPLY_FOOD"):
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_getreide2town.dds", 0, WidgetTypes.WIDGET_GENERAL, 727, 1, False)
 																		screen.show("BottomButtonContainer")
-																		iCount = iCount + 1
+																		iCount += 1
 																# Nahrung aufsammeln
 																elif iUnitType == gc.getInfoTypeForString("UNIT_SUPPLY_WAGON"):
 																		if pCity.getFood() > 0 and PAE_Unit.getMaxSupply(pUnit) != PAE_Unit.getSupply(pUnit):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_food2supply.dds", 0, WidgetTypes.WIDGET_GENERAL, 727, 2, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# Karten zeichnen (innerhalb eigene Stadt)
 																elif pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_RECON"):
 																		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KARTEN")):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Techs/button_tech_karten.dds", 0, WidgetTypes.WIDGET_GENERAL, 728, 728, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# Release slaves
 																elif pUnit.isMilitaryHappiness():
@@ -3098,91 +3134,97 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave_release.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 730, 730, True)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# ---- ENDE if Einheit -> in der eigenen Stadt
 
-																# ++++++++++++++++++++++++++++++++
-																# In eigenen und fremden Staedten:
-																# ++++++++++++++++++++++++++++++++
+														# ++++++++++++++++++++++++++++++++
+														# In eigenen und fremden Staedten:
+														# ++++++++++++++++++++++++++++++++
 
-																if pUnit.isMilitaryHappiness():
-																		# Verkauf von Einheiten
-																		# Soll in jeder Stadt mit Soeldnerposten verkauft werden
-																		# Unit -> An den Soeldnerposten verkaufen
-																		iBuilding1 = gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")
-																		if pCity.isHasBuilding(iBuilding1):
-																				iCost = PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2
-																				if iCost < 1:
-																						iCost = 80
-																				if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
-																						iCost = iCost / 2
-																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																						"INTERFACE_SELL_UNITS").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 695, iCost, False)
+														if pUnit.isMilitaryHappiness():
+																# Verkauf von Einheiten
+																# Soll in jeder Stadt mit Soeldnerposten verkauft werden
+																# Unit -> An den Soeldnerposten verkaufen
+																iBuilding1 = gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")
+																if pCity.isHasBuilding(iBuilding1):
+																		iCost = PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2
+																		if iCost < 1:
+																				iCost = 80
+																		if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
+																				iCost = iCost / 2
+																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
+																				"INTERFACE_SELL_UNITS").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 695, iCost, False)
+																		screen.show("BottomButtonContainer")
+																		iCount += 1
+
+																# Einheit segnen / bless unit (PAE V Patch 4)
+																iPromo = gc.getInfoTypeForString("PROMOTION_BLESSED")
+																if not pUnit.isHasPromotion(iPromo):
+																		iBuilding1 = gc.getInfoTypeForString("BUILDING_CHRISTIAN_CATHEDRAL")
+																		iBuilding2 = gc.getInfoTypeForString("BUILDING_HAGIA_SOPHIA")
+																		if pCity.isHasBuilding(iBuilding1) or pCity.isHasBuilding(iBuilding2):
+																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_blessed.dds",
+																						0, WidgetTypes.WIDGET_GENERAL, 752, 0, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																				iCount += 1
 
-																		# Einheit segnen / bless unit (PAE V Patch 4)
-																		iPromo = gc.getInfoTypeForString("PROMOTION_BLESSED")
+																# Einheit Moral verbessern (PAE VI Patch 6.8)
+																iPromo = gc.getInfoTypeForString("PROMOTION_MORALE")
+																if not pUnit.isHasPromotion(iPromo):
+																		iBuilding = gc.getInfoTypeForString("BUILDING_STATUE_OF_ZEUS")
+																		if pCity.isHasBuilding(iBuilding):
+																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_morale.dds",
+																						0, WidgetTypes.WIDGET_GENERAL, 752, 1, False)
+																				screen.show("BottomButtonContainer")
+																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																				iCount += 1
+
+														# Schiffe
+														if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
+																# Kauf von Wellen-Oil -----------
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KUESTE")):
+																		iPromo = gc.getInfoTypeForString("PROMOTION_OIL_ON_WATER")
 																		if not pUnit.isHasPromotion(iPromo):
-																				iBuilding1 = gc.getInfoTypeForString("BUILDING_CHRISTIAN_CATHEDRAL")
-																				iBuilding2 = gc.getInfoTypeForString("BUILDING_HAGIA_SOPHIA")
-																				if pCity.isHasBuilding(iBuilding1) or pCity.isHasBuilding(iBuilding2):
-																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_blessed.dds",
-																																				 0, WidgetTypes.WIDGET_GENERAL, 752, 0, False)
-																						screen.show("BottomButtonContainer")
-																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
-
-																		# Einheit Moral verbessern (PAE VI Patch 6.8)
-																		iPromo = gc.getInfoTypeForString("PROMOTION_MORALE")
-																		if not pUnit.isHasPromotion(iPromo):
-																				iBuilding = gc.getInfoTypeForString("BUILDING_STATUE_OF_ZEUS")
-																				if pCity.isHasBuilding(iBuilding):
-																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_morale.dds",
-																																				 0, WidgetTypes.WIDGET_GENERAL, 752, 1, False)
-																						screen.show("BottomButtonContainer")
-																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
-
-																# Schiffe
-																if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
-																		# Kauf von Wellen-Oil -----------
-																		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KUESTE")):
-																				iPromo = gc.getInfoTypeForString("PROMOTION_OIL_ON_WATER")
-																				if not pUnit.isHasPromotion(iPromo):
-																						bonus1 = gc.getInfoTypeForString("BONUS_OLIVES")
-																						iPromo2 = gc.getInfoTypeForString("PROMOTION_COMBAT2")
-																						if pUnit.isHasPromotion(iPromo2) and pCity.hasBonus(bonus1):
-																								iCost = int(PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2)
-																								if iCost <= 0:
-																										iCost = 80
-																								if gc.getPlayer(iUnitOwner).getGold() >= iCost:
-																										screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																												"INTERFACE_PROMO_OIL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, iCost, True)
-																								else:
-																										screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																												"INTERFACE_PROMO_OIL2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, iCost, False)
+																				bonus1 = gc.getInfoTypeForString("BONUS_OLIVES")
+																				iPromo2 = gc.getInfoTypeForString("PROMOTION_COMBAT2")
+																				if pUnit.isHasPromotion(iPromo2) and pCity.hasBonus(bonus1):
+																						iCost = int(PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2)
+																						if iCost <= 0:
+																								iCost = 80
+																						if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																								screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
+																										"INTERFACE_PROMO_OIL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, iCost, True)
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																										"INTERFACE_PROMO_OIL2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, -1, False)
+																										"INTERFACE_PROMO_OIL2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, iCost, False)
+																				else:
+																						screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
+																								"INTERFACE_PROMO_OIL2").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, -1, False)
+																				screen.show("BottomButtonContainer")
+																				iCount += 1
+																# Kauf eines Magnetkompasses -----------
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MAGNETISM")):
+																		iPromo = gc.getInfoTypeForString("PROMOTION_KOMPASS")
+																		if not pUnit.isHasPromotion(iPromo):
+																				bonus1 = gc.getInfoTypeForString("BONUS_MAGNETIT")
+																				if pCity.hasBonus(bonus1):
+																						iCost = 20
+																						if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_kompass.dds",
+																										0, WidgetTypes.WIDGET_GENERAL, 767, -1, False)
+																								screen.show("BottomButtonContainer")
+																								iCount += 1
+																# Schiff reparieren
+																if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_WERFT")):
+																		iCost = pUnit.getDamage()
+																		if iCost > 0:
+																				if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_werft.dds",
+																								0, WidgetTypes.WIDGET_GENERAL, 768, iCost, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
-																		# Kauf eines Magnetkompasses -----------
-																		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MAGNETISM")):
-																				iPromo = gc.getInfoTypeForString("PROMOTION_KOMPASS")
-																				if not pUnit.isHasPromotion(iPromo):
-																						bonus1 = gc.getInfoTypeForString("BONUS_MAGNETIT")
-																						if pCity.hasBonus(bonus1):
-																								iCost = 20
-																								if gc.getPlayer(iUnitOwner).getGold() >= iCost:
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_kompass.dds",
-																																								0, WidgetTypes.WIDGET_GENERAL, 767, -1, False)
-																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
-														# ---- ENDE if Einheit in der eigenen Stadt --------
-
-														# ---- Einheit egal in welcher Stadt:
+																						iCount += 1
 
 														# Versorgungswagen und Heldendenkmal / Siegesdenkmal / monument
 														# Nur Versorgungskarren, nicht Druiden! (iUnitType anstatt iUnitclassType)
@@ -3192,21 +3234,21 @@ class CvMainInterface:
 																		# Heldendenkmal abbauen
 																		if iBuilding == -1 and PAE_City.isHasHeldendenkmal(pCity):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_collect_heldendenkmal.dds",
-																																		 0, WidgetTypes.WIDGET_GENERAL, 758, 0, True)
+																						0, WidgetTypes.WIDGET_GENERAL, 758, 0, True)
 																				#screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_statue1.dds", 0, WidgetTypes.WIDGET_GENERAL, 758, 0, True)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																		# Heldendenkmal wieder setzen
 																		elif iBuilding != -1 and not pCity.isHasBuilding(iBuilding):
 																				screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iBuilding).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 758, iBuilding, True)
 																				#screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_statue2.dds", 0, WidgetTypes.WIDGET_GENERAL, 758, iBuilding, True)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 
-														# ---- Ende if Einheiten in einer Stadt
+												# ---- Ende if Einheiten in einer Stadt
 												else:
-														# ---- Einheit nicht in der Stadt
+												# ---- Einheit nicht in der Stadt
 
 														if pUnit.isMilitaryHappiness():
 																pPlot = pUnit.plot()
@@ -3217,16 +3259,24 @@ class CvMainInterface:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_PILLAGE_ROAD").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 700, 0, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
-																# LEADER: Wald verbrennen
+																# LEADER Special Abilities
 																if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
+																		# In forests
 																		if pPlot.getFeatureType() in L.LForests:
-																				if pPlot.getOwner() < 0 or pPlot.getOwner() == iUnitOwner and gc.getTeam(iUnitOwner).getAtWarCount(True) or gc.getTeam(pPlot.getOwner()).isAtWar(pUnitOwner.getTeam()):
+																				# Wald verbrennen (nur bei Krieg)
+																				if pPlot.getOwner() < 0 or pPlot.getOwner() == iUnitOwner and pTeam.getAtWarCount(True) or gc.getTeam(pPlot.getOwner()).isAtWar(pUnitOwner.getTeam()):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Terrainfeatures/button_brand.dds",
-																																				 0, WidgetTypes.WIDGET_GENERAL, 765, 0, False)
+																								0, WidgetTypes.WIDGET_GENERAL, 765, 0, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
+																				# Ramme bauen lassen (nur bei Krieg)
+																				if pTeam.getAtWarCount(True) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")) or pPlot.calculateCulturePercent(gc.getBARBARIAN_PLAYER()) > 0:
+																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_ramme.dds",
+																								0, WidgetTypes.WIDGET_GENERAL, 770, 0, False)
+																						screen.show("BottomButtonContainer")
+																						iCount += 1
 
 																# Forts/Handelsposten erobern 763
 																# if pPlot.getImprovementType() in L.LImprFortShort:
@@ -3236,12 +3286,12 @@ class CvMainInterface:
 																#      # Pillage Road
 																#      screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_x.dds", 0, WidgetTypes.WIDGET_GENERAL, 763, 763, False)
 																#      screen.show("BottomButtonContainer")
-																#      iCount = iCount + 1
+																#      iCount += 1
 
 														# Piraten-Feature
 														# Nur fuer bestimmte Nationen (ab PAE V Patch 3)
 														if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
-																if gc.getTeam(pUnitOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_PIRACY")):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PIRACY")):
 
 																		# PAE VI: mit TECH moeglich = generell gesperrte Tech
 																		# if pUnit.getCivilizationType() in L.LCivPirates:
@@ -3249,25 +3299,25 @@ class CvMainInterface:
 																				if pUnit.hasCargo():
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_pirat2.dds", 0, WidgetTypes.WIDGET_GENERAL, 722, 3, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																				else:
 																						if pUnit.getUnitType() in L.DCaptureFromPirate:
 																								screen.appendMultiListButton("BottomButtonContainer", gc.getCivilizationInfo(
 																										pUnitOwner.getCivilizationType()).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 722, 2, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																						elif pUnit.getUnitType() in L.DCaptureByPirate:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_pirat.dds", 0, WidgetTypes.WIDGET_GENERAL, 722, 1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 														# Limes
 														elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION2") or \
 																		iUnitType == gc.getInfoTypeForString("UNIT_AUXILIAR_ROME") or iUnitType == gc.getInfoTypeForString("UNIT_ROME_LIMITANEI"):
-																if gc.getTeam(pUnitOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_LIMES")):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LIMES")):
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Buildings/button_building_limes.dds", 0, WidgetTypes.WIDGET_GENERAL, 733, -1, False)
 																		screen.show("BottomButtonContainer")
-																		iCount = iCount + 1
+																		iCount += 1
 														# Handelsposten
 														elif iUnitType == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT") or iUnitType == gc.getInfoTypeForString("UNIT_CARAVAN"):
 																# Update: auch in eigenen Grenzen anzeigen (zB fuer Inseln), aber nur wenn nicht bereits was drauf steht
@@ -3276,12 +3326,12 @@ class CvMainInterface:
 																if not pPlot.isWater():
 																		if pPlot.getOwner() == -1 or (pPlot.getImprovementType() == -1 and pPlot.getOwner() == iUnitOwner):
 																				if pPlot.getBonusType(-1) != -1:
-																						if gc.getTeam(pUnitOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_WARENHANDEL")):
+																						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_WARENHANDEL")):
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Builds/button_build_handelsposten.dds",
 																																						 0, WidgetTypes.WIDGET_GENERAL, 736, pPlot.getBonusType(-1), False)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 														# Sklaven und Auswanderer ausserhalb der Stadt
 														elif iUnitType == gc.getInfoTypeForString("UNIT_SLAVE") or iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
 																pPlot = pUnit.plot()
@@ -3292,14 +3342,14 @@ class CvMainInterface:
 																																				 0, WidgetTypes.WIDGET_GENERAL, 753, 0, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 																		elif pPlot.getImprovementType() in L.LLatifundien and iUnitType == gc.getInfoTypeForString("UNIT_SLAVE"):
 																				# if pPlot.getUpgradeTimeLeft(pPlot.getImprovementType(), iUnitOwner) > 1:
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2latifundium.dds",
 																																		 0, WidgetTypes.WIDGET_GENERAL, 753, 1, False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 														# Trojanisches Pferd vor der Stadt
 														elif iUnitType == gc.getInfoTypeForString("UNIT_TROJAN_HORSE"):
 																if PAE_Unit.TrojanHorsePossible(g_pSelectedUnit):
@@ -3308,7 +3358,7 @@ class CvMainInterface:
 																				"INTERFACE_TROJAN_HORSE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 697, 697, False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 
 												# Ende ausserhalb der Stadt --------
 
@@ -3337,50 +3387,53 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_fortress.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																# ausserhalb von Festungen
 																# elif iFeat not in L.LFeatureArray:
 																else:
 																		# Naval
 																		if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
-																				if gc.getTeam(pUnitOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_LOGIK")):
+																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LOGIK")):
 																						if pUnit.getUnitType() not in L.LFormationNoNaval:
-																								# Keil
-																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_KEIL")
-																								if pUnit.isHasPromotion(iFormation):
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_keil_marine_gr.dds",
-																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
-																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
-																										bFormationUndo = True
-																								else:
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_keil_marine.dds",
-																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
-																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
-																								# Zange
-																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_ZANGE")
-																								if pUnit.isHasPromotion(iFormation):
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_zange_gr.dds",
-																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
-																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
-																										bFormationUndo = True
-																								else:
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_zange.dds",
-																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
-																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
 																								# Full speed / Volle Kraft
+																								bFullSpeed = False
 																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_FULL_SPEED")
 																								screen.appendMultiListButton("BottomButtonContainer", gc.getPromotionInfo(iFormation).getButton(),
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
 																								if pUnit.isHasPromotion(iFormation):
 																										screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getPromotionInfo(iFormation).getButton())
-																										bFormationUndo = True
-																								iCount = iCount + 1
+																										if pUnit.hasMoved(): bFullSpeed = True
+																										else: bFormationUndo = True
+																								iCount += 1
+																								
+																								if not bFullSpeed:
+																										# Keil
+																										iFormation = gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_KEIL")
+																										if pUnit.isHasPromotion(iFormation):
+																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_keil_marine_gr.dds",
+																																										 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
+																												screen.show("BottomButtonContainer")
+																												bFormationUndo = True
+																										else:
+																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_keil_marine.dds",
+																																										 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
+																												screen.show("BottomButtonContainer")
+																										iCount += 1
+																										# Zange
+																										iFormation = gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_ZANGE")
+																										if pUnit.isHasPromotion(iFormation):
+																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_zange_gr.dds",
+																																										 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
+																												screen.show("BottomButtonContainer")
+																												bFormationUndo = True
+																										else:
+																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_zange.dds",
+																																										 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
+																												screen.show("BottomButtonContainer")
+																										iCount += 1
+
 
 																		# Mounted mit Fernangriff
 																		elif pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"):
@@ -3392,13 +3445,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_parther_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_parther.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KANTAKREIS")):
 																								# Kantabrischer Kreis
 																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_KANTAKREIS")
@@ -3406,13 +3459,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_kantakreis_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_kantakreis.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																				# Keil (auch weiter unten fuer Melee)
 																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
@@ -3423,13 +3476,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_keil_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_keil.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																				if pUnit.getUnitType() not in L.LUnitNoSlaves:
 																						# Fourage
@@ -3439,13 +3492,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_fourage_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_fourage.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																		# Melee and Spear
 																		elif pUnit.getUnitCombatType() in L.LMeleeCombats:
@@ -3457,13 +3510,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_wall_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_wall.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																				# Manipel, Phalanx, ...
 																				if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_DRILL1")):
@@ -3476,13 +3529,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_kohorte_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_kohorte.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																						# Treffen-Taktik ersetzt Manipel
 																						elif pTeam.isHasTech(gc.getInfoTypeForString("TECH_TREFFEN")):
@@ -3491,13 +3544,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_treffen_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_treffen.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																						# Manipel ersetzt Phalanx, Manipular-Phalanx und Schiefe Phalanx
 																						elif pTeam.isHasTech(gc.getInfoTypeForString("TECH_MANIPEL")):
@@ -3506,13 +3559,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_manipel_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_manipel.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																						# Phalanx-Arten und Geschlossene Formation
 																						else:
@@ -3526,13 +3579,13 @@ class CvMainInterface:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx_s_gr.dds",
 																																												 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 																														bFormationUndo = True
 																												else:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx_s.dds",
 																																												 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 
 																												# Manipular-Phalanx
 																												iFormation = gc.getInfoTypeForString("PROMOTION_FORM_PHALANX2")
@@ -3540,13 +3593,13 @@ class CvMainInterface:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx_m_gr.dds",
 																																												 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 																														bFormationUndo = True
 																												else:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx_m.dds",
 																																												 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 
 																										# Phalanx
 																										elif pTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX")):
@@ -3555,13 +3608,13 @@ class CvMainInterface:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx_gr.dds",
 																																												 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 																														bFormationUndo = True
 																												else:
 																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_phalanx.dds",
 																																												 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																														screen.show("BottomButtonContainer")
-																														iCount = iCount + 1
+																														iCount += 1
 
 																								# Geschlossene Formation (alle Melee)
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CLOSED_FORM")):
@@ -3570,13 +3623,13 @@ class CvMainInterface:
 																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_closed_gr.dds",
 																																										 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																												screen.show("BottomButtonContainer")
-																												iCount = iCount + 1
+																												iCount += 1
 																												bFormationUndo = True
 																										else:
 																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_closed.dds",
 																																										 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																												screen.show("BottomButtonContainer")
-																												iCount = iCount + 1
+																												iCount += 1
 																				# Drill end ------------
 
 																				# Keil (auch bei Mounted)
@@ -3587,13 +3640,13 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_keil_gr.dds",
 																																						 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																								bFormationUndo = True
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_keil.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																				# Zangenangriff
 																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MILIT_STRAT")):
@@ -3602,13 +3655,13 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_zange_a_gr.dds",
 																																						 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																								bFormationUndo = True
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_form_zange_a.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																				# Flankenschutz (nur Speer)
 																				if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
@@ -3618,13 +3671,13 @@ class CvMainInterface:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_flanke_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 																										bFormationUndo = True
 																								else:
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_flanke.dds",
 																																								 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																										screen.show("BottomButtonContainer")
-																										iCount = iCount + 1
+																										iCount += 1
 
 																				# Gedrillte Soldaten
 																				if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_DRILL1")):
@@ -3637,13 +3690,13 @@ class CvMainInterface:
 																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_testudo_gr.dds",
 																																										 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																												screen.show("BottomButtonContainer")
-																												iCount = iCount + 1
+																												iCount += 1
 																												bFormationUndo = True
 																										else:
 																												screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_testudo.dds",
 																																										 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																												screen.show("BottomButtonContainer")
-																												iCount = iCount + 1
+																												iCount += 1
 
 																				# Elefantengasse (auch weiter unten fuer Bogen)
 																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GEOMETRIE2")):
@@ -3652,13 +3705,13 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_gasse_gr.dds",
 																																						 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																								bFormationUndo = True
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_gasse.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# Archers
 																		elif pUnit.getUnitCombatType() in L.LArcherCombats:
@@ -3670,13 +3723,13 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_gasse_gr.dds",
 																																						 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																								bFormationUndo = True
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_gasse.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 
 																		# PAE 6.9: Leader / Great General formation
 																		if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
@@ -3686,13 +3739,13 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_leaderpos_gr.dds",
 																																				 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, 718, False)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																						bFormationUndo = True
 																				else:
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_leaderpos.dds",
 																																				 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																						screen.show("BottomButtonContainer")
-																						iCount = iCount + 1
+																						iCount += 1
 																# -- Ende else Fortress
 
 																# Flucht
@@ -3713,20 +3766,20 @@ class CvMainInterface:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_flight_gr.dds",
 																																						 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 																								screen.show("BottomButtonContainer")
-																								iCount = iCount + 1
+																								iCount += 1
 																								bFormationUndo = True
 																						else:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_flight.dds",
 																																						 0, WidgetTypes.WIDGET_HELP_PROMOTION, iFormation, 718, True)
 																								screen.show("BottomButtonContainer")
 																								screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																								iCount = iCount + 1
+																								iCount += 1
 
 														# Keine Formation
 														if bFormationUndo:
 																screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_none.dds", 0, WidgetTypes.WIDGET_HELP_PROMOTION, -1, 718, True)
 																screen.show("BottomButtonContainer")
-																iCount = iCount + 1
+																iCount += 1
 
 												# Formationen / Formations End ------
 
@@ -3738,7 +3791,7 @@ class CvMainInterface:
 																				"INTERFACE_LEGEND_HERO_TO_GENERAL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 720, 720, False)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount = iCount + 1
+																		iCount += 1
 
 												# Salae/Sold/Salaire und/oder Dezimation/Dezimierung
 												if pUnit.canMove():
@@ -3797,7 +3850,7 @@ class CvMainInterface:
 																																		 0, WidgetTypes.WIDGET_GENERAL, 759, 1, False)
 																				screen.show("BottomButtonContainer")
 																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount = iCount + 1
+																				iCount += 1
 
 																# Sklaven auf dem Plot -> Moral steigern
 																pPlot = g_pSelectedUnit.plot()
@@ -3816,7 +3869,7 @@ class CvMainInterface:
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_slave.dds", 0, WidgetTypes.WIDGET_GENERAL, 759, 2, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 																		elif not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MORALE")):
 																				# Kopfkult
 																				if pUnit.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_CELT") \
@@ -3826,7 +3879,7 @@ class CvMainInterface:
 																																				 0, WidgetTypes.WIDGET_GENERAL, 760, 0, False)
 																						screen.show("BottomButtonContainer")
 																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount = iCount + 1
+																						iCount += 1
 
 																		# XP gewinnen in einem Duell
 																		# nur in einer Stadt mit Holzarena
@@ -3844,7 +3897,7 @@ class CvMainInterface:
 																				else:
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_info.dds", 0, WidgetTypes.WIDGET_GENERAL, 761, 0, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 												# PAE 6.11: Pferdewechsel / change horse to get all move points again
 												if bCity:
@@ -3860,13 +3913,13 @@ class CvMainInterface:
 																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CAMEL_STABLE")):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_camel_refresh.dds", 0, WidgetTypes.WIDGET_GENERAL, 766, 1, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 																# Pferdestall
 																elif bOK or pUnit.getUnitType() in L.LUnits4HorseSwap:
 																		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_STABLE")):
 																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_horse_refresh.dds", 0, WidgetTypes.WIDGET_GENERAL, 766, 0, False)
 																				screen.show("BottomButtonContainer")
-																				iCount = iCount + 1
+																				iCount += 1
 
 												# ---------- INFO BUTTONS --------------------
 
@@ -3942,7 +3995,7 @@ class CvMainInterface:
 																				bDone = True
 												screen.show(szName)
 												self.setResearchButtonPosition(szName, iCount)
-										iCount = iCount + 1
+										iCount += 1
 				return 0
 
 		# SPECIALIST STACKER        05/02/07      JOHNY
@@ -4143,7 +4196,7 @@ class CvMainInterface:
 												screen.show(szName)
 												bHandled = True
 
-												iCount = iCount + 1
+												iCount += 1
 
 												if g_bDisplayUniqueSuperSpecialistsOnly:
 														break
@@ -4320,7 +4373,7 @@ class CvMainInterface:
 														screen.setLabel(szString, "Background", szOutText, CvUtil.FONT_LEFT_JUSTIFY, 152, 52 + (iCount * 19), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 														screen.show(szString)
 
-												iCount = iCount + 1
+												iCount += 1
 
 						# PAE Taxes Bar
 						if not CyInterface().isCityScreenUp():
@@ -4811,7 +4864,7 @@ class CvMainInterface:
 												screen.setLabel(szName, "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 220, 50 + (19 * iCount) +
 																				4, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_COMMERCE_MOD_HELP, eCommerce, -1)
 												screen.show(szName)
-												iCount = iCount + 1
+												iCount += 1
 
 								iCount = 0
 
@@ -5446,7 +5499,7 @@ class CvMainInterface:
 										szBuffer = localText.getText("TXT_KEY_MAIN_EMIGRATE_AB_1", ("",))
 								elif not pTeam.isHasTech(iTech):
 										szBuffer = localText.getText("TXT_KEY_MAIN_EMIGRATE_AB_2", ("",))
-								elif iCityPop < 6:
+								elif iCityPop < 4:
 										szBuffer = localText.getText("TXT_KEY_MAIN_EMIGRATE_AB_3", ("",))
 								else:
 										iCityUnhappy = pCity.unhappyLevel(0) - pCity.happyLevel()
@@ -6826,7 +6879,7 @@ class CvMainInterface:
 
 																				CyInterface().checkFlashReset(ePlayer)
 
-																				iCount = iCount + 1
+																				iCount += 1
 														j = j - 1
 										i = i - 1
 
@@ -7569,7 +7622,7 @@ class CvMainInterface:
 								elif iData1 == 764:
 										CyMessageControl().sendModNetMessage(iData1, iOwner, -1, -1, -1)
 
-								# Wald verbrennen
+								# General: Wald verbrennen
 								elif iData1 == 765:
 										CyAudioGame().Play2DSound("AS2D_PILLAGE")
 										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
@@ -7582,7 +7635,27 @@ class CvMainInterface:
 								# Kauf eines Magnetkompasses
 								elif iData1 == 767:
 										CyAudioGame().Play2DSound("AS2D_COINS")
-										CyMessageControl().sendModNetMessage(767, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+								# Kauf eines Magnetkompasses
+								elif iData1 == 768:
+										CyAudioGame().Play2DSound("AS2D_COINS")
+										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+								# Great Prophet Holy City
+								elif iData1 == 769:
+										CyMessageControl().sendModNetMessage(iData1, iData2, pPlot.getPlotCity().getID(), iOwner, iUnitID)
+
+								# General: Bau einer Ramme
+								elif iData1 == 770:
+										CyAudioGame().Play2DSound("AS2D_CHOP_WOOD")
+										CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+
+								# Hunter: Lager oder Beobachtungsturm
+								elif iData1 == 771:
+										CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_WORKER")
+										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+
 
 						# Platy ScoreBoard - Start
 						if inputClass.getFunctionName() == "ScoreRowPlus":

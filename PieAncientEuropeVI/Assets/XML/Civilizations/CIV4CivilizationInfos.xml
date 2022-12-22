@@ -114,6 +114,14 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL1</BuildingClassType>
+					<BuildingType>BUILDING_SCHULE_ASSUR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingType>BUILDING_HAREM</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
 					<BuildingType>BUILDING_SCHULE</BuildingType>
 				</Building>
@@ -784,6 +792,14 @@
 				<City>TXT_KEY_CITY_NAME_TAYMA</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL1</BuildingClassType>
+					<BuildingType>BUILDING_SCHULE_ASSUR</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingType>BUILDING_HAREM</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
 					<BuildingType>BUILDING_SCHULE</BuildingType>
@@ -2420,8 +2436,12 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL1</BuildingClassType>
 					<BuildingType>BUILDING_NECROPOLIS_EGYPT</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingType>BUILDING_HAREM</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
@@ -2739,6 +2759,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_BUND</BuildingClassType>
 					<BuildingType>BUILDING_BUND_ETRUS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_NATIONAL_EPIC</BuildingClassType>
+					<BuildingType>BUILDING_NATIONAL_EPIC_ETRUSC</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_STONEHENGE</BuildingClassType>
@@ -6564,8 +6588,12 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL1</BuildingClassType>
 					<BuildingType>BUILDING_NECROPOLIS_EGYPT</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingType>BUILDING_HAREM</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
@@ -7345,6 +7373,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
 					<BuildingType>BUILDING_SCHULE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL2</BuildingClassType>
+					<BuildingType>BUILDING_HAREM</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL4</BuildingClassType>
@@ -8994,6 +9026,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL1</BuildingClassType>
+					<BuildingType>BUILDING_SCHULE_ASSUR</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL3</BuildingClassType>
 					<BuildingType>BUILDING_SCHULE</BuildingType>
 				</Building>
@@ -10229,10 +10265,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_MISSIONARY_JAINISMUS</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -10529,7 +10561,7 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ARENA</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
-				</Building>        
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_HEROIC_EPIC</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
@@ -10754,10 +10786,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_BUDDHIST_MISSIONARY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_MISSIONARY_JAINISMUS</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>

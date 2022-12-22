@@ -1571,7 +1571,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						screen.setTableColumnHeader(tableName, i, "", self.W_ITEMS_PANE/nColumns)
 
 				for iEra in range(gc.getNumEraInfos()):
-						if iEra > 4:
+						if iEra > 5:
 								break
 						lTechs = []
 						iTech = 0

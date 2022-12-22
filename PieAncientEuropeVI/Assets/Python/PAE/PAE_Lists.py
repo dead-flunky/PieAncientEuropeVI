@@ -97,6 +97,7 @@ DHorseUpMap = {}
 LGGStandard = []
 DGGNames = {}
 # LRelis = []
+LRelisRemapCapital = []
 LGreeks = []
 LNearEast = []
 LNorthern = []
@@ -198,6 +199,7 @@ def init():
 		global LGGStandard
 		global DGGNames
 		#global  LRelis
+		global LRelisRemapCapital
 		global LGreeks
 		global LNearEast
 		global LNorthern
@@ -1124,6 +1126,18 @@ def init():
 		#     gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
 		#     gc.getInfoTypeForString("RELIGION_JAINISMUS"),
 		# ]
+		
+		LRelisRemapCapital = [
+				gc.getInfoTypeForString("RELIGION_SUMER"),
+				gc.getInfoTypeForString("RELIGION_EGYPT"),
+				gc.getInfoTypeForString("RELIGION_PHOEN"),
+				gc.getInfoTypeForString("RELIGION_CELTIC"),
+				gc.getInfoTypeForString("RELIGION_NORDIC"),
+				gc.getInfoTypeForString("RELIGION_GREEK"),
+				gc.getInfoTypeForString("RELIGION_ROME"),
+				gc.getInfoTypeForString("RELIGION_ZORO"),
+				gc.getInfoTypeForString("RELIGION_HINDUISM")
+		]
 
 		LGreeks = [
 				gc.getInfoTypeForString("CIVILIZATION_GREECE"),
@@ -1326,7 +1340,9 @@ def init():
 		LMonoReligions = [
 				gc.getInfoTypeForString("RELIGION_BUDDHISM"),
 				gc.getInfoTypeForString("RELIGION_JUDAISM"),
-				gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+				gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
+				gc.getInfoTypeForString("RELIGION_ORTHODOX"),
+				gc.getInfoTypeForString("RELIGION_ISLAM")
 		]
 
 		LForests = [

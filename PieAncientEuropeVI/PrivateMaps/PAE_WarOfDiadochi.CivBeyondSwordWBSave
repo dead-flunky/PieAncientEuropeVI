@@ -7802,7 +7802,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=BARBARIAN
-		CityName=TXT_KEY_CITY_NAME_B50
+		CityName=TXT_KEY_CITY_NAME_B141
 		CityPopulation=2
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_CURINGHUT

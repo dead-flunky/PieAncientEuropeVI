@@ -500,11 +500,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_MERCENARY_HELP</Tag>
-    <English>[ICON_BULLET]Unit easily defects to the enemy when losing</English>
-    <French>[ICON_BULLET]L'unit&#233; passe facilement &#224; l'ennemi apr&#232;s une d&#233;faite</French>
-    <German>[ICON_BULLET]Einheit l&#228;uft leicht zum Gegner &#252;ber, wenn sie geschlagen wird</German>
-    <Italian>[ICON_BULLET] Unit&#224; facilmente difetti al nemico quando perdono</Italian>
-    <Spanish>[ICON_BULLET]La unidad deserta f&#225;cilmente al enemigo cuando pierde</Spanish>
+    <English>[ICON_BULLET]Unit easily defects to the enemy when losing[NEWLINE][ICON_BULLET]Loses this penalty if the unit wins a battle (chance of 20%). If there is a Hero or Leader in the stack: 50%</English>
+    <French>[ICON_BULLET]L'unit&#233; passe facilement &#224; l'ennemi apr&#232;s une d&#233;faite[NEWLINE][ICON_BULLET]Perd cette p&#233;nalit&#233; si l'unit&#233; gagne une bataille (chance de 20%). S'il y a un H&#233;ros ou un Leader dans la pile : 50%</French>
+    <German>[ICON_BULLET]Einheit l&#228;uft leicht zum Gegner &#252;ber, wenn sie geschlagen wird[NEWLINE][ICON_BULLET]Verliert diesen Malus, wenn sie im Kampf gewinnt (20% Chance). Befindet sich ein Held oder General im Stack: 50%</German>
+    <Italian>[ICON_BULLET] Unit&#224; facilmente difetti al nemico quando perdono[NEWLINE][ICON_BULLET]Perde questa penalit&#224; se l'unit&#224; vince una battaglia (possibilit&#224; del 20%). Se c'&#232; un Eroe o un Leader nella pila: 50%</Italian>
+    <Spanish>[ICON_BULLET]La unidad deserta f&#225;cilmente al enemigo cuando pierde[NEWLINE][ICON_BULLET]Pierde esta penalizaci&#243;n si la unidad gana una batalla (probabilidad del 20 %). Si hay un H&#233;roe o L&#237;der en la pila: 50%</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_LOYALITAT_HELP</Tag>
@@ -540,11 +540,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_EMIGRANT_HELP</Tag>
-    <English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villagesat no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)</English>
-    <French>[ICON_BULLET]Constructible si la ville est malheureuse ou malsaine[NEWLINE][ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des villages sans frais[NEWLINE][ICON_BULLET]Peut rejoindre des villages (acc&#233;l&#232;re leur croissance)</French>
-    <German>[ICON_BULLET]Baubar, wenn die Stadt ungl&#252;cklich oder ungesund ist[NEWLINE][ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1, leert den Nahrungsspeicher[NEWLINE][ICON_BULLET]Kann ohne Kosten H&#252;tten errichten[NEWLINE][ICON_BULLET]Kann sich H&#252;tten anschlie&#223;en (beschleunigt deren Wachstum)</German>
-    <Italian>[ICON_BULLET]Costruibile se la citt&#224; &#232; infelice o malata[NEWLINE][ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1, svuota la riserva di cibo[NEWLINE][ICON_BULLET]Pu&#242; costruire villaggi gratuitamente[NEWLINE][ICON_BULLET]Pu&#242; unirti a villaggi (accelerer&#224; la loro crescita)</Italian>
-    <Spanish>[ICON_BULLET]Construible si la ciudad es infeliz o insalubre[NEWLINE][ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1, borra el almacenamiento de alimentos[NEWLINE][ICON_BULLET]Puede construir aldeas sin costo alguno.[NEWLINE][ICON_BULLET]Puede unirse a pueblos (acelera su crecimiento)</Spanish>
+    <English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy (from Pop 6)[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop smaller 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villagesat no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)</English>
+    <French>[ICON_BULLET]Constructible si la ville est malheureuse ou malsaine (de la Pop 6)[NEWLINE][ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. inf&#233;rieure &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des villages sans frais[NEWLINE][ICON_BULLET]Peut rejoindre des villages (acc&#233;l&#232;re leur croissance)</French>
+    <German>[ICON_BULLET]Baubar, wenn die Stadt ungl&#252;cklich oder ungesund ist (ab Pop 6)[NEWLINE][ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop kleiner 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1, leert den Nahrungsspeicher[NEWLINE][ICON_BULLET]Kann ohne Kosten H&#252;tten errichten[NEWLINE][ICON_BULLET]Kann sich H&#252;tten anschlie&#223;en (beschleunigt deren Wachstum)</German>
+    <Italian>[ICON_BULLET]Costruibile se la citt&#224; &#232; infelice o malata (dalla Pop 6)[NEWLINE][ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; piccola 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1, svuota la riserva di cibo[NEWLINE][ICON_BULLET]Pu&#242; costruire villaggi gratuitamente[NEWLINE][ICON_BULLET]Pu&#242; unirti a villaggi (accelerer&#224; la loro crescita)</Italian>
+    <Spanish>[ICON_BULLET]Construible si la ciudad es infeliz o insalubre (de la Pop 6)[NEWLINE][ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s peque&#241;a 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1, borra el almacenamiento de alimentos[NEWLINE][ICON_BULLET]Puede construir aldeas sin costo alguno.[NEWLINE][ICON_BULLET]Puede unirse a pueblos (acelera su crecimiento)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_CULTIVATE_BONUS_FROM_CITY</Tag>
@@ -604,11 +604,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_COLLECT_BONUS</Tag>
-    <English>[COLOR_HIGHLIGHT_TEXT]Collect goods[COLOR_REVERT][NEWLINE]Will remove the bonus resource.</English>
-    <French>[COLOR_HIGHLIGHT_TEXT]Ramasser la ressource[COLOR_REVERT][NEWLINE]Supprimera la ressource bonus de la case.</French>
-    <German>[COLOR_HIGHLIGHT_TEXT]Sammle Bonusgut auf[COLOR_REVERT][NEWLINE]Wird das Bonusgut vom Feld entfernen.</German>
-    <Italian>[COLOR_HIGHLIGHT_TEXT]Raccogli le merci[COLOR_REVERT][NEWLINE]Rimuover&#224; la risorsa bonus.</Italian>
-    <Spanish>[COLOR_HIGHLIGHT_TEXT]Recoger la mercanc&#237;a[COLOR_REVERT][NEWLINE]Quitar&#225; el recurso de la casilla.</Spanish>
+    <English>[COLOR_HIGHLIGHT_TEXT]Collect goods[COLOR_REVERT][NEWLINE]Will remove the bonus resource (excluding trading posts and foreign territory).</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Ramasser la ressource[COLOR_REVERT][NEWLINE]Supprimera la ressource bonus de la case (hors comptoirs et territoire &#233;tranger).</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Sammle Bonusgut auf[COLOR_REVERT][NEWLINE]Wird das Bonusgut vom Feld entfernen (ausgenommen Handelsposten und fremdes Territorium).</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Raccogli le merci[COLOR_REVERT][NEWLINE]Rimuover&#224; la risorsa bonus (escluse le postazioni commerciali e il territorio estero).</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Recoger la mercanc&#237;a[COLOR_REVERT][NEWLINE]Quitar&#225; el recurso de la casilla (excluyendo puestos comerciales y territorio extranjero).</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_INFO_IMPROVEMENT_LATIFUNDIEN</Tag>
@@ -2340,19 +2340,27 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUTTON_BUY_KOMPASS</Tag>
-    <English>Equip your ship with a [COLOR_HIGHLIGHT_TEXT]Magnetic Compass[COLOR_REVERT] for 20[ICON_GOLD].</English>
-    <French>&#201;quipez votre vaisseau d'une [COLOR_HIGHLIGHT_TEXT]Boussole Magn&#233;tique[COLOR_REVERT] pour 20[ICON_GOLD].</French>
-    <German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.</German>
-    <Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].</Italian>
-    <Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].</Spanish>
+    <English>Equip your ship with a [COLOR_HIGHLIGHT_TEXT]Magnetic Compass[COLOR_REVERT] for 20[ICON_GOLD].[NEWLINE][ICON_BULLET] No movement penalty on ocean and deep sea</English>
+    <French>&#201;quipez votre vaisseau d'une [COLOR_HIGHLIGHT_TEXT]Boussole Magn&#233;tique[COLOR_REVERT] pour 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Aucune p&#233;nalit&#233; de mouvement sur l'oc&#233;an et la mer profonde</French>
+    <German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.[NEWLINE][ICON_BULLET] Kein Bewegungsmalus auf Ozean und Tiefsee</German>
+    <Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Nessuna penalit&#224; di movimento su oceano e mare profondo</Italian>
+    <Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Sin penalizaci&#243;n de movimiento en el oc&#233;ano y en aguas profundas</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_SARGON1</Tag>
-    <English>Sargon of Assyria</English>
-    <French>Sargon d'Assyrie</French>
-    <German>Sargon der Assyrer</German>
-    <Italian>Sargon di Assiria</Italian>
-    <Spanish>Sarg&#243;n de Asiria</Spanish>
+    <English>Sargon of Sumer</English>
+    <French>Sargon de Sumer</French>
+    <German>Sargon von Sumer</German>
+    <Italian>Sargon di Sumer</Italian>
+    <Spanish>Sarg&#243;n de Sumer</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_GUSS_IRON_HELP</Tag>
+    <English>[ICON_BULLET]The number of Iron Foundries that can be built is equal to the amount of iron ore in the trade network</English>
+    <French>[ICON_BULLET]Le nombre de fonderies de fer pouvant &#234;tre construites est &#233;gal &#224; la quantit&#233; de minerai de fer dans le r&#233;seau commercial</French>
+    <German>[ICON_BULLET]Die Anzahl baubarer Eisengie&#223;ereien entspricht der Anzahl an Eisenerz im Handelsnetz</German>
+    <Italian>[ICON_BULLET]Il numero di fonderie di ferro che possono essere costruite &#232; uguale alla quantit&#224; di minerale di ferro nella rete commerciale</Italian>
+    <Spanish>[ICON_BULLET]La cantidad de Fundici&#243;n de hierro que se pueden construir es igual a la cantidad de mineral de hierro en la red comercial.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_INDIAN_WARCHARIOT</Tag>
@@ -6398,13 +6406,13 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_BANK</Tag>
-    <English>Bank</English>
+    <English>House of Money</English>
     <French>
-<Text>Banque</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Maison d'Argent</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
-    <German>Bank</German>
-    <Italian>Banca</Italian>
-    <Spanish>Banco</Spanish>
+    <German>Geldstube</German>
+    <Italian>Casa dei soldi</Italian>
+    <Spanish>Casa de dinero</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_BROTMANUFAKTUR</Tag>
@@ -7745,6 +7753,14 @@ Tumba de Tholos
     <German>Gro&#223;es Serapeion von Alexandria</German>
     <Italian>Gran Serapeo di Alessandria</Italian>
     <Spanish>Gran Serapeion de Alejandr&#237;a</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_NATIONAL_EPIC_ETRUSC</Tag>
+    <English>Virgil's Aeneid</English>
+    <French>En&#233;ide de Virgile</French>
+    <German>Vergils Aeneis</German>
+    <Italian>Eneide dal Virgilio</Italian>
+    <Spanish>Eneide de Virgilio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_SENTRY1</Tag>

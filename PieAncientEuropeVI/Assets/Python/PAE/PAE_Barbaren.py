@@ -9,6 +9,7 @@ from CvPythonExtensions import (CyGlobalContext, CyInterface,
 # import CvEventInterface
 import CvUtil
 import PyHelpers
+import PAE_Lists as L
 # Defines
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
@@ -71,10 +72,14 @@ def createBarbUnit(pPlot):
 
 		iBarbPlayer = gc.getBARBARIAN_PLAYER()
 		pBarbPlayer = gc.getPlayer(iBarbPlayer)
+		iPromo = gc.getInfoTypeForString("PROMOTION_COMBAT1")
+		iPromo2 = gc.getInfoTypeForString("PROMOTION_COMBAT2")
+		iPromo3 = gc.getInfoTypeForString("PROMOTION_COMBAT3")
+		iPromo4 = gc.getInfoTypeForString("PROMOTION_COMBAT4")
 		# eCiv = gc.getCivilizationInfo(pBarbPlayer.getCivilizationType())
 
 		iAnz = 1
-		if bRageBarbs:
+		if bRageBarbs and CvUtil.myRandom(10, "createBarbUnitWithCombatPromo2") == 1:
 				iAnz += 1
 
 		lUnits = []
@@ -160,6 +165,13 @@ def createBarbUnit(pPlot):
 				iUnit = lUnits[CvUtil.myRandom(iAnzUnits, "createBarbUnit")]
 				iUnitAI = lUnitAIs[CvUtil.myRandom(len(lUnitAIs), "createBarbUnit_AI")]
 				pUnit = pBarbPlayer.initUnit(iUnit, pPlot.getX(), pPlot.getY(), iUnitAI, DirectionTypes.DIRECTION_SOUTH)
+				pUnit.setHasPromotion(iPromo, True)
+				if bRageBarbs or CvUtil.myRandom(2, "createBarbUnitWithCombatPromo2") == 1:
+					pUnit.setHasPromotion(iPromo2, True)
+					if bRageBarbs and CvUtil.myRandom(2, "createBarbUnitWithCombatPromo3") == 1:
+						pUnit.setHasPromotion(iPromo3, True)
+						if CvUtil.myRandom(2, "createBarbUnitWithCombatPromo4") == 1:
+							pUnit.setHasPromotion(iPromo4, True)
 				pUnit.finishMoves()
 
 
@@ -527,6 +539,10 @@ def doOnUnitMove(pUnit, pPlot, pOldPlot):
 		elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_FREED_SLAVE"):
 				pUnit.kill(True, -1)
 				return True
+		# Barbarische Haendler sind unnoetig
+		elif pUnit.getUnitType() in L.LTradeUnits:
+				pUnit.kill(True, -1)
+				return True
 
 		return False
 
@@ -534,10 +550,10 @@ def doOnUnitMove(pUnit, pPlot, pOldPlot):
 def checkNearbyUnits(pPlot, iRange):
 		iX = pPlot.getX()
 		iY = pPlot.getY()
-		for x in range(-iRange, iRange+1):
-				for y in range(-iRange, iRange+1):
+		for x in range(-iRange, iRange):
+				for y in range(-iRange, iRange):
 						loopPlot = plotXY(iX, iY, x, y)
-						if loopPlot.getNumUnits() > 0:
+						if not loopPlot.isWater() and loopPlot.getNumUnits() > 0:
 								return True
 		return False
 

@@ -3492,7 +3492,7 @@
 			<bGoody>0</bGoody>
 			<bPermanent>0</bPermanent>
 			<bUseLSystem>1</bUseLSystem>
-			<iAdvancedStartCost>10</iAdvancedStartCost>
+			<iAdvancedStartCost>5</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iTilesPerGoody>0</iTilesPerGoody>
 			<iGoodyRange>0</iGoodyRange>
@@ -3552,7 +3552,7 @@
 			<bGoody>0</bGoody>
 			<bPermanent>0</bPermanent>
 			<bUseLSystem>1</bUseLSystem>
-			<iAdvancedStartCost>25</iAdvancedStartCost>
+			<iAdvancedStartCost>10</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iTilesPerGoody>0</iTilesPerGoody>
 			<iGoodyRange>0</iGoodyRange>
@@ -3612,7 +3612,7 @@
 			<bGoody>0</bGoody>
 			<bPermanent>0</bPermanent>
 			<bUseLSystem>1</bUseLSystem>
-			<iAdvancedStartCost>50</iAdvancedStartCost>
+			<iAdvancedStartCost>30</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iTilesPerGoody>0</iTilesPerGoody>
 			<iGoodyRange>0</iGoodyRange>
@@ -3672,7 +3672,7 @@
 			<bGoody>0</bGoody>
 			<bPermanent>0</bPermanent>
 			<bUseLSystem>1</bUseLSystem>
-			<iAdvancedStartCost>80</iAdvancedStartCost>
+			<iAdvancedStartCost>45</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iTilesPerGoody>0</iTilesPerGoody>
 			<iGoodyRange>0</iGoodyRange>

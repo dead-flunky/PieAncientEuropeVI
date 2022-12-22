@@ -197,7 +197,7 @@
 			<Button>Art/Interface/Buttons/Buildings/button_luxor.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_THING</Type>
+			<Type>ART_DEF_BUILDING_THING_CITY</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>0.0</fScale>
@@ -205,6 +205,16 @@
 			<NIF/>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/button_thing.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_THING</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.0</fScale>
+			<fInterfaceScale>0.0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_thing2.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SAEULE4</Type>
@@ -1475,6 +1485,16 @@
 			<NIF>Art/Structures/Buildings/Library/Library.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Builds/button_bordell.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HAREM</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0</fScale>
+			<fInterfaceScale>0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_building_harem.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_AGORA</Type>
@@ -3113,7 +3133,7 @@
 			<!-- Pyramid fScale was 4.04 -->
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>6.0</fScale>
+			<fScale>7.0</fScale>
 			<fInterfaceScale>0.2</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Pyramid/Pyramid.nif</NIF>
 			<KFM/>

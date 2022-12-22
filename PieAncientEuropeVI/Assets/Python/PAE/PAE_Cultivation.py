@@ -590,10 +590,11 @@ def doCollectBonus4Cultivation(pUnit):
 		# Bonusgut vom Plot entfernen, ausgenommen Handelsposten, um die Waren nicht "stehlen" zu können
 		# PAE 6.4: vom Vasall: nix entfernen, Vasall bekommt Gold
 		if pPlot.getOwner() != pUnit.getOwner():
-
-				iPrice = PAE_Trade.getBonusValue(eBonus)
-				gc.getPlayer(pPlot.getOwner()).changeGold(iPrice)
-				gc.getPlayer(pUnit.getOwner()).changeGold(-iPrice)
+				
+				if pPlot.getOwner() != -1:
+					iPrice = PAE_Trade.getBonusValue(eBonus)
+					gc.getPlayer(pPlot.getOwner()).changeGold(iPrice)
+					gc.getPlayer(pUnit.getOwner()).changeGold(-iPrice)
 
 		elif pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_HANDELSPOSTEN"):
 				pPlot.setBonusType(-1)  # remove bonus
