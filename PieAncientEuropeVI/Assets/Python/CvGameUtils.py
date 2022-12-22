@@ -182,6 +182,23 @@ class CvGameUtils:
 																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
+								# Hunter
+								if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+										iMapW = gc.getMap().getGridWidth()
+										iMapH = gc.getMap().getGridHeight()
+										iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+										for x in range(iMapW):
+												for y in range(iMapH):
+														loopPlot = gc.getMap().plot(x, y)
+														if loopPlot is not None and not loopPlot.isNone():
+																if loopPlot.getFeatureType() == iDarkIce:
+																		continue
+																if loopPlot.isWater() or loopPlot.isPeak() or loopPlot.isCity():
+																		continue
+																if loopPlot.getOwner() == iPlayer and loopPlot.getImprovementType() == -1:
+																		if loopPlot.getFeatureType() in L.LForests:
+																				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+
 								# Auswanderer
 								elif iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
 										iMapW = gc.getMap().getGridWidth()
