@@ -1082,6 +1082,8 @@ def getPossibleTradeCitiesForCiv(pUnit, iCityOwner, iStep):
 def doAutomateMerchant(pUnit):
 		# DEBUG
 		iHumanPlayer = gc.getGame().getActivePlayer()
+		iUnitTeam = gc.getPlayer(pUnit.getOwner()).getTeam()
+		pUnitTeam = gc.getTeam(iUnitTeam)
 		#CyInterface().addMessage(iHumanPlayer, True, 10, "Player: " + str(pUnit.getOwner()) + " Unit-ID: " + str(pUnit.getID()), None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 		#if pUnit.getOwner() == iHumanPlayer:
 		#	CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is active", None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
@@ -1122,15 +1124,25 @@ def doAutomateMerchant(pUnit):
 
 				bWar = False
 				bOpenBorders = True
-				if not pCity1.isNone() and not pCity2.isNone():
-						if pCity1.getOwner() != pCity2.getOwner():
-								# Städte haben untereinander Krieg
-								if gc.getTeam(gc.getPlayer(pCity1.getOwner()).getTeam()).isAtWar(gc.getPlayer(pCity2.getOwner()).getTeam()):
+				# Stadt 1
+				if not pCity1.isNone():
+						if pCity1.getOwner() != pUnit.getOwner():
+								iCityTeam = gc.getPlayer(pCity1.getOwner()).getTeam()
+								# Krieg
+								if pUnitTeam.isAtWar(iCityTeam):
 										bWar = True
-
-								# Städte haben kein Durchreiserecht mehr
-								pTeam1 = gc.getTeam(gc.getPlayer(pCity1.getOwner()).getTeam())
-								if not pTeam1.isOpenBorders(gc.getPlayer(pCity2.getOwner()).getTeam()):
+								# Durchreiserecht
+								if not pUnitTeam.isOpenBorders(iCityTeam):
+										bOpenBorders = False
+				# Stadt 2
+				if not pCity2.isNone():
+						if pCity2.getOwner() != pUnit.getOwner():
+								iCityTeam = gc.getPlayer(pCity2.getOwner()).getTeam()
+								# Krieg
+								if pUnitTeam.isAtWar(iCityTeam):
+										bWar = True
+								# Durchreiserecht
+								if not pUnitTeam.isOpenBorders(iCityTeam):
 										bOpenBorders = False
 
 				if pCity1 is None or pCity1.isNone() or pCity2 is None or pCity2.isNone() or bWar or not bOpenBorders:
