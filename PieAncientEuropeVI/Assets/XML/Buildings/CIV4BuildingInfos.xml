@@ -19703,7 +19703,7 @@
 			<VictoryPrereq/>
 			<FreeStartEra/>
 			<MaxStartEra/>
-			<ObsoleteTech>TECH_LIBRARY</ObsoleteTech>
+			<ObsoleteTech>TECH_PARKANLAGEN</ObsoleteTech>
 			<PrereqTech>TECH_ZAHLENSYSTEME</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
