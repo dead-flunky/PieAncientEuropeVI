@@ -1762,7 +1762,7 @@ def doCityUnitPromotions(pCity, pUnit):
 
 # PAE CITY builds UNIT -> auto promotions (ships)
 def doCityUnitPromotions4Ships(pCity, pUnit):
-		initChance = 2
+		initChance = 5
 		iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
 
 		iWater = 0
@@ -1776,7 +1776,7 @@ def doCityUnitPromotions4Ships(pCity, pUnit):
 								iWater += 1
 
 		if iWater > 3:
-				iRand = CvUtil.myRandom(10, "doCityUnitPromotions4Ships")
+				iRand = CvUtil.myRandom(100, "doCityUnitPromotions4Ships")
 				if iWater * initChance > iRand:
 						iPromo = gc.getInfoTypeForString("PROMOTION_NAVIGATION1")
 						if not pUnit.isHasPromotion(iPromo):

@@ -184,6 +184,17 @@ class CvGameUtils:
 
 								# Hunter
 								if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+										# Cities im Jagdradius
+										(loopCity, pIter) = pPlayer.firstCity(False)
+										while loopCity:
+												loopPlot = loopCity.plot()
+												if PAE_Unit.huntingDistance(loopPlot, pHeadSelectedUnit.plot()):
+														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
+												else:
+														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_RED", 1)
+												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+
+										# Wälder ohne Lager
 										iMapW = gc.getMap().getGridWidth()
 										iMapH = gc.getMap().getGridHeight()
 										iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
@@ -354,17 +365,6 @@ class CvGameUtils:
 																if not loopCity.isHasBuilding(iBuilding):
 																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
-
-								# Hunter
-								elif iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
-										(loopCity, pIter) = pPlayer.firstCity(False)
-										while loopCity:
-												loopPlot = loopCity.plot()
-												if PAE_Unit.huntingDistance(loopPlot, pHeadSelectedUnit.plot()):
-														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
-												else:
-														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_RED", 1)
-												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 								# UNITAI_MISSIONARY = 14
 								elif pHeadSelectedUnit.getUnitAIType() == 14:
@@ -3800,6 +3800,7 @@ class CvGameUtils:
 				iExperienceNeeded = 0
 
 				# BTS: regular epic game experience
+				# GlobalDefines: MIN_EXPERIENCE_PER_COMBAT, MAX_EXPERIENCE_PER_COMBAT: 1, 2
 				# and PAE VI again
 				# 2,5,10,17,26
 				#iExperienceNeeded = iLevel * iLevel + 1
@@ -3808,8 +3809,14 @@ class CvGameUtils:
 				#if iLevel > 7: iExperienceNeeded += iLevel * 2
 
 				# PAE V: L * (L+2) - (L / 2)
+				# Min, Max: 1, 2
 				# 2,7,13,22,32
-				iExperienceNeeded = iLevel * (iLevel+2) - iLevel/2
+				#iExperienceNeeded = iLevel * (iLevel+2) - iLevel/2
+				
+				# PAE 6.14: L * (L+2)
+				# Min, Max: 1, 3
+				# 3, 8, 15, 24, 35
+				iExperienceNeeded = iLevel * (iLevel+2)
 
 				iModifier = gc.getPlayer(iOwner).getLevelExperienceModifier()
 				if iModifier != 0:
