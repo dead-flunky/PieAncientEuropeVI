@@ -3609,7 +3609,20 @@ class CvGameUtils:
 
 						# Hunter: Lager oder Beobachtungsturm
 						elif iData1 == 771:
-								if iData2 == 1: return CyTranslator().getText("TXT_KEY_BUILD_CAMP", ())
+								# Lager
+								if iData2 == 1:
+										text = u"<color=155,255,255,0>%s</color> " % CyTranslator().getText("TXT_KEY_BUILD_CAMP", ())
+										text = text + CyTranslator().getText("+1[ICON_FOOD]", ())
+										if bOption:
+												text = text + CyTranslator().getText(", +1[ICON_COMMERCE]", ())
+										text = text + CyTranslator().getText("[NEWLINE]", ())
+										text = text + CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_DEER")).getChar()
+										text = text + CyTranslator().getText("[NEWLINE]", ())
+										text = text + CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_FUR")).getChar()
+										text = text + CyTranslator().getText("[NEWLINE]", ())
+										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
+										return text
+								# Beobachtungsturm
 								if iData2 == 2: return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
 
 						# CITY_TAB replacements
