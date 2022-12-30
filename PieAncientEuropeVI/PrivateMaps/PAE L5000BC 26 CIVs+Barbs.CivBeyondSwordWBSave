@@ -1168,7 +1168,7 @@ EndMap
 ### Plot Info ###
 BeginPlot
 	x=0,y=0
-	ScriptData=MITTELMEER4000BC
+	ScriptData=EuropeLarge
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot

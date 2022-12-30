@@ -991,7 +991,7 @@ EndMap
 ### Plot Info ###
 BeginPlot
 	x=0,y=0
-	ScriptData=MITTELMEER4000BC
+	ScriptData=EuropeLarge
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=52,
