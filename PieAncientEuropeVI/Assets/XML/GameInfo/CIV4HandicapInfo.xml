@@ -68,11 +68,13 @@
 			<iAIPerEraModifier>0</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>100</iAIAdvancedStartPercent>
 			<Goodies>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -148,11 +150,13 @@
 			<iAIPerEraModifier>0</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>100</iAIAdvancedStartPercent>
 			<Goodies>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -230,11 +234,13 @@
 			<iAIPerEraModifier>0</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>100</iAIAdvancedStartPercent>
 			<Goodies>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -315,11 +321,13 @@
 			<iAIPerEraModifier>0</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>100</iAIAdvancedStartPercent>
 			<Goodies>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -401,11 +409,13 @@
 			<iAIPerEraModifier>-1</iAIPerEraModifier>
 			<iAIAdvancedStartPercent>110</iAIAdvancedStartPercent>
 			<Goodies>
-				<GoodyType>GOODY_LOW_GOLD</GoodyType>
+				<GoodyType>GOODY_HIGH_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -494,6 +504,8 @@
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -583,6 +595,8 @@
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -672,6 +686,8 @@
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EMIGRANT</GoodyType>
@@ -759,6 +775,8 @@
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_LOW_GOLD</GoodyType>
 				<GoodyType>GOODY_MAP</GoodyType>
+				<GoodyType>GOODY_WARRIOR</GoodyType>
+				<GoodyType>GOODY_ARCHER</GoodyType>
 				<GoodyType>GOODY_WORKER</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
