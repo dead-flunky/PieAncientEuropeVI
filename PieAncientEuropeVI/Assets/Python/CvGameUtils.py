@@ -208,7 +208,7 @@ class CvGameUtils:
 																		continue
 																if loopPlot.getOwner() == iPlayer and loopPlot.getImprovementType() == -1:
 																		if loopPlot.getFeatureType() in L.LForests:
-																				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 
 								# Auswanderer
 								elif iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
