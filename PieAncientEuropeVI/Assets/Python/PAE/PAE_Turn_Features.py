@@ -185,7 +185,8 @@ def doPlotFeatures():
 																				Ocean.append(loopPlot)
 								# isPeak
 								elif loopPlot.isPeak():
-										Peaks.append(loopPlot)
+										if loopPlot.getOwner() == -1:
+												Peaks.append(loopPlot)
 								# isLand
 								else:
 										iPlotOwner = loopPlot.getOwner()
