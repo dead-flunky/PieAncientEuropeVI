@@ -4240,3 +4240,32 @@ def doCheckDyingGeneral(pCity, bOnCityAcquired):
 								if iHappy < 0: iHappy += 1
 								else: iHappy -= 1
 								pCity.setBuildingHappyChange(eBuildingClass, iHappy)
+
+# Eventmanager onUnitBuilt
+# Wenn eine monotheistische Religionen in der Stadt ist, aber diese nicht als Staatsreligion deklariert ist, verweigert die Einheit den Kriegsdienst
+def doRefuseUnitBuilt(pCity, pUnit):
+		if not pUnit.isMilitaryHappiness(): return
+
+		iPlayer = pCity.getOwner()
+		pPlayer = gc.getPlayer(iPlayer)
+		LReligions = [
+				gc.getInfoTypeForString("RELIGION_JUDAISM"),
+				gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
+				gc.getInfoTypeForString("RELIGION_ISLAM")
+		]
+		LText = []
+		bRefuse = False
+		for i in LReligions:
+				if pCity.isHasReligion(i) and pPlayer.getStateReligion() != i:
+					bRefuse = True
+					if i == gc.getInfoTypeForString("RELIGION_JUDAISM"): LText.append("TXT_RELIGION_UNIT_BUILT_INFO_1")
+					elif i == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"): LText.append("TXT_RELIGION_UNIT_BUILT_INFO_2")
+					elif i == gc.getInfoTypeForString("RELIGION_ISLAM"): LText.append("TXT_RELIGION_UNIT_BUILT_INFO_3")
+
+		if bRefuse and CvUtil.myRandom(5, "iRandReligionUnitBuiltRefuse") == 1:
+				iRandText = CvUtil.myRandom(len(LText), "iRandReligionUnitBuiltRefuseText")
+				pUnit.kill(True, -1)
+				if pPlayer.isHuman():
+						CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(LText[iRandText], ()), None, 2,
+						pUnit.getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+

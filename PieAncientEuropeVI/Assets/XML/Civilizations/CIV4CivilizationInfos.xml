@@ -1758,10 +1758,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_GLAS1</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -7824,10 +7820,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_BEWAFFNUNG5</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_GLAS1</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>

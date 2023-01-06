@@ -12611,7 +12611,9 @@
 				<PrereqTech>TECH_MARKTRECHT</PrereqTech>
 				<PrereqTech>TECH_RESERVISTEN</PrereqTech>
 			</OrPreReqs>
-			<AndPreReqs/>
+			<AndPreReqs>
+				<PrereqTech>TECH_HUFEISEN</PrereqTech>
+			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_35</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_35</Sound>
 			<SoundMP>AS2D_TECH_PAE_QUOTE_35</SoundMP>

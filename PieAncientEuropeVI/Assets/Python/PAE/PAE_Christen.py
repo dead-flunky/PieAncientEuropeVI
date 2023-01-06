@@ -6,6 +6,7 @@ from CvPythonExtensions import (CyGlobalContext, CyInterface,
 																isTeamWonderClass, isNationalWonderClass)
 # import CvEventInterface
 import CvUtil
+import PAE_Lists as L
 
 # Defines
 gc = CyGlobalContext()
@@ -127,10 +128,19 @@ def convertCity(pCity):
 								iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_2CHRIST_")
 								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_2CHRIST_"+str(iRand), (pCity.getName(), 0)),
 																				 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+						return True
+
+		return False
 
 
-def removePagans(pCity):
-		iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+def removePagans(pCity, iReligion):
+
+		# Chance 1:20 (5%)
+		iChance = 2
+		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"): iChance = 5
+		elif iReligion == gc.getInfoTypeForString("RELIGION_ISLAM"): iChance = 10
+		if CvUtil.myRandom(100, "removePagans") > iChance: return False
+
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
 
@@ -149,7 +159,7 @@ def removePagans(pCity):
 						lReli.append(i)
 
 		# Kult oder Religion entfernen
-		text = ""
+		txtReligionOrKult = ""
 		bUndoCorp = False
 		if lCorp and lReli:
 				if CvUtil.myRandom(2, "undoCorp") == 1:
@@ -174,7 +184,8 @@ def removePagans(pCity):
 												if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
 														pCity.setNumRealBuilding(iBuildingLoop, 0)
 				pCity.setHasCorporation(lCorp[iRand], 0, 0, 0)
-				text = gc.getCorporationInfo(lCorp[iRand]).getText()
+				txtReligionOrKult = gc.getCorporationInfo(lCorp[iRand]).getText()
+				return True
 
 		# Religion
 		elif lReli:
@@ -211,10 +222,87 @@ def removePagans(pCity):
 																pCity.setNumRealBuilding(iBuildingLoop, 0)
 
 						pCity.setHasReligion(iReli, 0, 0, 0)
-						text = gc.getReligionInfo(iReli).getText()
+						txtReligionOrKult = gc.getReligionInfo(iReli).getText()
 
 						# Meldung
-						if pPlayer.isHuman() and text != "":
+						if pPlayer.isHuman() and txtReligionOrKult != "":
 								iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
-								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_CULTS_"+str(iRand), (text, pCity.getName())),
-																				 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+								if iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS2_"
+								elif iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
+								else: text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
+								None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+						return True
+
+		return False
+
+
+def doReligionsKonflikt(pCity):
+
+		# Chance 80% to abort
+		iChance = CvUtil.myRandom(10, "ReligionsKonflikt")
+		if iChance > 1: return False
+
+		iPlayer = pCity.getOwner()
+		pPlayer = gc.getPlayer(iPlayer)
+		pTeam = gc.getTeam(pPlayer.getTeam())
+		
+		# 2%: Poly Reli als Staatsreli, aber kein aktiver Krieg
+		if CvUtil.myRandom(100, "ReligionsKonflikt1") < 2 and pPlayer.getStateReligion() not in L.LMonoReligions:
+				if not pTeam.getAtWarCount(True):
+						pCity.changeOccupationTimer(1)
+						if pPlayer.isHuman():
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1", (pCity.getName(),)),
+								None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+				return True
+
+		# 3%: Stadt hat 2 verschiedene Relis
+		if CvUtil.myRandom(100, "ReligionsKonflikt2") < 3:
+				iReliCount = 0
+				iRange = gc.getNumReligionInfos()
+				for i in range(iRange):
+						if pCity.isHasReligion(i):
+								iReliCount += 1
+
+				if iReliCount > 1:
+						pCity.changeOccupationTimer(1)
+						if pPlayer.isHuman():
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_2", (pCity.getName(),)),
+								None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+						# 5%: Stadt verliert 1 Pop
+						if CvUtil.myRandom(20, "ReligionsKonflikt3") == 1:
+								pCity.changePopulation(-1)
+								if pPlayer.isHuman():
+										CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_3", (pCity.getName(),)),
+										None, 2, "", ColorTypes(7), -1, -1, False, False)
+						return True
+
+		return False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

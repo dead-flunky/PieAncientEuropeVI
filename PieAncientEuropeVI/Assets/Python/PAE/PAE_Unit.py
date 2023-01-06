@@ -3070,11 +3070,12 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 						# PopUp
-						popupInfo = CyPopupInfo()
-						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)  # Text PopUp only!
-						popupInfo.setText(CyTranslator().getText(
-								"TXT_KEY_POPUP_GENERALSTOD", (pUnit.getName(),)))
-						popupInfo.addPopup(iPlayer)
+						# Durch den Verlust Eurer Generalseinheit sind sämtliche Städte in Eurem Reich in Aufruhr
+						#popupInfo = CyPopupInfo()
+						#popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)  # Text PopUp only!
+						#popupInfo.setText(CyTranslator().getText(
+						#		"TXT_KEY_POPUP_GENERALSTOD", (pUnit.getName(),)))
+						#popupInfo.addPopup(iPlayer)
 
 				if iWinnerPlayer != -1:
 						pWinnerPlayer = gc.getPlayer(iWinnerPlayer)

@@ -194,10 +194,15 @@ class CvGameUtils:
 														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_RED", 1)
 												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
-										# Wälder ohne Lager
+										# Wälder ohne Lager (nur bei Deer und Fur)
 										iMapW = gc.getMap().getGridWidth()
 										iMapH = gc.getMap().getGridHeight()
 										iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+										iCamp = gc.getInfoTypeForString("IMPROVEMENT_CAMP")
+										lBonus = [
+												gc.getInfoTypeForString("BONUS_DEER"),
+												gc.getInfoTypeForString("BONUS_FUR")
+										]
 										for x in range(iMapW):
 												for y in range(iMapH):
 														loopPlot = gc.getMap().plot(x, y)
@@ -206,9 +211,16 @@ class CvGameUtils:
 																		continue
 																if loopPlot.isWater() or loopPlot.isPeak() or loopPlot.isCity():
 																		continue
-																if loopPlot.getOwner() == iPlayer and loopPlot.getImprovementType() == -1:
-																		if loopPlot.getFeatureType() in L.LForests:
-																				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
+																#if loopPlot.getFeatureType() in L.LForests:
+																if loopPlot.getOwner() == iPlayer:
+																		if loopPlot.getBonusType(iPlayer) in lBonus:
+																				eBonus = loopPlot.getBonusType(iPlayer)
+																				eImprovement = loopPlot.getImprovementType()
+																				if eImprovement == -1 or not gc.getImprovementInfo(eImprovement).isImprovementBonusTrade(eBonus):
+																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																		elif loopPlot.getFeatureType() in L.LForests:
+																				if loopPlot.getImprovementType() == -1:
+																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 
 								# Auswanderer
 								elif iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
@@ -459,7 +471,7 @@ class CvGameUtils:
 														while loopCity:
 																if loopCity is not None and not loopCity.isNone():
 																		if loopCity.isHasBuilding(iBuilding1) or loopCity.isHasBuilding(iBuilding2):
-																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
+																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 																(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 								# Praetorianer, Cohortes Urbanae koennen Latifundien bauen
@@ -888,7 +900,7 @@ class CvGameUtils:
 				# bFree = argsList[1]
 				pPlayer = gc.getPlayer(ePlayer)
 				iCiv = pPlayer.getCivilizationType()
-				eTeam = gc.getTeam(pPlayer.getTeam())
+				pTeam = gc.getTeam(pPlayer.getTeam())
 				iTech = -1
 				iBronze = gc.getInfoTypeForString('BONUS_BRONZE')
 				iHorse = gc.getInfoTypeForString('BONUS_HORSE')
@@ -900,21 +912,21 @@ class CvGameUtils:
 				# Hauptabfragen, um nicht zuviele if-Checks zu haben:
 
 				# vor Fuehrerschaft
-				if not eTeam.isHasTech(gc.getInfoTypeForString('TECH_LEADERSHIP')):
+				if not pTeam.isHasTech(gc.getInfoTypeForString('TECH_LEADERSHIP')):
 
 						# 1. Jagd (Lager)
 						iTech = gc.getInfoTypeForString('TECH_HUNTING')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# 2. Mystik (Forschung)
 						iTech = gc.getInfoTypeForString('TECH_MYSTICISM')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# 3. Schamanismus (Monolith)
 						iTech = gc.getInfoTypeForString('TECH_SCHAMANISMUS')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Hindu
@@ -928,7 +940,7 @@ class CvGameUtils:
 
 								# 4. Polytheismus (Kleines Orakel)
 								iTech = gc.getInfoTypeForString('TECH_POLYTHEISM')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 								# 5. Religion
@@ -943,7 +955,7 @@ class CvGameUtils:
 
 								# 6. Priestertum (Civic)
 								iTech = gc.getInfoTypeForString('TECH_PRIESTHOOD')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Wirtschaftsweg
@@ -953,22 +965,22 @@ class CvGameUtils:
 								if pPlayer.countNumCoastalCities() > 0:
 										# 4. Fischen
 										iTech = gc.getInfoTypeForString('TECH_FISHING')
-										if not eTeam.isHasTech(iTech):
+										if not pTeam.isHasTech(iTech):
 												return iTech
 								else:
 										# 4. Viehzucht
 										iTech = gc.getInfoTypeForString('TECH_ANIMAL_HUSBANDRY')
-										if not eTeam.isHasTech(iTech):
+										if not pTeam.isHasTech(iTech):
 												return iTech
 
 								# 5. Bogenschiessen
 								iTech = gc.getInfoTypeForString('TECH_ARCHERY')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 								# 6. Metallverarbeitung
 								iTech = gc.getInfoTypeForString('TECH_METAL_CASTING')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Wieder Alle
@@ -977,16 +989,16 @@ class CvGameUtils:
 						return gc.getInfoTypeForString('TECH_LEADERSHIP')
 
 				# vor Binnenkolonisierung
-				if not eTeam.isHasTech(gc.getInfoTypeForString('TECH_COLONIZATION')):
+				if not pTeam.isHasTech(gc.getInfoTypeForString('TECH_COLONIZATION')):
 
 						# Landwirtschaft  (Worker)
 						iTech = gc.getInfoTypeForString('TECH_AGRICULTURE')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Viehzucht
 						iTech = gc.getInfoTypeForString('TECH_ANIMAL_HUSBANDRY')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Coastal cities
@@ -997,21 +1009,21 @@ class CvGameUtils:
 
 						# Pflug (Farm)
 						iTech = gc.getInfoTypeForString('TECH_PFLUG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# aegyptischer Papyrus
 						if iCiv == gc.getInfoTypeForString('CIVILIZATION_EGYPT'):
 								iTech = gc.getInfoTypeForString('TECH_FISHING')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 								iTech = gc.getInfoTypeForString('TECH_BOOTSBAU')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Polytheismus (Kleines Orakel)
 						iTech = gc.getInfoTypeForString('TECH_POLYTHEISM')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Those Civs shall get their neighbour religion at least after leadership
@@ -1024,71 +1036,71 @@ class CvGameUtils:
 
 						# Bogenschiessen
 						iTech = gc.getInfoTypeForString('TECH_ARCHERY')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Metallverarbeitung
 						iTech = gc.getInfoTypeForString('TECH_METAL_CASTING')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Keramik
 						iTech = gc.getInfoTypeForString('TECH_POTTERY')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Rad
 						iTech = gc.getInfoTypeForString('TECH_THE_WHEEL')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Steinabbau
 						iTech = gc.getInfoTypeForString('TECH_STEINABBAU')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Priestertum (Civic)
 						iTech = gc.getInfoTypeForString('TECH_PRIESTHOOD')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Astronomie (Sternwarte)
 						iTech = gc.getInfoTypeForString('TECH_ASTRONOMIE')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Bergbau
 						iTech = gc.getInfoTypeForString('TECH_MINING')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Religious Civs
 						if pPlayer.getStateReligion() != -1:
 								iTech = gc.getInfoTypeForString('TECH_CEREMONIAL')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Staatenbildung
 						iTech = gc.getInfoTypeForString('TECH_STAATENBILDUNG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Bronzezeit
 						iTech = gc.getInfoTypeForString('TECH_BRONZE_WORKING')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Steinmetzkunst fuer Sphinx
 						if iCiv == gc.getInfoTypeForString('CIVILIZATION_EGYPT'):
 								iTech = gc.getInfoTypeForString('TECH_MASONRY')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Binnenkolonisierung
 						return gc.getInfoTypeForString('TECH_COLONIZATION')
 
 				# vor der EISENZEIT
-				if not eTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
+				if not pTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 
 						# Hochkulturen
 						iTech = gc.getInfoTypeForString('TECH_WRITING')
@@ -1106,79 +1118,79 @@ class CvGameUtils:
 
 						# Restliche Grundtechs und andere Basics nach Binnenkolonisierung:
 						iTech = gc.getInfoTypeForString('TECH_CEREMONIAL')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_CALENDAR')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_FRUCHTBARKEIT')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# phoenizische Religion
 						if iCiv == gc.getInfoTypeForString('CIVILIZATION_PHON'):
 								iTech = gc.getInfoTypeForString('TECH_RELIGION_PHOEN')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						# Abu Simbel beim Nubier
 						if iCiv == gc.getInfoTypeForString('CIVILIZATION_NUBIA'):
 								iTech = gc.getInfoTypeForString('TECH_ASTROLOGIE')
-								if not eTeam.isHasTech(iTech):
+								if not pTeam.isHasTech(iTech):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_BEWAFFNUNG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_SPEERSPITZEN')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_ARCHERY2')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Streitaxt mit Bronze
 						iTech = gc.getInfoTypeForString('TECH_BEWAFFNUNG2')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.getNumAvailableBonuses(iBronze) > 0:
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_KULTIVIERUNG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Wein, wenn Trauben vorhanden
 						iTech = gc.getInfoTypeForString('TECH_WEINBAU')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.countOwnedBonuses(gc.getInfoTypeForString('BONUS_GRAPES')) > 0:
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_SOELDNERTUM')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_KONSERVIERUNG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_WARENHANDEL')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Schiffsbau
 						iTech = gc.getInfoTypeForString('TECH_SCHIFFSBAU')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.countNumCoastalCities() > 0:
 										if pPlayer.canResearch(iTech, False):
 												return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_ENSLAVEMENT')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 						iTech = gc.getInfoTypeForString('TECH_THE_WHEEL2')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								return iTech
 
 						# Religionen
-						if eTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
+						if pTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
 								iTech = gc.getInfoTypeForString('TECH_TEMPELWIRTSCHAFT')
 								if pPlayer.canResearch(iTech, False):
 										return iTech
@@ -1234,90 +1246,90 @@ class CvGameUtils:
 
 				# Judentum
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_ISRAEL'):
-						if not eTeam.isHasTech(gc.getInfoTypeForString('TECH_MONOTHEISM')):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
+						if not pTeam.isHasTech(gc.getInfoTypeForString('TECH_MONOTHEISM')):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 										iTech = gc.getInfoTypeForString('TECH_BELAGERUNG')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_TEMPELWIRTSCHAFT')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_ASTROLOGIE')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_MANTIK')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_HEILIGER_ORT')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_CODEX')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_BUCHSTABEN')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_THEOKRATIE')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_ALPHABET')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 										iTech = gc.getInfoTypeForString('TECH_MONOTHEISM')
-										if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+										if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 												return iTech
 
 				# Camels / Kamele
 				iTech = gc.getInfoTypeForString('TECH_KAMELZUCHT')
-				if not eTeam.isHasTech(iTech):
-						if eTeam.isHasTech(gc.getInfoTypeForString('TECH_WARENHANDEL')):
+				if not pTeam.isHasTech(iTech):
+						if pTeam.isHasTech(gc.getInfoTypeForString('TECH_WARENHANDEL')):
 								if pPlayer.getNumAvailableBonuses(iCamel) > 0:
 										return iTech
 
 				# Eledome
 				iTech = gc.getInfoTypeForString('TECH_ELEFANTENZUCHT')
-				if not eTeam.isHasTech(iTech):
+				if not pTeam.isHasTech(iTech):
 						if pPlayer.getNumAvailableBonuses(iEles) > 0:
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 				iTech = gc.getInfoTypeForString('TECH_THE_WHEEL3')
-				if not eTeam.isHasTech(iTech):
+				if not pTeam.isHasTech(iTech):
 						if pPlayer.getNumAvailableBonuses(iHorse) > 0:
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 				iTech = gc.getInfoTypeForString('TECH_KUESTE')
-				if not eTeam.isHasTech(iTech):
+				if not pTeam.isHasTech(iTech):
 						if pPlayer.countNumCoastalCities() > 3:
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_KARTEN')):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_KARTEN')):
 										if pPlayer.canResearch(iTech, False):
 												return iTech
 
 				# Heroen
 				iTech = gc.getInfoTypeForString('TECH_GLADIATOR')
-				if not eTeam.isHasTech(iTech):
+				if not pTeam.isHasTech(iTech):
 						if pPlayer.canResearch(iTech, False):
 								return iTech
 
 				# Kriegstechs
-				if eTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
+				if pTeam.isHasTech(gc.getInfoTypeForString('TECH_IRON_WORKING')):
 						iTech = gc.getInfoTypeForString('TECH_BELAGERUNG')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
-										if eTeam.getAtWarCount(True) >= 1:
+										if pTeam.getAtWarCount(True) >= 1:
 												return iTech
 
-				if eTeam.isHasTech(gc.getInfoTypeForString('TECH_MECHANIK')):
+				if pTeam.isHasTech(gc.getInfoTypeForString('TECH_MECHANIK')):
 						iTech = gc.getInfoTypeForString('TECH_TORSION')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
-										if eTeam.getAtWarCount(True) >= 1:
+										if pTeam.getAtWarCount(True) >= 1:
 												return iTech
 
 				# Wissen
 				iTech = gc.getInfoTypeForString('TECH_LIBRARY')
-				if not eTeam.isHasTech(iTech):
+				if not pTeam.isHasTech(iTech):
 						if pPlayer.canResearch(iTech, False):
 								return iTech
 
@@ -1325,29 +1337,29 @@ class CvGameUtils:
 				# Mauern von Babylon
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_BABYLON'):
 						iTech = gc.getInfoTypeForString('TECH_CONSTRUCTION')
-						if not eTeam.isHasTech(iTech):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_LIBRARY')):
+						if not pTeam.isHasTech(iTech):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_LIBRARY')):
 										return iTech
 
 				# Artemistempel
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_LYDIA'):
 						iTech = gc.getInfoTypeForString('TECH_BAUKUNST')
-						if not eTeam.isHasTech(iTech):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_LIBRARY')):
+						if not pTeam.isHasTech(iTech):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_LIBRARY')):
 										return iTech
 
 				# Ninive
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_ASSYRIA'):
 						iTech = gc.getInfoTypeForString('TECH_PHILOSOPHY')
-						if not eTeam.isHasTech(iTech):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_CONSTRUCTION')):
+						if not pTeam.isHasTech(iTech):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_CONSTRUCTION')):
 										return iTech
 
 				# 1000 Saeulen
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_PERSIA'):
 						iTech = gc.getInfoTypeForString('TECH_MOSAIK')
-						if not eTeam.isHasTech(iTech):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_KUNST')):
+						if not pTeam.isHasTech(iTech):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_KUNST')):
 										return iTech
 
 				# CIV - Trennung: zB Religionen
@@ -1363,75 +1375,75 @@ class CvGameUtils:
 				# Roman Gods
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_ROME'):
 						iTech = gc.getInfoTypeForString('TECH_RELIGION_ROME')
-						if not eTeam.isHasTech(iTech):
-								if eTeam.isHasTech(gc.getInfoTypeForString('TECH_THEOKRATIE')):
+						if not pTeam.isHasTech(iTech):
+								if pTeam.isHasTech(gc.getInfoTypeForString('TECH_THEOKRATIE')):
 										return iTech
 
 				# Voelkerspezifisches Wissen
 				# Perser
 				if iCiv == gc.getInfoTypeForString('CIVILIZATION_PERSIA'):
 						iTech = gc.getInfoTypeForString('TECH_PERSIAN_ROAD')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 				# Griechen
-				if eTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
+				if pTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
 						iTech = gc.getInfoTypeForString('TECH_MANTIK')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
-				if eTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
+				if pTeam.isHasTech(gc.getInfoTypeForString('TECH_GREEK')):
 						iTech = gc.getInfoTypeForString('TECH_PHALANX')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 				# Roemer
-				if eTeam.isHasTech(gc.getInfoTypeForString('TECH_ROMAN')):
+				if pTeam.isHasTech(gc.getInfoTypeForString('TECH_ROMAN')):
 						iTech = gc.getInfoTypeForString('TECH_CORVUS')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_MANIPEL')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_PILUM')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_MARIAN_REFORM')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_CALENDAR2')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_ROMAN_ROADS')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_FEUERWEHR')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 						iTech = gc.getInfoTypeForString('TECH_LORICA_SEGMENTATA')
-						if not eTeam.isHasTech(iTech):
+						if not pTeam.isHasTech(iTech):
 								if pPlayer.canResearch(iTech, False):
 										return iTech
 
 				if iTech != -1:
-						if not eTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
+						if not pTeam.isHasTech(iTech) and pPlayer.canResearch(iTech, False):
 								return iTech
 
 				return TechTypes.NO_TECH

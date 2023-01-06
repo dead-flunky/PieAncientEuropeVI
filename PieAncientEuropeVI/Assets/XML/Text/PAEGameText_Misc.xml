@@ -161,6 +161,30 @@
     <Spanish>Ordinarius</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS_1</Tag>
+    <English>%s1_cult got banished by followers of Christianity in %s2_city.</English>
+    <French>Un culte (%s1_cult) a &#233;t&#233; banni par les chr&#233;tiens &#224; %s2_city.</French>
+    <German>%s1_cult wurde durch Anh&#228;nger des Christentums aus %s2_city vertrieben.</German>
+    <Italian>%s1_cult &#232; stato bandito dai seguaci del cristianesimo a %s2_city.</Italian>
+    <Spanish>%s1_cult ha sido expulsado por los seguidores del Cristianismo en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS_2</Tag>
+    <English>Followers of Christianity have destroyed holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des chr&#233;tiens ont saccag&#233; des lieux sacr&#233;s (%s1_cult) &#224; %s2_city.</French>
+    <German>Anh&#228;nger des Christentums haben heilige St&#228;tten (%s1_cult) in %s2city zerst&#246;rt.</German>
+    <Italian>I seguaci del cristianesimo hanno distrutto luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Seguidores del Cristianismo han destru&#237;do lugares santos (%s1_cult) en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS_3</Tag>
+    <English>Christian religious fanatics have desecrated holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des fanatiques chr&#233;tiens ont profan&#233; des lieux saints (%s1_cult) &#224; %s2_city.</French>
+    <German>Christliche Glaubensfanatiker haben heilige St&#228;tten (%s1_cult) in %s2_city entweiht.</German>
+    <Italian>I fanatici religiosi cristiani hanno profanato luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Fan&#225;ticos religiosos cristianos han profanado lugares santos (%s1_cult) en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_PROMOTION_RANG_ROM_LATE_4</Tag>
     <English>Centenarius</English>
     <French>Centenarius</French>
@@ -607,6 +631,110 @@
     <German>[ICON_BULLET]R&#228;nge f&#252;r Sumerer werden nun freigeschaltet.</German>
     <Italian>[ICON_BULLET]I ranghi dei Sumeri saranno ora sbloccati.</Italian>
     <Spanish>[ICON_BULLET]Los rangos para los sumerios ahora ser&#225;n desbloqueados.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILD_CAMP_HUNTER</Tag>
+    <English>[ICON_BULLET]Unit is immobile for 2 turns[NEWLINE]Cost: 0 [ICON_GOLD]</English>
+    <French>[ICON_BULLET]L'unit&#233; est immobile pendant 2 tours[NEWLINE]Co&#251;t : 0 [ICON_GOLD]</French>
+    <German>[ICON_BULLET]Einheit ist 2 Runden unbeweglich[NEWLINE]Kosten: 0 [ICON_GOLD]</German>
+    <Italian>[ICON_BULLET]L'unit&#224; &#232; immobile per 2 turni[NEWLINE]Costo: 0 [ICON_GOLD]</Italian>
+    <Spanish>[ICON_BULLET]La unidad est&#225; inm&#243;vil durante 2 turnos[NEWLINE]Costo: 0 [ICON_GOLD]</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_RELIGION_UNIT_BUILT_INFO_1</Tag>
+    <English>Your Jewish recruits refuse to serve the pagan ruler and leave the squad. The unit dissolves.</English>
+    <French>Vos recrues juives refusent de servir le dirigeant pa&#239;en et quittent l'&#233;quipe. L'unit&#233; se dissout.</French>
+    <German>Eure j&#252;dischen Rekruten verweigern den Dienst f&#252;r den paganen Herrscher und verlassen den Trupp. Die Einheit l&#246;st sich auf.</German>
+    <Italian>Le tue reclute ebree si rifiutano di servire il sovrano pagano e lasciano la squadra. L'unit&#224; si dissolve.</Italian>
+    <Spanish>Tus reclutas jud&#237;os se niegan a servir al gobernante pagano y abandonan el escuadr&#243;n. La unidad se disuelve.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_RELIGION_UNIT_BUILT_INFO_2</Tag>
+    <English>Your Christian recruits refuse to serve the pagan ruler and leave the squad. The unit dissolves.</English>
+    <French>Vos recrues chr&#233;tiennes refusent de servir le dirigeant pa&#239;en et quittent l'&#233;quipe. L'unit&#233; se dissout.</French>
+    <German>Eure christlichen Rekruten verweigern den Dienst f&#252;r den paganen Herrscher und verlassen den Trupp. Die Einheit l&#246;st sich auf.</German>
+    <Italian>Le tue reclute cristiane si rifiutano di servire il sovrano pagano e lasciano la squadra. L'unit&#224; si dissolve.</Italian>
+    <Spanish>Tus reclutas cristianos se niegan a servir al gobernante pagano y abandonan el escuadr&#243;n. La unidad se disuelve.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_RELIGION_UNIT_BUILT_INFO_3</Tag>
+    <English>Your Islamist recruits refuse to serve the pagan ruler, kill their infidel colleagues and disband.</English>
+    <French>Vos recrues islamistes refusent de servir le dirigeant pa&#239;en, tuent leurs coll&#232;gues infid&#232;les et se dissolvent.</French>
+    <German>Eure islamistischen Rekruten verweigern den Dienst f&#252;r den paganen Herrscher, t&#246;ten ihre ungl&#228;ubigen Kollegen l&#246;sen sich auf.</German>
+    <Italian>Le tue reclute islamiste si rifiutano di servire il sovrano pagano, uccidono i loro colleghi infedeli e si dissolvono.</Italian>
+    <Spanish>Tus reclutas islamistas se niegan a servir al gobernante pagano, matan a sus colegas infieles y se disuelven.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1</Tag>
+    <English>Your young warriors yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. Frustrated, they roam the streets of the city %s1, plundering.</English>
+    <French>Vos jeunes guerriers aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Frustr&#233;s, ils parcourent les rues de la ville %s1, pillant.</French>
+    <German>Eure jungen Krieger sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Frustriert ziehen sie pl&#252;ndernd durch die Gassen der Stadt %s1.</German>
+    <Italian>I tuoi giovani guerrieri bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Frustrati, vagano per le strade della citt&#224; %s1, saccheggiando.</Italian>
+    <Spanish>Tus j&#243;venes guerreros anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Frustrados, deambulan por las calles de la ciudad %s1, saqueando.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_3</Tag>
+    <English>The city of %s1 loses 1 population.</English>
+    <French>La ville %s1 perd 1 population.</French>
+    <German>Die Stadt %s1 verliert 1 Bev&#246;lkerung.</German>
+    <Italian>La citt&#224; %s1 perde 1 popolazione.</Italian>
+    <Spanish>La ciudad %s1 pierde 1 poblaci&#243;n.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_2</Tag>
+    <English>Religious disagreements have enraged some citizens in %s1. A violent street fight ensues.</English>
+    <French>Des d&#233;saccords religieux ont enrag&#233; certains citoyens de %s1. Une violente bagarre de rue s'ensuit.</French>
+    <German>Religi&#246;se Meinungsverschiedenheiten brachten einige B&#252;rger in %s1 in Wut und Rage. Es kommt zu einer heftigen Stra&#223;enschlacht.</German>
+    <Italian>I disaccordi religiosi hanno fatto infuriare alcuni cittadini in %s1. Segue una violenta rissa di strada.</Italian>
+    <Spanish>Los desacuerdos religiosos han enfurecido a algunos ciudadanos en %s1. Se produce una violenta pelea callejera.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS2_1</Tag>
+    <English>%s1_cult got banished by followers of Judaism in %s2_city.</English>
+    <French>Un culte (%s1_cult) a &#233;t&#233; banni par les juifs &#224; %s2_city.</French>
+    <German>%s1_cult wurde durch Anh&#228;nger des Judentums aus %s2_city vertrieben.</German>
+    <Italian>%s1_cult &#232; stato bandito dai seguaci del Giudaismo a %s2_city.</Italian>
+    <Spanish>%s1_cult ha sido expulsado por los seguidores del Juda&#237;smo en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS2_2</Tag>
+    <English>Followers of Judaism have destroyed holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des juifs ont saccag&#233; des lieux sacr&#233;s (%s1_cult) &#224; %s2_city.</French>
+    <German>Anh&#228;nger des Judentums haben heilige St&#228;tten (%s1_cult) in %s2city zerst&#246;rt.</German>
+    <Italian>I seguaci dell'ebraismo hanno distrutto luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Seguidores del Juda&#237;smo han destru&#237;do lugares santos (%s1_cult) en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS2_3</Tag>
+    <English>Jewish religious fanatics have desecrated holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des fanatiques juifs ont profan&#233; des lieux saints (%s1_cult) &#224; %s2_city.</French>
+    <German>J&#252;dische Glaubensfanatiker haben heilige St&#228;tten (%s1_cult) in %s2_city entweiht.</German>
+    <Italian>I fanatici religiosi ebrei hanno profanato luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Fan&#225;ticos religiosos jud&#237;os han profanado lugares santos (%s1_cult) en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS3_1</Tag>
+    <English>%s1_cult got banished by followers of Islam in %s2_city.</English>
+    <French>Un culte (%s1_cult) a &#233;t&#233; banni par les Islamistes &#224; %s2_city.</French>
+    <German>%s1_cult wurde durch Anh&#228;nger des Islam aus %s2_city vertrieben.</German>
+    <Italian>%s1_cult &#232; stato bandito dai seguaci dell'Islam a %s2_city.</Italian>
+    <Spanish>%s1_cult ha sido expulsado por los seguidores del Islam en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS3_2</Tag>
+    <English>Followers of Islam have destroyed holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des Islamistes ont saccag&#233; des lieux sacr&#233;s (%s1_cult) &#224; %s2_city.</French>
+    <German>Anh&#228;nger des Islam haben heilige St&#228;tten (%s1_cult) in %s2city zerst&#246;rt.</German>
+    <Italian>I seguaci dell'Islam hanno distrutto luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Seguidores del Islam han destru&#237;do lugares santos (%s1_cult) en %s2_city.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MESSAGE_HERESY_CULTS3_3</Tag>
+    <English>Islamist religious fanatics have desecrated holy sites (%s1_cult) in %s2_city.</English>
+    <French>Des fanatiques islamistes ont profan&#233; des lieux saints (%s1_cult) &#224; %s2_city.</French>
+    <German>Islamistische Glaubensfanatiker haben heilige St&#228;tten (%s1_cult) in %s2_city entweiht.</German>
+    <Italian>I fanatici religiosi islamisti hanno profanato luoghi sacri (%s1_cult) a %s2_city.</Italian>
+    <Spanish>Fan&#225;ticos religiosos islamistas han profanado lugares santos (%s1_cult) en %s2_city.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_ASSIMILATION_HELP</Tag>
@@ -2649,6 +2777,14 @@
     <Spanish>Hide river tile markup and display plots like coast. Requires reload.</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_GOODY_EMIGRANT</Tag>
+    <English>The residents have decided to join you!</English>
+    <French>Les villageois ont d&#233;cid&#233; de vous rejoindre !</French>
+    <German>Die Bewohner haben sich entschlossen Euch anzuschlie&#223;en!</German>
+    <Italian>I residenti hanno deciso di unirsi a te!</Italian>
+    <Spanish>Los aldeanos han decidido unirse a ti.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_FEAT_UNITCOMBAT_ARCHER</Tag>
     <English>Congratulations, you have trained your first Archery Unit ([COLOR_UNIT_TEXT]%s1Unit_Name[COLOR_REVERT]) in %s2City_Name! These units are able to attack the opponent from a distance, so that they won't get hurt. These units also cause collateral damage to the tiles they attack, damaging multiple units at once. In a regular attack they have a special first-strike ability that allows them a chance to hit their opponent before the regular combat begins.</English>
     <French>F&#233;licitations, vous venez d'entra&#238;ner votre premi&#232;re unit&#233; d'archers ([COLOR_UNIT_TEXT]%s1Unit_Name[COLOR_REVERT]) &#224; %s2City_Name ! Ces unit&#233;s provoquent des dommages collat&#233;raux sur les cases qu'elles attaquent, touchant ainsi plusieurs unit&#233;s. Ces unit&#233;s b&#233;n&#233;ficient d'une premi&#232;re attaque qui leur laisse une chance de toucher leur adversaire avant le d&#233;but du combat.</French>
@@ -2735,13 +2871,5 @@
     <German>Kann die Produktion in einer Stadt durch die Zahlung von Gold vollenden (ab Bev. 4)</German>
     <Italian>Permette di spendere oro per terminare la produzione in una citt&#224; (dalla pop 4)</Italian>
     <Spanish>Se puede gastar oro para terminar la producci&#243;n en una ciudad (de la pob 4)</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_BUILD_CAMP_HUNTER</Tag>
-    <English>[ICON_BULLET]Unit is immobile for 2 turns[NEWLINE]Cost: 0 [ICON_GOLD]</English>
-    <French>[ICON_BULLET]L'unit&#233; est immobile pendant 2 tours[NEWLINE]Co&#251;t : 0 [ICON_GOLD]</French>
-    <German>[ICON_BULLET]Einheit ist 2 Runden unbeweglich[NEWLINE]Kosten: 0 [ICON_GOLD]</German>
-    <Italian>[ICON_BULLET]L'unit&#224; &#232; immobile per 2 turni[NEWLINE]Costo: 0 [ICON_GOLD]</Italian>
-    <Spanish>[ICON_BULLET]La unidad est&#225; inm&#243;vil durante 2 turnos[NEWLINE]Costo: 0 [ICON_GOLD]</Spanish>
   </TEXT>
 </Civ4GameText>

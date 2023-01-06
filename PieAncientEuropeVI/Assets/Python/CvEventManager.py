@@ -2865,16 +2865,16 @@ class CvEventManager:
 										# message to human winner or loser
 										if pWinnerPlayer.isHuman():
 												CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_IMPROVEMENT_DESTROYED_COMBAT", (gc.getImprovementInfo(iImprovement).getDescription(),)),
-																								 "AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
+												"AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
 										if pLoserPlayer.isHuman():
 												CyInterface().addMessage(iLoserPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_IMPROVEMENT_DESTROYED_COMBAT", (gc.getImprovementInfo(iImprovement).getDescription(),)),
-																								 "AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
+												"AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
 										# message to human plot owner
 										iPlotOwner = pLoserPlot.getOwner()
 										if iPlotOwner != -1 and iPlotOwner != iWinnerPlayer and iPlotOwner != iLoserPlayer:
 												if gc.getPlayer(iPlotOwner).isHuman():
 														CyInterface().addMessage(iPlotOwner, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_IMPROVEMENT_DESTROYED_COMBAT_PLOT_OWNER", (pWinnerPlayer.getName(), pLoserPlayer.getName(),
-																																																																															gc.getImprovementInfo(iImprovement).getDescription())), "AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
+														gc.getImprovementInfo(iImprovement).getDescription())), "AS2D_DESTROY", 2, gc.getImprovementInfo(iImprovement).getButton(), ColorTypes(13), pLoserPlot.getX(), pLoserPlot.getY(), True, True)
 
 										# Destroy improvement
 										if bFortress:
@@ -3928,6 +3928,9 @@ class CvEventManager:
 				if pPlayer.isHuman():
 						PAE_Unit.doDecreaseFoodOnUnitBuilt(city, unit)
 
+				# PAE 6.14: Religion: Einheiten verweigern Kriegsdienst
+				PAE_City.doRefuseUnitBuilt(city, unit)
+
 				# PAE Debug Mark 7
 				#"""
 
@@ -4746,6 +4749,11 @@ class CvEventManager:
 						# PAE Provinzcheck
 						PAE_City.doCheckCityState(pCity)
 
+				# Islam automatisch verbreiten
+				iReligion = gc.getInfoTypeForString("RELIGION_ISLAM")
+				if pPlayer.getStateReligion() == iReligion:
+						pCity.setHasReligion(iReligion, 1, 1, 0)
+
 				# PAE Debug Mark 9
 				#"""
 
@@ -4963,17 +4971,26 @@ class CvEventManager:
 				if not bRevolt and pCity.isHasBuilding(iBuilding):
 						bRevolt = PAE_City.provinceTribute(pCity)
 
-				# Christentum und Haeresie (Heresy) ----------------------------
-				if not bRevolt and iGameTurnYear > 0 and iGameTurnFounded % 5 == 0:
-						iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
-						if gc.getGame().isReligionFounded(iReligion):
-								# zum Christentum konvertieren
-								if not pCity.isHasReligion(iReligion):
-										PAE_Christen.convertCity(pCity)
+				# Christentum (ab PAE 6.15: auch Judentum und Islam) und Haeresie (Heresy) ----------------------------
+				bHeresy = False
+				if not bRevolt and iGameTurnYear > 0 and iGameTurnFounded % 2 == 0:
+						LReligions = [
+								gc.getInfoTypeForString("RELIGION_JUDAISM"),
+								gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
+								gc.getInfoTypeForString("RELIGION_ISLAM")
+						]
+						for iReligion in LReligions:
+								if gc.getGame().isReligionFounded(iReligion):
+										# zum Christentum konvertieren
+										if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
+												if not pCity.isHasReligion(iReligion):
+														if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_ISLAM")):
+																#if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JUDAISM")): # hier solls erlaubt sein
+																if PAE_Christen.convertCity(pCity): bHeresy = True
 
-								# Bei christlich beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
-								elif CvUtil.myRandom(5, "removePagans") == 1:  # 20%
-										PAE_Christen.removePagans(pCity)
+										# Bei monotheistisch beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
+										if not bHeresy:
+												if PAE_Christen.removePagans(pCity, iReligion): bHeresy = True
 
 				# PAE Provinzcheck
 				if bCheckCityState:
@@ -4981,6 +4998,10 @@ class CvEventManager:
 
 				# CivilWar
 				PAE_City.doCheckCivilWar(pCity)
+				
+				# PAE 6.14: Allgemeine Religionskonflikte
+				if not bHeresy:
+						if PAE_Christen.doReligionsKonflikt(pCity): bHeresy = True
 
 				# PAE Debug Mark 10
 				#"""

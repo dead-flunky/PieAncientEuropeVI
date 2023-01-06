@@ -1341,7 +1341,6 @@ def init():
 				gc.getInfoTypeForString("RELIGION_BUDDHISM"),
 				gc.getInfoTypeForString("RELIGION_JUDAISM"),
 				gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
-				gc.getInfoTypeForString("RELIGION_ORTHODOX"),
 				gc.getInfoTypeForString("RELIGION_ISLAM")
 		]
 
