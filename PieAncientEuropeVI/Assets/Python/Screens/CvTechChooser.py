@@ -287,6 +287,7 @@ class CvTechChooser:
 
 								if eLoopBuilding != -1:
 										if gc.getBuildingInfo(eLoopBuilding).getPrereqAndTech() == i:
+												# PAE: Aqueduct for some CIVs only
 												if eLoopBuilding == gc.getInfoTypeForString("BUILDING_AQUEDUCT"):
 														if gc.getGame().getActiveCivilizationType() in L.LCivsWithAqueduct:
 																szBuildingButton = "Building" + str(j)
@@ -816,7 +817,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_SIEGESSTELE")).getButton(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 2, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_CONSTRUCTION"):
+						elif i == gc.getInfoTypeForString("TECH_BELAGERUNG"):
 								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")).getButton(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 3, False)
 								fX += X_INCREMENT
@@ -983,7 +984,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_GLADIATOR").getPath(), iX +
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 669, 669, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_DRAMA"):
+						elif i == gc.getInfoTypeForString("TECH_DIONYSOS"):
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2THEATRE").getPath(), iX +
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 670, 670, False)
 								fX += X_INCREMENT
@@ -1069,6 +1070,12 @@ class CvTechChooser:
 
 						# Limes
 						elif i == gc.getInfoTypeForString("TECH_LIMES"):
+								# Special Wonder
+								j = gc.getInfoTypeForString("BUILDING_GREAT_WALL_GORGAN")
+								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+								fX += X_INCREMENT
+								# Limes
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Buildings/button_building_hadrianswall.dds",
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 733, 1, False)
 								fX += X_INCREMENT
@@ -1102,8 +1109,21 @@ class CvTechChooser:
 								screen.addDDSGFCAt(szObsoleteX, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_RED_X").getPath(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 754, j, False)
 								fX += X_INCREMENT
+						# Special Wonders
+						elif i == gc.getInfoTypeForString("TECH_MASONRY2"):
+								j = gc.getInfoTypeForString("BUILDING_STONEHENGE")
+								szBuildingButton = "Building" + str(j)
+								screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_WEHRTECHNIK"):
+								j = gc.getInfoTypeForString("BUILDING_WONDER_DAKER")
+								szBuildingButton = "Building" + str(j)
+								screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+								fX += X_INCREMENT
 						# End -----------
-
+						j = 0
 						# PAE: Espionage Missions
 						for j in range(gc.getNumEspionageMissionInfos()):
 								if (gc.getEspionageMissionInfo(j).getTechPrereq() == i):

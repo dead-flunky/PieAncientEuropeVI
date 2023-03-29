@@ -766,7 +766,7 @@ def calculateBonusSellingPrice(pUnit, pCity, bCalcOnly, iBonus2=-1):
 				iModifier += 5 * gc.getPlayer(iSeller).AI_getAttitude(iBuyer)
 
 		# Zwischensumme
-		iSum = iBasis * (iPop + iModifier)/100 + iBasis*iDistance // (75 - iBasis)
+		iSum = iBasis * (iPop + iModifier)/120 + 1.8*iBasis*iDistance // (60 - iBasis)
 
 		iKorruption = pCity.calculateDistanceMaintenance()
 

@@ -657,16 +657,26 @@ class CvForeignAdvisor:
 				screen.addCheckBoxGFC(szLeaderHead, gc.getLeaderHeadInfo(gc.getPlayer(self.iActiveLeader).getLeaderType()).getButton(), ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(
 				), self.X_LEADER_CIRCLE_TOP - iLeaderWidth/2, int(fLeaderTop), iLeaderWidth, iLeaderHeight, WidgetTypes.WIDGET_LEADERHEAD, self.iActiveLeader, -1, ButtonStyles.BUTTON_STYLE_LABEL)
 				if self.iSelectedLeader2 == self.iActiveLeader:
-						screen.addDDSGFC("SelectionCircle"                             # , ArtFileMgr.getInterfaceArtInfo("WHITE_CIRCLE_40").getPath()
+						screen.addDDSGFC("SelectionCircle" # , ArtFileMgr.getInterfaceArtInfo("WHITE_CIRCLE_40").getPath()
 														 , ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SMALLCIRCLE").getPath(), self.X_LEADER_CIRCLE_TOP + iLeaderWidth/2 - 0*16, int(fLeaderTop)  # + iLeaderHeight - 16
 														 , 16, 16, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				if (self.iActiveLeader in self.listSelectedLeaders):
 						screen.setState(szLeaderHead, True)
 				else:
 						screen.setState(szLeaderHead, False)
+
+				iLeaderHeightCityState = 0
+				iTeam = playerActive.getTeam()
+				pTeam = gc.getTeam(iTeam)
+				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE")):
+						szName = self.getNextWidgetName()
+						szText = u"%c " % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + CyTranslator().getText("TXT_KEY_TECH_CITY_STATE", ()).upper()
+						screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, self.X_LEADER_CIRCLE_TOP, fLeaderTop + iLeaderHeight + 5, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+						iLeaderHeightCityState = 15
+
 				szName = self.getNextWidgetName()
 				szLeaderName = u"<font=3>" + playerActive.getName() + u"</font>"
-				screen.setLabel(szName, "", szLeaderName, CvUtil.FONT_CENTER_JUSTIFY, self.X_LEADER_CIRCLE_TOP, fLeaderTop + iLeaderHeight + 5, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.setLabel(szName, "", szLeaderName, CvUtil.FONT_CENTER_JUSTIFY, self.X_LEADER_CIRCLE_TOP, fLeaderTop + iLeaderHeight + 5 + iLeaderHeightCityState, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 				# angle increment in radians (180 degree range)
 				if (iCount < 2):
@@ -702,20 +712,29 @@ class CvForeignAdvisor:
 						screen.addCheckBoxGFC(szLeaderHead, gc.getLeaderHeadInfo(player.getLeaderType()).getButton(), ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(),
 																	int(fX), int(fY), iLeaderWidth, iLeaderHeight, WidgetTypes.WIDGET_LEADERHEAD, iPlayer, iBaseLeader, ButtonStyles.BUTTON_STYLE_LABEL)
 						if self.iSelectedLeader2 == iPlayer:
-								screen.addDDSGFC("SelectionCircle"                                 # , ArtFileMgr.getInterfaceArtInfo("WHITE_CIRCLE_40").getPath()
+								screen.addDDSGFC("SelectionCircle" # , ArtFileMgr.getInterfaceArtInfo("WHITE_CIRCLE_40").getPath()
 																 , ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SMALLCIRCLE").getPath(), int(fX) + iLeaderWidth - 0*16, int(fY) + iLeaderHeight - 16, 16, 16, WidgetTypes.WIDGET_GENERAL, -1, -1)
 						if (iPlayer in self.listSelectedLeaders):
 								screen.setState(szLeaderHead, True)
 						else:
 								screen.setState(szLeaderHead, False)
 
+						iLeaderHeightCityState = 0
+						iTeam = player.getTeam()
+						pTeam = gc.getTeam(iTeam)
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE")):
+								szName = self.getNextWidgetName()
+								szText = u"%c " % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + CyTranslator().getText("TXT_KEY_TECH_CITY_STATE", ()).upper()
+								screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, fX + iLeaderWidth/2, fY + iLeaderHeight + 5, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+								iLeaderHeightCityState = 15
+						
 						szName = self.getNextWidgetName()
 						szText = u"<font=3>" + player.getName() + u"</font>"
-						screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, fX + iLeaderWidth/2, fY + iLeaderHeight + 5, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+						screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, fX + iLeaderWidth/2, fY + iLeaderHeight + 5 + iLeaderHeightCityState, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 						# Leader attitude towards active player
 						szName = self.getNextWidgetName()
-						if (gc.getTeam(player.getTeam()).isHasMet(playerBase.getTeam()) and iBaseLeader != iPlayer):
+						if (playerBase is not None and gc.getTeam(player.getTeam()).isHasMet(playerBase.getTeam()) and iBaseLeader != iPlayer):
 								szText = " (" + gc.getAttitudeInfo(gc.getPlayer(iPlayer).AI_getAttitude(iBaseLeader)).getDescription()
 								if (iBaseLeader != iPlayer):
 										if (gc.getTeam(player.getTeam()).isVassal(playerBase.getTeam())):
@@ -725,7 +744,7 @@ class CvForeignAdvisor:
 								szText += ")"
 						else:
 								szText = u""
-						screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, fX + iLeaderWidth/2, fY + iLeaderHeight + 25, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+						screen.setLabel(szName, "", szText, CvUtil.FONT_CENTER_JUSTIFY, fX + iLeaderWidth/2, fY + iLeaderHeight + 25 + iLeaderHeightCityState, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 				# draw lines
 				for iSelectedLeader in range(gc.getMAX_PLAYERS()):

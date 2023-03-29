@@ -680,6 +680,7 @@ def addScriptData(pOwner, key, value):
 
 def removeScriptData(pOwner, key):
 		sd = getScriptData(pOwner, None, {})
+		sd[key] = ""
 		sd.pop(key, None)
 		setScriptData(pOwner, sd)
 

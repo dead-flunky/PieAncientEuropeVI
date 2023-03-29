@@ -53,7 +53,7 @@
     <English>Available Slaves: %d1</English>
     <French>Esclaves disponibles : %d1</French>
     <German>Verf&#252;gbare Sklaven: %d1</German>
-    <Italian>Slave disponibili: %d1</Italian>
+    <Italian>Schiavi disponibili: %d1</Italian>
     <Spanish>Esclavos disponibles: %d1</Spanish>
   </TEXT>
   <TEXT>
@@ -5019,7 +5019,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>3000 BC. In Sumer arises the Uruk-phase.</English>
     <French>3000 av JC. D&#233;but de la p&#233;riode d'Uruk en M&#233;sopotamie.</French>
     <German>3000 v. Chr.: In Sumer entsteht die Uruk-Phase.</German>
-    <Italian>3000 BC. In Sumer arises the Uruk-phase.</Italian>
+    <Italian>3000 a.C BC: In Sumer sorge la fase di Uruk.</Italian>
     <Spanish>3000 a.C. En Sumer surge el dominio de Uruk.</Spanish>
   </TEXT>
   <TEXT>
@@ -5627,7 +5627,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>Around 500 BC. Sardinia and Sicily gets conquered by the Carthaginians.</English>
     <French>Environ 500 av JC. Les carthaginois conqui&#232;rent la Sardaigne et la Sicile.</French>
     <German>Um 500 v. Chr.: Sardinien und Sizilien wird von den Karthagern erobert.</German>
-    <Italian>Around 500 BC. Sardinia and Sicily gets conquered by the Carthaginians.</Italian>
+    <Italian>Intorno al 500 a.C aC: la Sardegna e la Sicilia vengono conquistate dai Cartaginesi.</Italian>
     <Spanish>Alrededor del 500 a.C. Cerde&#241;a y Sicilia son conquistadas por los cartagineses.</Spanish>
   </TEXT>
   <TEXT>
@@ -5651,7 +5651,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>480 BC. The campaign of Xerxes against Greece.</English>
     <French>480 av JC. Campagne de Xerx&#232;s contre la Gr&#232;ce.</French>
     <German>480 v. Chr.: Feldzug von Xerxes gegen Griechenland.</German>
-    <Italian>480 BC. The campaign of Xerxes against Greece.</Italian>
+    <Italian>480 a.C aC: campagna di Serse contro la Grecia.</Italian>
     <Spanish>480 a.C. Campa&#241;a de Jerjes contra Grecia.</Spanish>
   </TEXT>
   <TEXT>
@@ -5659,7 +5659,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>480 BC. Battle of the Spartans under Leonidas at Thermopylae.</English>
     <French>480 av JC. Les spartes de L&#233;onidas affrontent les perses aux Thermopyles.</French>
     <German>480 v. Chr.: Kampf der Spartaner unter Leonidas bei den Thermopylen.</German>
-    <Italian>480 BC. Battle of the Spartans under Leonidas at Thermopylae.</Italian>
+    <Italian>480 a.C aC: Battaglia degli Spartani sotto Leonida alle Termopili.</Italian>
     <Spanish>480 a.C. Batalla de los espartanos bajo Le&#243;nidas en las Term&#243;pilas.</Spanish>
   </TEXT>
   <TEXT>
@@ -5683,7 +5683,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>450-430 BC. Golden Age of Athens under Pericles.</English>
     <French>450-430 av JC. Age d'or d'Ath&#232;nes sous la direction de P&#233;ricl&#232;s.</French>
     <German>450-430 v. Chr.: Bl&#252;tezeit Athens unter Perikles.</German>
-    <Italian>450-430 BC. Golden Age of Athens under Pericles.</Italian>
+    <Italian>450-430 a.C aC: Atene fior&#236; sotto Pericle.</Italian>
     <Spanish>450-430 a.C. Edad de oro de Atenas bajo Pericles.</Spanish>
   </TEXT>
   <TEXT>
@@ -5691,7 +5691,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>450 BC. The Parthenon in Athens is completed.</English>
     <French>450 av JC. Ach&#232;vement du Parth&#233;non &#224; Ath&#232;nes.</French>
     <German>450 v. Chr. wird der Parthenon in Athen fertiggestellt.</German>
-    <Italian>450 BC. The Parthenon in Athens is completed.</Italian>
+    <Italian>450 a.C il Partenone di Atene &#232; completato.</Italian>
     <Spanish>450 a.C. Es completado el Parten&#243;n en Atenas.</Spanish>
   </TEXT>
   <TEXT>
@@ -5723,7 +5723,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>387 BC. Brennus conquers Rome.</English>
     <French>387 av JC. Brennus conquiert Rome.</French>
     <German>387 v. Chr.: Brennus erobert Rom.</German>
-    <Italian>387 BC. Brennus conquers Rome.</Italian>
+    <Italian>387 a.C aC: Brenno conquista Roma.</Italian>
     <Spanish>387 a.C. Breno conquista Roma.</Spanish>
   </TEXT>
   <TEXT>
@@ -5755,7 +5755,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>343-275 BC. Rome achieved supremacy in Italy.</English>
     <French>343-275 av JC. Rome assied sa supr&#233;matie en Italie.</French>
     <German>343-275 v. Chr.: Rom erreicht die Vorherrschaft in Italien.</German>
-    <Italian>343-275 BC. Rome achieved supremacy in Italy.</Italian>
+    <Italian>343-275 a.C aC: Roma raggiunge la supremazia in Italia.</Italian>
     <Spanish>343-275 a.C. Roma consigui&#243; la supremec&#237;a en Italia.</Spanish>
   </TEXT>
   <TEXT>
@@ -5771,7 +5771,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>336 BC. Alexander succeeds his father, King Philip.</English>
     <French>336 av JC. Alexandre succ&#232;de &#224; son p&#232;re, le Roi Philippe.</French>
     <German>336 v. Chr.: Alexander tritt die Nachfolge seines Vaters K&#246;nig Philipp an.</German>
-    <Italian>336 BC. Alexander succeeds his father, King Philip.</Italian>
+    <Italian>336 a.C AC: Alessandro succede a suo padre, il re Filippo.</Italian>
     <Spanish>336 a.C. Alejandro sucede a su padre, el Rey Filipo.</Spanish>
   </TEXT>
   <TEXT>
@@ -5779,7 +5779,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>336 BC. Alexander (heir to the throne in Macedonia) is the controversial ruler of Greece.</English>
     <French>336 av JC. Alexandre (h&#233;ritier du tr&#244;ne de Mac&#233;doine) est le dirigeant controvers&#233; de la Gr&#232;ce.</French>
     <German>336 v. Chr.: Alexander (Thronerbe in Makedonien) wird zum umstrittenen Herrn Griechenlands.</German>
-    <Italian>336 BC. Alexander (heir to the throne in Macedonia) is the controversial ruler of Greece.</Italian>
+    <Italian>336 a.C aC: Alessandro (erede al trono in Macedonia) diventa il conteso signore della Grecia.</Italian>
     <Spanish>336 a.C. Alejandro (heredero del trono en Macedonia) es el controvertido gobernante de Grecia.</Spanish>
   </TEXT>
   <TEXT>
@@ -5787,7 +5787,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>334 BC. Alexander invades Asia Minor with a Greek-Macedonian army.</English>
     <French>334 av JC. Alexandre envahit l'Asie mineure &#224; la t&#234;te d'une arm&#233;e grecquo-mac&#233;donienne.</French>
     <German>334 v. Chr.: Alexander dringt mit einer griechisch-makedonischen Armee in Kleinasien ein.</German>
-    <Italian>334 BC. Alexander invades Asia Minor with a Greek-Macedonian army.</Italian>
+    <Italian>334 a.C aC: Alessandro invade l'Asia Minore con un esercito greco-macedone.</Italian>
     <Spanish>334 a.C. Alejandro invade Asia Menor con un ej&#233;rcito griego-mac&#233;donico.</Spanish>
   </TEXT>
   <TEXT>
@@ -5795,7 +5795,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>333 BC. Alexander defeats the Persians at the Battle of Issus.</English>
     <French>333 av JC. Alexandre bat les perses &#224; la bataille d'Issos.</French>
     <German>333 v. Chr.: Alexander besiegt die Perser in der Schlacht bei Issos.</German>
-    <Italian>333 BC. Alexander defeats the Persians at the Battle of Issus.</Italian>
+    <Italian>333 a.C aC: Alessandro sconfigge i persiani nella battaglia di Isso.</Italian>
     <Spanish>333 a.C. Alejandro derrota a los Persas en la Batalla de Issos.</Spanish>
   </TEXT>
   <TEXT>
@@ -5803,7 +5803,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>331 BC. Alexander gets the ruler of the Persian Empire.</English>
     <French>331 av JC. Alexandre devient le dirigeant de l'empire perse.</French>
     <German>331 v. Chr.: Alexander wird Herr &#252;ber das Perserreich.</German>
-    <Italian>331 BC. Alexander gets the ruler of the Persian Empire.</Italian>
+    <Italian>331 a.C a.C.: Alessandro diventa padrone dell'impero persiano.</Italian>
     <Spanish>331 a.C. Alejando se convierte en el gobernante del Imperio Persa.</Spanish>
   </TEXT>
   <TEXT>
@@ -5811,7 +5811,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>323 BC. Alexander the Great dies in Babylon.</English>
     <French>323 av JC. Alexandre le Grand meurt &#224; Babylone.</French>
     <German>323 v. Chr.: Alexander der Gro&#223;e stirbt in Babylon.</German>
-    <Italian>323 BC. Alexander the Great dies in Babylon.</Italian>
+    <Italian>323 a.C aC: Alessandro Magno muore a Babilonia.</Italian>
     <Spanish>323 a.C. Alejando Magno muere en Babilonia.</Spanish>
   </TEXT>
   <TEXT>
@@ -5835,7 +5835,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>264-201 BC. Rome destroys Carthage and gets its first province outside of Italy.</English>
     <French>264-201 av JC. Rome d&#233;truit Carthage et obtient sa premi&#232;re province hors d'Italie.</French>
     <German>264-201 v. Chr.: Rom vernichtet Karthago und gewinnt die ersten Provinzen au&#223;erhalb Italiens.</German>
-    <Italian>264-201 BC. Rome destroys Carthage and gets its first province outside of Italy.</Italian>
+    <Italian>264-201 a.C aC: Roma distrugge Cartagine e conquista le prime province fuori dall'Italia.</Italian>
     <Spanish>264-201 a.C. Roma destruye Cartago y toma su primera provincia fuera de Italia.</Spanish>
   </TEXT>
   <TEXT>
@@ -5851,7 +5851,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>237 BC. The Romans occupy Sardinia and Corsica</English>
     <French>237 av JC. Les romains occupent la Sardaigne et la Corse.</French>
     <German>237 v. Chr.: Die R&#246;mer besetzen Sardinien und Korsika.</German>
-    <Italian>237 BC. The Romans occupy Sardinia and Corsica</Italian>
+    <Italian>237 a.C aC: I Romani occupano la Sardegna e la Corsica.</Italian>
     <Spanish>237 a.C. Los romanos ocupan Cerde&#241;a y C&#243;rcega</Spanish>
   </TEXT>
   <TEXT>
@@ -5891,7 +5891,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>218 BC. Hannibal is crossing the Alps.</English>
     <French>218 av JC. Hannibal traverse les Alpes.</French>
     <German>218 v. Chr.: Hannibal &#252;berquert die Alpen.</German>
-    <Italian>218 BC. Hannibal is crossing the Alps.</Italian>
+    <Italian>218 a.C aC: Annibale valica le Alpi.</Italian>
     <Spanish>218 a.C. An&#237;bal cruza los Alpes.</Spanish>
   </TEXT>
   <TEXT>
@@ -5899,7 +5899,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>216 BC. The Romans are defeated by Hannibal at Cannae.</English>
     <French>216 av JC. Les romains sont battus par Hannibal &#224; Cannes.</French>
     <German>216 v. Chr.: Die R&#246;mer werden von Hannibal in Cannae vernichtend geschlagen.</German>
-    <Italian>216 BC. The Romans are defeated by Hannibal at Cannae.</Italian>
+    <Italian>216 a.C aC: I Romani vengono schiacciati da Annibale a Canne.</Italian>
     <Spanish>216 a.C. Los Romanos son derrotados por An&#237;bal en Cannas.</Spanish>
   </TEXT>
   <TEXT>
@@ -5907,7 +5907,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>212 BC. The Romans conquer Syracuse.</English>
     <French>212 av JC. Rome conquiert Syracuse.</French>
     <German>212 v. Chr.: Die R&#246;mer erobern Syrakus.</German>
-    <Italian>212 BC. The Romans conquer Syracuse.</Italian>
+    <Italian>212 a.C aC: I Romani conquistano Siracusa.</Italian>
     <Spanish>212 a.C. Los romanos conquistan Siracusa.</Spanish>
   </TEXT>
   <TEXT>
@@ -5923,7 +5923,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>201 BC. Rome concludes peaces with Carthage.</English>
     <French>201 av JC. Rome fait la paix avec Carthage.</French>
     <German>201 v. Chr.: Rom schlie&#223;t mit Karthago Frieden.</German>
-    <Italian>201 BC. Rome concludes peaces with Carthage.</Italian>
+    <Italian>201 a.C aC: Roma fa pace con Cartagine.</Italian>
     <Spanish>201 a.C. Roma firma la paz con Cartago.</Spanish>
   </TEXT>
   <TEXT>
@@ -5931,7 +5931,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>About 200 BC. "Additionally, I am of the opinion that Carthage must be destroyed...", with these words, the Roman statesman Cato ends every of his speeches in the Senate.</English>
     <French>Environ 200 av JC. "En outre, je pense que Carthage doit &#234;tre d&#233;truite...", Caton l'Ancien termine ainsi tous ses discours au S&#233;nat.</French>
     <German>Um 200 v. Chr.: "Ausserdem bin ich der Meinung, dass Karthago zerst&#246;rt werden muss...", mit diesen Worten beendete der r&#246;mische Staatsmann Cato jede seiner Reden im Senat.</German>
-    <Italian>About 200 BC. "Additionally, I am of the opinion that Carthage must be destroyed...", with these words, the Roman statesman Cato ends every of his speeches in the Senate.</Italian>
+    <Italian>Intorno al 200 a.C "Inoltre, sono dell'opinione che Cartagine debba essere distrutta...", con queste parole lo statista romano Catone concludeva ogni suo discorso in Senato.</Italian>
     <Spanish>Sobre el 200 a.C. "Adem&#225;s, Soy de la opini&#243;n de que Cartago debe ser destru&#237;da...", con estas palabras, el pol&#237;tico romano Cat&#243;n finaliza cada uno de sus discursos en el Senado.</Spanish>
   </TEXT>
   <TEXT>
@@ -5939,7 +5939,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>188 BC. Syria submits to Rome.</English>
     <French>188 av JC. La Syrie se soumet &#224; Rome.</French>
     <German>188 v. Chr.: Syrien unterwirft sich Rom.</German>
-    <Italian>188 BC. Syria submits to Rome.</Italian>
+    <Italian>188 a.C aC: la Siria si sottomette a Roma.</Italian>
     <Spanish>188 a.C. Siria se somete a Roma.</Spanish>
   </TEXT>
   <TEXT>
@@ -5947,7 +5947,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>168 BC. Macedonia becomes a Roman province.</English>
     <French>168 av JC. La Mac&#233;doine devient une province romaine.</French>
     <German>168 v. Chr.: Makedonien wird r&#246;mische Provinz.</German>
-    <Italian>168 BC. Macedonia becomes a Roman province.</Italian>
+    <Italian>168 a.C aC: la Macedonia diventa provincia romana.</Italian>
     <Spanish>168 a.C. Macedonia se convierte en una provincia romana.</Spanish>
   </TEXT>
   <TEXT>
@@ -5955,7 +5955,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>168 BC. Rome is at war with Macedonia. The Empire of Macedonia disappears from the map.</English>
     <French>168 av JC. Rome est en guerre contre la Mac&#233;doine. Celle-ci disparait de la carte.</French>
     <German>168 v. Chr.: Rom f&#252;hrt Krieg gegen Makedonien. Makedonien verschwindet als Staat von der Landkarte.</German>
-    <Italian>168 BC. Rome is at war with Macedonia. The Empire of Macedonia disappears from the map.</Italian>
+    <Italian>168 a.C aC: Roma &#232; in guerra con la Macedonia. La Macedonia scompare dalla mappa come stato.</Italian>
     <Spanish>168 a.C. Roma est&#225; en guerra con Macedonia. El Imperio de Macedonia desaparece del mapa.</Spanish>
   </TEXT>
   <TEXT>
@@ -5971,7 +5971,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>146 BC. Carthage is destroyed by the Romans.</English>
     <French>146 av JC. Carthage est d&#233;truite par Rome.</French>
     <German>146 v. Chr. wird Karthago von den R&#246;mern vernichtet.</German>
-    <Italian>146 BC. Carthage is destroyed by the Romans.</Italian>
+    <Italian>146 a.C aC Cartagine viene distrutta dai Romani.</Italian>
     <Spanish>146 a.C. Cartago es destru&#237;da por los romanos.</Spanish>
   </TEXT>
   <TEXT>
@@ -6115,7 +6115,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <English>8-6 BC. Victorious Roman campaigns of Tiberius to the river of Elbe.</English>
     <French>8-6 av JC. Campagnes victorieuses de Tiberius sur les rives de l'Elbe.</French>
     <German>8-6 v. Chr.: Siegreiche r&#246;mische Feldz&#252;ge unter Tiberius bis an die Elbe.</German>
-    <Italian>8-6 BC. Victorious Roman campaigns of Tiberius to the river of Elbe.</Italian>
+    <Italian>8-6 a.C aC: vittoriose campagne romane sotto Tiberio fino all'Elba.</Italian>
     <Spanish>8-6 a.C. Victoriosas campa&#241;as romanas de Tiberio hacia el r&#237;o Elba.</Spanish>
   </TEXT>
   <TEXT>
@@ -6369,9 +6369,9 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   <TEXT>
     <Tag>TXT_KEY_MITTELMEER_4000BC_3</Tag>
     <English>Pie's Ancient Europe 5000 BC[NEWLINE]Map Size (WxH): 64x44[NEWLINE]Historical starting points[NEWLINE]Random bonus placement[NEWLINE]Lead your tribe into the era of the ancient world and create an empire.</English>
-    <French>Pie's Ancient Europe 5000 av JC[NEWLINE]Taille de carte (LxH) : 64x44 [NEWLINE]Emplacements de d&#233;part historiques[NEWLINE]Placement al&#233;atoire des ressources[NEWLINE]Guidez votre peuple &#224; travers l'antiquit&#233; et b&#226;tissez un empire.</French>
+    <French>Pie's Ancient Europe 5000 av JC[NEWLINE]Taille de carte (LxH) : 64x44[NEWLINE]Emplacements de d&#233;part historiques[NEWLINE]Placement al&#233;atoire des ressources[NEWLINE]Guidez votre peuple &#224; travers l'antiquit&#233; et b&#226;tissez un empire.</French>
     <German>Pies Antikes Europa 5000 v.Chr.[NEWLINE]Kartengr&#246;&#223;e (BxH): 64x44[NEWLINE]Historische Startpositionen[NEWLINE]Ressourcen zuf&#228;llig verteilt[NEWLINE]F&#252;hre dein Volk in das Zeitalter der Antike und erschaffe ein Imperium.</German>
-    <Italian>Pie's Ancient Europe 5000 BC[NEWLINE]Map Size (WxH): 64x44[NEWLINE]Historical starting points[NEWLINE]Random bonus placement[NEWLINE]Lead your tribe into the era of the ancient world and create an empire.</Italian>
+    <Italian>Pie's Ancient Europe 5000 a.C[NEWLINE]Dimensioni carta (LxA): 64x44[NEWLINE]Posizioni di partenza storiche[NEWLINE]Risorse distribuite in modo casuale[NEWLINE]Guida il tuo popolo nell'era dell'antichit&#224; e crea un impero.</Italian>
     <Spanish>Pie's Ancient Europe 5000 a.C.[NEWLINE]Tama&#241;o del mapa (Ancho por alto): 64x44[NEWLINE]Puntos de inicio hist&#243;ricos[NEWLINE]Disposici&#243;n de los bonus aleatorio[NEWLINE]Lidera tu tribu hacia la era del mundo antiguo y crea un imperio.</Spanish>
   </TEXT>
   <TEXT>
@@ -7224,11 +7224,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_HELP_LEGEND_HERO_TO_GENERAL</Tag>
-    <English>Create a Great General out of your legendary or heroic unit</English>
-    <French>Promouvoir un Grand G&#233;n&#233;ral illustre parmi votre unit&#233; l&#233;gendaire ou h&#233;ro&#239;que</French>
-    <German>Einen Gro&#223;en General aus Eurer legend&#228;ren bzw. heldenhaften Einheit erschaffen</German>
-    <Italian>Crea un grande generale dalla tua unit&#224; leggendaria o eroica</Italian>
-    <Spanish>Crear un gran general a partir de tu unidad heroica o legendaria</Spanish>
+    <English>Create a Great General out of your legendary unit</English>
+    <French>Promouvoir un Grand G&#233;n&#233;ral illustre parmi votre unit&#233; l&#233;gendaire</French>
+    <German>Einen Gro&#223;en General aus Eurer legend&#228;ren Einheit erschaffen</German>
+    <Italian>Crea un grande generale dalla tua unit&#224; leggendaria</Italian>
+    <Spanish>Crear un gran general a partir de tu unidad legendaria</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_VICTORY</Tag>
@@ -7304,11 +7304,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_UNIT_GETS_HERO_6</Tag>
-    <English>Due to the presence of the general, your unit %s1 does not fight on its own anymore!</English>
-    <French>Gr&#226;ce &#224; la pr&#233;sence de votre g&#233;n&#233;ral, l'unit&#233; (%s1) vous est d&#233;sormais plus loyale !</French>
-    <German>Aufgrund der Anwesenheit des Generals k&#228;mpft Eure Einheit %s1 nun nicht mehr auf eigenen F&#252;&#223;en!</German>
-    <Italian>Due to the presence of the general, your unit %s1 does not fight on its own anymore!</Italian>
-    <Spanish>Debido a la presencia del general, &#161;tu unidad %s1 no luchar&#225; m&#225;s por si misma!</Spanish>
+    <English>Your unit %s1 is now a reliable fighter!</English>
+    <French>L'unit&#233; (%s1) est maintenant un combattant fiable !</French>
+    <German>Eure Einheit %s1 ist nun ein zuverl&#228;ssiger K&#228;mpfer!</German>
+    <Italian>La tua unit&#224; %s1 ora &#232; un combattente affidabile!</Italian>
+    <Spanish>&#161;tu unidad %s1 es ahora un luchador confiable!</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_KARTE_ZEICHNEN</Tag>
@@ -7663,6 +7663,14 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <Spanish>[ICON_TRADE] Debido al rentable comercio con %s1 (%s2), &#161;una ruta comercial se ha originado entre las ciudades %s3 y %s4 (+1[ICON_COMMERCE])!</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_COMMAND_LOAD_HELP</Tag>
+    <English>Send the unit into a transport unit.</English>
+    <French>Envoyez l'unit&#233; dans une unit&#233; de transport.</French>
+    <German>Schicke die Einheit in eine Transporteinheit.</German>
+    <Italian>Invia l'unit&#224; in un'unit&#224; di trasporto.</Italian>
+    <Spanish>Env&#237;e la unidad a una unidad de transporte.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_INFO_CLOSED_TRADEPOST</Tag>
     <English>Your Foreign Trading Post was broken down by foreign cultural borders!</English>
     <French>Votre poste de traite &#233;tranger a &#233;t&#233; d&#233;truit par l'expansion culturelle &#233;trang&#232;re!</French>
@@ -7976,11 +7984,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_UNIT_UNDO_PROMO_MERCENARY</Tag>
-    <English>As a result of the long combat experience, the unit %s1 loses the status: Fight on his own.</English>
-    <French>En raison d'une longue exp&#233;rience du combat, l'unit&#233; %s1 perd le statut: Chacun pour soi.</French>
-    <German>Aufgrund der langen Kampferfahrung verliert die Einheit %s1 nun den Status: K&#228;mpft auf eigenen F&#252;&#223;en.</German>
-    <Italian>A causa della lunga esperienza di combattimento, l'unit&#224;% s1 ha rinunciato allo stato: Combatte da solo.</Italian>
-    <Spanish>Como resultado de una gran cantidad de experiencia de combate, la unidad %s1 pierde el status: lucha por su propia cuenta.</Spanish>
+    <English>As a result of the long combat experience, the unit %s1 loses its status of being "unreliable".</English>
+    <French>En raison d'une longue exp&#233;rience du combat, l'unit&#233; %s1 perd son statut "non fiable".</French>
+    <German>Aufgrund der langen Kampferfahrung verliert die Einheit %s1 nun ihre "Unzuverl&#228;ssigkeit".</German>
+    <Italian>A causa della lunga esperienza di combattimento, l'unit&#224; %s1 perde suo status di "inaffidabile".</Italian>
+    <Spanish>Como resultado de una gran cantidad de experiencia de combate, la unidad %s1 pierde su estatus de "poco confiable".</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_INFO_CIVIL_WAR_3</Tag>
@@ -8208,11 +8216,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_BERUFSARMEE_HELP</Tag>
-    <English>[ICON_BULLET]Allows the construction of [COLOR_BUILDING_TEXT]training camps[COLOR_REVERT]</English>
-    <French>[ICON_BULLET]Permet la construction de [COLOR_BUILDING_TEXT]camps d'entra&#238;nement[COLOR_REVERT]</French>
-    <German>[ICON_BULLET]Erlaubt den Bau von [COLOR_BUILDING_TEXT]Ausbildungslagern[COLOR_REVERT]</German>
-    <Italian>[ICON_BULLET]Consente la costruzione di [COLOR_BUILDING_TEXT]campi di addestramento[COLOR_REVERT]</Italian>
-    <Spanish>[ICON_BULLET]Permite la construcci&#243;n de [COLOR_BUILDING_TEXT]campos de entrenamiento[COLOR_REVERT]</Spanish>
+    <English>[ICON_BULLET]Allows the construction of [LINK=BUILDING_BARRACKS]Training camps[\LINK]</English>
+    <French>[ICON_BULLET]Permet la construction de [LINK=BUILDING_BARRACKS]Camps d'Entra&#238;nement[\LINK]</French>
+    <German>[ICON_BULLET]Erlaubt den Bau von [LINK=BUILDING_BARRACKS]Ausbildungslagern[\LINK]</German>
+    <Italian>[ICON_BULLET]Consente la costruzione di [LINK=BUILDING_BARRACKS]Campi di addestramento[\LINK]</Italian>
+    <Spanish>[ICON_BULLET]Permite la construcci&#243;n de [LINK=BUILDING_BARRACKS]Campos de entrenamiento[\LINK]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_CITY_CIVIC_BARRACKS</Tag>
@@ -8640,18 +8648,18 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_WONDER_HAGIA_HELP</Tag>
-    <English>[ICON_BULLET]City needs [COLOR_HIGHLIGHT_TEXT]Christianity[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilgrims can be blessed in this city (+25%[ICON_STRENGTH])</English>
-    <French>[ICON_BULLET]La ville a besoin du [COLOR_HIGHLIGHT_TEXT]Christianisme[COLOR_REVERT][NEWLINE][ICON_BULLET]Les p&#232;lerins peuvent &#234;tre b&#233;nis dans cette ville (+25%[ICON_STRENGTH])</French>
-    <German>[ICON_BULLET]Stadt ben&#246;tigt das [COLOR_HIGHLIGHT_TEXT]Christentum[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilger k&#246;nnen sich in dieser Stadt segnen lassen (+25%[ICON_STRENGTH])</German>
-    <Italian>[ICON_BULLET]La citt&#224; ha bisogno del [COLOR_HIGHLIGHT_TEXT]Cristianesimo[COLOR_REVERT][NEWLINE][ICON_BULLET]I pellegrini possono essere benedetti in questa citt&#224; (+25%[ICON_STRENGTH])</Italian>
-    <Spanish>[ICON_BULLET]La ciudad necesita [COLOR_HIGHLIGHT_TEXT]Cristianismo[COLOR_REVERT][NEWLINE][ICON_BULLET]Los peregrinos pueden ser bendecidos en esta ciudad (+25%[ICON_STRENGTH])</Spanish>
+    <English>[ICON_BULLET]City needs [COLOR_HIGHLIGHT_TEXT]Christianity[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilgrims can be blessed in this city (+25%[ICON_STRENGTH]). Christianity as state religion required.</English>
+    <French>[ICON_BULLET]La ville a besoin du [COLOR_HIGHLIGHT_TEXT]Christianisme[COLOR_REVERT][NEWLINE][ICON_BULLET]Les p&#232;lerins peuvent &#234;tre b&#233;nis dans cette ville (+25%[ICON_STRENGTH]). Christianisme requis comme religion d'&#201;tat.</French>
+    <German>[ICON_BULLET]Stadt ben&#246;tigt das [COLOR_HIGHLIGHT_TEXT]Christentum[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilger k&#246;nnen sich in dieser Stadt segnen lassen (+25%[ICON_STRENGTH]). Christentum als Staatsreligion notwendig.</German>
+    <Italian>[ICON_BULLET]La citt&#224; ha bisogno del [COLOR_HIGHLIGHT_TEXT]Cristianesimo[COLOR_REVERT][NEWLINE][ICON_BULLET]I pellegrini possono essere benedetti in questa citt&#224; (+25%[ICON_STRENGTH]). Cristianesimo richiesto come religione di stato.</Italian>
+    <Spanish>[ICON_BULLET]La ciudad necesita [COLOR_HIGHLIGHT_TEXT]Cristianismo[COLOR_REVERT][NEWLINE][ICON_BULLET]Los peregrinos pueden ser bendecidos en esta ciudad (+25%[ICON_STRENGTH]). Se requiere el cristianismo como religi&#243;n de estado.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_WONDER_ZEUS_HELP</Tag>
-    <English>[ICON_BULLET]City needs [COLOR_HIGHLIGHT_TEXT]Greek gods[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilgrims can improve their morale in this city (+15%[ICON_STRENGTH])</English>
-    <French>[ICON_BULLET]La ville a besoin du [COLOR_HIGHLIGHT_TEXT]Panth&#233;on olympien[COLOR_REVERT][NEWLINE][ICON_BULLET]Les p&#232;lerins peuvent am&#233;liorer leur moral dans cette ville (+15%[ICON_STRENGTH])</French>
-    <German>[ICON_BULLET]Stadt ben&#246;tigt [COLOR_HIGHLIGHT_TEXT]Griechische G&#246;tter[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilger k&#246;nnen in dieser Stadt ihre Kampfmoral verbessern (+15%[ICON_STRENGTH])</German>
-    <Italian>[ICON_BULLET]La citt&#224; ha bisogno degli [COLOR_HIGHLIGHT_TEXT]d&#232;i greci[COLOR_REVERT][NEWLINE][ICON_BULLET]I pellegrini possono migliorare il loro morale in questa citt&#224; (+15%[ICON_STRENGTH])</Italian>
-    <Spanish>[ICON_BULLET]La ciudad necesita [COLOR_HIGHLIGHT_TEXT]dioses griegos[COLOR_REVERT][NEWLINE][ICON_BULLET]Los peregrinos pueden mejorar su moral en esta ciudad (+15%[ICON_STRENGTH])</Spanish>
+    <English>[ICON_BULLET]City needs [COLOR_HIGHLIGHT_TEXT]Greek gods[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilgrims can improve their morale in this city (+15%[ICON_STRENGTH]). Greek religion as state religion required.</English>
+    <French>[ICON_BULLET]La ville a besoin du [COLOR_HIGHLIGHT_TEXT]Panth&#233;on olympien[COLOR_REVERT][NEWLINE][ICON_BULLET]Les p&#232;lerins peuvent am&#233;liorer leur moral dans cette ville (+15%[ICON_STRENGTH]). La religion grecque requise comme religion d'&#201;tat.</French>
+    <German>[ICON_BULLET]Stadt ben&#246;tigt [COLOR_HIGHLIGHT_TEXT]Griechische G&#246;tter[COLOR_REVERT][NEWLINE][ICON_BULLET]Pilger k&#246;nnen in dieser Stadt ihre Kampfmoral verbessern (+15%[ICON_STRENGTH]). Griechische Religion als Staatsreligion notwendig.</German>
+    <Italian>[ICON_BULLET]La citt&#224; ha bisogno degli [COLOR_HIGHLIGHT_TEXT]d&#232;i greci[COLOR_REVERT][NEWLINE][ICON_BULLET]I pellegrini possono migliorare il loro morale in questa citt&#224; (+15%[ICON_STRENGTH]). Religione greca richiesta come religione di stato.</Italian>
+    <Spanish>[ICON_BULLET]La ciudad necesita [COLOR_HIGHLIGHT_TEXT]dioses griegos[COLOR_REVERT][NEWLINE][ICON_BULLET]Los peregrinos pueden mejorar su moral en esta ciudad (+15%[ICON_STRENGTH]). Se requiere la religi&#243;n griega como religi&#243;n de estado.</Spanish>
   </TEXT>
 </Civ4GameText>

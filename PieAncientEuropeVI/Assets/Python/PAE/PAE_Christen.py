@@ -98,11 +98,8 @@ def convertCity(pCity):
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
 
-		# nicht bei Judentum, Hindu, Buddh und Jain
-		if (not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JUDAISM"))
-				and not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_HINDUISM"))
-				and not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_BUDDHISM"))
-						and not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JAINISMUS"))):
+		# nicht bei Hindu, Buddh
+		if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_HINDUISM")) and not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_BUDDHISM")):
 
 				if pCity.isCapital():
 						iChance = 40  # 2.5%
@@ -233,7 +230,8 @@ def removePagans(pCity, iReligion):
 										text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
 								else: text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
 								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
-								None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+								None, 2, gc.getReligionInfo(iReligion).getButton(), ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+								# "Art/Interface/Buttons/Actions/button_kreuz.dds"
 						return True
 
 		return False

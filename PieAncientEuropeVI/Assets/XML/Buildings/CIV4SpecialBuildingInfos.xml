@@ -100,24 +100,5 @@
 			</ProductionTraits>
 			<Button>Art/Interface/Buttons/Techs/button_tech_waffenmanu.dds</Button>
 		</SpecialBuildingInfo>
-		<SpecialBuildingInfo>
-			<Type>SPECIALBUILDING_METAL_CASTING</Type>
-			<Description>TXT_KEY_BUILDING_METAL_CASTING</Description>
-			<ObsoleteTech>NONE</ObsoleteTech>
-			<TechPrereq>TECH_BRONZE_WORKING</TechPrereq>
-			<TechPrereqAnyone>NONE</TechPrereqAnyone>
-			<bValid>1</bValid>
-			<ProductionTraits>
-				<ProductionTrait>
-					<ProductionTraitType>TRAIT_ORGANIZED</ProductionTraitType>
-					<iProductionTrait>50</iProductionTrait>
-				</ProductionTrait>
-				<ProductionTrait>
-					<ProductionTraitType>TRAIT_EROBERER</ProductionTraitType>
-					<iProductionTrait>50</iProductionTrait>
-				</ProductionTrait>
-			</ProductionTraits>
-			<Button>Art/Interface/Buttons/Buildings/button_guss_iron.dds</Button>
-		</SpecialBuildingInfo>
 	</SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

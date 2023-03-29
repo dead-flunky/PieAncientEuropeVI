@@ -2748,10 +2748,10 @@ def doAutomatedRanking(pWinner, pLoser):
 		"""
 		# tuple contain (Promo, %-Probabiblity)
 		LPromo = [
-				(gc.getInfoTypeForString('PROMOTION_COMBAT1'), 40),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT2'), 40),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT3'), 30),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT4'), 30),
+				(gc.getInfoTypeForString('PROMOTION_COMBAT1'), 70),
+				(gc.getInfoTypeForString('PROMOTION_COMBAT2'), 60),
+				(gc.getInfoTypeForString('PROMOTION_COMBAT3'), 50),
+				(gc.getInfoTypeForString('PROMOTION_COMBAT4'), 40),
 				(gc.getInfoTypeForString('PROMOTION_COMBAT5'), 20),
 				(gc.getInfoTypeForString('PROMOTION_COMBAT6'), 10)
 		]
@@ -2776,45 +2776,47 @@ def doAutomatedRanking(pWinner, pLoser):
 								pWinner.setDamage(30, -1)
 						# elif pWinner.isHasPromotion(LPromo[3][0]) and pWinner.getDamage() < 20: pWinner.setDamage(20, -1)
 
-				if pWinner.isHasPromotion(LPromo[2][0]) and pLoser.getOwner() == gc.getBARBARIAN_PLAYER():
-						return False
+				if pWinner.isHasPromotion(LPromo[2][0]) and (
+						pLoser.getOwner() == gc.getBARBARIAN_PLAYER() or
+						pLoser.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL or
+						pLoser.getUnitAIType() == UnitAITypes.UNITAI_EXPLORE
+					): return False
 
 				if not pWinner.isHasPromotion(LPromo[-1][0]):
 						for iPromo, iChance in LPromo:
 								if not pWinner.isHasPromotion(iPromo):
 										break
 
-						if iPromo == LPromo[0][0] or iPromo == LPromo[1][0] or pLoser.getUnitAIType() != UnitAITypes.UNITAI_ANIMAL or pLoser.getUnitAIType() != UnitAITypes.UNITAI_EXPLORE:
+						# PAE for better AI: KI +15% Chance
+						if not gc.getPlayer(iPlayer).isHuman():
+								iChance += 15
 
-								# PAE for better AI: min 50%
-								if not gc.getPlayer(iPlayer).isHuman() and iChance < 50:
-										iChance = 50
-
-								if CvUtil.myRandom(100, "automatedRanking") < iChance:
-										if (iPlayer, pWinner.getID()) not in PAEInstanceFightingModifier:
-												PAEInstanceFightingModifier.append((iPlayer, pWinner.getID()))
-												pWinner.setHasPromotion(iPromo, True)
-												if gc.getPlayer(iPlayer).isHuman():
-														CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_RANKING", (pWinner.getName(), gc.getPromotionInfo(iPromo).getDescription())),
-																										 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
-												return True
-								# War weariness parallel ab Elite
-								elif pWinner.isHasPromotion(LPromo[4][0]) and not pWinner.isHasPromotion(LPromoNegative[-1][0]):
-										if (iPlayer, pWinner.getID()) not in PAEInstanceFightingModifier:
-												for iPromo, iChance in LPromoNegative:
-														if not pWinner.isHasPromotion(iPromo):
-																if iChance > CvUtil.myRandom(100, "war weariness"):
-																		PAEInstanceFightingModifier.append((iPlayer, pWinner.getID()))
-																		pWinner.setHasPromotion(iPromo, True)
-																		if gc.getPlayer(iPlayer).isHuman():
-																				CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_WAR_WEARINESS", (pWinner.getName(), gc.getPromotionInfo(iPromo).getDescription())),
-																																 "AS2D_REBELLION", 2, gc.getPromotionInfo(iPromo).getButton(), ColorTypes(12), pWinner.getX(), pWinner.getY(), True, True)
-																		return True
-																break
+						if CvUtil.myRandom(100, "automatedRanking") < iChance:
+								if (iPlayer, pWinner.getID()) not in PAEInstanceFightingModifier:
+										PAEInstanceFightingModifier.append((iPlayer, pWinner.getID()))
+										pWinner.setHasPromotion(iPromo, True)
+										if gc.getPlayer(iPlayer).isHuman():
+												CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_RANKING", (pWinner.getName(), gc.getPromotionInfo(iPromo).getDescription())),
+																								 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
+										return True
+						# War weariness parallel ab Elite
+						elif pWinner.isHasPromotion(LPromo[4][0]) and not pWinner.isHasPromotion(LPromoNegative[-1][0]):
+								if (iPlayer, pWinner.getID()) not in PAEInstanceFightingModifier:
+										for iPromo, iChance in LPromoNegative:
+												if not pWinner.isHasPromotion(iPromo):
+														if iChance > CvUtil.myRandom(100, "war weariness"):
+																PAEInstanceFightingModifier.append((iPlayer, pWinner.getID()))
+																pWinner.setHasPromotion(iPromo, True)
+																if gc.getPlayer(iPlayer).isHuman():
+																		CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_WAR_WEARINESS", (pWinner.getName(), gc.getPromotionInfo(iPromo).getDescription())),
+																														 "AS2D_REBELLION", 2, gc.getPromotionInfo(iPromo).getButton(), ColorTypes(12), pWinner.getX(), pWinner.getY(), True, True)
+																return True
+														break
 
 				# PAE V: Gewinner kann Mercenary-Promo ab Veteran verlieren
+				# PAE 6.14: Gewinner kann diese immer verlieren
 				iPromoMercenary = gc.getInfoTypeForString("PROMOTION_MERCENARY")
-				if pWinner.isHasPromotion(LPromo[3][0]) and pWinner.isHasPromotion(iPromoMercenary):
+				if pWinner.isHasPromotion(iPromoMercenary): # and pWinner.isHasPromotion(LPromo[3][0]) 
 						if gc.getPlayer(iPlayer).isHuman():
 								iPromoLoyal = gc.getInfoTypeForString("PROMOTION_LOYALITAT")
 								iPromoLeader = gc.getInfoTypeForString("PROMOTION_LEADER")
@@ -2825,7 +2827,7 @@ def doAutomatedRanking(pWinner, pLoser):
 								else:
 										iChance = 4  # 25%
 						else:
-								iChance = 2  # Better AI: always 50%
+								iChance = 3  # Better AI: always 33%
 
 						if CvUtil.myRandom(iChance, "remove Mercenary promo") == 1:
 								pWinner.setHasPromotion(iPromoMercenary, False)
@@ -3024,7 +3026,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 				# 2. Vergabe der Promo
 				for i in range(iNumUnits):
 						pLoopUnit = pPlot.getUnit(i)
-						if pLoopUnit.getOwner() == iPlayer:
+						if pLoopUnit != None and pLoopUnit.getOwner() == iPlayer:
 								#if i % iNumLeadersOnPlot == 0:
 								pLoopUnit.setHasPromotion(iPromoMercenary, True)
 
@@ -3036,7 +3038,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 								if not loopCity.isNone():  # only valid cities
 										
 										#if CvUtil.myRandom(iLeader, "Stadtaufruhr1") == 0: # bis PAE 6.14
-										# PAE 6.14: Chance 10%
+										# PAE 6.15: Chance 10%
 										if not bNoCivilWar and CvUtil.myRandom(10, "Stadtaufruhr1") == 0:
 												# 2 bis 4 Runden Aufstand!
 												#iRand = 2 + CvUtil.myRandom(2, "Stadtaufruhr2")
@@ -3064,7 +3066,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 												szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL_" + str(iRand)
 												szText = CyTranslator().getText(szTextKey, (loopCity.getName(),)) + CyTranslator().getText(" +1[ICON_UNHAPPY]", ())
 												CyInterface().addMessage(
-														iPlayer, False, 25, szText, None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
+														iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
 														ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
 												)
 								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -3119,7 +3121,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 														szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_" + str(iRand)
 														szText = CyTranslator().getText(szTextKey, (loopCity.getName(),)) + CyTranslator().getText(" +1[ICON_HAPPY]", ())
 														CyInterface().addMessage(
-																iPlayer, False, 25, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
+																iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
 																ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
 														)
 										(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
@@ -3242,6 +3244,8 @@ def copyPromotions(OldUnit, NewUnit):
 		for iPromo in range(iRange):
 				if OldUnit.isHasPromotion(iPromo):
 						NewUnit.setHasPromotion(iPromo, True)
+		NewUnit.setExperience(OldUnit.getExperience(), -1)
+		NewUnit.setLevel(OldUnit.getLevel())
 
 
 def initSupply(pUnit):

@@ -2016,7 +2016,7 @@ class CvEventManager:
 						elif iData2 == 2:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
 						pUnit.finishMoves()
-						pUnit.setImmobileTimer(2)
+						pUnit.setImmobileTimer(3)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
 
@@ -2986,7 +2986,7 @@ class CvEventManager:
 
 				# Einheit soll alles ausladen, wenn besiegt   #pie
 				# Geht nicht, leider wird zuerst das Cargo und dann die Einheit gekillt! Schade!
-				#    if pLoser.getDomainType() == DomainTypes.DOMAIN_LAND and pLoser.hasCargo(): pLoser.doCommand(CommandTypes.COMMAND_UNLOAD_ALL,0,0)
+				#if pLoser.getDomainType() == DomainTypes.DOMAIN_LAND and pLoser.hasCargo(): pLoser.doCommand(CommandTypes.COMMAND_UNLOAD_ALL,0,0)
 
 				if bNavalUnit:
 						# ua. Treibgut erstellen
@@ -3344,8 +3344,14 @@ class CvEventManager:
 						if not CyGame().GetWorldBuilderMode():
 								bShowMovie = True
 
-								# Bronzeschmiede nur zeigen, wenns sonst keine gibt
+								# PAE: Bronzeschmiede nur 1x zeigen
 								if iBuildingType == gc.getInfoTypeForString("BUILDING_SCHMIEDE_BRONZE") and pPlayer.getBuildingClassCount(gc.getInfoTypeForString("BUILDINGCLASS_SCHMIEDE_BRONZE")) > 1:
+										bShowMovie = False
+								# PAE: Waffenschmiede nur 1x zeigen
+								if iBuildingType == gc.getInfoTypeForString("BUILDING_FORGE_WEAPONS") and pPlayer.getBuildingClassCount(gc.getInfoTypeForString("BUILDINGCLASS_FORGE_WEAPONS")) > 1:
+										bShowMovie = False
+								# PAE: Eisenschmiede nur 1x zeigen
+								if iBuildingType == gc.getInfoTypeForString("BUILDING_GUSS_IRON") and pPlayer.getBuildingClassCount(gc.getInfoTypeForString("BUILDINGCLASS_GUSS_IRON")) > 1:
 										bShowMovie = False
 
 								# Wunderfilm abspielen
@@ -4704,7 +4710,7 @@ class CvEventManager:
 												if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUCHSTABEN")):
 
 														iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESSTELE")
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BAUKUNST")):
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")):
 																iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")
 
 														if not pCity.isHasBuilding(iBuilding):
@@ -4989,7 +4995,7 @@ class CvEventManager:
 																if PAE_Christen.convertCity(pCity): bHeresy = True
 
 										# Bei monotheistisch beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
-										if not bHeresy:
+										if not bHeresy and pCity.isHasReligion(iReligion):
 												if PAE_Christen.removePagans(pCity, iReligion): bHeresy = True
 
 				# PAE Provinzcheck

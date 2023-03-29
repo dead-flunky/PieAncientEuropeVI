@@ -891,7 +891,7 @@ In unhealty cities diseases will emerge with a fairly high probability. These ar
 A city conquest brings a research bonus and can even lead to a new technology, if the city has built an archive or a library.
 
 [H1] Building units in conquered cities [\H1]
-In conquered cities it can happen that new units get the status "fight on their own feet". The chance corresponds to the amount of foreign culture.
+In conquered cities it can happen that new units get the status of being "Unreliable". The chance corresponds to the amount of foreign culture.
 
 [H1]Revolting cities[\H1]
 If a city is taken during war, there is a possibility of 33% that its nearest neighbour city will go into revolt.
@@ -1007,7 +1007,7 @@ Se d&#233;clenche dans les villes avec une population de 9 ou plus. L'&#233;pid&
 Une ville conquise apporte un bonus de recherche voire m&#234;me une nouvelle technologie si la ville poss&#232;de une archive ou une biblioth&#232;que.
 
 [H1] Construire des unit&#233;s dans les villes conquises [\H1]
-Dans les villes conquises, il peut arriver que de nouvelles unit&#233;s obtiennent le statut de "combattre de leurs propres ailes". La chance correspond &#224; la quantit&#233; de culture &#233;trang&#232;re.
+Dans les villes conquises, il peut arriver que de nouvelles unit&#233;s obtiennent le statut de "Non fiable". La chance correspond &#224; la quantit&#233; de culture &#233;trang&#232;re.
 
 [H1]R&#233;voltes[\H1]
 Quand une ville est captur&#233;e, il y a une chance de 33% que sa plus proche voisine se r&#233;volte.
@@ -1124,7 +1124,7 @@ In ungesunden St&#228;dten tauchen mit ziemlich gro&#223;er Wahrscheinlichkeit S
 Eine Eroberung einer Stadt bringt einen Forschungsbonus und kann sogar zu einer neuen Technologie f&#252;hren, sofern in der Stadt ein Archiv oder eine Bibliothek steht.
 
 [H1]Einheitenbau in eroberten St&#228;dten[\H1]
-In eroberten St&#228;dten kann es vorkommen, dass neue Einheiten den Status "k&#228;mpft auf eigenen F&#252;&#223;en" bekommen. Die Chance entspricht der H&#246;he der fremden Kultur.
+In eroberten St&#228;dten kann es vorkommen, dass neue Einheiten den Status "Unzuverl&#228;ssig" bekommen. Die Chance entspricht der H&#246;he der fremden Kultur.
 
 [H1]Revoltierende St&#228;dte[\H1]
 [ICON_BULLET] Eine Stadt wird erobert
@@ -1243,7 +1243,7 @@ Nelle citt&#224; malsane immergersi con abbastanza elevata probabilit&#224; di e
 Una cattura di una citt&#224; porta un bonus di ricerca e pu&#242; anche portare ad una nuova tecnologia , se un archivio o biblioteca &#232; in citt&#224; .
 
 [H1] Unit&#224; di costruzione nelle citt&#224; conquistate [\H1]
-Nelle citt&#224; conquistate pu&#242; succedere che nuove unit&#224; ottengano lo status di "combattere con i propri piedi". La possibilit&#224; corrisponde alla quantit&#224; di cultura straniera.
+Nelle citt&#224; conquistate pu&#242; succedere che nuove unit&#224; ottengano lo status di "Inaffidabile". La possibilit&#224; corrisponde alla quantit&#224; di cultura straniera.
 
 [H1] le citt&#224; ribelli [\H1]
 [ICON_BULLET] Una citt&#224; &#232; conquistata
@@ -1362,7 +1362,7 @@ En las ciudades insalubres es m&#225;s probable la aparici&#243;n de epidemias, 
 La conquista de una ciudad conlleva un bonus de investigaci&#243;n e incluso puede llevar a una nueva tecnolog&#237;a, si la ciudad est&#225; provista de un archivo o una biblioteca.
 
 [H1] Construyendo unidades en ciudades conquistadas [\H1]
-En las ciudades conquistadas puede suceder que las nuevas unidades obtengan el estatus de "pelear por s&#237; mismas". La posibilidad corresponde a la cantidad de cultura extranjera.
+En las ciudades conquistadas puede suceder que las nuevas unidades obtengan el estatus de "poco confiable". La posibilidad corresponde a la cantidad de cultura extranjera.
 
 [H1]Revuelta de ciudades[\H1]
 Si una ciudad es conquistada durante la guerra, hay una probabilidad del 33% que una ciudad vecina entre en una revuelta.
@@ -2178,7 +2178,7 @@ La unidad de mercader puede desaparecer o cambiarse al bando b&#225;rbaro.
     <Tag>TXT_KEY_CONCEPT_PROMOTIONS_PEDIA</Tag>
     <English>
 [H1]Promotion system[\H1]
-The promotion system in PAE has been reworked completely. The first level of each terrain specific promotion cannot be achieved by experience points but will be assigned randomly after a fight in this terrain/the training of a unit in a city surrounded by this terrain. Every following promotion level can be reached the same way (apart from the movement promotions), the levels 2 and 3 can also be assigned by experience points (levels 4 and 5 not). The city attack/defence promotions work in the same way; units trained in a provincial city can get city raider I/city garrison I (depending on the unit type) immediately.
+The promotion system in PAE has been reworked completely. The first level of each terrain specific promotion cannot be achieved by experience points but will be assigned randomly after a fight in this terrain/the training of a unit in a city surrounded by this terrain. Every following promotion level can be reached the same way (apart from the movement promotions), the levels 2 and 3 can also be assigned by experience points (levels 4 and 5 not). The city attack/defence promotions work in the same way; units trained in a city can get city raider I/city garrison I (depending on the unit type) immediately.
 The promotions against certain unit types (Shock, Parry etc.) can only be reached in combat against such units.
 
 [H1]Assignment of the promotions[\H1]
@@ -2187,11 +2187,11 @@ The promotions against certain unit types (Shock, Parry etc.) can only be reache
 
 [H2]City attack/defence[\H2]
 
-If a a unit is trained in a provincial city (city size &#62; 10), it will receive the promotion City Raider I (for melee/spear units)/City Garrison I (for archers) with a chance of 5% per population.
+If a a unit is trained in a city, it will receive the promotion City Raider I (for melee/spear units)/City Garrison I (for archers) with a chance of 1% per population.
 
 [H2]Terrain specific promotions[\H2]
 
-There are the following five terrain specific promotions: Forest, hill, swamp, desert, jungle. A unit gets the first level of them (Woodsman I etc.) with a probability of 10%*the number of tiles around the city with this terrain after training. Only the 8 tiles around the city (3x3 square) matter for this fact, the other nine tiles which can be worked are unimportant.
+There are the following five terrain specific promotions: Forest, hill, swamp, desert, jungle. A unit gets the first level of them (Woodsman I etc.) with a probability of 2%*the number of tiles around the city with this terrain after training. Only the 8 tiles around the city (3x3 square) matter for this fact, the other nine tiles which can be worked are unimportant.
 
 
 [H2]Unit specific promotions[\H2]
@@ -2204,7 +2204,7 @@ Example: A city has a population of 6 (city) and is surrounded by
 -) 3 forests
 -) 1 swamp
 -) 4 hills
-Every unit trained in this city has a chance of 3*10% = 30% to get woodsman I, 1*10% = 10% to get swamp fighter I, 4*10% = 40% to get guerilla I and 6*5% = 30% to get city raider I/garrison I. At last one promotion of this pot will be chosen.
+Every unit trained in this city has a chance of 3*2% = 6% to get woodsman I, 1*2% = 2% to get swamp fighter I, 4*2% = 8% to get guerilla I and 6*1% = 6% to get city raider I/garrison I. At last one promotion of this pot will be chosen.
 
 Furthermore, a unit which has reached level V (the last level) of a promotion tree can build special barracks in a city (the unit is sacrificed in the process) so every unit trained in this city will get the first promotion of this kind henceforth. Level V can only be obtained in combat.
 
@@ -2213,28 +2213,23 @@ Units can get promotions which match the fighting circumstances (terrain+enemy) 
 
 [H1]Experience Rank:[\H1]
 PAE includes its own experience system (rank) where certain types can be successively gained automatically in victorious battles. 
-See pedia: Units-Experience Rank
+See pedia: [LINK=CONCEPT_COMBAT3]Units-Experience Rank[\LINK]
 
 [H1]Military Ranks:[\H1]
 PAE also offers a hierarchical military system, which is linked to specific criteria depending on the CIV. 
-See pedia: Units-Military Rank
+See pedia: [LINK=CONCEPT_UNIT_RANKING]Units-Military Rank[\LINK]
 
 
-[H2]Changed promotions with added properties[\H2]
+[H2]Standard promotions[\H2]
 
-[ICON_BULLET] Guerilla III: +25% hill attack
-[ICON_BULLET] Woodsman III: +25% forest attack
-[ICON_BULLET] Barrage I: +20% against melee units
-[ICON_BULLET] Barrage II: +20% against archer units
-[ICON_BULLET] Barrage III: +20% against mounted units
-[ICON_BULLET] Using roads: is like "Commando" (changed name only)
+Many promotions from BTS have been modified, adapted, expanded and partly adapted to the language of antiquity.
 
 [H2]New promotions:[\H2]
 
 [ICON_BULLET] Pillage: +100% gold with pillaging
 [ICON_BULLET] Ambush: +25% hill- and forest defense
 [ICON_BULLET] Allegiance: Unit can not renegade. Higher chance of conquering defecting units.
-[ICON_BULLET] Fights on his own: -20% strength, makes Allegiance less effective, increases the chance of defecting
+[ICON_BULLET] Unreliable: -20% strength, makes Allegiance less effective, increases the chance of defecting
 [ICON_BULLET] Withdrawal tactics: +30% withdrawal chance
 [ICON_BULLET] Tactics: +2 first strikes
 [ICON_BULLET] Camouflage: 50% less collateral damage, +25% forest defense
@@ -2255,7 +2250,7 @@ To provide a land unit with a noble armor, you have to move the unit into a city
 To provide a sea unit with shaft (calming) oil, you have to move the unit into a city, that has access to olives. You will see a button in the action button bar of the unit and with enough gold, the promotion can be purchased.
 
 
-[H2]Mercenaries or "Fighting on his own"[\H2]
+[H2]Mercenaries or "Unreliable" units[\H2]
 
 This promotion is used in units which are hired in mercenary posts. Those units are cheap in its purchase, but they have an increased chance (1:3) to defect to the enemy.
 
@@ -2266,7 +2261,7 @@ Units can be blessed in cities with a Christian cathedral or the Hagia Sophia. U
     </English>
     <French>
 [H1]Syst&#232;me de promotions[\H1]
-Le syst&#232;me de promotions a &#233;t&#233; revu enti&#232;rement dans PAE. Le premier niveau de chaque promotion de terrain ne peut pas &#234;tre acquis par exp&#233;rience, mais sera assign&#233; al&#233;atoirement &#224; la cr&#233;ation de l'unit&#233; dans une ville entour&#233;e par ce terrain, ou lors d'un combat sur ce terrain. Chaque promotion suivante peut &#234;tre acquise de la m&#234;me mani&#232;re (sauf le mouvement), les niveaux 2 et 3 peuvent aussi &#234;tre achet&#233;s avec de l'exp&#233;rience. Les promotions d'attaque et de d&#233;fense de ville fonctionnent de la m&#234;me mani&#232;re : les unit&#233;s produites dans une ville provinciale peuvent acqu&#233;rir l'attaque ou la d&#233;fense de ville imm&#233;diatement, selon leur type.
+Le syst&#232;me de promotions a &#233;t&#233; revu enti&#232;rement dans PAE. Le premier niveau de chaque promotion de terrain ne peut pas &#234;tre acquis par exp&#233;rience, mais sera assign&#233; al&#233;atoirement &#224; la cr&#233;ation de l'unit&#233; dans une ville entour&#233;e par ce terrain, ou lors d'un combat sur ce terrain. Chaque promotion suivante peut &#234;tre acquise de la m&#234;me mani&#232;re (sauf le mouvement), les niveaux 2 et 3 peuvent aussi &#234;tre achet&#233;s avec de l'exp&#233;rience. Les promotions d'attaque et de d&#233;fense de ville fonctionnent de la m&#234;me mani&#232;re : les unit&#233;s produites dans une ville peuvent acqu&#233;rir l'attaque ou la d&#233;fense de ville imm&#233;diatement, selon leur type.
 
 Les promotions contre un certain type d'unit&#233; ne peuvent &#234;tre gagn&#233;es qu'en combattant contre ces unit&#233;s.
 
@@ -2276,11 +2271,11 @@ Les promotions contre un certain type d'unit&#233; ne peuvent &#234;tre gagn&#23
 
 [H2]Attaque et d&#233;fense de ville[\H2]
 
-Si une unit&#233; est produite dans une ville provinciale (population >10), elle recevra la promotion d'attaque de ville I (pour les unit&#233;s de corps &#224; corps et de lances) ou de d&#233;fense de ville I (pour les archers), avec une chance de 5% par population.
+Si une unit&#233; est produite dans une ville, elle recevra la promotion d'attaque de ville I (pour les unit&#233;s de corps &#224; corps et de lances) ou de d&#233;fense de ville I (pour les archers), avec une chance de 1% par population.
 
 [H2]Promotions de terrain[\H2]
 
-Il y a cinq lignes de promotions de terrain : for&#234;t, colline, marais, d&#233;sert, jungle. Une unit&#233; peut gagner le premier niveau &#224; sa production avec une probabilit&#233; de 10% * nombre de case de ce terrain autour de la ville. Seules les 8 cases juste autour de la ville sont compt&#233;es.
+Il y a cinq lignes de promotions de terrain : for&#234;t, colline, marais, d&#233;sert, jungle. Une unit&#233; peut gagner le premier niveau &#224; sa production avec une probabilit&#233; de 2% * nombre de case de ce terrain autour de la ville. Seules les 8 cases juste autour de la ville sont compt&#233;es.
 
 [H2]Promotions li&#233;es aux unit&#233;s[\H2]
 
@@ -2292,10 +2287,10 @@ Par exemple pour une ville de taille 6 entour&#233;e par :
 - 1 marais
 - 4 collines
 Chaque unit&#233; produite dans la ville a les chances suivantes de promotion :
-- 3 * 10% pour forestier I
-- 1 * 10% pour combattant des marais I
-- 4 * 10% pour gu&#233;rilla
-- 6*5% pour attaquant ou d&#233;fenseur de villes I
+- 3 * 2% pour forestier I
+- 1 * 2% pour combattant des marais I
+- 4 * 2% pour gu&#233;rilla
+- 6 * 1% pour attaquant ou d&#233;fenseur de villes I
 Au moins une promotion sera choisie.
 
 Par ailleurs une unit&#233; qui atteint le niveau V (le dernier) d'une ligne de promotions peut construire un b&#226;timent sp&#233;cial dans la ville (cela d&#233;truira l'unit&#233;), qui donnera dans tous les cas la premi&#232;re promotion aux unit&#233;s produites dans la ville. Le niveau V ne peut &#234;tre obtenu qu'en combat.
@@ -2306,26 +2301,21 @@ Apr&#232;s le combat l'unit&#233; a une premi&#232;re chance de 30% de gagner un
 
 [H1]Rang d'exp&#233;rience :[\H1]
 PAE a son propre syst&#232;me de rang, qui avance automatiquement apr&#232;s une victoire. 
-Voir Unit&#233;s-Rang d'exp&#233;rience
+Voir [LINK=CONCEPT_COMBAT3]Unit&#233;s-Rang d'exp&#233;rience[\LINK]
 
 [H1]Grades militaires[\H1]
-Une hi&#233;rarchie militaire est &#233;galement ajout&#233;e par PAE. Ses caract&#233;ristiques diff&#232;rent pour chaque civilisation jou&#233;e. Voir : Unit&#233;s-grade militaire
+Une hi&#233;rarchie militaire est &#233;galement ajout&#233;e par PAE. Ses caract&#233;ristiques diff&#232;rent pour chaque civilisation jou&#233;e. Voir : [LINK=CONCEPT_UNIT_RANKING]Unit&#233;s-grade militaire[\LINK]
 
-[H2]Promotions modifi&#233;es (uniquement la diff&#233;rence)[\H2]
+[H2]Promotions standards[\H2]
 
-[ICON_BULLET] Gu&#233;rilla III : +25% d'attaque de colline
-[ICON_BULLET] Forestier III : +25% d'attaque de for&#234;t
-[ICON_BULLET] Barrage I : +20% contre les unit&#233;s de combat rapproch&#233;
-[ICON_BULLET] Barrage II : +20% contre les unit&#233;s &#233;quip&#233;es d'un arc
-[ICON_BULLET] Barrage III : +20% contre les unit&#233;s mont&#233;es
-[ICON_BULLET] Utilisation des routes : Equivalent de la promotion Commando
+De nombreuses promotions de BTS ont &#233;t&#233; modifi&#233;es, adapt&#233;es, &#233;largies et en partie adapt&#233;es au langage de l'antiquit&#233;.
 
 [H2]Nouvelles promotions[\H2]
 
 [ICON_BULLET] Maraudeur I : +100% [ICON_GOLD] lors des pillages
 [ICON_BULLET] Embuscade : +25% en d&#233;fense sur une case de for&#234;t ou colline
 [ICON_BULLET] All&#233;geance : l'unit&#233; ne peut d&#233;serter, chances accrues de capturer une unit&#233; ennemie
-[ICON_BULLET] Chacun pour soi : 20% de force en moins, rend all&#233;geance moins efficace, plus de chance de trahir
+[ICON_BULLET] Non fiable : 20% de force en moins, rend all&#233;geance moins efficace, plus de chance de trahir
 [ICON_BULLET] Tactiques de repli : Chances de repli +30%
 [ICON_BULLET] Tactiques : +2 premi&#232;res attaques
 [ICON_BULLET] Camouflage: D&#233;g&#226;ts collat&#233;raux r&#233;duits de 50%, +25% en d&#233;fense sur une case de for&#234;t
@@ -2352,7 +2342,7 @@ Pour &#233;quiper une unit&#233; navale d'une coque huil&#233;e, vous devez la d
 
 La promotion co&#251;tera (en [ICON_GOLD]) l'&#233;quivalent du co&#251;t de production ([ICON_PRODUCTION]) de l'unit&#233;.
 
-[H2]Mercenaires ou "Chacun pour soi"[\H2]
+[H2]Mercenaires ou "Non fiable"[\H2]
 
 Cette promotion concerne les unit&#233;s achet&#233;es dans les postes de mercenaires. Ces unit&#233;s sont peu ch&#232;res &#224; acheter, mais elles ont plus de chance (3*) de passer &#224; l'ennemi apr&#232;s une d&#233;faite.
 
@@ -2363,7 +2353,7 @@ Les unit&#233;s peuvent recevoir la b&#233;n&#233;diction dans les villes qui ab
     </French>
     <German>
 [H1]Bef&#246;rderungssystem[\H1]
-Das Bef&#246;rderungssystem in PAE wurde komplett &#252;berarbeitet. Die erste Stufe jeder gel&#228;ndespezifischen Bef&#246;rderung kann nicht mehr &#252;ber Erfahrungspunkte erhalten werden, sondern wird zuf&#228;llig nach einem Kampf in diesem Gel&#228;nde oder bei der Ausbildung einer Einheit, wenn sich dieses Gel&#228;nde um die Stadt herum befindet, vergeben. Die Stufen 2 und 3 k&#246;nnen ebenso durch einen Kampf erreicht, aber auch normal &#252;ber Erfahrungspunkte vergeben werden, nur die letzten beiden Stufen 4 und 5 k&#246;nnen nur nach einem Kampf erhalten werden (die Bef&#246;rderungen f&#252;r zus&#228;tzliche Bewegung in bestimmten Gebieten sind nur &#252;ber Erfahrungspunkte zu erhalten). Die Bef&#246;rderungen Stadtangriff/-verteidigung werden genauso nach Stadtk&#228;mpfen vergeben; in einer Provinzstadt ausgebildete Einheiten k&#246;nnen von Beginn an die Bef&#246;rderung Hauserkampf I/Garnison I (je nach Einheitentyp) besitzen.
+Das Bef&#246;rderungssystem in PAE wurde komplett &#252;berarbeitet. Die erste Stufe jeder gel&#228;ndespezifischen Bef&#246;rderung kann nicht mehr &#252;ber Erfahrungspunkte erhalten werden, sondern wird zuf&#228;llig nach einem Kampf in diesem Gel&#228;nde oder bei der Ausbildung einer Einheit, wenn sich dieses Gel&#228;nde um die Stadt herum befindet, vergeben. Die Stufen 2 und 3 k&#246;nnen ebenso durch einen Kampf erreicht, aber auch normal &#252;ber Erfahrungspunkte vergeben werden, nur die letzten beiden Stufen 4 und 5 k&#246;nnen nur nach einem Kampf erhalten werden (die Bef&#246;rderungen f&#252;r zus&#228;tzliche Bewegung in bestimmten Gebieten sind nur &#252;ber Erfahrungspunkte zu erhalten). Die Bef&#246;rderungen Stadtangriff/-verteidigung werden genauso nach Stadtk&#228;mpfen vergeben; in einer Stadt ausgebildete Einheiten k&#246;nnen von Beginn an die Bef&#246;rderung Hauserkampf I/Garnison I (je nach Einheitentyp) besitzen.
 Auch die Bef&#246;rderungen gegen bestimmte Einheitentypen (Schock, Deckung etc.) k&#246;nnen nur durch K&#228;mpfe gegen solche Einheiten erreicht werden, Navigation I (f&#252;r Schiffe) kann nun auch zuf&#228;llig beim Bau eines Schiffes vergeben werden (neben der M&#246;glichkeit &#252;ber Erfahrungspunkte).
 
 [H1]Vergabe der Bef&#246;rderungen[\H1]
@@ -2372,11 +2362,11 @@ Auch die Bef&#246;rderungen gegen bestimmte Einheitentypen (Schock, Deckung etc.
 
 [H2]Stadtangriff/-verteidigung[\H2]
 
-Wird eine Einheit in einer Provinzstadt (Stadtgr&#246;&#223;e &#62; 10) ausgebildet, erh&#228;lt sie mit einer Wahrscheinlichkeit von 5% pro Population die Bef&#246;rderung H&#228;userkampf I (f&#252;r Nahk&#228;mpfer/Speertr&#228;ger)/Garnison I (f&#252;r Bogensch&#252;tzen).
+Wird eine Einheit in einer Stadt ausgebildet, erh&#228;lt sie mit einer Wahrscheinlichkeit von 1% pro Population die Bef&#246;rderung H&#228;userkampf I (f&#252;r Nahk&#228;mpfer/Speertr&#228;ger)/Garnison I (f&#252;r Bogensch&#252;tzen).
 
 [H2]Gel&#228;ndespezifische Bef&#246;rderungen[\H2]
 
-Es gibt folgende f&#252;nf gel&#228;ndespezifische Bef&#246;rderungen: Wald, H&#252;gel, Sumpf, W&#252;ste, Dschungel. Bei Ausbildung einer Einheit gibt es pro Feld um die Stadt mit dieser Gel&#228;ndeart eine Wahrscheinlichkeit von 10%, dass die neue Einheit die entsprechende Bef&#246;rderung (Stufe I) erh&#228;lt. Schiffe haben statt diesen Bef&#246;rderungen pro K&#252;stenfeld der Stadt eine Chance von 20% auf Navigation I. F&#252;r alle Berechnungen z&#228;hlen nicht alle 20 Felder, die die Stadt bearbeiten kann, sondern nur die direkt an die Stadt grenzenden (3x3-Quadrat).
+Es gibt folgende f&#252;nf gel&#228;ndespezifische Bef&#246;rderungen: Wald, H&#252;gel, Sumpf, W&#252;ste, Dschungel. Bei Ausbildung einer Einheit gibt es pro Feld um die Stadt mit dieser Gel&#228;ndeart eine Wahrscheinlichkeit von 2%, dass die neue Einheit die entsprechende Bef&#246;rderung (Stufe I) erh&#228;lt. Schiffe haben statt diesen Bef&#246;rderungen pro K&#252;stenfeld der Stadt eine Chance von 20% auf Navigation I. F&#252;r alle Berechnungen z&#228;hlen nicht alle 20 Felder, die die Stadt bearbeiten kann, sondern nur die direkt an die Stadt grenzenden (3x3-Quadrat).
 
 
 [H2]Einheitenspezifische Bef&#246;rderungen[\H2]
@@ -2389,7 +2379,7 @@ Beispiel: Eine Stadt hat Pop 6 (Stadt), im Stadtgebiet befinden sich
 -) 3 W&#228;lder
 -) 1 Sumpf
 -) 4 H&#252;gel
-Jede neu ausgebildete Einheit hat eine Chance von 3*10% = 30% auf Waldkampf I, 1*10% = 10% auf Sumpfkampf I, 4*10% = 40% auf Guerilla I und 6*5% = 30% auf H&#228;userkampf I/Garnison I. Zuletzt wird dann eine Bef&#246;rderung aus diesem Pot ausgew&#228;hlt.
+Jede neu ausgebildete Einheit hat eine Chance von 3*2% = 6% auf Waldkampf I, 1*2% = 2% auf Sumpfkampf I, 4*2% = 8% auf Guerilla I und 6*1% = 6% auf H&#228;userkampf I/Garnison I. Zuletzt wird dann eine Bef&#246;rderung aus diesem Pot ausgew&#228;hlt.
 
 Au&#223;erdem kann eine Einheit, die Stufe V in einem Bef&#246;rderungsbaum erreicht hat, in einer Stadt ein Ausbildungsgeb&#228;ude errichten (die Einheit wird dabei geopfert), sodass alle neu ausgebildeten Einheiten in dieser Stadt fix die erste Bef&#246;rderung dieser Bef&#246;rderungsart erhalten. Stufe V Bef&#246;rderungen k&#246;nnen nur im Kampf erhalten werden.
 
@@ -2398,28 +2388,23 @@ Nach einem Kampf (auch wenn der Gegner/man selbst flieht) kann man zuf&#228;llig
 
 [H1]Erfahrungsrang:[\H1]
 PAE beinhaltet ein eigenes Erfahrungssystem, wo bestimmte Bef&#246;rderungen nacheinander automatisch im siegreichen Kampf dazugewonnen werden k&#246;nnen. 
-Siehe Pedia: Einheiten-Erfahrungsrang 
+Siehe [LINK=CONCEPT_COMBAT3]Einheiten-Erfahrungsrang[\LINK]
 
 [H1]Milit&#228;rr&#228;nge:[\H1]
 PAE bietet zus&#228;tzlich ein hierarchisches Milit&#228;rrangsystem, das je nach Volk an bestimmte Kriterien verkn&#252;pft ist. 
-Siehe Pedia: Einheiten-Milit&#228;rrang
+Siehe [LINK=CONCEPT_UNIT_RANKING]Einheiten-Milit&#228;rrang[\LINK]
 
 
-[H2]Abge&#228;nderte Bef&#246;rderungen mit zus&#228;tzlichen Eigenschaften:[\H2]
+[H2]Standard Bef&#246;rderungen:[\H2]
 
-[ICON_BULLET] Guerilla III: +25% H&#252;gelangriff
-[ICON_BULLET] Waldkampf III: +25% Waldangriff
-[ICON_BULLET] Sperrfeuer I: +20% gegen Nahkampf
-[ICON_BULLET] Sperrfeuer II: +20% gegen Bogensch&#252;tzen
-[ICON_BULLET] Sperrfeuer III: +20% gegen Berittene Einheiten
-[ICON_BULLET] Stra&#223;ennutzung: entspricht "Kommando" (nur umbenannt)
+Viele Bef&#246;rderungen aus BTS sind abge&#228;ndert, angepasst, erweitert und teilweise der Antike sprachlich angepasst.
 
 [H2]Neue Bef&#246;rderungen:[\H2]
 
 [ICON_BULLET] Brandschatzen: +100% Gold durch Pl&#252;nderung
 [ICON_BULLET] Hinterhalt: +25% H&#252;gel- und Waldverteidigung
 [ICON_BULLET] Loyalit&#228;t: Einheit wird nicht abtr&#252;nnig. Erh&#246;ht die Chance abtr&#252;nnige Einheiten zu erhalten.
-[ICON_BULLET] K&#228;mpft auf eigenen F&#252;&#223;en: -20% St&#228;rke, macht Loyalit&#228;t unwirksamer, erh&#246;ht die Chance &#252;berzulaufen.
+[ICON_BULLET] Unzuverl&#228;ssig: -20% St&#228;rke, macht Loyalit&#228;t unwirksamer, erh&#246;ht die Chance &#252;berzulaufen.
 [ICON_BULLET] R&#252;ckzugstaktik: +30% R&#252;ckzugswahrscheinlichkeit
 [ICON_BULLET] Taktik: +2 Erstangriffe
 [ICON_BULLET] Tarnung: 50% weniger Kollateralschaden, +25% Waldverteidigung
@@ -2440,7 +2425,7 @@ Um eine Landeinheit mit einer Edlen R&#252;stung auszustatten, muss man die Einh
 Um eine Seeeinheit mit Wellen(beruhigungs)&#246;l auszustatten, muss man die Einheit in eine Stadt ziehen, die Zugang zu Oliven hat. Es erscheint ein Button in der Aktionsbutton-Leiste der Einheit und mit ausreichend Gold, kann die Bef&#246;rderung gekauft werden.
 
 
-[H2]S&#246;ldner bzw. "K&#228;mpft auf eigenen F&#252;&#223;en"[\H2]
+[H2]S&#246;ldner bzw. "unzuverl&#228;ssige" Einheiten[\H2]
 
 Diese Bef&#246;rderung erhalten Einheiten, die &#252;ber den S&#246;ldnerposten angeheuert werden. Diese Einheiten sind billig in ihrer Anschaffung, jedoch haben sie eine erh&#246;hte Chance (1:3) bei einer Niederlage &#252;berzulaufen.
 
@@ -2451,7 +2436,7 @@ Einheiten k&#246;nnen sich in St&#228;dten mit einer christlichen Kathedrale ode
     </German>
     <Italian>
 [H1] sistema di trasporto [\H1]
-Il sistema di trasporto in PAE &#232; stato completamente ridisegnato . La prima fase di ogni site-specific consegna di sviluppo non pu&#242; pi&#249; essere ottenuto tramite punti esperienza , ma &#232; casualmente dopo una lotta in questo settore o nella formazione di una unit&#224; quando questo sito &#232; intorno alla citt&#224; , perdonare. Fasi 2 e 3 possono anche raggiunto da una lotta , ma anche essere assegnato punti esperienza normali , solo le ultime due fasi 4 e 5 pu&#242; essere ottenuto solo dopo una lotta ( le promozioni per il movimento supplementare in alcune aree possono essere ottenuti solo attraverso i punti esperienza ) . Attacco Trasporti Citt&#224; / difesa sar&#224; assegnato lo stesso combattimento citt&#224;, addestrato in una unit&#224; cittadina di provincia dall'inizio alla lotta trasporti Hauser I / Garrison I ( a seconda del tipo di unit&#224; ) possedere.
+Il sistema di trasporto in PAE &#232; stato completamente ridisegnato . La prima fase di ogni site-specific consegna di sviluppo non pu&#242; pi&#249; essere ottenuto tramite punti esperienza , ma &#232; casualmente dopo una lotta in questo settore o nella formazione di una unit&#224; quando questo sito &#232; intorno alla citt&#224; , perdonare. Fasi 2 e 3 possono anche raggiunto da una lotta , ma anche essere assegnato punti esperienza normali , solo le ultime due fasi 4 e 5 pu&#242; essere ottenuto solo dopo una lotta ( le promozioni per il movimento supplementare in alcune aree possono essere ottenuti solo attraverso i punti esperienza ) . Attacco Trasporti Citt&#224; / difesa sar&#224; assegnato lo stesso combattimento citt&#224;, addestrato in una unit&#224; cittadina dall'inizio alla lotta trasporti Hauser I / Garrison I ( a seconda del tipo di unit&#224; ) possedere.
 La carrozza contro alcuni tipi di unit&#224; ( urti, copertura , ecc ) pu&#242; essere raggiunto solo mediante la lotta contro tali unit&#224; , di navigazione I ( per navi ) possono ora anche essere assegnato in modo casuale nella costruzione di una nave ( oltre alla possibilit&#224; di punti esperienza ) .
 
 [H1] concessione di promozioni [\H1]
@@ -2460,11 +2445,11 @@ La carrozza contro alcuni tipi di unit&#224; ( urti, copertura , ecc ) pu&#242; 
 
 [H2] attacco citt&#224; / difesa [\H2]
 
-Se un'unit&#224; &#232; formata in una citt&#224; di provincia ( la dimensione della citt&#224; &#62; 10) , si &#232; dato con una probabilit&#224; del 5% della popolazione casa di trasporto di combattimento I ( per il corpo a corpo / Spearman ) / Garrison I ( per gli arcieri ) .
+Se un'unit&#224; &#232; formata in una citt&#224; , si &#232; dato con una probabilit&#224; del 1% della popolazione casa di trasporto di combattimento I ( per il corpo a corpo / Spearman ) / Garrison I ( per gli arcieri ) .
 
 [H2]Promozioni specifiche del sito [\H2]
 
-Ci sono cinque specifici motivi Promozioni: foreste , colline, paludi , deserto, giungla . Quando si forma una unit&#224; , c'&#232; per casella intorno alla citt&#224; con questo tipo di terreno con una probabilit&#224; del 10 % che la nuova unit&#224; riceve il trasporto corrispondente ( fase I) . Le navi hanno preso tale trasporto per area costiera della citt&#224; ha una probabilit&#224; del 20 % alla navigazione I. Per tutti i calcoli non includono tutti i 20 campi che possono modificare la citt&#224; , ma solo il bordo direttamente alla citt&#224; ( 3x3 ) .
+Ci sono cinque specifici motivi Promozioni: foreste , colline, paludi , deserto, giungla . Quando si forma una unit&#224; , c'&#232; per casella intorno alla citt&#224; con questo tipo di terreno con una probabilit&#224; del 2 % che la nuova unit&#224; riceve il trasporto corrispondente ( fase I) . Le navi hanno preso tale trasporto per area costiera della citt&#224; ha una probabilit&#224; del 20 % alla navigazione I. Per tutti i calcoli non includono tutti i 20 campi che possono modificare la citt&#224; , ma solo il bordo direttamente alla citt&#224; ( 3x3 ) .
 
 
 [H2]Promozioni specifica dell'unit&#224;[\H2]
@@ -2477,7 +2462,7 @@ Esempio : Una citt&#224; &#232; Pop 6 ( City) , nell'area urbana sono
 -) 3 legni
 -) 1 Swamp
 -) 4 hill
-Ogni unit&#224; di nuova costituzione ha una probabilit&#224; del 3 * 10 % = 30 % di foresta lotta che , 1 * 10 % = 10 % di sommergere lotta che , 4 * 10 % = 40 % di guerriglia I e 6 * 5 % = 30 % a casa di combattimento I. I / presidio scorso una promozione di questo piatto viene quindi selezionato .
+Ogni unit&#224; di nuova costituzione ha una probabilit&#224; del 3 * 2% = 6% di foresta lotta che , 1 * 2% = 2% di sommergere lotta che , 4 * 2% = 8% di guerriglia I e 6 * 1 % = 6% a casa di combattimento I. I / presidio scorso una promozione di questo piatto viene quindi selezionato .
 
 Inoltre , una unit&#224; che ha raggiunto la fase V in un albero carrozza , costruire un edificio formazione in una citt&#224; ( l'unit&#224; viene cos&#236; sacrificato ) in modo che tutte le unit&#224; appena formati in questa citt&#224; fissano ottenere la prima promozione di questo modo di trasporto . Il livello V pu&#242; essere ottenuto solo in combattimento.
 
@@ -2486,28 +2471,23 @@ Dopo una lotta (anche se l'avversario / uomo si fugge ) si pu&#242; combattere i
 
 [H1] Classifica Esperienza: [\H1]
 PAE ha un sistema di un'esperienza privata ( Rank) , in cui alcuni tipi possono essere successivamente acquisita automaticamente nella battaglia vittoriosa . 
-Vedere Unit&#224;: Classifica Esperienza
+Vedere [LINK=CONCEPT_COMBAT3]Unit&#224;: Classifica Esperienza[\LINK]
 
 [H1]Military Ranks:[\H1]
-PAE also offers a hierarchical military system, which is linked to specific criteria depending on the CIV. 
-See pedia: Units-Military Rank
+PAE offre anche un sistema militare gerarchico, che &#232; legato a criteri specifici dipendenti dal CIV.
+Vedere [LINK=CONCEPT_UNIT_RANKING]Unit&#224;-grado militare[\LINK]
 
 
-[H2] promozioni modificati con funzionalit&#224; aggiuntive : [\H2]
+[H2] Promozioni standard : [\H2]
 
-[ICON_BULLET] Guerilla III : +25 % colline attacco
-[ICON_BULLET] Woodsman III : +25 % attacco foresta
-[ICON_BULLET] sbarramento I: +20 % contro il corpo a corpo
-[ICON_BULLET] Barrage II : +20 % contro arcieri
-[ICON_BULLET] Barrage III : +20 % vs Montato unit&#224;
-[ICON_BULLET] road : equivalente a " comando" (appena rinominato )
+Molte promozioni dei BTS sono state modificate, adattate, ampliate e in parte adattate al linguaggio dell'antichit&#224;.
 
 [H2] Nuovi Promozioni: [\H2]
 
 [ICON_BULLET] saccheggio : +100 % di oro da saccheggi
 [ICON_BULLET] Agguato : +25 % colline e la difesa delle foreste
 [ICON_BULLET] Fedelt&#224; : unit&#224; non &#232; difettoso . Aumenta la possibilit&#224; di ottenere unit&#224; rinnegato.
-[ICON_BULLET] Combatti sui propri piedi : forza -20 % , lealt&#224; rende inefficace , aumenta la probabilit&#224; di traboccante .
+[ICON_BULLET] Inaffidabile : forza -20 % , lealt&#224; rende inefficace , aumenta la probabilit&#224; di traboccante .
 [ICON_BULLET] La tattica di ritirata : +30 % di possibilit&#224; di recesso
 [ICON_BULLET] Tactics : due primi scioperi
 [ICON_BULLET] camouflage : danno 50% in meno collaterale , +25 % foresta difesa
@@ -2528,7 +2508,7 @@ Per equipaggiare una unit&#224; di terra con una nobile armatura, dovete tirare 
 Per equipaggiare una unit&#224; navale con le onde ( sedativi ) olio , dovete tirare l'unit&#224; in una citt&#224; che ha accesso alle olive . Si vedr&#224; un pulsante il pulsante della barra dell'unit&#224; di azione e con abbastanza oro , il carrello pu&#242; essere comprato .
 
 
-[H2]Mercenari o "Fight sulle proprie gambe " [\H2]
+[H2]Mercenari o unit&#224; "inaffidabili"[\H2]
 
 Questa promozione ricever&#224; le unit&#224; che vengono assunti sul palo mercenario . Queste unit&#224; sono poco costosi da acquistare, ma hanno eseguito una maggiore probabilit&#224; ( 1,3) in perdita .
 
@@ -2536,7 +2516,7 @@ Unit&#224; ( non &#232; proprietario fondatore della citt&#224; ) sono creati ch
     </Italian>
     <Spanish>
 [H1]Sistema de ascensos[\H1]
-El sistema de ascensos en PAE ha sido revisado completamente. El primer nivel de cada ascenso espec&#237;fico de terreno no puede ser adquirido por puntos de experiencia sino que ser&#225;n asignados aleatoriamente despu&#233;s de un combate en ese terreno o del entrenamiento de una unidad en una ciudad rodeada por ese terreno. Cada uno de los siguientes niveles de los ascensos pueden ser adquiridos de la misma manera (sin contar los ascensos de movimiento), los niveles 2 y 3 pueden ser tambi&#233;n asignados por puntos de experiencia (los niveles 4 y 5 no). Los ascensos de ataque/defensa de la ciudad funcionan de la misma forma; las unidades entrenadas en una ciudad provincial pueden adquirir asalto de ciudades I/guarnici&#243;n de ciudad I (dependiendo del tipo de unidad) inmediatamente.
+El sistema de ascensos en PAE ha sido revisado completamente. El primer nivel de cada ascenso espec&#237;fico de terreno no puede ser adquirido por puntos de experiencia sino que ser&#225;n asignados aleatoriamente despu&#233;s de un combate en ese terreno o del entrenamiento de una unidad en una ciudad rodeada por ese terreno. Cada uno de los siguientes niveles de los ascensos pueden ser adquiridos de la misma manera (sin contar los ascensos de movimiento), los niveles 2 y 3 pueden ser tambi&#233;n asignados por puntos de experiencia (los niveles 4 y 5 no). Los ascensos de ataque/defensa de la ciudad funcionan de la misma forma; las unidades entrenadas en una ciudad pueden adquirir asalto de ciudades I/guarnici&#243;n de ciudad I (dependiendo del tipo de unidad) inmediatamente.
 Los ascensos contra tipos de unidad (Choque, parar, etc.) solo pueden ser adquiridos en combate contra tales unidades.
 
 [H1]Asignaci&#243;n de los ascensos[\H1]
@@ -2545,11 +2525,11 @@ Los ascensos contra tipos de unidad (Choque, parar, etc.) solo pueden ser adquir
 
 [H2]Ataque/defensa de la unidad[\H2]
 
-Si la unidad es entrenada en una ciudad provincial (tama&#241;o de la ciudad &#62; 10), recibir&#225; el ascenso asalto de ciudades I (para unidades cuerpo a cuerpo / unidades con lanza) o guarnici&#243;n de ciudad I (para arqueros) con una probabilidad del 5% por poblaci&#243;n.
+Si la unidad es entrenada en una ciudad, recibir&#225; el ascenso asalto de ciudades I (para unidades cuerpo a cuerpo / unidades con lanza) o guarnici&#243;n de ciudad I (para arqueros) con una probabilidad del 1% por poblaci&#243;n.
 
 [H2]Ascensos espec&#237;ficos de terreno[\H2]
 
-Hay los siguientes cinco ascensos espec&#237;ficos de terreno: Bosque, colina, pantano, desierto, selva. Una unidad obtiene el primer nivel de ellos (Montaraz I, etc.) con una probabilidad del 10% * el n&#250;mero de casillas alrededor de la ciudad con ese terreno despu&#233;s de entrenarla. S&#243;lo las 8 casillas alrededor de la ciudad (el cuadrado de 3x3) importan para este hecho, las otras nueve casillas que pueden ser trabajadas no son importantes.
+Hay los siguientes cinco ascensos espec&#237;ficos de terreno: Bosque, colina, pantano, desierto, selva. Una unidad obtiene el primer nivel de ellos (Montaraz I, etc.) con una probabilidad del 2% * el n&#250;mero de casillas alrededor de la ciudad con ese terreno despu&#233;s de entrenarla. S&#243;lo las 8 casillas alrededor de la ciudad (el cuadrado de 3x3) importan para este hecho, las otras nueve casillas que pueden ser trabajadas no son importantes.
 
 [H2]Ascensos espec&#237;ficos de unidad[\H2]
 
@@ -2561,7 +2541,7 @@ En teor&#237;a, una nueva unidad entrenada puede obtener cada uno de estos ascen
 -) 1 pantano
 -) 4 colinas
 
-Cada unidad entrenada en esta ciudad tiene una probabilidad del 3 * 10% = 30% para obtener montaraz I, 1 * 10% = 10% para obtener luchador de los pantanos I, 4 * 10% = 40% para obtener guerrilla I y 6 * 5% = 30% para obtener asalto de ciudades I / guarnici&#243;n de ciudades I. Al final un ascenso de esta amalgama ser&#225; elegido.
+Cada unidad entrenada en esta ciudad tiene una probabilidad del 3 * 2% = 6% para obtener montaraz I, 1 * 2% = 2% para obtener luchador de los pantanos I, 4 * 2% = 8% para obtener guerrilla I y 6 * 1% = 6% para obtener asalto de ciudades I / guarnici&#243;n de ciudades I. Al final un ascenso de esta amalgama ser&#225; elegido.
 
 Es m&#225;s, una unidad que ha llegado al nivel V (el &#250;ltimo nivel) de un &#225;rbol de ascensos puede construir unos cuarteles especiales en una ciudad (la unidad es sacrificada en el proceso), as&#237; cada unidad entrenada en esta ciudad obtendr&#225; el primer ascenso de este tipo a partir de ahora. El nivel V solo se puede obtener en combate.
 
@@ -2570,28 +2550,23 @@ Las unidades pueden obtener ascensos que igualen las circunstancias de la lucha 
 
 [H1]Rango experiencia:[\H1]
 PAE incluye su propio sistema de experiencia (rangos) donde pueden ser ganados ciertos tipos sucesivamente en los combates victoriosos. 
-Ver Unidades: Rango experiencia
+Ver [LINK=CONCEPT_COMBAT3]Unidades: Rango experiencia[\LINK]
 
 [H1]Rangos militares:[\H1]
 PAE tambi&#233;n ofrece un sistema jer&#225;rquico militar, el cual es remitido a criterios espec&#237;ficos seg&#250;n la civilizaci&#243;n. 
-Mirar pedia: Unidades-Rangos militares
+Ver [LINK=CONCEPT_UNIT_RANKING]Unidades-Rangos militares[\LINK]
 
 
-[H2]Ascensos cambiados con nuevas bonificaciones:[\H2]
+[H2]Promociones est&#225;ndar:[\H2]
 
-[ICON_BULLET] Guerrilla III: +25% al atacar en colinas
-[ICON_BULLET] Montaraz III: +25% al atacar en bosques
-[ICON_BULLET] Cortina de fuego I: +20% contra unidades cuerpo a cuerpo
-[ICON_BULLET] Cortina de fuego II: +20% contra unidades de proyectil
-[ICON_BULLET] Cortina de fuego III: +20% contra unidades montadas
-[ICON_BULLET] Uso de caminos: es como el ascenso "Comando" (s&#243;lo se le ha cambiado el nombre)
+Muchas promociones de BTS han sido modificadas, adaptadas, ampliadas y parcialmente adaptadas al lenguaje de la antig&#252;edad.
 
 [H2]Nuevos ascensos:[\H2]
 
 [ICON_BULLET] Saqueador: +100% de oro en los saqueos
 [ICON_BULLET] Emboscada: +25% a la defensa en bosques y colinas. 
 [ICON_BULLET] Lealtad: La unidad no puede desertar. Mayor posibilidad de sojuzgar unidades desertoras.
-[ICON_BULLET] Lucha por su cuenta: -20% a la fuerza, haciendo lealtad menos efectiva, aumentando la posibilidad de desertar
+[ICON_BULLET] Poco confiable: -20% a la fuerza, haciendo lealtad menos efectiva, aumentando la posibilidad de desertar
 [ICON_BULLET] T&#225;cticas de retirada: +30% a la probabilidad de retirarse
 [ICON_BULLET] T&#225;cticas: +2 ataques de iniciativa
 [ICON_BULLET] Camuflaje: Sufre un 50% menos de da&#241;os colaterales, +25% al defender bosques
@@ -2611,7 +2586,7 @@ Para proporcionar una armadura de noble a una unidad de tierra, tienes que mover
 [H2]Eje de aceite[\H2]
 Para proporcionar un eje (suavizante) de aceite a una unidad naval, tienes que mover la unidad a una ciudad, que tenga acceso al aceite de oliva. Ver&#225;s un bot&#243;n en la barra de botones de acci&#243;n de la unidad y con suficiente oro, el ascenso puede ser adquirido.
 
-[H2]Mercenaria o "Lucha por su cuenta"[\H2]
+[H2]Mercenaria o unidades "poco fiables"[\H2]
 
 Este ascenso es usado en unidades que han sido contratadas en los puestos mercenarios. Estas unidades son baratas en su compra, pero una probabilidad mayor (1:3) de desertar al enemigo.
 
@@ -2647,7 +2622,7 @@ PAE includes its own experience system (ranking) where certain types can be succ
 
 3) Against animals the maximum experience level is: Seasoned.
 
-4) Veteran units can lose the Fight On Your Own status with each victorious fight. The chance is 25%. With loyal units, leadership or generals even 50%.
+4) Units can lose the "Unreliable" status with each victorious fight. The chance is 25%. With loyal units, leadership or generals even 50%.
 
 5) Paid mercenaries have a random experience level.
 
@@ -2665,29 +2640,31 @@ PAE includes its own experience system (ranking) where certain types can be succ
 
 1) Need a longer recovery period and therefore end a winning fight with a maximum of 50% health.
 
-2) Can detach as a general from the unit (general unit is created, unit is reset to "Experienced")
+2) Units with War Weariness 5 can create a General (general unit is created, unit is reset to "Experienced").
 
 
 [H1]War weariness[\H1]
 
 From elite status, units can become tired of war. There are 5 levels that add up.
 
-War weariness 1: -20% strength, 30% chance
-War weariness 2: -20% strength, 40% chance
-War weariness 3: -20% strength, 50% chance
-War weariness 4: -20% strength, 60% chance
-War weariness 5: -10% strength, 70% chance
+War Weariness 1: -20% strength, 30% chance
+War Weariness 2: -20% strength, 40% chance
+War Weariness 3: -20% strength, 50% chance
+War Weariness 4: -20% strength, 60% chance
+War Weariness 5: -10% strength, 70% chance
+
+Units with War Weariness 5 can create a General (general unit is created, unit is reset to "Experienced").
 
 War weariness can be alleviated with extra pay (salae) or punishment (decimation). The chance of convincing the unit is 4:5.
 
 1) Salae (from currency): The pay is 5 gold per unit promotion. If you are in possession of salt, you can pay part of the salary with it and the costs are reduced by 25%.
 
-2) Decimation (from decimation): The decimation costs nothing, but inflicts 10% damage to the unit (every 10th was punished with death). If the unit fights on its own feet (eg mercenaries), it can even become barbarian. The chance for this is 20%.
+2) Decimation (from decimation): The decimation costs nothing, but inflicts 10% damage to the unit (every 10th was punished with death). If the unit is "unreliable" (eg mercenaries), it can even become Barbarian. The chance for this is 20%.
 
 
 [H1]Decimation (from technology decimation)[\H1]
 
-Decayed (punished) can be war-weary units or units that fight on their own feet (-20% strength, eg mercenaries).
+Decayed (punished) can be war-weary units or units that are "unreliable" (-20% strength, eg mercenaries).
 If a unit fights on its own, this property is removed first. After that, one level of war weariness is removed at each decimation. Furthermore its rank is decreased by one step (trained, experienced, seasoned,...).
     </English>
     <French>
@@ -2713,7 +2690,7 @@ PAE a son propre syst&#232;me de rang, qui avance automatiquement apr&#232;s une
 
 3) Contre les animaux, le niveau d'exp&#233;rience maximum est: Aguerri.
 
-4) Les unit&#233;s v&#233;t&#233;rans peuvent perdre le statut Chacun pour soi &#224; chaque combat victorieux. La chance est de 25%. Avec des unit&#233;s loyales, leadership ou g&#233;n&#233;raux m&#234;me 50%.
+4) Les unit&#233;s peuvent perdre le statut "Non fiable" &#224; chaque combat victorieux. La chance est de 25%. Avec des unit&#233;s loyales, leadership ou g&#233;n&#233;raux m&#234;me 50%.
 
 5) Les mercenaires pay&#233;s ont un niveau d'exp&#233;rience al&#233;atoire.
 
@@ -2731,7 +2708,7 @@ PAE a son propre syst&#232;me de rang, qui avance automatiquement apr&#232;s une
 
 1) Besoin d'une p&#233;riode de r&#233;cup&#233;ration plus longue et donc mettre fin &#224; un combat gagnant avec un maximum de 50% de sant&#233;.
 
-2) Peut se d&#233;tacher en g&#233;n&#233;ral de l'unit&#233; (l'unit&#233; g&#233;n&#233;rale est cr&#233;&#233;e, l'unit&#233; est r&#233;initialis&#233;e sur "Exp&#233;riment&#233;")
+2) Les unit&#233;s avec Lassitude de guerre 5 peuvent cr&#233;er un G&#233;n&#233;ral (l'unit&#233; g&#233;n&#233;rale est cr&#233;&#233;e, l'unit&#233; est r&#233;initialis&#233;e sur "Exp&#233;riment&#233;").
 
 
 [H1]Lassitude de guerre[\H1]
@@ -2744,17 +2721,19 @@ Lassitude de guerre 3: -20% de force, 50% de chance
 Lassitude de guerre 4: -20% de force, 60% de chance
 Lassitude de guerre 5: -10% de force, 70% de chance
 
+Les unit&#233;s avec Lassitude de guerre 5 peuvent cr&#233;er un G&#233;n&#233;ral (l'unit&#233; g&#233;n&#233;rale est cr&#233;&#233;e, l'unit&#233; est r&#233;initialis&#233;e sur "Exp&#233;riment&#233;").
+
 La fatigue de la guerre peut &#234;tre att&#233;nu&#233;e par un salaire suppl&#233;mentaire (salae) ou une punition (d&#233;cimation). La chance de convaincre l'unit&#233; est de 50%.
 
 1) Salae (de la monnaie): Le salaire est de 5 pi&#232;ces d'or par promotion. Si vous &#234;tes en possession de sel, vous pouvez payer une partie du salaire avec et les co&#251;ts sont r&#233;duits de 25%.
 
-2) D&#233;cimation (de la d&#233;cimation): La d&#233;cimation ne co&#251;te rien, mais inflige 10% de d&#233;g&#226;ts &#224; l'unit&#233; (tous les 10 sont punis de mort). Si l'unit&#233; se bat sur ses propres pieds (par exemple des mercenaires), elle peut m&#234;me devenir barbare. La chance pour cela est de 20%.
+2) D&#233;cimation (de la d&#233;cimation): La d&#233;cimation ne co&#251;te rien, mais inflige 10% de d&#233;g&#226;ts &#224; l'unit&#233; (tous les 10 sont punis de mort). Si l'unit&#233; se bat "non fiable" (par exemple des mercenaires), elle peut m&#234;me devenir barbare. La chance pour cela est de 20%.
 
 
 [H1]D&#233;cimation (de la d&#233;cimation technologique)[\H1]
 
 Les unit&#233;s fatigu&#233;es par la guerre ou les unit&#233;s indisciplin&#233;es (-20% de force, par exemple des mercenaires) peuvent &#234;tre d&#233;cim&#233;es (punies).
-Si une unit&#233; se bat ind&#233;pendamment, cette propri&#233;t&#233; est supprim&#233;e en premier. Apr&#232;s cela, un niveau de lassitude de guerre est supprim&#233; &#224; chaque d&#233;cimation. De plus son rang est diminu&#233; d'un pas (entra&#238;n&#233;, exp&#233;riment&#233;, aguerri, ...).
+Si une unit&#233; se bat peu fiable, cette propri&#233;t&#233; est supprim&#233;e en premier. Apr&#232;s cela, un niveau de lassitude de guerre est supprim&#233; &#224; chaque d&#233;cimation. De plus son rang est diminu&#233; d'un pas (entra&#238;n&#233;, exp&#233;riment&#233;, aguerri, ...).
     </French>
     <German>
 [H1]Einheiten: Erfahrungsrang[\H1]
@@ -2779,7 +2758,7 @@ PAE beinhaltet ein eigenes Erfahrungssystem (Rang), wo bestimmte Bef&#246;rderun
 
 3) Gegen Tiere ist die maximale Erfahrungsstufe: Routiniert.
 
-4) Veterane Einheiten k&#246;nnen bei jedem siegreichen Kampf den Status "K&#228;mpft auf eigenen F&#252;&#223;en" verlieren. Die Chance betr&#228;gt dabei 25%. Bei loyalen Einheiten, F&#252;hrerschaft oder Feldherren sogar 50%.
+4) Einheiten k&#246;nnen bei jedem siegreichen Kampf ihren "unzuverl&#228;ssigen" Status verlieren. Die Chance betr&#228;gt dabei 25%. Bei loyalen Einheiten, F&#252;hrerschaft oder Feldherren sogar 50%.
 
 5) Bezahlte/Beauftrage S&#246;ldner besitzen eine zuf&#228;llige Erfahrungsstufe.
 
@@ -2797,7 +2776,7 @@ PAE beinhaltet ein eigenes Erfahrungssystem (Rang), wo bestimmte Bef&#246;rderun
 
 1) Ben&#246;tigen eine l&#228;ngere Erholungsphase und beenden daher einen gewonnenen Kampf mit maximal 50% Gesundheit.
 
-2) Kann sich als General aus der Einheit l&#246;sen (General wird erstellt, Einheit wird zur&#252;ckgesetzt auf "Kampferfahren")
+2) Einheiten mit Kriegsm&#252;digkeit 5 k&#246;nnen einen General erstellen (General wird erstellt, Einheit wird zur&#252;ckgesetzt auf "Kampferfahren").
 
 
 [H1]Kriegsm&#252;digkeit[\H1]
@@ -2810,17 +2789,19 @@ Kriegsm&#252;digkeit 3: -20% St&#228;rke, 50% Chance
 Kriegsm&#252;digkeit 4: -20% St&#228;rke, 60% Chance
 Kriegsm&#252;digkeit 5: -10% St&#228;rke, 70% Chance
 
+Einheiten mit Kriegsm&#252;digkeit 5 k&#246;nnen einen General erstellen (General wird erstellt, Einheit wird zur&#252;ckgesetzt auf "Kampferfahren").
+
 Kriegsm&#252;digkeit kann mit einem extra Sold (Salae) oder Strafen (Dezimierung) gelindert werden. Die Chance daf&#252;r, ob sich die Einheit davon &#252;berzeugen l&#228;sst, betr&#228;gt 50%. 
 
 1) Salae (ab W&#228;hrung): Der Sold betr&#228;gt 5 Goldst&#252;cke pro Bef&#246;rderung. Ist man im Besitz von Salz, kann man einen Teil des Solds damit bezahlen und die Kosten verringern sich dadurch um 25%.
 
-2) Dezimierung (ab Dezimation): Die Dezimierung kostet nichts, f&#252;gt der Einheit aber 10% Schaden zu (Jeder 10te wurde mit dem Tode bestraft). K&#228;mpft die Einheit auf eigenen F&#252;&#223;en (zB S&#246;ldner), so kann sie dabei sogar barbarisch werden. Die Chance daf&#252;r betr&#228;gt 20%.
+2) Dezimierung (ab Dezimation): Die Dezimierung kostet nichts, f&#252;gt der Einheit aber 10% Schaden zu (Jeder 10te wurde mit dem Tode bestraft). "Unzuverl&#228;ssige" Einheiten (zB S&#246;ldner) k&#246;nnen dabei barbarisch werden. Die Chance daf&#252;r betr&#228;gt 20%.
 
 
 [H1]Dezimierung (ab der Technologie Dezimation)[\H1]
 
 Dezimiert (Bestraft) werden k&#246;nnen kriegsm&#252;de Einheiten oder Einheiten, die auf eigenen F&#252;&#223;en k&#228;mpfen (-20% St&#228;rke, zB S&#246;ldner).
-K&#228;mpft eine Einheit auf eigenen F&#252;&#223;en, wird zuerst diese Eigenschaft entfernt. Danach wird bei jeder Dezimierung jeweils eine Stufe der Kriegsm&#252;digkeit aufgehoben. Weiters wird auch der Kampferfahrungsrang um eine Stufe runtergesetzt (Trainiert, Kampferfahren, Routiniert,...).
+Bei "unzuverl&#228;ssigen" Einheiten wird zuerst diese Eigenschaft entfernt. Danach wird bei jeder Dezimierung jeweils eine Stufe der Kriegsm&#252;digkeit aufgehoben. Weiters wird auch der Kampferfahrungsrang um eine Stufe runtergesetzt (Trainiert, Kampferfahren, Routiniert,...).
     </German>
     <Italian>
 [H1]Unit&#224;: Classifica esperienza[\H1]
@@ -2844,7 +2825,7 @@ PAE ha un sistema di un'esperienza privata ( Rank) , in cui alcuni tipi possono 
 
 3) Contro gli animali il livello di esperienza massimo &#232;: Condito.
 
-4) Le unit&#224; veterana possono perdere lo stato di Lotta da solo con ogni combattimento vittorioso. La possibilit&#224; &#232; del 25%. Con unit&#224; leali, leadership o generali anche il 50%.
+4) Le unit&#224; possono perdere il loro status di "inaffidabili" ad ogni battaglia vittoriosa. La possibilit&#224; &#232; del 25%. Con unit&#224; leali, leadership o generali anche il 50%.
 
 5) I mercenari pagati hanno un livello di esperienza casuale.
 
@@ -2862,7 +2843,7 @@ PAE ha un sistema di un'esperienza privata ( Rank) , in cui alcuni tipi possono 
 
 1) Hai bisogno di un periodo di recupero pi&#249; lungo e quindi termina una lotta vincente con un massimo del 50% di salute.
 
-2) Pu&#242; staccarsi come generale dall'unit&#224; (l'unit&#224; generale viene creata, l'unit&#224; viene reimpostata su "Esperto")
+2) Le unit&#224; con Stanchezza della guerra 5 possono creare un Generale (l'unit&#224; generale viene creata, l'unit&#224; viene reimpostata su "Esperto").
 
 
 [H1]Stanchezza della guerra[\H1]
@@ -2873,19 +2854,21 @@ Stanchezza della guerra 1: -20% forza, 30% di possibilit&#224;
 Stanchezza della guerra 2: -20% forza, 40% di possibilit&#224; 
 Stanchezza della guerra 3: -20% forza, 50% di possibilit&#224; 
 Stanchezza della guerra 4: -20% forza, 60% di possibilit&#224; 
-Stanchezza della guerra 5: -10% forza, 70% di possibilit&#224; 
+Stanchezza della guerra 5: -10% forza, 70% di possibilit&#224;
+
+Le unit&#224; con Stanchezza della guerra 5 possono creare un Generale (l'unit&#224; generale viene creata, l'unit&#224; viene reimpostata su "Esperto").
 
 La stanchezza della guerra pu&#242; essere alleviata con paga extra (salae) o punizione (decimazione). La possibilit&#224; di convincere l'unit&#224; &#232; del 50%.
 
 1) Salae (dalla valuta): La paga &#232; di 5 monete d'oro per unit&#224; di promozione. Se sei in possesso di sale, puoi pagare parte del salario con esso e i costi sono ridotti del 25%.
 
-2) Decimazione (dalla decimazione): la decimazione non costa nulla, ma infligge il 10% di danni all'unit&#224; (ogni 10 &#232; stata punita con la morte). Se l'unit&#224; combatte da sola (ad esempio mercenari), pu&#242; persino diventare barbara. La possibilit&#224; per questo &#232; del 20%.
+2) Decimazione (dalla decimazione): la decimazione non costa nulla, ma infligge il 10% di danni all'unit&#224; (ogni 10 &#232; stata punita con la morte). Se l'unit&#224; combatte "inaffidabile" (ad esempio mercenari), pu&#242; persino diventare barbara. La possibilit&#224; per questo &#232; del 20%.
 
 
 [H1]Decimazione (dalla decimazione della tecnologia)[\H1]
 
 Decaduto (punito) pu&#242; essere unit&#224; o unit&#224; stremate dalla guerra che combattono da sole (forza del -20%, ad esempio mercenari).
-Se un'unit&#224; combatte da sola, questa propriet&#224; viene rimossa per prima. Dopo di ci&#242;, ad ogni decimazione viene rimosso un livello di stanchezza della guerra. Inoltre il suo grado &#232; diminuito di un passo (allenato, esperto, esperto, ...).
+Se un'unit&#224; combatte "inaffidabile", questa propriet&#224; viene rimossa per prima. Dopo di ci&#242;, ad ogni decimazione viene rimosso un livello di stanchezza della guerra. Inoltre il suo grado &#232; diminuito di un passo (allenato, esperto, esperto, ...).
     </Italian>
     <Spanish>
 [H1]Unidades: Rango experiencia[\H1]
@@ -2910,7 +2893,7 @@ Rango 6&#186;: Legendaria    (+5% fuerza, 30% de probabilidad*)
 
 3) Contra los animales, el nivel m&#225;ximo de experiencia es: veterano.
 
-4) Las unidades veteranas pueden perder el estado de lucha por si mismo con cada batalla victoriosa. La probabilidad es del 25%. Con unidades leales, l&#237;deres o generales, incluso el 50%.
+4) Las unidades pueden perder su estado "poco confiable" con cada batalla victoriosa. La probabilidad es del 25%. Con unidades leales, l&#237;deres o generales, incluso el 50%.
 
 5) Los mercenarios pagados tienen un nivel de experiencia aleatorio.
 
@@ -2928,7 +2911,7 @@ Rango 6&#186;: Legendaria    (+5% fuerza, 30% de probabilidad*)
 
 1) Necesita un per&#237;odo de recuperaci&#243;n m&#225;s largo y, por lo tanto, terminar una pelea ganadora con un m&#225;ximo de 50% de vida.
 
-2) Se puede separar como general de la unidad (se crea la unidad general, la unidad se restablece a "Experimentado")
+2) Las unidades con Cansancio de guerra 5 pueden crear un General (se crea la unidad general, la unidad se restablece a "Experimentado").
 
 
 [H1]Cansancio de guerra[\H1]
@@ -2941,17 +2924,19 @@ Cansancio de guerra 3: -20% de fuerza, 50% de probabilidad
 Cansancio de guerra 4: -20% de fuerza, 60% de probabilidad
 Cansancio de guerra 5: -10% de fuerza, 70% de probabilidad
 
+Las unidades con Cansancio de guerra 5 pueden crear un General (se crea la unidad general, la unidad se restablece a "Experimentado").
+
 El cansancio de la guerra se puede aliviar con un pago extra (salae) o un castigo (diezmo). La posibilidad de convencer a la unidad es del 50%.
 
 1) Salae (de moneda): El pago es de 5 de oro por unidad de promoci&#243;n. Si est&#225; en posesi&#243;n de sal, puede pagarle una parte del salario y los costos se reducen en un 25%.
 
-2) D&#233;cimaci&#243;n (de la destrucci&#243;n): la destrucci&#243;n no cuesta nada, pero inflige un 10% de da&#241;o a la unidad (cada d&#233;cimo fue castigado con la muerte). Si la unidad lucha por sus propios pies (por ejemplo, mercenarios), puede convertirse en b&#225;rbara. La posibilidad de esto es 20%.
+2) D&#233;cimaci&#243;n (de la destrucci&#243;n): la destrucci&#243;n no cuesta nada, pero inflige un 10% de da&#241;o a la unidad (cada d&#233;cimo fue castigado con la muerte). Las unidades "poco confiables" (por ejemplo, mercenarios) pueden volverse b&#225;rbaras. La posibilidad de esto es 20%.
 
 
 [H1]Decimaci&#243;n (por destrucci&#243;n de tecnolog&#237;a)[\H1]
 
 Decayed (castigado) pueden ser unidades o unidades cansadas por la guerra que luchan por sus propios pies (-20% de fuerza, por ejemplo, mercenarios).
-Si una unidad lucha por su cuenta, esta propiedad se elimina primero. Despu&#233;s de eso, se elimina un nivel de cansancio de guerra en cada aniquilaci&#243;n. Adem&#225;s, su rango se reduce en un paso (entrenado, experimentado, experimentado, ...).
+Para las unidades "poco confiables", este rasgo se elimina primero. Despu&#233;s de eso, se elimina un nivel de cansancio de guerra en cada aniquilaci&#243;n. Adem&#225;s, su rango se reduce en un paso (entrenado, experimentado, experimentado, ...).
     </Spanish>
   </TEXT>
   <TEXT>
@@ -5330,7 +5315,7 @@ Este evento ser&#225; prevenido, si has explorado una tecnolog&#237;a m&#233;dic
 Loyalty in battle was uncertain. Many soldiers fled or went over to the enemy. With each fight a single unit can defect to the enemy:
 
 [ICON_BULLET] A defeated unit with the promotion Allegiance or Lead by Warlord (great general) cannot defect and ally to the enemy.
-[ICON_BULLET] The promotion "Fights on his own" (mercenary) makes the promotion Allegiance ineffective (units with both promotions can defect).
+[ICON_BULLET] The promotion "Unreliable" (eg mercenaries) makes the promotion Allegiance ineffective (units with both promotions can defect).
 [ICON_BULLET] Animal units (Companion Dogs, War Dogs and Burning Pigs) cannot defect.
 [ICON_BULLET] Pirate units do not create defectors as this would reveal the pirate's civilisation.
 
@@ -5342,27 +5327,27 @@ The chance that a unit defects after lost combat amounts to 20% by default and i
 [ICON_BULLET] Loser has the promotion Hero: -10%
 [ICON_BULLET] Winner has the promotion Leadership: +10%
 [ICON_BULLET] Loser has the promotion Leadership: -10%
-[ICON_BULLET] Loser has the promotions "Fights on his own": +10%
+[ICON_BULLET] Loser has the promotions "Unreliable": +10%
 [ICON_BULLET] Winner is Charismatic: +10%
 [ICON_BULLET] Loser is Charismatic: -10%
 
 Examples:
 [ICON_BULLET] General unit defeats normal unit: 40%
-[ICON_BULLET] Unit with Charismatic and Hero defeats unit with "Fights on his own": 50%
+[ICON_BULLET] Unit with Charismatic and Hero defeats an "unreliable" unit: 50%
 [ICON_BULLET] Unit with Charismatic defeats unit with Charismatic: 20%
 [ICON_BULLET] Unit without Charismatic defeats unit with Charismatic: 10%
 
 If the loser unit is captured, the winner gains either
 [ICON_BULLET] the defeated unit with all its promotions or
 [ICON_BULLET] a slave
-The probability is 50:50. If the unit defects, it will lose the promotions Allegiance and Aggressive and get the promotion "Fights on his own".
+The probability is 50:50. If the unit defects, it will lose the promotions Allegiance and Aggressive and get the promotion "Unreliable".
     </English>
     <French>
 [H1]Loyaut&#233;[\H1]
 La loyaut&#233; est une composante importante des combats. Apr&#232;s chaque combat, l'unit&#233; vaincue peut &#234;tre captur&#233;e ou se soumettre &#224; l'ennemi.
 
 [ICON_BULLET]Une unit&#233; avec la promotion [COLOR_HIGHLIGHT_TEXT]All&#233;geance[COLOR_REVERT]/[COLOR_HIGHLIGHT_TEXT]Commandement[COLOR_REVERT] ou men&#233;e par un seigneur de guerre (G&#233;n&#233;ral illustre) ne peut pas passer &#224; l'ennemi
-[ICON_BULLET]La promotion [COLOR_HIGHLIGHT_TEXT]Chacun pour soi[COLOR_REVERT] annule l'effet de la promotion [COLOR_HIGHLIGHT_TEXT]All&#233;geance[COLOR_REVERT] (l'unit&#233; peut donc d&#233;serter)
+[ICON_BULLET]La promotion [COLOR_HIGHLIGHT_TEXT]Non fiable[COLOR_REVERT] annule l'effet de la promotion [COLOR_HIGHLIGHT_TEXT]All&#233;geance[COLOR_REVERT] (l'unit&#233; peut donc d&#233;serter)
 
 Probabilit&#233; de passer &#224; l'ennemi :
 La probabilit&#233; qu'une unit&#233; passe &#224; l'ennemi apr&#232;s une d&#233;faite est de 20% et:
@@ -5371,7 +5356,7 @@ La probabilit&#233; qu'une unit&#233; passe &#224; l'ennemi apr&#232;s une d&#23
 [ICON_BULLET] Loser has the promotion Hero: -10%
 [ICON_BULLET] Winner has the promotion Leadership: +10%
 [ICON_BULLET] Loser has the promotion Leadership: -10%
-[ICON_BULLET] Loser has the promotions "Fights on his own": +10%
+[ICON_BULLET] Loser has the promotions "Non fiable": +10%
 [ICON_BULLET] Winner is Charismatic: +10%
 [ICON_BULLET] Loser is Charismatic: -10%
 
@@ -5383,14 +5368,14 @@ Si l'unit&#233; passe &#224; l'ennemi :
 [ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]All&#233;geance[COLOR_REVERT]
 [ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]Agressif[COLOR_REVERT] (si le dirigeant du vainqueur n'a pas le trait [COLOR_POSITIVE_TEXT]Agressif[COLOR_REVERT])
 [ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]Protecteur[COLOR_REVERT] (si le dirigeant du vainqueur n'a pas le trait [COLOR_POSITIVE_TEXT]Protecteur[COLOR_REVERT])
-[ICON_BULLET]Elle gagnera la promotion [COLOR_HIGHLIGHT_TEXT]Chacun pour soi[COLOR_REVERT]
+[ICON_BULLET]Elle gagnera la promotion [COLOR_HIGHLIGHT_TEXT]Non fiable[COLOR_REVERT]
     </French>
     <German>
 [H1]Loyalit&#228;t[\H1]
 Loyalit&#228;t im Kampf war entscheidend. Viele Krieger fl&#252;chteten oder liefen zum Feind &#252;ber. Bei jedem Kampf kann eine Einheit zum Gegner &#252;berlaufen:
 
 [ICON_BULLET] Eine besiegte Einheit mit der Bef&#246;rderung Loyalit&#228;t und Generalseinheiten k&#246;nnen nicht &#252;berlaufen, sie k&#228;mpfen daher bis zum Tod.
-[ICON_BULLET] Die Bef&#246;rderung "K&#228;mpft auf eigenen F&#252;&#223;en" (S&#246;ldner) macht die Bef&#246;rderung Loyalit&#228;t unwirksam, Einheiten mit beiden Bef&#246;rderungen (und ohne General) k&#246;nnen also &#252;berlaufen.
+[ICON_BULLET] Die Bef&#246;rderung "Unzuverl&#228;ssig" (S&#246;ldner) macht die Bef&#246;rderung Loyalit&#228;t unwirksam, Einheiten mit beiden Bef&#246;rderungen (und ohne General) k&#246;nnen also &#252;berlaufen.
 [ICON_BULLET] Tiereinheiten (Begleithunde, Kampfhunde und Brennende Schweine) k&#246;nnen nicht &#252;berlaufen.
 [ICON_BULLET] Pirateneinheiten erzeugen keine &#220;berl&#228;ufer (dies w&#252;rde die Zivilisation des Piraten enttarnen).
 
@@ -5402,52 +5387,52 @@ Die Chance, dass der der Gegner nach gewonnenem Kampf &#252;berl&#228;uft, betr&
 [ICON_BULLET] Verlierer hat die Bef&#246;rderung "Held": -10%
 [ICON_BULLET] Gewinner hat die Bef&#246;rderung "F&#252;hrerschaft": +10%
 [ICON_BULLET] Verlierer hat die Bef&#246;rderung "F&#252;hrerschaft": -10%
-[ICON_BULLET] Verlierer hat die Bef&#246;rderung "K&#228;mpft auf eigenen F&#252;&#223;en": +10%
+[ICON_BULLET] Verlierer hat die Bef&#246;rderung "Unzuverl&#228;ssig": +10%
 [ICON_BULLET] Gewinner ist Charismatisch: +10%
 [ICON_BULLET] Verlierer ist Charismatisch: -10%
 
 Beispiele:
 [ICON_BULLET] Generalseinheit besiegt normale Einheit: 40%
-[ICON_BULLET] Einheit mit Charismatisch und Held besiegt Einheit mit "K&#228;mpft auf eigenen F&#252;&#223;en": 50%
+[ICON_BULLET] Einheit mit Charismatisch und Held besiegt eine "unzuverl&#228;ssige" Einheit: 50%
 [ICON_BULLET] Einheit mit Charismatisch besiegt Einheit mit Charismatisch: 20%
 [ICON_BULLET] Einheit ohne Charismatisch besiegt Einheit mit Charismatisch: 10%
 
 Wenn der Verlierer gefangen genommen wird, bekommt der Gewinner entweder
 [ICON_BULLET] die besiegte Einheit mit all ihren Bef&#246;rderungen und 10% Gesundheit oder
 [ICON_BULLET] einen Sklaven
-Die Chance dabei betr&#228;gt 50:50. L&#228;uft die Einheit &#252;ber, verliert sie, wenn sie diese hat, die Bef&#246;rderungen Loyalit&#228;t und Aggressiv und erh&#228;lt die Bef&#246;rderung "K&#228;mpft auf eigenen F&#252;&#223;en".
+Die Chance dabei betr&#228;gt 50:50. L&#228;uft die Einheit &#252;ber, verliert sie die Bef&#246;rderungen Loyalit&#228;t und Aggressiv (sofern sie diese hat) und erh&#228;lt die Bef&#246;rderung "Unzuverl&#228;ssig".
     </German>
     <Italian>
 [H1]Fedelt&#224;[\H1]
 Fedelt&#224; in battaglia fu decisiva . Molti guerrieri fuggirono o passarono al nemico . Per ogni battaglia , una unit&#224; pu&#242; andare oltre al nemico :
 
 [ICON_BULLET] Un'unit&#224; sconfitto alla fedelt&#224; carrozza e le unit&#224; generali non pu&#242; correre e combattere fino alla morte .
-[ICON_BULLET] Carriage " sulle proprie gambe " ( mercenari ) rende i fedelt&#224; trasporto unit&#224; inefficaci con due trasporti (e senza generale) possono straripare .
+[ICON_BULLET] Carriage " Inaffidabile " ( mercenari ) rende i fedelt&#224; trasporto unit&#224; inefficaci con due trasporti (e senza generale) possono straripare .
 
 Possibilit&#224; di disertori :
 La possibilit&#224; che l'avversario trabocca dopo lotta recuperato &#232; 20 % et :
 
 [ICON_BULLET] vincitore &#232; un'unit&#224; generale : +20 % 
-[ICON_BULLET] vincitore ha il trasporto della eroe: +10 % 
-[ICON_BULLET] vincitore ha il trasporto di leadership : +10 % 
+[ICON_BULLET] vincitore ha il promozione della eroe: +10 % 
+[ICON_BULLET] vincitore ha il promozione di leadership : +10 % 
 [ICON_BULLET] vincitore ha nessuna di queste promozioni : +10 % 
 
 Esempi:
 [ICON_BULLET] Unit&#224; con unit&#224; di lealt&#224; sconfitto con "Fight sulle proprie gambe " : 40 %
-[ICON_BULLET] unit&#224; di un leader carismatico , senza Promozioni sconfitto apparecchio con "Fight sulle proprie gambe " : 50 %
+[ICON_BULLET] unit&#224; di un leader carismatico , senza Promozioni sconfitto apparecchio con "Inaffidabile" : 50 %
 [ICON_BULLET] Unit&#224; Generale ha sconfitto avversari con " Lotta sulle proprie gambe " e di fedelt&#224;: il 20 % ( stessa carrozza da )
 
 Se il perdente viene catturato , il vincitore ottiene sia
 [ICON_BULLET] l'unit&#224; sconfitto con tutte le sue promozioni o
 [ICON_BULLET] uno schiavo
-L'opportunit&#224; ecco 50:50 . Fa l'unit&#224; , perde se ha questo , le promozioni fedelt&#224; , aggressivo e protettivo (uno &#232; anche aggressivo o protettivo, ottenere unit&#224; versato tale trasporto non &#232; ) , e di ottenere il trasporto " Lotta sui propri piedi".
+L'opportunit&#224; ecco 50:50 . Fa l'unit&#224; , perde se ha questo , le promozioni fedelt&#224; , aggressivo e protettivo (uno &#232; anche aggressivo o protettivo, ottenere unit&#224; versato tale trasporto non &#232; ) , e di ottenere " Inaffidabile".
     </Italian>
     <Spanish>
 [H1]La Lealtad[\H1]
 La lealtad en la batalla fue decisiva. Muchos soldados huyeron o se pasaron al enemigo. Con cada combate una sola unidad puede pasarse al enemigo:
 
 [ICON_BULLET] Una unidad derrotada con el ascenso lealtad o dirigido por un caudillo (gran general) no puede desertar y aliarse al enemigo.
-[ICON_BULLET] El ascenso "Lucha por su cuenta" (mercenario) hace del ascenso Lealtad inefectivo (las unidades con ambos ascensos pueden desertar).
+[ICON_BULLET] El ascenso "Poco confiable" (mercenario) hace del ascenso Lealtad inefectivo (las unidades con ambos ascensos pueden desertar).
 [ICON_BULLET] Las unidades animales (Perros de compa&#241;&#237;a, perros de guerra y cerdos ardientes) no pueden desertar.
 [ICON_BULLET] Las unidades piratas no crear&#225;n desertores ya que esto revelar&#237;a la civilizaci&#243;n del pirata.
 
@@ -5459,20 +5444,20 @@ La probabilidad de que una unidad deserte despu&#233;s de un combate perdido es 
 [ICON_BULLET] Si el perdedor tiene el ascenso h&#233;roe: -10%
 [ICON_BULLET] Si el ganador tiene el ascenso liderazgo: +10%
 [ICON_BULLET] Si el perdedor tiene el ascenso liderazgo: -10%
-[ICON_BULLET] Si el perdedor tienen el ascenso "lucha por su cuenta": +10%
+[ICON_BULLET] Si el perdedor tienen el ascenso "Poco confiable": +10%
 [ICON_BULLET] Si el ganador es carism&#225;tico: +10%
 [ICON_BULLET] Si el perdedor es carism&#225;tico: -10%
 
 Ejemplos:
 [ICON_BULLET] Unidad general derrota una unidad normal: 40%
-[ICON_BULLET] Unidad con carism&#225;tico y h&#233;roe derrota a una unidad con "lucha por su cuenta": 50%
+[ICON_BULLET] Unidad con carism&#225;tico y h&#233;roe derrota a una unidad con "Poco confiable": 50%
 [ICON_BULLET] Unidad con carism&#225;tico derrota a una unidad con carism&#225;tico: 20%
 [ICON_BULLET] Unidad sin carism&#225;tico derrota a una unidad con carism&#225;tico: 10%
 
 Si la unidad perdedora es capturada, el ganador gana:
 [ICON_BULLET] La unidad derrotada con todos sus ascensos o
 [ICON_BULLET] Un esclavo
-La probabilidad es 50:50. Si la unidad deserta, perder&#225; los ascensos lealtad, agresivo y obtiene el ascenso "lucha por su cuenta".
+La probabilidad es 50:50. Si la unidad deserta, perder&#225; los ascensos lealtad, agresivo y obtiene el ascenso "Poco confiable".
     </Spanish>
   </TEXT>
   <TEXT>
@@ -6763,8 +6748,8 @@ Requirements:
 [ICON_BULLET] only outside a city
 [ICON_BULLET] only out of foreign sight (except barbarians)
 
-[ICON_BULLET] Once a pirate everytime a pirate: "Fights on his own"-promotion keeps when switching, but can be dissolved in fight with veteran rank
-[ICON_BULLET] Once veteran without the "Fight on his own"-promotion, this promotion no longer appears
+[ICON_BULLET] Once a pirate everytime a pirate: "Unreliable"-promotion keeps when switching, but can be dissolved in fight
+[ICON_BULLET] Once veteran without the "Unreliable"-promotion, this promotion no longer appears
 [ICON_BULLET] A half movement point will be reduced with every shift
     </English>
     <French>
@@ -6794,7 +6779,7 @@ Pr&#233;-requis :
 [ICON_BULLET] Hors d'une ville
 [ICON_BULLET] Hors de vue de nations &#233;trang&#232;res (sauf les barbares)
 
-[ICON_BULLET] Pirate pour toujours : la promotion "Chacun pour soi" reste
+[ICON_BULLET] Pirate pour toujours : la promotion "Non fiable" reste
 [ICON_BULLET] Elle n'appara&#238;t plus si le bateau est v&#233;t&#233;ran et perd la promotion
 [ICON_BULLET] Le bateau perd un demi point de mouvement &#224; chaque changement
     </French>
@@ -6825,8 +6810,8 @@ Voraussetzungen:
 [ICON_BULLET] nur au&#223;erhalb einer Stadt m&#246;glich
 [ICON_BULLET] nur au&#223;erhalb der Sichtweite fremder Einheiten (ausgenommen Barbaren)
 
-[ICON_BULLET] Einmal Pirat-immer Pirat: "K&#228;mpft auf eigenen F&#252;&#223;en"-Bef&#246;rderung bleibt beim Zur&#252;ckwechseln, kann aber im Kampf als mit dem Veteranenstatus wieder verschwinden
-[ICON_BULLET] Einmal Veteran ohne "K&#228;mpft auf eigenen F&#252;&#223;en"-Bef&#246;rderung, taucht diese Bef&#246;rderung nicht mehr auf.
+[ICON_BULLET] Einmal Pirat-immer Pirat: "Unzuverl&#228;ssig"-Bef&#246;rderung bleibt beim Zur&#252;ckwechseln, kann aber im Kampf wieder verschwinden
+[ICON_BULLET] Einmal Veteran ohne "Unzuverl&#228;ssig"-Bef&#246;rderung, taucht diese Bef&#246;rderung nicht mehr auf.
 [ICON_BULLET] Bei jedem Wechsel wird ein halber Bewegungspunkt abgezogen
     </German>
     <Italian>
@@ -6856,8 +6841,8 @@ requisiti:
 [ICON_BULLET] appena fuori di una citt&#224; possibile
 [ICON_BULLET] appena fuori dalla vista di altre unit&#224; ( ad eccezione di barbari )
 
-[ICON_BULLET] Una volta che un pirata-Pirate sempre : " Lotta con le proprie gambe " trasporto rimane da passare avanti , ma in battaglia che con lo status di veterano potrebbe scomparire
-[ICON_BULLET] appare una volta un veterano con nessuna promozione "Fight sulle proprie gambe " a cessare il trasporto .
+[ICON_BULLET] Una volta che un pirata-Pirate sempre : " Inaffidabile " trasporto rimane da passare avanti , ma in battaglia che con lo status di veterano potrebbe scomparire
+[ICON_BULLET] appare una volta un veterano con nessuna promozione "Inaffidabile" a cessare il trasporto .
 [ICON_BULLET] Su ogni mezzo punto movimento sar&#224; detratto
     </Italian>
     <Spanish>
@@ -6886,8 +6871,8 @@ Requisitos:
 [ICON_BULLET] la tecnolog&#237;a de pirater&#237;a
 [ICON_BULLET] s&#243;lo posible fuera de una ciudad
 [ICON_BULLET] s&#243;lo fuera de la vista de territorio extranjero (excepto b&#225;rbaros)
-[ICON_BULLET] Una vez que sea pirata, cada pirata tendr&#225;: El ascenso "lucha por su cuenta" cuando se cambie, pero puede desaparecer en comabte con el rango veterano
-[ICON_BULLET] Una vez que un veterano no tenga el ascenso "Lucha por su cuenta", este ascenso no volver&#225; a aparecer
+[ICON_BULLET] Una vez que sea pirata, cada pirata tendr&#225;: El ascenso "Poco confiable" cuando se cambie, pero puede desaparecer en comabte
+[ICON_BULLET] Una vez que un veterano no tenga el ascenso "Poco confiable", este ascenso no volver&#225; a aparecer
 [ICON_BULLET] Por cada movimiento se reducir&#225; medio punto de movimiento.
     </Spanish>
   </TEXT>
@@ -9049,7 +9034,7 @@ Adem&#225;s, reciben ascensos de hast&#237;o b&#233;lico (1-5) de combate VI, qu
 In PAE, you have the chance to assign battle formations to your units. After having researched certain technologies and/or the use of the drill promotion, you can choose from various formations
 As long as a unit still has movement points, you can switch the formations at any time. Formations often complement one another, so it would be useful to have several units in a stack as you can only assign one formation to each one.
 
-Units who are fighting on their own ("Fights on his own"-promotion) are excluded from these formations.
+Units who are fighting on their own ("Unreliable"-promotion) are excluded from these formations.
 
 Content:
 [ICON_BULLET]Formations
@@ -9262,7 +9247,7 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 Dans PAE , vous avez l'opportunit&#233; d'utiliser certaines formations de bataille pour vos unit&#233;s . Apr&#232;s avoir &#233;tudi&#233; certaines technologies et / ou acquis la promotion Exercice, vous pouvez choisir parmi diff&#233;rentes formations.
 Tant qu'une unit&#233; a encore des points de mouvement , vous pouvez passer en formation &#224; tout moment . Les formations se compl&#232;tent souvent les uns les autres , de sorte qu'il serait utile d'avoir plusieurs unit&#233;s group&#233;es, chacune ne pouvant adopter qu'une formation &#224; la fois.
 
-Les unit&#233;s peu loyales (promotion Chacun pour soi) ne sont pas concern&#233;es par les formations de combat.
+Les unit&#233;s peu loyales (promotion "Non fiable") ne sont pas concern&#233;es par les formations de combat.
 
 Contenu:
 [ICON_BULLET] Formations
@@ -9473,7 +9458,7 @@ L'unit&#233; recevra une formation offensive (plus de bonus d'attaque que bonus 
 In PAE ist es erstmals m&#246;glich einzelnen Einheiten eine Schlachtformation zuzuweisen. Nach Erforschung bestimmter Technologien und/oder dem Besitz der Drill-Bef&#246;rderung stehen diverse Formationen zur Auswahl.
 Solange eine Einheit noch Bewegungspunkte besitzt, kann man jederzeit zwischen den einzelnen Bef&#246;rderungen wechseln. Oft erg&#228;nzen sich Formationen, und da man einer Einheit immer nur eine Formationen geben kann, w&#228;re es besser mit mehreren Einheiten in den Krieg zu marschieren.
 
-Einheiten, die auf eigenen F&#252;&#223;en k&#228;mpfen ("K&#228;mpft auf eigenen F&#252;&#223;en"-Bef&#246;rderung), sind von diesen Formationen ausgeschlossen.
+Einheiten, die nur f&#252;r sich k&#228;mpfen ("Unzuverl&#228;ssig"-Bef&#246;rderung), sind von diesen Formationen ausgeschlossen.
 
 Inhalt:
 [ICON_BULLET] Formationen
@@ -9691,7 +9676,7 @@ Beim Bau einer Einheit bekommt diese automatisch eine offensive Formation (mehr 
 In PAE , si ha la possibilit&#224; di assegnare formazioni di battaglia per le vostre unit&#224; . Dopo aver studiato alcune tecnologie e / o l'uso della promozione trapano , &#232; possibile scegliere tra diverse formazioni
 Finch&#233; un'unit&#224; ha ancora punti movimento , &#232; possibile cambiare le formazioni in qualsiasi momento . Formazioni spesso complementari tra loro , per cui sarebbe utile disporre di pi&#249; unit&#224; in una pila come si pu&#242; assegnare una sola formazione a ciascuno .
 
-Units who are fighting on their own ("Fights on his own"-promotion) are excluded from these formations.
+Le unit&#224; che combattono solo per se stesse (promozione "Inaffidabile") sono escluse da queste formazioni.
 
 contenuto :
 [ICON_BULLET] Formazioni
@@ -9767,7 +9752,7 @@ effetto:
 [ICON_BULLET] -25 % [ICON_STRENGTH] forza citt&#224;
 [ICON_BULLET] -25 % [ICON_STRENGTH] forza colline
 [ICON_BULLET] -25 % [ICON_STRENGTH] contro i cavalli , elefanti e le macchine d'assedio
-[ICON_BULLET] +25 % [ICON_STRENGTH] againts Melee
+[ICON_BULLET] +25 % [ICON_STRENGTH] contro la mischia
 [ICON_BULLET] [ICON_STRENGTH] contro il +50 % Chariots
 [ICON_BULLET] 50 % [ICON_STRENGTH] contro Speer
 [ICON_BULLET] -25 % [ICON_STRENGTH] nelle foreste / giungla e in palude
@@ -9904,7 +9889,7 @@ L'unit&#224; ottenere immediatamente una formazione offensiva ( pi&#249; bonus d
 En PAE, tienes la posibilidad de asignar formaciones de combate a tus unidades. Despu&#233;s de haber investigado ciertas tecnolog&#237;as y/o el uso del ascenso instrucci&#243;n, puedes elegir entre varias formaciones.
 Mientras una unidad tenga puntos de movimiento, puedes cambiar las formaciones en cualquier momento. Las formaciones a menudo se complementan unas con otras, as&#237; podr&#237;a ser &#250;til tener tantas unidades en una pila como puedas asignando cada una de las formaciones. 
 
-Las unidades que est&#233;n luchando por su cuenta (Ascenso "Lucha por su cuenta") son excluidos de estas formaciones.
+Las unidades que est&#233;n luchando por su cuenta (Ascenso "Poco confiable") son excluidos de estas formaciones.
 
 Contenido: 
 [ICON_BULLET]Formaciones
@@ -11622,96 +11607,97 @@ Elefanten wurden ausschlie&#223;lich von Mahouts aus ihrer freien Wildbahn geris
 Werden Kampfhunde erhandelt, kann das Nationalwunder Kampfhundezucht gebaut werden, welches um die Stadt das Bonusgut Kampfhunde platziert.
     </German>
     <Italian>
-[H1]Distribution of bonus resources[\H1]
+[H1]Distribuzione delle risorse bonus[\H1]
 
-With the wagon you are able to deliver additional food to other cities. Depending on the game speed, 25, 50 or 75 [ICON_FOOD] will be credited.
+Un carrello pu&#242; essere utilizzato per consegnare cibo alle citt&#224;. A seconda della velocit&#224; di gioco, verranno accreditati 25, 50 o 75 [ICON_FOOD].
 
-Besides of increasing the food storage of other cities, wagons can also spread certain resources nearby cities:
+Oltre a consegnare cibo, il carro pu&#242; essere utilizzato per distribuire risorse coltivabili bonus:
 
-Grain:
-[ICON_BULLET] Wheat
-[ICON_BULLET] Barley
-[ICON_BULLET] Oat
-[ICON_BULLET] Rye
-[ICON_BULLET] Millet
-[ICON_BULLET] Rice
-Cattle:
-[ICON_BULLET] Cow
-[ICON_BULLET] Pig
-[ICON_BULLET] Sheep
-Strategic:
-[ICON_BULLET] Horses
-[ICON_BULLET] Camels
-Misc:
-[ICON_BULLET] Grapes
-[ICON_BULLET] Olives
-[ICON_BULLET] Dates
+Grano:
+[ICON_BULLET] Grano
+[ICON_BULLET] Orzo
+[ICON_BULLET] Avena
+[ICON_BULLET] Segale
+[ICON_BULLET] Miglio
+[ICON_BULLET] Riso
+Bestiame:
+[ICON_BULLET] Mucca
+[ICON_BULLET] Maiale
+[ICON_BULLET] Pecore
+Strategico:
+[ICON_BULLET] Cavalli
+[ICON_BULLET] Cammelli
+Varie:
+[ICON_BULLET] Uva
+[ICON_BULLET] Olive
+[ICON_BULLET] Date
 
-A resource can be spread as soon as it is in the city's trade network, where it has to be loaded with a wagon. If the resource is in the surrounding area of the city, the purchase is cheaper. Green circles on the map make a possible cultivation onto this plot visible. The wagon will be disbanded during a cultivation.
-If you drag the wagon onto a plot with a cultivable bonus resource, you can remove it from the plot and place it somewhere else. The info what the wagon is loaded is on the lower left of the unit properties in the main interface.
+Una risorsa pu&#242; essere distribuita una volta che si trova nella rete commerciale della citt&#224;, dove devi caricarla/acquistarla con il carro. Se la risorsa &#232; all'interno della sfera di influenza della citt&#224;, &#232; pi&#249; conveniente acquistarla. I cerchi verdi sulla mappa indicano una possibile coltivazione sul rispettivo appezzamento. Quando &#232; sparso, il carro &#232; rotto.
 
-Resources on Foreign Trading Posts can be added but not removed.
+Se sposti il &#8203;&#8203;carro in un campo con una risorsa bonus coltivabile, puoi rimuoverlo dal campo e posizionarlo da qualche altra parte. Le informazioni sulla risorsa con cui &#232; caricato il veicolo si trovano in basso a sinistra delle propriet&#224; dell'unit&#224; nella schermata principale.
 
-[H1]Conditions[\H1]
+Le merci bonus sulle postazioni commerciali estere possono essere raccolte ma non rimosse.
 
-Each cultivable bonus good can be cultivated once per city, provided the environment is suitable for it.
+[H1]Condizioni[\H1]
 
-If no cultivation is possible, even though a plot fulfills all conditions, then it may be that there is an undiscovered bonus resource.
+Ogni bene bonus coltivabile pu&#242; essere coltivato una volta per citt&#224;, a condizione che l'ambiente sia adatto.
 
-[H1]Climate conditions[\H1]
+Se la coltivazione non &#232; possibile anche se un appezzamento soddisfa tutte le condizioni, &#232; possibile che ci sia una risorsa bonus da scoprire al di sotto.
 
-[H2]Grain[\H2]
-[ICON_BULLET] All: Flatlands
-[ICON_BULLET] Wheat: Grassland, plains or flood plains
-[ICON_BULLET] Barley: Grassland, plains or flood plains
-[ICON_BULLET] Oat: Grassland
-[ICON_BULLET] Rye: Grassland
-[ICON_BULLET] Millet: Grassland, plains or flood plains
-[ICON_BULLET] Rice: Jungle on swamp or grassland
+[H1]condizioni climatiche[\H1]
 
-Grain is not always easy to grow, so there is a spread chance of only 80%.
+[H2]grano[\H2]
+[ICON_BULLET] Tutti: Pianure
+[ICON_BULLET] Grano: prateria, steppa o terreno alluvionale
+[ICON_BULLET] Orzo: steppa o terra alluvionale
+[ICON_BULLET] Avena: prateria o terreno alluvionale
+[ICON_BULLET] Rye: prateria
+[ICON_BULLET] Miglio: prateria, steppa o terreno alluvionale
+[ICON_BULLET] Riso: giungla su palude o erba
 
-[H2]Cattle[\H2]
-[ICON_BULLET] All: Flatland or hills
-[ICON_BULLET] Cow: Grassland or plains
-[ICON_BULLET] Pig: Grassland or swamp
-[ICON_BULLET] Sheep: Grassland or plains
+Le colture non sono sempre facili da coltivare, quindi c'&#232; solo l'80% di possibilit&#224; che si diffonda qui.
 
-[H2]Misc[\H2]
-[ICON_BULLET] Olives: Plains + coast only (flatlands or hills)
-[ICON_BULLET] Dates: Flatlands + desert only
-[ICON_BULLET] Grapes: Grassland or plains (flatlands or hills)
+[H2]Bovini[\H2]
+[ICON_BULLET] Tutti: pianure o colline
+[ICON_BULLET] Mucca: prateria o steppa
+[ICON_BULLET] Maiale: prateria
+[ICON_BULLET] Pecore: steppa
 
-[H1]Priorities[\H1]
-The plots on which the resource can be distributed are divided into up to four priorities. The tile with the highest priority will always be chosen, if there are several possibilities, one of them is chosen randomly.
+[H2]Altro[\H2]
+[ICON_BULLET] Olive: solo steppa e costa
+[ICON_BULLET] Date: solo pianura e deserto
+[ICON_BULLET] Uva: prateria o steppa
+
+[H1]Priorit&#224;[\H1]
+I campi su cui la risorsa selezionata pu&#242; essere disseminata sono ordinati secondo un massimo di quattro priorit&#224;. La risorsa &#232; sempre distribuita su un campo con la priorit&#224; pi&#249; alta possibile, se pi&#249; campi hanno la stessa priorit&#224;, viene scelto a caso.
 
 
-[H1]Horses[\H1]
-[ICON_BULLET] Req: Village status, steppe or grassland if flatland
-[ICON_BULLET] Prio 1: Steppe
-[ICON_BULLET] Prio 2: Grass
-[ICON_BULLET] Prio 1: unimproved
-[ICON_BULLET] Prio 2: improved
-Captured (wild) horses (starting from the tech Horse Husbandy) can spread the bonus too. Only cities with a pasture and a stable can train mounted units.
+[H1]Cavalli[\H1]
+[ICON_BULLET] Requisiti: stato del villaggio, steppa o prateria, pianura
+[ICON_BULLET] Priorit&#224; 1: steppa
+[ICON_BULLET] Priorit&#224; 2: erba
+[ICON_BULLET] Priorit&#224; 1: non modernizzato
+[ICON_BULLET] Priorit&#224; 2: modernizzato
+Anche i cavalli (selvaggi) conquistati (dall'addomesticamento dei cavalli tecnologici) possono diffondere il bene bonus. Solo le citt&#224; con pascolo e stalla possono addestrare unit&#224; a cavallo.
 
-[H1]Camels[\H1]
-[ICON_BULLET] Req: Village status, flatland and bordering desert, no flood plains and no oasis
-[ICON_BULLET] Prio 1: Desert
-[ICON_BULLET] Prio 2: Steppe
-[ICON_BULLET] Prio 1: unimproved
-[ICON_BULLET] Prio 2: improved
-Captured (wild) camels (starting from the tech Camel Husbandy) can spread the bonus too. Only cities with a camel camp can train camel riders.
+[H1]Cammelli[\H1]
+[ICON_BULLET] Prerequisiti: stato del villaggio, terreno pianeggiante e deserto adiacente, nessuna terra alluvionale e nessuna oasi
+[ICON_BULLET] Priorit&#224; 1: deserto
+[ICON_BULLET] Priorit&#224; 2: steppa
+[ICON_BULLET] Priorit&#224; 1: non modernizzato
+[ICON_BULLET] Priorit&#224; 2: modernizzato
+Anche i cammelli conquistati (dall'addomesticamento dei cammelli tecnologici) possono diffondere il bene bonus. Solo le citt&#224; con un accampamento di cammelli possono addestrare i cammellieri.
 
-[H1]Elephants[\H1]
-Elephants were ripped out of their wilderness exclusively by mahouts and raised for life. They can not be distributed.
+[H1]Elefanti[\H1]
+Gli elefanti sono stati prelevati dalla natura esclusivamente da mahout e allevati per la vita. Non possono essere diffusi.
 
-[H1]War dogs[\H1]
-[ICON_BULLET] Spread on tundra, grassland or steppe
-[ICON_BULLET] Prio 1: Flatland
-[ICON_BULLET] Prio 2: Hills
-[ICON_BULLET] Prio 1: unimproved
-[ICON_BULLET] Prio 2: improved
-If war dogs are negotiated, the national wonder war dog breeding can be built, which places the bonus goods war dogs around the city.
+[H1]Cani da combattimento[\H1]
+[ICON_BULLET] Distribuzione nella tundra, nelle praterie o nelle steppe
+[ICON_BULLET] Priorit&#224; 1: pianura
+[ICON_BULLET] Priorit&#224; 2: colline
+[ICON_BULLET] Priorit&#224; 1: non modernizzato
+[ICON_BULLET] Priorit&#224; 2: modernizzato
+Se i cani da combattimento vengono negoziati, &#232; possibile costruire la meraviglia nazionale dei cani da combattimento, che colloca i bonus dei cani da combattimento in giro per la citt&#224;.
     </Italian>
     <Spanish>
 [H1]Distribuci&#243;n de los recursos[\H1]
@@ -11814,123 +11800,125 @@ Si los perros de guerra son comerciados, la maravilla nacional cr&#237;a de perr
 Over time, a unit may be tired of war or there are units that do not pay attention to commands and prefer to fight on their own. Now there are two ways to cast out those negative properties of a unit: Extra payment (salary) or punishment (decimation). 
 
 [H2]Salary[\H2] 
-With Currency (technology) it is possible to give a unit an extra pay, provided that it is either "fighting on his own feet" or tired of war (from War Weariness I). 
+With Currency (technology) it is possible to give a unit an extra pay, provided that it is either "unreliable" or tired of war (from War Weariness I). 
 
 The cost is unit combat strength * 3 + 3 gold pieces per promotion. If the player is in possession of salt it can be part of the paid salary, resulting in a saving of -25% gold. 
 
 But the chance that the unit thereby showing more loyal is only 50%. 
 
-If successful, the unit loses the "Fight on his own feet" status first and on subsequent attempts always the last war weariness status. 
+If successful, the unit loses the "unreliable" status first and on subsequent attempts always the last war weariness status. 
 
 [H2]Decimation[\H2] 
-From the Decimation technology it is possible to punish a unit, provided that it is either "fighting on his own" or is tired of war (from War Weariness I). 
+From the Decimation technology it is possible to punish a unit, provided that it is either "unreliable" or is tired of war (from War Weariness I). 
 
 There are no costs to bear, but the unit loses 10% of their strength (life energy). 
 
 The chance that it will work is 50% here too. 
 
-If given, that if the unit is "fighting on his own feet", there is a chance of 10% that it does not allow this atrocity and leaves the army. This means, the unit gets neutral (barbarian) and really fights independent for now. 
+If given, that if the unit is "unreliable", there is a chance of 10% that it does not allow this atrocity and leaves the army. This means, the unit gets neutral (barbarian) and really fights independent for now. 
 
-If successful, it does not cost the player gold but the current rank of the unit (trained, combat experienced, ...) will be decreased by 1. First of all the promotion/status of "Fighting on his own" will be removed and on subsequent attempts always the last status of war weariness.
+If successful, it does not cost the player gold but the current rank of the unit (trained, combat experienced, ...) will be decreased by 1. First of all the promotion/status of being "unreliable" will be removed and on subsequent attempts always the last status of war weariness.
     </English>
     <French>
 [H1]Salaire et d&#233;cimation[\H1]
 Au fil du temps, les unit&#233;s sont susceptibles de se lasser des combats ou bien m&#234;me de refuser de suivre les ordres et pr&#233;f&#233;rerons combattre pour leur propre compte. Il y a 2 possibilit&#233;s pour d&#233;faire une unit&#233; de ces caract&#233;ristiques g&#234;nantes : une r&#233;tribution additionnelle (Salaire) ou la coercition par la violence (D&#233;cimation).
 
 [H2]Salaire[\H2]
-La technologie Monnaie permet de verser un exc&#233;dent de solde &#224; une unit&#233;, dans les cas o&#249; lui sont associ&#233;e les traits Chacun pour soi ou Lassitude de guerre I et plus.
+La technologie Monnaie permet de verser un exc&#233;dent de solde &#224; une unit&#233;, dans les cas o&#249; lui sont associ&#233;e les traits "Non fiable" ou Lassitude de guerre I et plus.
 
 Le prix est d&#233;finit par : Force de l'unit&#233; * 3 + 3 par promotion. Si le joueur est en possession de Sel, une partie du salaire en [ICON_GOLD] (25%) peut &#234;tre soustrait du co&#251;t de la r&#233;tribution.
 
 Les chances que l'unit&#233; se montre plus loyale ne sont n&#233;anmoins que de 50%.
 
-En cas de succ&#232;s, l'unit&#233; perd en priorit&#233; le trait Chacun pour soi, puis le trait Lassitude de guerre le plus &#233;lev&#233; pour les succ&#232;s ult&#233;rieurs.
+En cas de succ&#232;s, l'unit&#233; perd en priorit&#233; le trait "Non fiable", puis le trait Lassitude de guerre le plus &#233;lev&#233; pour les succ&#232;s ult&#233;rieurs.
 
 
 [H2]D&#233;cimation[\H2]
-La technologie D&#233;cimation permet de ch&#226;tier une unit&#233; qui arbore les caract&#233;ristiques suivantes : Chacun pour soi ou Lassitude de guerre 1 ou plus.
+La technologie D&#233;cimation permet de ch&#226;tier une unit&#233; qui arbore les caract&#233;ristiques suivantes : Non fiable ou Lassitude de guerre 1 ou plus.
 
 L'action ne co&#251;te pas d'or, mais l'unit&#233; s'affaiblit de 10% de sa force au combat (sant&#233;).
 
 Il n'y a l&#224; aussi que 50% de chance que cela fonctionne.
 
-A cela s'ajoute, si l'unit&#233; a le trait Chacun pour soi, une probabilit&#233; de 10% qu'elle ne se soumette pas &#224; cette atrocit&#233; et fuit l'arm&#233;e. Ce faisant, l'unit&#233; combattra bel et bien pour ses propres int&#233;r&#234;ts en tant qu'unit&#233; neutre (barbare).
+A cela s'ajoute, si l'unit&#233; a le trait "Non fiable", une probabilit&#233; de 10% qu'elle ne se soumette pas &#224; cette atrocit&#233; et fuit l'arm&#233;e. Ce faisant, l'unit&#233; combattra bel et bien pour ses propres int&#233;r&#234;ts en tant qu'unit&#233; neutre (barbare).
 
-La r&#233;ussite de la d&#233;cimation n'aura pas d'autre prix que la d&#233;gradation au rang inf&#233;rieur (entra&#238;n&#233;, exp&#233;riment&#233;...) de l'unit&#233; en plus de son affaiblissement temporaire. Cela dit, le trait Chacun pour soi dispara&#238;t en premier, suivi pour les essais suivants du rang le plus &#233;lev&#233; du trait Lassitude de guerre.
+La r&#233;ussite de la d&#233;cimation n'aura pas d'autre prix que la d&#233;gradation au rang inf&#233;rieur (entra&#238;n&#233;, exp&#233;riment&#233;...) de l'unit&#233; en plus de son affaiblissement temporaire. Cela dit, le trait "Non fiable" dispara&#238;t en premier, suivi pour les essais suivants du rang le plus &#233;lev&#233; du trait Lassitude de guerre.
     </French>
     <German>
 [H1]Sal&#228;r und Dezimierung[\H1]
-Im Laufe der Zeit kann eine Einheit kriegsm&#252;de werden oder es gibt Einheiten, die sich nicht einem Kommando f&#252;gen und lieber auf ihren eigenen F&#252;&#223;en k&#228;mpft. Nun gibt es 2 M&#246;glichkeiten diese negativen Eigenschaften einer Einheit auszutreiben: Extrabezahlung (Sal&#228;r) oder Gewalt (Dezimation/Dezimierung).
+Im Laufe der Zeit kann eine Einheit kriegsm&#252;de werden oder es gibt Einheiten, die sich nicht einem Kommando f&#252;gen und lieber unzuverl&#228;ssig f&#252;r sich k&#228;mpft. Nun gibt es 2 M&#246;glichkeiten diese negativen Eigenschaften einer Einheit auszutreiben: Extrabezahlung (Sal&#228;r) oder Gewalt (Dezimation/Dezimierung).
 
 
 [H2]Sal&#228;r[\H2]
-Ab der Technologie W&#228;hrung ist es m&#246;glich, einer Einheit einen Extrasold zu geben, sofern diese entweder "auf eigenen F&#252;&#223;en k&#228;mpft" oder kriegsm&#252;de ist (ab Kriegsm&#252;digkeitsstatus I).
+Ab der Technologie W&#228;hrung ist es m&#246;glich, einer Einheit einen Extrasold zu geben, sofern diese entweder "unzuverl&#228;ssig k&#228;mpft" oder kriegsm&#252;de ist (ab Kriegsm&#252;digkeitsstatus I).
 
 Die Kosten betragen: St&#228;rke der Einheit * 3 + 3 pro Bef&#246;rderung. Ist der Spieler im Besitz von Salz kann daraus ein Teil des Solds bezahlt werden, was eine Ersparnis von -25% Goldst&#252;cken bringt.
 
 Die Chance, dass sich die Einheit dadurch loyaler zeigt betr&#228;gt aber nur 50%. 
 
-Bei Erfolg verliert die Einheit zu allererst die "K&#228;mpft auf eigenen F&#252;&#223;en"-Eigenschaft und bei weiteren Versuchen immer den letzen Kriegsm&#252;digkeits-Status.
+Bei Erfolg verliert die Einheit zu aller erst die "Unzuverl&#228;ssig"-Eigenschaft und bei weiteren Versuchen immer den letzen Kriegsm&#252;digkeits-Status.
 
 
 [H2]Dezimierung[\H2]
-Ab der Technologie Dezimation ist es M&#246;glich, eine Einheit zu bestrafen, sofern diese entweder "auf eigenen F&#252;&#223;en k&#228;mpft" oder kriegsm&#252;de ist (ab Kriegsm&#252;digkeitsstatus I).
+Ab der Technologie Dezimation ist es M&#246;glich, eine Einheit zu bestrafen, sofern diese entweder "unzuverl&#228;ssig k&#228;mpft" oder kriegsm&#252;de ist (ab Kriegsm&#252;digkeitsstatus I).
 
 Es sind keine Kosten zu tragen, jedoch verliert die Einheit dabei 10% ihrer Mannschaftsst&#228;rke (Lebensenergie).
 
 Die Chance, dass es klappt betr&#228;gt auch hier 50%.
 
-Dazukommt, dass wenn die Einheit "auf eigenen F&#252;&#223;en k&#228;mpft", es noch eine 10% Wahrscheinlichkeit gibt, dass sie diese Greueltat nicht zul&#228;sst und die Armee verl&#228;sst. Dabei wird die Einheit neutral (barbarisch) und k&#228;mpft nun wirklich eigenst&#228;ndig.
+Dazukommt, dass wenn die Einheit "unzuverl&#228;ssig k&#228;mpft", es noch eine 10% Wahrscheinlichkeit gibt, dass sie diese Gr&#228;ueltat nicht zul&#228;sst und die Armee verl&#228;sst. Dabei wird die Einheit neutral (barbarisch) und k&#228;mpft nun wirklich eigenst&#228;ndig.
 
-Bei Erfolg hat es dem Spieler zwar nichts gekostet aber der aktuelle Rang der Einheit (trainiert, kampferfahren,...) sinkt um 1. Weiters verschwindet zu allererst die "K&#228;mpft auf eigenen F&#252;&#223;en"-Eigenschaft und bei weiteren Versuchen immer den letzen Kriegsm&#252;digkeits-Status.
+Bei Erfolg hat es dem Spieler zwar nichts gekostet aber der aktuelle Rang der Einheit (trainiert, kampferfahren,...) sinkt um 1. Weiters verschwindet zu aller erst die "Unzuverl&#228;ssig"-Eigenschaft und bei weiteren Versuchen immer den letzen Kriegsm&#252;digkeits-Status.
     </German>
     <Italian>
-[H1]Salary and decimation[\H1] 
-Over time, a unit may be tired of war or there are units that do not pay attention to commands and prefer to fight on their own. Now there are two ways to cast out those negative properties of a unit: Extra payment (salary) or punishment (decimation). 
+[H1]Stipendio e decimazione[\H1]
+Nel corso del tempo, un'unit&#224; pu&#242; stancarsi della guerra, oppure ci sono unit&#224; che non obbediscono a un comando e preferiscono combattere da sole in modo inaffidabile. Ora ci sono 2 modi per scacciare queste caratteristiche negative di un'unit&#224;: paga extra (stipendio) o violenza (decimazione/decimazione).
 
-[H2]Salary[\H2] 
-With Currency (technology) it is possible to give a unit an extra pay, provided that it is either "fighting on his own feet" or tired of war (from War Weariness I). 
 
-The cost is unit combat strength * 3 + 3 gold pieces per promotion. If the player is in possession of salt it can be part of the paid salary, resulting in a saving of -25% gold. 
+[H2]Stipendio[\H2]
+Dalla valuta della tecnologia &#232; possibile dare a un'unit&#224; una paga extra se "combatte in modo inaffidabile" o &#232; stanca della guerra (dallo stato di stanchezza della guerra I).
 
-But the chance that the unit thereby showing more loyal is only 50%. 
+Il costo &#232;: forza unitaria * 3 + 3 per promozione. Se il giocatore &#232; in possesso di sale, una parte della paga pu&#242; essere pagata da esso, con un risparmio del -25% in monete d'oro.
 
-If successful, the unit loses the "Fight on his own feet" status first and on subsequent attempts always the last war weariness status. 
+Tuttavia, la possibilit&#224; che l'unit&#224; si dimostri pi&#249; fedele &#232; solo del 50%.
 
-[H2]Decimation[\H2] 
-From the Decimation technology it is possible to punish a unit, provided that it is either "fighting on his own" or is tired of war (from War Weariness I). 
+In caso di successo, l'unit&#224; perde prima la propriet&#224; "Inaffidabile" e con ulteriori tentativi sempre l'ultimo stato di stanchezza di guerra.
 
-There are no costs to bear, but the unit loses 10% of their strength (life energy). 
 
-The chance that it will work is 50% here too. 
+[H2]Decimazione[\H2]
+A partire dalla tecnologia Decimazione, &#232; possibile punire un'unit&#224; se "combatte in modo inaffidabile" o se &#232; stanca della guerra (dallo stato di stanchezza della guerra I).
 
-If given, that if the unit is "fighting on his own feet", there is a chance of 10% that it does not allow this atrocity and leaves the army. This means, the unit gets neutral (barbarian) and really fights independent for now. 
+Non ci sono costi da sostenere, ma l'unit&#224; perde il 10% della forza dell'equipaggio (energia vitale).
 
-If successful, it does not cost the player gold but the current rank of the unit (trained, combat experienced, ...) will be decreased by 1. First of all the promotion/status of "Fighting on his own" will be removed and on subsequent attempts always the last status of war weariness.
+Anche la possibilit&#224; che funzioni &#232; del 50%.
+
+Inoltre, se l'unit&#224; "combatte in modo inaffidabile", c'&#232; ancora una probabilit&#224; del 10% che non permetta questa atrocit&#224; e lasci l'esercito. L'unit&#224; diventa neutrale (barbarica) e ora combatte davvero in modo indipendente.
+
+Se ha successo, non costa nulla al giocatore, ma il grado attuale dell'unit&#224; (addestrata, esperta in battaglia,...) scende di 1. Inoltre, la propriet&#224; "inaffidabile" prima di tutto scompare e con ulteriori tenta sempre l'ultimo stato di stanchezza di guerra.
     </Italian>
     <Spanish>
 [H1]Salario y diezmar[\H1]
-Con el tiempo, las unidades pueden sufrir hast&#237;o b&#233;lico o cambiar a mercenarias ("luchan por su propia cuenta"). Ahora hay dos maneras de eliminar esos efectos negativos. Con un pago extra (salario) o con la fuerza (diezm&#225;ndolos).
+Con el tiempo, las unidades pueden sufrir hast&#237;o b&#233;lico o cambiar a mercenarias ("Poco confiable"). Ahora hay dos maneras de eliminar esos efectos negativos. Con un pago extra (salario) o con la fuerza (diezm&#225;ndolos).
 
 [H2]Salario[\H2]
-Desde la tecnolog&#237;a Moneda es posible dar una paga extra a las unidades, siempre que tengan la promoci&#243;n "luchan por su cuenta" o bien tengan las promociones de hast&#237;o b&#233;lico (a partir de hast&#237;o b&#233;lico I).
+Desde la tecnolog&#237;a Moneda es posible dar una paga extra a las unidades, siempre que tengan la promoci&#243;n "Poco confiable" o bien tengan las promociones de hast&#237;o b&#233;lico (a partir de hast&#237;o b&#233;lico I).
 
 El coste es: Fuerza * 3 + N&#250;mero de promociones * 3, monedas de oro. Si el jugador posee el recurso Sal, &#233;ste forma parte del salario, por lo que habr&#237;a un ahorro del -25%.
 
 Hay posibilidades de que la unidad se muestre leal pero s&#243;lo del 50%.
 
-Si tiene &#233;xito, la unidad pierde primero la promoci&#243;n "lucha por su cuenta" y posteriormente en cada intento, las promociones de hast&#237;o b&#233;lico.
+Si tiene &#233;xito, la unidad pierde primero la promoci&#243;n "Poco confiable" y posteriormente en cada intento, las promociones de hast&#237;o b&#233;lico.
 
 [H2]Diezmar[\H2]
-A partir del descubrimiento de la tecnolog&#237;a Diezmar, es posible castigar a una unidad con la fuerza, siempre que tenga la promoci&#243;n "lucha por su cuenta" o tenga hast&#237;o b&#233;lico.
+A partir del descubrimiento de la tecnolog&#237;a Diezmar, es posible castigar a una unidad con la fuerza, siempre que tenga la promoci&#243;n "Poco confiable" o tenga hast&#237;o b&#233;lico.
 
 No hay costes, pero la unidad pierde un 10% de su fuerza.
 
 La posibilidad de que funcione es del 50%.
 
-Si tiene &#233;xito, y la unidad tiene "lucha por su cuenta", hay una probabilidad del 10% que no permitan tal acto y deserten. Esta unidad se volver&#225; neutral (b&#225;rbara) y luchara de forma realmente independiente.
+Si tiene &#233;xito, y la unidad tiene "Poco confiable", hay una probabilidad del 10% que no permitan tal acto y deserten. Esta unidad se volver&#225; neutral (b&#225;rbara) y luchara de forma realmente independiente.
 
-Si tiene &#233;xito, no tendr&#225; costes, pero el rango de la unidad (veterana, &#233;lite, entrenada) se ver&#225; rebajado en 1. Adem&#225;s, desaparecer&#225; primero la promoci&#243;n "lucha por su cuenta", si lo tuviera, y posteriormente, las &#250;ltima promoci&#243;n de hast&#237;o b&#233;lico.
+Si tiene &#233;xito, no tendr&#225; costes, pero el rango de la unidad (veterana, &#233;lite, entrenada) se ver&#225; rebajado en 1. Adem&#225;s, desaparecer&#225; primero la promoci&#243;n "Poco confiable", si lo tuviera, y posteriormente, las &#250;ltima promoci&#243;n de hast&#237;o b&#233;lico.
     </Spanish>
   </TEXT>
   <TEXT>
@@ -12834,303 +12822,302 @@ Chance: 1:15
 2. Gei&#223;el Gottes (Tech: Panzerreiter)
     </German>
     <Italian>
-In PAE, there is a unique ranking system (military ranks) for certain units and tribes that were verifiable part of a military hierarchy. The levels of these hierarchies differed from one nation to another. While there were hardly any steps in some tribes (eg the bravest and strongest warrior only), the Romans used a system of up to 150 functions. In PAE, a large part of the most important ranks and titles can be replayed in a specific way.
+In PAE esiste un sistema di classificazione unico (ranghi) per determinate unit&#224; e razze che hanno dimostrato di aver fatto parte di una gerarchia militare. I livelli di queste gerarchie differivano da persona a persona. Mentre alcune trib&#249; non avevano quasi alcun livello (ad esempio solo il guerriero pi&#249; coraggioso e forte), i romani usavano un sistema fino a 150 titoli. Gran parte dei pi&#249; importanti gradi e titoli specifici per razza possono essere riprodotti in PAE.
 
--) Attacking units: national specific (see below), eg 100%, 50%, 33%
--) Defending units: additionally 1: 4 chance before the calculation of the national specific chance
--) The commendation (petty officer to officer) can only be done in the capital or a provincial capital
-
-
-[H1]The Roman Empire[\H1]
-
-[H2]Infantry[\H2]
-Units: Legionaries, Imperial Legionaires
-Chance: 100% (per fight)
-
-01. Signatus (units begins with this rank automatically)
-02. Munifex
-03. Immunes => from now on, the unit is able to promote to a praetorian
-
-Petty officer:
-
-04. Principales
-05. Tesserarius (maximum rank of an Auxiliar)
-06. Optio (new unit)
-07. Signifer
-08. Aquilifer
-09. Optio ad spem
-
-Officers:
-
-10. Centurio (Captain, new unit)
-11. Centurio Posterior
-12. Centurio Prior
-13. Primus Pilus
-14. Praefectus Castrorum
-
-Line officers (MOUNTED UNITS from now on):
-
-15. Praefectus (new unit)
-16. Tribunus
-17. Tribunus Laticlavius
-18. Legatus Legionis
-19. Legatus Augusti
-20. Consul
+-) Unit&#224; attaccanti: specifiche per razza (vedi sotto), ad esempio 100%, 50%, 33%
+-) Unit&#224; in difesa: possibilit&#224; aggiuntiva 1:4 prima di calcolare la possibilit&#224; specifica della razza
+-) L'encomio (da sottufficiale ad ufficiale) pu&#242; essere effettuato solo nel capoluogo o capoluogo di provincia
 
 
-[H2]From the 4th century on:[\H2]
-Units: Comitatenses
-Chance: 100%
+[H1]L'Impero Romano[\H1]
 
-01. Tiro 
-02. Biarchus 
-03. Ordinarius 
-04. Centenarius 
-05. Ducenarius 
+[H2]Fanteria[\H2]
+Unit&#224;: legionari, legionari imperiali
+Possibilit&#224;: 100%
+
+01. Signatus: soldato dopo l'addestramento di base
+02. Munifex: =Milites, soldato regolare
+03. Immuni: Munifex di lunga data => da qui i veterani possono passare all'unit&#224; dei Pretoriani
+
+Sottufficiali:
+
+04. Principales: sottufficiale
+05. Tesserarius: Sergente (grado massimo dell'unit&#224; ausiliaria)
+06. Optio (nuova entit&#224;): vice centurione
+07. Signifer: portatore del segno del campo
+08. Aquilifer: portatore anziano del segno del campo
+09. Optio ad spem: Optio anziano destinato alla promozione a centurione
+
+ufficiali:
+
+10° Centurione (nuova unit&#224;): Capitano
+11th Centurion Posterior: Centurion dal IV secolo della 2a alla 10a coorte
+12° Centurione Priore: Centurione dal I al III secolo dalla I alla X coorte
+13. Primus Pilus: Centurione del I Secolo della I Coorte
+14. Praefectus Castrorum: comandante del campo
+
+Stato Maggiore degli Ufficiali (UNIT&#192; A MONTAGGIO da qui):
+
+15. Praefectus (nuova unit&#224;): vice comandante della legione
+16° Tribunus: comandante di coorte
+17. Tribunus Laticlavius: Tribuno supremo
+18. Legatus Legionis: Comandante delle Legioni
+19. Legatus Augusti: amministratore delle legioni
+20° Console: Massima carica militare
+
+
+[H2]Dal IV secolo d.C.:[\H2]
+Unit&#224;: Comitatenses
+Possibilit&#224;: 100%
+
+01. Tiro: recluta
+02. Biarchus: soldato regolare
+03. Ordinarius: sottufficiale
+04. Centenario: 100 uomini
+05. Ducenarius: 200 uomini
  
-Officers:
+ufficiali:
 
-06. Primicerius (Lieutenant, new unit)
-07. Clarissimus
-08. Protector
-09. Praefectus
-10. Tribunus 
+06. Primicerius (nuova unit&#224;): tenente
+07. Clarissa
+08.Protettore
+09. Prefetto
+10. Tribuna
 
-Generals: 
+generali:
 
-11. Dux (new unit)
-12. Comes
-13. Magister
+11. Dux (nuova unit&#224;)
+12 Arriva
+13° Maestri
 14. Magister militum
-15. Patricius
+15. Patrizio
 
 
-[H2]Mounted Units:[\H2]
-Units: Equites and Cohors Equitata
-Chance: 25%
+[H2]Unit&#224; di cavalli:[\H2]
+Unit&#224;: Equites e Cohors Equitata
+Possibilit&#224;: 25%
 
-(Knighthood. Starts with rank 10 compared with legionaries)
-10. Curator
-11. Optio
-12. Decurio (new unit)
+-- cavalierato. Inizia al grado 10 rispetto ai legionari --
+10. Curatori
+11. Opz
+12. Decurio (nuova unit&#224;)
 13. Decurio Princeps
 14. Praefectus Alae
-continues with rank 15 of the legionaries: Praefectus
+ora continua al rango 15 come Legionario: Praefectus
 
 
-[H1]Greeks (+ Athens, Thebes)[\H1]
-Units: Hoplites
-Chance: 100%
+[H1]Greci (+ Atene, Tebe)[\H1]
+Unit&#224;: Opliti
+Possibilit&#224;: 100%
 
--- Hoplites --
-1. Stratiotis (Soldier)
-2. Protostates (1,3,5,7. line of a phalanx)
-3. Epistates (2,4,6,8. line of a phalanx)
-4. Ypodekaneas
-5. Dekaneas (corporal) => Promo up
--- Junior officers --
-6. Lochias (Corporal)
-7. Epilochias
-8. Archilochias
-9. Anthypolochagos
-10. Ypolochagos (Lieutnant) => Promo up
--- Officers-Hippeis --
-11. Lochagos (Captain)
-12. Tagmatarches (Major/Battalion leader)
-13. Antisyntagmatarches (Lieutnant colonel)
-14. Syntagmatarches (Colonel)
-15. Taxiarchos (Brigadier general) => Promo Up
--- Comissioned officers-Strategos --
-16. Ypostrategos (Major general)
-17. Antistrategos (Lieutnant general)
-18. Strategos (General)
-19. Polemarchos (Highest general)
+-- opliti --
+1. Stratiotis (soldato)
+2. Protostati (1,3,5,7a linea della falange)
+3. Epistati (2,4,6,8a linea della falange)
+4. Ypodecaneas
+5. Decaneas (Caporale) => Promo up
+-- Sottufficiali --
+6. Lochias (sergente)
+7. Epilochia
+8. Archilochia (maggiore)
+9. Anthypolochagos (Vice tenente)
+10. Ypolochagos (tenente) => Promo Up
+-- Ufficiali --
+11. Lochagos (Capitano)
+12. Tagmatarches (maggiore/comandante di battaglione)
+13. Antisyntagmatarches (tenente colonnello)
+14. Syntagmatarches (colonnello)
+15. Taxiarchos (Generale di brigata) => Promo Up
+-- Ufficiali di stato maggiore --
+16. Ypostrategos (maggiore generale)
+17. Antistrategos (tenente generale)
+18. Strategos (Generale)
+19. Polemarco (pi&#249; alto titolo generale)
 
 
 [H1]Sparta[\H1]
-Units: Spartans
-Chance: 100%
+Unit&#224;: Spartani
+Possibilit&#224;: 100%
 
--- Spartans -- 
-1. Demi-Phylearchos (leader of 6)
-2. Phylearchos (leader of 12)
-3. Hyperetes (assists the Enomotarch)
-4. Ouragos (assists the Enomotarch)
--- Spartiats --
-5. Enomotarches (leader of 36)
-6. Pentekonter (leader of 180)
-7. Lochagos (leader of 1000)
--- Armored Spartiats (Hippeus Spartiatas) --
-8. Harmost (military governor)
-9. Polemarchos (leader of the army)
-10. Ephoros (highest rank of 5 men, the Ephors)
-
+-- Spartani --
+1. Demi-Phylearchos (leader di 6)
+2. Filarco (capo dei 12)
+3. Hyperetes (assiste l'enomotarca)
+4. Ouragos (assiste l'enomotarca)
+-- Spartiati --
+5. Enomotarchi (capo dei 36)
+6. Pentecounter (leader di 180)
+7. Lochagos (Capo dei 1000)
+-- Spartani corazzati (Hippeus Spartiatas) --
+8. Harmost (amministratore militare)
+9. Polemarco (Generale)
+10. Ephoros (la pi&#249; alta carica di 5 persone, gli efori)
 
 [H1]Macedonia[\H1]
-Units: Pezhetairoi
-Chance: 100%
+Unit&#224;: Pezhetairoi
+Possibilit&#224;: 100%
 
 -- Pezhetairoi --
-1. Pezhetairos (Infantry companion)
-2. Protostates (1,3,5,7. line of a phalanx)
-3. Epistates (2,4,6,8. line of a phalanx)
-4. Dekastateros (2nd Leutnant)
--- Sarissophoros --
-5. Dekadarchos (Lieutnant of 16)
-6. Tetrarchos (Lieutnant colonel of 64)
-7. Syntagmos (Colonel of 256)
+1. Pezhetairos (compagni a piedi)
+2. Protostati (1,3,5,7a linea della falange)
+3. Epistati (2,4,6,8a linea della falange)
+4 ° Dekastateros (2 ° tenente)
+-- Sarissophorus --
+5. Dekadarchus (tenente di 16)
+6 ° Tetrarco (Primo Luogotenente di 64)
+7. Sintagmo (Capitano, 256)
 -- Lochagos --
-8. Lochagos (Major of 512)
-9. Taxiarchos (Brigadier general of 1536)
--- Pezhetairoi basilikoi --
-10. Chiliarchos (General)
+8. Lochagos (colonnello, 512)
+9. Taxiarchos (Generale di brigata, 1536)
+-- Pezhetairos basilikoi --
+10. Chiliarco (Generale)
 
+[H1]Persiano[\H1]
 
-[H1]Persia[\H1]
+[H2]Fanteria[\H2]
+Unit&#224;: Lancieri, Immortali e Pezoi
+Possibilit&#224;: 100%
 
-[H2]Infantrie[\H2]
-Units: Spearman, Immortals and Pezoi
-Chance: 100%
+1. Paygan: Soldato
+2. Paygan-salar: comandante in capo della divisione di fanteria
+3. Hazarmard-salar: comandante supremo di 1000
+4. Argbed: comandante in capo di un accampamento/fortezza
+5. Eran anbaraghbad: Senior Military Supply Rank
+-- portatore di mele --
+-- I corrieri Apple possono passare alla Cavalleria (Savaran) --
+6. Hazarapati, 1000
+7. Patyaxsa: impiegato militare capo
+-- Azadan (nobile) --
+8. Gausaka: Orecchio del re
+9. Didiyaka: Occhio del re
+10. Visir: In tutto ci&#242; che conta gli occhi affidabile di decine di migliaia e decine di migliaia
 
-1. Paygan: soldier
-2. Paygan-salar: chief of an infantry division
-3. Hazarmard-salar: chief of 1000
-4. Argbed: commander of a castle or fort
-5. Eran anbaraghbad: senior rank responsible for army supplies
--- Apple-Bearer --
--- Apple-Bearer can change to cavalry --
-6. Hazarapatis, 1000
-7. Patyaxsa: chief military writer
--- Azadan (Noble) --
-8. Gausaka: Ears of the Lord
-9. Didiyaka: Eyes of the Lord
-10. Vizier: reliable eye at all-overseer of 10.000 and above
+[H2]Cavalleria[\H2]
+Unit&#224;: Lancieri
+Possibilit&#224;: 33%
 
-[H2]Cavalry[\H2]
-Units: Mounted Lancier
-Chance: 33%
-
-1. Aswar
-2. Salar of 10
-3. Salar of 50
-4. Salar of 100
-5. Salar of 500
--- Savaran --
-6. Savaran (Asbaran, Azadan or Aswaran): cavalry division
-7. Savaran Sardar: head of a cavalry division
--- Cataphract oder Clibanarii --
-8. Zhayedan: mounted immortals
-9. Zhayedan-salar: head of the mounted immortals
-10. Pushtigban-salar: head of the royal guard
-11. Gyan-avspar: best of the pushtigban
+1. Asvar
+2 Salar il 10
+3° Salar del 50°
+4. Salar del centesimo
+5. Salar del 500°
+--Savaran--
+6° Savaran (Aswaran): divisione di cavalleria
+7. Savaran Sardar: capo della cavalleria
+-- Katahprakt (possibile solo dall'armatura del cavallo) --
+8. Zhayedan: immortali a cavallo
+9. Zhayedan-salar: Comandante Supremo degli Immortali
+10. Pushtigban-salar: comandante in capo della guardia reale
+11. Gyan-avspar: grado pi&#249; alto di pushtigban
 -- Marzban --
-12. Marzban (Kanarang): equivalent to margrave and commander of frontier province
-13. Padhuspan: commander of each of the four provincial divisions
-14. Spahbed: field general
-15. Eran Spahbed: military head, defense minister
+12. Marzban (Kanarang): Equivalente a Margravio e Comandante delle Province di Frontiera
+13. Padhuspan: comandante di ciascuna delle quattro divisioni provinciali
+14. Spahbed: generale di campo
+15. Eran Spahbed: Generale, Segretario alla Difesa
 
 
-[H1]Egyptians[\H1]
-From Tech: Shortsword
-Units: Axe-, Swords- and Spearmen
-Chance: 50%
+[H1]Egiziani[\H1]
+Da Tec: spada corta
+Unit&#224;: portatori di ascia, spada e lancia
+Possibilit&#224;: 50%
 
-1. Soldier (nfrw)
-2. Overseer of 10 (hrp nfrw)
-3. Greatest of 50 (n djw)
-4. Standart bearer (Tjah-Serut)
-5. Overseer of 500 (Heru Pa-Djet)
--- Nomarch --
-6. Military writer (zs ms)
-7. Overseer of troops (mr ms)
-8. Oberseer of fortresses (mr mnw)
-9. Overseer of weapons (mr ms wr)
-10. Sab-Tjati (vice vizier)
--- Tjati (Vizier) -- (Tech: Chariots and horses required)
-11. Tjati (Vizier), second most important man in state
-
-
-[H1]Carthage[\H1]
-Units: Sacred Band, Shield Bearer and Hoplites
-Chance: 33%
-
-1 Rab miat (rb m't)-greatest of 100
-2 Rab matem (rb mtm)-greatest of 200
--- Sacred Offizier --
-3 Rab darak (rb drk)-head of infantry
-4 Rab shalesi (rb slsy)-co-adjudant of general
--- Mounted Sacred Band (can dis/mount horses) --
-5 Rab sheni (rb sny)-adjudant of general
-6 Rab mahanet (rb mhnt)-general (head of army)
+1 ° soldato (nfrw)
+2° capo dei 10 (hrp nfrw)
+3. Grande dei 50 (n djw)
+4. Alfiere (Tjah-Serut)
+5. Capo di 500 (Heru Pa-Djet)
+-- Gauf&#252;rst / Nomarca --
+6. Impiegato dell'esercito (zs ms)
+7. Capo delle truppe (signor ms)
+8. Capo delle fortezze (mr mnw)
+9. Capo d'armi (signor ms wr)
+10. Sab-Tjati (Vice Visir)
+-- Tjati (Vizir) -- (Tech: carro e cavallo necessari)
+11. Tjati (visir), secondo uomo pi&#249; importante dello stato
 
 
-[H1]Assyrians and Babylonians[\H1]
-From Tech: Civic Soldiers
-Units: Axe-, Swords- and Spearmen
-Chance: 100%
+[H1]Cartaginesi[\H1]
+Unit&#224;: Ostia Sacra, Portatori di Scudi e Oplita
+Possibilit&#224;: 33%
 
-1. Huradu (soldier)
-2. Sab kasrutu (professional soldier)
-3. Rab eserte (commander of 10)
-4. Rab hanse (commander of 50)
-5. Rab kisri (cohort commander)
--- Turtanu (Tartan/Turtan) --
-6. Rab 5-me-at (commander of 500)
-7. Rab 1-lim (commander of 1000, Chiliarch)
-8. Turtanu nasaru (king's guard)
-9. Turtanu shumeli (king's left hand)
-10. Turtanu imni (king's right hand)
+1. Rab miat (rb m't)-maggiore di 100
+2. Rab matem (rb mtm)-grande di 200
+-- Ufficiale dell'Ostia Santa --
+3. Rab darak (rb drk)-Capo comandante di fanteria
+4. Rab shalesi (rb slsy)-Coadiutante generale
+-- Generale dell'Ostia Sacra (pu&#242; montare/smontare da cavallo) --
+5. Rab sheni (rb sny)-Aiutante generale
+6. Rab mahanet (rb mhnt)-Generale (comandante in capo dell'esercito)
+
+
+[H1]Assiri e Babilonesi[\H1]
+Da Tec: soldati cittadini
+Unit&#224;: portatori di ascia, spada e lancia
+Possibilit&#224;: 100%
+
+1. Huradu (soldato)
+2. Sab kasrutu (Soldato esperto)
+3. Rab Eserte (Comandante di 10)
+4. Rab hanse (comandante di 50)
+5. Rab kisri (comandante di coorte)
+-- Turtanu (scozzese/turtan) --
+6. Rab 5-me-at (Comandante di 500)
+7. Rab 1-lim (Comandante dei 1000, Chiliarca)
+8. Turtanu nasaru (guardia del corpo)
+9. Turtanu shumeli (Mano sinistra del re)
+10. Turtanu imni (Mano destra del re)
 -- Sa-resi --
-11. Sa-resi (eunuch, cup-bearer)
-12. Rab saqe (Rabshakeh, Chief cup-bearer)
-13. Nagir ekalli (palace herald)
-14. Rab sa-resi (Rabsaris, chief eunuch)
-15. Sartinnu (chief of justice)
-16. Masennu (chief of treasure)
--- Sukallu --
-17. Sukallu (vizier, eunuch)
-18. Sukallu dannu (grand vizier)
-19. Sukallu ummanu (vice chancellor)
-20. Sukallu rabiu (chief chancellor)
+11. Sa-resi (eunuco, coppiere)
+12. Rab saqe (grande coppiere)
+13. Nagir ekalli (Araldo del Palazzo)
+14. Rab sa-resi (Rabsaris, Grande Unuco)
+15. Sartinnu (giudice capo)
+16. Masennu (Tesoriere)
+-- Sukallu -- (Tecnologia: carro e cavallo richiesti)
+17. Sukallu (visir, eunuco)
+18. Sukallu dannu (Gran Visir)
+19. Sukallu ummanu (Vice Cancelliere)
+20. Sukallu Rabiu (Cancelliere)
 
 
-[H1]Sumerians[\H1]
-From Tech: Civic Soldiers
-Units: Axe-, Swords- and Spearmen
-Chance: 50%
+[H1]Sumeri[\H1]
+Da Tec: soldati cittadini
+Unit&#224;: portatori di ascia, spada e lancia
+Possibilit&#224;: 50%
 
-1. aga-ush (follower of the crown, professional troops)
-2. ugula (overseer)
-3. nubanda (captain)
-4. rabi'anu (nomad chiefs)
--- Ensi --
-5. ensi (prince)
-6. shagina (general)
-7. shagina erin (highest general of army)
-8. sanga (Sangu, chief priest)
-9. lugal (Great man, administrator)
--- En --
-10. en (divine man)
-
-
-[H1]Germans and Celts[\H1]
-Required technology: Ethos of Warriors
-Units: all
-Chance: 1:4
-
-1. Warband
-2. Battle companion
-3. Clan leader 
-4. Upgrade => Tribal chief (melee only)
+1. aga-ush (seguaci della corona, truppe professionali)
+2. ugula (sorvegliante)
+3. nubanda (capitano)
+4. rabi'anu (capi dei clan)
+--Ensie --
+5. ensi (principe)
+6. Shagina (Generale)
+7. shagina erin (Supremo Generale)
+8. sanga (sangu, sommo sacerdote)
+9. lugal (grande uomo, steward)
+-- It -- (Tecnica: carro e cavallo richiesti)
+10. it (Divino Signore)
 
 
-[H1]Huns[\H1]
-Required technology: Ethos of Warriors
-Units: all
-Chance: 1:15
+[H1]Tedeschi e Celti[\H1]
+Da Tec: Guerriero Ethos
+Unit&#224;: tutte
+Possibilit&#224;: 1:4
 
-1. Khagan (Army leader)
-2. Scourge of God (Tech: Armored Riders)
+1a banda da guerra
+2. Compagno di combattimento
+3. Capo clan
+4. Miglioramento => Capitano (solo corpo a corpo)
+
+
+[H1]Unni[\H1]
+
+Da Tec: Guerriero Ethos
+Unit&#224;: tutte
+Possibilit&#224;: 1:15
+
+1. Khagan (Generale)
+2. Flagello di Dio (Tecnologia: Cavaliere corazzato)
     </Italian>
     <Spanish>
 En PAE, hay un sistema de ranking (rangos militares) &#250;nico para determinadas unidades y tribus, que era una parte verificable de una jerarqu&#237;a militar. Los niveles de estas jerarqu&#237;as difieren de una naci&#243;n a otro. Mientras hab&#237;an pocos pasos en algunas tribus (ej: el m&#225;s bravo y fuerte guerrero solamente), los romanos tuvieron un sistema de 150 funciones. En PAE, una gran parte de los rangos m&#225;s importantes se puede reproducir de una manera espec&#237;fica.
@@ -13479,19 +13466,19 @@ W&#228;hrend s&#228;mtliche Einheiten mit dem Status eines Veterans zu neuen Ein
 -) Elite Hunnischer Marodeur => Gei&#223;el Gottes
     </German>
     <Italian>
-[H1]Elite units[\H1]
+[H1]Unit&#224; d'&#233;lite[\H1]
 
-While all units with the status of a veteran can be commended to new units, there are also single units, which can only be made to special units with the status of an elite.
+Sebbene tutte le unit&#224; con status di veterano possano essere lodate come nuove unit&#224;, ci sono anche unit&#224; isolate che possono essere trasformate in unit&#224; speciali molto speciali solo dopo aver ottenuto lo status di &#233;lite.
 
--) Elite Limitanei => Imperial Guard
+-) Elite Limitanei => Guardia Imperiale
 
 -) Elite Comitatenses => Palatini
 
--) Elite Palatini, Clibanarii or Cataphractii => Scholae Palatinae 
+-) Elite Palatini, Clibanarii o Cataphractii => Scholae Palatinae
 
 -) Elite Cohors Equitata => Equites Singulares Augusti
 
--) Elite Hun Marauder => Scourge of God
+-) Elite Hunnic Predone => Flagello di Dio
     </Italian>
     <Spanish>
 [H1]Unidades de &#233;lite[\H1]
@@ -13844,6 +13831,7 @@ Numbers ... Number of points in network players
 (WAR) ... we are at war with this CIV
 [ICON_OPENBORDERS] ... with this CIV we have open borders
 [ICON_TRADE] ... we can trade resources with this CIV
+[ICON_DEFENSE] ... City-State (cannot build settlers)
 Religion symbol ... state religion of this CIV (with star = owner of the Holy City)
 Technology ... current research of this CIV (always visible to us, our vassals and CIVs with the necessary espionage points (see Passive Espionage))
     </English>
@@ -13866,6 +13854,7 @@ Nombre ... score des joueurs en r&#233;seau
 (KRIEG) ... en guerre avec cette civilisation
 [ICON_OPENBORDERS] ... accord de libre-passage avec cette civilisation
 [ICON_TRADE] ... commerce de ressources possible avec cette civilisation
+[ICON_DEFENSE] ... Cit&#233;-&#201;tat (ne peut pas construire de colons)
 Ic&#244;ne de religion ... religion d'&#233;tat de la civilisation (Etoile = d&#233;tient la Ville sainte)
 Technologie ... recherche actuelle de la civilisation (celle du joueur toujours affich&#233;e, affiche celle des vassaux ou adversaires si les points d'espionnage requis sont accumul&#233;s(Voir Espionnage passif))
     </French>
@@ -13888,6 +13877,7 @@ Ziffern ... Punkteanzahl bei Netzwerkspielern
 (KRIEG) ... mit dieser CIV f&#252;hren wir Krieg
 [ICON_OPENBORDERS] ... mit dieser CIV haben wir offene Grenzen (Durchreiserecht)
 [ICON_TRADE] ... mit dieser CIV k&#246;nnen wir Ressourcen handeln
+[ICON_DEFENSE] ... Stadtstaat (kann keine Siedler bauen)
 Religionssymbol ... Staatsreligion dieser CIV (mit Stern = Besitzer der Heiligen Stadt)
 Technologie ... derzeitige Forschung dieser CIV (immer sichtbar bei uns, unseren Vasallen und CIVs mit den daf&#252;r notwendigen Spionagepunkten (siehe Passive Spionage))
     </German>
@@ -13910,6 +13900,7 @@ Numeri... Numero di punti in rete giocatori
 (GUERRA) ... siamo in guerra con questo CIV
 [ICON_OPENBORDERS] ... con questo CIV abbiamo frontiere aperte
 [ICON_TRADE] ... possiamo scambiare risorse con questo CIV
+[ICON_DEFENSE] ... Citt&#224;-Stato (non pu&#242; costruire coloni)
 Simbolo di religione ... religione di stato di questo CIV (con asterisco = proprietario della Citt&#224; Santa)
 Tecnologia ... ricerca attuale di questo CIV (sempre visibile a noi, ai nostri vassalli e CIV con i punti di spionaggio necessari (vedi Spionaggio passivo))
     </Italian>
@@ -13932,6 +13923,7 @@ N&#250;meros... N&#250;mero de puntos en jugadores de la red
 (GUERRA) ... estamos en guerra con este CIV
 [ICON_OPENBORDERS] ... con este CIV tenemos fronteras abiertas
 [ICON_TRADE] ... podemos intercambiar recursos con este CIV
+[ICON_DEFENSE] ... Ciudad-Estado (no se pueden construir colonos)
 S&#237;mbolo de religi&#243;n ... religi&#243;n estatal de este CIV (con estrella = propietario de la Ciudad Santa)
 Tecnolog&#237;a ... investigaci&#243;n actual de este CIV (siempre visible para nosotros, nuestros vasallos y CIV con los puntos de espionaje necesarios (ver Espionaje Pasivo))
     </Spanish>

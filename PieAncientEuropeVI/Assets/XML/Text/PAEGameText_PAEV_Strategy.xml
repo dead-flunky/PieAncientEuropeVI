@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
   <TEXT>
+    <Tag>TXT_KEY_BUILDING_GUSS_STRATEGY</Tag>
+    <English>Foundries generate another bonus resource for trading.</English>
+    <French>Les fonderies g&#233;n&#232;rent une autre ressource bonus pour le commerce.</French>
+    <German>Gie&#223;ereien erzeugen eine weitere Ressource f&#252;r den Handel.</German>
+    <Italian>Le fonderie generano un'altra risorsa bonus per il commercio.</Italian>
+    <Spanish>Las fundiciones generan otro recurso de bonificaci&#243;n para el comercio.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_UNIT_BEDUINE_STRATEGY</Tag>
     <English>Bedouin camel-riders are barbarian units that can occur in deserts. Only renegaded Bedouins can fight for your cause.</English>
     <French>Le chameau b&#233;douin est une unit&#233; barbare qui apparait dans les zones de d&#233;sert. Seul les b&#233;douins ren&#233;gats peuvent combattre pour vous.</French>
@@ -278,7 +286,7 @@
     <French>Ce projet permet la construction de biblioth&#232;ques sur feuilles de palmier dans toute les villes Hindoues.</French>
     <German>Dieses Projekt erm&#246;glicht den Bau von Palmblatt-Bibliotheken in allen hinduistischen St&#228;dten.</German>
     <Italian>Questo progetto consente la libreria di foglie di palma (Prerequisito: Hinduismo) per tutti i giocatori.</Italian>
-    <Spanish>Este proyecto permite la biblioteca de hoja de palma (Requisito: Hinduismo) a todos los jugadores.</Spanish>
+    <Spanish>Este proyecto permite la biblioteca de hoja de palma en todas las ciudades hindu&#237;stas.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROJECT_ANTONIUS_KLOSTER_STRATEGY</Tag>
@@ -286,7 +294,7 @@
     <French>Ce projet permet la construction de monast&#232;res chr&#233;tiens dans toutes les villes chr&#233;tiennes.</French>
     <German>Dieses Projekt erlaubt den Bau von Christlichen Kl&#246;stern in allen christlichen St&#228;dten.</German>
     <Italian>Questo progetto consentir&#224; ai monasteri cristiani (prerequisito: cristianesimo) per tutti i giocatori.</Italian>
-    <Spanish>Este proyecto permitir&#225; los monasterios cristianos (requisito: Cristianismo) a todos los jugadores.</Spanish>
+    <Spanish>Este proyecto permitir&#225; los monasterios cristianos en todas las ciudades cristianas.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_MOENCHTUM_STRATEGY</Tag>

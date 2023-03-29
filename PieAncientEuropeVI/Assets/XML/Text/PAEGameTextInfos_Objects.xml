@@ -33,6 +33,38 @@
     <Spanish>[ICON_BULLET]Sin guerra civil por la p&#233;rdida de un general</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_TECH_INFO_11</Tag>
+    <English>~4000 BC-Copper Age</English>
+    <French>~4000 av JC.-Age du Cuivre</French>
+    <German>~4000 v. Chr.-Kupferzeit</German>
+    <Italian>~4000 a.C.-Et&#224; del Rame</Italian>
+    <Spanish>~4200 a.C.-Edad del Cobre</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_AGRICULTURE</Tag>
+    <English>Agriculture</English>
+    <French>
+<Text>Agriculture</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+    </French>
+    <German>
+<Text>Ackerbau</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+    </German>
+    <Italian>
+<Text>Agricoltura</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+    </Italian>
+    <Spanish>
+<Text>Agricultura</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+    </Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_UNITCOMBAT_CHARIOT</Tag>
     <English>Chariots</English>
     <French>Chars</French>
@@ -67,6 +99,22 @@
     <German>~5000 v. Chr.-Neolithikum</German>
     <Italian>~5000 a.C.-Neolitico</Italian>
     <Spanish>~5000 a.C.-Neol&#237;tico</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_MESSING</Tag>
+    <English>Brass</English>
+    <French>Laiton</French>
+    <German>Messing</German>
+    <Italian>Ottone</Italian>
+    <Spanish>Lat&#243;n</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILD_ORE_CAMP</Tag>
+    <English>Build a [LINK=IMPROVEMENT_ORE_CAMP]mining camp[\LINK]</English>
+    <French>Construire un [LINK=IMPROVEMENT_ORE_CAMP]camp minier[\LINK]</French>
+    <German>[LINK=IMPROVEMENT_ORE_CAMP]Sch&#252;rflager[\LINK] errichten</German>
+    <Italian>Costruisci un [LINK=IMPROVEMENT_ORE_CAMP]campo minerario[\LINK]</Italian>
+    <Spanish>Construir un [LINK=IMPROVEMENT_ORE_CAMP]campamento minero[\LINK]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_PEZHETAIROI4</Tag>
@@ -3412,11 +3460,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_METALL</Tag>
-    <English>Metalworking</English>
-    <French>Travail des m&#233;taux</French>
-    <German>Metallverarbeitung</German>
-    <Italian>Lavorazione del Metallo</Italian>
-    <Spanish>Trabajo del Metal</Spanish>
+    <English>Arts and Crafts</English>
+    <French>Art et Bricolages</French>
+    <German>Handwerkskunst</German>
+    <Italian>Arti e Mestieri</Italian>
+    <Spanish>Arte y Artesan&#237;a</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_VASALLENTUM</Tag>
@@ -3760,10 +3808,10 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_INFO_1</Tag>
-    <English>~3200 BC-Bronze Age</English>
-    <French>~3200 av JC.-Age du Bronze</French>
-    <German>~3200 v. Chr.-Bronzezeit</German>
-    <Italian>~3200 a.C.-Et&#224; del Bronzo</Italian>
+    <English>~3000 BC-Bronze Age</English>
+    <French>~3000 av JC.-Age du Bronze</French>
+    <German>~3000 v. Chr.-Bronzezeit</German>
+    <Italian>~3000 a.C.-Et&#224; del Bronzo</Italian>
     <Spanish>~3200 a.C.-Edad del Bronce</Spanish>
   </TEXT>
   <TEXT>
@@ -5172,14 +5220,14 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_SCHMIEDE_BRONZE</Tag>
-    <English>Bronze Forge</English>
+    <English>Bronze Works</English>
     <French>
-<Text>Forge de bronze</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Fonderie de bronze</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
-    <German>Bronzeschmiede</German>
-    <Italian>Fucina del Bronzo</Italian>
+    <German>Bronzeh&#252;tte</German>
+    <Italian>Lavori di bronzo</Italian>
     <Spanish>
-<Text>Fragua de Bronce</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Fundici&#243;n de Bronce</Text><Gender>Female</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -7844,7 +7892,7 @@
     <French>Vercing&#233;torix le Gaule</French>
     <German>Vercingetorix der Gallier</German>
     <Italian>Vercingetorix il Gallico</Italian>
-    <Spanish>Vercing&#233;torix el Galo</Spanish>
+    <Spanish>Vercing&#233;torix el galo</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_MASSINISSA</Tag>
@@ -9238,11 +9286,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_MERCENARY</Tag>
-    <English>Fights on his own</English>
-    <French>Chacun pour soi</French>
-    <German>K&#228;mpft auf eigenen F&#252;&#223;en</German>
-    <Italian>Lotta sui propri piedi</Italian>
-    <Spanish>Lucha por su cuenta</Spanish>
+    <English>Unreliable</English>
+    <French>Non fiable</French>
+    <German>Unzuverl&#228;ssig</German>
+    <Italian>Inaffidabile</Italian>
+    <Spanish>Poco confiable</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_RAM_PLURAL</Tag>
@@ -9635,7 +9683,7 @@
 <Text>Piramidi di Giza</Text><Gender>Female</Gender><Plural>1</Plural>
     </Italian>
     <Spanish>
-<Text>Pir&#225;mides en Guiza</Text><Gender>Female</Gender><Plural>1</Plural>
+<Text>Pir&#225;mides de Guiza</Text><Gender>Female</Gender><Plural>1</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -9821,7 +9869,7 @@
 <Text>Tempio di Artemide ad Efeso</Text><Gender>Male</Gender><Plural>0</Plural>
     </Italian>
     <Spanish>
-<Text>Templo de Artemisa de &#201;feso</Text><Gender>Male</Gender><Plural>0</Plural>
+<Text>Templo de Artemisa en &#201;feso</Text><Gender>Male</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -9982,6 +10030,38 @@
     <Italian>Ferro di Cavallo</Italian>
     <Spanish>
 <Text>Herraduras</Text><Gender>Female</Gender><Plural>1</Plural>
+    </Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_IMPROVEMENT_CAMP</Tag>
+    <English>Hunting Camp</English>
+    <French>
+<Text>Camp de chasse:Camps de chasse</Text><Gender>Male</Gender><Plural>0:1</Plural>
+    </French>
+    <German>
+<Text>Jagdlager</Text><Gender>Neuter</Gender><Plural>0</Plural>
+    </German>
+    <Italian>
+<Text>Campo di caccia:Campi di caccia</Text><Gender>Male</Gender><Plural>0:1</Plural>
+    </Italian>
+    <Spanish>
+<Text>Campamento de caza:Campamentos de caza</Text><Gender>Male</Gender><Plural>0:1</Plural>
+    </Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_IMPROVEMENT_ORE_CAMP</Tag>
+    <English>Mining Camp</English>
+    <French>
+<Text>Camp minier:Camps miniers</Text><Gender>Male</Gender><Plural>0:1</Plural>
+    </French>
+    <German>
+<Text>Sch&#252;rflager</Text><Gender>Neuter</Gender><Plural>0</Plural>
+    </German>
+    <Italian>
+<Text>Campo minerario:Campi minerari</Text><Gender>Male</Gender><Plural>0:1</Plural>
+    </Italian>
+    <Spanish>
+<Text>Campamento minero:Campamentos mineros</Text><Gender>Male</Gender><Plural>0:1</Plural>
     </Spanish>
   </TEXT>
 </Civ4GameText>

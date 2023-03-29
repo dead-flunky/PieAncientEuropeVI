@@ -305,7 +305,7 @@
 			<PromotionPrereq>NONE</PromotionPrereq>
 			<PromotionPrereqOr1>PROMOTION_COMBAT3</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
-			<TechPrereq>TECH_KLANGMUSIK</TechPrereq>
+			<TechPrereq>TECH_BEWAFFNUNG3</TechPrereq>
 			<StateReligionPrereq>NONE</StateReligionPrereq>
 			<bLeader>0</bLeader>
 			<bBlitz>0</bBlitz>
@@ -4036,6 +4036,10 @@
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SKIRMISHER</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -9580,7 +9584,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LayerAnimationPath>NONE</LayerAnimationPath>
 			<PromotionPrereq>NONE</PromotionPrereq>
-			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL1</PromotionPrereqOr2>
 			<TechPrereq>NONE</TechPrereq>
 			<StateReligionPrereq>NONE</StateReligionPrereq>
@@ -9598,7 +9602,7 @@
 			<iAirRangeChange>0</iAirRangeChange>
 			<iInterceptChange>0</iInterceptChange>
 			<iEvasionChange>0</iEvasionChange>
-			<iWithdrawalChange>0</iWithdrawalChange>
+			<iWithdrawalChange>10</iWithdrawalChange>
 			<iCargoChange>0</iCargoChange>
 			<iCollateralDamageChange>0</iCollateralDamageChange>
 			<iBombardRateChange>0</iBombardRateChange>
@@ -9677,11 +9681,11 @@
 			<iAirRangeChange>0</iAirRangeChange>
 			<iInterceptChange>0</iInterceptChange>
 			<iEvasionChange>0</iEvasionChange>
-			<iWithdrawalChange>20</iWithdrawalChange>
+			<iWithdrawalChange>10</iWithdrawalChange>
 			<iCargoChange>0</iCargoChange>
 			<iCollateralDamageChange>0</iCollateralDamageChange>
 			<iBombardRateChange>0</iBombardRateChange>
-			<iFirstStrikesChange>0</iFirstStrikesChange>
+			<iFirstStrikesChange>1</iFirstStrikesChange>
 			<iChanceFirstStrikesChange>0</iChanceFirstStrikesChange>
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
@@ -9756,11 +9760,11 @@
 			<iAirRangeChange>0</iAirRangeChange>
 			<iInterceptChange>0</iInterceptChange>
 			<iEvasionChange>0</iEvasionChange>
-			<iWithdrawalChange>20</iWithdrawalChange>
+			<iWithdrawalChange>10</iWithdrawalChange>
 			<iCargoChange>0</iCargoChange>
 			<iCollateralDamageChange>0</iCollateralDamageChange>
 			<iBombardRateChange>0</iBombardRateChange>
-			<iFirstStrikesChange>0</iFirstStrikesChange>
+			<iFirstStrikesChange>1</iFirstStrikesChange>
 			<iChanceFirstStrikesChange>0</iChanceFirstStrikesChange>
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
@@ -9864,15 +9868,15 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_AXEMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SPEARMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<DomainMods/>
@@ -9952,15 +9956,15 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_AXEMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SPEARMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<DomainMods/>
@@ -10040,15 +10044,15 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_AXEMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SPEARMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>10</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<DomainMods/>
@@ -10268,7 +10272,7 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Promotions/button_promo_sentry2.dds</Button>
-		</PromotionInfo>    
+		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_MOBILITY</Type>
 			<Description>TXT_KEY_PROMOTION_MOBILITY</Description>
@@ -14367,11 +14371,11 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ELEPHANT</UnitCombatType>
-					<iUnitCombatMod>-30</iUnitCombatMod>
+					<iUnitCombatMod>-20</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iUnitCombatMod>-30</iUnitCombatMod>
+					<iUnitCombatMod>-20</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<DomainMods/>
@@ -15843,7 +15847,7 @@
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>-30</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<DomainMods/>

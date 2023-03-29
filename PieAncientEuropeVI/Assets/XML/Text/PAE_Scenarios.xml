@@ -221,7 +221,7 @@
     <English>It is the year 235 AD at the Limes Germanicus.[NEWLINE][NEWLINE]Since 233, the Alemanni use a weak phase of the Romans for looting and destruction. The Emperor Severus Alexander and his mother, who sought a cowardly negotiated solution with the Germans, are swept out of the way. The officer, who was responsible for the training of new excavated troops for a campaign against the Germans, Maximinus Thrax, has now been proclaimed by the troops to the new Roman Emperor. He promises an increase in salae, gratuities (donations) and an amnesty for all disciplinary sanctions. The Legionaries by contrast hoping prey, retribution and an easy victory over the Germans. In the summer of 235 AD, a campaign of retaliation begins, deep into the Germanic settlements.[NEWLINE][NEWLINE]Lead the Romans and subdue all Germania... or be in charge of one of the Germanic tribes to stop Rome.</English>
     <French>Ces &#233;v&#233;nements se d&#233;roulent en 235 sur le limes Germanicus.[NEWLINE][NEWLINE]Profitant de la faiblesse romaine , les Alamans pillent et saccagent depuis 233. L'empereur S&#233;v&#232;re Alexandre et sa m&#232;re, qui se d&#233;menaient l&#226;chement &#224; la recherche d'une solution diplomatique, ont &#233;t&#233; &#233;cart&#233;s. L'officier Maximin le Thrace, responsable de l'entra&#238;nement des troupes fra&#238;ches en vue de la campagne contre les Germains, a &#233;t&#233; couronn&#233; Maximin Ier par les soldats. Il promit une augmentation de la solde, davantage de gratifications sous forme de Donativa et une suspension des peines disciplinaires. Les l&#233;gionnaires esp&#233;raient pour leur part davantage de parts de butin, de repr&#233;sailles, et des victoires ais&#233;es sur les Germains. En 235 d&#233;buta la campagne de riposte, jusqu'aux coeurs des territoires peupl&#233;s par les Germains.[NEWLINE][NEWLINE]Soumettez la Germanie avec les Romains... ou optez pour leur barrer le chemin en commandant les tribus des Germains.</French>
     <German>Wir schreiben das Jahr 235 nach Christus am Limes Germanicus.[NEWLINE][NEWLINE]Seit 233 nutzen die Alamannen eine schwache Phase der R&#246;mer f&#252;r Pl&#252;nderungen und Zerst&#246;rungen. Der Kaiser Severus Alexander und seine Mutter, die mit den Germanen eine feige Verhandlungsl&#246;sung anstrebten, sind aus dem Weg ger&#228;umt. Der Offizier, der f&#252;r die Ausbildung der neu ausgehobenen Truppen f&#252;r einen Feldzug gegen die Germanen zust&#228;ndig war, Maximinus Thrax, ist von den Truppen zum neuen r&#246;mischen Kaiser ausgerufen worden. Er verspricht eine Erh&#246;hung des Solds, Sonderzuwendungen (Donativen) und eine Amnestie bei allen Disziplinarstrafen. Die Legion&#228;re hingegen erhoffen sich Beute, Vergeltung und einen leichten Sieg &#252;ber die Germanen. Im Sommer 235 nach Christus beginnt nun ein Vergeltungsfeldzug, bis tief in die germanischen Siedlungsgebiete hinein.[NEWLINE][NEWLINE]F&#252;hre die R&#246;mer und unterwerfe ganz Germanien... oder bestimme &#252;ber einen der germanischen St&#228;mme, um Rom daran zu hindern.</German>
-    <Italian>It is the year 235 AD at the Limes Germanicus.[NEWLINE][NEWLINE]Since 233, the Alemanni use a weak phase of the Romans for looting and destruction. The Emperor Severus Alexander and his mother, who sought a cowardly negotiated solution with the Germans, are swept out of the way. The officer, who was responsible for the training of new excavated troops for a campaign against the Germans, Maximinus Thrax, has now been proclaimed by the troops to the new Roman Emperor. He promises an increase in salae, gratuities (donations) and an amnesty for all disciplinary sanctions. The Legionaries by contrast hoping prey, retribution and an easy victory over the Germans. In the summer of 235 AD, a campaign of retaliation begins, deep into the Germanic settlements.[NEWLINE][NEWLINE]Lead the Romans and subdue all Germania... or be in charge of one of the Germanic tribes to stop Rome.</Italian>
+    <Italian>Scriviamo l'anno 235 dC sul Limes Germanicus.[NEWLINE][NEWLINE]Dal 233 gli Alamanni utilizzano una fase debole dei Romani per saccheggi e distruzioni. L'imperatore Severo Alessandro e sua madre, che cercavano vigliaccamente una soluzione negoziata con i tedeschi, sono stati eliminati. L'ufficiale incaricato di addestrare le truppe appena reclutate per una campagna contro i tedeschi, Maximinus Thrax, &#232; stato proclamato dalle truppe il nuovo imperatore romano. Promette un aumento di stipendio, pagamenti speciali (donazioni) e un'amnistia per tutte le punizioni disciplinari. I legionari, invece, sperano nel bottino, nella vendetta e in una facile vittoria sui tedeschi. Nell'estate del 235 d.C. inizi&#242; una campagna di vendetta, nelle profondit&#224; delle aree di insediamento germanico.[NEWLINE][NEWLINE]Guida i romani e conquista tutta la Germania... o scegli una delle trib&#249; germaniche per impedire a Roma di farlo.</Italian>
     <Spanish>Es el a&#241;o 235 d.C. en las limes germ&#225;nicas.[NEWLINE][NEWLINE]Desde el 233, los alemanni utilizan una etapa d&#233;bil de los romanos para saquear y destruir. El emperador Alejandro Severo y su madre, quienes buscaron una cobarde soluci&#243;n negociado con los germanos, han sido asesinados. El oficial, quien fue el responsable del entrenamiento de nuevas tropas reclutadas para una campa&#241;a contra los germanos, Maximino el Tracio, ha sido ahora proclamado por las tropas como el nuevo emperador romano. El promete un aumento de salario, propinas (donaciones) y una amnist&#237;a para todas las sanciones disciplinarias. Los legionarios por contra desean cazar, castigar y una f&#225;cil victoria sobre los germanos. En el verano del 235 d.C., una campa&#241;a de represalia empieza, en lo m&#225;s profundo de los asentamientos germanos.[NEWLINE][NEWLINE]Lidera a los romanos y subyuga a toda Germania... o se en cambio una de las tribus germanas que parar&#225;n a Roma.</Spanish>
   </TEXT>
   <TEXT>
@@ -1724,7 +1724,7 @@
     <French>Brennus des S&#233;nons</French>
     <German>Brennus der Senone</German>
     <Italian>Brenno il Senoniano</Italian>
-    <Spanish>Breno el Senonio</Spanish>
+    <Spanish>Breno el senonio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIV_UPPER_IONIAN_DESC</Tag>
@@ -1963,6 +1963,46 @@
     <Spanish>Velocidad del juego SecondPunicWar 218BC</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_SCEN_LEADER_DIVICO2</Tag>
+    <English>Divico of the Aquitanians</English>
+    <French>Divico des Aquitains</French>
+    <German>Divico der Aquitaner</German>
+    <Italian>Divico degli Aquitani</Italian>
+    <Spanish>Divico de los Aquitanos</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_SCEN_LEADER_COMMIUS</Tag>
+    <English>Commius of the Parisians</English>
+    <French>Commius des Parisiens</French>
+    <German>Commius der Parisier</German>
+    <Italian>Commio dei Parigini</Italian>
+    <Spanish>Commio de los Parisios</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_SCEN_LEADER_ARGANTONIO</Tag>
+    <English>Arganthonius the Turdetan</English>
+    <French>Arganthonius le Turd&#233;tan</French>
+    <German>Arganthonius der Turdetaner</German>
+    <Italian>Argantonio il Turdetano</Italian>
+    <Spanish>Argantonio el Turdetano</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_SCENARIO_EURASIA_XL_52_CIVS</Tag>
+    <English>A huge Eurasia map (130x70 tiles, 52 CIVs). Fixed starting locations.[NEWLINE][NEWLINE]A dense map. For a comfortable and quiet game you should take Saba or the Britones.[NEWLINE]by Nycan</English>
+    <French>Carte immense (130x70) comprenant 52 civilisations. Points de d&#233;parts fixes.[NEWLINE][NEWLINE]Choisissez les civilisations de Saba ou des bretons pour jouer avec un minimum de conflits. Si au contraire vous recherchez un d&#233;fi &#224; votre taille, optez pour les Illyriens et soyez pr&#234;t au combat![NEWLINE]Les tribus de Germanie d&#233;marrent &#233;galement en position d&#233;licate, nich&#233;es dans les for&#234;ts primordiales du septentrion. Les Celtes doivent eux rivaliser avec ces tribus au nord et Rome au sud, un &#233;quilibre d&#233;licat qui promet un jeu palpitant.[NEWLINE][NEWLINE]Tous les peuples principaux de l'Antiquit&#233; sont repr&#233;sent&#233;s : Romains, Grecs, Mac&#233;doniens, &#201;gyptiens, Carthaginois, Babyloniens, Perses, etc.[NEWLINE][NEWLINE]Premi&#232;re carte &#224; exploiter &#224; fond le monde de PAE, elle vous offre l'int&#233;gralit&#233; du monde connu, des mers d'Irlande &#224; la Norv&#232;ge et de la p&#233;ninsule arabique jusqu'&#224; l'Inde.[NEWLINE][NEWLINE]Bonne chance et bon jeu![NEWLINE]par Nycan</French>
+    <German>Eine sehr gro&#223;e Eurasia Karte (130x70 Felder) mit 52 Civs. Feste Startpositionen.[NEWLINE]by Nycan[NEWLINE]Eine enge Karte. Wer seine Ruhe haben m&#246;chte, sollte Saba oder Britonen spielen.</German>
+    <Italian>Un mapa muy grande de Eurasia (130x70 fichas, 52 CIV). Se corrigieron las ubicaciones iniciales.[NEWLINE][NEWLINE]Para un juego c&#243;modo y tranquilo, debes llevar a Saba o los brit&#225;nicos. Si buscas un verdadero desaf&#237;o, puedes tomar los ilirios. Guerras garantizadas![NEWLINE]Tambi&#233;n una experiencia bastante dif&#237;cil podr&#237;a ser las diferentes tribus germ&#225;nicas, que viven en el profundo bosque del norte. Y los celtas. Est&#225;n viviendo entre Germania y Roma, por lo que tambi&#233;n lo pasar&#225;s en grande.[NEWLINE][NEWLINE]Naturalmente, todas las civilizaciones antiguas bien conocidas son jugables: romanos, griegos, macedonios, egipcios, cartagineses, persas, etc.[NEWLINE][NEWLINE]Y este es el primer mapa que realmente cubre TODA Europa. Puede navegar alrededor de Irlanda hasta Noruega, ya que puede navegar alrededor de Arabia hasta la India.[NEWLINE][NEWLINE]&#161;Que te diviertas![NEWLINE]por Nycan</Italian>
+    <Spanish>Un enorme mapa de Eurasia (130x70 azulejos). Ubicaciones de partida fijas.[NEWLINE]by Nycan[NEWLINE]Para un juego c&#243;modo y tranquilo debe tomar Saba o los Britones. Si buscas un verdadero desaf&#237;o, puedes tomar a los ilirios. Guerras garantizadas![NEWLINE]Tambi&#233;n una experiencia bastante dif&#237;cil podr&#237;an ser las diferentes tribus germ&#225;nicas, que viven en el bosque profundo del norte. Y los celtas. Viven entre Alemania y Roma, por lo que tambi&#233;n pasar&#225;s un momento emocionante.[NEWLINE][NEWLINE]Naturalmente, todas las civilizaciones antiguas bien conocidas son jugables: romanos, griegos, macedonios, egipcios, cartagineses, persas, etc.[NEWLINE][NEWLINE]Y este es el primer mapa que realmente cubre TODA Europa. Puedes navegar por Irlanda hasta Noruega, y desde Arabia hasta India.[NEWLINE][NEWLINE]&#161;Que te diviertas![NEWLINE]por Nycan</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_DAWN_OF_MAN_EURASIA_XL_52_CIVS</Tag>
+    <English>A large Eurasia map in PAE (130x70 tiles) - by NycanTake the competition against 52 Nations to rule the ancient world!_____________________The sun rises on the year %s1_year. %s3_leader, your people have vested absolute power in you, hoping the gentle grace of the gods will never leave you! Try to build a Civilization to stand the test of time!1) Try to found a religion or catch one.2) Build a palace as soon as you can (Tech: Leadership). After that, you can afford the upkeep costs of other cities.3) Produce culture to expand your influence (Religion, Palace, Cult, etc.)4) Attention: Improvements cost money!5) It is recommended to read the concept text [LINK=CONCEPT_IMPORTANT_FACTS]Important Facts[\LINK] before playing.[H2]All features can be found in the civilopedia under PAE concepts.[\H2]</English>
+    <French>Participez &#224; la comp&#233;tition contre 52 nations pour gouverner le monde antique!_____________________Le soleil se l&#232;ve sur l'an %s1_year. %s3_leader, votre peuple vous a confi&#233; le pouvoir absolu et s'en remet &#224; vous pour b&#226;tir une civilisation qui r&#233;sistera &#224; l'&#233;preuve du temps !1) Essayez de fonder une religion ou d'en adopter une2) Construisez un palais d&#232;s que possible pour r&#233;duire les co&#251;ts d'entretien des autres villes (Tech. :Principe d'autorit&#233;)3) Produisez de la culture pour &#233;tendre votre zone d'influence (Religion, Palais, Cultes, Monument, etc.)4) Attention, les am&#233;nagements co&#251;tent de l'or !5) Il est conseill&#233; de lire le concept [LINK=CONCEPT_IMPORTANT_FACTS]A lire ![\LINK] avant de jouer[H2]Toutes les sp&#233;cificit&#233;s de ce MOD sont d&#233;crites dans la Civilop&#233;dia (Concepts du Pie's Mod)[\H2]</French>
+    <German>Eine gro&#223;e Eurasia Karte f&#252;r PAE (130x70 Felder) - von Nycan[NEWLINE]K&#228;mpfe mit 52 Spielern um die Vorherrschaft der damals bekannten Welt![NEWLINE]_____________________[NEWLINE]Die Sonne erhellt das Jahr %s1_year. %s3_leader, Euer Volk hat Euch absolute Macht verliehen und hofft, dass Euch die G&#246;tter wohlgesonnen bleiben! Versuche eine Zivilisation zu errichten, welche die Zeit &#252;berdauern wird![NEWLINE]1) Versuche zuerst eine Religion zu gr&#252;nden oder zu erhalten.[NEWLINE]2) Baue so bald wie m&#246;glich einen Palast (Tech: F&#252;hrerschaft). Danach kann man sich auch den Unterhalt weiterer St&#228;dte leisten.[NEWLINE]3) Erzeuge Kultur, um deinen Machtbereich auszudehnen (Religion, Palast, Kult, etc.)[NEWLINE]4) Achtung: Modernisierungen kosten Geld![NEWLINE]5) Es wird empfohlen, vor dem Spielen den Konzepttext [LINK=CONCEPT_IMPORTANT_FACTS]Wichtige Fakten[\LINK] zu lesen.[NEWLINE][H2]Alle Features werden in der Zivilop&#228;die unter PAE Konzepte erkl&#228;rt.[\H2]</German>
+    <Italian>Affronta 52 nazioni per governare il mondo antico!_____________________Il sole sorge sull'anno %s1_year. %s3_leader, il tuo popolo ha acquisito potere assoluto in te, sperando che la gentile grazia degli dei non ti lascer&#224; mai! Prova a costruire una civilt&#224; per resistere alla prova del tempo!1) Prova a fondare una religione o catturane una.2) Costruisci un palazzo appena puoi (Tech: Comando). Successivamente, puoi permetterti i costi di manutenzione di altre citt&#224;.3) Produci cultura per espandere la tua influenza (Religione, Palazzo, Culto, ecc.)4) Attenzione: i miglioramenti costano denaro!5) Si consiglia di leggere il testo del concetto [LINK=CONCEPT_IMPORTANT_FACTS] Fatti importanti [\LINK] prima di giocare.[H2]Tutte le funzionalit&#224; possono essere trovate nella civilopedia sotto concetti PAE.[\H2]</Italian>
+    <Spanish>&#161;Toma la competencia contra 52 naciones para gobernar el mundo antiguo!_____________________El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferido poder absoluto, &#161;esperando en que la noble gracia de los dioses nunca te abandone!1) Intenta fundar una religi&#243;n o captura una.2) Construye un palacio tan pronto como puedas (Tec: Liderazgo). Despu&#233;s de eso, ser&#225;s capaz de afrontar los costes de mantenimiento de otras ciudades.3) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)4) &#161;Atenci&#243;n: Las mejoras cuestan dinero!5) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.[H2]Todas las caracter&#237;sticas pueden ser encontradas en la civilopedia sobre los conceptos del PAE.[\H2]</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_CIV_POLIS_THEBEN1</Tag>
     <English>Epaminondas of Thebes</English>
     <French>&#201;paminondas de Th&#232;bes</French>
@@ -2112,7 +2152,7 @@
     <French>La plus grande carte Eurasie possible (205x120).[NEWLINE]Combattez avec 52 civilisations pour la supr&#233;matie du monde alors connu![NEWLINE]Parmi elles, 3 cit&#233;s-&#233;tats jouables (OCC, pas de colons): les &#201;trusques, les Spartiates et Babylone.[NEWLINE][NEWLINE]by brettschmitt</French>
     <German>Die gr&#246;&#223;tm&#246;gliche Eurasia Karte (205x120 Felder).[NEWLINE]K&#228;mpfe mit 52 Zivilisationen um die Vorherrschaft der damals bekannten Welt![NEWLINE]Darunter sind 3 spielbare Stadtstaaten (OCC, keine Siedler): Etrusker, Spartaner und Babylon.[NEWLINE][NEWLINE]by brettschmitt</German>
     <Italian>La carta Eurasia pi&#249; grande possibile (205x120 grafici)[NEWLINE]Combatti con 52 civilt&#224; per la supremazia del mondo allora conosciuto![NEWLINE]Tra loro ci sono 3 citt&#224;-stato giocabili (OCC, no coloni): Etruschi, Spartani e Babilonia.[NEWLINE][NEWLINE]by brettschmitt</Italian>
-    <Spanish>La carta de Eurasia m&#225;s grande posible (205x120 azulejos).[NEWLINE]&#161;Lucha con 52 civilizaciones por la supremac&#237;a del entonces conocido mundo![NEWLINE]Entre ellos se encuentran 3 ciudades-estado jugables (OCC, sin colonos): Etruscos, Espartanos y Babilonia.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
+    <Spanish>El mapa de Eurasia m&#225;s grande posible (205x120 casillas).[NEWLINE]&#161;Lucha con 52 civilizaciones por la supremac&#237;a del entonces conocido mundo![NEWLINE]Entre ellos se encuentran 3 ciudades-estado jugables (OCC, sin colonos): Etruscos, Espartanos y Babilonia.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIV_POLIS_RHODOS1</Tag>
@@ -2466,7 +2506,7 @@
     <French>Sab&#233;ens</French>
     <German>Sab&#228;er</German>
     <Italian>Sabai</Italian>
-    <Spanish>Sabaos</Spanish>
+    <Spanish>Sabeos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SABA_LEADER</Tag>
@@ -2516,7 +2556,7 @@
     <French>Lysimaque de Thrace</French>
     <German>Lysimachos der Thraker</German>
     <Italian>Lisimaco il Trace</Italian>
-    <Spanish>Lis&#237;maco el Tracio</Spanish>
+    <Spanish>Lis&#237;maco el tracio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_MITHRIDATES</Tag>
@@ -2532,7 +2572,7 @@
     <French>Marcus Marcellus de Rome</French>
     <German>Marcus Marcellus der R&#246;mer</German>
     <Italian>Marco Marcello il Romano</Italian>
-    <Spanish>Marco Marcelo el Romano</Spanish>
+    <Spanish>Marco Marcelo el romano</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_RAETUS</Tag>
@@ -2548,7 +2588,7 @@
     <French>Hannibal de Carthage</French>
     <German>Hannibal von Karthago</German>
     <Italian>Annibale di Cartagine</Italian>
-    <Spanish>An&#237;bal de C&#225;rtago</Spanish>
+    <Spanish>An&#237;bal de Cartago</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_CELTILLUS</Tag>
@@ -2556,7 +2596,7 @@
     <French>Celtillus des Parisii</French>
     <German>Celtillus der Parisier</German>
     <Italian>Celtillus il parigino</Italian>
-    <Spanish>Celtillus el parisino</Spanish>
+    <Spanish>Celtillus el parisio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_BOUDICCA</Tag>
@@ -2573,7 +2613,7 @@
 <Text>Boudica l'Icenian</Text><Gender>Female</Gender><Plural>0</Plural>
     </Italian>
     <Spanish>
-<Text>Boudica la Iceniana</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Boadicea la icena</Text><Gender>Female</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -2590,7 +2630,7 @@
     <French>Arminius le Ch&#233;rusque</French>
     <German>Arminius der Cherusker</German>
     <Italian>Arminio di Cherusci</Italian>
-    <Spanish>Arminio del Querusco</Spanish>
+    <Spanish>Arminio el querusco</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_SAUERMAG</Tag>
@@ -2598,7 +2638,7 @@
     <French>Saourmag I d'Ib&#233;rie</French>
     <German>Saurmag I der Iberer</German>
     <Italian>Saurmag I l'Iberico</Italian>
-    <Spanish>Saurmag I el Ib&#233;rico</Spanish>
+    <Spanish>Saurmag I el iberio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_ORODES</Tag>
@@ -2638,7 +2678,7 @@
     <French>Tl&#233;pol&#232;me de Rhodes</French>
     <German>Tlepolemos von Rhodos</German>
     <Italian>Tlepolemo di Rodi</Italian>
-    <Spanish>Tlepol&#233;mo de Rodas</Spanish>
+    <Spanish>Tlep&#243;lemo de Rodas</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_FRITIGERN</Tag>
@@ -2654,7 +2694,7 @@
     <French>Marbod des Marcomans</French>
     <German>Marbod der Markomanne</German>
     <Italian>Maroboduus il marito Marko</Italian>
-    <Spanish>Marbod el Marc&#243;mano</Spanish>
+    <Spanish>Marbod de los marcomanos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_CARTIMANDUA</Tag>
@@ -2671,7 +2711,7 @@
 <Text>Cartimandua la Brigantina</Text><Gender>Female</Gender><Plural>0</Plural>
     </Italian>
     <Spanish>
-<Text>Cartimandua la Brigantina</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Cartimandua de los Brigantes</Text><Gender>Female</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -2688,7 +2728,7 @@
     <French>Caratacos le Silure</French>
     <German>Caratacus der Silurer</German>
     <Italian>Carataco il Siluriano</Italian>
-    <Spanish>Carataco el Siluriano</Spanish>
+    <Spanish>Carataco el siluriano</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_BELGIUS</Tag>
@@ -2696,7 +2736,7 @@
     <French>Belgios le Belge</French>
     <German>Belgius der Belgier</German>
     <Italian>Belgio il belga</Italian>
-    <Spanish>Belgio el belgos</Spanish>
+    <Spanish>Belgio el belga</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_THEODERICH</Tag>
@@ -2720,7 +2760,7 @@
     <French>Arioviste des Su&#232;ves</French>
     <German>Ariovist der Suebe</German>
     <Italian>Ariovisto dei Suebi</Italian>
-    <Spanish>Ariovisto de los Suebos</Spanish>
+    <Spanish>Ariovisto de los Suevos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_MAELO</Tag>
@@ -2752,7 +2792,7 @@
     <French>Tigrane des Artaxiades</French>
     <German>Tigranes der Artaxide</German>
     <Italian>Tigranes di Artaxiado</Italian>
-    <Spanish>Tigranes la Artaxiado</Spanish>
+    <Spanish>Tigranes el art&#225;xida</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_MINOS</Tag>
@@ -2768,7 +2808,7 @@
     <French>Cr&#233;sus de Pergame</French>
     <German>Kroisos von Pergamon</German>
     <Italian>Creso di Pergamo</Italian>
-    <Spanish>Creso de Pergamon</Spanish>
+    <Spanish>Creso de Pergam&#243;n</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_ALYATTES</Tag>
@@ -2848,7 +2888,7 @@
     <French>Vercing&#233;torix des Arvernes</French>
     <German>Vercingetorix der Arverner</German>
     <Italian>Vercingetorige l'Arverniano</Italian>
-    <Spanish>Vercingetorix el Arverniano</Spanish>
+    <Spanish>Vercing&#233;torix el arvernio</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_DIVICO</Tag>
@@ -2864,7 +2904,7 @@
     <French>Devin l'Allobroge</French>
     <German>Devin der Allobroger</German>
     <Italian>Devin l'Allobrogo</Italian>
-    <Spanish>Devin el Alobrogiano</Spanish>
+    <Spanish>Devin el alobrogiano</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_VIRIDOMARUS</Tag>
@@ -2888,7 +2928,7 @@
     <French>Ant&#233;nor le V&#233;n&#232;te</French>
     <German>Antenor der Veneter</German>
     <Italian>Antenor il Venetiano</Italian>
-    <Spanish>Antenor el Venetiano</Spanish>
+    <Spanish>Antenor el venetiano</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_CATUVOLCUS</Tag>
@@ -2960,7 +3000,7 @@
     <French>Teres d'Aenos</French>
     <German>Teres von Aenos</German>
     <Italian>Teres di Aenos</Italian>
-    <Spanish>Teres de Aenos</Spanish>
+    <Spanish>Teres de Enos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_PATRAS</Tag>
@@ -2968,7 +3008,7 @@
     <French>Patreus de Patras</French>
     <German>Patreus von Patras</German>
     <Italian>Patreus di Patras</Italian>
-    <Spanish>Patreus de Patras</Spanish>
+    <Spanish>P&#225;treo de Patras</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_ARGOS</Tag>
@@ -2984,7 +3024,7 @@
     <French>Gorgos d'Ambrakia</French>
     <German>Gorgos von Ambrakia</German>
     <Italian>Gorgos di Ambrakia</Italian>
-    <Spanish>Gorgos de Ambrakia</Spanish>
+    <Spanish>Gorgos de Ambracia</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_DIKAIA</Tag>
@@ -3000,7 +3040,7 @@
     <French>Georgios de Corcyre</French>
     <German>Georgios von Korcyra</German>
     <Italian>Georgios di Corcyra</Italian>
-    <Spanish>Georgios de Corcyra</Spanish>
+    <Spanish>Georgios de C&#243;rcira</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_KEFALONIA</Tag>
@@ -3008,7 +3048,7 @@
     <French>Arkeisios de Kefalonia</French>
     <German>Arkeisios von Kefalonia</German>
     <Italian>Arkeisios di Kefalonia</Italian>
-    <Spanish>Arkeisios de Kefalonia</Spanish>
+    <Spanish>Arkeisios de Cefalonia</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_LESBOS</Tag>
@@ -3016,7 +3056,7 @@
     <French>Melanchros de Lesbos</French>
     <German>Melanchros von Lesbos</German>
     <Italian>Melanchros di Lesbos</Italian>
-    <Spanish>Melanchros de Lesbos</Spanish>
+    <Spanish>Melancro de Lesbos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_CHIOS</Tag>
@@ -3024,7 +3064,7 @@
     <French>Amphiklos de Chios</French>
     <German>Amphiklos von Chios</German>
     <Italian>Amphiklos di Chios</Italian>
-    <Spanish>Amphiklos de Chios</Spanish>
+    <Spanish>Amphiklos de Qu&#237;os</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_NAXOS</Tag>
@@ -3040,7 +3080,7 @@
     <French>Hekataios de Lysimacheia</French>
     <German>Hekataios von Lysimacheia</German>
     <Italian>Hekataios di Lysimacheia</Italian>
-    <Spanish>Hekataios de Lysimacheia</Spanish>
+    <Spanish>Hekataios de Lisimaquea</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_LIMNOS</Tag>
@@ -3048,7 +3088,7 @@
     <French>Thoas de Limnos</French>
     <German>Thoas von Limnos</German>
     <Italian>Thoas di Limnos</Italian>
-    <Spanish>Thoas de Limnos</Spanish>
+    <Spanish>Toante de Lemnos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_AMORGOS</Tag>
@@ -3064,7 +3104,7 @@
     <French>Andronikos d'Olynthos</French>
     <German>Andronikos von Olynthos</German>
     <Italian>Andronikos di Olynthos</Italian>
-    <Spanish>Andronikos de Olynthos</Spanish>
+    <Spanish>Andr&#243;nico de Olinto</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_SCEN_LEADER_CHALKIS</Tag>
@@ -3579,36 +3619,12 @@
     <Spanish>elmyre</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_FREE</Tag>
-    <English></English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_FREE</Tag>
-    <English></English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_FREE</Tag>
-    <English></English>
-    <French></French>
-    <German></German>
-    <Italian></Italian>
-    <Spanish></Spanish>
-  </TEXT>
-  <TEXT>
     <Tag>TXT_KEY_SCENARIO_EURASIA_XL</Tag>
     <English>A huge Eurasia map (130x70 tiles). Random starting locations.[NEWLINE][NEWLINE]by brettschmitt</English>
     <French>Carte immense (130x70). Les positions de d&#233;part sont al&#233;atoires.[NEWLINE][NEWLINE]by brettschmitt</French>
-    <German>Eine sehr gro&#223;e Eurasia Karte (130x70 Felder). Startpositionen zuf&#228;llig.[NEWLINE][NEWLINE]by brettschmitt</German>
+    <German>Eine sehr gro&#223;e Eurasia Karte mit 130x70 Feldern. Zuf&#228;llige Startpositionen.[NEWLINE][NEWLINE]by brettschmitt</German>
     <Italian>Un mapa muy grande de Eurasia (130x70 grafici). Le posizioni di partenza sono casuali.[NEWLINE][NEWLINE]by brettschmitt</Italian>
-    <Spanish>Un enorme mapa de Eurasia (130x70 azulejos). Las posiciones iniciales son aleatorios.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
+    <Spanish>Un enorme mapa de Eurasia (130x70 casillas). Las posiciones iniciales son aleatorias.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE_EURASIA_XXXL</Tag>
@@ -3876,7 +3892,7 @@
     <French>Avarus d'Arevaci</French>
     <German>Avarus von Arevakien</German>
     <Italian>Avarus di Arevaci</Italian>
-    <Spanish>Avarus de Arevaci</Spanish>
+    <Spanish>Avaro de los ar&#233;vacos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_AREVACI_SHORT_DESC</Tag>
@@ -3932,7 +3948,7 @@
     <French>Edeko d'Edetani</French>
     <German>Edeko von Edetanien</German>
     <Italian>Edeko di Edetani</Italian>
-    <Spanish>Edeko de Edetani</Spanish>
+    <Spanish>Edec&#243;n de los edetanos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_EDETANI_SHORT_DESC</Tag>

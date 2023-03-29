@@ -37,6 +37,26 @@
 			<Button>Art/Interface/Buttons/Buildings/button_building_bund.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TAUBENSCHLAG</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0</fScale>
+			<fInterfaceScale>0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_taubenschlag.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TAUBENPOST</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0</fScale>
+			<fInterfaceScale>0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_taubenpost.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PROMO_CITY_D</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -337,6 +357,16 @@
 			<Button>Art/Interface/Buttons/Builds/button_tabularium.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WERKSTATT</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.0</fScale>
+			<fInterfaceScale>0.0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_werkstatt.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_STEINMETZ</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -598,13 +628,23 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NECROPOLIS_EGYPT</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
+			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.0</fScale>
-			<fInterfaceScale>0.0</fInterfaceScale>
-			<NIF/>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>0.3</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/nubianpyramid/NubianPyramid.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_totenstadt.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MASTABA</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Mastaba/afr_admiralty.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_building_mastaba.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SPECIAL1</Type>
@@ -1858,6 +1898,16 @@
 			<Button>,Art/Interface/Buttons/Buildings/Barracks.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,2,3</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_POTTERY</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.0</fScale>
+			<fInterfaceScale>0.0</fInterfaceScale>
+			<NIF/>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/TechTree/Pottery.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,6</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GRANARY</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1996,7 +2046,7 @@
 			<fInterfaceScale>0.0</fInterfaceScale>
 			<NIF/>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/button_building_schmelzofen.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/button_werkstatt.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_BRONZESCHMIEDE</Type>
@@ -2006,7 +2056,7 @@
 			<fInterfaceScale>0.0</fInterfaceScale>
 			<NIF/>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/button_building_bronzeschmelze.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/button_building_smelting.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FORGE</Type>
@@ -2016,7 +2066,37 @@
 			<fInterfaceScale>0.47</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
 			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_building_schmiede.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_FORGE_WEAPONS</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.31</fScale>
+			<fInterfaceScale>0.47</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
+			<KFM/>
 			<Button>,Art/Interface/Buttons/TechTree/IronWorking.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,10</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_FORGE_ARMOR</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.31</fScale>
+			<fInterfaceScale>0.47</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Techs/button_tech_armor.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_FORGE_HORSE</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.31</fScale>
+			<fInterfaceScale>0.47</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_forge_horse.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GUSS_BLEI</Type>

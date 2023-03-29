@@ -2303,7 +2303,7 @@ class CvMainInterface:
 
 																		# ROME
 																		if (iCivType == gc.getInfoTypeForString("CIVILIZATION_ROME") or
-																						iCivType == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS")):
+																				iCivType == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS")):
 
 																				if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_ARCHER"):
 
@@ -2326,29 +2326,44 @@ class CvMainInterface:
 
 																				else:
 
-																						# Legion or Legion 2 -> Praetorians
-																						if iUnitType == gc.getInfoTypeForString("UNIT_LEGION") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION2"):
-																								# obsolete with Marching Army/Border Army
-																								if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
-																										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
-																												# Rang: Immunes
-																												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_3")):
-																														screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_praetorian.dds", 0,
-																																												 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN"), False)
+																						# Legion -> Praetorians
+																						# Legionen ab Rang Immunes und Veteranstatus
+																						# Optio, Centurio und Tribun/Legat
+																						# obsolete with Marching Army/Border Army
+																						if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
+																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
+																										LegionUnits = [
+																												gc.getInfoTypeForString("UNIT_LEGION"),
+																												gc.getInfoTypeForString("UNIT_LEGION2")
+																										]
+																										LegionOfficerUnits = [
+																												gc.getInfoTypeForString("UNIT_LEGION_OPTIO"),
+																												gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"),
+																												gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"),
+																												gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"),
+																												gc.getInfoTypeForString("UNIT_LEGION_TRIBUN")
+																										]
+																										# Rang: Immunes
+																										if (iUnitType in LegionUnits and pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_3")) or 
+																												iUnitType in LegionOfficerUnits):
+																														if iUnitType == gc.getInfoTypeForString("UNIT_LEGION_TRIBUN"):
+																																iNewUnit = gc.getInfoTypeForString("UNIT_PRAETORIAN_RIDER")
+																														else:
+																																iNewUnit = gc.getInfoTypeForString("UNIT_PRAETORIAN")
+																														screen.appendMultiListButton("BottomButtonContainer", gc.getUnitInfo(iNewUnit).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 705, iNewUnit, False)
 																														screen.show("BottomButtonContainer")
 																														iCount += 1
 
-																						# Triari -> Praetorians
-																						elif iUnitType == gc.getInfoTypeForString("UNIT_TRIARII") and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
-																								# obsolete with Marching/Border Army
-																								if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
-																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_praetorian.dds", 0,
-																																								 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_PRAETORIAN"), False)
-																										screen.show("BottomButtonContainer")
-																										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																										iCount += 1
+																										# Triari -> Praetorians
+																										elif iUnitType == gc.getInfoTypeForString("UNIT_TRIARII"):
+																												iNewUnit = gc.getInfoTypeForString("UNIT_PRAETORIAN")
+																												screen.appendMultiListButton("BottomButtonContainer", gc.getUnitInfo(iNewUnit).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 705, iNewUnit, False)
+																												screen.show("BottomButtonContainer")
+																												screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																												iCount += 1
+
 																						# Principes, Hastati, Pilumni -> Triarii
-																						elif iUnitType == gc.getInfoTypeForString("UNIT_PRINCIPES") or iUnitType == gc.getInfoTypeForString("UNIT_HASTATI") or iUnitType == gc.getInfoTypeForString("UNIT_PILUMNI"):
+																						if iUnitType == gc.getInfoTypeForString("UNIT_PRINCIPES") or iUnitType == gc.getInfoTypeForString("UNIT_HASTATI") or iUnitType == gc.getInfoTypeForString("UNIT_PILUMNI"):
 																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Units/button_triarii2.dds", 0,
 																																								 WidgetTypes.WIDGET_GENERAL, 705, gc.getInfoTypeForString("UNIT_TRIARII"), False)
@@ -3148,8 +3163,8 @@ class CvMainInterface:
 																# Verkauf von Einheiten
 																# Soll in jeder Stadt mit Soeldnerposten verkauft werden
 																# Unit -> An den Soeldnerposten verkaufen
-																iBuilding1 = gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")
-																if pCity.isHasBuilding(iBuilding1):
+																iBuilding = gc.getInfoTypeForString("BUILDING_SOELDNERPOSTEN")
+																if pCity.isHasBuilding(iBuilding):
 																		iCost = PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2
 																		if iCost < 1:
 																				iCost = 80
@@ -3161,27 +3176,31 @@ class CvMainInterface:
 																		iCount += 1
 
 																# Einheit segnen / bless unit (PAE V Patch 4)
-																iPromo = gc.getInfoTypeForString("PROMOTION_BLESSED")
-																if not pUnit.isHasPromotion(iPromo):
-																		iBuilding1 = gc.getInfoTypeForString("BUILDING_CHRISTIAN_CATHEDRAL")
-																		iBuilding2 = gc.getInfoTypeForString("BUILDING_HAGIA_SOPHIA")
-																		if pCity.isHasBuilding(iBuilding1) or pCity.isHasBuilding(iBuilding2):
-																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_blessed.dds",
-																						0, WidgetTypes.WIDGET_GENERAL, 752, 0, False)
-																				screen.show("BottomButtonContainer")
-																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount += 1
+																# UnitOwner muss christlich sein
+																iBuilding1 = gc.getInfoTypeForString("BUILDING_CHRISTIAN_CATHEDRAL")
+																iBuilding2 = gc.getInfoTypeForString("BUILDING_HAGIA_SOPHIA")
+																if pCity.isHasBuilding(iBuilding1) or pCity.isHasBuilding(iBuilding2):
+																		iPromo = gc.getInfoTypeForString("PROMOTION_BLESSED")
+																		if not pUnit.isHasPromotion(iPromo):
+																				if pUnitOwner.getStateReligion() == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
+																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_blessed.dds",
+																								0, WidgetTypes.WIDGET_GENERAL, 752, 0, False)
+																						screen.show("BottomButtonContainer")
+																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																						iCount += 1
 
 																# Einheit Moral verbessern (PAE VI Patch 6.8)
-																iPromo = gc.getInfoTypeForString("PROMOTION_MORALE")
-																if not pUnit.isHasPromotion(iPromo):
-																		iBuilding = gc.getInfoTypeForString("BUILDING_STATUE_OF_ZEUS")
-																		if pCity.isHasBuilding(iBuilding):
-																				screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_morale.dds",
-																						0, WidgetTypes.WIDGET_GENERAL, 752, 1, False)
-																				screen.show("BottomButtonContainer")
-																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																				iCount += 1
+																# UnitOwner muss an griechische Götter glauben
+																iBuilding = gc.getInfoTypeForString("BUILDING_STATUE_OF_ZEUS")
+																if pCity.isHasBuilding(iBuilding):
+																		iPromo = gc.getInfoTypeForString("PROMOTION_MORALE")
+																		if not pUnit.isHasPromotion(iPromo):
+																				if pUnitOwner.getStateReligion() == gc.getInfoTypeForString("RELIGION_GREEK"):
+																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Promotions/button_promo_morale.dds",
+																								0, WidgetTypes.WIDGET_GENERAL, 752, 1, False)
+																						screen.show("BottomButtonContainer")
+																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																						iCount += 1
 
 														# Schiffe
 														if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
@@ -3195,7 +3214,7 @@ class CvMainInterface:
 																						iCost = int(PyInfo.UnitInfo(pUnit.getUnitType()).getProductionCost() / 2)
 																						if iCost <= 0:
 																								iCost = 80
-																						if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																						if pUnitOwner.getGold() >= iCost:
 																								screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																										"INTERFACE_PROMO_OIL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 701, iCost, True)
 																						else:
@@ -3213,7 +3232,7 @@ class CvMainInterface:
 																				bonus1 = gc.getInfoTypeForString("BONUS_MAGNETIT")
 																				if pCity.hasBonus(bonus1):
 																						iCost = 20
-																						if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																						if pUnitOwner.getGold() >= iCost:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_kompass.dds",
 																										0, WidgetTypes.WIDGET_GENERAL, 767, -1, False)
 																								screen.show("BottomButtonContainer")
@@ -3222,7 +3241,7 @@ class CvMainInterface:
 																if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_WERFT")):
 																		iCost = pUnit.getDamage()
 																		if iCost > 0:
-																				if gc.getPlayer(iUnitOwner).getGold() >= iCost:
+																				if pUnitOwner.getGold() >= iCost:
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_werft.dds",
 																								0, WidgetTypes.WIDGET_GENERAL, 768, iCost, False)
 																						screen.show("BottomButtonContainer")
@@ -3249,7 +3268,7 @@ class CvMainInterface:
 																				iCount += 1
 
 												# ---- Ende if Einheiten in einer Stadt
-												else:
+												elif pUnit.canMove():
 												# ---- Einheit nicht in der Stadt
 
 														if pUnit.isMilitaryHappiness():
@@ -3274,7 +3293,9 @@ class CvMainInterface:
 																						screen.show("BottomButtonContainer")
 																						iCount += 1
 																				# Ramme bauen lassen (nur bei Krieg)
-																				if pTeam.getAtWarCount(True) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")) or pPlot.calculateCulturePercent(gc.getBARBARIAN_PLAYER()) > 0:
+																				#if pTeam.getAtWarCount(True) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")) or pPlot.calculateCulturePercent(gc.getBARBARIAN_PLAYER()) > 0:
+																				# Ramme bauen lassen (nur auf feindlichem Territorium)
+																				if pPlot.getOwner() >= 0 and gc.getTeam(pPlot.getOwner()).isAtWar(pUnitOwner.getTeam()):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_ramme.dds",
 																								0, WidgetTypes.WIDGET_GENERAL, 770, 0, False)
 																						screen.show("BottomButtonContainer")
@@ -3785,10 +3806,11 @@ class CvMainInterface:
 
 												# Formationen / Formations End ------
 
-												# Legend can become a Great General
-												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT6")):
-														if pUnit.getUnitCombatType() not in L.LArcherCombats:
-																if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
+												# Legend units can become a Great General
+												# PAE 6.15: last war weariness ranked units, because: combat promoting goes faster, too many Generals alive
+												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MORAL_NEG5")):
+														#if pUnit.getUnitCombatType() not in L.LArcherCombats:
+														if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																				"INTERFACE_LEGEND_HERO_TO_GENERAL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 720, 720, False)
 																		screen.show("BottomButtonContainer")
@@ -6703,10 +6725,10 @@ class CvMainInterface:
 						#szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>" %(pPlayer.getPlayerTextColorR(), pPlayer.getPlayerTextColorG(), pPlayer.getPlayerTextColorB(), pPlayer.getPlayerTextColorA(), pPlayer.getName())
 						#screen.setTableText("ScoreBackground2", 2, iRow, szTempBuffer, None, WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1, CvUtil.FONT_LEFT_JUSTIFY)
 						screen.setTableText("ScoreBackground2", 2, iRow, "", gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getButton(), WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1, CvUtil.FONT_LEFT_JUSTIFY)
-						screen.setTableText("ScoreBackground2", 3, iRow, "", gc.getCivilizationInfo(pPlayer.getCivilizationType()
-																																												).getButton(), WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1, CvUtil.FONT_LEFT_JUSTIFY)
-						szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>" % (pPlayer.getPlayerTextColorR(), pPlayer.getPlayerTextColorG(), pPlayer.getPlayerTextColorB(),
-																															 pPlayer.getPlayerTextColorA(), pPlayer.getCivilizationShortDescription(0))
+						screen.setTableText("ScoreBackground2", 3, iRow, "", gc.getCivilizationInfo(pPlayer.getCivilizationType()).getButton(), WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1, CvUtil.FONT_LEFT_JUSTIFY)
+						szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>" % (pPlayer.getPlayerTextColorR(), pPlayer.getPlayerTextColorG(), pPlayer.getPlayerTextColorB(), pPlayer.getPlayerTextColorA(), pPlayer.getCivilizationShortDescription(0))
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE")):
+								szTempBuffer = u"%c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + szTempBuffer
 						screen.setTableText("ScoreBackground2", 4, iRow, szTempBuffer, None, WidgetTypes.WIDGET_CONTACT_CIV, iPlayer, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 						if pTeam.isAVassal():
@@ -7236,6 +7258,13 @@ class CvMainInterface:
 						import CvTradeRouteAdvisor2
 						CvTradeRouteAdvisor2.CvTradeRouteAdvisor2().interfaceScreen()
 						return 1
+						
+				if inputClass.getNotifyCode() == WidgetTypes.WIDGET_CONTACT_CIV:
+						pPlayer = gc.getPlayer(inputClass.getData1())
+						iTeam = pPlayer.getTeam()
+						pTeam = gc.getTeam(iTeam)
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE")):
+								return u"%c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + u" Stadtstaat"
 
 				# Initialisierung
 				if g_pSelectedUnit:

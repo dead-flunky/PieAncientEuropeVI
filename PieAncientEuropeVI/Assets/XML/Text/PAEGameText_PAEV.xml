@@ -200,7 +200,7 @@
     <French>Divico le Celte</French>
     <German>Divico der Kelte</German>
     <Italian>Divico il Celto</Italian>
-    <Spanish>Divic&#243;n el Celto</Spanish>
+    <Spanish>Divic&#243;n el celta</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_HASDRUBAL</Tag>
@@ -438,7 +438,7 @@
     <Tag>TXT_KEY_MESSAGE_SUPPLY_RELOAD_1</Tag>
     <English>Your %s1 vassal has replenished your supply unit!</English>
     <French>Votre vassal %s1 a ravitaill&#233; votre unit&#233; de soutien !</French>
-    <German>Euer %s1:3_civ_adjective Vasall hat Eure Versorgungseinheit mit Vorr&#228;ten aufgef&#252;llt!</German>
+    <German>Euer %s1:4_civ_adjective Vasall hat Eure Versorgungseinheit mit Vorr&#228;ten aufgef&#252;llt!</German>
     <Italian>Il tuo %s1 vassallo ha riempito la vostra unit&#224; di alimentazione!</Italian>
     <Spanish>&#161;Tu vasallo %s1 ha repuesto tu fuente de suministros!</Spanish>
   </TEXT>
@@ -1140,11 +1140,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_RENEGADE_CITY_ENSLAVE_1</Tag>
-    <English>Plunder and enslave! (-1/2 Pop, +Treasure)</English>
-    <French>Pillez et asservissez ! (-1/2 Pop, +Tr&#233;sor)</French>
-    <German>Pl&#252;ndert und versklavt! (-1/2 Pop, +Beutegold)</German>
-    <Italian>Plunder and enslave! (-1/2 Pop, +Treasure)</Italian>
-    <Spanish>&#161;Saquear y esclavizar! (-1/2 de pob, +Tesoro)</Spanish>
+    <English>Plunder and enslave! (+Slaves, +Treasure)</English>
+    <French>Pillez et asservissez ! (+Esclaves, +Tr&#233;sor)</French>
+    <German>Pl&#252;ndert und versklavt! (+Sklaven, +Beutegold)</German>
+    <Italian>Saccheggia e schiavizza! (+Schiavi, +Tesoro)</Italian>
+    <Spanish>&#161;Saquear y esclavizar! (+Esclavos, +Tesoro)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_POPUP_RESERVIST_MAIN</Tag>
@@ -1516,27 +1516,27 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_SALAE_1</Tag>
-    <English>[COLOR_HIGHLIGHT_TEXT]Pay an extra salary[COLOR_REVERT][NEWLINE]Pay the unit an extra salary to get rid of their status "Fight on their own feet" or their war weariness.</English>
-    <French>[COLOR_HIGHLIGHT_TEXT]Verser une gratification[COLOR_REVERT][NEWLINE]Payer l'unit&#233; pour annuler son statut "Chacun pour soi" ou r&#233;duire sa lassitude de guerre.</French>
-    <German>[COLOR_HIGHLIGHT_TEXT]Einheit extra besolden[COLOR_REVERT][NEWLINE]Zahle der Einheit einen Extra-Sold, um ihren Status "K&#228;mpft auf eigenen F&#252;&#223;en" oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
-    <Italian>[COLOR_HIGHLIGHT_TEXT]Pay an extra salary[COLOR_REVERT][NEWLINE]Pay the unit an extra salary to get rid of their status "Fight on their own feet" or their war weariness.</Italian>
-    <Spanish>[COLOR_HIGHLIGHT_TEXT]Pagar un salario extra[COLOR_REVERT][NEWLINE]Pagar a la unidad un salario extra para deshacerse de su estado "lucha por su propia cuenta" o su hast&#237;o b&#233;lico.</Spanish>
+    <English>[COLOR_HIGHLIGHT_TEXT]Pay an extra salary[COLOR_REVERT][NEWLINE]Pay the unit extra pay to get rid of its "unreliable" status or its war fatigue.</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]Verser une gratification[COLOR_REVERT][NEWLINE]Payez une prime suppl&#233;mentaire &#224; l'unit&#233; pour se d&#233;barrasser de son statut "non fiable" ou de sa fatigue de guerre.</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Einheit extra besolden[COLOR_REVERT][NEWLINE]Zahle der Einheit einen Extra-Sold, um ihren "unzuverl&#228;ssigen" Status oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Paga un extra per l'unit&#224;[COLOR_REVERT][NEWLINE]Paga un extra per l'unit&#224; per liberarti del suo stato "inaffidabile" o della fatica di guerra.</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Pagar un salario extra[COLOR_REVERT][NEWLINE]Pague a la unidad un pago extra para deshacerse de su estado "poco confiable" o fatiga de guerra.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_DECIMATIO_1</Tag>
-    <English>[COLOR_HIGHLIGHT_TEXT]Decimate unit[COLOR_REVERT][NEWLINE]Decimate your troops to get rid of their status "Fight on their own feet" or their war weariness.</English>
-    <French>[COLOR_HIGHLIGHT_TEXT]D&#233;cimer l'unit&#233;[COLOR_REVERT][NEWLINE]Punir l'unit&#233; pour annuler son statut "Chacun pour soi" ou r&#233;duire sa lassitude de guerre.</French>
-    <German>[COLOR_HIGHLIGHT_TEXT]Einheit dezimieren[COLOR_REVERT][NEWLINE]Dezimiert Eure Truppen um ihren Status "K&#228;mpft auf eigenen F&#252;&#223;en" oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
-    <Italian>[COLOR_HIGHLIGHT_TEXT]Decimate unit[COLOR_REVERT][NEWLINE]Decimate your troops to get rid of their status "Fight on their own feet" or their war weariness.</Italian>
-    <Spanish>[COLOR_HIGHLIGHT_TEXT]Diezmar la unidad[COLOR_REVERT][NEWLINE]Diezma tu unidad para que se deshaga de la promoci&#243;n "lucha por su cuenta" o su hast&#237;o b&#233;lico.</Spanish>
+    <English>[COLOR_HIGHLIGHT_TEXT]Decimate unit[COLOR_REVERT][NEWLINE]Decimate your troops either to get rid of their status of being "unreliable" or quit their war weariness.</English>
+    <French>[COLOR_HIGHLIGHT_TEXT]D&#233;cimer l'unit&#233;[COLOR_REVERT][NEWLINE]Punir l'unit&#233; pour vous d&#233;barrasser de leur statut "peu fiable" ou de leur fatigue de guerre.</French>
+    <German>[COLOR_HIGHLIGHT_TEXT]Einheit dezimieren[COLOR_REVERT][NEWLINE]Dezimiert Eure Truppen um ihren "unverl&#228;sslichen" Status oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
+    <Italian>[COLOR_HIGHLIGHT_TEXT]Decima l'unit&#224;[COLOR_REVERT][NEWLINE]Decima le tue truppe per sbarazzarti del loro stato di "inaffidabilit&#224;" o della fatica della guerra.</Italian>
+    <Spanish>[COLOR_HIGHLIGHT_TEXT]Diezmar la unidad[COLOR_REVERT][NEWLINE]Diezma a tus tropas para deshacerte de su estado "poco confiable" o fatiga de guerra.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_SALAE_2</Tag>
-    <English>[H1]Extra salary![\H1][NEWLINE]Do you want to give your unit an extra salary? In this case, their morale can increase again or it loses the status: "Fight on their own feet"[NEWLINE][NEWLINE]Costs. %d1[ICON_GOLD] (-25% with salt: %d2)</English>
-    <French>[H1]Gratification ![\H1][NEWLINE]Voulez-vous verser une prime &#224; votre unit&#233; afin d'am&#233;liorer son moral ? Il en r&#233;sulterait une r&#233;duction de sa lassitude de guerre ou l'annulation de son status "Chacun pour soi".[NEWLINE][NEWLINE]Co&#251;t : %d1[ICON_GOLD] (-25% avec du Sel: %d2)</French>
-    <German>[H1]Extra Sal&#228;r![\H1][NEWLINE]M&#246;chtet Ihr der Einheit einen extra Sold zukommen lassen? Dabei kann ihre Kampfmoral wieder gesteigert werden oder sie verliert den Status: "K&#228;mpft auf eigenen F&#252;&#223;en".[NEWLINE][NEWLINE]Kosten: %d1[ICON_GOLD] (-25% mit Salz: %d2)</German>
-    <Italian>[H1]Stipendio extra![\H1][NEWLINE]Vuoi dare alla tua unit&#224; uno stipendio extra? In tal caso, il tuo morale potrebbe aumentare o perdere la promozione: "combatti da solo".[NEWLINE][NEWLINE]Costa: %d1 [ICON_GOLD] (-25% con sale: %d2)</Italian>
-    <Spanish>[H1]&#161;Salario extra![\H1][NEWLINE]&#191;Quieres dar un salario extra a tu unidad? En ese caso, su moral puede aumentar o perder la promoci&#243;n:"lucha por su cuenta"[NEWLINE][NEWLINE]Cuesta. %d1[ICON_GOLD] (-25% con sal: %d2)</Spanish>
+    <English>[H1]Extra salary![\H1][NEWLINE]Do you want to give your unit an extra salary? In this case, their morale can increase again or it loses the status: "Unreliable"[NEWLINE][NEWLINE]Costs. %d1[ICON_GOLD] (-25% with salt: %d2)</English>
+    <French>[H1]Gratification ![\H1][NEWLINE]Voulez-vous verser une prime &#224; votre unit&#233; afin d'am&#233;liorer son moral ? Il en r&#233;sulterait une r&#233;duction de sa lassitude de guerre ou l'annulation de son status "Non fiable".[NEWLINE][NEWLINE]Co&#251;t : %d1[ICON_GOLD] (-25% avec du Sel: %d2)</French>
+    <German>[H1]Extra Sal&#228;r![\H1][NEWLINE]M&#246;chtet Ihr der Einheit einen extra Sold zukommen lassen? Dabei kann ihre Kampfmoral wieder gesteigert werden oder sie verliert den Status: "Unzuverl&#228;ssig".[NEWLINE][NEWLINE]Kosten: %d1[ICON_GOLD] (-25% mit Salz: %d2)</German>
+    <Italian>[H1]Stipendio extra![\H1][NEWLINE]Vuoi dare alla tua unit&#224; uno stipendio extra? In tal caso, il tuo morale potrebbe aumentare o perdere la promozione: "Inaffidabile".[NEWLINE][NEWLINE]Costa: %d1 [ICON_GOLD] (-25% con sale: %d2)</Italian>
+    <Spanish>[H1]&#161;Salario extra![\H1][NEWLINE]&#191;Quieres dar un salario extra a tu unidad? En ese caso, su moral puede aumentar o perder la promoci&#243;n: "Poco confiable"[NEWLINE][NEWLINE]Cuesta. %d1[ICON_GOLD] (-25% con sal: %d2)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_SALAE_POS</Tag>
@@ -1572,11 +1572,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_DECIMATIO_2</Tag>
-    <English>[H1]Decimation[\H1][NEWLINE]Do you want to decimate your unit? The unit takes damage by 10%. The decimation raises the morale of your soldiers or even removes the status of "Fight on its own feet". But beware, "Fight on their own feet" soldiers could thereby become a deserter!</English>
-    <French>[H1]D&#233;cimation[\H1][NEWLINE]Voulez-vous d&#233;cimer votre unit&#233; ? L'unit&#233; subira 10% de pertes mais pourra r&#233;duire sa lassitude de guerre ou annuler son statut "Chacun pour soi". Attention, une unit&#233; avec "Chacun pour soi" pourrait pr&#233;f&#233;rer d&#233;serter !</French>
-    <German>[H1]Dezimierung[\H1][NEWLINE]M&#246;chtet Ihr Eure Einheit dezimieren? Die Einheit nimmt dadurch 10% Schaden. Die Dezimierung hebt die Moral Eurer Soldaten oder entfernt sogar den Status "K&#228;mpft auf eigenen F&#252;&#223;en". Aber vorsicht, "K&#228;mpft auf eigenen F&#252;&#223;en"-Soldaten k&#246;nnten dabei abtr&#252;nnig werden!</German>
-    <Italian>[H1]Decimation[\H1][NEWLINE]Do you want to decimate your unit? The unit takes damage by 10%. The decimation raises the morale of your soldiers or even removes the status of "Fight on its own feet". But beware, "Fight on their own feet" soldiers could thereby become a deserter!</Italian>
-    <Spanish>[H1]Diezmar[\H1][NEWLINE]&#191;Quieres diezmar tu unidad? La unidad recibir&#225; un da&#241;o del 10%. Diezmar aumenta la moral de tus soldados o incluso quita la promoci&#243;n "lucha por su cuenta". Pero ten cuidado, &#161;los soldados que "luchan por su cuenta" podr&#237;an volverse unos desertores!</Spanish>
+    <English>[H1]Decimation[\H1][NEWLINE]Do you want to decimate your unit? The unit takes damage by 10%. The decimation raises the morale of your soldiers or even removes the status of being "unreliable". But beware, "unreliable" soldiers could thereby become a deserter!</English>
+    <French>[H1]D&#233;cimation[\H1][NEWLINE]Voulez-vous d&#233;cimer votre unit&#233; ? L'unit&#233; subira 10% de pertes mais pourra r&#233;duire sa lassitude de guerre ou annuler son statut "non fiable". Mais attention, des soldats "peu fiables" pourraient devenir des voyous !</French>
+    <German>[H1]Dezimierung[\H1][NEWLINE]M&#246;chtet Ihr Eure Einheit dezimieren? Die Einheit nimmt dadurch 10% Schaden. Die Dezimierung hebt die Moral Eurer Soldaten oder entfernt sogar den Status "Unzuverl&#228;ssig". Aber Vorsicht, "unzuverl&#228;ssige" Soldaten k&#246;nnten dabei abtr&#252;nnig werden!</German>
+    <Italian>[H1]Decimazione[\H1][NEWLINE]Vuoi decimare la tua unit&#224;? L'unit&#224; subisce il 10% di danno. La decimazione aumenter&#224; il morale dei tuoi soldati o addirittura rimuover&#224; il loro stato Inaffidabile. Ma attenzione, i soldati "inaffidabili" potrebbero diventare dei ladri!</Italian>
+    <Spanish>[H1]Diezmar[\H1][NEWLINE]&#191;Quieres diezmar tu unidad? La unidad recibir&#225; un da&#241;o del 10%. Diezmar aumenta la moral de tus soldados o incluso quita la promoci&#243;n "poco confiable". Pero ten cuidado, &#161;los soldados "poco confiables" podr&#237;an volverse rebeldes!</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_ACTION_DECIMATIO_YES</Tag>
@@ -2361,6 +2361,14 @@
     <German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.[NEWLINE][ICON_BULLET] Kein Bewegungsmalus auf Ozean und Tiefsee</German>
     <Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Nessuna penalit&#224; di movimento su oceano e mare profondo</Italian>
     <Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Sin penalizaci&#243;n de movimiento en el oc&#233;ano y en aguas profundas</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_MASONRY2</Tag>
+    <English>Monumental Building</English>
+    <French>B&#226;timent monumental</French>
+    <German>Monumentalbau</German>
+    <Italian>Edificio monumentale</Italian>
+    <Spanish>Edificio monumental</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_SARGON1</Tag>
@@ -3536,7 +3544,7 @@
     </French>
     <German>Tarquinius Superbus der Etrusker</German>
     <Italian>Tarquinio Superbo di Etruschi</Italian>
-    <Spanish>Tarquinio Soberbio el etrusco</Spanish>
+    <Spanish>Tarquinio el Soberbio de los etruscos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_CIVIC_FEATURE_HAPPINESS</Tag>
@@ -4009,6 +4017,14 @@
     <Spanish>Instalaciones p&#250;blicas</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_TECH_COPPER_WORKING</Tag>
+    <English>Copperworking</English>
+    <French>Traitement du cuivre</French>
+    <German>Kupferverarbeitung</German>
+    <Italian>Lavorazione del rame</Italian>
+    <Spanish>Procesamiento del cobre</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_UNIT_BALLISTA_ROME</Tag>
     <English>Carroballista</English>
     <French>
@@ -4174,7 +4190,7 @@
     <French>Viriate des Ib&#232;res</French>
     <German>Viriathus der Iberer</German>
     <Italian>Viriato l'Iberico</Italian>
-    <Spanish>Viriato el Ib&#233;rico</Spanish>
+    <Spanish>Viriato el lusitano</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_ZENOBIA</Tag>
@@ -4304,7 +4320,7 @@
     <French>Annales de l'Ennius</French>
     <German>Annalen des Ennius</German>
     <Italian>Annales di Quinto Ennio</Italian>
-    <Spanish>Annales de Ennio</Spanish>
+    <Spanish>Anales de En&#237;o</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_HELLENISMUS2</Tag>
@@ -4330,7 +4346,7 @@
     </French>
     <German>Argantonius von Iberien</German>
     <Italian>Argantonio l'Iberico</Italian>
-    <Spanish>Argantonio de Iber&#237;a</Spanish>
+    <Spanish>Argantonio de Tartessos</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_STATTHALTER</Tag>
@@ -4618,7 +4634,7 @@
     <French>Bolgios le Celte</French>
     <German>Belgius der Kelte</German>
     <Italian>Belgius il Celto</Italian>
-    <Spanish>Bolgios el Celto</Spanish>
+    <Spanish>Bolgios el celta</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_CARATACUS</Tag>
@@ -4748,7 +4764,7 @@
     <French>H&#233;rode l'H&#233;bra&#239;que</French>
     <German>Herod der Hebr&#228;er</German>
     <Italian>Erode il ebreo</Italian>
-    <Spanish>Erode el hebreo</Spanish>
+    <Spanish>Herodes el hebreo</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_LYSANDER</Tag>
@@ -4814,7 +4830,7 @@
     </French>
     <German>Orgetorix der Kelte</German>
     <Italian>Orgetorix il Celto</Italian>
-    <Spanish>Org&#233;torix el Celto</Spanish>
+    <Spanish>Org&#233;torix el celta</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_PEISISTRATOS</Tag>
@@ -5076,7 +5092,7 @@
     </French>
     <German>Caracotta von Iberien</German>
     <Italian>Corocotta l'Iberico</Italian>
-    <Spanish>Corocotta de Iber&#237;a</Spanish>
+    <Spanish>Corocotta de Iberia</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BONUS_WALRUS</Tag>
@@ -6870,11 +6886,11 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_ROME_PALATINI</Tag>
-    <English>Palatini</English>
-    <French>Palatini</French>
-    <German>Palatini</German>
-    <Italian>Palatini</Italian>
-    <Spanish>Palatini</Spanish>
+    <English>Palatin</English>
+    <French>Palatin</French>
+    <German>Palatin</German>
+    <Italian>Palatin</Italian>
+    <Spanish>Palatin</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_ROME_SCHOLAE</Tag>
@@ -7036,7 +7052,7 @@ Tumba de Tholos
     <French>Hutte &#224; sudation</French>
     <German>Schwitzh&#252;tte</German>
     <Italian>Capanna del sudore</Italian>
-    <Spanish>Caba&#241;a de sudar</Spanish>
+    <Spanish>Sauna</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_CARTH_SACRED_BAND_HOPLIT</Tag>
@@ -7332,7 +7348,7 @@ Tumba de Tholos
     <French>Citadelle Arg-e Bam</French>
     <German>Arg-e Bam Zitadelle</German>
     <Italian>Cittadella di Arg-e Bam</Italian>
-    <Spanish>Arg-e Bam Ciudadela</Spanish>
+    <Spanish>Ciudadela de Arg-e Bam</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_PHARAONENGARDE2</Tag>
@@ -7420,7 +7436,7 @@ Tumba de Tholos
     <French>Brennus le Celte</French>
     <German>Brennus der Kelte</German>
     <Italian>Brenno il Celto</Italian>
-    <Spanish>Breno el Celto</Spanish>
+    <Spanish>Breno el celta</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_HANNIBAL</Tag>
@@ -7428,7 +7444,7 @@ Tumba de Tholos
     <French>Hannibal de Carthage</French>
     <German>Hannibal von Karthago</German>
     <Italian>Annibale di Cartagine</Italian>
-    <Spanish>An&#237;bal de C&#225;rtago</Spanish>
+    <Spanish>An&#237;bal de Cartago</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_LEADER_ALEXANDER</Tag>
@@ -8174,11 +8190,11 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GUSS_COPPER</Tag>
-    <English>Copper Foundry</English>
-    <French>Fundici&#243;n de cobre</French>
-    <German>Kupfergie&#223;erei</German>
-    <Italian>Fonderia di rame</Italian>
-    <Spanish>Fundici&#243;n de cobre</Spanish>
+    <English>Copper works</English>
+    <French>Travaux de cuivre</French>
+    <German>Kupferh&#252;tte</German>
+    <Italian>Opere in rame</Italian>
+    <Spanish>Trabajos de cobre</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GUSS_ZINN</Tag>
@@ -8198,19 +8214,19 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GUSS_IRON</Tag>
-    <English>Iron Foundry</English>
-    <French>Fundici&#243;n de hierro</French>
-    <German>Eisengie&#223;erei</German>
-    <Italian>Fonderia di ferro</Italian>
-    <Spanish>Fundici&#243;n de hierro</Spanish>
+    <English>Ironworks</English>
+    <French>Ferronnerie</French>
+    <German>Eisenh&#252;tte</German>
+    <Italian>Lavori in ferro</Italian>
+    <Spanish>Herrer&#237;a</Spanish>
   </TEXT>
   <TEXT>
-    <Tag>TXT_KEY_BUILDING_METAL_CASTING</Tag>
+    <Tag>TXT_KEY_TECH_GUSS</Tag>
     <English>Foundries</English>
     <French>Fonderies</French>
     <German>Gie&#223;ereien</German>
     <Italian>Fonderie</Italian>
-    <Spanish>Fundici&#243;nes</Spanish>
+    <Spanish>Fundiciones</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GERBEREI</Tag>
@@ -8328,7 +8344,7 @@ Tumba de Tholos
     <French>Atelier de Marbre</French>
     <German>Marmor-Werkstatt</German>
     <Italian>Laboratorio di Marmo</Italian>
-    <Spanish>Taller de Marmol</Spanish>
+    <Spanish>Taller de m&#225;rmol</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_UNIT_GARDE_ASSUR</Tag>
@@ -8337,5 +8353,83 @@ Tumba de Tholos
     <German>Saglute</German>
     <Italian>Saglute</Italian>
     <Spanish>Saglute</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_METAL_SMELTING</Tag>
+    <English>Metallurgy</English>
+    <French>M&#233;tallurgie</French>
+    <German>Metallurgie</German>
+    <Italian>Metallurgia</Italian>
+    <Spanish>Metalurgia</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_POTTERY</Tag>
+    <English>Pottery</English>
+    <French>
+<Text>Poterie</Text><Gender>Female</Gender><Plural>0</Plural>
+    </French>
+    <German>T&#246;pferei</German>
+    <Italian>
+<Text>Ceramica:Ceramiche</Text><Gender>Female</Gender><Plural>0:1</Plural>
+    </Italian>
+    <Spanish>
+<Text>Alfarer&#237;a:Alfarer&#237;as</Text><Gender>Female</Gender><Plural>0:1</Plural>
+    </Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_WERKSTATT</Tag>
+    <English>Workshop</English>
+    <French>Atelier</French>
+    <German>Werkstatt</German>
+    <Italian>Laboratorio</Italian>
+    <Spanish>Taller</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_TAUBENZUCHT</Tag>
+    <English>Pigeon Breeding</English>
+    <French>Elevage de Pigeons</French>
+    <German>Taubenzucht</German>
+    <Italian>Allevamento di Piccioni</Italian>
+    <Spanish>Cria de Palomas</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_TECH_TAUBENPOST</Tag>
+    <English>Carrier Pigeons</English>
+    <French>Pigeons Voyageurs</French>
+    <German>Brieftauben</German>
+    <Italian>Piccioni Viaggiatori</Italian>
+    <Spanish>Palomas Mensajeras</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_TAUBENSCHLAG</Tag>
+    <English>Dovecote</English>
+    <French>Colombier</French>
+    <German>Taubenschlag</German>
+    <Italian>Colombaia</Italian>
+    <Spanish>Palomar</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_TAUBENPOST</Tag>
+    <English>Pigeon mail</English>
+    <French>Courrier de pigeon</French>
+    <German>Taubenpost</German>
+    <Italian>Posta di piccione</Italian>
+    <Spanish>Correo de paloma</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_FORGE_ARMOR</Tag>
+    <English>Armorsmith</English>
+    <French>Forgeron d'armures</French>
+    <German>R&#252;stungsschmiede</German>
+    <Italian>Armaiolo</Italian>
+    <Spanish>Forjador de armaduras</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_FORGE_HORSE</Tag>
+    <English>Farrier</English>
+    <French>Mar&#233;chal-Ferrant</French>
+    <German>Hufschmiede</German>
+    <Italian>Maniscalco</Italian>
+    <Spanish>Herrador</Spanish>
   </TEXT>
 </Civ4GameText>

@@ -435,10 +435,18 @@ class CvDomesticAdvisor:
 				screen.setTableText("CityListBackground", 18, i, pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")",
 														"", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
+				# City riot / civil war
+				if pLoopCity.getOccupationTimer():
+						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 				# Liberation
-				if pLoopCity.getLiberationPlayer(False) != -1:
-						screen.setTableText("CityListBackground", 19, i, "<font=2>" + (u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR)) +
-																"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				elif pLoopCity.getLiberationPlayer(False) != -1:
+						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.MAP_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				# Capital
+				elif pLoopCity.isCapital():
+						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.STAR_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				# Provincial Palace
+				elif pLoopCity.isGovernmentCenter():
+						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Stop Growth
 				if (pLoopCity.AI_isEmphasize(5)):
@@ -883,40 +891,51 @@ class CvDomesticAdvisor:
 				iBuildingCity = gc.getInfoTypeForString("BUILDING_STADT")
 				iBuildingProvinz = gc.getInfoTypeForString("BUILDING_PROVINZ")
 				iBuildingMetropole = gc.getInfoTypeForString("BUILDING_METROPOLE")
+				iCivilWar = gc.getInfoTypeForString("BUILDING_CIVIL_WAR")
 				if pLoopCity.getNumRealBuilding(iBuildingMetropole):
-						return gc.getBuildingInfo(iBuildingMetropole).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe5.dds"
+						else: return gc.getBuildingInfo(iBuildingMetropole).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingProvinz):
-						return gc.getBuildingInfo(iBuildingProvinz).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe4.dds"
+						else: return gc.getBuildingInfo(iBuildingProvinz).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingCity):
-						return gc.getBuildingInfo(iBuildingCity).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe3.dds"
+						else: return gc.getBuildingInfo(iBuildingCity).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingKolonie):
-						return gc.getBuildingInfo(iBuildingKolonie).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe2.dds"
+						else: return gc.getBuildingInfo(iBuildingKolonie).getButton()
 				else:
-						return gc.getBuildingInfo(iBuildingSiedlung).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe1.dds"
+						else: return gc.getBuildingInfo(iBuildingSiedlung).getButton()
 
 		def getCityName(self, pLoopCity):
-				szName = pLoopCity.getName()
-				# If city is in Civil War
-				if pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
-						szName += (u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR))
-				# Capital or provincial palace
-				if pLoopCity.isCapital():
-						szName += (u"%c" % CyGame().getSymbolID(FontSymbols.STAR_CHAR))
-				elif pLoopCity.isGovernmentCenter():
-						szName += (u"%c" % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR))
+				# City name: font-color: white (normal), red (riot/civil war)
+				if pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")) or pLoopCity.getOccupationTimer():
+						szName = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + pLoopCity.getName() + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szName += u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR)
+				else:
+						szName = pLoopCity.getName()
 
+				# Symbol: Stern: Capital (gold) or provincial palace (silver)
+				if pLoopCity.isCapital():
+						szName += u"%c" % CyGame().getSymbolID(FontSymbols.STAR_CHAR)
+				elif pLoopCity.isGovernmentCenter():
+						szName += u"%c" % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR)
+
+				# Symbol: Religion
 				for iReligion in range(gc.getNumReligionInfos()):
 						if pLoopCity.isHasReligion(iReligion):
 								if pLoopCity.isHolyCityByType(iReligion):
-										szName += (u"%c" % gc.getReligionInfo(iReligion).getHolyCityChar())
+										szName += u"%c" % gc.getReligionInfo(iReligion).getHolyCityChar()
 								else:
-										szName += (u"%c" % gc.getReligionInfo(iReligion).getChar())
+										szName += u"%c" % gc.getReligionInfo(iReligion).getChar()
 
+				# Symbol: Kult
 				for iCorporation in range(gc.getNumCorporationInfos()):
 						if pLoopCity.isHeadquartersByType(iCorporation):
-								szName += (u"%c" % gc.getCorporationInfo(iCorporation).getHeadquarterChar())
+								szName += u"%c" % gc.getCorporationInfo(iCorporation).getHeadquarterChar()
 						elif pLoopCity.isActiveCorporation(iCorporation):
-								szName += (u"%c" % gc.getCorporationInfo(iCorporation).getChar())
+								szName += u"%c" % gc.getCorporationInfo(iCorporation).getChar()
 
 				return szName
 

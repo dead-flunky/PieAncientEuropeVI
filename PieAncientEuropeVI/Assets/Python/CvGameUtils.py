@@ -9,7 +9,7 @@ from CvPythonExtensions import (CyGlobalContext, PlotStyles, OrderTypes,
 																PlotLandscapeLayers, CyTranslator, plotXY,
 																DomainTypes, ColorTypes, CyMap,
 																UnitAITypes, CommandTypes, CyInterface,
-																DirectionTypes, CyCity,
+																DirectionTypes, CyCity, FontSymbols,
 																CyGame, CyEngine, MissionTypes, YieldTypes,
 																TechTypes, CommerceTypes, BuildingTypes,
 																CyGameTextMgr, WidgetTypes,
@@ -2854,6 +2854,13 @@ class CvGameUtils:
 				if eWidgetType == WidgetTypes.WIDGET_HELP_RELIGION:
 						if iData1 == -1:
 								return CyTranslator().getText("TXT_KEY_CULTURELEVEL_NONE", ())
+## Mouse Over Civ Score List ##
+				elif eWidgetType == WidgetTypes.WIDGET_CONTACT_CIV:
+						pPlayer = gc.getPlayer(iData1)
+						iTeam = pPlayer.getTeam()
+						pTeam = gc.getTeam(iTeam)
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE")):
+								return CyTranslator().getText("[NEWLINE]", ()) + u" %c " % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + CyTranslator().getText("TXT_KEY_TECH_CITY_STATE", ()).upper()
 ## Platy WorldBuilder ##
 				elif eWidgetType == WidgetTypes.WIDGET_PYTHON:
 						if iData1 == 1027:

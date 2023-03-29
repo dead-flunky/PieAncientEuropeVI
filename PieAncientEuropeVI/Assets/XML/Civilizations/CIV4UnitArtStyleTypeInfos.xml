@@ -1282,6 +1282,10 @@
 			<Type>UNIT_ARTSTYLE_EGYPT</Type>
 			<StyleUnits>
 				<StyleUnit>
+					<UnitType>UNIT_GREAT_GENERAL</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_WARLORD_PHARAO</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_WARRIOR</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_WARRIOR_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>

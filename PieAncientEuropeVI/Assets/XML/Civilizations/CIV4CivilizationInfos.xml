@@ -2448,8 +2448,12 @@
 					<BuildingType>BUILDING_GARDEN</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_STEINGRAB</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL5</BuildingClassType>
 					<BuildingType>BUILDING_NUBIAN_PYRAMID</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_STEINGRAB</BuildingClassType>
+					<BuildingType>BUILDING_MASTABA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_HEROIC_EPIC</BuildingClassType>
@@ -6600,12 +6604,16 @@
 					<BuildingType>BUILDING_GARDEN</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_SPECIAL5</BuildingClassType>
+					<BuildingType>BUILDING_NUBIAN_PYRAMID</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_SPECIAL6</BuildingClassType>
 					<BuildingType>BUILDING_NUBIAN_DEFFUFA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_STEINGRAB</BuildingClassType>
-					<BuildingType>BUILDING_NUBIAN_PYRAMID</BuildingType>
+					<BuildingType>BUILDING_MASTABA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_FORT</BuildingClassType>

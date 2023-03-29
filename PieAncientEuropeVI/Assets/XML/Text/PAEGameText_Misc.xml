@@ -6,7 +6,15 @@
     <French>Tous des unit&#233;s de m&#234;l&#233;e</French>
     <German>Alle Nahkampfeinheiten</German>
     <Italian>Tutte le unit&#224; da mischia</Italian>
-    <Spanish>Tudos unidades de combate cercano</Spanish>
+    <Spanish>Todas las unidades de combate cercano</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_MISC_REVEALS</Tag>
+    <English>[ICON_BULLET]Reveals/Enables[SPACE]</English>
+    <French>[ICON_BULLET]R&#233;v&#232;le/Permet :[SPACE]</French>
+    <German>[ICON_BULLET]Zeigt/Erm&#246;glicht:[SPACE]</German>
+    <Italian>[ICON_BULLET]Rivela/Permette[SPACE]</Italian>
+    <Spanish>[ICON_BULLET]Revela/Permite[SPACE]</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_1</Tag>

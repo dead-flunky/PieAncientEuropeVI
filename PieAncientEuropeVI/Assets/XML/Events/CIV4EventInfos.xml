@@ -5359,7 +5359,7 @@
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
-			<iPopulationChange>0</iPopulationChange>
+			<iPopulationChange>-1</iPopulationChange>
 			<AdditionalEvents/>
 			<EventTimes/>
 			<ClearEvents/>

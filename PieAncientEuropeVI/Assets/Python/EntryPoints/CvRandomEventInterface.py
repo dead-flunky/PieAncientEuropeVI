@@ -442,8 +442,9 @@ def canTriggerCityFire(argsList):
 		if city.getPopulation() < 3:
 				return False
 
-		if city.isHasBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
-				return False
+		if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
+				if gc.getGame().getSorenRandNum(5, "very less chance for city fire with fire station") > 0:
+						return False
 
 		return True
 
@@ -1689,7 +1690,7 @@ def getHelpClassicLiteratureDone3(argsList):
 		szCityName = u""
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iGreatLibrary):
+				if loopCity.getNumRealBuilding(iGreatLibrary):
 						szCityName = loopCity.getNameKey()
 						break
 
@@ -1709,7 +1710,7 @@ def canApplyClassicLiteratureDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while(loopCity):
-				if (loopCity.isHasBuilding(iGreatLibrary)):
+				if (loopCity.getNumRealBuilding(iGreatLibrary)):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -1727,7 +1728,7 @@ def applyClassicLiteratureDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iGreatLibrary):
+				if loopCity.getNumRealBuilding(iGreatLibrary):
 						loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 						return
 
@@ -1895,7 +1896,7 @@ def canApplySportsLeagueDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iZeus):
+				if loopCity.getNumRealBuilding(iZeus):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -2151,7 +2152,7 @@ def getHelpWarChariotsDone2(argsList):
 		szCityName = u""
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
+				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
 						szCityName = loopCity.getNameKey()
 						break
 
@@ -2172,7 +2173,7 @@ def canApplyWarChariotsDone2(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
+				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -2191,7 +2192,7 @@ def applyWarChariotsDone2(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
+				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
 						loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 						# return # soll jede Stadt mit Provinzpalast und Stall bekommen
 
@@ -2363,7 +2364,7 @@ def canTriggerPreachingResearcherCity(argsList):
 		player = gc.getPlayer(argsList[1])
 		city = player.getCity(iCity)
 
-		if city.isHasBuilding(gc.getInfoTypeForString("BUILDING_GYMNASION")) or city.isHasBuilding(gc.getInfoTypeForString("BUILDING_SCHULE")):
+		if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GYMNASION")) or city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_SCHULE")):
 				return True
 		return False
 

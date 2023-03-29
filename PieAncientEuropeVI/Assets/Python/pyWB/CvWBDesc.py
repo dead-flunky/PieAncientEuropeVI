@@ -2039,7 +2039,8 @@ class CvSignDesc:
 				f.write("\tplotX=%d\n" % (sign.getPlot().getX(),))
 				f.write("\tplotY=%d\n" % (sign.getPlot().getY(),))
 				f.write("\tplayerType=%d\n" % (sign.getPlayerType(),))
-				f.write("\tcaption=%s\n" % (sign.getCaption(),))
+				#f.write("\tcaption=%s\n" % (sign.getCaption(),))
+				f.write("\tcaption=%s\n" % (sign.getCaption().encode('utf-8'),))
 				f.write("EndSign\n")
 
 		def read(self, f):
@@ -2072,7 +2073,8 @@ class CvSignDesc:
 
 						v = parser.findTokenValue(toks, "caption")
 						if v != -1:
-								self.szCaption = v
+								#self.szCaption = v
+								self.szCaption = v.decode('utf-8').encode('cp1252')
 								continue
 
 						if parser.findTokenValue(toks, "EndSign") != -1:

@@ -38,7 +38,7 @@
 			<iValue>3</iValue>
 			<iAdvancedStartCost>40</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iMovement>20</iMovement>
+			<iMovement>15</iMovement>
 			<iFlatMovement>15</iFlatMovement>
 			<BonusType/>
 			<PrereqOrBonuses/>

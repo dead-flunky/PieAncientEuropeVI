@@ -28,7 +28,7 @@
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -79,7 +79,7 @@
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -130,7 +130,7 @@
 											<iThreshold>30</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>30</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -181,7 +181,7 @@
 											<iThreshold>300</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>300</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -232,7 +232,7 @@
 											<iThreshold>3000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>3000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -283,7 +283,7 @@
 											<iThreshold>20000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>20000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -334,7 +334,7 @@
 											<iThreshold>100000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
-											<GameSpeedType>GAMESPEED_EURASIA_XL_52CIV</GameSpeedType>
+											<GameSpeedType>GAMESPEED_EURASIA_XL_52_CIVS</GameSpeedType>
 											<iThreshold>100000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>

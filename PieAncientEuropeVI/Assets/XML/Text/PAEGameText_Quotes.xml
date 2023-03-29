@@ -44,7 +44,7 @@
     <Tag>TXT_KEY_PAE_QUOTE_59</Tag>
     <English>"Go tell the Spartans, stranger passing by, that here, obedient to their laws, we lie" (epitaph at the pass of Thermopylae)</English>
     <French>"Etranger, annonce &#224; Sparte que nous gisons ici, fid&#232;les &#224; ses lois." (Epitaphe du d&#233;fil&#233; des Thermopyles)</French>
-    <German>"Wanderer, kommst du nach Sparta, verk&#252;nde dorten, du habest uns hier liegen gesehen, wie das Gesetz es befahl." (Inschrift am Thermopylenpass)</German>
+    <German>"Wanderer, kommst du nach Sparta, verk&#252;nde dorten, du habest uns hier liegen sehen, wie das Gesetz es befahl." (Inschrift am Pass der Thermopylen)</German>
     <Italian>"Andate a dire agli Spartani, straniero di passaggio, che qui, obbedienti alle loro leggi, noi mentiamo" (epitaffio al passo delle Termopili)</Italian>
     <Spanish>"Ve a decirle a los espartanos, caminante extranjero, que aqu&#237;, obedientes a sus leyes, moriremos" (epitafio en el paso de las Term&#243;pilas)</Spanish>
   </TEXT>
@@ -148,7 +148,7 @@
     <Tag>TXT_KEY_PAE_QUOTE_12</Tag>
     <English>"An absolute ruler is an undesireable leader." -Charles de Montesquieu</English>
     <French>"Un dirigeant absolu est un dirigeant ind&#233;sirable." -Charles de Montesquieu</French>
-    <German>"Ein absoluter Herrscher ist ein unerw&#252;nschte F&#252;hrer." -Charles de Montesquieu</German>
+    <German>"Ein absoluter Herrscher ist ein unerw&#252;nschter F&#252;hrer." -Charles de Montesquieu</German>
     <Italian>"Un dominatore assoluto &#232; un leader indesiderato". -Charles de Montesquieu</Italian>
     <Spanish>"Un gobernante absolutista es un l&#237;der indeseable." -Charles de Montesquieu</Spanish>
   </TEXT>
@@ -786,11 +786,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PAE_QUOTE_98</Tag>
-    <English>"Taking part is everything!" -Olympic principle</English>
-    <French>"L'important, c'est de participer !" -Principe olympique</French>
-    <German>"Dabei sein ist alles!" -Olympisches Prinzip</German>
-    <Italian>"Esserci &#232; tutto!" -Principio di Olympic</Italian>
-    <Spanish>"&#161;Tomar parte lo es todo!" -Principio Ol&#237;mpico</Spanish>
+    <English>"Only the win counts!" - Ancient Olympic principle</English>
+    <French>"Seule la victoire compte !" - Principe olympique antique</French>
+    <German>"Nur der Sieg z&#228;hlt!" - Antikes Olympisches Prinzip</German>
+    <Italian>"Conta solo la vittoria!" - Antico principio olimpico</Italian>
+    <Spanish>"&#161;Solo cuenta la victoria!" - Antiguo principio ol&#237;mpico</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PAE_QUOTE_99</Tag>
@@ -1559,5 +1559,77 @@
     <German>Dein Pferd sei zuverl&#228;ssiger Freund, nicht dein Sklave. (Xenophon)</German>
     <Italian>Il tuo cavallo &#232; un amico affidabile, non il tuo schiavo. (Xenofono)</Italian>
     <Spanish>Tu caballo es un amigo confiable, no tu esclavo. (Xen&#243;fono)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_197</Tag>
+    <English>Beauty is in the eye of the beholder. (Thucydides)</English>
+    <French>La beaut&#233; est dans l'oeil de celui qui regarde. (Thucydide)</French>
+    <German>Sch&#246;nheit liegt im Auge des Betrachters. (Thukydides)</German>
+    <Italian>La bellezza &#232; negli occhi di chi guarda. (Tucidide)</Italian>
+    <Spanish>La belleza est&#225; en el ojo del espectador. (Tuc&#237;dides)</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_198</Tag>
+    <English>He who forges weapons prepares war. Johann Wolfgang von Goethe</English>
+    <French>Celui qui forge des armes pr&#233;pare la guerre. Johann Wolfgang von Goethe</French>
+    <German>Wer Waffen schmiedet, bereitet Krieg. Johann Wolfgang von Goethe</German>
+    <Italian>Chi forgia armi prepara la guerra. Johann Wolfgang von Goethe</Italian>
+    <Spanish>El que forja las armas prepara la guerra. Johann Wolfgang von Goethe</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_199</Tag>
+    <English>Man, if you really want to protect what is yours, you will no longer be in true peace.[NEWLINE]Angelus Silesius</English>
+    <French>Homme, si tu veux vraiment prot&#233;ger ce qui t'appartient, tu ne seras plus dans la vraie paix.[NEWLINE]Ang&#233;lus Silesius</French>
+    <German>Mensch, wenn du so genau das Deine willst besch&#252;tzen, so wirst du nicht mehr im wahren Frieden sitzen.[NEWLINE]Angelus Silesius</German>
+    <Italian>Uomo, se vuoi davvero proteggere ci&#242; che &#232; tuo, non sarai pi&#249; nella vera pace.[NEWLINE]Angelo Silesius</Italian>
+    <Spanish>Hombre, si de verdad quieres proteger lo que es tuyo, ya no estar&#225;s en la verdadera paz.[NEWLINE]&#193;ngelus Silesio</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_200</Tag>
+    <English>Art needs craft more than craft needs art. Franz Kafka</English>
+    <French>L'art a besoin d'artisanat plus que l'artisanat n'a besoin d'art. Franz Kafka</French>
+    <German>Die Kunst hat das Handwerk n&#246;tiger als das Handwerk die Kunst. Franz Kafka</German>
+    <Italian>L'arte ha bisogno dell'artigianato pi&#249; di quanto l'artigianato abbia bisogno dell'arte. Franz Kafka</Italian>
+    <Spanish>El arte necesita la artesan&#237;a m&#225;s de lo que la artesan&#237;a necesita del arte. Franz Kafka</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_201</Tag>
+    <English>Polished brass sells better than dull gold.[NEWLINE]Philip Dormer Stanhope</English>
+    <French>Le laiton poli se vend mieux que l'or mat.[NEWLINE]Philip Dormer Stanhope</French>
+    <German>Poliertes Messing ist besser an die Leute zu bringen als stumpfes Gold.[NEWLINE]Philip Dormer Stanhope</German>
+    <Italian>L'ottone lucido vende meglio dell'oro opaco.[NEWLINE]Philip Dormer Stanhope</Italian>
+    <Spanish>El lat&#243;n pulido se vende mejor que el oro mate.[NEWLINE]Philip Dormer Stanhope</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_204</Tag>
+    <English>You owe one thing to life[NEWLINE]Fight or suffer in peace,[NEWLINE]Are you an anvil be patient[NEWLINE]If you're a hammer hit it.</English>
+    <French>Tu dois une chose &#224; la vie[NEWLINE]combattre ou souffrir en paix,[NEWLINE]es-tu une enclume sois patient[NEWLINE]si tu es un marteau, frappez-le.</French>
+    <German>Eins bist du dem Leben schuldig,[NEWLINE]K&#228;mpfe oder duld in Ruh,[NEWLINE]Bist du Amboss sei geduldig,[NEWLINE]Bist du Hammer schlage zu.</German>
+    <Italian>Devi una cosa alla vita[NEWLINE]combattere o soffrire in pace,[NEWLINE]sei un'incudine sii paziente[NEWLINE]se sei un martello colpiscilo.</Italian>
+    <Spanish>Le debes una cosa a la vida[NEWLINE]luchar o sufrir en paz,[NEWLINE]eres un yunque ten paciencia[NEWLINE]si eres un martillo golp&#233;alo.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_202</Tag>
+    <English>A bird in the hand is better than ten in the air. General saying</English>
+    <French>Un oiseau dans la main vaut mieux que dix dans les airs. Proverbe g&#233;n&#233;ral</French>
+    <German>Besser den Spatz in der Hand als eine Taube auf dem Dach. Deutsches Sprichwort</German>
+    <Italian>Un uccello in mano &#232; meglio di dieci in aria. Detto generale</Italian>
+    <Spanish>M&#225;s vale p&#225;jaro en mano que diez en el aire. Dicho general</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_203</Tag>
+    <English>Even unwritten letters sometimes arrive. Marie von Ebner-Eschenbach</English>
+    <French>M&#234;me des lettres non &#233;crites arrivent parfois. Marie von Ebner-Eschenbach</French>
+    <German>Auch nicht geschriebene Briefe kommen manchmal an. Marie von Ebner-Eschenbach</German>
+    <Italian>A volte arrivano anche lettere non scritte. Marie von Ebner-Eschenbach</Italian>
+    <Spanish>A veces llegan incluso cartas no escritas. Marie von Ebner-Eschenbach</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_PAE_QUOTE_196</Tag>
+    <English>Your effort should match your possessions. (Egyptian proverb)</English>
+    <French>Votre effort doit correspondre &#224; vos possessions. (proverbe &#233;gyptien)</French>
+    <German>Dein Aufwand soll deinem Besitz entsprechen. (&#196;gyptisches Sprichwort)</German>
+    <Italian>Il tuo sforzo dovrebbe corrispondere ai tuoi beni. (proverbio egiziano)</Italian>
+    <Spanish>Su esfuerzo debe coincidir con sus posesiones. (proverbio egipcio)</Spanish>
   </TEXT>
 </Civ4GameText>

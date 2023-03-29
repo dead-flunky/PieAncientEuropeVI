@@ -35,7 +35,7 @@
 			<iDemandRebukedWarProb>0</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>50</iBuildUnitProb>
-			<iBaseAttackOddsChange>0</iBaseAttackOddsChange>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
 			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
@@ -271,8 +271,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -871,8 +871,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -1471,8 +1471,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>25</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -2071,8 +2071,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -2671,8 +2671,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -3271,8 +3271,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -3871,8 +3871,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -4471,8 +4471,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -5071,8 +5071,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -5671,8 +5671,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -6272,7 +6272,7 @@
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
 			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -6871,8 +6871,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -7471,8 +7471,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -8071,8 +8071,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>25</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -8671,8 +8671,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -9271,8 +9271,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -9867,8 +9867,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -10463,8 +10463,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -11059,8 +11059,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -11655,8 +11655,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -12251,8 +12251,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -12847,8 +12847,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -13447,8 +13447,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -14047,8 +14047,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -14647,8 +14647,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -15247,8 +15247,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -15843,8 +15843,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -16439,8 +16439,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -17035,8 +17035,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -17631,8 +17631,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -18227,8 +18227,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -18823,8 +18823,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -19423,8 +19423,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -20024,7 +20024,7 @@
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
 			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -20623,8 +20623,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -21223,8 +21223,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -21823,8 +21823,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -22423,8 +22423,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -23023,8 +23023,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -23623,8 +23623,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -24223,8 +24223,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -24823,8 +24823,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -25423,8 +25423,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -26023,8 +26023,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -26623,8 +26623,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -27223,8 +27223,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -27823,8 +27823,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -28419,8 +28419,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -29015,8 +29015,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -29611,8 +29611,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -30207,8 +30207,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -30803,8 +30803,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -31399,8 +31399,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -31999,8 +31999,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -32595,8 +32595,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -33191,8 +33191,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -33787,8 +33787,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -34383,8 +34383,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -34979,8 +34979,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -35575,8 +35575,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -36175,8 +36175,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -36771,8 +36771,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -37371,8 +37371,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -37971,8 +37971,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>5</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -38571,8 +38571,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -39171,8 +39171,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -39767,8 +39767,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -40363,8 +40363,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -40959,8 +40959,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>30</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -41555,8 +41555,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -42151,8 +42151,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -42747,8 +42747,8 @@
 			<iDemandRebukedWarProb>45</iDemandRebukedWarProb>
 			<iRazeCityProb>80</iRazeCityProb>
 			<iBuildUnitProb>40</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -43343,8 +43343,8 @@
 			<iDemandRebukedWarProb>45</iDemandRebukedWarProb>
 			<iRazeCityProb>80</iRazeCityProb>
 			<iBuildUnitProb>35</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -43939,8 +43939,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -44535,8 +44535,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -45131,8 +45131,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -45727,8 +45727,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -46323,8 +46323,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -46923,8 +46923,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -47523,8 +47523,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -48123,8 +48123,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -48723,8 +48723,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -49323,8 +49323,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -49923,8 +49923,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>11</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -50523,8 +50523,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>17</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -51123,8 +51123,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -51723,8 +51723,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -52323,8 +52323,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -52923,8 +52923,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -53523,8 +53523,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -54119,8 +54119,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -54715,8 +54715,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -55315,8 +55315,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -55915,8 +55915,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>17</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -56515,8 +56515,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>22</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -57115,8 +57115,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>25</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -57715,8 +57715,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>24</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -58315,8 +58315,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -58915,8 +58915,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -59515,8 +59515,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -60115,8 +60115,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>24</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -60715,8 +60715,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -61311,8 +61311,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -61911,8 +61911,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -62511,8 +62511,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -63111,8 +63111,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -63707,8 +63707,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -64303,8 +64303,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -64899,8 +64899,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -65499,8 +65499,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -66095,8 +66095,8 @@
 			<iDemandRebukedWarProb>45</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -66691,8 +66691,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>28</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -67291,8 +67291,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -67891,8 +67891,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -68491,8 +68491,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -69091,8 +69091,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -69691,8 +69691,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -70291,8 +70291,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -70891,8 +70891,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -71491,8 +71491,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -72091,8 +72091,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>10</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -72691,8 +72691,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>16</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -73291,8 +73291,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -73891,8 +73891,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -74491,8 +74491,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>16</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -75091,8 +75091,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -75691,8 +75691,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -76291,8 +76291,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -76891,8 +76891,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>17</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -77491,8 +77491,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -78091,8 +78091,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -78691,8 +78691,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -79291,8 +79291,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -79891,8 +79891,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -80491,8 +80491,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>11</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -81091,8 +81091,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>17</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -81691,8 +81691,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -82291,8 +82291,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -82891,8 +82891,8 @@
 			<iDemandRebukedWarProb>35</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>17</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -83491,8 +83491,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -84091,8 +84091,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>19</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -84691,8 +84691,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -85291,8 +85291,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>70</iRazeCityProb>
 			<iBuildUnitProb>25</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -85887,8 +85887,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>70</iRazeCityProb>
 			<iBuildUnitProb>25</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>3</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -86483,8 +86483,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>75</iRazeCityProb>
 			<iBuildUnitProb>40</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>4</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-3</iCloseBordersAttitudeChange>
@@ -87079,8 +87079,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>8</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -87679,8 +87679,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -88279,8 +88279,8 @@
 			<iDemandRebukedWarProb>15</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -88879,8 +88879,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -89479,8 +89479,8 @@
 			<iDemandRebukedWarProb>25</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>15</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-3</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -90079,8 +90079,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -90679,8 +90679,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>40</iRazeCityProb>
 			<iBuildUnitProb>18</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>16</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -91279,8 +91279,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>13</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>0</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-4</iCloseBordersAttitudeChange>
@@ -91879,8 +91879,8 @@
 			<iDemandRebukedWarProb>10</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -92479,8 +92479,8 @@
 			<iDemandRebukedWarProb>30</iDemandRebukedWarProb>
 			<iRazeCityProb>0</iRazeCityProb>
 			<iBuildUnitProb>13</iBuildUnitProb>
-			<iBaseAttackOddsChange>3</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-1</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>0</iCloseBordersAttitudeChange>
@@ -93079,8 +93079,8 @@
 			<iDemandRebukedWarProb>20</iDemandRebukedWarProb>
 			<iRazeCityProb>10</iRazeCityProb>
 			<iBuildUnitProb>12</iBuildUnitProb>
-			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>9</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>6</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>12</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>2</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>
@@ -93679,8 +93679,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>20</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>2</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>5</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>-2</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-1</iCloseBordersAttitudeChange>
@@ -94275,8 +94275,8 @@
 			<iDemandRebukedWarProb>40</iDemandRebukedWarProb>
 			<iRazeCityProb>50</iRazeCityProb>
 			<iBuildUnitProb>20</iBuildUnitProb>
-			<iBaseAttackOddsChange>1</iBaseAttackOddsChange>
-			<iAttackOddsChangeRand>10</iAttackOddsChangeRand>
+			<iBaseAttackOddsChange>4</iBaseAttackOddsChange>
+			<iAttackOddsChangeRand>14</iAttackOddsChangeRand>
 			<iWorseRankDifferenceAttitudeChange>0</iWorseRankDifferenceAttitudeChange>
 			<iBetterRankDifferenceAttitudeChange>-1</iBetterRankDifferenceAttitudeChange>
 			<iCloseBordersAttitudeChange>-2</iCloseBordersAttitudeChange>

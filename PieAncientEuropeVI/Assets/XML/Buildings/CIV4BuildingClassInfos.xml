@@ -14,11 +14,11 @@
 <!-- BUILDING_NECROPOLIS: Etrusker, Rom, Griechen (Theb, Athen, Spa), Iberer, Phoen, Karthago, Israel, Hethiter -->
 <!-- BUILDING_HAREM: Egypt, Nubia, Assyrer, Babylon, Perser -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL3 ++++++ -->
-<!-- BUILDING_SCHULE: Assyrer, Babylon, Sumer, Hethiter, Phoen, Perser, Karthago, Egypt, Berber, Iberer, Nubier, Lyder, Inder -->
+<!-- BUILDING_SCHULE: Assyrer, Babylon, Sumer, Hethiter, Phoen, Perser, Karthago, Egypt, Berber, Iberer, Nubia, Lyder, Inder -->
 <!-- BUILDING_GYMNASION: Griechen,  Ath,Theb,Spar, Makedon -->
 <!-- BUILDING_GYMNASIUM: Rom, Etrusker -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL4 ++++++ -->
-<!-- BUILDING_GARDEN: Assyrer, Phoen, Perser, Babylon, Sumer, Karthago, Egypt, Israel -->
+<!-- BUILDING_GARDEN: Assyrer, Phoen, Perser, Babylon, Sumer, Karthago, Egypt, Nubia, Israel -->
 <!-- BUILDING_STEINKREIS: Kelten, Gallier, Briten, Daker, Iberer -->
 <!-- BUILDING_JURTE: Berber, Hunnen, Libyer, Numid, Parther, Skythen, Barbar -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL5 ++++++ -->
@@ -26,6 +26,7 @@
 <!-- BUILDING_NYMPHAEUM: Rom -->
 <!-- BUILDING_STUFENBRUNNEN: Inder -->
 <!-- BUILDING_STEINBECKEN: Sumer, Assyrer, Perser, Babylon, Phoen, Karthago, Hethiter, Lyder -->
+<!-- BUILDING_NUBIAN_PYRAMID: Egypt, Nubia -->
 <!-- +++++++ BUILDINGCLASS_SPECIAL6 ++++++ -->
 <!-- BUILDING_ROMAN_FORUM: Etrus, Rom -->
 <!-- BUILDING_AGORA: Griechen, Ath, Spa, Theb -->
@@ -56,6 +57,18 @@
 <!-- +++++++++++++++ -->
 <Civ4BuildingClassInfos xmlns="x-schema:CIV4BuildingsSchema.xml">
 	<BuildingClassInfos>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_POTTERY</Type>
+			<Description>TXT_KEY_BUILDING_POTTERY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_POTTERY</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_CURINGHUT</Type>
 			<Description>TXT_KEY_BUILDING_CURINGHUT</Description>
@@ -90,6 +103,18 @@
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
 			<DefaultBuilding>BUILDING_GRANARY2</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_TAUBENSCHLAG</Type>
+			<Description>TXT_KEY_BUILDING_TAUBENSCHLAG</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_TAUBENSCHLAG</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
@@ -287,7 +312,7 @@
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_SCHMIEDE1</Type>
-			<Description>TXT_KEY_BUILDING_SCHMIEDE1</Description>
+			<Description>TXT_KEY_BUILDING_WERKSTATT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -307,6 +332,42 @@
 			<bNoLimit>0</bNoLimit>
 			<bMonument>0</bMonument>
 			<DefaultBuilding>BUILDING_FORGE</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_FORGE_WEAPONS</Type>
+			<Description>TXT_KEY_BUILDING_FORGE_WEAPONS</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_FORGE_WEAPONS</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_FORGE_ARMOR</Type>
+			<Description>TXT_KEY_BUILDING_FORGE_ARMOR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_FORGE_ARMOR</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_FORGE_HORSE</Type>
+			<Description>TXT_KEY_BUILDING_FORGE_HORSE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_FORGE_HORSE</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
@@ -477,6 +538,7 @@
 			<DefaultBuilding>BUILDING_BILDHAUER</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_ARCHERY</Type>
 			<Description>TXT_KEY_BUILDING_ARCHERY</Description>
@@ -888,6 +950,18 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_TAUBENPOST</Type>
+			<Description>TXT_KEY_BUILDING_TAUBENPOST</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<bNoLimit>0</bNoLimit>
+			<bMonument>0</bMonument>
+			<DefaultBuilding>BUILDING_TAUBENPOST</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_COURTHOUSE</Type>
 			<Description>TXT_KEY_BUILDING_COURTHOUSE</Description>

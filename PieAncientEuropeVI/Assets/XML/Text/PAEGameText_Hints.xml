@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
   <TEXT>
+    <Tag>TXT_KEY_HINT_52</Tag>
+    <English>If you collect more Espionage Points than an opponent, then your missions towards that opponent will be cheaper. Every point you spend throughout the game is added towards this total, so if you see a fierce rival outspending you in Espionage Points, it would be wise to increase your Espionage spending.</English>
+    <French>Si vous collectez plus de points d'espionnage qu'un de vos adversaires, vos missions contre lui vous co&#251;teront moins cher. Chaque point d&#233;pens&#233; dans le jeu est totalis&#233;, alors si vous avez un rival acharn&#233; qui d&#233;pense plus de points d'espionnage que vous, vous avez int&#233;r&#234;t &#224; augmenter vos d&#233;penses d'espionnage.</French>
+    <German>Wenn Sie mehr Spionagepunkte als eine gegnerische Zivilisation sammeln, sinken die Kosten f&#252;r die Durchf&#252;hrung Ihrer Missionen gegen diese Nation. Jeder Punkt, den Sie im Laufe des Spiels einsetzen, wird in der Gesamtsumme addiert. Wenn Sie also feststellen, dass ein erbitterter Rivale mehr Spionagepunkte investiert als Sie selbst, w&#228;re es klug, Ihre eigenen Spionageinvestitionen zu erh&#246;hen.</German>
+    <Italian>Se raccogli un maggior numero di punti spionaggio di un avversario, le tue missioni nei suoi confronti diventeranno pi&#249; economiche. Ogni punto che spendi durante la partita viene aggiunto a questo totale, perci&#242; se vedi un avversario che ti surclassa in punti spionaggio, &#232; una mossa saggia aumentare la spesa in questo senso.</Italian>
+    <Spanish>Si coleccionas m&#225;s puntos de espionaje que un rival, tus misiones contra dicho adversario ser&#225;n m&#225;s baratas. Cada punto que gastes a lo largo de la partida se suma a este total, de modo que si ves que un duro rival gasta m&#225;s que t&#250; en puntos de espionaje, es buena idea aumentar tu gasto en espionaje.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_HINT_45</Tag>
     <English>If you are having trouble spreading a Cult, make sure the city you are spreading it to has the appropriate resources and that your treasury has enough gold to fund the expansion. Keep in mind it costs significantly more to spread a Cult to a foreign city than to your own.</English>
     <French>Si vous n'arrivez pas &#224; d&#233;velopper un culte, assurez-vous que la ville dans laquelle vous voulez l'implanter dispose des ressources n&#233;cessaires et que vous avez assez d'or dans votre tr&#233;sor pour financer son d&#233;veloppement. N'oubliez pas que cela co&#251;te bien plus cher d'implanter un culte dans une ville &#233;trang&#232;re que de l'implanter dans l'une des v&#244;tres.</French>
@@ -162,10 +170,10 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_HINT_117</Tag>
-    <English>Pay attention to your research rate! If you invest less than half your income in the development of your civilization, it can cause unrest in your cities. You can lower the rate by 5% for any excess happy citizen.</English>
-    <French>Faites attention &#224; votre taux de recherche ! L'investissement de moins de la moiti&#233; de votre revenu dans le d&#233;veloppement de votre civilisation peut d&#233;clencher des &#233;meutes dans vos villes. Vous pouvez r&#233;duire le taux de 5% pour tout exc&#233;dent de citoyens heureux.</French>
-    <German>Achte auf deine Forschungsrate! Investierst du weniger als die H&#228;lfte deines Einkommens in die Entwicklung deiner Zivilisation, kann das zu Unruhen in deinen St&#228;dten f&#252;hren. Pro &#252;bersch&#252;ssigen gl&#252;cklichen B&#252;rger kannst du die Rate um 5% senken.</German>
-    <Italian>Prestare attenzione alla frequenza di ricerca! Si investe meno della met&#224; del suo reddito nello sviluppo della vostra civilt&#224; che pu&#242; portare a disordini nelle vostre citt&#224;. Puoi ridurre il tasso del 5% per ogni cittadino felice in eccesso.</Italian>
+    <English>Pay attention to your research rate! If you invest less than half your income in the development of your civilization, it can cause unrest in your cities. You can lower the research rate by 5% for any excess happy citizen.</English>
+    <French>Faites attention &#224; votre taux de recherche ! L'investissement de moins de la moiti&#233; de votre revenu dans le d&#233;veloppement de votre civilisation peut d&#233;clencher des &#233;meutes dans vos villes. Vous pouvez r&#233;duire le taux de recherche de 5% pour tout exc&#233;dent de citoyens heureux.</French>
+    <German>Achte auf deine Forschungsrate! Investierst du weniger als die H&#228;lfte deines Einkommens in die Entwicklung deiner Zivilisation, kann das zu Unruhen in deinen St&#228;dten f&#252;hren. Pro &#252;bersch&#252;ssigen gl&#252;cklichen B&#252;rger kannst du die Forschungsrate um 5% senken.</German>
+    <Italian>Prestare attenzione alla tassa di ricerca! Si investe meno della met&#224; del suo reddito nello sviluppo della vostra civilt&#224; che pu&#242; portare a disordini nelle vostre citt&#224;. Puoi ridurre il tasso del 5% per ogni cittadino felice in eccesso.</Italian>
     <Spanish>&#161;Presta atenci&#243;n a tu tasa de investigaci&#243;n! Si inviertes menos de la mitad de tus ingresos al desarrollo de tu civiizaci&#243;n, puede causar malestar en tus ciudades. Puede reducir la tasa en un 5% para cualquier exceso de ciudadanos felices.</Spanish>
   </TEXT>
   <TEXT>

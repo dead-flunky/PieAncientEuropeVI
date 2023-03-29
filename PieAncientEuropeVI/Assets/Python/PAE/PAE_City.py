@@ -3288,12 +3288,16 @@ def doSettledSlavesAndReservists(pCity):
 								if CvUtil.myRandom(4, "Stadtsklaven freistellen") == 1:
 										PAE_Sklaven.doAIReleaseSlaves(pCity)
 
-		# Sklaven oder Gladiatoren: sobald das Christentum entdeckt wurde -> 2% per 3 turn revolt
+		# Sklaven oder Gladiatoren: sobald das Christentum entdeckt wurde -> 2%
 		iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
 		if not bRevolt and gc.getGame().isReligionFounded(iReligion):
 				if pPlayer.getStateReligion() != iReligion:
-						iRand = CvUtil.myRandom(50, "ChristentumSklavenRevolte")
-						if iRand == 0:
+						
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HERESY")): iChance = 1
+						else: iChance = 2
+						
+						iRand = CvUtil.myRandom(75, "ChristentumSklavenRevolte")
+						if iRand < iChance:
 								# City Defender damage
 								doCityRevolt(pCity, 2)
 								bRevolt = True
@@ -4001,7 +4005,7 @@ def getCityStatus(pCity, iPlayer, iCity, bReturnButton):
 # City Civil War
 def doCheckCivilWar(pCity):
 		if pCity.isNone(): return
-		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
+		if pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
 				# ***TEST***
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("CIVIL WAR",pCity.getX())), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCity.getName(),pCity.getY())), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -4022,7 +4026,7 @@ def doCheckCivilWar(pCity):
 				iMilitaryUnits = len(lUnits)
 
 				iUnitsExtraCalc = 0
-				if pCity.isCapital() or pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
+				if pCity.isCapital() or pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
 						iUnitsExtraCalc = iMilitaryUnits
 
 				iChance = CvUtil.myRandom(100, "iRandCityCivilWarChances")
@@ -4266,6 +4270,6 @@ def doRefuseUnitBuilt(pCity, pUnit):
 				iRandText = CvUtil.myRandom(len(LText), "iRandReligionUnitBuiltRefuseText")
 				pUnit.kill(True, -1)
 				if pPlayer.isHuman():
-						CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(LText[iRandText], ()), None, 2,
-						pUnit.getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+						szText = u"%s: " % (pCity.getName()) + CyTranslator().getText(LText[iRandText], ())
+						CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, pUnit.getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
 

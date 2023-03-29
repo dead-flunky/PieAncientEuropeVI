@@ -143,8 +143,8 @@
 			<Help/>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
 			<iTime>100</iTime>
-			<iCost>2</iCost>
-			<bKill>0</bKill>
+			<iCost>0</iCost>
+			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -174,6 +174,25 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Builds/button_builds_holzlager.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_ORE_CAMP</Type>
+			<Description>TXT_KEY_BUILD_ORE_CAMP</Description>
+			<Help/>
+			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
+			<iTime>300</iTime>
+			<iCost>3</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_ORE_CAMP</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_O</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_PASTURE</Type>
@@ -504,7 +523,7 @@
 			<Type>BUILD_QUARRY</Type>
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<Help/>
-			<PrereqTech>TECH_STEINABBAU</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>300</iTime>
 			<iCost>15</iCost>
 			<bKill>0</bKill>
@@ -639,7 +658,7 @@
 			<iTime>1</iTime>
 			<iCost>25</iCost>
 			<bKill>1</bKill>
-			<ImprovementType>IMPROVEMENT_LATIFUNDIUM1</ImprovementType>
+			<ImprovementType>IMPROVEMENT_LATIFUNDIUM3</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs/>
