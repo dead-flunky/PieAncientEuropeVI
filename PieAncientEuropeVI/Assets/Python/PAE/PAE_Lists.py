@@ -663,7 +663,8 @@ def init():
 				gc.getInfoTypeForString("UNITCOMBAT_ARCHER"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_BOGEN"),
 				gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_SPEER"),
 				gc.getInfoTypeForString("UNITCOMBAT_SKIRMISHER"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_SPEER"),
-				gc.getInfoTypeForString("UNITCOMBAT_SIEGE"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_SIEGE")
+				gc.getInfoTypeForString("UNITCOMBAT_SIEGE"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_SIEGE"),
+				gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"): gc.getInfoTypeForString("BUILDING_WAFFENMANUFAKTUR_HORSE")
 		}
 
 		DImprSupplyBonus = {

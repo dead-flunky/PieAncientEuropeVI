@@ -9435,7 +9435,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_STADT</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_MILIT_STRAT</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -28795,7 +28795,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_ARCHERY2</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -28978,7 +28978,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_ARCHERY2</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -29354,7 +29354,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_ARCHERY3</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -29540,7 +29540,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_REFLEXBOGEN</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -29726,7 +29726,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_KETTENPANZER</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_REFLEXBOGEN</PrereqTech>
@@ -29914,7 +29914,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_LORICA_SEGMENTATA</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -30100,7 +30100,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_REFLEXBOGEN</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
@@ -30286,7 +30286,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
+			<PrereqBuilding>BUILDING_BOGEN</PrereqBuilding>
 			<PrereqTech>TECH_REFLEXBOGEN</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
