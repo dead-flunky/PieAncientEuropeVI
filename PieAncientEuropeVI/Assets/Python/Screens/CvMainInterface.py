@@ -3234,7 +3234,7 @@ class CvMainInterface:
 																						iCost = 20
 																						if pUnitOwner.getGold() >= iCost:
 																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_kompass.dds",
-																										0, WidgetTypes.WIDGET_GENERAL, 767, -1, False)
+																										0, WidgetTypes.WIDGET_GENERAL, 767, iCost, False)
 																								screen.show("BottomButtonContainer")
 																								iCount += 1
 																# Schiff reparieren
@@ -3925,7 +3925,9 @@ class CvMainInterface:
 
 												# PAE 6.11: Pferdewechsel / change horse to get all move points again
 												if bCity:
-														if pUnit.hasMoved() and (pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED") or pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_CHARIOT")):
+														if pUnit.hasMoved() and not pUnit.isMadeAttack() and (
+															pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED") or pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_CHARIOT")
+														):
 
 																bOK = False
 																# General oder Held

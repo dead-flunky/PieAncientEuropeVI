@@ -290,10 +290,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -679,10 +675,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -958,10 +950,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -1456,10 +1444,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_LIBRARY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -1755,10 +1739,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_BEWAFFNUNG5</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -2069,10 +2049,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_LIBRARY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -2311,10 +2287,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -2589,10 +2561,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_BEWAFFNUNG5</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -2938,10 +2906,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -3235,10 +3199,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -3593,10 +3553,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -4030,10 +3986,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_GLAS1</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -4583,10 +4535,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -5310,10 +5258,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -5605,10 +5549,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -6457,10 +6397,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -6741,10 +6677,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -7252,10 +7184,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_LIBRARY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -7551,10 +7479,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_REFLEXBOGEN</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -7828,10 +7752,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_BEWAFFNUNG5</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -8186,10 +8106,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -8532,10 +8448,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -8915,10 +8827,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WURFAXT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -9187,10 +9095,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_SCHIFFSBAU</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
@@ -9567,10 +9471,6 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_GLAS1</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
-					<TechType>TECH_PIRACY</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>

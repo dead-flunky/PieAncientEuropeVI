@@ -823,15 +823,17 @@ class CvGameUtils:
 						if iCheck == 0 or iAnzB >= iCheck:
 								return True
 
+				# Goldschmied: nur wenn man mehr von einer Resource besitzt
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_GOLDSCHMIED"):
 						pPlayer = gc.getPlayer(pCity.getOwner())
 						iAnzB = self.getBuildingClassCountPlusOtherCitiesMaking(pPlayer, pCity, eBuilding, gc.getInfoTypeForString("BUILDINGCLASS_GOLDSCHMIED"))
-						iAnz = pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GOLD"))
-						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_SILVER"))
-						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_PEARL"))
-						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GEMS"))
-						iAnz += pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_BERNSTEIN"))
-						if iAnzB >= iAnz:
+						sAnz = []
+						sAnz.append(pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GOLD")))
+						sAnz.append(pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_SILVER")))
+						sAnz.append(pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_PEARL")))
+						sAnz.append(pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_GEMS")))
+						sAnz.append(pPlayer.getNumAvailableBonuses(gc.getInfoTypeForString("BONUS_BERNSTEIN")))
+						if iAnzB >= max(sAnz):
 								return True
 
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_GUSS_IRON"):
@@ -842,6 +844,24 @@ class CvGameUtils:
 						#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Bonus",iAnz)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 						if iAnzB >= iAnz:
 								return True
+
+				# Palisaden nur wenn Wald im angrenzenden Gebiet ist (5x5)
+				elif eBuilding == gc.getInfoTypeForString("BUILDING_PALISADE"):
+						LForests = [
+								gc.getInfoTypeForString("FEATURE_JUNGLE"),
+								gc.getInfoTypeForString("FEATURE_FOREST"),
+								gc.getInfoTypeForString("FEATURE_DICHTERWALD")
+						]
+						iRange = 2
+						iX = pCity.getX()
+						iY = pCity.getY()
+						for i in range(-iRange, iRange+1):
+								for j in range(-iRange, iRange+1):
+										loopPlot = plotXY(iX, iY, i, j)
+										if loopPlot is not None and not loopPlot.isNone():
+												if loopPlot.getFeatureType() in LForests:
+														return False
+						return True
 
 				# Buildings, die ihre notwendige Ressource im Stadtradius brauchen
 				lBonusBuildings = [

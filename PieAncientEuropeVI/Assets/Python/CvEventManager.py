@@ -1963,7 +1963,7 @@ class CvEventManager:
 						#pCity = pPlot.getPlotCity()
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
-						iCost = 20
+						iCost = iData2
 						pPlayer.changeGold(-iCost)
 						iPromo = gc.getInfoTypeForString("PROMOTION_KOMPASS")
 						pUnit.setHasPromotion(iPromo, True)
@@ -3079,10 +3079,13 @@ class CvEventManager:
 												iPromoLeader = gc.getInfoTypeForString("PROMOTION_LEADER")
 												bPromoHero = False
 												bPromoHeroDone = False
-												if pLoser.isHasPromotion(iPromoLeader) or pLoser.isHasPromotion(iPromoHero):
+												# PAE 6.15 only hero when defeating great general
+												if pLoser.isHasPromotion(iPromoLeader):
 														bPromoHero = True
 														# Hero und +3 XP
 														bPromoHeroDone = PAE_Unit.doUnitGetsHero(pWinner, pLoser)
+												elif pLoser.isHasPromotion(iPromoHero):
+														bPromoHero = True
 												# for each general who accompanies the stack: +1 XP
 												# one general gets the hero promo, if not possessing
 												PAE_Unit.getExperienceForLeader(pWinner, pLoser, bPromoHero and not bPromoHeroDone)
@@ -3431,6 +3434,38 @@ class CvEventManager:
 						# for i in range(10):
 						#  NewUnit = pPlayer.initUnit(iUnitType, pCity.getX(), pCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
 						#  NewUnit.setName(Names[i])
+
+				# Palisade rodet ein Waldstück
+				elif iBuildingType == gc.getInfoTypeForString("BUILDING_PALISADE"):
+						LForests = [
+								gc.getInfoTypeForString("FEATURE_JUNGLE"),
+								gc.getInfoTypeForString("FEATURE_FOREST"),
+								gc.getInfoTypeForString("FEATURE_DICHTERWALD")
+						]
+						LImprovements = [
+								gc.getInfoTypeForString("IMPROVEMENT_CAMP"),
+								gc.getInfoTypeForString("IMPROVEMENT_LUMBER_CAMP")
+						]
+						plots = []
+						iRange = 2
+						iX = pCity.getX()
+						iY = pCity.getY()
+						for i in range(-iRange, iRange+1):
+								for j in range(-iRange, iRange+1):
+										loopPlot = plotXY(iX, iY, i, j)
+										if loopPlot is not None and not loopPlot.isNone():
+												if loopPlot.getFeatureType() in LForests and loopPlot.getImprovementType() not in LImprovements:
+														plots.append(loopPlot)
+						if len(plots):
+								iRand = CvUtil.myRandom(len(plots), "onBuildingBuilt: Palisade removes a forest")
+								loopPlot = plots[iRand]
+								loopPlot.setFeatureType(-1,0)
+
+								if pPlayer.isHuman() and iPlayer == gc.getGame().getActivePlayer():
+										CyInterface().addMessage(iPlayer, True, 20, CyTranslator().getText("TXT_KEY_BUILDING_PALISADE_BUILT_INFO", ("", )),
+										"AS2D_CHOP_WOOD", 2, ",Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8",
+										ColorTypes(7), loopPlot.getX(), loopPlot.getY(), True, True)
+
 
 				PAE_Cultivation.doBuildingCultivate(pCity, iBuildingType)
 

@@ -282,7 +282,6 @@ class CvTechChooser:
 
 						# Unlockable Buildings...
 						for j in xrange(gc.getNumBuildingClassInfos()):
-								bTechFound = 0
 								eLoopBuilding = gc.getCivilizationInfo(gc.getGame().getActiveCivilizationType()).getCivilizationBuildings(j)
 
 								if eLoopBuilding != -1:
@@ -988,7 +987,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2THEATRE").getPath(), iX +
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 670, 670, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_KUNST"):
+						elif i == gc.getInfoTypeForString("TECH_LITERATURE"):
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2SCHOOL").getPath(), iX +
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 679, 679, False)
 								fX += X_INCREMENT
@@ -1071,10 +1070,18 @@ class CvTechChooser:
 						# Limes
 						elif i == gc.getInfoTypeForString("TECH_LIMES"):
 								# Special Wonder
-								j = gc.getInfoTypeForString("BUILDING_GREAT_WALL_GORGAN")
-								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
-																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
-								fX += X_INCREMENT
+								ListCivs = [
+									gc.getInfoTypeForString("CIVILIZATION_ASSYRIA"),
+									gc.getInfoTypeForString("CIVILIZATION_BABYLON"),
+									gc.getInfoTypeForString("CIVILIZATION_SUMERIA"),
+									gc.getInfoTypeForString("CIVILIZATION_PERSIA"),
+									gc.getInfoTypeForString("CIVILIZATION_PARTHER")
+								]
+								if gc.getPlayer(CyGame().getActivePlayer()).getCivilizationType() not in ListCivs:
+										j = gc.getInfoTypeForString("BUILDING_GREAT_WALL_GORGAN")
+										screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																			 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+										fX += X_INCREMENT
 								# Limes
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Buildings/button_building_hadrianswall.dds",
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 733, 1, False)
@@ -1111,17 +1118,19 @@ class CvTechChooser:
 								fX += X_INCREMENT
 						# Special Wonders
 						elif i == gc.getInfoTypeForString("TECH_MASONRY2"):
-								j = gc.getInfoTypeForString("BUILDING_STONEHENGE")
-								szBuildingButton = "Building" + str(j)
-								screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
-																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
-								fX += X_INCREMENT
+								if gc.getPlayer(CyGame().getActivePlayer()).getCivilizationType() != gc.getInfoTypeForString("CIVILIZATION_BRITEN"):
+										j = gc.getInfoTypeForString("BUILDING_STONEHENGE")
+										szBuildingButton = "Building" + str(j)
+										screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																			 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+										fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_WEHRTECHNIK"):
-								j = gc.getInfoTypeForString("BUILDING_WONDER_DAKER")
-								szBuildingButton = "Building" + str(j)
-								screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
-																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
-								fX += X_INCREMENT
+								if gc.getPlayer(CyGame().getActivePlayer()).getCivilizationType() != gc.getInfoTypeForString("CIVILIZATION_DAKER"):
+										j = gc.getInfoTypeForString("BUILDING_WONDER_DAKER")
+										szBuildingButton = "Building" + str(j)
+										screen.addDDSGFCAt(szBuildingButton, szTechRecord, gc.getBuildingInfo(j).getButton(), iX + fX, iY + Y_ROW,
+																			 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, j, 1, True)
+										fX += X_INCREMENT
 						# End -----------
 						j = 0
 						# PAE: Espionage Missions

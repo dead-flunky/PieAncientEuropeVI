@@ -10018,6 +10018,7 @@
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_BELAGERUNG</PrereqTech>
+				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_119</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_119</Sound>

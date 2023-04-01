@@ -3033,6 +3033,15 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 				# Cities: Stadtaufruhr
 				# PAE 6.14: -1 :) in jeder Stadt (Status Stadt), soll nur HI betreffen
 				if pPlayer.isHuman():
+
+						iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
+						szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL_" + str(iRand)
+						szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText(" +1[ICON_UNHAPPY]", ())
+						CyInterface().addMessage(
+								iPlayer, False, 20, szText, None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
+								ColorTypes(7), -1, -1, False, False
+						)
+
 						(loopCity, pIter) = pPlayer.firstCity(False)
 						while loopCity:
 								if not loopCity.isNone():  # only valid cities
@@ -3062,13 +3071,6 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 												iHappy -= 1
 												loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
 
-												iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
-												szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL_" + str(iRand)
-												szText = CyTranslator().getText(szTextKey, (loopCity.getName(),)) + CyTranslator().getText(" +1[ICON_UNHAPPY]", ())
-												CyInterface().addMessage(
-														iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
-														ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
-												)
 								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 						# PopUp
@@ -3084,8 +3086,8 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 						# War Weariness
 						pTeam.changeWarWeariness(pWinnerPlayer.getTeam(), 10)
 
-						# PAE Movie
-						if pPlayer.isHuman() and pPlayer.isTurnActive() or pWinnerPlayer.isHuman() and pWinnerPlayer.isTurnActive():
+						# PAE Movie (only a Great General)
+						if pUnit.getLeaderUnitType() > -1 and (pPlayer.isHuman() and pPlayer.isTurnActive() or pWinnerPlayer.isHuman() and pWinnerPlayer.isTurnActive()):
 
 								if pPlayer.getCurrentEra() > 2 or pWinnerPlayer.getCurrentEra() > 2:
 										iVids = 14
@@ -3108,6 +3110,15 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 						# PAE 6.14: +1 :) in jeder Stadt (Status Stadt, sofern Happyness < 0
 						# soll nur HI betreffen
 						if pWinnerPlayer.isHuman():
+
+								iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
+								szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_" + str(iRand)
+								szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText(" +1[ICON_HAPPY]", ())
+								CyInterface().addMessage(
+										iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
+										ColorTypes(7), -1, -1, False, False
+								)
+
 								(loopCity, pIter) = pWinnerPlayer.firstCity(False)
 								while loopCity:
 										if not loopCity.isNone():  # only valid cities
@@ -3117,13 +3128,6 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 														iHappy += 1
 														loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
 
-														iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
-														szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_" + str(iRand)
-														szText = CyTranslator().getText(szTextKey, (loopCity.getName(),)) + CyTranslator().getText(" +1[ICON_HAPPY]", ())
-														CyInterface().addMessage(
-																iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
-																ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
-														)
 										(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
 
 
