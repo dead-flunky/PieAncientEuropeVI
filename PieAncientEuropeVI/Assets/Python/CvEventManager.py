@@ -3446,7 +3446,8 @@ class CvEventManager:
 								gc.getInfoTypeForString("IMPROVEMENT_CAMP"),
 								gc.getInfoTypeForString("IMPROVEMENT_LUMBER_CAMP")
 						]
-						plots = []
+						prio1 = []
+						prio2 = []
 						iRange = 2
 						iX = pCity.getX()
 						iY = pCity.getY()
@@ -3454,11 +3455,21 @@ class CvEventManager:
 								for j in range(-iRange, iRange+1):
 										loopPlot = plotXY(iX, iY, i, j)
 										if loopPlot is not None and not loopPlot.isNone():
-												if loopPlot.getFeatureType() in LForests and loopPlot.getImprovementType() not in LImprovements:
-														plots.append(loopPlot)
-						if len(plots):
-								iRand = CvUtil.myRandom(len(plots), "onBuildingBuilt: Palisade removes a forest")
-								loopPlot = plots[iRand]
+												if loopPlot.getFeatureType() in LForests:
+														if loopPlot.getImprovementType() in LImprovements:
+																prio2.append(loopPlot)
+														else:
+																prio1.append(loopPlot)
+																
+						if len(prio1) or len(prio2):
+								if len(prio1):
+										iRand = CvUtil.myRandom(len(prio1), "onBuildingBuilt: Palisade removes a forest without camp")
+										loopPlot = prio1[iRand]
+								else:
+										iRand = CvUtil.myRandom(len(prio2), "onBuildingBuilt: Palisade removes a forest with camp")
+										loopPlot = prio2[iRand]
+										loopPlot.setImprovementType(-1)
+
 								loopPlot.setFeatureType(-1,0)
 
 								if pPlayer.isHuman() and iPlayer == gc.getGame().getActivePlayer():
