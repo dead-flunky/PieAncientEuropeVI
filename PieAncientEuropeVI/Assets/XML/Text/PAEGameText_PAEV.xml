@@ -2324,11 +2324,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GOLDSCHMIED_HELP</Tag>
-    <English>[ICON_BULLET]The number of goldsmiths that can be built corresponds to the number of gold, silver, pearls, gems and amber in the trade network</English>
-    <French>[ICON_BULLET]Le nombre d'orf&#232;vres pouvant &#234;tre construits correspond au nombre d'or, d'argent, de perles, de pierres pr&#233;cieuses et d'ambre dans le r&#233;seau commercial</French>
-    <German>[ICON_BULLET]Die Anzahl baubarer Goldschmieden entspricht der Anzahl Gold, Silber, Perlen, Edelsteine und Bernstein im Handelsnetz</German>
-    <Italian>[ICON_BULLET]Il numero di orefici realizzabili corrisponde al numero di oro, argento, perle, gemme e ambre presenti nella rete commerciale</Italian>
-    <Spanish>[ICON_BULLET]La cantidad de orfebres que se pueden construir corresponde a la cantidad de oro, plata, perlas, gemas y &#225;mbar en la red comercial.</Spanish>
+    <English>[ICON_BULLET]The number of goldsmiths that can be built corresponds to the multiple available amount of gold, silver, pearls, gems or amber in the trade network</English>
+    <French>[ICON_BULLET]Le nombre d'orf&#232;vres pouvant &#234;tre construits correspond au nombre multiple d'or, d'argent, de perles, de pierres pr&#233;cieuses ou d'ambre disponibles dans le r&#233;seau commercial</French>
+    <German>[ICON_BULLET]Die Anzahl baubarer Goldschmieden entspricht der mehrfach verf&#252;gbaren Menge an Gold, Silber, Perlen, Edelsteine oder Bernstein im Handelsnetz</German>
+    <Italian>[ICON_BULLET]Il numero di orafi che possono essere costruiti corrisponde al numero multiplo disponibile di oro, argento, perle, gemme o ambra nella rete commerciale</Italian>
+    <Spanish>[ICON_BULLET]La cantidad de orfebres que se pueden construir corresponde a la cantidad m&#250;ltiple disponible de oro, plata, perlas, gemas o &#225;mbar en la red comercial.</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_PROMOTION_OIL_ON_WATER_HELP</Tag>
@@ -2361,6 +2361,22 @@
     <German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.[NEWLINE][ICON_BULLET] Kein Bewegungsmalus auf Ozean und Tiefsee</German>
     <Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Nessuna penalit&#224; di movimento su oceano e mare profondo</Italian>
     <Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Sin penalizaci&#243;n de movimiento en el oc&#233;ano y en aguas profundas</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_PALISADE_HELP</Tag>
+    <English>Palisades can only be built in cities that are surrounded by forests. During the construction of a palisade, a piece of forest gets chopped.</English>
+    <French>Les palissades ne peuvent &#234;tre construites que dans les villes entour&#233;es de for&#234;ts. Lors de la construction d'une palissade, un morceau de for&#234;t est abattu.</French>
+    <German>Palisaden k&#246;nnen nur in St&#228;dten errichtet werden, die von W&#228;ldern umgeben sind. Beim Bau einer Palisade wird ein Waldst&#252;ck abgeholzt.</German>
+    <Italian>Le palizzate possono essere costruite solo in citt&#224; circondate da foreste. Durante la costruzione di una palizzata, viene abbattuto un pezzo di foresta.</Italian>
+    <Spanish>Las empalizadas solo se pueden construir en ciudades rodeadas de bosques. Durante la construcci&#243;n de una empalizada, se tala un trozo de bosque.</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_OLYMPIEION</Tag>
+    <English>Olympieion of Athens</English>
+    <French>Olympiaion d'Ath&#232;nes</French>
+    <German>Olympieion von Athen</German>
+    <Italian>Olimpieion di Atene</Italian>
+    <Spanish>Olimpiada de Atenas</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_MASONRY2</Tag>
@@ -8190,7 +8206,7 @@ Tumba de Tholos
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_GUSS_COPPER</Tag>
-    <English>Copper works</English>
+    <English>Copperworks</English>
     <French>Travaux de cuivre</French>
     <German>Kupferh&#252;tte</German>
     <Italian>Opere in rame</Italian>
@@ -8431,5 +8447,37 @@ Tumba de Tholos
     <German>Hufschmiede</German>
     <Italian>Maniscalco</Italian>
     <Spanish>Herrador</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_MASTABA</Tag>
+    <English>Mastaba</English>
+    <French>Mastaba</French>
+    <German>Mastaba</German>
+    <Italian>Mastaba</Italian>
+    <Spanish>Mastaba</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_WAFFENMANUFAKTUR_HORSE</Tag>
+    <English>Horse Farm</English>
+    <French>Ferme &#233;questre</French>
+    <German>Pferdegeh&#246;ft</German>
+    <Italian>Allevamento di cavalli</Italian>
+    <Spanish>Granja de caballo</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_BOGEN</Tag>
+    <English>Bowmaker</English>
+    <French>Archetier</French>
+    <German>Bogenmacher</German>
+    <Italian>Archettaio</Italian>
+    <Spanish>Fabricante de arcos</Spanish>
+  </TEXT>
+  <TEXT>
+    <Tag>TXT_KEY_BUILDING_LIGHT_WALLS</Tag>
+    <English>Clay Walls</English>
+    <French>Murs d'Argile</French>
+    <German>Lehmmauern</German>
+    <Italian>Muri di Argilla</Italian>
+    <Spanish>Paredes de Arcilla</Spanish>
   </TEXT>
 </Civ4GameText>

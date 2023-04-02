@@ -132,7 +132,7 @@ Therefore, the vassal-feature in PAE has been expanded.
 
 [H1]To become a vassal[\H1]
 In PAE, it is now easier to become a vassal. You have just conquered a city of a player who has only 4 or fewer cities, it offers to be a vassal.
-Probability 1: 120% - (20x number of cities)%
+Probability 1: 120% â€“ (20x number of cities)%
 Probability 2: The loser's civilization strength points (x2) are less than the winner's strength points
 This should help maintain a certain strength of the vassals. The same applies to human players. Now it is possible in PAE, as a human player to become a vassal of the AI.
 
@@ -161,7 +161,7 @@ Aucun pays ne servirait &#233;ternellement un autre royaume. Le concept de Vassa
 
 [H1]Devenir un vassal[\H1]
 Dans PAE, il est plus facile de devenir un vassal. Si vous capturez la ville d'une nation qui en compte 4 ou moins, celle-ci propose de devenir votre vassal.
-Probabilit&#233; 1: 120% - (20x le nombre de villes)%
+Probabilit&#233; 1: 120% â€“ (20x le nombre de villes)%
 Probabilit&#233; 2: les points de force de civilisation du perdant (x2) sont inf&#233;rieurs aux points de force du gagnant
 Cela devrait permettre de maintenir les vassaux &#224; un certain niveau. Les m&#234;mes conditions s'appliquent aux joueurs humains. Il est donc possible &#224; un joueur humain de devenir le vassal d'un joueur IA.
 
@@ -188,7 +188,7 @@ Kein Land m&#246;chte ewig als Vasall einem anderen Reich dienen. Vasallen sind 
 
 [H1]Ein Vasall werden[\H1]
 In PAE ist es nun leichter einen Vasallen zu bekommen. Hat man soeben eine Stadt eines Spielers erobert, der nur mehr 4 oder weniger St&#228;dte besitzt, bietet er an, Vasall zu werden. 
-Wahrscheinlichkeit 1: 120% - (20xAnzahl der St&#228;dte)%
+Wahrscheinlichkeit 1: 120% â€“ (20xAnzahl der St&#228;dte)%
 Wahrscheinlichkeit 2: Civilizations-St&#228;rkepunkte des Verlierers (x2) sind kleiner als die St&#228;rkepunkte des Gewinners
 Dies soll helfen, dass die Vasallen eine gewisse St&#228;rke beibehalten. Das gleiche gilt auch f&#252;r menschliche Spieler. Nun ist es in PAE m&#246;glich, auch als Mensch Vasall der KI zu werden.
 
@@ -217,7 +217,7 @@ Nessun paese potrebbe sempre servire come un vassallo di un altro regno . Vassal
 
 [H1] Un vassallo [\H1]
 In PAE , ora &#232; pi&#249; facile ottenere un vassallo . Se avete appena conquistato una citt&#224; di un giocatore che ha solo 4 o meno citt&#224; , offre di diventare un vassallo .
-Probabilit&#224; 1: 120% - (20x numero di citt&#224;)%
+Probabilit&#224; 1: 120% â€“ (20x numero di citt&#224;)%
 Probabilit&#224; 2: i punti di forza della civilt&#224; del perdente (x2) sono inferiori ai punti di forza del vincitore
 Ci&#242; dovrebbe contribuire a che il vassallo mantenere una certa forza . Lo stesso vale per i giocatori umani . Ora &#232; possibile in PAE essere come un essere umano vassallo del AI .
 
@@ -247,7 +247,7 @@ Por ese motivo la funci&#243;n de vasallaje en PAE se ha ampliado.
 
 [H1]Para convertirse en vasallo[\H1]
 En PAE, es f&#225;cil convertirse en vasallo. Solo tienes que conquistar una ciudad de un jugador que tiene 4 ciudades o menos, entonces se ofrece a ser un vasallo.
-Probabilidad 1: 120% - (20 veces el n&#250;mero de ciudades)%
+Probabilidad 1: 120% â€“ (20 veces el n&#250;mero de ciudades)%
 Probabilidad 2: los puntos de fuerza de civilizaci&#243;n del perdedor (x2) son menores que los puntos de fuerza del ganador
 Esto ayuda a que los vasallos mantengan cierta fuerza. Lo mismo se aplica a los jugadores humanos. En PAE ahora es posible, que un jugador humano se convierta en vasallo de la IA.
 
@@ -528,7 +528,7 @@ Las bonificaciones [ICON_UNHAPPY] o [ICON_HAPPY] caducan con el tiempo (probabil
     </English>
     <French>
 [H1]Brouillard de guerre[\H1]
- Jusqu'&#224; la renaissance, les cartes &#233;taient tr&#232;s impr&#233;cises. Dans ce mod, toutes les cases redeviennent noires et inexplor&#233;es si elles ne sont plus dans la ligne de vue de vos unit&#233;s ou dans votre zone d'influence. Jusqu'&#224; l'antiquit&#233; tardive et la d&#233;couverte de la "Cartographie routi&#232;re", la carte restant alors sous le brouillard de guerre ordinaire &#224; Civilisation IV.
+ Jusqu'&#224; la renaissance, les cartes &#233;taient tr&#232;s impr&#233;cises. Dans ce mod, toutes les cases redeviennent noires et inexplor&#233;es si elles ne sont plus dans la ligne de vue de vos unit&#233;s ou dans votre zone d'influence. Jusqu'&#224; l'antiquit&#233; tardive et la d&#233;couverte de la "Cartographie routi&#232;reâ€, la carte restant alors sous le brouillard de guerre ordinaire &#224; Civilisation IV.
 
  [H1]Cartogramme[\H1]
  Les cartes ont longtemps servi &#224; la description de points de rep&#232;res. Ces cartes &#233;taient tr&#232;s impr&#233;cises, mais reportaient les villes importantes et les trac&#233;s de c&#244;tes. Avec cette technologie, les capitales et les c&#244;tes restent visibles sous le brouillard de guerre.
@@ -5728,7 +5728,7 @@ Auswirkungen einer gro&#223;en Rebellion (mindestens die H&#228;lfte des urspr&#
 [H1]Unit&#224;[\H1]
 [ICON_BULLET] Un enorme esercito pu&#242; essere ribelle ( barbaro ) .
 
-Condizioni di aggregazione ( ogni 3 ° turno , per scatola ) :
+Condizioni di aggregazione ( ogni 3 Â° turno , per scatola ) :
 [ICON_BULLET] Almeno 40 ( per il giocatore del computer : 60) unit&#224; militari ( unit&#224; d'assedio e di fornitura escluse)
 [ICON_BULLET] Ogni unit&#224; : +1 %
 [ICON_BULLET] In guerra con almeno un CIV : -20 %
@@ -5918,7 +5918,7 @@ Ce message peut appara&#238;tre quand vous jouez vos propres sc&#233;narios et c
 2) S&#233;lectionner une autre r&#233;solution d'&#233;cran dans les options de Civ4
 3) V&#233;rifiez bien quand le fichier .ini &#224; la racine du mod PAE il y a bien NoCustomArt=1 et NoCustomAssets=1
 
-[ICON_BULLET] un message "GFC-Error" au chargement du mod:
+[ICON_BULLET] un message "GFC-Errorâ€ au chargement du mod:
 Le dossier principal du mod ne doit pas &#234;tre renomm&#233; (PieAncientEurope).
 
 [ICON_BULLET] J'ai un probl&#232;me de d&#233;compression en chargeant ou en d&#233;butant une partie
@@ -5937,7 +5937,7 @@ Conseil : d&#233;sactivez le FileCaching (les deux) dans Civilization.ini dans M
 Utilisez la connexion directe par IP
 
 [ICON_BULLET] Je veux cr&#233;er un raccourci de PAE sur mon bureau
-Copier le raccourci de BTS, acc&#232;der &#224; "Propri&#233;t&#233;s" avec un clic droit sur l'ic&#244;ne => onglet "Raccourci" => 
+Copier le raccourci de BTS, acc&#232;der &#224; "Propri&#233;t&#233;sâ€ avec un clic droit sur l'ic&#244;ne => onglet "Raccourci" => 
 La zone de texte "Cible:", montre "...\Beyond the Sword\Civ4BeyondSword.exe"
 Modifier en: ...\Beyond the Sword\Civ4BeyondSword.exe" mod=\PieAncientEurope... 
 
@@ -6568,15 +6568,15 @@ Debido al beneficio basado en turnos (similar con la de la capital y las ciudade
 [H2]Founding a cult or a culture[\H2]
 There are a number of requirements that must be fulfilled before a player can found a Cult. First they must have researched a certain technology. Once players have researched the proper tech, they must then move a Great Person into a city that has one or more of the resources required by the Cult they wish to create. By expending the proper type of Great Person, they may found the Cult Centre in their city.
 Requirements:
-[ICON_BULLET]Cult of Isis: Founded by the player who first discovers [LINK=TECH_WRITING2]Hieroglyphics[\LINK]
-[ICON_BULLET]Cult of Cybele: Technology [LINK=TECH_AGRICULTURE2]Water storage[\LINK] + Great Merchant
-[ICON_BULLET]Cult of Heroes: Founded by the player who first discovers [LINK=TECH_GLADIATOR]Exhibitional fight[\LINK]; every player who discovers this tech gets a cultist
-[ICON_BULLET]Cosmogony: Technology [LINK=TECH_LITERATURE]Literature[\LINK] + Great Philosopher
-[ICON_BULLET]Hellenism: Technology [LINK=TECH_HELLENISMUS]Hellenism[\LINK] + Religion Greek gods + Great Builder
-[ICON_BULLET]Cult of Dionysus: Technology [LINK=TECH_DIONYSOS]Dithyrambs[\LINK] + Religion Greek gods + Great Artist
-[ICON_BULLET]Cult of Mithras: Technology [LINK=TECH_MATHEMATICS]Chaldean Mathematics[\LINK] + Religion Zoroastrianism + Great Prophet
 [ICON_BULLET]Fertility cult: Founded by the player who first discovers [LINK=TECH_FRUCHTBARKEIT]Fertility godships[\LINK]; every player who discovers this tech gets a cultist
+[ICON_BULLET]Cult of Isis: Founded by the player who first discovers [LINK=TECH_WRITING2]Hieroglyphics[\LINK]
 [ICON_BULLET]Cult of Indra: Technology [LINK=TECH_CODEX]Codex[\LINK] + Religion Hinduism + Great Prophet
+[ICON_BULLET]Cult of Cybele: Technology [LINK=TECH_AGRICULTURE2]Water storage[\LINK] + Great Merchant
+[ICON_BULLET]Cult of Mithras: Technology [LINK=TECH_MATHEMATICS]Chaldean Mathematics[\LINK] + Religion Zoroastrianism + Great Prophet
+[ICON_BULLET]Cult of Heroes: Founded by the player who first discovers [LINK=TECH_GLADIATOR]Exhibitional fight[\LINK]; every player who discovers this tech gets a cultist
+[ICON_BULLET]Cult of Dionysus: Technology [LINK=TECH_DIONYSOS]Dithyrambs[\LINK] + Religion Greek gods + Great Artist
+[ICON_BULLET]Hellenism: Technology [LINK=TECH_HELLENISMUS]Hellenism[\LINK] + Religion Greek gods + Great Builder
+[ICON_BULLET]Cosmogony: Technology [LINK=TECH_HELIO]Heliocentric Model[\LINK] + Great Philosopher
 
 [H2]Cult Benefits and Hindrances[\H2]
 Each Cult requires a resource or a group of resources be present in a city in order for the Cult to be constructed there. Once a Cult is constructed, it incurs maintenance costs but provides the city with a resource or yield bonus.
@@ -6597,15 +6597,15 @@ Some cults or cultures unlock certain buildings:
 [H1]Cultes et cultures[\H1]
 [H2]Fondation d'un culte ou d'une culture[\H2]
 Les conditions requises pour fonder un culte d&#233;pendent de celui-ci. Il faut au minimum la connaissance d'une technologie particuli&#232;re et parfois un personnage illustre et/ou une religion sp&#233;cifique.
-[ICON_BULLET]Culte d'Isis : Fond&#233; d&#232;s la d&#233;couverte de la technologie [LINK=TECH_WRITING2]Hi&#233;roglyphes[\LINK]
-[ICON_BULLET]Culte de Cyb&#232;le : Technologie [LINK=TECH_AGRICULTURE2]Stockage de l'eau[\LINK] + Marchand illustre
-[ICON_BULLET]Culte des H&#233;ros : Fond&#233; d&#232;s la d&#233;couverte de la technologie [LINK=TECH_GLADIATOR]Jeux du cirque[\LINK]. Tout joueur qui d&#233;couvre cette technologie gagne un cultiste.
-[ICON_BULLET]Cosmogonie : Technologie [LINK=TECH_LITERATURE]Litt&#233;rature[\LINK] + Philosophe illustre
-[ICON_BULLET]Hell&#233;nisme : Technologie [LINK=TECH_HELLENISMUS]Hell&#233;nisme[\LINK] + Panth&#233;on olympien + Constructeur illustre
-[ICON_BULLET]Culte de Dionysos : Technologie [LINK=TECH_DIONYSOS]Dithyrambe[\LINK] + Panth&#233;on olympien + Artiste illustre
-[ICON_BULLET]Culte de Mithra : Technologie [LINK=TECH_MATHEMATICS]Math&#233;matiques chald&#233;ennes[\LINK] + Zoroastrisme + Proph&#232;te illustre
 [ICON_BULLET]Culte de la fertilit&#233; : Fond&#233; d&#232;s la d&#233;couverte de la technologie [LINK=TECH_FRUCHTBARKEIT]Divinit&#233;s de la fertilit&#233;[\LINK]. Tout joueur qui d&#233;couvre cette technologie gagne un cultiste.
+[ICON_BULLET]Culte d'Isis : Fond&#233; d&#232;s la d&#233;couverte de la technologie [LINK=TECH_WRITING2]Hi&#233;roglyphes[\LINK]
 [ICON_BULLET]Culte d'Indra : Technologie [LINK=TECH_CODEX]Codex[\LINK] + Hindouisme + Proph&#232;te Illustre
+[ICON_BULLET]Culte de Cyb&#232;le : Technologie [LINK=TECH_AGRICULTURE2]Stockage de l'eau[\LINK] + Marchand illustre
+[ICON_BULLET]Culte de Mithra : Technologie [LINK=TECH_MATHEMATICS]Math&#233;matiques chald&#233;ennes[\LINK] + Zoroastrisme + Proph&#232;te illustre
+[ICON_BULLET]Culte des H&#233;ros : Fond&#233; d&#232;s la d&#233;couverte de la technologie [LINK=TECH_GLADIATOR]Jeux du cirque[\LINK]. Tout joueur qui d&#233;couvre cette technologie gagne un cultiste.
+[ICON_BULLET]Culte de Dionysos : Technologie [LINK=TECH_DIONYSOS]Dithyrambe[\LINK] + Panth&#233;on olympien + Artiste illustre
+[ICON_BULLET]Hell&#233;nisme : Technologie [LINK=TECH_HELLENISMUS]Hell&#233;nisme[\LINK] + Panth&#233;on olympien + Constructeur illustre
+[ICON_BULLET]Cosmogonie : Technologie [LINK=TECH_HELIO]H&#233;liocentrisme[\LINK] + Philosophe illustre
 
 [H2]B&#233;n&#233;fices des cultes[\H2]
 Plus la ville a acc&#232;s &#224; des ressources li&#233;es &#224; un culte, plus le bonus qu'il apporte &#224; la ville est grand. N&#233;anmoins, son co&#251;t de maintien p&#232;se sur les d&#233;penses d'entretien locales. La ville accueillant le centre d'un culte b&#233;n&#233;ficie d'un bonus de culture pour chaque ville dans laquelle son culte est pr&#233;sent.
@@ -6628,15 +6628,15 @@ Les cultes et cultures peuvent donner acc&#232;s &#224; des b&#226;timents sp&#2
 [H2]Einen Kult oder eine Kultur gr&#252;nden[\H2]
 Bevor man einen Kult gr&#252;nden kann, m&#252;ssen zun&#228;chst entsprechende Voraussetzungen erf&#252;llt werden. Als Erstes muss eine bestimmte Technologie erforscht werden. Ist das erledigt, gilt es als N&#228;chstes, eine Gro&#223;e Pers&#246;nlichkeit in einer Stadt zu postieren, die eine oder mehrere der f&#252;r den betreffenden Kult erforderlichen Ressourcen besitzt. Durch die Entsendung der geeigneten Gro&#223;en Pers&#246;nlichkeit kann dann das Kultzentrum in dieser Stadt errichtet werden.
 Voraussetzungen:
-[ICON_BULLET]Isis-Kult: wird von dem Spieler gegr&#252;ndet, der als erstes [LINK=TECH_WRITING2]Hieroglyphen[\LINK] erforscht
-[ICON_BULLET]Kybele-Kult: Technologie [LINK=TECH_AGRICULTURE2]Wasserspeicherung[\LINK] + Gro&#223;er H&#228;ndler
-[ICON_BULLET]Heroenkult: wird von dem Spieler gegr&#252;ndet, der als erstes [LINK=TECH_GLADIATOR]Schaukampf[\LINK] erforscht; jeder Spieler, der diese Tech erforscht bekommt einen Kultist
-[ICON_BULLET]Kosmogonie: Technologie [LINK=TECH_LITERATURE]Literatur[\LINK] + Gro&#223;er Philosoph
-[ICON_BULLET]Hellenismus: Technologie [LINK=TECH_HELLENISMUS]Hellenismus[\LINK] + Religion Griechische G&#246;tter + Gro&#223;er Baumeister
-[ICON_BULLET]Dionysos-Kult: Technologie [LINK=TECH_DIONYSOS]Dithyramben[\LINK] + Religion Griechische G&#246;tter + Gro&#223;er K&#252;nstler
-[ICON_BULLET]Mithras-Kult: Technologie [LINK=TECH_MATHEMATICS]Chald&#228;ische Mathematik[\LINK] + Religion Zoroastrianismus + Gro&#223;er Prophet
 [ICON_BULLET]Fruchtbarkeitskult: wird von dem Spieler gegr&#252;ndet, der als erstes [LINK=TECH_FRUCHTBARKEIT]Fruchbarkeitsg&#246;tter[\LINK] erforscht; jeder Spieler, der diese Tech erforscht bekommt einen Kultist
+[ICON_BULLET]Isis-Kult: wird von dem Spieler gegr&#252;ndet, der als erstes [LINK=TECH_WRITING2]Hieroglyphen[\LINK] erforscht
 [ICON_BULLET]Indra-Kult: Technologie [LINK=TECH_CODEX]Codex[\LINK] + Religion Hinduismus + Gro&#223;er Prophet
+[ICON_BULLET]Kybele-Kult: Technologie [LINK=TECH_AGRICULTURE2]Wasserspeicherung[\LINK] + Gro&#223;er H&#228;ndler
+[ICON_BULLET]Mithras-Kult: Technologie [LINK=TECH_MATHEMATICS]Chald&#228;ische Mathematik[\LINK] + Religion Zoroastrianismus + Gro&#223;er Prophet
+[ICON_BULLET]Heroenkult: wird von dem Spieler gegr&#252;ndet, der als erstes [LINK=TECH_GLADIATOR]Schaukampf[\LINK] erforscht; jeder Spieler, der diese Tech erforscht bekommt einen Kultist
+[ICON_BULLET]Dionysos-Kult: Technologie [LINK=TECH_DIONYSOS]Dithyramben[\LINK] + Religion Griechische G&#246;tter + Gro&#223;er K&#252;nstler
+[ICON_BULLET]Hellenismus: Technologie [LINK=TECH_HELLENISMUS]Hellenismus[\LINK] + Religion Griechische G&#246;tter + Gro&#223;er Baumeister
+[ICON_BULLET]Kosmogonie: Technologie [LINK=TECH_HELIO]Heliozentrisches Weltbild[\LINK] + Gro&#223;er Philosoph
 
 [H2]Vor- und Nachteile eines Kults[\H2]
 F&#252;r die Gr&#252;ndung eines Kults m&#252;ssen jeweils eine oder mehrere bestimmte Ressourcen in einer Stadt verf&#252;gbar sein. Nach seiner Gr&#252;ndung fallen in der Stadt zus&#228;tzliche Unterhaltskosten an, sie erh&#228;lt aber auch zus&#228;tzliche Ertr&#228;ge.
@@ -6660,15 +6660,15 @@ Manche Kulte schalten bestimmte Geb&#228;ude frei:
 [H2] un culto o una forma culturale [\H2]
 Prima di poter impostare un culto , per esempio , condizioni adeguate devono essere soddisfatte . In primo luogo , una particolare tecnologia deve essere esplorata . Una volta fatto, &#232; accanto a pubblicare una grande persona in una citt&#224; che ha una o pi&#249; delle risorse necessarie per il culto in questione . Con l'invio appropriato Grande personalit&#224; , il centro di culto pu&#242; essere costruito in questa citt&#224; .
 requisiti:
-[ICON_BULLET] culto di Iside : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_WRITING2] Geroglifici [\LINK]
-[ICON_BULLET] Cibele cult : Tecnologia [LINK=TECH_AGRICULTURE2] stoccaggio dell'acqua [\LINK] + grande trader
-[ICON_BULLET] Eroe Cult : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_GLADIATOR] Battle [\LINK] , e ogni giocatore che viene esplorato questa tecnologia un Cultist
-[ICON_BULLET] cosmogonia : Tecnologia [LINK=TECH_LITERATURE] letteratura [\LINK] + Grande Filosofo
-[ICON_BULLET] Ellenismo : Tecnologia [LINK=TECH_HELLENISMUS] ellenismo [\LINK] + religione greca d&#232;i + Grande Costruttore
-[ICON_BULLET] culto di Dioniso : Tecnologia [LINK=TECH_DIONYSOS] Dithyramben [\LINK] + religione greca d&#232;i + Grande Artista
-[ICON_BULLET] mitraismo : Tecnologia [LINK=TECH_MATHEMATICS] caldeo Matematica [\LINK] + religione Zoroastrismo + Grande Profeta
-[ICON_BULLET] fertilit&#224; cult : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_FRUCHTBARKEIT] Fruchbarkeitsg&#246;tter [\LINK] , e ogni giocatore che viene esplorato questa tecnologia un Cultist
+[ICON_BULLET] Fertilit&#224; cult : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_FRUCHTBARKEIT] Divinidades de la Fertilidad [\LINK] , e ogni giocatore che viene esplorato questa tecnologia un Cultist
+[ICON_BULLET] Culto di Iside : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_WRITING2] Geroglifici [\LINK]
 [ICON_BULLET] Indra-cult : Tecnologia [LINK=TECH_CODEX] Codex [\LINK] + Religione Induismo + Grande Profeta
+[ICON_BULLET] Cibele cult : Tecnologia [LINK=TECH_AGRICULTURE2] Stoccaggio dell'acqua [\LINK] + grande trader
+[ICON_BULLET] Mitraismo : Tecnologia [LINK=TECH_MATHEMATICS] Caldeo Matematica [\LINK] + religione Zoroastrismo + Grande Profeta
+[ICON_BULLET] Eroe Cult : fondata dal giocatore che per primo esplor&#242; [LINK=TECH_GLADIATOR] Giochi Circensi[\LINK] , e ogni giocatore che viene esplorato questa tecnologia un Cultist
+[ICON_BULLET] Culto di Dioniso : Tecnologia [LINK=TECH_DIONYSOS] Dithyramben [\LINK] + religione greca d&#232;i + Grande Artista
+[ICON_BULLET] Ellenismo : Tecnologia [LINK=TECH_HELLENISMUS] Ellenismo [\LINK] + religione greca d&#232;i + Grande Costruttore
+[ICON_BULLET] Cosmogonia : Tecnologia [LINK=TECH_HELIO] Modello Eliocentrico [\LINK] + Grande Filosofo
 
 [H2] pro ei contro di un culto [\H2]
 Per l'istituzione di un culto di una o pi&#249; risorse specifiche di una citt&#224; deve essere disponibile . Dopo la sua fondazione caduta in citt&#224; per eventuali costi di manutenzione aggiuntivi , ma riceve anche un reddito supplementare .
@@ -6692,15 +6692,15 @@ Alcuni culti girare alcuni edifici libero :
 [H2]Fundaci&#243;n de un culto o cultura[\H2]
 Hay un n&#250;mero de requisitos que deben ser completados antes de que un jugador pueda fundar un culto. Primero debe haber descubierto una cierta tecnolog&#237;a. Una vez que los jugadores han descubierto la tecnolog&#237;a apropiada, deben mover un Gran Personaje a una ciudad que tenga uno o m&#225;s recursos requeridos por el culto que desean crear. Usando el Gran Personaje apropiado, pueden fundar el Centro de Culto en su ciudad.
 Requisitos:
-[ICON_BULLET]Culto de Isis: Fundado por el jugador que primero descubra [LINK=TECH_WRITING2]jerogl&#237;ficos[\LINK]
-[ICON_BULLET]Culto de Cibeles: Tecnolog&#237;a [LINK=TECH_AGRICULTURE2]almacenaje de agua[\LINK] + Gran Mercader
-[ICON_BULLET]Culto de H&#233;roes: Fundado por el jugador que primero descubra [LINK=TECH_GLADIATOR]lucha de espect&#225;culo[\LINK]; cada jugador que descubra esta tecnolog&#237;a recibir&#225; un seguidor
-[ICON_BULLET]Cosmogon&#237;a: Tecnolog&#237;a [LINK=TECH_LITERATURE]literatura[\LINK] + Gran fil&#243;sofo
-[ICON_BULLET]Helenismo: Tecnolog&#237;a [LINK=TECH_HELLENISMUS]helenismo[\LINK] + Religi&#243;n culto griego + Gran constructor
-[ICON_BULLET]Culto de Dioniso: Tecnolog&#237;a [LINK=TECH_DIONYSOS]ditirrambos[\LINK] + Religi&#243;n culto griego + Gran Artista
-[ICON_BULLET]Culto de Mitras: Tecnolog&#237;a [LINK=TECH_MATHEMATICS]matem&#225;ticas caldaicas[\LINK] + Religi&#243;n zoroastrismo + Gran Profeta
-[ICON_BULLET]Culto de la Fertilidad: Fundado por el jugador que primero descubra [LINK=TECH_FRUCHTBARKEIT]divinidades de la fertilidad[\LINK]; cada jugador que descubra esta tecnolog&#237;a recibe un seguidor
-[ICON_BULLET]Culto de Indra: Tecnolog&#237;a [LINK=TECH_CODEX]c&#243;dice[\LINK] + Religi&#243;n hinduismo + Gran Profeta
+[ICON_BULLET]Culto de la Fertilidad: Fundado por el jugador que primero descubra [LINK=TECH_FRUCHTBARKEIT]Divinidades de la fertilidad[\LINK]; cada jugador que descubra esta tecnolog&#237;a recibe un seguidor
+[ICON_BULLET]Culto de Isis: Fundado por el jugador que primero descubra [LINK=TECH_WRITING2]Jerogl&#237;ficos[\LINK]
+[ICON_BULLET]Culto de Indra: Tecnolog&#237;a [LINK=TECH_CODEX]C&#243;dice[\LINK] + Religi&#243;n hinduismo + Gran Profeta
+[ICON_BULLET]Culto de Cibeles: Tecnolog&#237;a [LINK=TECH_AGRICULTURE2]Almacenaje de agua[\LINK] + Gran Mercader
+[ICON_BULLET]Culto de Mitras: Tecnolog&#237;a [LINK=TECH_MATHEMATICS]Matem&#225;ticas caldaicas[\LINK] + Religi&#243;n zoroastrismo + Gran Profeta
+[ICON_BULLET]Culto de H&#233;roes: Fundado por el jugador que primero descubra [LINK=TECH_GLADIATOR]Lucha de espect&#225;culo[\LINK]; cada jugador que descubra esta tecnolog&#237;a recibir&#225; un seguidor
+[ICON_BULLET]Culto de Dioniso: Tecnolog&#237;a [LINK=TECH_DIONYSOS]Ditirrambos[\LINK] + Religi&#243;n culto griego + Gran Artista
+[ICON_BULLET]Helenismo: Tecnolog&#237;a [LINK=TECH_HELLENISMUS]Helenismo[\LINK] + Religi&#243;n culto griego + Gran constructor
+[ICON_BULLET]Cosmogon&#237;a: Tecnolog&#237;a [LINK=TECH_HELIO]Modelo Helioc&#233;ntrico[\LINK] + Gran fil&#243;sofo
 
 [H2]Pros y contras de un culto[\H2]
 Cada culto requiere un recurso o un grupo de recursos presentes en una ciudad para que el culto pueda ser all&#237; construido. Una vez un culto es construido, provoca gastos de mantenimiento y proporciona a la ciudad un recurso o aumenta sus rendimientos. 
@@ -12392,7 +12392,7 @@ Chance: 100%
 7. Patyaxsa : administrateur sup&#233;rieur
 -- Azadan (aristocrate) -- 
 8. Gausaka : Oreille du roi
-9. Didiyaka : Oil du roi
+9. Didiyaka : Å’il du roi
 10. Vizir : Mandataire royal en toutes choses pour 10 000 hommes et plus
 
 [H2]Cavalerie[\H2]
@@ -12850,20 +12850,20 @@ Sottufficiali:
 
 ufficiali:
 
-10° Centurione (nuova unit&#224;): Capitano
+10Â° Centurione (nuova unit&#224;): Capitano
 11th Centurion Posterior: Centurion dal IV secolo della 2a alla 10a coorte
-12° Centurione Priore: Centurione dal I al III secolo dalla I alla X coorte
+12Â° Centurione Priore: Centurione dal I al III secolo dalla I alla X coorte
 13. Primus Pilus: Centurione del I Secolo della I Coorte
 14. Praefectus Castrorum: comandante del campo
 
 Stato Maggiore degli Ufficiali (UNIT&#192; A MONTAGGIO da qui):
 
 15. Praefectus (nuova unit&#224;): vice comandante della legione
-16° Tribunus: comandante di coorte
+16Â° Tribunus: comandante di coorte
 17. Tribunus Laticlavius: Tribuno supremo
 18. Legatus Legionis: Comandante delle Legioni
 19. Legatus Augusti: amministratore delle legioni
-20° Console: Massima carica militare
+20Â° Console: Massima carica militare
 
 
 [H2]Dal IV secolo d.C.:[\H2]
@@ -12888,7 +12888,7 @@ generali:
 
 11. Dux (nuova unit&#224;)
 12 Arriva
-13° Maestri
+13Â° Maestri
 14. Magister militum
 15. Patrizio
 
@@ -12961,10 +12961,10 @@ Possibilit&#224;: 100%
 1. Pezhetairos (compagni a piedi)
 2. Protostati (1,3,5,7a linea della falange)
 3. Epistati (2,4,6,8a linea della falange)
-4 ° Dekastateros (2 ° tenente)
+4 Â° Dekastateros (2 Â° tenente)
 -- Sarissophorus --
 5. Dekadarchus (tenente di 16)
-6 ° Tetrarco (Primo Luogotenente di 64)
+6 Â° Tetrarco (Primo Luogotenente di 64)
 7. Sintagmo (Capitano, 256)
 -- Lochagos --
 8. Lochagos (colonnello, 512)
@@ -12998,11 +12998,11 @@ Possibilit&#224;: 33%
 
 1. Asvar
 2 Salar il 10
-3° Salar del 50°
+3Â° Salar del 50Â°
 4. Salar del centesimo
-5. Salar del 500°
+5. Salar del 500Â°
 --Savaran--
-6° Savaran (Aswaran): divisione di cavalleria
+6Â° Savaran (Aswaran): divisione di cavalleria
 7. Savaran Sardar: capo della cavalleria
 -- Katahprakt (possibile solo dall'armatura del cavallo) --
 8. Zhayedan: immortali a cavallo
@@ -13021,8 +13021,8 @@ Da Tec: spada corta
 Unit&#224;: portatori di ascia, spada e lancia
 Possibilit&#224;: 50%
 
-1 ° soldato (nfrw)
-2° capo dei 10 (hrp nfrw)
+1 Â° soldato (nfrw)
+2Â° capo dei 10 (hrp nfrw)
 3. Grande dei 50 (n djw)
 4. Alfiere (Tjah-Serut)
 5. Capo di 500 (Heru Pa-Djet)

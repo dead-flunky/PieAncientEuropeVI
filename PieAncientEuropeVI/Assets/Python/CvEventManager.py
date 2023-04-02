@@ -4637,6 +4637,7 @@ class CvEventManager:
 						return
 				## Platy WorldBuilder ##
 				iPreviousOwner, iNewOwner, pCity, bConquest, bTrade = argsList
+				iOriginalOwner = pCity.getOriginalOwner()
 				CvUtil.pyPrint('City Acquired Event: %s' % (pCity.getName()))
 				pPlayer = gc.getPlayer(iNewOwner)
 				pPreviousOwner = gc.getPlayer(iPreviousOwner)
@@ -4668,7 +4669,7 @@ class CvEventManager:
 
 				# PAE triumph movies when city is reconquered
 				if pPlayer.isHuman():
-						if pCity.getOriginalOwner() == iNewOwner:
+						if iOriginalOwner == iNewOwner:
 								if pPlayer.getCurrentEra() > 2:
 										iVids = 3
 								elif pPlayer.getCurrentEra() > 1:
@@ -4687,7 +4688,7 @@ class CvEventManager:
 								popupInfo.addPopup(iNewOwner)
 
 				# ------- Stadtnamenswechsel: Rename barbarian tribes (cities) B(xy) to C(xy)
-				if pCity.getOriginalOwner() == gc.getBARBARIAN_PLAYER() or iPreviousOwner == gc.getBARBARIAN_PLAYER():
+				if iOriginalOwner == gc.getBARBARIAN_PLAYER() or iPreviousOwner == gc.getBARBARIAN_PLAYER():
 						# get all city names (if AI has already founded that city)
 						lCityNames = []
 						iRange = gc.getMAX_PLAYERS()
@@ -4742,61 +4743,61 @@ class CvEventManager:
 						# --- Wird eine Reliquie gefunden?
 						PAE_City.getHolyRelic(pCity, iNewOwner)
 
-						# --- Nearest city revolts 33% chance
-						# -+- Siegesstele oder -tempel reintun (PAE V Patch 4)
-						if bConquest and iPreviousOwner != gc.getBARBARIAN_PLAYER() and pPreviousOwner.isAlive():
-								if pCity.getOriginalOwner() != iNewOwner:
+						if iOriginalOwner != iNewOwner:
+								if bConquest and iPreviousOwner != gc.getBARBARIAN_PLAYER() and pPreviousOwner.isAlive():
+										# --- Nearest city revolts 33% chance
 										if CvUtil.myRandom(3, "Nearest City revolt") == 1:
 												PAE_City.doNextCityRevolt(pCity.getX(), pCity.getY(), iPreviousOwner, iNewOwner)
 
-								# Siegesstele oder -tempel in die Stadt stellen
-								if iNewOwner != gc.getBARBARIAN_PLAYER():
-										pTeam = gc.getTeam(pPlayer.getTeam())
-										if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KRIEGERETHOS")):
-												if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUCHSTABEN")):
+										# Siegesstele oder -tempel in die Stadt stellen (PAE V Patch 4)
+										if iNewOwner != gc.getBARBARIAN_PLAYER():
+												pTeam = gc.getTeam(pPlayer.getTeam())
+												if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KRIEGERETHOS")):
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUCHSTABEN")):
 
-														iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESSTELE")
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")):
-																iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")
+																iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESSTELE")
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BELAGERUNG")):
+																		iBuilding = gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")
 
-														if not pCity.isHasBuilding(iBuilding):
-																pCity.setNumRealBuilding(iBuilding, 1)
+																if not pCity.isHasBuilding(iBuilding):
+																		pCity.setNumRealBuilding(iBuilding, 1)
 
-						# --- Getting Technology when conquering (Forschungsbonus)
-						# --- PAE V Patch4: nur ab Pop 3 (sonst exploit)
-						if bConquest and (bAssimilation or pCity.getPopulation() > 2):
-								PAE_City.getTechOnConquer(pCity, iPreviousOwner, iNewOwner)
+								# --- Getting Technology when conquering (Forschungsbonus)
+								# --- PAE V Patch4: nur ab Pop 3 (sonst exploit)
+								if bConquest and (bAssimilation or pCity.getPopulation() > 2):
+										PAE_City.getTechOnConquer(pCity, iPreviousOwner, iNewOwner)
 
-						if not bAssimilation:
-								# --- Getting goldkarren / treasure / Beutegold ------
-								# --- Kein Goldkarren bei Assimilierung
-								if iNewOwner != gc.getBARBARIAN_PLAYER():
-										PAE_City.getGoldkarren(pCity, pPlayer)
-								if pCity.getPopulation() > 2:
-										PAE_City.doRefugeeToNeighborCity(pCity, iPreviousOwner, iNewOwner)
+								if not bAssimilation:
+										# --- Getting goldkarren / treasure / Beutegold ------
+										# --- Kein Goldkarren bei Assimilierung
+										if iNewOwner != gc.getBARBARIAN_PLAYER():
+												PAE_City.getGoldkarren(pCity, pPlayer)
+										if pCity.getPopulation() > 2:
+												PAE_City.doRefugeeToNeighborCity(pCity, iPreviousOwner, iNewOwner)
 
-								# set city slaves to null
-								if not bTrade:
-										PAE_Sklaven.doEnslaveCity(pCity)
+										# set city slaves to null
+										if not bTrade:
+												PAE_Sklaven.doEnslaveCity(pCity)
 
-						# Ab Tech Assimilation soll die Stadtpop mind. 5 sein (PAE V Patch 4)
-						# TODO: was wenn die vorher schon kleiner war?
-						if bAssimilation and pCity.getPopulation() < 5:
-								pCity.setPopulation(5)
+								# Ab Tech Assimilation soll die Stadtpop mind. 5 sein (PAE V Patch 4)
+								# TODO: was wenn die vorher schon kleiner war?
+								if bAssimilation and pCity.getPopulation() < 5:
+										pCity.setPopulation(5)
 
-						# --- Vasallen-Feature / Vassal feature
-						# iPreviousOwner,iNewOwner,pCity,bConquest,bTrade = argsList
-						if not gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_VASSAL_STATES) and pPreviousOwner.isAlive():
-								PAE_Vassal.onCityAcquired(pCity, iNewOwner, iPreviousOwner)
+								# --- Vasallen-Feature / Vassal feature
+								# iPreviousOwner,iNewOwner,pCity,bConquest,bTrade = argsList
+								if not gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_VASSAL_STATES) and pPreviousOwner.isAlive():
+										PAE_Vassal.onCityAcquired(pCity, iNewOwner, iPreviousOwner)
 
-						# due to Civil War feature
-						if bTrade and iNewOwner == gc.getBARBARIAN_PLAYER():
-								if gc.getTeam(pPreviousOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_ARMOR")):
-										iRebel = gc.getInfoTypeForString("UNIT_FREEDOM_FIGHTER")
-								else:
-										iRebel = gc.getInfoTypeForString("UNIT_REBELL")
-								for _ in range(2):
-										gc.getPlayer(gc.getBARBARIAN_PLAYER()).initUnit(iRebel, pCity.getX(), pCity.getY(), UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
+								# due to Civil War feature
+								if bTrade and iNewOwner == gc.getBARBARIAN_PLAYER():
+										if gc.getTeam(pPreviousOwner.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_ARMOR")):
+												iRebel = gc.getInfoTypeForString("UNIT_FREEDOM_FIGHTER")
+										else:
+												iRebel = gc.getInfoTypeForString("UNIT_REBELL")
+										for _ in range(2):
+												gc.getPlayer(gc.getBARBARIAN_PLAYER()).initUnit(iRebel, pCity.getX(), pCity.getY(), UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
+						# --- if iOriginalOwner != iNewOwner
 
 						# PAE Provinzcheck
 						PAE_City.doCheckCityState(pCity)

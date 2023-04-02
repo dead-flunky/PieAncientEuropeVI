@@ -477,5 +477,11 @@
 		<HintInfo>
 			<Description>TXT_KEY_HINT_135</Description>
 		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_136</Description>
+		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_137</Description>
+		</HintInfo>
 	</HintInfos>
 </Civ4Hints>

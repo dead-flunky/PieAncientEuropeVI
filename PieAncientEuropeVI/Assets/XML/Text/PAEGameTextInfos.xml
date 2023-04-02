@@ -8383,6 +8383,14 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
     <Spanish>Los [COLOR_HIGHLIGHT_TEXT]H&#233;roes[COLOR_REVERT] (a trav&#233;s del combate) y las unidades con el Arte de la [COLOR_HIGHLIGHT_TEXT]Ret&#243;rica[COLOR_REVERT] (a trav&#233;s de la promoci&#243;n) pueden reducir el mot&#237;n de las ciudades reci&#233;n conquistadas a solo un turno.[NEWLINE]Si mueves unidades normales a tales ciudades, el tiempo por unidad se reduce en uno (quedan al menos 2 turnos de disturbios).</Spanish>
   </TEXT>
   <TEXT>
+    <Tag>TXT_KEY_BUILDING_PALISADE_BUILT_INFO</Tag>
+    <English>This forest was cleared for the construction of the palisade.</English>
+    <French>Cette for&#234;t a &#233;t&#233; d&#233;frich&#233;e pour la construction de la palissade.</French>
+    <German>Dieser Wald wurde f&#252;r den Bau der Palisade abgeholzt.</German>
+    <Italian>Questa foresta &#232; stata abbattuta per la costruzione della palizzata.</Italian>
+    <Spanish>Este bosque fue talado para la construcci&#243;n de la empalizada.</Spanish>
+  </TEXT>
+  <TEXT>
     <Tag>TXT_KEY_UNIT_GREAT_PROPHET_HELP</Tag>
     <English>[ICON_BULLET]Can relocate Holy Cities of polytheistic religions to the capital. (Requirement: ownership of the Holy City, religion must be spread in city)</English>
     <French>[ICON_BULLET]Peut d&#233;placer les villes saintes des religions polyth&#233;istes vers la capitale. (Exigence : propri&#233;t&#233; de la Ville Sainte, la religion doit &#234;tre r&#233;pandue dans la capitale)</French>

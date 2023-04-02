@@ -3162,9 +3162,9 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TECH_BEWAFFNUNG</Tag>
-    <English>War Axe</English>
-    <French>Hache</French>
-    <German>Kriegsaxt</German>
+    <English>Hatchet</English>
+    <French>Hachette</French>
+    <German>Kriegsbeil</German>
     <Italian>Ascia da Guerra</Italian>
     <Spanish>Hacha de Guerra</Spanish>
   </TEXT>
@@ -4250,11 +4250,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_OPPIDUM</Tag>
-    <English>Oppidum</English>
-    <French>Oppidum</French>
-    <German>Oppidum</German>
-    <Italian>Oppidum</Italian>
-    <Spanish>Oppidum</Spanish>
+    <English>Oppidum Walls</English>
+    <French>Murs de l'Oppidum</French>
+    <German>Oppidum-Wall</German>
+    <Italian>Mura Oppide</Italian>
+    <Spanish>Muros Oppidum</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_DAMM_MARIB</Tag>
@@ -5220,7 +5220,7 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_BUILDING_SCHMIEDE_BRONZE</Tag>
-    <English>Bronze Works</English>
+    <English>Bronzeworks</English>
     <French>
 <Text>Fonderie de bronze</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
