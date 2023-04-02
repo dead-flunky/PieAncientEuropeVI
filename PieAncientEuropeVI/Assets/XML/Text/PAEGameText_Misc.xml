@@ -674,11 +674,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1</Tag>
-    <English>Your young warriors yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. Frustrated, they roam the streets of the city %s1, plundering.</English>
-    <French>Vos jeunes guerriers aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Frustr&#233;s, ils parcourent les rues de la ville %s1, pillant.</French>
-    <German>Eure jungen Krieger sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Frustriert ziehen sie pl&#252;ndernd durch die Gassen der Stadt %s1.</German>
-    <Italian>I tuoi giovani guerrieri bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Frustrati, vagano per le strade della citt&#224; %s1, saccheggiando.</Italian>
-    <Spanish>Tus j&#243;venes guerreros anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Frustrados, deambulan por las calles de la ciudad %s1, saqueando.</Spanish>
+    <English>Your young warriors yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. Frustrated, they roam the streets of the city %s1, plundering. (State religion is not a monotheistic religion)</English>
+    <French>Vos jeunes guerriers aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Frustr&#233;s, ils parcourent les rues de la ville %s1, pillant. (La religion d'&#201;tat n'est pas une religion monoth&#233;iste)</French>
+    <German>Eure jungen Krieger sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Frustriert ziehen sie pl&#252;ndernd durch die Gassen der Stadt %s1. (Staatsreligion ist keine monotheistische Religion)</German>
+    <Italian>I tuoi giovani guerrieri bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Frustrati, vagano per le strade della citt&#224; %s1, saccheggiando. (La religione di stato non &#232; una religione monoteista)</Italian>
+    <Spanish>Tus j&#243;venes guerreros anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Frustrados, deambulan por las calles de la ciudad %s1, saqueando. (La religi&#243;n del estado no es una religi&#243;n monote&#237;sta)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_3</Tag>
@@ -690,11 +690,11 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_2</Tag>
-    <English>Religious disagreements have enraged some citizens in %s1. A violent street fight ensues.</English>
-    <French>Des d&#233;saccords religieux ont enrag&#233; certains citoyens de %s1. Une violente bagarre de rue s'ensuit.</French>
-    <German>Religi&#246;se Meinungsverschiedenheiten brachten einige B&#252;rger in %s1 in Wut und Rage. Es kommt zu einer heftigen Stra&#223;enschlacht.</German>
-    <Italian>I disaccordi religiosi hanno fatto infuriare alcuni cittadini in %s1. Segue una violenta rissa di strada.</Italian>
-    <Spanish>Los desacuerdos religiosos han enfurecido a algunos ciudadanos en %s1. Se produce una violenta pelea callejera.</Spanish>
+    <English>Religious disagreements have enraged some citizens in %s1. A violent street fight ensues. (several religions in one city)</English>
+    <French>Des d&#233;saccords religieux ont enrag&#233; certains citoyens de %s1. Une violente bagarre de rue s'ensuit. (plusieurs religions dans une m&#234;me ville)</French>
+    <German>Religi&#246;se Meinungsverschiedenheiten brachten einige B&#252;rger in %s1 in Wut und Rage. Es kommt zu einer heftigen Stra&#223;enschlacht. (mehrere Religionen in einer Stadt)</German>
+    <Italian>I disaccordi religiosi hanno fatto infuriare alcuni cittadini in %s1. Segue una violenta rissa di strada. (diverse religioni in una citt&#224;)</Italian>
+    <Spanish>Los desacuerdos religiosos han enfurecido a algunos ciudadanos en %s1. Se produce una violenta pelea callejera. (varias religiones en una ciudad)</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_MESSAGE_HERESY_CULTS2_1</Tag>

@@ -606,17 +606,6 @@
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
-					<BonusType>BONUS_MARBLE</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
 					<BonusType>BONUS_STONE</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
@@ -629,39 +618,6 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_SALT</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_GEMS</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_GOLD</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_SILVER</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
@@ -694,7 +650,7 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_COAL</BonusType>
+					<BonusType>BONUS_GOLD</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
@@ -706,50 +662,6 @@
 				</BonusTypeStruct>
 				<BonusTypeStruct>
 					<BonusType>BONUS_COPPER</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_ZINN</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_ZINK</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_IRON</BonusType>
-					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
-					<iDiscoverRand>0</iDiscoverRand>
-					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>0</iYieldChange>
-						<iYieldChange>1</iYieldChange>
-					</YieldChanges>
-				</BonusTypeStruct>
-				<BonusTypeStruct>
-					<BonusType>BONUS_MAGNETIT</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
@@ -1514,7 +1426,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<bActsAsCity>0</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>

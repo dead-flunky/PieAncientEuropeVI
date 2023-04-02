@@ -527,7 +527,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_WALLS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WALLS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_LIGHT_WALLS</ArtDefineTag>
 			<MovieDefineTag/>
 			<HolyCity/>
 			<ReligionType/>
@@ -720,7 +720,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_WALLS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WALLS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CELTIC_DUN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
 			<MovieDefineTag/>
 			<HolyCity/>
 			<ReligionType/>
@@ -875,6 +875,10 @@
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_STADT</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_LIGHT_WALLS</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
@@ -1072,6 +1076,10 @@
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_STADT</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_LIGHT_WALLS</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
@@ -7815,7 +7823,7 @@
 			<bPrereqReligion>0</bPrereqReligion>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<iCost>40</iCost>
+			<iCost>30</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -8841,7 +8849,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech>TECH_AESTHETICS</ObsoleteTech>
-			<PrereqTech>TECH_CEREMONIAL</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
@@ -9029,7 +9037,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech>TECH_AESTHETICS</ObsoleteTech>
-			<PrereqTech>TECH_CEREMONIAL</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
@@ -9217,7 +9225,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech>TECH_AESTHETICS</ObsoleteTech>
-			<PrereqTech>TECH_CEREMONIAL</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
@@ -9779,7 +9787,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech>TECH_AESTHETICS</ObsoleteTech>
-			<PrereqTech>TECH_CEREMONIAL</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
@@ -10530,7 +10538,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech>TECH_AESTHETICS</ObsoleteTech>
-			<PrereqTech>TECH_CEREMONIAL</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
@@ -14519,7 +14527,7 @@
 			<bPrereqReligion>0</bPrereqReligion>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<iCost>50</iCost>
+			<iCost>30</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -14553,7 +14561,7 @@
 			<iGlobalWarWearinessModifier>0</iGlobalWarWearinessModifier>
 			<iEnemyWarWearinessModifier>0</iEnemyWarWearinessModifier>
 			<iHealRateChange>0</iHealRateChange>
-			<iHealth>0</iHealth>
+			<iHealth>-1</iHealth>
 			<iAreaHealth>0</iAreaHealth>
 			<iGlobalHealth>0</iGlobalHealth>
 			<iHappiness>0</iHappiness>
@@ -14771,16 +14779,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -15064,12 +15063,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -15333,12 +15327,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -15535,12 +15524,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -15731,12 +15715,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -15919,12 +15898,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -16023,7 +15997,7 @@
 			<bPrereqReligion>0</bPrereqReligion>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<iCost>100</iCost>
+			<iCost>50</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -16099,12 +16073,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -16279,12 +16248,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -16459,12 +16423,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -16640,12 +16599,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -17006,12 +16960,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -17399,12 +17348,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -21586,12 +21530,7 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
+			<SpecialistCounts/>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -21765,7 +21704,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -21943,7 +21887,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -22121,7 +22070,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -22299,7 +22253,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -22477,7 +22436,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -22655,7 +22619,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners>
@@ -30359,7 +30328,11 @@
 			<PrereqTech>TECH_ARCHERY2</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
-			<PrereqBonuses/>
+			<PrereqBonuses>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_BRONZE</BonusType>
+				<BonusType>BONUS_IRON2</BonusType>
+			</PrereqBonuses>
 			<ProductionTraits/>
 			<HappinessTraits/>
 			<NoBonus/>
@@ -30481,10 +30454,6 @@
 			<BuildingHappinessChanges/>
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs>
-					<BuildingClassNeeded>
-					 <BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
-					 <bNeededInCity>1</bNeededInCity>
-					</BuildingClassNeeded>
 					<BuildingClassNeeded>
 					 <BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
 					 <bNeededInCity>1</bNeededInCity>

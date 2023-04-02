@@ -3600,6 +3600,15 @@
 			<Translate>2.4,1.8</Translate>
 		</To>
 	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="LandImprovementProd">
+		<Attribute Class="Improvement">IMPROVEMENT_ORE_CAMP</Attribute>
+		<Attribute Class="Bonus">BONUS_ALL</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Leaf_LandImprovement_4x4">
+			<Translate>-0.6,1.8</Translate>
+			<Rotate>-40</Rotate>
+		</To>
+	</LProduction>
 
 	<LProduction From="PLOT_ROOT" Name="LandImprovementProd">
 		<Attribute Class="Improvement">IMPROVEMENT_MINE,IMPROVEMENT_SALTMINE,IMPROVEMENT_FORT,IMPROVEMENT_FORT2</Attribute>
