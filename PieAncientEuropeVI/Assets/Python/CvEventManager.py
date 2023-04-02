@@ -2008,16 +2008,16 @@ class CvEventManager:
 						PAE_Unit.doGoToNextUnit(pUnit)
 
 				# Hunter: Lager oder Beobachtungsturm bauen
-				elif iData1 == 771:
-						pPlayer = gc.getPlayer(iData4)
-						pUnit = pPlayer.getUnit(iData5)
-						if iData2 == 1:
-								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
-						elif iData2 == 2:
-								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
-						pUnit.finishMoves()
-						pUnit.setImmobileTimer(3)
-						PAE_Unit.doGoToNextUnit(pUnit)
+				#elif iData1 == 771:
+				#		pPlayer = gc.getPlayer(iData4)
+				#		pUnit = pPlayer.getUnit(iData5)
+				#		if iData2 == 1:
+				#				pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+				#		elif iData2 == 2:
+				#				pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
+				#		pUnit.finishMoves()
+				#		pUnit.setImmobileTimer(3)
+				#		PAE_Unit.doGoToNextUnit(pUnit)
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

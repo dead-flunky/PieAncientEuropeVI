@@ -2059,15 +2059,15 @@ class CvMainInterface:
 														pPlot = pUnit.plot()
 
 														# Build Option: Lager oder Beobachtungsturm
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
-																if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
-																		if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
-																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY")): bArchery = True
-																				else: bArchery = False
-																				screen.appendMultiListButton(
-																						"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, bArchery)
-																				screen.show("BottomButtonContainer")
-																				iCount += 1
+														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+														#		if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
+														#				if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
+														#						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY")): bArchery = True
+														#						else: bArchery = False
+														#						screen.appendMultiListButton(
+														#								"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, bArchery)
+														#						screen.show("BottomButtonContainer")
+														#						iCount += 1
 														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
 														#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
 														#				if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iUnitOwner, 2):

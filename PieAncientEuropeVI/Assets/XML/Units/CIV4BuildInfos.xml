@@ -142,7 +142,7 @@
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
-			<iTime>100</iTime>
+			<iTime>1</iTime>
 			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>

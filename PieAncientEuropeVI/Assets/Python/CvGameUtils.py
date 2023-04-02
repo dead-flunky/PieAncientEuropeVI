@@ -1640,15 +1640,15 @@ class CvGameUtils:
 								self.PAE_AI_Cities_Slavemarket = []
 
 
-						# Hunter: Lager oder Beobachtungsturm
-						if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
-								# Lager / Camp
-								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
-										if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
-												if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
-														pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
-														pUnit.finishMoves()
-														return True
+						# Hunter (771): Lager oder Beobachtungsturm
+						#if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+						#		# Lager / Camp
+						#		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+						#				if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
+						#						if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
+						#								pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+						#								pUnit.finishMoves()
+						#								return True
 								# Beobachtungsturm / Spähturm / Look-out
 								#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
 								#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
