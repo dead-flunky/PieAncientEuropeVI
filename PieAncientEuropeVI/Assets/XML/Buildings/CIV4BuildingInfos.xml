@@ -8489,7 +8489,6 @@
 			<PrereqTech>TECH_RESERVISTEN</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_PHARMAZIE</PrereqTech>
-				<PrereqTech>TECH_MANUFAKTUREN</PrereqTech>
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</TechTypes>
 			<Bonus/>

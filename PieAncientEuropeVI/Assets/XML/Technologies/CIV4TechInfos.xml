@@ -12909,6 +12909,7 @@
 				<PrereqTech>TECH_MARKTRECHT</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
+				<PrereqTech>TECH_MANUFAKTUREN</PrereqTech>
 				<PrereqTech>TECH_PATRONAT</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_133</Quote>

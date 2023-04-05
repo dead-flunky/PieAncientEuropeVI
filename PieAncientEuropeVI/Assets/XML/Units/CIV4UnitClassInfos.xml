@@ -1218,15 +1218,6 @@
 			<DefaultUnit>UNIT_HORSE_PERSIA_NOBLE2</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LIGHT_CAVALRY</Type>
-			<Description>TXT_KEY_CHARL_UNIT_LIGHT_CAVALRY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>3</iInstanceCostModifier>
-			<DefaultUnit>UNIT_LIGHT_CAVALRY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_CAMEL_ARCHER</Type>
 			<Description>TXT_KEY_UNIT_ARABIA_CAMELARCHER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

@@ -42,11 +42,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_GAERUNG_HELP</Tag>
-		<English>[ICON_BULLET] is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]grain resource[COLOR_REVERT] with a farm has been connected to the trade network.</English>
-		<French>[ICON_BULLET] a de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]C&#233;r&#233;ale[COLOR_REVERT] avec une ferme a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
-		<German>[ICON_BULLET] wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Getreideart[COLOR_REVERT] mit einem Bauernhof ans Handelsnetz angeschlossen wurde.</German>
-		<Italian>[ICON_BULLET] viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa granulosa[COLOR_REVERT] con una fattoria &#232; stato collegato alla rete commerciale.</Italian>
-		<Spanish>[ICON_BULLET] es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]tipo de grano[COLOR_REVERT] con una granja se haya conectado a la red comercial.</Spanish>
+		<English>[ICON_BULLET] Is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]grain resource[COLOR_REVERT] with a farm has been connected to the trade network.</English>
+		<French>[ICON_BULLET] A de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]C&#233;r&#233;ale[COLOR_REVERT] avec une ferme a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
+		<German>[ICON_BULLET] Wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Getreideart[COLOR_REVERT] mit einem Bauernhof ans Handelsnetz angeschlossen wurde.</German>
+		<Italian>[ICON_BULLET] Viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa granulosa[COLOR_REVERT] con una fattoria &#232; stato collegato alla rete commerciale.</Italian>
+		<Spanish>[ICON_BULLET] Es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]tipo de grano[COLOR_REVERT] con una granja se haya conectado a la red comercial.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_UNIT_INFO_BAR_4</Tag>
@@ -8670,10 +8670,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KAMELZUCHT_HELP</Tag>
-		<English>[ICON_BULLET] is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]camel resource[COLOR_REVERT] with a camp has been connected to the trade network.</English>
-		<French>[ICON_BULLET] a de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]ressource chameli&#232;re[COLOR_REVERT] avec un camp a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
-		<German>[ICON_BULLET] wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Kamelressource[COLOR_REVERT] mit einem Lager ans Handelsnetz angeschlossen wurde.</German>
-		<Italian>[ICON_BULLET] viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa di cammelli[COLOR_REVERT] con un accampamento &#232; stato collegato alla rete commerciale.</Italian>
-		<Spanish>[ICON_BULLET] es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]recurso de camellos[COLOR_REVERT] con un campamento se haya conectado a la red comercial.</Spanish>
+		<English>[ICON_BULLET] Is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]camel resource[COLOR_REVERT] with a camp has been connected to the trade network.</English>
+		<French>[ICON_BULLET] A de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]ressource chameli&#232;re[COLOR_REVERT] avec un camp a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
+		<German>[ICON_BULLET] Wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Kamelressource[COLOR_REVERT] mit einem Lager ans Handelsnetz angeschlossen wurde.</German>
+		<Italian>[ICON_BULLET] Viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa di cammelli[COLOR_REVERT] con un accampamento &#232; stato collegato alla rete commerciale.</Italian>
+		<Spanish>[ICON_BULLET] Es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]recurso de camellos[COLOR_REVERT] con un campamento se haya conectado a la red comercial.</Spanish>
 	</TEXT>
 </Civ4GameText>
