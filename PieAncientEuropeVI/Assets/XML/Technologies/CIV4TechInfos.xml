@@ -1291,8 +1291,8 @@
 			<Type>TECH_GAERUNG</Type>
 			<Description>TXT_KEY_TECH_GAERUNG</Description>
 			<Civilopedia>TXT_KEY_BONUS_BIER_PEDIA</Civilopedia>
-			<Help/>
-			<Strategy>TXT_KEY_TECH_GAERUNG_STRATEGY</Strategy>
+			<Help>TXT_KEY_TECH_GAERUNG_HELP</Help>
+			<Strategy/>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iAIWeight>0</iAIWeight>
 			<iAITradeModifier>0</iAITradeModifier>
@@ -3504,7 +3504,7 @@
 			<Type>TECH_KAMELZUCHT</Type>
 			<Description>TXT_KEY_TECH_KAMELZUCHT</Description>
 			<Civilopedia>TXT_KEY_TECH_KAMELZUCHT_PEDIA</Civilopedia>
-			<Help/>
+			<Help>TXT_KEY_TECH_KAMELZUCHT_HELP</Help>
 			<Strategy>TXT_KEY_TECH_KAMELZUCHT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iAIWeight>0</iAIWeight>

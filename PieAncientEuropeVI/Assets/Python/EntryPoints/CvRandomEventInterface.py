@@ -9,6 +9,9 @@
 #
 # No other modules should import this
 #
+# lots of ancient BTS events
+# all PAE events made by Thorgal (at least until PAE 6)
+# the new ones by the civ community
 import CvUtil
 from CvPythonExtensions import (CyGlobalContext, CyTranslator, UnitAITypes,
 																DirectionTypes, GameOptionTypes, CyMap,
@@ -3697,9 +3700,9 @@ def doCheckCityStatus(argsList):
 
 		PAE_City.doCheckCityState(pCity)
 
+
 ######## BIER ###########
-
-
+# -- by Thorgal --
 def canTriggerBier(argsList):
 		kTriggeredData = argsList[0]
 
@@ -3726,9 +3729,37 @@ def applyBier(argsList):
 
 		pTeam.setHasTech(iGaerung, 1, kTriggeredData.ePlayer, 0, 1)
 
+
+######## KAMEL DOMESTIZIERUNG ###########
+# -- requested by JohnDay; event idea by Flunky --
+def canTriggerKamel(argsList):
+		kTriggeredData = argsList[0]
+
+		player = gc.getPlayer(kTriggeredData.ePlayer)
+		team = gc.getTeam(player.getTeam())
+
+		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
+
+		if team.isHasTech(iGaerung):
+				return False
+
+		return True
+
+
+def applyKamel(argsList):
+		# iEvent = argsList[0]
+		kTriggeredData = argsList[1]
+
+		player = gc.getPlayer(kTriggeredData.ePlayer)
+		iTeam = player.getTeam()
+		pTeam = gc.getTeam(iTeam)
+
+		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
+
+		pTeam.setHasTech(iGaerung, 1, kTriggeredData.ePlayer, 0, 1)
+
+
 #######  Waldbrand ########
-
-
 def applyForest_Fire(argsList):
 		# iEvent = argsList[0]
 		kTriggeredData = argsList[1]

@@ -3600,8 +3600,12 @@ def doFreeTechMissionary(iTechType, iPlayer):
 				if lCities:
 						iRandCity = lCities[CvUtil.myRandom(len(lCities), "doFreeTechMissionary")]
 						NewUnit = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
+
 						# Matriarchist
 						if iTechType == gc.getInfoTypeForString("TECH_FRUCHTBARKEIT"):
+								# PAE 6.15: eine zweite Einheit erstellen
+								NewUnit2 = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
+
 								# Verschiedene Gottesanbeter
 								lCivs = {
 										gc.getInfoTypeForString("CIVILIZATION_CELT"): "TXT_KEY_UNIT_MATRIACHAT_CELTS",
@@ -3630,14 +3634,24 @@ def doFreeTechMissionary(iTechType, iPlayer):
 										text = CyTranslator().getText(lCivs[pPlayer.getCivilizationType()], ("",))
 										text = text + " " + CyTranslator().getText("TXT_KEY_UNIT_KULT_FOLLOWER", ("",))
 										NewUnit.setName(text)
+										NewUnit2.setName(text)
 								except KeyError:
 										pass
+								
 
 						# ***TEST***
 						#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Matriachist bekommen (Zeile 2848)",1)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
+						# Kybele/Cybele
+						elif iTechType == gc.getInfoTypeForString("TECH_SENSE"):
+								# PAE 6.15: eine zweite Einheit erstellen
+								NewUnit2 = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
+
 						# Heroenkultist
 						elif iTechType == gc.getInfoTypeForString("TECH_GLADIATOR"):
+								# PAE 6.15: eine zweite Einheit erstellen
+								NewUnit2 = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
+
 								lCivs = {
 										gc.getInfoTypeForString("CIVILIZATION_CELT"): "TXT_KEY_UNIT_HEROEN_CELTS",
 										gc.getInfoTypeForString("CIVILIZATION_GERMANEN"): "TXT_KEY_UNIT_HEROEN_GERMAN",
@@ -3660,8 +3674,10 @@ def doFreeTechMissionary(iTechType, iPlayer):
 										text = CyTranslator().getText(lCivs[pPlayer.getCivilizationType()], ("",))
 										text = text + " " + CyTranslator().getText("TXT_KEY_UNIT_KULT_FOLLOWER", ("",))
 										NewUnit.setName(text)
+										NewUnit2.setName(text)
 								except KeyError:
 										pass
+
 		except KeyError:
 				pass
 
@@ -4231,6 +4247,9 @@ def isCityState(iPlayer):
 		# city states / Stadtstaaten
 		return gc.getTeam(gc.getPlayer(iPlayer).getTeam()).isHasTech(gc.getInfoTypeForString("TECH_CITY_STATE"))
 
+# in EventManager
+# onCityAcquired(pCity, True)
+# onCityDoTurn(pCity, False)
 def doCheckDyingGeneral(pCity, bOnCityAcquired):
 		eBuildingStadt = gc.getInfoTypeForString("BUILDING_STADT")
 		if pCity.isHasBuilding(eBuildingStadt):

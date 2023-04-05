@@ -2008,16 +2008,19 @@ class CvEventManager:
 						PAE_Unit.doGoToNextUnit(pUnit)
 
 				# Hunter: Lager oder Beobachtungsturm bauen
-				#elif iData1 == 771:
-				#		pPlayer = gc.getPlayer(iData4)
-				#		pUnit = pPlayer.getUnit(iData5)
-				#		if iData2 == 1:
-				#				pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
-				#		elif iData2 == 2:
-				#				pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
-				#		pUnit.finishMoves()
-				#		pUnit.setImmobileTimer(3)
-				#		PAE_Unit.doGoToNextUnit(pUnit)
+				elif iData1 == 771:
+						pPlayer = gc.getPlayer(iData4)
+						pUnit = pPlayer.getUnit(iData5)
+						if iData2 == 1:
+								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+						elif iData2 == 2:
+								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
+						elif iData2 == 3:
+								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
+						pUnit.finishMoves()
+						pUnit.setImmobileTimer(3)
+						pPlayer.changeGold(-5)
+						PAE_Unit.doGoToNextUnit(pUnit)
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -3735,7 +3738,8 @@ class CvEventManager:
 								pCity = pPlot.getPlotCity()
 
 								# Unit can stop city revolt / unit city revolt
-								if pCity.getOccupationTimer() > 1:
+								iCivilWar = gc.getInfoTypeForString("BUILDING_CIVIL_WAR")
+								if pCity.getOccupationTimer() > 1 or pCity.getNumRealBuilding(iCivilWar):
 										if pUnit.movesLeft() >= 20:
 												bRhetorik = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RHETORIK"))
 												bHero = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO"))
@@ -3746,7 +3750,8 @@ class CvEventManager:
 														# if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_CITY_GARRISON1")):
 														pCity.changeOccupationTimer(-1)
 												if bRhetorik or bHero:
-														pCity.setOccupationTimer(1)
+														if pCity.getOccupationTimer(): pCity.setOccupationTimer(1)
+														if pCity.getNumRealBuilding(iCivilWar): pCity.setNumRealBuilding(iCivilWar, 0)
 														if gc.getPlayer(pUnit.getOwner()).isHuman():
 																popupInfo = CyPopupInfo()
 																popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)

@@ -679,6 +679,10 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
 					<TechType>TECH_PERSIAN_ROAD</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
@@ -1463,6 +1467,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -2068,6 +2076,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -2307,6 +2319,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -2925,6 +2941,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -3219,6 +3239,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -3573,6 +3597,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -4008,6 +4036,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -4272,6 +4304,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_REFLEXBOGEN</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -4793,6 +4829,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -5017,6 +5057,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -5271,6 +5315,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_HORSE_ARCHER</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -6083,6 +6131,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -6414,6 +6466,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -8125,6 +8181,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -8460,6 +8520,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PERSIAN_ROAD</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -8844,6 +8908,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>
@@ -9493,6 +9561,10 @@
 					<TechType>TECH_PARTHERSCHUSS</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
 			</DisableTechs>
 			<InitialCivics>
 				<CivicType>CIVIC_DESPOTISM</CivicType>
@@ -9840,6 +9912,10 @@
 				</DisableTech>
 				<DisableTech>
 					<TechType>TECH_PARTHERSCHUSS</TechType>
+					<bDisableTech>1</bDisableTech>
+				</DisableTech>
+				<DisableTech>
+					<TechType>TECH_KAMELZUCHT</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 			</DisableTechs>

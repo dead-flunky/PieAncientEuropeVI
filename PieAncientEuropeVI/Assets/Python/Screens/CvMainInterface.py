@@ -2054,27 +2054,43 @@ class CvMainInterface:
 																return
 
 												# --------------------
+												# Worker / Schürflager (wird mit Steinmetzkunst obsolet)
+												elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MASONRY")):
+																pPlot = pUnit.plot()
+																# Build Option: Lager oder Beobachtungsturm
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+																		if pPlot.getOwner() == pUnit.getOwner():
+																				iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+																				eBonus = pPlot.getBonusType(-1)
+																				if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
+																						screen.appendMultiListButton(
+																								"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
+																						screen.show("BottomButtonContainer")
+																						iCount += 1
+
+												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind
 												elif iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
 														pPlot = pUnit.plot()
 
 														# Build Option: Lager oder Beobachtungsturm
-														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
-														#		if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
-														#				if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
-														#						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY")): bArchery = True
-														#						else: bArchery = False
-														#						screen.appendMultiListButton(
-														#								"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, bArchery)
-														#						screen.show("BottomButtonContainer")
-														#						iCount += 1
-														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
-														#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
-														#				if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iUnitOwner, 2):
-														#						screen.appendMultiListButton(
-														#								"BottomButtonContainer", "Art/Interface/Buttons/Builds/button_turm.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 2, False)
-														#						screen.show("BottomButtonContainer")
-														#						iCount += 1
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+																if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
+																		if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
+																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY")): bArchery = True
+																				else: bArchery = False
+																				screen.appendMultiListButton(
+																						"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, bArchery)
+																				screen.show("BottomButtonContainer")
+																				iCount += 1
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
+																if pPlot.isHills() and pPlot.getImprovementType() == -1:
+																		if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iUnitOwner, 2):
+																				screen.appendMultiListButton(
+																						"BottomButtonContainer", "Art/Interface/Buttons/Builds/button_turm.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 2, False)
+																				screen.show("BottomButtonContainer")
+																				iCount += 1
 
 														# Info Button (range of cities)
 														bOK = False

@@ -2989,8 +2989,8 @@ def doTrojanHorse(pCity, pUnit):
 
 # PAE Feature: Auswirkungen, wenn ein General oder Held stirbt
 def doDyingGeneral(pUnit, iWinnerPlayer=-1):
-		# PROMOTION_LEADER or PROMOTION_HERO
-		if pUnit.getLeaderUnitType() > -1 or pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO")):
+		# PROMOTION_LEADER
+		if pUnit.getLeaderUnitType() > -1: # or pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO")):
 				# Inits
 				iPromoMercenary = gc.getInfoTypeForString("PROMOTION_MERCENARY")
 				iPlayer = pUnit.getOwner()
@@ -3065,11 +3065,17 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 												# Civil War (ab PAE 6.3.2)
 												PAE_City.doStartCivilWar(loopCity, 100)
 
-										# PAE 6.14
+										# PAE 6.14: -1 in jeder Stadt (Stadtstatus: Stadt)
 										if loopCity.isHasBuilding(eBuildingStadt):
 												iHappy = loopCity.getBuildingHappyChange(eBuildingClass)
 												iHappy -= 1
 												loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
+
+												if pPlayer.isHuman():
+														CyInterface().addMessage(
+															iPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
+															ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
+														)
 
 								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
@@ -3116,7 +3122,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 								szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText(" +1[ICON_HAPPY]", ())
 								CyInterface().addMessage(
 										iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
-										ColorTypes(7), -1, -1, False, False
+										ColorTypes(8), -1, -1, False, False
 								)
 
 								(loopCity, pIter) = pWinnerPlayer.firstCity(False)
@@ -3127,6 +3133,12 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 														#if iHappy < 0:
 														iHappy += 1
 														loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
+
+														if pWinnerPlayer.isHuman():
+																CyInterface().addMessage(
+																	iWinnerPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
+																	ColorTypes(8), loopCity.getX(), loopCity.getY(), True, True
+																)
 
 										(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
 

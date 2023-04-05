@@ -222,6 +222,7 @@ class CvGameUtils:
 																				if loopPlot.getImprovementType() == -1:
 																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 
+
 								# Auswanderer
 								elif iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
 										iMapW = gc.getMap().getGridWidth()
@@ -1641,37 +1642,49 @@ class CvGameUtils:
 
 
 						# Hunter (771): Lager oder Beobachtungsturm
-						#if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
-						#		# Lager / Camp
-						#		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
-						#				if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
-						#						if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
-						#								pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
-						#								pUnit.finishMoves()
-						#								return True
+						if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+								# Lager / Camp
+								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+										if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
+												if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
+														pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+														pUnit.finishMoves()
+														return True
 								# Beobachtungsturm / Spähturm / Look-out
-								#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
-								#		if pPlot.isHills() and pPlot.getImprovementType() == -1:
-								#				if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iOwner, 2):
-								#						# Check, ob im Umkreis Türme sind
-								#						bTurm = False
-								#						eTurm = gc.getInfoTypeForString("IMPROVEMENT_TURM")
-								#						iRange = 3
-								#						iX = pPlot.getX()
-								#						iY = pPlot.getY()
-								#						for i in range(-iRange, iRange+1):
-								#								for j in range(-iRange, iRange+1):
-								#										loopPlot = plotXY(iX, iY, i, j)
-								#										if loopPlot is not None and not loopPlot.isNone():
-								#												if loopPlot.getImprovementType() == eTurm:
-								#														bTurm = True
-								#														break
-								#								if bTurm: break
+								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
+										if pPlot.isHills() and pPlot.getImprovementType() == -1 and pPlot.getBonusType(-1) == -1:
+												if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iOwner, 2):
+														# Check, ob im Umkreis Türme sind
+														bTurm = False
+														eTurm = gc.getInfoTypeForString("IMPROVEMENT_TURM")
+														iRange = 3
+														iX = pPlot.getX()
+														iY = pPlot.getY()
+														for i in range(-iRange, iRange+1):
+																for j in range(-iRange, iRange+1):
+																		loopPlot = plotXY(iX, iY, i, j)
+																		if loopPlot is not None and not loopPlot.isNone():
+																				if loopPlot.getImprovementType() == eTurm:
+																						bTurm = True
+																						break
+																if bTurm: break
 
-								#						if not bTurm:
-								#								pPlot.setImprovementType(eTurm)
-								#								pUnit.finishMoves()
-								#								return True
+														if not bTurm:
+																pPlot.setImprovementType(eTurm)
+																pUnit.finishMoves()
+																return True
+
+						# Worker (771): Schürflager
+						if iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+								if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+												if pPlot.getOwner() == pUnit.getOwner():
+														iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+														eBonus = pPlot.getBonusType(-1)
+														if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
+																pPlot.setImprovementType(iLager)
+																pUnit.finishMoves()
+																return True
 
 
 						# Barbs -------------------------
@@ -3663,6 +3676,8 @@ class CvGameUtils:
 										return text
 								# Beobachtungsturm
 								if iData2 == 2: return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
+								# Schürflager
+								if iData2 == 3: return CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ()) + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
 
 						# CITY_TAB replacements
 						elif iData1 == 88000:
