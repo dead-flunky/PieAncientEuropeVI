@@ -525,7 +525,7 @@ class CvWorldBuilderScreen:
 						#else:
 						#		CvUtil.removeScriptData(self.m_pCurrentPlot, "r")
 						#		self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
-								self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
+						self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
 				elif self.iPlayerAddMode == "River":
 						if self.m_pRiverStartPlot == self.m_pCurrentPlot:
 								self.m_pRiverStartPlot = -1

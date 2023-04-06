@@ -5048,11 +5048,13 @@ class CvEventManager:
 												if not pCity.isHasReligion(iReligion):
 														if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_ISLAM")):
 																#if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JUDAISM")): # hier solls erlaubt sein
-																if PAE_Christen.convertCity(pCity): bHeresy = True
+																if PAE_Christen.convertCity(pCity):
+																		bHeresy = True
 
 										# Bei monotheistisch beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
 										if not bHeresy and pCity.isHasReligion(iReligion):
-												if PAE_Christen.removePagans(pCity, iReligion): bHeresy = True
+												if PAE_Christen.removePagans(pCity, iReligion):
+														bHeresy = True
 
 				# PAE Provinzcheck
 				if bCheckCityState:
@@ -5063,7 +5065,8 @@ class CvEventManager:
 				
 				# PAE 6.14: Allgemeine Religionskonflikte
 				if not bHeresy:
-						if PAE_Christen.doReligionsKonflikt(pCity): bHeresy = True
+					if PAE_Christen.doReligionsKonflikt(pCity):
+						bHeresy = True
 
 				# PAE Debug Mark 10
 				#"""

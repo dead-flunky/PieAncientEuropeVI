@@ -766,7 +766,7 @@ class WBPlotScreen:
 										#else:
 										#		pPlot.setFeatureType(iFeature, iVariety)
 										#		CvUtil.removeScriptData(pPlot, "r")
-												pPlot.setFeatureType(iFeature, iVariety)
+										pPlot.setFeatureType(iFeature, iVariety)
 								else:
 										pPlot.setFeatureType(-1, 0)
 										#CvUtil.removeScriptData(pPlot, "r")
@@ -790,7 +790,7 @@ class WBPlotScreen:
 												#		pLoopPlot.setFeatureType(iFeature, iVariety)
 												#		if CvRiverUtil.isRiverFeature(iOldFeature):
 												#				CvUtil.removeScriptData(pLoopPlot, "r")
-														pLoopPlot.setFeatureType(iFeature, iVariety)
+												pLoopPlot.setFeatureType(iFeature, iVariety)
 										else:
 												pLoopPlot.setFeatureType(-1, 0)
 												#CvUtil.removeScriptData(pLoopPlot, "r")
