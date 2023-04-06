@@ -66,7 +66,7 @@ import CvPlatyBuilderScreen
 ## Platy WorldBuilder ##
 
 # PAE River Tiles / navigable rivers (Ramk)
-import CvRiverUtil
+#import CvRiverUtil
 # Trade and cultivation (Pie, Boggy, Flunky)
 import PAE_Trade
 import PAE_Cultivation
@@ -2044,10 +2044,10 @@ class CvEventManager:
 				CvCameraControls.g_CameraControls.onUpdate(fDeltaTime)
 
 				# PAE - River tiles
-				if self.bRiverTiles_NeedUpdate:
-						self.bRiverTiles_NeedUpdate = False
-						CvRiverUtil.initRiverTiles(False)
-						CvRiverUtil.addGoldNearbyRiverTiles()
+				#if self.bRiverTiles_NeedUpdate:
+				#		self.bRiverTiles_NeedUpdate = False
+				#		CvRiverUtil.initRiverTiles(False)
+				#		CvRiverUtil.addGoldNearbyRiverTiles()
 				# PAE - River tiles end
 
 		def onWindowActivation(self, argsList):

@@ -13,9 +13,9 @@ import WBUnitScreen
 import WBPlayerScreen
 import WBTeamScreen
 import WBInfoScreen
-import WBRiverScreen
+#import WBRiverScreen
 import CvPlatyBuilderScreen
-import CvRiverUtil
+#import CvRiverUtil
 import Popup
 
 # TODO remove
@@ -572,8 +572,8 @@ class WBPlotScreen:
 								if iPlayer == -1:
 										iPlayer = CyGame().getActivePlayer()
 								WBInfoScreen.WBInfoScreen().interfaceScreen(iPlayer)
-						if iIndex == 12:
-								WBRiverScreen.WBRiverScreen().interfaceScreen(pPlot)
+						#if iIndex == 12:
+						#		WBRiverScreen.WBRiverScreen().interfaceScreen(pPlot)
 
 				elif inputClass.getFunctionName() == "NextPlotUpButton":
 						pNewPlot = CyMap().plot(pPlot.getX(), pPlot.getY() + 1)
@@ -760,15 +760,16 @@ class WBPlotScreen:
 								iVariety = 0
 						if iEditType == 0:
 								if bAdd:
-										pPlot.setFeatureType(-1, 0)
-										if CvRiverUtil.isRiverFeature(iFeature):
-												CvRiverUtil.addRiverFeatureSimple(pPlot, iFeature, iVariety)
-										else:
+										#pPlot.setFeatureType(-1, 0)
+										#if CvRiverUtil.isRiverFeature(iFeature):
+										#		CvRiverUtil.addRiverFeatureSimple(pPlot, iFeature, iVariety)
+										#else:
+										#		pPlot.setFeatureType(iFeature, iVariety)
+										#		CvUtil.removeScriptData(pPlot, "r")
 												pPlot.setFeatureType(iFeature, iVariety)
-												CvUtil.removeScriptData(pPlot, "r")
 								else:
 										pPlot.setFeatureType(-1, 0)
-										CvUtil.removeScriptData(pPlot, "r")
+										#CvUtil.removeScriptData(pPlot, "r")
 						else:
 								for i in xrange(CyMap().numPlots()):
 										pLoopPlot = CyMap().plotByIndex(i)
@@ -783,15 +784,16 @@ class WBPlotScreen:
 												if iFeature > -1 and bSensibility and not pLoopPlot.canHaveFeature(iFeature):
 														pLoopPlot.setFeatureType(iOldFeature, iOldVariety)
 														continue
-												if CvRiverUtil.isRiverFeature(iFeature):
-														CvRiverUtil.addRiverFeatureSimple(pLoopPlot, iFeature, iVariety)
-												else:
+												#if CvRiverUtil.isRiverFeature(iFeature):
+												#		CvRiverUtil.addRiverFeatureSimple(pLoopPlot, iFeature, iVariety)
+												#else:
+												#		pLoopPlot.setFeatureType(iFeature, iVariety)
+												#		if CvRiverUtil.isRiverFeature(iOldFeature):
+												#				CvUtil.removeScriptData(pLoopPlot, "r")
 														pLoopPlot.setFeatureType(iFeature, iVariety)
-														if CvRiverUtil.isRiverFeature(iOldFeature):
-																CvUtil.removeScriptData(pLoopPlot, "r")
 										else:
 												pLoopPlot.setFeatureType(-1, 0)
-												CvUtil.removeScriptData(pLoopPlot, "r")
+												#CvUtil.removeScriptData(pLoopPlot, "r")
 						self.placeFeature()
 						self.placeScript()
 

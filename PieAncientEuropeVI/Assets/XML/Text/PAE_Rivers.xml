@@ -74,18 +74,18 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TERRAIN_RIVER</Tag>
-    <English>Bank</English>
+    <English>River</English>
     <French>
-<Text>Rive</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Rivi&#232;re</Text><Gender>Female</Gender><Plural>0</Plural>
     </French>
     <German>
-<Text>Ufer</Text><Gender>Neuter</Gender><Plural>0</Plural>
+<Text>Fluss</Text><Gender>Neuter</Gender><Plural>0</Plural>
     </German>
     <Italian>
-<Text>Riva</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>Fiume</Text><Gender>Male</Gender><Plural>0</Plural>
     </Italian>
     <Spanish>
-<Text>Ribera</Text><Gender>Female</Gender><Plural>0</Plural>
+<Text>R&#237;o</Text><Gender>Male</Gender><Plural>0</Plural>
     </Spanish>
   </TEXT>
   <TEXT>
@@ -98,6 +98,22 @@
     <Italian>Guado</Italian>
     <Spanish>Vado</Spanish>
   </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAKE</Tag>
+        <English>Fresh Water Lake</English>
+        <French>Lac d'eau douce</French>
+        <German>S&#252;ßwassersee</German>
+        <Italian>Lago d'acqua dolce</Italian>
+        <Spanish>Lago de agua dulce</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAKE_PEDIA</Tag>
+        <English>[TAB]Lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They're fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</English>
+        <French>[TAB]Lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They're fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</French>
+        <German>[TAB]Seen finden sich typischerweise in Gebirgsketten oder dort, wo ihr Bett am Ende der letzten Eiszeit von Gletschern ausgeschliffen wurde. Sie sind S&#252;&#223;wassergew&#228;sser, gr&#246;&#223;er als Teiche und oft Teil eines Flusssystems. [NEWLINE]Meist bieten S&#252;&#223;wasserseen hervorragende Fischfanggr&#252;nde und die Fahrt &#252;ber die Seen ist im Vergleich zu den Str&#246;mungen der Fl&#252;sse ruhig, auch wenn es in gro&#223;en Seen so st&#252;rmisch zugehen kann wie im Ozean. [NEWLINE]Da gr&#246;&#223;ere Seen genug Wasser enthalten, um das lokale Klima zu mildern, waren sie schon immer ein begehrter Lebensraum.[NEWLINE]</German>
+        <Italian>[TAB]Lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They're fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</Italian>
+        <Spanish>[TAB]Lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They're fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</Spanish>
+    </TEXT>
   <TEXT>
     <Tag>TXT_KEY_FEATURE_RIVER</Tag>
     <English>Stream</English>
