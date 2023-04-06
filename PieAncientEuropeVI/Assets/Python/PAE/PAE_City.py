@@ -3600,7 +3600,11 @@ def doFreeTechMissionary(iTechType, iPlayer):
 
 				if lCities:
 						iRandCity = lCities[CvUtil.myRandom(len(lCities), "doFreeTechMissionary")]
-						NewUnit = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), UnitAITypes.UNITAI_MISSIONARY, DirectionTypes.DIRECTION_SOUTH)
+						if iUnit == gc.getInfoTypeForString("UNIT_SETTLER"): 
+								iUnitAIType = UnitAITypes.UNITAI_SETTLE
+						else: 
+								iUnitAIType = UnitAITypes.UNITAI_MISSIONARY
+						NewUnit = pPlayer.initUnit(iUnit, iRandCity.getX(), iRandCity.getY(), iUnitAIType, DirectionTypes.DIRECTION_SOUTH)
 
 						# Matriarchist
 						if iTechType == gc.getInfoTypeForString("TECH_FRUCHTBARKEIT"):

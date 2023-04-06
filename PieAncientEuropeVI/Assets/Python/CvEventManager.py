@@ -4251,7 +4251,7 @@ class CvEventManager:
 				if gc.getGame().getHandicapType() > 5 and not pPlayer.isHuman():
 						PAE_City.doFreeTechSettler(iTechType, pPlayer)
 
-				# Tech und freie Einheit / Free Unit
+				# Tech und freie Einheit / Free Unit (676)
 				PAE_City.doFreeTechMissionary(iTechType, iPlayer)
 
 				# Palast bei Tech sofort setzen
