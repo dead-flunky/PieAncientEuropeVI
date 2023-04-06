@@ -764,54 +764,64 @@ class CvTechChooser:
 						j = 0
 
 						# Techs - PAE Special features made possible via python (eg. free units, unit formations, obsolete units, reservists)
-						if i == gc.getInfoTypeForString("TECH_RELIGION_NORDIC"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_nordic.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_CELTIC"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_celtic.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_SUMER"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_sumer.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_EGYPT"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_egypt.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_PHOEN"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_phoen.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_GREEK"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_greek.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_HINDU"):
-								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/Buttons/Units/Missionary_Hindu.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,3",
-																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_RELIGION_ROME"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_rome.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_DUALISMUS"):
-								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_zoro.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 698, 698, False)
-								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_FRUCHTBARKEIT"):
+						if i == gc.getInfoTypeForString("TECH_FRUCHTBARKEIT"):
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Corporations/button_unit_corp2.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 676, False)
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 1, False)
 								fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_SENSE"):
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Corporations/button_unit_corp3.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 676, False)
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 1, False)
 								fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_GLADIATOR"):
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Corporations/button_unit_corp5.dds", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 676, False)
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 1, False)
 								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_NORDIC"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_nordic.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_CELTIC"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_celtic.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_SUMER"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_sumer.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_EGYPT"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_egypt.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_PHOEN"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_phoen.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_GREEK"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_greek.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_HINDU"):
+								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/Buttons/Units/Missionary_Hindu.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,3",
+																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_RELIGION_ROME"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_rome.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_DUALISMUS"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_zoro.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_DUALISMUS"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_zoro.dds", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_COLONIZATION"):
+								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5", iX + fX,
+																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 3, False)
+								fX += X_INCREMENT
+
+						# Siegestempel und -stelen
 						elif i == gc.getInfoTypeForString("TECH_BUCHSTABEN"):
 								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_SIEGESSTELE")).getButton(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 2, False)
@@ -820,6 +830,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")).getButton(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 3, False)
 								fX += X_INCREMENT
+
 						elif i == gc.getInfoTypeForString("TECH_KRIEGERETHOS"):
 								screen.addDDSGFCAt("", szTechRecord, gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_SIEGESTEMPEL")).getButton(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 4, False)
@@ -829,6 +840,7 @@ class CvTechChooser:
 								iPromotion = gc.getInfoTypeForString("PROMOTION_RANG_GER_1")
 								screen.addDDSGFCAt("", szTechRecord, gc.getPromotionInfo(iPromotion).getButton(), iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 5, False)
 								fX += X_INCREMENT
+
 						# Unit Formations und Rang/Rank
 						elif i == gc.getInfoTypeForString("TECH_BEWAFFNUNG3"):
 								iPromotion = gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_1")

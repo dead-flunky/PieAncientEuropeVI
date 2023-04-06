@@ -8389,6 +8389,14 @@
 		<Spanish>Este bosque fue talado para la construcci&#243;n de la empalizada.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_TECH_UNIT_3</Tag>
+		<English>[ICON_BULLET]A free settler (enables another city to be founded).</English>
+		<French>[ICON_BULLET]Un colon libre (permet de fonder une autre ville).</French>
+		<German>[ICON_BULLET]Ein freier Siedler (erm&#246;glicht die Gr&#252;ndung einer weiteren Stadt).</German>
+		<Italian>[ICON_BULLET]Un colono libero (consente la fondazione di un'altra citt&#224;).</Italian>
+		<Spanish>[ICON_BULLET]Un colono libre (permite fundar otra ciudad).</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREAT_PROPHET_HELP</Tag>
 		<English>[ICON_BULLET]Can relocate Holy Cities of polytheistic religions to the capital. (Requirement: ownership of the Holy City, religion must be spread in city)</English>
 		<French>[ICON_BULLET]Peut d&#233;placer les villes saintes des religions polyth&#233;istes vers la capitale. (Exigence : propri&#233;t&#233; de la Ville Sainte, la religion doit &#234;tre r&#233;pandue dans la capitale)</French>

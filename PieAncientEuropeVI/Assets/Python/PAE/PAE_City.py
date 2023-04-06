@@ -3584,6 +3584,7 @@ def doFreeTechMissionary(iTechType, iPlayer):
 				gc.getInfoTypeForString("TECH_FRUCHTBARKEIT"): gc.getInfoTypeForString("UNIT_EXECUTIVE_2"),
 				gc.getInfoTypeForString("TECH_SENSE"): gc.getInfoTypeForString("UNIT_EXECUTIVE_3"),
 				gc.getInfoTypeForString("TECH_GLADIATOR"): gc.getInfoTypeForString("UNIT_EXECUTIVE_5"),
+				gc.getInfoTypeForString("TECH_COLONIZATION"): gc.getInfoTypeForString("UNIT_SETTLER"),
 		}
 
 		# Einheit erstellen

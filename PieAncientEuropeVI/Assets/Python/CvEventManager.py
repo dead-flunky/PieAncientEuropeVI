@@ -687,6 +687,8 @@ class CvEventManager:
 																		if iDamage > 0:
 																				PAE_Unit.doTrojanHorse(pCity, pUnit)
 
+				# 698 FREI (ehemals freie Missionare durch Tech: nun bei 676)
+
 				# Unit bekommt Edle Ruestung
 				elif iData1 == 699:
 						#pPlot = CyMap().plot(iData2, iData3)
@@ -2022,6 +2024,7 @@ class CvEventManager:
 						pPlayer.changeGold(-5)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
+				# iData1 698 wieder frei
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -3741,7 +3744,8 @@ class CvEventManager:
 								iCivilWar = gc.getInfoTypeForString("BUILDING_CIVIL_WAR")
 								if pCity.getOccupationTimer() > 1 or pCity.getNumRealBuilding(iCivilWar):
 										if pUnit.movesLeft() >= 20:
-												bRhetorik = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RHETORIK"))
+												#bRhetorik = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RHETORIK"))
+												bGeneral = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER"))
 												bHero = pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_HERO"))
 												if pUnit.isMilitaryHappiness() and pCity.getOccupationTimer() > 2:
 														# if pUnit.getOwner() == pCity.getOwner():  # -> allies can help ;)
@@ -3749,7 +3753,7 @@ class CvEventManager:
 														# if PyInfo.UnitInfo(pUnit.getUnitType()).getMoves() == 1:
 														# if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_CITY_GARRISON1")):
 														pCity.changeOccupationTimer(-1)
-												if bRhetorik or bHero:
+												if bGeneral or bHero:
 														if pCity.getOccupationTimer(): pCity.setOccupationTimer(1)
 														if pCity.getNumRealBuilding(iCivilWar): pCity.setNumRealBuilding(iCivilWar, 0)
 														if gc.getPlayer(pUnit.getOwner()).isHuman():

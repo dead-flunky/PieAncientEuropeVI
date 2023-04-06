@@ -3269,8 +3269,19 @@ class CvGameUtils:
 
 						# ID 675 vergeben durch Revolten-PopUp (CvScreensInterface - popupRevoltPayment)
 
+						# 676 Freie UNIT durch TECH
 						elif iData1 == 676:
-								return CyTranslator().getText("TXT_KEY_MESSAGE_TECH_UNIT_1", ())
+								# 1 = Kultisten
+								if iData2 == 1:
+										return CyTranslator().getText("TXT_KEY_MESSAGE_TECH_UNIT_1", ())
+								# 2 = Missionare (Religion)
+								elif iData2 == 2:
+										return CyTranslator().getText("TXT_KEY_MESSAGE_TECH_UNIT_2", ())
+								# 3 = Siedler
+								elif iData2 == 3:
+										return CyTranslator().getText("TXT_KEY_MESSAGE_TECH_UNIT_3", ())
+
+						# Goldkarren
 						elif iData1 == 677:
 								if iData2 == 1:
 										return CyTranslator().getText("TXT_KEY_MESSAGE_GOLDKARREN", ())
@@ -3320,9 +3331,8 @@ class CvGameUtils:
 						# Trojanisches Pferd
 						elif iData1 == 697:
 								return CyTranslator().getText("TXT_KEY_BUTTON_TROJAN_HORSE", ())
-						# Freie Unit bei Tech (Religion)
-						elif iData1 == 698:
-								return CyTranslator().getText("TXT_KEY_MESSAGE_TECH_UNIT_2", ())
+						# 698 ist FREI (ehemals freie Missionare: nun bei 676)
+						# elif iData1 == 698:
 						# Unit -> Edle Ruestung
 						elif iData1 == 699:
 								if bOption:
@@ -3678,6 +3688,8 @@ class CvGameUtils:
 								if iData2 == 2: return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
 								# Schürflager
 								if iData2 == 3: return CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ()) + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
+
+						# iData1 698 wieder frei
 
 						# CITY_TAB replacements
 						elif iData1 == 88000:
