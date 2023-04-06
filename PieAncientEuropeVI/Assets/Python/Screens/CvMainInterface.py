@@ -2065,7 +2065,7 @@ class CvMainInterface:
 																				eBonus = pPlot.getBonusType(-1)
 																				if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
 																						screen.appendMultiListButton(
-																								"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
+																								"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
 																						screen.show("BottomButtonContainer")
 																						iCount += 1
 
