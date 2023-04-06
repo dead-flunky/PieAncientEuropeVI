@@ -200,7 +200,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/Priest.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_PROPHET</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -229,7 +229,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/Artist.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_ARTIST</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -258,7 +258,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/cityicon_scientist.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_SCIENTIST</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -287,7 +287,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/merchant.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_MERCHANT</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -316,7 +316,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/engineer.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_ENGINEER</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>3</iYield>
@@ -341,7 +341,7 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/cityicon_spy.dds</Texture>
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SPY</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
