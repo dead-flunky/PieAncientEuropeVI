@@ -608,7 +608,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_STONE</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -619,7 +619,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_SALT</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -630,7 +630,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_ELEKTRON</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -641,7 +641,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_OBSIDIAN</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -652,7 +652,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_GOLD</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
@@ -663,7 +663,7 @@
 				<BonusTypeStruct>
 					<BonusType>BONUS_COPPER</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
-					<bBonusTrade>0</bBonusTrade>
+					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
