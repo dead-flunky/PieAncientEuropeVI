@@ -3617,7 +3617,7 @@ def huntingResult(pLoser, pWinner):
 				CityArray = []
 				(loopCity, pIter) = pWinnerPlayer.firstCity(False)
 				while loopCity:
-						if huntingDistance(loopCity.plot(), pWinner.plot()):
+						if huntingDistance(loopCity.plot(), pWinner.plot()) or huntingDistance(loopCity.plot(), pLoser.plot()):
 								CityArray.append(loopCity)
 						(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
 
@@ -3634,7 +3634,7 @@ def huntingResult(pLoser, pWinner):
 						CityArray[iCity].changeFood(iFoodAdd)
 						if pWinnerPlayer.isHuman():
 								CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_ADD_FOOD", (pWinner.getName(),
-																																																													 CityArray[iCity].getName(), iFoodAdd)), None, 2, pLoser.getButton(), ColorTypes(13), pLoser.getX(), pLoser.getY(), True, True)
+								CityArray[iCity].getName(), iFoodAdd)), None, 2, pLoser.getButton(), ColorTypes(13), pLoser.getX(), pLoser.getY(), True, True)
 
 
 def huntingDistance(pPlot1, pPlot2):
@@ -3714,10 +3714,10 @@ def doRenegadeUnit(pLoser, pWinner, pLoserPlayer, pWinnerPlayer):
 
 				if pWinnerPlayer.isHuman():
 						CyInterface().addMessage(pWinnerPlayer.getID(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_DESERTION_1",
-																																														(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(14), pWinner.getX(), pWinner.getY(), False, False)
+						(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(14), pWinner.getX(), pWinner.getY(), False, False)
 				if pLoserPlayer.isHuman():
 						CyInterface().addMessage(pLoserPlayer.getID(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_DESERTION_2",
-																																													 (gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(12), pWinner.getX(), pWinner.getY(), False, False)
+						(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(12), pWinner.getX(), pWinner.getY(), False, False)
 				bUnitDone = True
 
 				# ***TEST***
@@ -3736,10 +3736,10 @@ def doRenegadeUnit(pLoser, pWinner, pLoserPlayer, pWinnerPlayer):
 								NewUnit.finishMoves()
 								if pWinnerPlayer.isHuman():
 										CyInterface().addMessage(pWinnerPlayer.getID(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_SLAVERY_1",
-																																																		(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(14), 0, 0, False, False)
+										(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(14), 0, 0, False, False)
 								if pLoserPlayer.isHuman():
 										CyInterface().addMessage(pLoserPlayer.getID(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_SLAVERY_2",
-																																																	 (gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(12), 0, 0, False, False)
+										(gc.getUnitInfo(iLoserUnitType).getDescription(), 0)), None, 2, None, ColorTypes(12), 0, 0, False, False)
 								bUnitDone = True
 								# ***TEST***
 								#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST", ("Gewinner bekommt Sklave (Zeile 2627)", 1)), None, 2, None, ColorTypes(10), 0, 0, False, False)

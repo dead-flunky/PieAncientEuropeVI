@@ -3685,9 +3685,15 @@ class CvGameUtils:
 										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
 										return text
 								# Beobachtungsturm
-								if iData2 == 2: return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
+								if iData2 == 2: 
+										return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
 								# Schürflager
-								if iData2 == 3: return CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ()) + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
+								if iData2 == 3:
+										text = u"<color=155,255,255,0>%s</color> " % CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ())
+										text = text + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
+										text = text + CyTranslator().getText("[NEWLINE]", ())
+										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
+										return text
 
 						# iData1 698 wieder frei
 

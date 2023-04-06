@@ -642,11 +642,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_CAMP_HUNTER</Tag>
-		<English>[ICON_BULLET]Unit is immobile for 2 turns[NEWLINE]Cost: 0 [ICON_GOLD]</English>
-		<French>[ICON_BULLET]L'unit&#233; est immobile pendant 2 tours[NEWLINE]Co&#251;t : 0 [ICON_GOLD]</French>
-		<German>[ICON_BULLET]Einheit ist 2 Runden unbeweglich[NEWLINE]Kosten: 0 [ICON_GOLD]</German>
-		<Italian>[ICON_BULLET]L'unit&#224; &#232; immobile per 2 turni[NEWLINE]Costo: 0 [ICON_GOLD]</Italian>
-		<Spanish>[ICON_BULLET]La unidad est&#225; inm&#243;vil durante 2 turnos[NEWLINE]Costo: 0 [ICON_GOLD]</Spanish>
+		<English>[ICON_BULLET]Unit is immobile for 2 turns[NEWLINE]Cost: 5 [ICON_GOLD]</English>
+		<French>[ICON_BULLET]L'unit&#233; est immobile pendant 2 tours[NEWLINE]Co&#251;t : 5 [ICON_GOLD]</French>
+		<German>[ICON_BULLET]Einheit ist 2 Runden unbeweglich[NEWLINE]Kosten: 5 [ICON_GOLD]</German>
+		<Italian>[ICON_BULLET]L'unit&#224; &#232; immobile per 2 turni[NEWLINE]Costo: 5 [ICON_GOLD]</Italian>
+		<Spanish>[ICON_BULLET]La unidad est&#225; inm&#243;vil durante 2 turnos[NEWLINE]Costo: 5 [ICON_GOLD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_RELIGION_UNIT_BUILT_INFO_1</Tag>

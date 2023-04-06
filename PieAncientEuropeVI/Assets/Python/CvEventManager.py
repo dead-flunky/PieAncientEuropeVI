@@ -2020,7 +2020,7 @@ class CvEventManager:
 						elif iData2 == 3:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
 						pUnit.finishMoves()
-						pUnit.setImmobileTimer(3)
+						pUnit.setImmobileTimer(2)
 						pPlayer.changeGold(-5)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
