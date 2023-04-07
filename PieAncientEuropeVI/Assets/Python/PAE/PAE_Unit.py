@@ -2780,7 +2780,8 @@ def doAutomatedRanking(pWinner, pLoser):
 						pLoser.getOwner() == gc.getBARBARIAN_PLAYER() or
 						pLoser.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL or
 						pLoser.getUnitAIType() == UnitAITypes.UNITAI_EXPLORE
-					): return False
+					):
+					return False
 
 				if not pWinner.isHasPromotion(LPromo[-1][0]):
 						for iPromo, iChance in LPromo:
@@ -3026,7 +3027,7 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 				# 2. Vergabe der Promo
 				for i in range(iNumUnits):
 						pLoopUnit = pPlot.getUnit(i)
-						if pLoopUnit != None and pLoopUnit.getOwner() == iPlayer:
+						if pLoopUnit is not None and pLoopUnit.getOwner() == iPlayer:
 								#if i % iNumLeadersOnPlot == 0:
 								pLoopUnit.setHasPromotion(iPromoMercenary, True)
 

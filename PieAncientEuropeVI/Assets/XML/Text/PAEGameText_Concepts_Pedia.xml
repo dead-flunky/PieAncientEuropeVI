@@ -132,7 +132,7 @@ Therefore, the vassal-feature in PAE has been expanded.
 
 [H1]To become a vassal[\H1]
 In PAE, it is now easier to become a vassal. You have just conquered a city of a player who has only 4 or fewer cities, it offers to be a vassal.
-Probability 1: 120% – (20x number of cities)%
+Probability 1: 120% - (20x number of cities)%
 Probability 2: The loser's civilization strength points (x2) are less than the winner's strength points
 This should help maintain a certain strength of the vassals. The same applies to human players. Now it is possible in PAE, as a human player to become a vassal of the AI.
 
@@ -161,7 +161,7 @@ Aucun pays ne servirait &#233;ternellement un autre royaume. Le concept de Vassa
 
 [H1]Devenir un vassal[\H1]
 Dans PAE, il est plus facile de devenir un vassal. Si vous capturez la ville d'une nation qui en compte 4 ou moins, celle-ci propose de devenir votre vassal.
-Probabilit&#233; 1: 120% – (20x le nombre de villes)%
+Probabilit&#233; 1: 120% - (20x le nombre de villes)%
 Probabilit&#233; 2: les points de force de civilisation du perdant (x2) sont inf&#233;rieurs aux points de force du gagnant
 Cela devrait permettre de maintenir les vassaux &#224; un certain niveau. Les m&#234;mes conditions s'appliquent aux joueurs humains. Il est donc possible &#224; un joueur humain de devenir le vassal d'un joueur IA.
 
@@ -188,7 +188,7 @@ Kein Land m&#246;chte ewig als Vasall einem anderen Reich dienen. Vasallen sind 
 
 [H1]Ein Vasall werden[\H1]
 In PAE ist es nun leichter einen Vasallen zu bekommen. Hat man soeben eine Stadt eines Spielers erobert, der nur mehr 4 oder weniger St&#228;dte besitzt, bietet er an, Vasall zu werden. 
-Wahrscheinlichkeit 1: 120% – (20xAnzahl der St&#228;dte)%
+Wahrscheinlichkeit 1: 120% - (20x Anzahl der St&#228;dte)%
 Wahrscheinlichkeit 2: Civilizations-St&#228;rkepunkte des Verlierers (x2) sind kleiner als die St&#228;rkepunkte des Gewinners
 Dies soll helfen, dass die Vasallen eine gewisse St&#228;rke beibehalten. Das gleiche gilt auch f&#252;r menschliche Spieler. Nun ist es in PAE m&#246;glich, auch als Mensch Vasall der KI zu werden.
 
@@ -217,7 +217,7 @@ Nessun paese potrebbe sempre servire come un vassallo di un altro regno . Vassal
 
 [H1] Un vassallo [\H1]
 In PAE , ora &#232; pi&#249; facile ottenere un vassallo . Se avete appena conquistato una citt&#224; di un giocatore che ha solo 4 o meno citt&#224; , offre di diventare un vassallo .
-Probabilit&#224; 1: 120% – (20x numero di citt&#224;)%
+Probabilit&#224; 1: 120% - (20x numero di citt&#224;)%
 Probabilit&#224; 2: i punti di forza della civilt&#224; del perdente (x2) sono inferiori ai punti di forza del vincitore
 Ci&#242; dovrebbe contribuire a che il vassallo mantenere una certa forza . Lo stesso vale per i giocatori umani . Ora &#232; possibile in PAE essere come un essere umano vassallo del AI .
 
@@ -247,7 +247,7 @@ Por ese motivo la funci&#243;n de vasallaje en PAE se ha ampliado.
 
 [H1]Para convertirse en vasallo[\H1]
 En PAE, es f&#225;cil convertirse en vasallo. Solo tienes que conquistar una ciudad de un jugador que tiene 4 ciudades o menos, entonces se ofrece a ser un vasallo.
-Probabilidad 1: 120% – (20 veces el n&#250;mero de ciudades)%
+Probabilidad 1: 120% - (20 veces el n&#250;mero de ciudades)%
 Probabilidad 2: los puntos de fuerza de civilizaci&#243;n del perdedor (x2) son menores que los puntos de fuerza del ganador
 Esto ayuda a que los vasallos mantengan cierta fuerza. Lo mismo se aplica a los jugadores humanos. En PAE ahora es posible, que un jugador humano se convierta en vasallo de la IA.
 
@@ -528,7 +528,7 @@ Las bonificaciones [ICON_UNHAPPY] o [ICON_HAPPY] caducan con el tiempo (probabil
     </English>
     <French>
 [H1]Brouillard de guerre[\H1]
- Jusqu'&#224; la renaissance, les cartes &#233;taient tr&#232;s impr&#233;cises. Dans ce mod, toutes les cases redeviennent noires et inexplor&#233;es si elles ne sont plus dans la ligne de vue de vos unit&#233;s ou dans votre zone d'influence. Jusqu'&#224; l'antiquit&#233; tardive et la d&#233;couverte de la "Cartographie routi&#232;re”, la carte restant alors sous le brouillard de guerre ordinaire &#224; Civilisation IV.
+ Jusqu'&#224; la renaissance, les cartes &#233;taient tr&#232;s impr&#233;cises. Dans ce mod, toutes les cases redeviennent noires et inexplor&#233;es si elles ne sont plus dans la ligne de vue de vos unit&#233;s ou dans votre zone d'influence. Jusqu'&#224; l'antiquit&#233; tardive et la d&#233;couverte de la "Cartographie routi&#232;re", la carte restant alors sous le brouillard de guerre ordinaire &#224; Civilisation IV.
 
  [H1]Cartogramme[\H1]
  Les cartes ont longtemps servi &#224; la description de points de rep&#232;res. Ces cartes &#233;taient tr&#232;s impr&#233;cises, mais reportaient les villes importantes et les trac&#233;s de c&#244;tes. Avec cette technologie, les capitales et les c&#244;tes restent visibles sous le brouillard de guerre.
@@ -5728,7 +5728,7 @@ Auswirkungen einer gro&#223;en Rebellion (mindestens die H&#228;lfte des urspr&#
 [H1]Unit&#224;[\H1]
 [ICON_BULLET] Un enorme esercito pu&#242; essere ribelle ( barbaro ) .
 
-Condizioni di aggregazione ( ogni 3 ° turno , per scatola ) :
+Condizioni di aggregazione ( ogni 3� turno , per scatola ) :
 [ICON_BULLET] Almeno 40 ( per il giocatore del computer : 60) unit&#224; militari ( unit&#224; d'assedio e di fornitura escluse)
 [ICON_BULLET] Ogni unit&#224; : +1 %
 [ICON_BULLET] In guerra con almeno un CIV : -20 %
@@ -5918,7 +5918,7 @@ Ce message peut appara&#238;tre quand vous jouez vos propres sc&#233;narios et c
 2) S&#233;lectionner une autre r&#233;solution d'&#233;cran dans les options de Civ4
 3) V&#233;rifiez bien quand le fichier .ini &#224; la racine du mod PAE il y a bien NoCustomArt=1 et NoCustomAssets=1
 
-[ICON_BULLET] un message "GFC-Error” au chargement du mod:
+[ICON_BULLET] un message "GFC-Error" au chargement du mod:
 Le dossier principal du mod ne doit pas &#234;tre renomm&#233; (PieAncientEurope).
 
 [ICON_BULLET] J'ai un probl&#232;me de d&#233;compression en chargeant ou en d&#233;butant une partie
@@ -5937,7 +5937,7 @@ Conseil : d&#233;sactivez le FileCaching (les deux) dans Civilization.ini dans M
 Utilisez la connexion directe par IP
 
 [ICON_BULLET] Je veux cr&#233;er un raccourci de PAE sur mon bureau
-Copier le raccourci de BTS, acc&#232;der &#224; "Propri&#233;t&#233;s” avec un clic droit sur l'ic&#244;ne => onglet "Raccourci" => 
+Copier le raccourci de BTS, acc&#232;der &#224; "Propri&#233;t&#233;s" avec un clic droit sur l'ic&#244;ne => onglet "Raccourci" => 
 La zone de texte "Cible:", montre "...\Beyond the Sword\Civ4BeyondSword.exe"
 Modifier en: ...\Beyond the Sword\Civ4BeyondSword.exe" mod=\PieAncientEurope... 
 
@@ -11868,7 +11868,7 @@ Die Chance, dass es klappt betr&#228;gt auch hier 50%.
 
 Dazukommt, dass wenn die Einheit "unzuverl&#228;ssig k&#228;mpft", es noch eine 10% Wahrscheinlichkeit gibt, dass sie diese Gr&#228;ueltat nicht zul&#228;sst und die Armee verl&#228;sst. Dabei wird die Einheit neutral (barbarisch) und k&#228;mpft nun wirklich eigenst&#228;ndig.
 
-Bei Erfolg hat es dem Spieler zwar nichts gekostet aber der aktuelle Rang der Einheit (trainiert, kampferfahren,...) sinkt um 1. Weiters verschwindet zu aller erst die "Unzuverl&#228;ssig"-Eigenschaft und bei weiteren Versuchen immer den letzen Kriegsm&#252;digkeits-Status.
+Bei Erfolg hat es den Spieler zwar nichts gekostet aber der aktuelle Rang der Einheit (trainiert, kampferfahren,...) sinkt um 1. Weiters verschwindet zuallererst die "Unzuverl&#228;ssig"-Eigenschaft und bei weiteren Versuchen immer der letzte Kriegsm&#252;digkeits-Status.
     </German>
     <Italian>
 [H1]Stipendio e decimazione[\H1]
@@ -12392,7 +12392,7 @@ Chance: 100%
 7. Patyaxsa : administrateur sup&#233;rieur
 -- Azadan (aristocrate) -- 
 8. Gausaka : Oreille du roi
-9. Didiyaka : Œil du roi
+9. Didiyaka : Oil du roi
 10. Vizir : Mandataire royal en toutes choses pour 10 000 hommes et plus
 
 [H2]Cavalerie[\H2]
@@ -12835,62 +12835,62 @@ In PAE esiste un sistema di classificazione unico (ranghi) per determinate unit&
 Unit&#224;: legionari, legionari imperiali
 Possibilit&#224;: 100%
 
-01. Signatus: soldato dopo l'addestramento di base
-02. Munifex: =Milites, soldato regolare
-03. Immuni: Munifex di lunga data => da qui i veterani possono passare all'unit&#224; dei Pretoriani
+01&#186; Signatus: soldato dopo l'addestramento di base
+02&#186; Munifex: =Milites, soldato regolare
+03&#186; Immuni: Munifex di lunga data => da qui i veterani possono passare all'unit&#224; dei Pretoriani
 
 Sottufficiali:
 
-04. Principales: sottufficiale
-05. Tesserarius: Sergente (grado massimo dell'unit&#224; ausiliaria)
-06. Optio (nuova entit&#224;): vice centurione
-07. Signifer: portatore del segno del campo
-08. Aquilifer: portatore anziano del segno del campo
-09. Optio ad spem: Optio anziano destinato alla promozione a centurione
+04&#186; Principales: sottufficiale
+05&#186; Tesserarius: Sergente (grado massimo dell'unit&#224; ausiliaria)
+06&#186; Optio (nuova entit&#224;): vice centurione
+07&#186; Signifer: portatore del segno del campo
+08&#186; Aquilifer: portatore anziano del segno del campo
+09&#186; Optio ad spem: Optio anziano destinato alla promozione a centurione
 
 ufficiali:
 
-10° Centurione (nuova unit&#224;): Capitano
-11th Centurion Posterior: Centurion dal IV secolo della 2a alla 10a coorte
-12° Centurione Priore: Centurione dal I al III secolo dalla I alla X coorte
-13. Primus Pilus: Centurione del I Secolo della I Coorte
-14. Praefectus Castrorum: comandante del campo
+10&#186; Centurione (nuova unit&#224;): Capitano
+11&#186; Centurion Posterior: Centurion dal IV secolo della 2a alla 10a coorte
+12&#186; Centurione Priore: Centurione dal I al III secolo dalla I alla X coorte
+13&#186; Primus Pilus: Centurione del I Secolo della I Coorte
+14&#186; Praefectus Castrorum: comandante del campo
 
 Stato Maggiore degli Ufficiali (UNIT&#192; A MONTAGGIO da qui):
 
-15. Praefectus (nuova unit&#224;): vice comandante della legione
-16° Tribunus: comandante di coorte
-17. Tribunus Laticlavius: Tribuno supremo
-18. Legatus Legionis: Comandante delle Legioni
-19. Legatus Augusti: amministratore delle legioni
-20° Console: Massima carica militare
+15&#186; Praefectus (nuova unit&#224;): vice comandante della legione
+16&#186; Tribunus: comandante di coorte
+17&#186; Tribunus Laticlavius: Tribuno supremo
+18&#186; Legatus Legionis: Comandante delle Legioni
+19&#186; Legatus Augusti: amministratore delle legioni
+20&#186; Console: Massima carica militare
 
 
 [H2]Dal IV secolo d.C.:[\H2]
 Unit&#224;: Comitatenses
 Possibilit&#224;: 100%
 
-01. Tiro: recluta
-02. Biarchus: soldato regolare
-03. Ordinarius: sottufficiale
-04. Centenario: 100 uomini
-05. Ducenarius: 200 uomini
+01&#186; Tiro: recluta
+02&#186; Biarchus: soldato regolare
+03&#186; Ordinarius: sottufficiale
+04&#186; Centenario: 100 uomini
+05&#186; Ducenarius: 200 uomini
  
 ufficiali:
 
-06. Primicerius (nuova unit&#224;): tenente
-07. Clarissa
-08.Protettore
-09. Prefetto
-10. Tribuna
+06&#186; Primicerius (nuova unit&#224;): tenente
+07&#186; Clarissa
+08&#186; Protettore
+09&#186; Prefetto
+10&#186; Tribuna
 
 generali:
 
-11. Dux (nuova unit&#224;)
-12 Arriva
-13° Maestri
-14. Magister militum
-15. Patrizio
+11&#186; Dux (nuova unit&#224;)
+12&#186; Arriva
+13&#186; Maestri
+14&#186; Magister militum
+15&#186; Patrizio
 
 
 [H2]Unit&#224; di cavalli:[\H2]
@@ -12898,11 +12898,11 @@ Unit&#224;: Equites e Cohors Equitata
 Possibilit&#224;: 25%
 
 -- cavalierato. Inizia al grado 10 rispetto ai legionari --
-10. Curatori
-11. Opz
-12. Decurio (nuova unit&#224;)
-13. Decurio Princeps
-14. Praefectus Alae
+10&#186; Curatori
+11&#186; Opz
+12&#186; Decurio (nuova unit&#224;)
+13&#186; Decurio Princeps
+14&#186; Praefectus Alae
 ora continua al rango 15 come Legionario: Praefectus
 
 
@@ -12911,28 +12911,28 @@ Unit&#224;: Opliti
 Possibilit&#224;: 100%
 
 -- opliti --
-1. Stratiotis (soldato)
-2. Protostati (1,3,5,7a linea della falange)
-3. Epistati (2,4,6,8a linea della falange)
-4. Ypodecaneas
-5. Decaneas (Caporale) => Promo up
+1&#186; Stratiotis (soldato)
+2&#186; Protostati (1,3,5,7a linea della falange)
+3&#186; Epistati (2,4,6,8a linea della falange)
+4&#186; Ypodecaneas
+5&#186; Decaneas (Caporale) => Promo up
 -- Sottufficiali --
-6. Lochias (sergente)
-7. Epilochia
-8. Archilochia (maggiore)
-9. Anthypolochagos (Vice tenente)
-10. Ypolochagos (tenente) => Promo Up
+6&#186; Lochias (sergente)
+7&#186; Epilochia
+8&#186; Archilochia (maggiore)
+9&#186; Anthypolochagos (Vice tenente)
+10&#186; Ypolochagos (tenente) => Promo Up
 -- Ufficiali --
-11. Lochagos (Capitano)
-12. Tagmatarches (maggiore/comandante di battaglione)
-13. Antisyntagmatarches (tenente colonnello)
-14. Syntagmatarches (colonnello)
-15. Taxiarchos (Generale di brigata) => Promo Up
+11&#186; Lochagos (Capitano)
+12&#186; Tagmatarches (maggiore/comandante di battaglione)
+13&#186; Antisyntagmatarches (tenente colonnello)
+14&#186; Syntagmatarches (colonnello)
+15&#186; Taxiarchos (Generale di brigata) => Promo Up
 -- Ufficiali di stato maggiore --
-16. Ypostrategos (maggiore generale)
-17. Antistrategos (tenente generale)
-18. Strategos (Generale)
-19. Polemarco (pi&#249; alto titolo generale)
+16&#186; Ypostrategos (maggiore generale)
+17&#186; Antistrategos (tenente generale)
+18&#186; Strategos (Generale)
+19&#186; Polemarco (pi&#249; alto titolo generale)
 
 
 [H1]Sparta[\H1]
@@ -12940,37 +12940,37 @@ Unit&#224;: Spartani
 Possibilit&#224;: 100%
 
 -- Spartani --
-1. Demi-Phylearchos (leader di 6)
-2. Filarco (capo dei 12)
-3. Hyperetes (assiste l'enomotarca)
-4. Ouragos (assiste l'enomotarca)
+1&#186; Demi-Phylearchos (leader di 6)
+2&#186; Filarco (capo dei 12)
+3&#186; Hyperetes (assiste l'enomotarca)
+4&#186; Ouragos (assiste l'enomotarca)
 -- Spartiati --
-5. Enomotarchi (capo dei 36)
-6. Pentecounter (leader di 180)
-7. Lochagos (Capo dei 1000)
+5&#186; Enomotarchi (capo dei 36)
+6&#186; Pentecounter (leader di 180)
+7&#186; Lochagos (Capo dei 1000)
 -- Spartani corazzati (Hippeus Spartiatas) --
-8. Harmost (amministratore militare)
-9. Polemarco (Generale)
-10. Ephoros (la pi&#249; alta carica di 5 persone, gli efori)
+8&#186; Harmost (amministratore militare)
+9&#186; Polemarco (Generale)
+10&#186; Ephoros (la pi&#249; alta carica di 5 persone, gli efori)
 
 [H1]Macedonia[\H1]
 Unit&#224;: Pezhetairoi
 Possibilit&#224;: 100%
 
 -- Pezhetairoi --
-1. Pezhetairos (compagni a piedi)
-2. Protostati (1,3,5,7a linea della falange)
-3. Epistati (2,4,6,8a linea della falange)
-4 ° Dekastateros (2 ° tenente)
+1&#186; Pezhetairos (compagni a piedi)
+2&#186; Protostati (1,3,5,7a linea della falange)
+3&#186; Epistati (2,4,6,8a linea della falange)
+4&#186; Dekastateros (2&#186; tenente)
 -- Sarissophorus --
-5. Dekadarchus (tenente di 16)
-6 ° Tetrarco (Primo Luogotenente di 64)
-7. Sintagmo (Capitano, 256)
+5&#186; Dekadarchus (tenente di 16)
+6&#186; Tetrarco (Primo Luogotenente di 64)
+7&#186; Sintagmo (Capitano, 256)
 -- Lochagos --
-8. Lochagos (colonnello, 512)
-9. Taxiarchos (Generale di brigata, 1536)
+8&#186; Lochagos (colonnello, 512)
+9&#186; Taxiarchos (Generale di brigata, 1536)
 -- Pezhetairos basilikoi --
-10. Chiliarco (Generale)
+10&#186; Chiliarco (Generale)
 
 [H1]Persiano[\H1]
 
@@ -12978,42 +12978,42 @@ Possibilit&#224;: 100%
 Unit&#224;: Lancieri, Immortali e Pezoi
 Possibilit&#224;: 100%
 
-1. Paygan: Soldato
-2. Paygan-salar: comandante in capo della divisione di fanteria
-3. Hazarmard-salar: comandante supremo di 1000
-4. Argbed: comandante in capo di un accampamento/fortezza
-5. Eran anbaraghbad: Senior Military Supply Rank
+1&#186; Paygan: Soldato
+2&#186; Paygan-salar: comandante in capo della divisione di fanteria
+3&#186; Hazarmard-salar: comandante supremo di 1000
+4&#186; Argbed: comandante in capo di un accampamento/fortezza
+5&#186; Eran anbaraghbad: Senior Military Supply Rank
 -- portatore di mele --
 -- I corrieri Apple possono passare alla Cavalleria (Savaran) --
-6. Hazarapati, 1000
-7. Patyaxsa: impiegato militare capo
+6&#186; Hazarapati, 1000
+7&#186; Patyaxsa: impiegato militare capo
 -- Azadan (nobile) --
-8. Gausaka: Orecchio del re
-9. Didiyaka: Occhio del re
-10. Visir: In tutto ci&#242; che conta gli occhi affidabile di decine di migliaia e decine di migliaia
+8&#186; Gausaka: Orecchio del re
+9&#186; Didiyaka: Occhio del re
+10&#186; Visir: In tutto ci&#242; che conta gli occhi affidabile di decine di migliaia e decine di migliaia
 
 [H2]Cavalleria[\H2]
 Unit&#224;: Lancieri
 Possibilit&#224;: 33%
 
-1. Asvar
-2 Salar il 10
-3° Salar del 50°
-4. Salar del centesimo
-5. Salar del 500°
+1&#186; Asvar
+2&#186; Salar il 10
+3&#186; Salar del 50&#186;
+4&#186; Salar del centesimo
+5&#186; Salar del 500&#186;
 --Savaran--
-6° Savaran (Aswaran): divisione di cavalleria
-7. Savaran Sardar: capo della cavalleria
+6&#186; Savaran (Aswaran): divisione di cavalleria
+7&#186; Savaran Sardar: capo della cavalleria
 -- Katahprakt (possibile solo dall'armatura del cavallo) --
-8. Zhayedan: immortali a cavallo
-9. Zhayedan-salar: Comandante Supremo degli Immortali
-10. Pushtigban-salar: comandante in capo della guardia reale
-11. Gyan-avspar: grado pi&#249; alto di pushtigban
+8&#186; Zhayedan: immortali a cavallo
+9&#186; Zhayedan-salar: Comandante Supremo degli Immortali
+10&#186; Pushtigban-salar: comandante in capo della guardia reale
+11&#186; Gyan-avspar: grado pi&#249; alto di pushtigban
 -- Marzban --
-12. Marzban (Kanarang): Equivalente a Margravio e Comandante delle Province di Frontiera
-13. Padhuspan: comandante di ciascuna delle quattro divisioni provinciali
-14. Spahbed: generale di campo
-15. Eran Spahbed: Generale, Segretario alla Difesa
+12&#186; Marzban (Kanarang): Equivalente a Margravio e Comandante delle Province di Frontiera
+13&#186; Padhuspan: comandante di ciascuna delle quattro divisioni provinciali
+14&#186; Spahbed: generale di campo
+15&#186; Eran Spahbed: Generale, Segretario alla Difesa
 
 
 [H1]Egiziani[\H1]
@@ -13021,33 +13021,33 @@ Da Tec: spada corta
 Unit&#224;: portatori di ascia, spada e lancia
 Possibilit&#224;: 50%
 
-1 ° soldato (nfrw)
-2° capo dei 10 (hrp nfrw)
-3. Grande dei 50 (n djw)
-4. Alfiere (Tjah-Serut)
-5. Capo di 500 (Heru Pa-Djet)
+1&#186; soldato (nfrw)
+2&#186; Capo dei 10 (hrp nfrw)
+3&#186; Grande dei 50 (n djw)
+4&#186; Alfiere (Tjah-Serut)
+5&#186; Capo di 500 (Heru Pa-Djet)
 -- Gauf&#252;rst / Nomarca --
-6. Impiegato dell'esercito (zs ms)
-7. Capo delle truppe (signor ms)
-8. Capo delle fortezze (mr mnw)
-9. Capo d'armi (signor ms wr)
-10. Sab-Tjati (Vice Visir)
+6&#186; Impiegato dell'esercito (zs ms)
+7&#186; Capo delle truppe (signor ms)
+8&#186; Capo delle fortezze (mr mnw)
+9&#186; Capo d'armi (signor ms wr)
+10&#186; Sab-Tjati (Vice Visir)
 -- Tjati (Vizir) -- (Tech: carro e cavallo necessari)
-11. Tjati (visir), secondo uomo pi&#249; importante dello stato
+11&#186; Tjati (visir), secondo uomo pi&#249; importante dello stato
 
 
 [H1]Cartaginesi[\H1]
 Unit&#224;: Ostia Sacra, Portatori di Scudi e Oplita
 Possibilit&#224;: 33%
 
-1. Rab miat (rb m't)-maggiore di 100
-2. Rab matem (rb mtm)-grande di 200
+1&#186; Rab miat (rb m't)-maggiore di 100
+2&#186; Rab matem (rb mtm)-grande di 200
 -- Ufficiale dell'Ostia Santa --
-3. Rab darak (rb drk)-Capo comandante di fanteria
-4. Rab shalesi (rb slsy)-Coadiutante generale
+3&#186; Rab darak (rb drk)-Capo comandante di fanteria
+4&#186; Rab shalesi (rb slsy)-Coadiutante generale
 -- Generale dell'Ostia Sacra (pu&#242; montare/smontare da cavallo) --
-5. Rab sheni (rb sny)-Aiutante generale
-6. Rab mahanet (rb mhnt)-Generale (comandante in capo dell'esercito)
+5&#186; Rab sheni (rb sny)-Aiutante generale
+6&#186; Rab mahanet (rb mhnt)-Generale (comandante in capo dell'esercito)
 
 
 [H1]Assiri e Babilonesi[\H1]
@@ -13055,29 +13055,29 @@ Da Tec: soldati cittadini
 Unit&#224;: portatori di ascia, spada e lancia
 Possibilit&#224;: 100%
 
-1. Huradu (soldato)
-2. Sab kasrutu (Soldato esperto)
-3. Rab Eserte (Comandante di 10)
-4. Rab hanse (comandante di 50)
-5. Rab kisri (comandante di coorte)
+1&#186; Huradu (soldato)
+2&#186; Sab kasrutu (Soldato esperto)
+3&#186; Rab Eserte (Comandante di 10)
+4&#186; Rab hanse (comandante di 50)
+5&#186; Rab kisri (comandante di coorte)
 -- Turtanu (scozzese/turtan) --
-6. Rab 5-me-at (Comandante di 500)
-7. Rab 1-lim (Comandante dei 1000, Chiliarca)
-8. Turtanu nasaru (guardia del corpo)
-9. Turtanu shumeli (Mano sinistra del re)
-10. Turtanu imni (Mano destra del re)
+6&#186; Rab 5-me-at (Comandante di 500)
+7&#186; Rab 1-lim (Comandante dei 1000, Chiliarca)
+8&#186; Turtanu nasaru (guardia del corpo)
+9&#186; Turtanu shumeli (Mano sinistra del re)
+10&#186; Turtanu imni (Mano destra del re)
 -- Sa-resi --
-11. Sa-resi (eunuco, coppiere)
-12. Rab saqe (grande coppiere)
-13. Nagir ekalli (Araldo del Palazzo)
-14. Rab sa-resi (Rabsaris, Grande Unuco)
-15. Sartinnu (giudice capo)
-16. Masennu (Tesoriere)
+11&#186; Sa-resi (eunuco, coppiere)
+12&#186; Rab saqe (grande coppiere)
+13&#186; Nagir ekalli (Araldo del Palazzo)
+14&#186; Rab sa-resi (Rabsaris, Grande Unuco)
+15&#186; Sartinnu (giudice capo)
+16&#186; Masennu (Tesoriere)
 -- Sukallu -- (Tecnologia: carro e cavallo richiesti)
-17. Sukallu (visir, eunuco)
-18. Sukallu dannu (Gran Visir)
-19. Sukallu ummanu (Vice Cancelliere)
-20. Sukallu Rabiu (Cancelliere)
+17&#186; Sukallu (visir, eunuco)
+18&#186; Sukallu dannu (Gran Visir)
+19&#186; Sukallu ummanu (Vice Cancelliere)
+20&#186; Sukallu Rabiu (Cancelliere)
 
 
 [H1]Sumeri[\H1]
@@ -13085,18 +13085,18 @@ Da Tec: soldati cittadini
 Unit&#224;: portatori di ascia, spada e lancia
 Possibilit&#224;: 50%
 
-1. aga-ush (seguaci della corona, truppe professionali)
-2. ugula (sorvegliante)
-3. nubanda (capitano)
-4. rabi'anu (capi dei clan)
+1&#186; aga-ush (seguaci della corona, truppe professionali)
+2&#186; ugula (sorvegliante)
+3&#186; nubanda (capitano)
+4&#186; rabi'anu (capi dei clan)
 --Ensie --
-5. ensi (principe)
-6. Shagina (Generale)
-7. shagina erin (Supremo Generale)
-8. sanga (sangu, sommo sacerdote)
-9. lugal (grande uomo, steward)
+5&#186; ensi (principe)
+6&#186; Shagina (Generale)
+7&#186; shagina erin (Supremo Generale)
+8&#186; sanga (sangu, sommo sacerdote)
+9&#186; lugal (grande uomo, steward)
 -- It -- (Tecnica: carro e cavallo richiesti)
-10. it (Divino Signore)
+10&#186; it (Divino Signore)
 
 
 [H1]Tedeschi e Celti[\H1]
@@ -13105,9 +13105,9 @@ Unit&#224;: tutte
 Possibilit&#224;: 1:4
 
 1a banda da guerra
-2. Compagno di combattimento
-3. Capo clan
-4. Miglioramento => Capitano (solo corpo a corpo)
+2&#186; Compagno di combattimento
+3&#186; Capo clan
+4&#186; Miglioramento => Capitano (solo corpo a corpo)
 
 
 [H1]Unni[\H1]
@@ -13116,8 +13116,8 @@ Da Tec: Guerriero Ethos
 Unit&#224;: tutte
 Possibilit&#224;: 1:15
 
-1. Khagan (Generale)
-2. Flagello di Dio (Tecnologia: Cavaliere corazzato)
+1&#186; Khagan (Generale)
+2&#186; Flagello di Dio (Tecnologia: Cavaliere corazzato)
     </Italian>
     <Spanish>
 En PAE, hay un sistema de ranking (rangos militares) &#250;nico para determinadas unidades y tribus, que era una parte verificable de una jerarqu&#237;a militar. Los niveles de estas jerarqu&#237;as difieren de una naci&#243;n a otro. Mientras hab&#237;an pocos pasos en algunas tribus (ej: el m&#225;s bravo y fuerte guerrero solamente), los romanos tuvieron un sistema de 150 funciones. En PAE, una gran parte de los rangos m&#225;s importantes se puede reproducir de una manera espec&#237;fica.

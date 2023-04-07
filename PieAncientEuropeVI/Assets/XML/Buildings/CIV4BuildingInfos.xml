@@ -14791,12 +14791,7 @@
 			<DomainProductionModifiers/>
 			<BuildingHappinessChanges/>
 			<PrereqBuildingClasses/>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
+			<BuildingClassNeededs/>
 			<SpecialistYieldChanges/>
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
@@ -15916,7 +15911,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -16088,6 +16083,10 @@
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
@@ -16266,7 +16265,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -16441,7 +16440,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -16617,7 +16616,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -16975,6 +16974,10 @@
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>

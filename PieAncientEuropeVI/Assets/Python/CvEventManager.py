@@ -66,7 +66,7 @@ import CvPlatyBuilderScreen
 ## Platy WorldBuilder ##
 
 # PAE River Tiles / navigable rivers (Ramk)
-import CvRiverUtil
+#import CvRiverUtil
 # Trade and cultivation (Pie, Boggy, Flunky)
 import PAE_Trade
 import PAE_Cultivation
@@ -2044,10 +2044,10 @@ class CvEventManager:
 				CvCameraControls.g_CameraControls.onUpdate(fDeltaTime)
 
 				# PAE - River tiles
-				if self.bRiverTiles_NeedUpdate:
-						self.bRiverTiles_NeedUpdate = False
-						CvRiverUtil.initRiverTiles(False)
-						CvRiverUtil.addGoldNearbyRiverTiles()
+				#if self.bRiverTiles_NeedUpdate:
+				#		self.bRiverTiles_NeedUpdate = False
+				#		CvRiverUtil.initRiverTiles(False)
+				#		CvRiverUtil.addGoldNearbyRiverTiles()
 				# PAE - River tiles end
 
 		def onWindowActivation(self, argsList):
@@ -3736,6 +3736,16 @@ class CvEventManager:
 												CyInterface().addMessage(iPlayer, True, 5, CyTranslator().getText("TXT_KEY_POPUP_HUNS_NO_MONEY", ()), None, 2, pUnit.getButton(), ColorTypes(10), pPlot.getX(), pPlot.getY(), True, True)
 
 				if pUnit is not None and not pUnit.isNone() and not pUnit.isDead() and not pUnit.isBarbarian():
+
+						# Sentry2 bei Turm und Festung: +1 Sichtweite
+						if pOldPlot.getImprovementType() in L.LImprFortSentry:
+								pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_SENTRY2"), False)
+						if pPlot.getImprovementType() in L.LImprFortSentry:
+								pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_SENTRY2"), True)
+								# Kultur bei Forts
+								# PAE_Turn_Features.doCheckFortCulture(pPlot)
+						# ------
+
 						# In der Stadt
 						if pPlot.isCity():
 								pCity = pPlot.getPlotCity()
@@ -3824,15 +3834,6 @@ class CvEventManager:
 												CyEngine().triggerEffect(gc.getInfoTypeForString("EFFECT_PACK_UP"), pPlot.getPoint())
 										gc.getPlayer(pUnit.getOwner()).initUnit(gc.getInfoTypeForString("UNIT_GOLDKARREN"), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 										gc.getPlayer(pUnit.getOwner()).initUnit(gc.getInfoTypeForString("UNIT_GOLDKARREN"), pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-
-								# Sentry2 bei Turm und Festung: +1 Sichtweite
-								if pOldPlot.getImprovementType() in L.LImprFortSentry:
-										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_SENTRY2"), False)
-								if pPlot.getImprovementType() in L.LImprFortSentry:
-										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_SENTRY2"), True)
-										# Kultur bei Forts
-										# PAE_Turn_Features.doCheckFortCulture(pPlot)
-								# ------
 
 								# Great General Formation (PAE 6.9)
 								if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
@@ -5048,11 +5049,13 @@ class CvEventManager:
 												if not pCity.isHasReligion(iReligion):
 														if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_ISLAM")):
 																#if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JUDAISM")): # hier solls erlaubt sein
-																if PAE_Christen.convertCity(pCity): bHeresy = True
+																if PAE_Christen.convertCity(pCity):
+																		bHeresy = True
 
 										# Bei monotheistisch beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
 										if not bHeresy and pCity.isHasReligion(iReligion):
-												if PAE_Christen.removePagans(pCity, iReligion): bHeresy = True
+												if PAE_Christen.removePagans(pCity, iReligion):
+														bHeresy = True
 
 				# PAE Provinzcheck
 				if bCheckCityState:
@@ -5063,7 +5066,8 @@ class CvEventManager:
 				
 				# PAE 6.14: Allgemeine Religionskonflikte
 				if not bHeresy:
-						if PAE_Christen.doReligionsKonflikt(pCity): bHeresy = True
+					if PAE_Christen.doReligionsKonflikt(pCity):
+						bHeresy = True
 
 				# PAE Debug Mark 10
 				#"""
