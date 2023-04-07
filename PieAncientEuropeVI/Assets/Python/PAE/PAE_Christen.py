@@ -134,12 +134,9 @@ def removePagans(pCity, iReligion):
 
 		# Chance 1:20 (5%)
 		iChance = 2
-		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
-			iChance = 5
-		elif iReligion == gc.getInfoTypeForString("RELIGION_ISLAM"):
-			iChance = 10
-		if CvUtil.myRandom(100, "removePagans") > iChance:
-			return False
+		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"): iChance = 5
+		elif iReligion == gc.getInfoTypeForString("RELIGION_ISLAM"): iChance = 10
+		if CvUtil.myRandom(100, "removePagans") > iChance: return False
 
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
@@ -175,9 +172,9 @@ def removePagans(pCity, iReligion):
 								if pBuilding.getPrereqCorporation() == lCorp[iRand]:
 										# Akademien (Corp7)
 										if pBuilding.getType() not in [
-												gc.getInfoTypeForString("BUILDING_ACADEMY_2"),
-												gc.getInfoTypeForString("BUILDING_ACADEMY_3"),
-												gc.getInfoTypeForString("BUILDING_ACADEMY_4")
+														gc.getInfoTypeForString("BUILDING_ACADEMY_2"),
+														gc.getInfoTypeForString("BUILDING_ACADEMY_3"),
+														gc.getInfoTypeForString("BUILDING_ACADEMY_4")
 										]:
 												# Wunder sollen nicht betroffen werden
 												iBuildingClass = pBuilding.getBuildingClassType()
@@ -185,6 +182,7 @@ def removePagans(pCity, iReligion):
 														pCity.setNumRealBuilding(iBuildingLoop, 0)
 				pCity.setHasCorporation(lCorp[iRand], 0, 0, 0)
 				txtReligionOrKult = gc.getCorporationInfo(lCorp[iRand]).getText()
+				return True
 
 		# Religion
 		elif lReli:
@@ -223,19 +221,18 @@ def removePagans(pCity, iReligion):
 						pCity.setHasReligion(iReli, 0, 0, 0)
 						txtReligionOrKult = gc.getReligionInfo(iReli).getText()
 
-		# Meldung
-		if pPlayer.isHuman() and txtReligionOrKult != "":
-			iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
-			if iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS2_"
-			elif iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
-			else:
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
-			CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
-			None, 2, gc.getReligionInfo(iReligion).getButton(), ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
-			# "Art/Interface/Buttons/Actions/button_kreuz.dds"
-			return True
+						# Meldung
+						if pPlayer.isHuman() and txtReligionOrKult != "":
+								iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
+								if iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS2_"
+								elif iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
+								else: text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
+								None, 2, gc.getReligionInfo(iReligion).getButton(), ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+								# "Art/Interface/Buttons/Actions/button_kreuz.dds"
+						return True
 
 		return False
 
@@ -244,8 +241,7 @@ def doReligionsKonflikt(pCity):
 
 		# Chance 80% to abort
 		iChance = CvUtil.myRandom(10, "ReligionsKonflikt")
-		if iChance > 1:
-			return False
+		if iChance > 1: return False
 
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
@@ -282,4 +278,29 @@ def doReligionsKonflikt(pCity):
 						return True
 
 		return False
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

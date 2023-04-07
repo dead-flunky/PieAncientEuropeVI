@@ -446,7 +446,7 @@ def canTriggerCityFire(argsList):
 				return False
 
 		if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
-				if gc.getGame().getSorenRandNum(5, "very little chance for city fire with fire station") > 0:
+				if gc.getGame().getSorenRandNum(5, "very less chance for city fire with fire station") > 0:
 						return False
 
 		return True

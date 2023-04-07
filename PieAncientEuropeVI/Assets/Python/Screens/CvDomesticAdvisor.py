@@ -893,30 +893,20 @@ class CvDomesticAdvisor:
 				iBuildingMetropole = gc.getInfoTypeForString("BUILDING_METROPOLE")
 				iCivilWar = gc.getInfoTypeForString("BUILDING_CIVIL_WAR")
 				if pLoopCity.getNumRealBuilding(iBuildingMetropole):
-						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar):
-							return "Art/Interface/Buttons/General/button_riot_city_stufe5.dds"
-						else:
-							return gc.getBuildingInfo(iBuildingMetropole).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe5.dds"
+						else: return gc.getBuildingInfo(iBuildingMetropole).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingProvinz):
-						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar):
-							return "Art/Interface/Buttons/General/button_riot_city_stufe4.dds"
-						else:
-							return gc.getBuildingInfo(iBuildingProvinz).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe4.dds"
+						else: return gc.getBuildingInfo(iBuildingProvinz).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingCity):
-						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar):
-							return "Art/Interface/Buttons/General/button_riot_city_stufe3.dds"
-						else:
-							return gc.getBuildingInfo(iBuildingCity).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe3.dds"
+						else: return gc.getBuildingInfo(iBuildingCity).getButton()
 				elif pLoopCity.getNumRealBuilding(iBuildingKolonie):
-						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar):
-							return "Art/Interface/Buttons/General/button_riot_city_stufe2.dds"
-						else:
-							return gc.getBuildingInfo(iBuildingKolonie).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe2.dds"
+						else: return gc.getBuildingInfo(iBuildingKolonie).getButton()
 				else:
-						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar):
-							return "Art/Interface/Buttons/General/button_riot_city_stufe1.dds"
-						else:
-							return gc.getBuildingInfo(iBuildingSiedlung).getButton()
+						if pLoopCity.getOccupationTimer() or pLoopCity.getNumRealBuilding(iCivilWar): return "Art/Interface/Buttons/General/button_riot_city_stufe1.dds"
+						else: return gc.getBuildingInfo(iBuildingSiedlung).getButton()
 
 		def getCityName(self, pLoopCity):
 				# City name: font-color: white (normal), red (riot/civil war)

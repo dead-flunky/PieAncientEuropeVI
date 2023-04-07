@@ -83,7 +83,7 @@ g_bIsScreenActive = -1
 ## World Builder ##
 import CvPlatyBuilderScreen
 import WBPlotScreen
-#import WBRiverScreen
+import WBRiverScreen
 import WBEventScreen
 import WBBuildingScreen
 import WBCityDataScreen
@@ -2734,7 +2734,7 @@ HandleInputMap = {MAIN_INTERFACE: mainInterface,
 
 									## World Builder ##
 									WB_PLOT: WBPlotScreen.WBPlotScreen(),
-									#WB_PLOT_RIVER: WBRiverScreen.WBRiverScreen(),
+									WB_PLOT_RIVER: WBRiverScreen.WBRiverScreen(),
 									WB_EVENT: WBEventScreen.WBEventScreen(),
 									WB_BUILDING: WBBuildingScreen.WBBuildingScreen(),
 									WB_CITYDATA: WBCityDataScreen.WBCityDataScreen(),

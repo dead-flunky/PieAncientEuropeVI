@@ -22,10 +22,10 @@ import CvUtil
 # import ScreenInput
 # import CvEventInterface
 import CvScreenEnums
-#import CvRiverUtil
+import CvRiverUtil
 # import time
 import WBPlotScreen
-#import WBRiverScreen
+import WBRiverScreen
 import WBEventScreen
 import WBCityEditScreen
 import WBCityDataScreen
@@ -518,14 +518,13 @@ class CvWorldBuilderScreen:
 						elif self.iSelection == gc.getInfoTypeForString("TERRAIN_OCEAN"):
 								self.m_pCurrentPlot.setPlotType(PlotTypes.PLOT_OCEAN, True, True)
 				elif self.iPlayerAddMode == "Features":
-						#global riverIds
-						#self.m_pCurrentPlot.setFeatureType(-1, 0)
-						#if CvRiverUtil.isRiverFeature(self.iSelection):
-						#		CvRiverUtil.addRiverFeatureSimple(self.m_pCurrentPlot, self.iSelection, self.iSelectClass2)
-						#else:
-						#		CvUtil.removeScriptData(self.m_pCurrentPlot, "r")
-						#		self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
-						self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
+						global riverIds
+						self.m_pCurrentPlot.setFeatureType(-1, 0)
+						if CvRiverUtil.isRiverFeature(self.iSelection):
+								CvRiverUtil.addRiverFeatureSimple(self.m_pCurrentPlot, self.iSelection, self.iSelectClass2)
+						else:
+								CvUtil.removeScriptData(self.m_pCurrentPlot, "r")
+								self.m_pCurrentPlot.setFeatureType(self.iSelection, self.iSelectClass2)
 				elif self.iPlayerAddMode == "River":
 						if self.m_pRiverStartPlot == self.m_pCurrentPlot:
 								self.m_pRiverStartPlot = -1
@@ -1889,8 +1888,8 @@ class CvWorldBuilderScreen:
 								self.setMultipleReveal(True)
 				elif self.iPlayerAddMode == "PlotData":
 						WBPlotScreen.WBPlotScreen().interfaceScreen(self.m_pCurrentPlot)
-				#elif self.iPlayerAddMode == "RiverData":
-				#		WBRiverScreen.WBRiverScreen().interfaceScreen(self.m_pCurrentPlot)
+				elif self.iPlayerAddMode == "RiverData":
+						WBRiverScreen.WBRiverScreen().interfaceScreen(self.m_pCurrentPlot)
 				elif self.iPlayerAddMode == "Events":
 						WBEventScreen.WBEventScreen().interfaceScreen(self.m_pCurrentPlot)
 				elif self.iPlayerAddMode == "StartingPlot":

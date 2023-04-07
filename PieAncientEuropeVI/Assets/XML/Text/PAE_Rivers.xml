@@ -74,27 +74,29 @@
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TERRAIN_RIVER</Tag>
-    <English>River</English>
-    <French><Text>Rivi&#232;re</Text><Gender>Female</Gender><Plural>0</Plural></French>
-    <German><Text>Fluss</Text><Gender>Neuter</Gender><Plural>0</Plural></German>
-    <Italian><Text>Fiume</Text><Gender>Male</Gender><Plural>0</Plural></Italian>
-    <Spanish><Text>R&#237;o</Text><Gender>Male</Gender><Plural>0</Plural></Spanish>
+    <English>Bank</English>
+    <French>
+<Text>Rive</Text><Gender>Female</Gender><Plural>0</Plural>
+    </French>
+    <German>
+<Text>Ufer</Text><Gender>Neuter</Gender><Plural>0</Plural>
+    </German>
+    <Italian>
+<Text>Riva</Text><Gender>Female</Gender><Plural>0</Plural>
+    </Italian>
+    <Spanish>
+<Text>Ribera</Text><Gender>Female</Gender><Plural>0</Plural>
+    </Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_TERRAIN_RIVER_FORD</Tag>
     <English>Ford</English>
     <French>Gu&#233;</French>
-    <German><Text>Furt</Text><Gender>Female</Gender><Plural>0</Plural></German>
+    <German>
+<Text>Furt</Text><Gender>Female</Gender><Plural>0</Plural>
+    </German>
     <Italian>Guado</Italian>
     <Spanish>Vado</Spanish>
-  </TEXT>
-  <TEXT>
-    <Tag>TXT_KEY_LAKE</Tag>
-    <English>Fresh Water Lake</English>
-    <French>Lac d'eau douce</French>
-    <German>S&#252;ßwassersee</German>
-    <Italian>Lago d'acqua dolce</Italian>
-    <Spanish>Lago de agua dulce</Spanish>
   </TEXT>
   <TEXT>
     <Tag>TXT_KEY_FEATURE_RIVER</Tag>
