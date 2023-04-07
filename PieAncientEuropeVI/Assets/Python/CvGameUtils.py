@@ -18,7 +18,7 @@ from CvPythonExtensions import (CyGlobalContext, PlotStyles, OrderTypes,
 # import CvEventInterface
 # import Popup as PyPopup
 import PyHelpers
-import CvRiverUtil
+#import CvRiverUtil
 import PAE_Trade
 import PAE_Cultivation
 import PAE_City
@@ -3201,20 +3201,20 @@ class CvGameUtils:
 										# 'FEATURE_RIVER')
 								# return CyGameTextMgr().getFeatureHelp(iFeatureRiver, False)
 
-								if iData2 in [1000, 1001]:
-										sText = CyTranslator().getText(CvRiverUtil.RiverKeymap["EMPTY"], ())
-										if iData2 == 1001:
-												sText += "\n" + CyTranslator().getText("TXT_KEY_WITH_RIVER_FORD", ())
-										return sText
-								iRow = 0
-								for rtype in CvRiverUtil.RiverTypes:
-										for align in CvRiverUtil.RiverTypes[rtype]:
-												if iRow == iData2:
-														sText = CyTranslator().getText(CvRiverUtil.RiverKeymap[rtype+"_"+align], ())
-														if iData1 == 9001:
-																sText += "\n" + CyTranslator().getText("TXT_KEY_WITH_RIVER_FORD", ())
-														return sText
-												iRow += 1
+								#if iData2 in [1000, 1001]:
+								#		sText = CyTranslator().getText(CvRiverUtil.RiverKeymap["EMPTY"], ())
+								#		if iData2 == 1001:
+								#				sText += "\n" + CyTranslator().getText("TXT_KEY_WITH_RIVER_FORD", ())
+								#		return sText
+								#iRow = 0
+								#for rtype in CvRiverUtil.RiverTypes:
+								#		for align in CvRiverUtil.RiverTypes[rtype]:
+								#				if iRow == iData2:
+								#						sText = CyTranslator().getText(CvRiverUtil.RiverKeymap[rtype+"_"+align], ())
+								#						if iData1 == 9001:
+								#								sText += "\n" + CyTranslator().getText("TXT_KEY_WITH_RIVER_FORD", ())
+								#						return sText
+								#				iRow += 1
 						elif iData1 in [9010, 9020, 9030, 9040, 9050, 9060, 9070]:
 								return " "  # Returning of empty string would be problematic..
 ## ---------------------- ##

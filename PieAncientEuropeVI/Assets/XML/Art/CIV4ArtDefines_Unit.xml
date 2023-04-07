@@ -12770,6 +12770,7 @@
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
 		</UnitArtInfo>
+		<!--
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_LIGHT_CAVALRY</Type>
 			<Button>,Art/Interface/Buttons/Units/Keshik.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,2,11</Button>
@@ -12793,7 +12794,7 @@
 				<AudioRunTypeLoop/>
 				<AudioRunTypeEnd/>
 			</AudioRunSounds>
-		</UnitArtInfo>
+		</UnitArtInfo>-->
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MEDIEVAL_CAVALRY</Type>
 			<Button>,Art/Interface/Buttons/Units/Immortal.dds,Art/Interface/Buttons/Charlemagne_Atlas.dds,1,1</Button>

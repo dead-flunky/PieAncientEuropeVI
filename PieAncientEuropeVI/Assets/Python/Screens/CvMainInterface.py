@@ -2078,8 +2078,7 @@ class CvMainInterface:
 														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
 																if pPlot.getOwner() == pUnit.getOwner() and pPlot.getFeatureType() in L.LForests:
 																		if pPlot.getImprovementType() != gc.getInfoTypeForString("IMPROVEMENT_CAMP"):
-																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY")): bArchery = True
-																				else: bArchery = False
+																				bArchery = pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARCHERY"))
 																				screen.appendMultiListButton(
 																						"BottomButtonContainer", ",Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7", 0, WidgetTypes.WIDGET_GENERAL, 771, 1, bArchery)
 																				screen.show("BottomButtonContainer")

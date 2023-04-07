@@ -3292,10 +3292,12 @@ def doSettledSlavesAndReservists(pCity):
 		iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
 		if not bRevolt and gc.getGame().isReligionFounded(iReligion):
 				if pPlayer.getStateReligion() != iReligion:
-						
-						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HERESY")): iChance = 1
-						else: iChance = 2
-						
+
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HERESY")): 
+							iChance = 1
+						else: 
+							iChance = 2
+		
 						iRand = CvUtil.myRandom(75, "ChristentumSklavenRevolte")
 						if iRand < iChance:
 								# City Defender damage
