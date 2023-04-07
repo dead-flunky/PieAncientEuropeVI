@@ -3709,9 +3709,9 @@ def canTriggerBier(argsList):
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		team = gc.getTeam(player.getTeam())
 
-		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
+		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
 
-		if team.isHasTech(iGaerung):
+		if team.isHasTech(iTech):
 				return False
 
 		return True
@@ -3725,9 +3725,9 @@ def applyBier(argsList):
 		iTeam = player.getTeam()
 		pTeam = gc.getTeam(iTeam)
 
-		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
+		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
 
-		pTeam.setHasTech(iGaerung, 1, kTriggeredData.ePlayer, 0, 1)
+		pTeam.setHasTech(iTech, 1, kTriggeredData.ePlayer, 0, 1)
 
 
 ######## KAMEL DOMESTIZIERUNG ###########
@@ -3738,9 +3738,9 @@ def canTriggerKamel(argsList):
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		team = gc.getTeam(player.getTeam())
 
-		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
+		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
 
-		if team.isHasTech(iGaerung):
+		if team.isHasTech(iTech):
 				return False
 
 		return True
@@ -3754,9 +3754,9 @@ def applyKamel(argsList):
 		iTeam = player.getTeam()
 		pTeam = gc.getTeam(iTeam)
 
-		iGaerung = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
+		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
 
-		pTeam.setHasTech(iGaerung, 1, kTriggeredData.ePlayer, 0, 1)
+		pTeam.setHasTech(iTech, 1, kTriggeredData.ePlayer, 0, 1)
 
 
 #######  Waldbrand ########

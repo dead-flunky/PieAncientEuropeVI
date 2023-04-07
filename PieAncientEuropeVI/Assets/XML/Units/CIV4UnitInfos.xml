@@ -54932,6 +54932,10 @@
 					<BuildingType>BUILDING_CHRISTIAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
+				<Building>
+					<BuildingType>BUILDING_ISLAMIC_SHRINE</BuildingType>
+					<bBuilding>1</bBuilding>
+				</Building>
 			</Buildings>
 			<ForceBuildings/>
 			<HolyCity>NONE</HolyCity>

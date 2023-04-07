@@ -2426,19 +2426,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_KAMEL</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>You managed to domesticate wild dromedaries! Once you've captured and tamed a few, you'll soon find that it makes an ideal transport animal. No other farm animal is considered as tough, frugal and yet powerful as this legendary desert ship.</English>
+		<French>Vous avez r&#233;ussi &#224; domestiquer des dromadaires sauvages ! Une fois que vous en avez captur&#233; et apprivois&#233; quelques-uns, vous d&#233;couvrirez rapidement qu'il s'agit d'un animal de transport id&#233;al. Aucun autre animal de ferme n'est consid&#233;r&#233; comme aussi dur, frugal et pourtant puissant que ce l&#233;gendaire navire du d&#233;sert.</French>
+		<German>Ihr habt es geschafft, wilde Dromedare zu domestizieren! Nachdem ihr ein paar eingefangen und gez&#228;hmt habt, konntet ihr gleich feststellen, dass es sich ideal als Transporttier eignet. Kein anderes Nutztier gilt als so z&#228;h, gen&#252;gsam und dennoch leistungsstark wie diese legend&#228;re W&#252;stenschiff.</German>
+		<Italian>Sei riuscito ad addomesticare i dromedari selvatici! Una volta catturati e addomesticati alcuni, scoprirai presto che &#232; un animale da trasporto ideale. Nessun altro animale da fattoria &#232; considerato duro, frugale eppure potente come questa leggendaria nave del deserto.</Italian>
+		<Spanish>&#161;Lograste domesticar dromedarios salvajes! Una vez que haya capturado y domesticado algunos, pronto descubrir&#225; que es un animal de transporte ideal. Ning&#250;n otro animal de granja se considera tan duro, frugal y poderoso como este legendario barco del desierto.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KAMEL</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>Let's have a camel race right away!</English>
+		<French>Faisons une course de chameaux tout de suite !</French>
+		<German>Lasst uns sogleich ein Kamelrennen veranstalten!</German>
+		<Italian>Facciamo subito una corsa di cammelli!</Italian>
+		<Spanish>&#161;Hagamos una carrera de camellos ahora mismo!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MEUTEREI_2</Tag>
