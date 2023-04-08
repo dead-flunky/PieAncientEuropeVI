@@ -387,7 +387,7 @@ class PyPlayer:
 				' plotList with iBonus '
 				lPlots = []
 				for plot in self.getPlotList():
-						if (not plot.getBonusType() == BonusTypes.NO_BONUS and plot.getBonusType() == iBonus):
+						if (plot.getBonusType() != BonusTypes.NO_BONUS and plot.getBonusType() == iBonus):
 								lPlots.append(plot)
 				return lPlots
 
@@ -395,7 +395,7 @@ class PyPlayer:
 				' int numPlots with iImprovement '
 				iCounter = 0
 				for plot in self.getPlotList():
-						if (not plot.getImprovementType() == ImprovementTypes.NO_IMPROVEMENT):
+						if (plot.getImprovementType() != ImprovementTypes.NO_IMPROVEMENT):
 								iCounter += 1
 				return iCounter
 
