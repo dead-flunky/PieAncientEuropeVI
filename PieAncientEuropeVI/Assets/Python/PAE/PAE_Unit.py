@@ -3031,62 +3031,55 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 								#if i % iNumLeadersOnPlot == 0:
 								pLoopUnit.setHasPromotion(iPromoMercenary, True)
 
-				# Cities: Stadtaufruhr
-				# PAE 6.14: -1 :) in jeder Stadt (Status Stadt), soll nur HI betreffen
+				# PopUp
 				if pPlayer.isHuman():
-
 						iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
 						szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL_" + str(iRand)
-						szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText(" +1[ICON_UNHAPPY]", ())
-						CyInterface().addMessage(
-								iPlayer, False, 20, szText, None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
-								ColorTypes(7), -1, -1, False, False
-						)
+						szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText("TXT_KEY_MESSAGE_CITY_DYING_GENERAL_NEGATIVE", ())
+						popupInfo = CyPopupInfo()
+						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
+						popupInfo.setText(szText)
+						popupInfo.addPopup(iPlayer)
 
-						(loopCity, pIter) = pPlayer.firstCity(False)
-						while loopCity:
-								if not loopCity.isNone():  # only valid cities
-										
-										#if CvUtil.myRandom(iLeader, "Stadtaufruhr1") == 0: # bis PAE 6.14
-										# PAE 6.15: Chance 10%
-										if not bNoCivilWar and CvUtil.myRandom(10, "Stadtaufruhr1") == 0:
-												# 2 bis 4 Runden Aufstand!
-												#iRand = 2 + CvUtil.myRandom(2, "Stadtaufruhr2")
+				# Cities: Stadtaufruhr
+				# PAE 6.14: vorübergehend -1 :) in jeder Stadt (Status Stadt)
+				(loopCity, pIter) = pPlayer.firstCity(False)
+				while loopCity:
+						if not loopCity.isNone():  # only valid cities
+								
+								#if CvUtil.myRandom(iLeader, "Stadtaufruhr1") == 0: # bis PAE 6.14
+								# PAE 6.15: Chance 10%
+								if not bNoCivilWar and CvUtil.myRandom(10, "Stadtaufruhr1") == 0:
+										# 2 bis 4 Runden Aufstand!
+										#iRand = 2 + CvUtil.myRandom(2, "Stadtaufruhr2")
 
-												# in Abhaengigkeit von HURRY_ANGER_DIVISOR (GlobalDefines.xml) und iHurryConscriptAngerPercent (GameSpeedInfo.xml)
-												#iRand = loopCity.flatHurryAngerLength()
-												# loopCity.changeHurryAngerTimer(iRand)
+										# in Abhaengigkeit von HURRY_ANGER_DIVISOR (GlobalDefines.xml) und iHurryConscriptAngerPercent (GameSpeedInfo.xml)
+										#iRand = loopCity.flatHurryAngerLength()
+										# loopCity.changeHurryAngerTimer(iRand)
 
-												# Stadt ohne Kulturgrenzen
-												#iRand = 2 + CvUtil.myRandom(3, "Stadtaufruhr3")
-												#loopCity.setOccupationTimer (iRand)
-												# if pPlayer.isHuman():
-												#    CyInterface().addMessage(iPlayer, True, 5, CyTranslator().getText("TXT_KEY_MAIN_CITY_RIOT", (loopCity.getName(),)), "AS2D_REVOLTSTART", 2, ",Art/Interface/Buttons/Promotions/Combat5.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10", ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True)
+										# Stadt ohne Kulturgrenzen
+										#iRand = 2 + CvUtil.myRandom(3, "Stadtaufruhr3")
+										#loopCity.setOccupationTimer (iRand)
+										# if pPlayer.isHuman():
+										#    CyInterface().addMessage(iPlayer, True, 5, CyTranslator().getText("TXT_KEY_MAIN_CITY_RIOT", (loopCity.getName(),)), "AS2D_REVOLTSTART", 2, ",Art/Interface/Buttons/Promotions/Combat5.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10", ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True)
 
-												# Civil War (ab PAE 6.3.2)
-												PAE_City.doStartCivilWar(loopCity, 100)
+										# Civil War (ab PAE 6.3.2)
+										PAE_City.doStartCivilWar(loopCity, 100)
 
-										# PAE 6.14: -1 in jeder Stadt (Stadtstatus: Stadt)
-										if loopCity.isHasBuilding(eBuildingStadt):
-												iHappy = loopCity.getBuildingHappyChange(eBuildingClass)
-												iHappy -= 1
-												loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
+								# PAE 6.14: -1 in jeder Stadt (Stadtstatus: Stadt)
+								if loopCity.isHasBuilding(eBuildingStadt):
+										iHappy = loopCity.getBuildingHappyChange(eBuildingClass)
+										iHappy -= 1
+										loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
 
-												if pPlayer.isHuman():
-														CyInterface().addMessage(
-															iPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
-															ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
-														)
+										#if pPlayer.isHuman():
+										#		CyInterface().addMessage(
+										#			iPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds",
+										#			ColorTypes(7), loopCity.getX(), loopCity.getY(), True, True
+										#		)
 
-								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+						(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
-						# PopUp
-						# Durch den Verlust Eurer Generalseinheit sind sämtliche Städte in Eurem Reich in Aufruhr
-						#popupInfo = CyPopupInfo()
-						#popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)  # Text PopUp only!
-						#popupInfo.setText(CyTranslator().getText(
-						#		"TXT_KEY_POPUP_GENERALSTOD", (pUnit.getName(),)))
-						#popupInfo.addPopup(iPlayer)
 
 				if iWinnerPlayer != -1:
 						pWinnerPlayer = gc.getPlayer(iWinnerPlayer)
@@ -3115,33 +3108,33 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 										popupInfo.addPopup(iWinnerPlayer)
 
 						# PAE 6.14: +1 :) in jeder Stadt (Status Stadt, sofern Happyness < 0
-						# soll nur HI betreffen
-						if pWinnerPlayer.isHuman():
 
+						# PopUp
+						if pWinnerPlayer.isHuman():
 								iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
 								szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_" + str(iRand)
-								szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText(" +1[ICON_HAPPY]", ())
-								CyInterface().addMessage(
-										iPlayer, False, 10, szText, None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
-										ColorTypes(8), -1, -1, False, False
-								)
+								szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText("TXT_KEY_MESSAGE_CITY_DYING_GENERAL_POSITIVE", ())
+								popupInfo = CyPopupInfo()
+								popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
+								popupInfo.setText(szText)
+								popupInfo.addPopup(iWinnerPlayer)
 
-								(loopCity, pIter) = pWinnerPlayer.firstCity(False)
-								while loopCity:
-										if not loopCity.isNone():  # only valid cities
-												if loopCity.isHasBuilding(eBuildingStadt):
-														iHappy = loopCity.getBuildingHappyChange(eBuildingClass)
-														#if iHappy < 0:
-														iHappy += 1
-														loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
+						(loopCity, pIter) = pWinnerPlayer.firstCity(False)
+						while loopCity:
+								if not loopCity.isNone():  # only valid cities
+										if loopCity.isHasBuilding(eBuildingStadt):
+												iHappy = loopCity.getBuildingHappyChange(eBuildingClass)
+												#if iHappy < 0:
+												iHappy += 1
+												loopCity.setBuildingHappyChange(eBuildingClass, iHappy)
 
-														if pWinnerPlayer.isHuman():
-																CyInterface().addMessage(
-																	iWinnerPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
-																	ColorTypes(8), loopCity.getX(), loopCity.getY(), True, True
-																)
+												#if pWinnerPlayer.isHuman():
+												#		CyInterface().addMessage(
+												#			iWinnerPlayer, False, 20, "", None, 2, "Art/Interface/Buttons/General/button_icon_happy.dds",
+												#			ColorTypes(8), loopCity.getX(), loopCity.getY(), True, True
+												#		)
 
-										(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
+								(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
 
 
 def unsettledSlaves(iPlayer):

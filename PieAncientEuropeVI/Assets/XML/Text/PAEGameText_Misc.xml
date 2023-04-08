@@ -1905,6 +1905,22 @@
 		<Spanish>En PAE, el men&#250; de compilaci&#243;n se divide en dos mitades. Las unidades se muestran a la izquierda y los edificios a la derecha.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_POSITIVE</Tag>
+		<English>[NEWLINE][ICON_BULLET] Temporarily +1[ICON_HAPPY]</English>
+		<French>[NEWLINE][ICON_BULLET] Temporairement +1[ICON_HAPPY]</French>
+		<German>[NEWLINE][ICON_BULLET] Vor&#252;bergehend +1[ICON_HAPPY]</German>
+		<Italian>[NEWLINE][ICON_BULLET] Temporaneamente +1[ICON_HAPPY]</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET] Temporalmente +1[ICON_HAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_NEGATIVE</Tag>
+		<English>[NEWLINE][ICON_BULLET] Temporarily +1[ICON_UNHAPPY]</English>
+		<French>[NEWLINE][ICON_BULLET] Temporairement +1[ICON_UNHAPPY]</French>
+		<German>[NEWLINE][ICON_BULLET] Vor&#252;bergehend +1[ICON_UNHAPPY]</German>
+		<Italian>[NEWLINE][ICON_BULLET] Temporaneamente +1[ICON_UNHAPPY]</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET] Temporalmente +1[ICON_UNHAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILD_HUNTING_CAMP</Tag>
 		<English>Build a [LINK=IMPROVEMENT_CAMP]Hunting Camp[\LINK]</English>
 		<French>Construire un [LINK=IMPROVEMENT_CAMP]Camp de chasse[\LINK]</French>
