@@ -1751,7 +1751,12 @@ def doUnitSupply(pCity, iPlayer):
 		popCity = pCity.getPopulation()
 
 		iFactor = 1
-		iCityUnits = pCityPlot.getNumDefenders(iPlayer)
+		#iCityUnits = pCityPlot.getNumDefenders(iPlayer) # da sind SIEGE units dabei
+		iCityUnits = 0
+		iRange = pCityPlot.getNumUnits()
+		for i in range(iRange):
+				if pCityPlot.getUnit(i).isMilitaryHappiness():
+						iCityUnits += 1
 
 		# bis Pop 3: 10 Einheiten erlaubt
 		#if popCity < 3: iMaintainUnits = iCityUnits - 10

@@ -370,7 +370,7 @@
 			<Civilopedia>TXT_KEY_BONUS_OBSIDIAN_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RARITY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_OBSIDIAN</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_STEINABBAU</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -992,7 +992,7 @@
 			<Civilopedia>TXT_KEY_BONUS_OREICHALKOS_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RARITY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_OREICHALKOS</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_ALCHEMIE</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -1156,7 +1156,7 @@
 			<Civilopedia>TXT_KEY_BONUS_BERNSTEIN_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RARITY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_BERNSTEIN</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -1227,7 +1227,7 @@
 			<Civilopedia>TXT_KEY_BONUS_ELEKTRON_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_ELEKTRON</ArtDefineTag>
-			<TechReveal>TECH_MINING</TechReveal>
+			<TechReveal>TECH_METAL_CASTING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>TECH_ALCHEMIE</TechObsolete>
 			<YieldChanges>
@@ -1745,7 +1745,7 @@
 			<Civilopedia>TXT_KEY_BONUS_GRAPES_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_PLANTATION</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_GRAPES</ArtDefineTag>
-			<TechReveal>TECH_WEINBAU</TechReveal>
+			<TechReveal>NONE</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -2028,7 +2028,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CLAM_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_MISC</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CLAM</ArtDefineTag>
-			<TechReveal>TECH_WARENHANDEL</TechReveal>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -2077,7 +2077,7 @@
 			<Civilopedia>TXT_KEY_BONUS_PEARL_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LUXURY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_PEARL</ArtDefineTag>
-			<TechReveal>TECH_WARENHANDEL</TechReveal>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -2339,7 +2339,7 @@
 			<Civilopedia>TXT_KEY_BONUS_DEER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_MISC</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_DEER</ArtDefineTag>
-			<TechReveal>TECH_HUNTING</TechReveal>
+			<TechReveal>NONE</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -2808,7 +2808,7 @@
 			<Civilopedia>TXT_KEY_BONUS_DYE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LUXURY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_DYE</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_WARENHANDEL</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -3287,7 +3287,7 @@
 			<Civilopedia>TXT_KEY_BONUS_IVORY2_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LUXURY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_IVORY2</ArtDefineTag>
-			<TechReveal>TECH_METAL_CASTING</TechReveal>
+			<TechReveal>TECH_HUNTING</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges/>
@@ -3332,7 +3332,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SILK_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RARITY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SILK</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_WARENHANDEL</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges>
@@ -3765,7 +3765,7 @@
 			<Civilopedia>TXT_KEY_BONUS_HERBS_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LUXURY</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_HERBS</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_PHARMAZIE</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges/>
@@ -3805,7 +3805,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SLAVES</ArtDefineTag>
-			<TechReveal>NONE</TechReveal>
+			<TechReveal>TECH_ENSLAVEMENT</TechReveal>
 			<TechCityTrade>NONE</TechCityTrade>
 			<TechObsolete>NONE</TechObsolete>
 			<YieldChanges/>

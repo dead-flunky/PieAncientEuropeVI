@@ -2055,19 +2055,19 @@ class CvMainInterface:
 
 												# --------------------
 												# Worker / Schürflager (wird mit Steinmetzkunst obsolet)
-												elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
-														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MASONRY")):
-																pPlot = pUnit.plot()
-																# Build Option: Lager oder Beobachtungsturm
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
-																		if pPlot.getOwner() == pUnit.getOwner():
-																				iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
-																				eBonus = pPlot.getBonusType(-1)
-																				if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
-																						screen.appendMultiListButton(
-																								"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
-																						screen.show("BottomButtonContainer")
-																						iCount += 1
+												#elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+												#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MASONRY")):
+												#				pPlot = pUnit.plot()
+												#				# Build Option: Lager
+												#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ROADS")):
+												#						if pPlot.getOwner() == pUnit.getOwner():
+												#								iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+												#								eBonus = pPlot.getBonusType(-1)
+												#								if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
+												#										screen.appendMultiListButton(
+												#												"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
+												#										screen.show("BottomButtonContainer")
+												#										iCount += 1
 
 												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind
@@ -2090,6 +2090,15 @@ class CvMainInterface:
 																						"BottomButtonContainer", "Art/Interface/Buttons/Builds/button_turm.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 2, False)
 																				screen.show("BottomButtonContainer")
 																				iCount += 1
+														#if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
+														#		# Build Option: Pfad
+														#		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ROADS")):
+														#				if pPlot.getOwner() == pUnit.getOwner():
+														#						if not pPlot.isRoute():
+														#								screen.appendMultiListButton(
+														#										"BottomButtonContainer", "Art/Interface/Buttons/Builds/BuildPfad.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 4, False)
+														#								screen.show("BottomButtonContainer")
+														#								iCount += 1
 
 														# Info Button (range of cities)
 														bOK = False
@@ -3822,8 +3831,8 @@ class CvMainInterface:
 												# Formationen / Formations End ------
 
 												# Legend units can become a Great General
-												# PAE 6.15: last war weariness ranked units, because: combat promoting goes faster, too many Generals alive
-												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MORAL_NEG5")):
+												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT6")):
+														#if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MORAL_NEG1")):
 														#if pUnit.getUnitCombatType() not in L.LArcherCombats:
 														if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
@@ -7700,6 +7709,8 @@ class CvMainInterface:
 										CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
 
 								# Hunter: Lager oder Beobachtungsturm
+								# Worker and Hunter: Ore Camp
+								# Hunter: Pfad
 								elif iData1 == 771:
 										CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_WORKER")
 										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)

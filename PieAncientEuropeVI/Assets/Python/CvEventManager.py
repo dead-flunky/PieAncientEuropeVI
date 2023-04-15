@@ -2017,11 +2017,12 @@ class CvEventManager:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
 						elif iData2 == 2:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
-						elif iData2 == 3:
-								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
+						#elif iData2 == 3:
+						#		pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
+						#elif iData2 == 4:
+						#		pUnit.plot().setRouteType(gc.getInfoTypeForString("ROUTE_PATH"))
+						pPlayer.changeGold(-4)
 						pUnit.finishMoves()
-						pUnit.setImmobileTimer(2)
-						pPlayer.changeGold(-5)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
 				# iData1 698 wieder frei

@@ -2725,11 +2725,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
-			<CommerceChangeDoubleTimes>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
-			</CommerceChangeDoubleTimes>
+			<CommerceChangeDoubleTimes/>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -3624,13 +3620,13 @@
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>4</iYield>
+				<iYield>0</iYield>
 			</YieldChanges>
 			<CommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -5220,7 +5216,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>800</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -7089,7 +7085,7 @@
 			<GlobalReligionCommerce/>
 			<GlobalCorporationCommerce/>
 			<VictoryPrereq/>
-			<FreeStartEra>ERA_IRON</FreeStartEra>
+			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech/>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
@@ -7886,7 +7882,7 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-				<iYield>2</iYield>
+				<iYield>1</iYield>
 			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
@@ -15083,30 +15079,6 @@
 			<SpecialistYieldChanges/>
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
-					<BonusType>BONUS_GOLD</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_SILVER</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_ELEKTRON</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
 					<BonusType>BONUS_COAL</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
@@ -15952,10 +15924,10 @@
 			<VictoryPrereq/>
 			<FreeStartEra/>
 			<MaxStartEra/>
-			<ObsoleteTech>TECH_BRONZE_WORKING</ObsoleteTech>
+			<ObsoleteTech/>
 			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
 			<TechTypes/>
-			<Bonus/>
+			<Bonus>BONUS_COPPER</Bonus>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<HappinessTraits/>
@@ -16082,15 +16054,7 @@
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SIEDLUNG</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -17580,6 +17544,22 @@
 					</YieldModifiers>
 				</BonusYieldModifier>
 				<BonusYieldModifier>
+					<BonusType>BONUS_ELEKTRON</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>10</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_OREICHALKOS</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>10</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
 					<BonusType>BONUS_IRON2</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
@@ -17785,6 +17765,14 @@
 				</BonusYieldModifier>
 				<BonusYieldModifier>
 					<BonusType>BONUS_MESSING</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>5</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_OREICHALKOS</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
@@ -21172,7 +21160,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>100</iCommerce>
+				<iCommerce>300</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -23006,12 +22994,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
+				<iCommerce>50</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -23214,7 +23202,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -23400,7 +23388,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
+				<iCommerce>200</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -24333,12 +24321,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>3</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>80</iCommerce>
+				<iCommerce>50</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -28626,12 +28614,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>80</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -28823,12 +28811,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -35275,7 +35263,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>50</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -35450,7 +35438,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>50</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -41086,7 +41074,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -41273,7 +41261,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -41464,7 +41452,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -41651,7 +41639,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -41847,7 +41835,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -42039,7 +42027,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -42231,7 +42219,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -42423,7 +42411,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -42615,7 +42603,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -42808,7 +42796,7 @@
 												<CommerceChangeDoubleTimes>
 																<iCommerce>0</iCommerce>
 																<iCommerce>0</iCommerce>
-																<iCommerce>1000</iCommerce>
+																<iCommerce>0</iCommerce>
 												</CommerceChangeDoubleTimes>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
@@ -43708,7 +43696,7 @@
 												<CommerceChangeDoubleTimes>
 																<iCommerce>0</iCommerce>
 																<iCommerce>0</iCommerce>
-																<iCommerce>1000</iCommerce>
+																<iCommerce>0</iCommerce>
 												</CommerceChangeDoubleTimes>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
@@ -45360,13 +45348,13 @@
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
+				<iCommerce>2</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>300</iCommerce>
+				<iCommerce>100</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -46237,12 +46225,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -46444,12 +46432,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>5</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -46809,12 +46797,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>80</iCommerce>
+				<iCommerce>300</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -46995,12 +46983,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
+				<iCommerce>3</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>80</iCommerce>
+				<iCommerce>300</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -47560,12 +47548,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>800</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -47746,12 +47734,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>300</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -47932,7 +47920,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -48122,12 +48110,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -48315,12 +48303,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>200</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -48516,7 +48504,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -48704,7 +48692,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -48889,7 +48877,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers>
 				<iCommerce>10</iCommerce>
@@ -49076,12 +49064,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -49259,12 +49247,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>16</iCommerce>
+				<iCommerce>8</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -49797,7 +49785,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers>
@@ -49989,7 +49977,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>0</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers>
@@ -50177,12 +50165,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>16</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -50367,12 +50355,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>500</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -50550,12 +50538,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>200</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -50733,12 +50721,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>200</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -50909,12 +50897,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>200</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -51090,12 +51078,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>16</iCommerce>
+				<iCommerce>8</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -51291,12 +51279,12 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
@@ -53444,11 +53432,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -53613,11 +53597,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -53783,11 +53763,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -53966,11 +53942,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -54145,11 +54117,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -54677,11 +54645,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -54856,11 +54820,7 @@
 																<iCommerce>0</iCommerce>
 																<iCommerce>2</iCommerce>
 												</ObsoleteSafeCommerceChanges>
-												<CommerceChangeDoubleTimes>
-																<iCommerce>0</iCommerce>
-																<iCommerce>0</iCommerce>
-																<iCommerce>10</iCommerce>
-												</CommerceChangeDoubleTimes>
+												<CommerceChangeDoubleTimes/>
 												<CommerceModifiers/>
 												<GlobalCommerceModifiers/>
 												<SpecialistExtraCommerces/>
@@ -55994,7 +55954,7 @@
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
+				<iCommerce>100</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>

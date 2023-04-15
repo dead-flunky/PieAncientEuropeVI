@@ -164,7 +164,7 @@ class CvGameUtils:
 																		if eBonus != -1:
 																				iImprovement = loopPlot.getImprovementType()
 																				# or not loopPlot.isConnectedToCapital(iPlayer)
-																				if iImprovement == -1 or not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity():
+																				if iImprovement == -1 or not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity() or not loopPlot.isBonusNetwork(pPlayer.getTeam()):
 																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
 																		# Latifundium oder Village/Dorf
 																		if bSlave:
@@ -1675,16 +1675,16 @@ class CvGameUtils:
 																return True
 
 						# Worker (771): Schürflager
-						if iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
-								if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
-												if pPlot.getOwner() == pUnit.getOwner():
-														iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
-														eBonus = pPlot.getBonusType(-1)
-														if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
-																pPlot.setImprovementType(iLager)
-																pUnit.finishMoves()
-																return True
+						#if iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+						#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+						#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+						#						if pPlot.getOwner() == pUnit.getOwner():
+						#								iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+						#								eBonus = pPlot.getBonusType(-1)
+						#								if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
+						#										pPlot.setImprovementType(iLager)
+						#										pUnit.finishMoves()
+						#										return True
 
 
 						# Barbs -------------------------
@@ -3685,15 +3685,18 @@ class CvGameUtils:
 										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
 										return text
 								# Beobachtungsturm
-								if iData2 == 2: 
+								elif iData2 == 2: 
 										return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
 								# Schürflager
-								if iData2 == 3:
+								elif iData2 == 3:
 										text = u"<color=155,255,255,0>%s</color> " % CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ())
 										text = text + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
 										text = text + CyTranslator().getText("[NEWLINE]", ())
 										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
 										return text
+								# Pfad / Path
+								elif iData == 4:
+										return
 
 						# iData1 698 wieder frei
 

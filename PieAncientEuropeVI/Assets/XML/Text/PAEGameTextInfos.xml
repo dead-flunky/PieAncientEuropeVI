@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GET_BONUS_HELP</Tag>
 		<English>[ICON_BULLET]Creates a new source: [COLOR_HIGHLIGHT_TEXT]%s1_Bonus[COLOR_REVERT]</English>
@@ -98,11 +98,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CIVIL_WAR_5</Tag>
-		<English>[ICON_STRENGTH] A civil war has broken out in %s1_city!</English>
-		<French>[ICON_STRENGTH] Une guerre civile a &#233;clat&#233; dans %s1_city !</French>
-		<German>[ICON_STRENGTH] Ein B&#252;rgerkrieg ist in %s1_city ausgebrochen!</German>
-		<Italian>[ICON_STRENGTH] Una guerra civile &#232; scoppiata in %s1_city!</Italian>
-		<Spanish>[ICON_STRENGTH] &#161;Ha estallado una guerra civil en %s1_city!</Spanish>
+		<English>[ICON_STRENGTH] A civil war has broken out in %s1_city! The civil war ends when you have at least as many units as there are citizens (pop) in the city.</English>
+		<French>[ICON_STRENGTH] Une guerre civile a &#233;clat&#233; dans %s1_city ! La guerre civile se termine lorsque vous avez au moins autant d'unit&#233;s qu'il y a de citoyens (pop) dans la ville.</French>
+		<German>[ICON_STRENGTH] Ein B&#252;rgerkrieg ist in %s1_city ausgebrochen! Der B&#252;rgerkrieg wird beendet, wenn du mindestens genauso viele Einheiten wie B&#252;rger (Pop) in der Stadt stehen hast.</German>
+		<Italian>[ICON_STRENGTH] Una guerra civile &#232; scoppiata in %s1_city! La guerra civile finisce quando hai almeno tante unit&#224; quanti sono i cittadini (pop) in citt&#224;.</Italian>
+		<Spanish>[ICON_STRENGTH] &#161;Ha estallado una guerra civil en %s1_city! La guerra civil termina cuando tienes al menos tantas unidades como ciudadanos (pop) en la ciudad.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_TRADE_INFO_6</Tag>

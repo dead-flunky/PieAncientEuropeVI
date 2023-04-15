@@ -3364,7 +3364,15 @@
 			<NotUnitAIs/>
 			<Builds>
 				<Build>
+					<BuildType>BUILD_PATH</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_ORE_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -13436,7 +13444,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
+			<PrereqBuilding>BUILDING_GUSS_COPPER</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
 			<TechTypes/>
 			<BonusType>BONUS_COPPER</BonusType>
@@ -13482,7 +13490,7 @@
 			<iCollateralDamage>0</iCollateralDamage>
 			<iCollateralDamageLimit>0</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>0</iCollateralDamageMaxUnits>
-			<iCityAttack>20</iCityAttack>
+			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
@@ -13494,21 +13502,21 @@
 			<FeatureAttacks>
 				<FeatureAttack>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>20</iFeatureAttack>
+					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<iFeatureAttack>20</iFeatureAttack>
+					<iFeatureAttack>50</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureDefense>20</iFeatureDefense>
+					<iFeatureDefense>50</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<iFeatureDefense>20</iFeatureDefense>
+					<iFeatureDefense>50</iFeatureDefense>
 				</FeatureDefense>
 			</FeatureDefenses>
 			<UnitClassAttackMods/>
@@ -13516,7 +13524,7 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<UnitCombatCollateralImmunes/>
@@ -13696,7 +13704,7 @@
 			<iCollateralDamage>0</iCollateralDamage>
 			<iCollateralDamageLimit>0</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>0</iCollateralDamageMaxUnits>
-			<iCityAttack>20</iCityAttack>
+			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
@@ -13708,21 +13716,21 @@
 			<FeatureAttacks>
 				<FeatureAttack>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureAttack>20</iFeatureAttack>
+					<iFeatureAttack>25</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<iFeatureAttack>20</iFeatureAttack>
+					<iFeatureAttack>25</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iFeatureDefense>20</iFeatureDefense>
+					<iFeatureDefense>25</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<iFeatureDefense>20</iFeatureDefense>
+					<iFeatureDefense>25</iFeatureDefense>
 				</FeatureDefense>
 			</FeatureDefenses>
 			<UnitClassAttackMods/>
@@ -13730,11 +13738,11 @@
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_SWORDSMAN</UnitCombatType>
-					<iUnitCombatMod>20</iUnitCombatMod>
+					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
-					<iUnitCombatMod>-20</iUnitCombatMod>
+					<iUnitCombatMod>-25</iUnitCombatMod>
 				</UnitCombatMod>	
 			</UnitCombatMods>
 			<UnitCombatCollateralImmunes/>
@@ -30826,7 +30834,7 @@
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
 			<PrereqBuilding>BUILDING_PALACE</PrereqBuilding>
-			<PrereqTech>TECH_BELAGERUNG</PrereqTech>
+			<PrereqTech>TECH_BUENDNISSE</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses/>
@@ -48213,7 +48221,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>1</iAsset>
+			<iAsset>2</iAsset>
 			<iPower>1</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -48581,7 +48589,7 @@
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
 			<iAsset>2</iAsset>
-			<iPower>2</iPower>
+			<iPower>3</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -49122,7 +49130,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -49302,7 +49310,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -49487,7 +49495,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>1</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>3</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>1</iGroupSize>
@@ -49691,7 +49699,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>4</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
@@ -49913,7 +49921,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>4</iAsset>
 			<iPower>10</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
@@ -50134,7 +50142,7 @@
 			<iConscription>0</iConscription>
 			<iCultureGarrison>0</iCultureGarrison>
 			<iExtraCost>0</iExtraCost>
-			<iAsset>2</iAsset>
+			<iAsset>4</iAsset>
 			<iPower>8</iPower>
 			<UnitMeshGroups>
 				<iGroupSize>3</iGroupSize>
@@ -50450,7 +50458,7 @@
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
 			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqTech>TECH_ENSLAVEMENT</PrereqTech>
+			<PrereqTech>TECH_DEFENCES</PrereqTech>
 			<TechTypes/>
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses/>
@@ -62913,7 +62921,7 @@
 			<Capture>NONE</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_HORSE</Description>

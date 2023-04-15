@@ -666,8 +666,8 @@ def doPopupChooseBonus(pUnit, pCity):
 
 # Basiswert
 def getBonusValue(eBonus):
-		if eBonus == -1 or eBonus in L.LBonusUntradeable:
-				return 0
+		#if eBonus == -1 or eBonus in L.LBonusUntradeable:
+		#		return 0
 		if eBonus in L.LBonusCorn + L.LBonusLivestock + L.LBonusPlantation + L.LBonusCultivatableCoast:
 				return 10
 		elif eBonus in L.LBonusLuxury:

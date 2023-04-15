@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ITTOBAAL</Tag>
 		<English>Ithobaal I of Phoenicia</English>
@@ -2306,9 +2306,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SCHMIEDE_BRONZE_HELP</Tag>
-		<English>[ICON_BULLET]The number of bronze forges that can be built is equal to the combined number of copper and lead or tin in the trade network</English>
+		<English>[ICON_BULLET]The number of bronze works that can be built is equal to the combined number of copper and lead or tin in the trade network</English>
 		<French>[ICON_BULLET]Le nombre de forges de bronze pouvant &#234;tre construites est &#233;gal au nombre combin&#233; de cuivre et de plomb ou d'&#233;tain dans le r&#233;seau commercial</French>
-		<German>[ICON_BULLET]Die Anzahl baubarer Bronzeschmieden entspricht der gemeinsamen Anzahl von Kupfer und Blei oder Zinn im Handelsnetz</German>
+		<German>[ICON_BULLET]Die Anzahl baubarer Bronzeh&#252;tten entspricht der gemeinsamen Anzahl von Kupfer und Blei oder Zinn im Handelsnetz</German>
 		<Italian>[ICON_BULLET]Il numero di fucine di bronzo che possono essere costruite &#232; uguale al numero combinato di rame e piombo o stagno nella rete commerciale</Italian>
 		<Spanish>[ICON_BULLET]La cantidad de forjas de bronce que se pueden construir es igual a la cantidad combinada de cobre y plomo o esta&#241;o en la red comercial.</Spanish>
 	</TEXT>
@@ -5915,18 +5915,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THOLOS</Tag>
 		<English>Tholos Tomb</English>
-		<French>
-			Tombeau de Tholos
-		</French>
-		<German>
-			Tholosgrab
-		</German>
-		<Italian>
-			Tomba a Tholos
-		</Italian>
-		<Spanish>
-			Tumba de Tholos
-		</Spanish>
+		<French>Tombeau de Tholos</French>
+		<German>Tholosgrab</German>
+		<Italian>Tomba a Tholos</Italian>
+		<Spanish>Tumba de Tholos</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GARUM</Tag>
@@ -6187,7 +6179,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL1</Tag>
 		<English>1. Ecumenical Council</English>
-		<French>1. Concile Ocum&#233;nique</French>
+		<French>1. Concile &#338;cum&#233;nique</French>
 		<German>1. &#214;kumenisches Konzil</German>
 		<Italian>1. Consiglio ecumenico</Italian>
 		<Spanish>1. Concilio ecum&#233;nico</Spanish>
@@ -6195,7 +6187,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL2</Tag>
 		<English>2. Ecumenical Council</English>
-		<French>2. Concile Ocum&#233;nique</French>
+		<French>2. Concile &#338;cum&#233;nique</French>
 		<German>2. &#214;kumenisches Konzil</German>
 		<Italian>2. Consiglio ecumenico</Italian>
 		<Spanish>2. Concilio Ecum&#233;nico</Spanish>
@@ -6203,7 +6195,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL3</Tag>
 		<English>3. Ecumenical Council</English>
-		<French>3. Concile Ocum&#233;nique</French>
+		<French>3. Concile &#338;cum&#233;nique</French>
 		<German>3. &#214;kumenisches Konzil</German>
 		<Italian>3. Consiglio ecumenico</Italian>
 		<Spanish>3. Concilio Ecum&#233;nico</Spanish>
@@ -6211,7 +6203,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL4</Tag>
 		<English>4. Ecumenical Council</English>
-		<French>4. Concile Ocum&#233;nique</French>
+		<French>4. Concile &#338;cum&#233;nique</French>
 		<German>4. &#214;kumenisches Konzil</German>
 		<Italian>4. Consiglio ecumenico</Italian>
 		<Spanish>4. Concilio Ecum&#233;nico</Spanish>
@@ -6219,7 +6211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL5</Tag>
 		<English>5. Ecumenical Council</English>
-		<French>5. Concile Ocum&#233;nique</French>
+		<French>5. Concile &#338;cum&#233;nique</French>
 		<German>5. &#214;kumenisches Konzil</German>
 		<Italian>5. Consiglio ecumenico</Italian>
 		<Spanish>5. Concilio Ecum&#233;nico</Spanish>
@@ -7907,5 +7899,29 @@
 		<German>Lehmmauern</German>
 		<Italian>Muri di Argilla</Italian>
 		<Spanish>Paredes de Arcilla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_PATH</Tag>
+		<English>Path</English>
+		<French><Text>Chemin:Chemins</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></French>
+		<German><Text>Pfad:Pfade</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></German>
+		<Italian><Text>Percorso:Percorsi</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Italian>
+		<Spanish><Text>Camino:Caminos</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_PATH</Tag>
+		<English>Build a [LINK=CONCEPT_MOVEMENT]Path[\LINK]</English>
+		<French>construire une [LINK=CONCEPT_MOVEMENT]chemin[\LINK]</French>
+		<German>[LINK=CONCEPT_MOVEMENT]Pfad[\LINK] anlegen</German>
+		<Italian>Costruire un [LINK=CONCEPT_MOVEMENT]percorso[\LINK]</Italian>
+		<Spanish>Construir un [LINK=CONCEPT_MOVEMENT]camino[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ROADS</Tag>
+		<English>Trails</English>
+		<French>Sentiers</French>
+		<German>Trampelpfade</German>
+		<Italian>Sentieri</Italian>
+		<Spanish>Caminos</Spanish>
 	</TEXT>
 </Civ4GameText>
