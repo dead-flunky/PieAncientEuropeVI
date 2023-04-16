@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ALL_MELEE</Tag>
 		<English>All melee units</English>
@@ -642,11 +642,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_CAMP_HUNTER</Tag>
-		<English>[ICON_BULLET]Unit is immobile for 2 turns[NEWLINE]Cost: 5 [ICON_GOLD]</English>
-		<French>[ICON_BULLET]L'unit&#233; est immobile pendant 2 tours[NEWLINE]Co&#251;t : 5 [ICON_GOLD]</French>
-		<German>[ICON_BULLET]Einheit ist 2 Runden unbeweglich[NEWLINE]Kosten: 5 [ICON_GOLD]</German>
-		<Italian>[ICON_BULLET]L'unit&#224; &#232; immobile per 2 turni[NEWLINE]Costo: 5 [ICON_GOLD]</Italian>
-		<Spanish>[ICON_BULLET]La unidad est&#225; inm&#243;vil durante 2 turnos[NEWLINE]Costo: 5 [ICON_GOLD]</Spanish>
+		<English>[ICON_BULLET] Cost: 4 [ICON_GOLD]</English>
+		<French>[ICON_BULLET] Co&#251;t : 4 [ICON_GOLD]</French>
+		<German>[ICON_BULLET] Kosten: 4 [ICON_GOLD]</German>
+		<Italian>[ICON_BULLET] Costo: 4 [ICON_GOLD]</Italian>
+		<Spanish>[ICON_BULLET] Costo: 4 [ICON_GOLD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_RELIGION_UNIT_BUILT_INFO_1</Tag>

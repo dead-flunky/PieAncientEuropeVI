@@ -3364,15 +3364,7 @@
 			<NotUnitAIs/>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_PATH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_ORE_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>

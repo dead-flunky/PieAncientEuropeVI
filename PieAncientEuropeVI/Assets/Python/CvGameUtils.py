@@ -1675,16 +1675,16 @@ class CvGameUtils:
 																return True
 
 						# Worker (771): Schürflager
-						#if iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
-						#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-						#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
-						#						if pPlot.getOwner() == pUnit.getOwner():
-						#								iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
-						#								eBonus = pPlot.getBonusType(-1)
-						#								if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
-						#										pPlot.setImprovementType(iLager)
-						#										pUnit.finishMoves()
-						#										return True
+						if iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+								if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+												if pPlot.getOwner() == pUnit.getOwner():
+														iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+														eBonus = pPlot.getBonusType(iOwner)
+														if eBonus != -1 and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus): #and pPlot.getImprovementType() != iLager
+																pPlot.setImprovementType(iLager)
+																pUnit.finishMoves()
+																return True
 
 
 						# Barbs -------------------------

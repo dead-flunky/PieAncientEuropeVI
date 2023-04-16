@@ -2055,19 +2055,20 @@ class CvMainInterface:
 
 												# --------------------
 												# Worker / Schürflager (wird mit Steinmetzkunst obsolet)
-												#elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
-												#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MASONRY")):
-												#				pPlot = pUnit.plot()
-												#				# Build Option: Lager
-												#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ROADS")):
-												#						if pPlot.getOwner() == pUnit.getOwner():
-												#								iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
-												#								eBonus = pPlot.getBonusType(-1)
-												#								if eBonus != -1 and pPlot.getImprovementType() != iLager and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus):
-												#										screen.appendMultiListButton(
-												#												"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
-												#										screen.show("BottomButtonContainer")
-												#										iCount += 1
+												elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																pPlot = pUnit.plot()
+																# Build Option: Lager
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+																		if pPlot.getOwner() == pUnit.getOwner():
+																				iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+																				eBonus = pPlot.getBonusType(iUnitOwner)
+																				if eBonus != -1 and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus): #and pPlot.getImprovementType() != iLager
+																						screen.appendMultiListButton(
+																								"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
+																						screen.show("BottomButtonContainer")
+																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																						iCount += 1
 
 												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind

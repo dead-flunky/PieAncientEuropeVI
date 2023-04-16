@@ -2009,7 +2009,7 @@ class CvEventManager:
 						pUnit.finishMoves()
 						PAE_Unit.doGoToNextUnit(pUnit)
 
-				# Hunter: Lager oder Beobachtungsturm bauen
+				# Hunter/Worker: Lager oder Beobachtungsturm bauen
 				elif iData1 == 771:
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
@@ -2017,8 +2017,9 @@ class CvEventManager:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
 						elif iData2 == 2:
 								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TURM"))
-						#elif iData2 == 3:
-						#		pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
+						elif iData2 == 3:
+								pUnit.plot().setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP"))
+								#pUnit.getGroup().pushMission(MissionTypes.MISSION_BUILD, gc.getInfoTypeForString("BUILD_ORE_CAMP"), 0, 0, False, False, MissionAITypes.MISSIONAI_BUILD, pUnit.plot(), pUnit)
 						#elif iData2 == 4:
 						#		pUnit.plot().setRouteType(gc.getInfoTypeForString("ROUTE_PATH"))
 						pPlayer.changeGold(-4)
@@ -3278,6 +3279,14 @@ class CvEventManager:
 						# if iImprovement in L.LImprFortShort:
 						#  PAE_Turn_Features.doCheckFortCulture(pPlot)
 				# ------
+
+				# PAE 6.15: Automatischer Trampelpfad bis zur Entdeckung der normalen Strasse (TECH_THE_WHEEL2)
+				iOwner = pPlot.getOwner()
+				iThisTeam = gc.getPlayer(iOwner).getTeam()
+				pTeam = gc.getTeam(iThisTeam)
+				if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
+						PAE_Trade.setPath2City(iOwner, pPlot)
+
 
 				if not self.__LOG_IMPROVEMENT:
 						return

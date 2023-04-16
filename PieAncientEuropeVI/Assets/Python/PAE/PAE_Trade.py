@@ -301,9 +301,8 @@ def doBuildTradeRoad(pUnit, pCity):
 										CyInterface().addMessage(pCity.getOwner(), True, 10, sMessage, "AS2D_WELOVEKING", 2, gc.getBuildingInfo(iBuilding).getButton(), ColorTypes(10), pCity.getX(), pCity.getY(), True, True)
 										CvUtil.pyPrint(sMessage)
 
+
 # Gibt Plot zurueck, auf dem das naechste Handelsstrassen-Stueck entstehen soll bzw. ob die Strasse schon fertig ist. Von Pie.
-
-
 def getPlotTradingRoad(pSource, pDest):
 		# Nur auf gleichem Kontinent
 		if pSource.getArea() == pDest.getArea():
@@ -503,9 +502,125 @@ def getPlotTradingRoad(pSource, pDest):
 						# while end
 		return None
 
+
+# Baut einen Pfad zur nächsten Stadt. (Pie)
+def setPath2City(iPlayer, pSource):
+		pDest = None
+		pPlayer = gc.getPlayer(iPlayer)
+		iRoad = gc.getInfoTypeForString("ROUTE_PATH")
+
+		# Zu Beginn: Auf der Ressource (pSource) einen Pfad setzen
+		pSource.setRouteType(iRoad)
+
+		# Näheste Stadt anpeilen
+		iDistance = 0
+		iBestDistance = 99
+		iNumCities = pPlayer.getNumCities()
+		for iCity in range(iNumCities):
+				loopCity = pPlayer.getCity(iCity)
+				if not loopCity.isNone():
+						iDistance = gc.getMap().calculatePathDistance(loopCity.plot(), pSource)
+						if iDistance < iBestDistance:
+								iBestDistance = iDistance
+								pDest = loopCity.plot()
+
+		if pDest == None:
+				return
+
+		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, u"Distance: " + str(iBestDistance), None, 2, "Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds", ColorTypes(10), pSource.getX(), pSource.getY(), True, True)
+
+		# Nur auf gleichem Kontinent
+		if pSource.getArea() == pDest.getArea():
+				iSourceX = pSource.getX()
+				iSourceY = pSource.getY()
+				iDestX = pDest.getX()
+				iDestY = pDest.getY()
+
+				# Die nähesten 3 Plots zur Source-Stadt
+				p = [None, None, None]
+				# Ob diese Hills sind
+				h = [0, 0, 0]
+
+				pBest = None
+				while iDestX != iSourceX or iDestY != iSourceY:
+
+						i = 0
+						j = 0
+						iBest = 0
+						for i in range(3):
+								for j in range(3):
+										loopPlot = gc.getMap().plot(iSourceX + i - 1, iSourceY + j - 1)
+
+										if not loopPlot.isNone():
+												# Gleicher Plot wie die neue Modernisierung
+												if loopPlot.getX() == iSourceX and loopPlot.getY() == iSourceY:
+														continue
+												# Bei Städten oder einem Plot einer Straße, beenden
+												if loopPlot.isCity() or loopPlot.isRoute():
+														return
+
+												if not loopPlot.isPeak() and not loopPlot.isWater():
+
+														iTmp = gc.getMap().calculatePathDistance(loopPlot, pDest)
+														# Beenden, wenn kein Weg moeglich
+														if iTmp == -1:
+																return
+														# wenn Distanz null ist, wurde der letzte Plot gefunden
+														elif iTmp == 0:
+																return
+
+														if iBest == 0 or iTmp < iBest:
+																iBest = iTmp
+																pBest = loopPlot
+																p = [loopPlot, None, None]
+																if loopPlot.isHills():
+																		h[0] = 1
+														elif iTmp == iBest:
+																if p[1] == None:
+																		p[1] = loopPlot
+																		if loopPlot.isHills():
+																				h[1] = 1
+																elif p[2] == None:
+																		p[2] = loopPlot
+																		if loopPlot.isHills():
+																				h[2] = 1
+
+						if pBest == None:
+								continue
+
+						# Plots mit Hills ausnehmen
+						if not ((p[0] == None or h[0]) and (p[1] == None or h[1]) and (p[2] == None or h[2])) or not (not h[0] and not h[1] and not h[2]):
+								if h[0]:
+										p[0] = None
+								if h[1]:
+										p[1] = None
+								if h[2]:
+										p[2] = None
+
+								# wenn es nur mehr gerade zur Stadt geht (= ignoriert Hills)
+								if p[0] != None and (p[0].getX() == iDestX or p[0].getY() == iDestY):
+										pBest = p[0]
+								elif p[1] != None and (p[1].getX() == iDestX or p[1].getY() == iDestY):
+										pBest = p[1]
+								elif p[2] != None and (p[2].getX() == iDestX or p[2].getY() == iDestY):
+										pBest = p[2]
+								else:
+										if p[0] != None:
+												pBest = p[0]
+										if p[1] != None and (abs(pBest.getX() - iDestX) > abs(p[1].getX() - iDestX) or abs(pBest.getY() - iDestY) > abs(p[1].getY() - iDestY)):
+												pBest = p[1]
+										if p[2] != None and (abs(pBest.getX() - iDestX) > abs(p[2].getX() - iDestX) or abs(pBest.getY() - iDestY) > abs(p[2].getY() - iDestY)):
+												pBest = p[2]
+
+						# Trampelpfad bauen
+						if pBest:
+								pBest.setRouteType(iRoad)
+
+				# while end
+		return
+
+
 # Player gets research points for current project (called when foreign goods are sold to player's cities)
-
-
 def _doResearchPush(iPlayer1, iValue1):
 		pPlayer1 = gc.getPlayer(iPlayer1)
 #    pPlayer2 = gc.getPlayer(iPlayer2)

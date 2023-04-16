@@ -7,7 +7,7 @@
 			<Type>BUILD_PATH</Type>
 			<Description>TXT_KEY_BUILD_PATH</Description>
 			<Help/>
-			<PrereqTech>TECH_ROADS</PrereqTech>
+			<PrereqTech/>
 			<iTime>100</iTime>
 			<iCost>2</iCost>
 			<bKill>0</bKill>
@@ -195,7 +195,7 @@
 			<Type>BUILD_ORE_CAMP</Type>
 			<Description>TXT_KEY_BUILD_ORE_CAMP</Description>
 			<Help/>
-			<PrereqTech>TECH_ROADS</PrereqTech>
+			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
 			<iTime>100</iTime>
 			<iCost>4</iCost>
 			<bKill>0</bKill>

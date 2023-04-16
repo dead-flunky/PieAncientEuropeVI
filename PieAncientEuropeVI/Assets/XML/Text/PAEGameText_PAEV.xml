@@ -7902,10 +7902,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_PATH</Tag>
-		<English>Path</English>
-		<French><Text>Chemin:Chemins</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></French>
-		<German><Text>Pfad:Pfade</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></German>
-		<Italian><Text>Percorso:Percorsi</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Italian>
+		<English>Trail</English>
+		<French><Text>Piste:Sentiers</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></French>
+		<German><Text>Trampelpfad:Trampelpfade</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></German>
+		<Italian><Text>Sentiero:Sentieri</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Italian>
 		<Spanish><Text>Camino:Caminos</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
