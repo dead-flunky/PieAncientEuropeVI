@@ -2122,6 +2122,20 @@ class CvMainInterface:
 														iCount += 1
 
 												# --------------------
+												# Donkey/Esel (Button per XML) (not in city)
+												elif iUnitType == gc.getInfoTypeForString("UNIT_ESEL"):
+														pPlot = pUnit.plot()
+														if pPlot.getOwner() == iUnitOwner:
+																# Check plot
+																eBonus = gc.getInfoTypeForString("BONUS_ESEL")
+																if PAE_Cultivation._isBonusCultivationChance(iUnitOwner, pPlot, eBonus, False, None):
+																		screen.appendMultiListButton(
+																				"BottomButtonContainer", "Art/Terrain/Resources/Esel/button_bonus_esel.dds", 0, WidgetTypes.WIDGET_GENERAL, 721, 20, False)
+																		screen.show("BottomButtonContainer")
+																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																		iCount += 1
+																return
+												# --------------------
 												# Horse/Pferd (Button per XML) (not in city)
 												elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE"):
 														pPlot = pUnit.plot()
@@ -7467,22 +7481,26 @@ class CvMainInterface:
 										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
 										CyMessageControl().sendModNetMessage(720, 0, 0, iOwner, iUnitID)
 
-								# ID 721: 1,4,14: Stallungen, Camel, Elefant, Pferd
+								# ID 721: 1,4,14,20: Stallungen, Camel, Elefant, Pferd, Esel
 								elif iData1 == 721:
-										if iData2 in [1, 4, 14]:
+										if iData2 in [1, 4, 14, 20]:
 												if pPlot.isCity():
 														iCityID = pPlot.getPlotCity().getID()
 												else:
 														iCityID = -1
-										if iData2 == 1:
-												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_WAR_ELEPHANT')
-												CyMessageControl().sendModNetMessage(721, iCityID, 1, iOwner, iUnitID)
-										elif iData2 == 4:
-												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_ARABIAN_CAMEL_ARCHER')
-												CyMessageControl().sendModNetMessage(721, iCityID, 2, iOwner, iUnitID)
-										elif iData2 == 14:
-												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_HORSE_ARCHER')
-												CyMessageControl().sendModNetMessage(721, iCityID, 3, iOwner, iUnitID)
+												if iData2 == 1:
+														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_WAR_ELEPHANT')
+														eBonus = gc.getInfoTypeForString("BONUS_IVORY")
+												elif iData2 == 4:
+														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_ARABIAN_CAMEL_ARCHER')
+														eBonus = gc.getInfoTypeForString("BONUS_CAMEL")
+												elif iData2 == 14:
+														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_HORSE_ARCHER')
+														eBonus = gc.getInfoTypeForString("BONUS_HORSE")
+												elif iData2 == 20:
+														CyAudioGame().Play2DSound('AS2D_UNIT_ESEL')
+														eBonus = gc.getInfoTypeForString("BONUS_ESEL")
+												CyMessageControl().sendModNetMessage(721, iCityID, eBonus, iOwner, iUnitID)
 
 								# ID 722 Piraten-Feature
 								# Data2=1: Pirat->Normal, Data2=2: Normal->Pirat

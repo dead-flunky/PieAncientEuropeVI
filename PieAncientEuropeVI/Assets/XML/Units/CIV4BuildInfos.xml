@@ -214,7 +214,7 @@
 			<Type>BUILD_PASTURE</Type>
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<Help/>
-			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
+			<PrereqTech>TECH_FENCES</PrereqTech>
 			<iTime>400</iTime>
 			<iCost>10</iCost>
 			<bKill>0</bKill>

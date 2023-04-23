@@ -7932,4 +7932,12 @@
 		<Italian><Text>Asino:Asini</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Italian>
 		<Spanish><Text>Burro:Burros</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HELP_ADD_ESEL</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Distribute donkeys[COLOR_REVERT][ICON_BULLET]Distributes the bonus resource of donkeys[ICON_BULLET]The unit gets disbanded</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Implante les &#226;nes[COLOR_REVERT][ICON_BULLET]Implante la ressource &#226;nes[ICON_BULLET]L'unit&#233; est supprim&#233;e</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Esel verbreiten[COLOR_REVERT][ICON_BULLET]Verbreitet die Resource Esel[ICON_BULLET]Die Einheit wird dabei aufgel&#246;st</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Distribuisci asini[COLOR_REVERT][ICON_BULLET]Distribuisce la risorsa bonus di asini[ICON_BULLET]L'unit&#224; viene sciolta</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Distribuir burros[COLOR_REVERT][ICON_BULLET]Distribuye el recurso adicional de burros[ICON_BULLET]La unidad se disuelve</Spanish>
+	</TEXT>
 </Civ4GameText>

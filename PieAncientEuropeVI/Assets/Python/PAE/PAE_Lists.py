@@ -1246,6 +1246,7 @@ def init():
 				gc.getInfoTypeForString("BONUS_IRON"),
 				gc.getInfoTypeForString("BONUS_CAMEL"),
 				gc.getInfoTypeForString("BONUS_IVORY"),
+				gc.getInfoTypeForString("BONUS_ESEL"),
 				gc.getInfoTypeForString("BONUS_HORSE"),
 				gc.getInfoTypeForString("BONUS_STONE"),
 				gc.getInfoTypeForString("BONUS_MARBLE"),
@@ -1254,6 +1255,7 @@ def init():
 		]
 
 		LBonusStratCultivatable = [
+				gc.getInfoTypeForString("BONUS_ESEL"),
 				gc.getInfoTypeForString("BONUS_CAMEL"),
 				gc.getInfoTypeForString("BONUS_HORSE")
 		]
@@ -1261,6 +1263,7 @@ def init():
 		LBonus4Units = [
 				gc.getInfoTypeForString("BONUS_BRONZE"),
 				gc.getInfoTypeForString("BONUS_IRON"),
+				gc.getInfoTypeForString("BONUS_ESEL"),
 				gc.getInfoTypeForString("BONUS_HORSE"),
 				gc.getInfoTypeForString("BONUS_HUNDE")
 		]

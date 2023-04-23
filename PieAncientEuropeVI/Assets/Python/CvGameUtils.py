@@ -3426,6 +3426,8 @@ class CvGameUtils:
 										return CyTranslator().getText("TXT_KEY_DYING_SLAVE_FARM_HELP", ())
 								elif iData2 == 19:
 										return CyTranslator().getText("TXT_KEY_DYING_SLAVE_TECH_REDUCE_HELP", ())
+								elif iData2 == 20:
+										return CyTranslator().getText("TXT_KEY_HELP_ADD_ESEL", ())
 
 						# Piraten-Feature
 						elif iData1 == 722:

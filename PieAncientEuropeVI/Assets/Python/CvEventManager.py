@@ -821,18 +821,11 @@ class CvEventManager:
 
 				# Stall: Elefant, Kamel, Pferd
 				elif iData1 == 721:
-						# 721, iCityID, (1 = Elefantenstall | 2 = Kamellager | 3 = Pferdestall), iPlayer, iUnitID
+						# 721, iCityID, (1 = Elefanten | 2 = Kamele | 3 = Pferde), iPlayer, iUnitID
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
-						eBonus = -1
-						if iData3 == 1:
-								eBonus = gc.getInfoTypeForString("BONUS_IVORY")
-						elif iData3 == 2:
-								eBonus = gc.getInfoTypeForString("BONUS_CAMEL")
-						elif iData3 == 3:
-								eBonus = gc.getInfoTypeForString("BONUS_HORSE")
-						if eBonus != -1:
-								PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, eBonus)
+						if iData3 != -1:
+								PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, iData3)
 						"""
 						if iData3 == 1:
 								pCity.setNumRealBuilding(gc.getInfoTypeForString("BUILDING_ELEPHANT_STABLE"), 1)

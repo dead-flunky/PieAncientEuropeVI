@@ -33266,7 +33266,7 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqTech>TECH_THE_WHEEL</PrereqTech>
 			<TechTypes/>
-			<BonusType>NONE</BonusType>
+			<BonusType>BONUS_ESEL</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
@@ -62989,7 +62989,7 @@
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
 			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqTech>TECH_ANIMAL_HUSBANDRY</PrereqTech>
+			<PrereqTech>TECH_FENCES</PrereqTech>
 			<TechTypes/>
 			<BonusType>BONUS_ESEL</BonusType>
 			<PrereqBonuses/>
