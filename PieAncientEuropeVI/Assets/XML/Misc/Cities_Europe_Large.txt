@@ -1,8 +1,8 @@
 # -------------------------------
 # City names for the Europe Large (and Barb 18 civs) scenario
 # -------------------------------
-# x=X-Coordinate(from-to)
-# y=Y-Coordinate(from-to)
+# x=X-Coordinate OR fromX-toX
+# y=Y-Coordinate OR fromY-toY
 # name=cityname
 # -------------------------------
 # X-Y coords: either:

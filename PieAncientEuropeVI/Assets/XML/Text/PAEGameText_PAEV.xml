@@ -7924,4 +7924,12 @@
 		<Italian>Sentieri</Italian>
 		<Spanish>Caminos</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESEL</Tag>
+		<English>Donkey</English>
+		<French>Ane</French>
+		<German>Esel</German>
+		<Italian><Text>Asino:Asini</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Italian>
+		<Spanish><Text>Burro:Burros</Text><Gender>Male:Male</Gender><Plural>0:1</Plural></Spanish>
+	</TEXT>
 </Civ4GameText>

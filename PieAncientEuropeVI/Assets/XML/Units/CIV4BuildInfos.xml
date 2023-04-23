@@ -158,7 +158,7 @@
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_HUNTING</PrereqTech>
-			<iTime>100</iTime>
+			<iTime>200</iTime>
 			<iCost>4</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
@@ -177,7 +177,7 @@
 			<Description>TXT_KEY_BUILD_LUMBER_CAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-			<iTime>200</iTime>
+			<iTime>300</iTime>
 			<iCost>6</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_LUMBER_CAMP</ImprovementType>
@@ -196,7 +196,7 @@
 			<Description>TXT_KEY_BUILD_ORE_CAMP</Description>
 			<Help/>
 			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
-			<iTime>100</iTime>
+			<iTime>200</iTime>
 			<iCost>4</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORE_CAMP</ImprovementType>

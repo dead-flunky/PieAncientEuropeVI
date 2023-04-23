@@ -195,32 +195,32 @@ class CvGameUtils:
 												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 										# Wälder ohne Lager (nur bei Deer und Fur)
-										iMapW = gc.getMap().getGridWidth()
-										iMapH = gc.getMap().getGridHeight()
-										iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
-										iCamp = gc.getInfoTypeForString("IMPROVEMENT_CAMP")
-										lBonus = [
-												gc.getInfoTypeForString("BONUS_DEER"),
-												gc.getInfoTypeForString("BONUS_FUR")
-										]
-										for x in range(iMapW):
-												for y in range(iMapH):
-														loopPlot = gc.getMap().plot(x, y)
-														if loopPlot is not None and not loopPlot.isNone():
-																if loopPlot.getFeatureType() == iDarkIce:
-																		continue
-																if loopPlot.isWater() or loopPlot.isPeak() or loopPlot.isCity():
-																		continue
-																#if loopPlot.getFeatureType() in L.LForests:
-																if loopPlot.getOwner() == iPlayer:
-																		if loopPlot.getBonusType(iPlayer) in lBonus:
-																				eBonus = loopPlot.getBonusType(iPlayer)
-																				eImprovement = loopPlot.getImprovementType()
-																				if eImprovement == -1 or not gc.getImprovementInfo(eImprovement).isImprovementBonusTrade(eBonus):
-																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
-																		elif loopPlot.getFeatureType() in L.LForests:
-																				if loopPlot.getImprovementType() == -1:
-																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
+										#iMapW = gc.getMap().getGridWidth()
+										#iMapH = gc.getMap().getGridHeight()
+										#iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+										#iCamp = gc.getInfoTypeForString("IMPROVEMENT_CAMP")
+										#lBonus = [
+										#		gc.getInfoTypeForString("BONUS_DEER"),
+										#		gc.getInfoTypeForString("BONUS_FUR")
+										#]
+										#for x in range(iMapW):
+										#		for y in range(iMapH):
+										#				loopPlot = gc.getMap().plot(x, y)
+										#				if loopPlot is not None and not loopPlot.isNone():
+										#						if loopPlot.getFeatureType() == iDarkIce:
+										#								continue
+										#						if loopPlot.isWater() or loopPlot.isPeak() or loopPlot.isCity():
+										#								continue
+										#						#if loopPlot.getFeatureType() in L.LForests:
+										#						if loopPlot.getOwner() == iPlayer:
+										#								if loopPlot.getBonusType(iPlayer) in lBonus:
+										#										eBonus = loopPlot.getBonusType(iPlayer)
+										#										eImprovement = loopPlot.getImprovementType()
+										#										if eImprovement == -1 or not gc.getImprovementInfo(eImprovement).isImprovementBonusTrade(eBonus):
+										#												CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+										#								elif loopPlot.getFeatureType() in L.LForests:
+										#										if loopPlot.getImprovementType() == -1:
+										#												CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 
 
 								# Auswanderer
@@ -1644,12 +1644,12 @@ class CvGameUtils:
 						# Hunter (771): Lager oder Beobachtungsturm
 						if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
 								# Lager / Camp
-								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
-										if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
-												if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
-														pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
-														pUnit.finishMoves()
-														return True
+								#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
+								#		if pPlot.getOwner() == pUnit.getOwner() and pPlot.getImprovementType() == -1:
+								#				if pPlot.isCultureRangeCity(iOwner, 2) and pPlot.getFeatureType() in L.LForests:
+								#						pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_CAMP"))
+								#						pUnit.finishMoves()
+								#						return True
 								# Beobachtungsturm / Spähturm / Look-out
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
 										if pPlot.isHills() and pPlot.getImprovementType() == -1 and pPlot.getBonusType(-1) == -1:

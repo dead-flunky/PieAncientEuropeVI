@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEZHETAIROI2</Tag>
 		<English>Sarissophoros</English>
@@ -4256,11 +4256,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CELTIC_TEMPLE</Tag>
-		<English>Celtic Altar</English>
-		<French>Autel celtique</French>
-		<German>Keltischer Altar</German>
-		<Italian>Altare Celtico</Italian>
-		<Spanish>Altar Celta</Spanish>
+		<English>Nemeton (Celtic Altar)</English>
+		<French>Nemeton (Autel celtique)</French>
+		<German>Nemeton (Keltischer Altar)</German>
+		<Italian>Nemeton (Altare Celtico)</Italian>
+		<Spanish>Nemeton (Altar Celta)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GREEK_TEMPLE</Tag>

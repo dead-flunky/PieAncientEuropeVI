@@ -3282,10 +3282,10 @@ class CvEventManager:
 
 				# PAE 6.15: Automatischer Trampelpfad bis zur Entdeckung der normalen Strasse (TECH_THE_WHEEL2)
 				iOwner = pPlot.getOwner()
-				iThisTeam = gc.getPlayer(iOwner).getTeam()
-				pTeam = gc.getTeam(iThisTeam)
-				if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
-						PAE_Trade.setPath2City(iOwner, pPlot)
+				#iThisTeam = gc.getPlayer(iOwner).getTeam()
+				#pTeam = gc.getTeam(iThisTeam)
+				#if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
+				PAE_Trade.setPath2City(iOwner, pPlot)
 
 
 				if not self.__LOG_IMPROVEMENT:

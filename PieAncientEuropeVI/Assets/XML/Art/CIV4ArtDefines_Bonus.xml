@@ -343,6 +343,16 @@
 			<FontButtonIndex>36</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_ESEL</Type>
+			<fScale>1.1</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Esel/horse.nif</NIF>
+			<KFM>Art/Terrain/Resources/Esel/Horse.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Esel/horse_fx.nif</SHADERNIF>
+			<Button>Art/Terrain/Resources/Esel/button_bonus_esel.dds</Button>
+			<FontButtonIndex>37</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SCULPTURE</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

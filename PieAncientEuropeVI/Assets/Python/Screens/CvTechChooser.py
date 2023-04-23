@@ -816,10 +816,10 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_missionar_zoro.dds", iX + fX,
 																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 2, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_COLONIZATION"):
-								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5", iX + fX,
-																	 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 3, False)
-								fX += X_INCREMENT
+						#elif i == gc.getInfoTypeForString("TECH_COLONIZATION"):
+						#		screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/Buttons/Units/Settler.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,5", iX + fX,
+						#											 iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 676, 3, False)
+						#		fX += X_INCREMENT
 
 						# Siegestempel und -stelen
 						elif i == gc.getInfoTypeForString("TECH_BUCHSTABEN"):

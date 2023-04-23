@@ -505,6 +505,10 @@ def getPlotTradingRoad(pSource, pDest):
 
 # Baut einen Pfad zur nächsten Stadt. (Pie)
 def setPath2City(iPlayer, pSource):
+
+		if iPlayer == -1 or pSource.isRoute():
+				return
+
 		pDest = None
 		pPlayer = gc.getPlayer(iPlayer)
 		iRoad = gc.getInfoTypeForString("ROUTE_PATH")
