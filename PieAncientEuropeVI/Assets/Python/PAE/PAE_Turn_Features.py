@@ -1233,7 +1233,12 @@ def doMoveBonus(BonusPlots):
 
 						if lPlots:
 								pNewPlot = lPlots[CvUtil.myRandom(len(lPlots), "picking plot of moving wild animal bonus")]
-								iPlotOwner = pNewPlot.getOwner()
-								if iPlotOwner != -1 and gc.getPlayer(iPlotOwner).isHuman():
-										CyInterface().addMessage(iPlotOwner, True, 20, CyTranslator().getText("TXT_KEY_INFO_MOVE_ANIMAL_BONUS", (gc.getBonusInfo(eBonus).getDescription())), None, 2,
-																						 gc.getBonusInfo(eBonus).getButton(), ColorTypes(5), pNewPlot.getX(), pNewPlot.getY(), True, True)
+								pNewPlot.setBonusType(eBonus)
+								pPlot.setBonusType(-1)
+								iRange = gc.getMAX_PLAYERS()
+								for iPlayer in range(iRange):
+										pPlayer = gc.getPlayer(iPlayer)
+										if pPlayer is not None and not pPlayer.isNone() and pPlayer.isAlive():
+												if gc.getPlayer(iPlayer).isHuman() and pNewPlot.isRevealed(pPlayer.getTeam(), False):
+														CyInterface().addMessage(iPlayer, True, 20, CyTranslator().getText("TXT_KEY_INFO_MOVE_ANIMAL_BONUS", (gc.getBonusInfo(eBonus).getDescription())), None, 2,
+																										 gc.getBonusInfo(eBonus).getButton(), ColorTypes(5), pNewPlot.getX(), pNewPlot.getY(), True, True)
