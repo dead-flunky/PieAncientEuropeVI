@@ -1213,9 +1213,20 @@ def doCheckFortCulture(pPlot):
 # -- PAE VI, Patch 15: nicht kultivierte Bonusressourcen (Tiere) sollen den Standort wechseln
 def doMoveBonus(BonusPlots):
 		iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+		LNoForest = [
+				gc.getInfoTypeForString("BONUS_ESEL"),
+				gc.getInfoTypeForString("BONUS_HORSE")
+		]
+		LForests = [
+				gc.getInfoTypeForString("FEATURE_JUNGLE"),
+				gc.getInfoTypeForString("FEATURE_FOREST"),
+				gc.getInfoTypeForString("FEATURE_DICHTERWALD")
+		]
+		eJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
+
 		for i in range(len(BonusPlots)):
 				# Chance 1:20
-				if CvUtil.myRandom(20, "chance of moving wild animal bonus") == 1:
+				if CvUtil.myRandom(2, "chance of moving wild animal bonus") == 1:
 						pPlot = BonusPlots[i]
 						eBonus = pPlot.getBonusType(-1)
 
@@ -1229,6 +1240,10 @@ def doMoveBonus(BonusPlots):
 										if not loopPlot.isWater() and not loopPlot.isPeak():
 												if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce:
 														if loopPlot.canHaveBonus(eBonus, True):
+																if eBonus in LNoForest and loopPlot.getFeatureType() in LForests:
+																		continue
+																if eBonus == gc.getInfoTypeForString("BONUS_IVORY") and loopPlot.getFeatureType() != eJungle:
+																		continue
 																lPlots.append(loopPlot)
 
 						if lPlots:
@@ -1239,6 +1254,11 @@ def doMoveBonus(BonusPlots):
 								for iPlayer in range(iRange):
 										pPlayer = gc.getPlayer(iPlayer)
 										if pPlayer is not None and not pPlayer.isNone() and pPlayer.isAlive():
-												if gc.getPlayer(iPlayer).isHuman() and pNewPlot.isRevealed(pPlayer.getTeam(), False):
-														CyInterface().addMessage(iPlayer, True, 20, CyTranslator().getText("TXT_KEY_INFO_MOVE_ANIMAL_BONUS", (gc.getBonusInfo(eBonus).getDescription())), None, 2,
-																										 gc.getBonusInfo(eBonus).getButton(), ColorTypes(5), pNewPlot.getX(), pNewPlot.getY(), True, True)
+												iTeam = pPlayer.getTeam()
+												if gc.getPlayer(iPlayer).isHuman() and (pPlot.isRevealed(iTeam, False) or pNewPlot.isRevealed(iTeam, False)):
+														if eBonus == gc.getInfoTypeForString("BONUS_FISH"):
+																text = "TXT_KEY_INFO_MOVE_ANIMAL_BONUS_FISH"
+														else:
+																text = "TXT_KEY_INFO_MOVE_ANIMAL_BONUS"
+														CyInterface().addMessage(iPlayer, True, 20, CyTranslator().getText(text, (gc.getBonusInfo(eBonus).getDescription(),)), None, 2,
+																										 gc.getBonusInfo(eBonus).getButton(), ColorTypes(10), pNewPlot.getX(), pNewPlot.getY(), True, True)

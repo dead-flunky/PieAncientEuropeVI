@@ -1384,6 +1384,7 @@ def init():
 		]
 
 		LMovingBonus = [
+				gc.getInfoTypeForString("BONUS_FISH"),
 				gc.getInfoTypeForString("BONUS_ESEL"),
 				gc.getInfoTypeForString("BONUS_HORSE"),
 				gc.getInfoTypeForString("BONUS_CAMEL"),
