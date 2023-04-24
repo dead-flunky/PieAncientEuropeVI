@@ -19,7 +19,7 @@ gc = CyGlobalContext()
 
 # Globals
 bInitialized = False  # Whether global variables are already initialised
-iMaxCitiesSpecialBonus = 3
+iMaxCitiesSpecialBonus = 3 # Max Cities with Special Trade Bonus
 iCitiesSpecialBonus = 0  # Cities with Special Trade Bonus
 
 # Update (Ramk): CvUtil-Functions unpack an dict. You could directly use int, etc.
@@ -1650,6 +1650,11 @@ def _getBestCity4Trade(pUnit, iPlayer):
 
 def doUpdateCitiesWithSpecialBonus(iGameTurn):
 		global iCitiesSpecialBonus
+
+		# Sofort Auftrag starten, wenn es aktuell keine gibt
+		if iCitiesSpecialBonus < 1:
+				addCityWithSpecialBonus(iGameTurn)
+
 		# Cities mit Special Trade Bonus herausfinden
 		for i in range(gc.getMAX_PLAYERS()):
 				loopPlayer = gc.getPlayer(i)
