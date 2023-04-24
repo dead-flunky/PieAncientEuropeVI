@@ -1550,10 +1550,6 @@
 					<FeatureType>FEATURE_SAVANNA</FeatureType>
 					<bFeature>1</bFeature>
 				</FeatureBoolean>
-				<FeatureBoolean>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bFeature>1</bFeature>
-				</FeatureBoolean>
 			</FeatureBooleans>
 			<FeatureTerrainBooleans>
 				<FeatureTerrainBoolean>

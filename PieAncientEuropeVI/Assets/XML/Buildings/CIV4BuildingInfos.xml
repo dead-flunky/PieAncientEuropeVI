@@ -25257,7 +25257,7 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech/>
-			<PrereqTech>TECH_WARENHANDEL</PrereqTech>
+			<PrereqTech>TECH_SCHMIEDEKUNST</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>

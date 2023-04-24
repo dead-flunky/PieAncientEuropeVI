@@ -156,6 +156,15 @@
 			<DefaultUnit>UNIT_CARAVAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_TRADE_MERCHANT_MAN</Type>
+			<Description>TXT_KEY_UNIT_TRADE_MERCHANT_MAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_TRADE_MERCHANT_MAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_TRADE_MERCHANT</Type>
 			<Description>TXT_KEY_UNIT_TRADE_MERCHANT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

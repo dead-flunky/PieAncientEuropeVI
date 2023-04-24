@@ -22,6 +22,7 @@ bBarbForts = True
 bRageBarbs = False
 # PAE VI: kein Treibgut mehr erstellen, es gibt eh soviel durch Seeschlachten
 bFlotsam = False  # activates flotsam after a certain tech
+bMovingBonus = True # nicht kultivierte oder von mind. 1 Einheit besetze Bonusressourcen sollen sich bewegen (Kuh, Schaf, Schwein, Pferd,..)
 
 if gc.getGame().isGameMultiPlayer():
 		bMultiPlayer = True
@@ -144,6 +145,7 @@ def doPlotFeatures():
 		Hills = []
 		Peaks = []
 		# GoodyPlots = []
+		MovingBonus = []
 
 		# map
 		iMapW = gc.getMap().getGridWidth()
@@ -216,6 +218,7 @@ def doPlotFeatures():
 														#  doCheckFortCulture(loopPlot)
 
 												# Check nur alle x Runden (Tier-Spawn)
+												# Bonus movement
 												if iGameTurn % 2 == 0:
 
 														# Lion
@@ -306,6 +309,11 @@ def doPlotFeatures():
 																				# Add Unit
 																				gc.getPlayer(iNewUnitOwner).initUnit(iUnitType, x, y, UnitAITypes.UNITAI_ANIMAL, DirectionTypes.DIRECTION_SOUTH)
 																				continue
+
+														# Movement of wild animal bonus resources
+														if bMovingBonus and loopPlot.getBonusType(-1) in L.LMovingBonus and (loopPlot.getNumUnits() == 0 or iPlotImprovement == -1):
+																MovingBonus.append(loopPlot)
+
 
 												# Barbarenforts/festungen (erzeugt barbarische Einheiten alle x Runden)
 												if iPlotImprovement == impBarbFort:
@@ -436,6 +444,10 @@ def doPlotFeatures():
 		# move Desertstorm / Sandsturm bewegen
 		if lDesertStorm:
 				doMoveDesertStorm(lDesertStorm)
+
+		# unkultivierte Bonusressourcen bewegen
+		if bMovingBonus and len(MovingBonus):
+				doMoveBonus(MovingBonus)
 
 		# Olympiade / Olympic Games / Panhellenic Games
 		doOlympicGames()
@@ -1197,3 +1209,31 @@ def doCheckFortCulture(pPlot):
 						CvUtil.addScriptData(pPlot, "p", iPlayer)
 						pPlot.setCulture(iPlayer, 1, True)
 						pPlot.setOwner(iPlayer)
+
+# -- PAE VI, Patch 15: nicht kultivierte Bonusressourcen (Tiere) sollen den Standort wechseln
+def doMoveBonus(BonusPlots):
+		iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+		for i in range(len(BonusPlots)):
+				# Chance 1:20
+				if CvUtil.myRandom(20, "chance of moving wild animal bonus") == 1:
+						pPlot = BonusPlots[i]
+						eBonus = pPlot.getBonusType(-1)
+
+						lPlots = []
+						iX = pPlot.getX()
+						iY = pPlot.getY()
+						# iRange = 1
+						for iI in range(DirectionTypes.NUM_DIRECTION_TYPES):
+								loopPlot = plotDirection(iX, iY, DirectionTypes(iI))
+								if loopPlot is not None and not loopPlot.isNone():
+										if not loopPlot.isWater() and not loopPlot.isPeak():
+												if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce:
+														if loopPlot.canHaveBonus(eBonus, True):
+																lPlots.append(loopPlot)
+
+						if lPlots:
+								pNewPlot = lPlots[CvUtil.myRandom(len(lPlots), "picking plot of moving wild animal bonus")]
+								iPlotOwner = pNewPlot.getOwner()
+								if iPlotOwner != -1 and gc.getPlayer(iPlotOwner).isHuman():
+										CyInterface().addMessage(iPlotOwner, True, 20, CyTranslator().getText("TXT_KEY_INFO_MOVE_ANIMAL_BONUS", (gc.getBonusInfo(eBonus).getDescription())), None, 2,
+																						 gc.getBonusInfo(eBonus).getButton(), ColorTypes(5), pNewPlot.getX(), pNewPlot.getY(), True, True)

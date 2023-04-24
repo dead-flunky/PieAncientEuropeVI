@@ -720,6 +720,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
@@ -839,6 +843,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -963,6 +971,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
@@ -1074,6 +1086,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
@@ -1176,6 +1192,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_TRIERE_CARTHAGE</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -1265,6 +1285,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -1360,6 +1384,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -1485,6 +1513,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_NUBIA</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_NUBIA</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_NUBIA</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_NUBIA</EarlyArtDefineTag></UnitMeshGroup>
@@ -1577,6 +1609,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -1690,6 +1726,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -1787,6 +1827,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -1900,6 +1944,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -2007,6 +2055,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -2106,6 +2158,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -2191,6 +2247,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_HEAVY_HORSEMAN</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_HEAVY_HORSEMAN_IBERIA</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -2286,6 +2346,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_WAR_ELEPHANT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -2388,6 +2452,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_WAR_ELEPHANT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_ASIAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_ASIA</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -2506,6 +2574,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
@@ -2553,6 +2625,10 @@
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_WAR_ELEPHANT_ASIAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_ASIA</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_ELDER_ASIAN</EarlyArtDefineTag></UnitMeshGroup>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE_ASIAN</EarlyArtDefineTag></UnitMeshGroup>
@@ -2575,6 +2651,10 @@
 				<StyleUnit>
 					<UnitType>UNIT_SCOUT</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SCOUT_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_EUROPEAN</EarlyArtDefineTag></UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
@@ -2646,6 +2726,10 @@
 		<UnitArtStyleTypeInfo>
 			<Type>UNIT_ARTSTYLE_MIDDLE_EAST</Type>
 			<StyleUnits>
+				<StyleUnit>
+					<UnitType>UNIT_TRADE_MERCHANT_MAN</UnitType>
+					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_MERCHANT_MAN_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>
+				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_SETTLER</UnitType>
 					<UnitMeshGroup><EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MIDDLE_EAST</EarlyArtDefineTag></UnitMeshGroup>

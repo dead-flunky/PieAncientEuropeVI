@@ -2369,6 +2369,14 @@
 		<Spanish>Las empalizadas solo se pueden construir en ciudades rodeadas de bosques. Durante la construcci&#243;n de una empalizada, se tala un trozo de bosque.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_INFO_MOVE_ANIMAL_BONUS</Tag>
+		<English>A herd of wild animals (%s1) have moved on and are now grazing in a different place. You prevent further migration by positioning a unit on the field or by farming the field.</English>
+		<French>Un troupeau d'animaux sauvages (%s1) s'est d&#233;plac&#233; et paissent maintenant dans un endroit diff&#233;rent. Vous emp&#234;chez une nouvelle migration en positionnant une unit&#233; sur le champ ou en cultivant le champ.</French>
+		<German>Eine Herde wilder Tiere (%s1) ist weitergewandert und grast nun an einem anderen Ort. Du verhinderst eine Weiterwanderung, indem du eine Einheit auf das Feld positionierst oder das Feld bewirtschaftest.</German>
+		<Italian>Un branco di animali selvatici (%s1) si &#232; trasferito e ora pascola in un posto diverso. Impedisci ulteriori migrazioni posizionando un'unit&#224; sul campo o coltivando il campo.</Italian>
+		<Spanish>Una manada de animales salvajes (%s1) se ha mudado y ahora est&#225; pastando en un lugar diferente. Evitas una mayor migraci&#243;n colocando una unidad en el campo o cultivando el campo.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OLYMPIEION</Tag>
 		<English>Olympieion of Athens</English>
 		<French>Olympiaion d'Ath&#232;nes</French>
@@ -7939,5 +7947,13 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]Esel verbreiten[COLOR_REVERT][ICON_BULLET]Verbreitet die Resource Esel[ICON_BULLET]Die Einheit wird dabei aufgel&#246;st</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Distribuisci asini[COLOR_REVERT][ICON_BULLET]Distribuisce la risorsa bonus di asini[ICON_BULLET]L'unit&#224; viene sciolta</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Distribuir burros[COLOR_REVERT][ICON_BULLET]Distribuye el recurso adicional de burros[ICON_BULLET]La unidad se disuelve</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_TRADE_MERCHANT_MAN</Tag>
+		<English>Merchant</English>
+		<French><Text>Marchand:Marchands</Text><Gender>Male</Gender><Plural>0:1</Plural></French>
+		<German><Text>H&#228;ndler:H&#228;ndler</Text><Gender>Male</Gender><Plural>0:1</Plural></German>
+		<Italian><Text>Mercante:Mercanti</Text><Gender>Male</Gender><Plural>0:1</Plural></Italian>
+		<Spanish><Text>Mercader:Mercaderes</Text><Gender>Male</Gender><Plural>0:1</Plural></Spanish>
 	</TEXT>
 </Civ4GameText>

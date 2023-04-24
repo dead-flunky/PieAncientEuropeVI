@@ -90,10 +90,17 @@ import SecondPunicWar
 import Diadochi_JD
 import EurasiaXXXLCivs
 
+# +++++++++++++++++++++
+# Diverse Einstellungen
+# +++++++++++++++++++++
+
+# Modernisierungen sollen mit automatischen Pfaden erstellt werden
+# wenn deaktivert, sollte im XML BUILD_PATH bei UNIT_WORKER eingebaut werden
+bAutomatischePfade = True
+
 # Flag to enable Civ4 shell (See Extras/Pyconsole).
 # Note that the flag will also be used to enable/disable
 # other debugging features of Ramkhamhaeng
-
 CIV4_SHELL = False
 RAMK_EXTENDED_DEBUG = False
 RAMK_WRAP_FUNCTIONS = False
@@ -3274,8 +3281,9 @@ class CvEventManager:
 				# ------
 
 				# PAE 6.15: Automatischer Trampelpfad bis zur Entdeckung der normalen Strasse (TECH_THE_WHEEL2)
-				#iOwner = pPlot.getOwner()
-				#PAE_Trade.setPath2City(iOwner, pPlot)
+				if bAutomatischePfade:
+						iOwner = pPlot.getOwner()
+						PAE_Trade.setPath2City(iOwner, pPlot)
 
 
 				if not self.__LOG_IMPROVEMENT:
