@@ -1226,7 +1226,7 @@ def doMoveBonus(BonusPlots):
 
 		for i in range(len(BonusPlots)):
 				# Chance 1:20
-				if CvUtil.myRandom(2, "chance of moving wild animal bonus") == 1:
+				if CvUtil.myRandom(20, "chance of moving wild animal bonus") == 1:
 						pPlot = BonusPlots[i]
 						eBonus = pPlot.getBonusType(-1)
 
