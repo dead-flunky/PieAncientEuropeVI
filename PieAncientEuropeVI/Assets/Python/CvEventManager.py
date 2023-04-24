@@ -819,9 +819,9 @@ class CvEventManager:
 						CvUtil.spawnUnit(gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), pUnit.plot(), pPlayer)
 						PAE_Unit.doRetireVeteran(pUnit)
 
-				# Stall: Elefant, Kamel, Pferd
+				# Stall: Elefant, Kamel, Pferd, Esel
 				elif iData1 == 721:
-						# 721, iCityID, (1 = Elefanten | 2 = Kamele | 3 = Pferde), iPlayer, iUnitID
+						# 721, iCityID, eBonus, iPlayer, iUnitID
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
 						if iData3 != -1:
@@ -3274,11 +3274,8 @@ class CvEventManager:
 				# ------
 
 				# PAE 6.15: Automatischer Trampelpfad bis zur Entdeckung der normalen Strasse (TECH_THE_WHEEL2)
-				iOwner = pPlot.getOwner()
-				#iThisTeam = gc.getPlayer(iOwner).getTeam()
-				#pTeam = gc.getTeam(iThisTeam)
-				#if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
-				PAE_Trade.setPath2City(iOwner, pPlot)
+				#iOwner = pPlot.getOwner()
+				#PAE_Trade.setPath2City(iOwner, pPlot)
 
 
 				if not self.__LOG_IMPROVEMENT:

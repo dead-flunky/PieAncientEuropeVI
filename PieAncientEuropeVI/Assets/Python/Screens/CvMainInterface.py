@@ -1969,10 +1969,20 @@ class CvMainInterface:
 
 										g_pSelectedUnit = pHeadSelectedUnit
 										iCount = 0
-										# Limes
 										actions = CyInterface().getActionsToShow()
 										for i in actions:
 
+												# Path and ore camp (wird obsolet)
+												if gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_BUILD:
+														pTeam = gc.getTeam(gc.getPlayer(g_pSelectedUnit.getOwner()).getTeam())
+														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
+																		continue
+														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																		continue
+
+												# Limes
 												if not (gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_BUILD and gc.getActionInfo(i).getMissionData() in L.LBuildLimes):
 														screen.appendMultiListButton("BottomButtonContainer", gc.getActionInfo(i).getButton(), 0, WidgetTypes.WIDGET_ACTION, i, -1, False)
 														screen.show("BottomButtonContainer")
@@ -2054,21 +2064,21 @@ class CvMainInterface:
 																return
 
 												# --------------------
-												# Worker / Schürflager (wird mit Steinmetzkunst obsolet)
-												elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
-														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-																pPlot = pUnit.plot()
-																# Build Option: Lager
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
-																		if pPlot.getOwner() == pUnit.getOwner():
-																				iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
-																				eBonus = pPlot.getBonusType(iUnitOwner)
-																				if eBonus != -1 and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus): #and pPlot.getImprovementType() != iLager
-																						screen.appendMultiListButton(
-																								"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
-																						screen.show("BottomButtonContainer")
-																						screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																						iCount += 1
+												# Worker / Schürflager (wird mit Bergbau obsolet)
+												#elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
+												#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+												#				pPlot = pUnit.plot()
+												#				# Build Option: Lager
+												#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
+												#						if pPlot.getOwner() == pUnit.getOwner():
+												#								iLager = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+												#								eBonus = pPlot.getBonusType(iUnitOwner)
+												#								if eBonus != -1 and gc.getImprovementInfo(iLager).isImprovementBonusMakesValid(eBonus): #and pPlot.getImprovementType() != iLager
+												#										screen.appendMultiListButton(
+												#												"BottomButtonContainer", "Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds", 0, WidgetTypes.WIDGET_GENERAL, 771, 3, False)
+												#										screen.show("BottomButtonContainer")
+												#										screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+												#										iCount += 1
 
 												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind
