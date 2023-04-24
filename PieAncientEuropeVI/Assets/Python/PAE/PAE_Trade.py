@@ -506,7 +506,12 @@ def getPlotTradingRoad(pSource, pDest):
 # Baut einen Pfad zur nächsten Stadt. (Pie)
 def setPath2City(iPlayer, pSource):
 
+		# Wenn kein gültiger Spieler oder bereits eine Strasse auf dem Plot
 		if iPlayer == -1 or pSource.isRoute():
+				return
+
+		# Wenn keine Bonusressource am Plot ist
+		if pSource.getBonusType(-1) == -1:
 				return
 
 		pDest = None
@@ -1700,12 +1705,16 @@ def addCityWithSpecialBonus(iGameTurn):
 
 				# Stadt auswaehlen
 				pCity = lNewCities[CvUtil.myRandom(len(lNewCities), "city addCityWithSpecialBonus")]
+				# Besitzer herausfinden
+				pTeamCity = gc.getTeam(gc.getPlayer(pCity.getOwner()).getTeam())
 
 				# Bonusgut herausfinden
 				lNewBonus = []
 				for iBonus in LSpecialBonuses:
 						if not pCity.hasBonus(iBonus):
-								lNewBonus.append(iBonus)
+								iBonusTech = gc.getBonusInfo(iBonus).getTechReveal()
+								if pTeamCity.isHasTech(iBonusTech):
+										lNewBonus.append(iBonus)
 
 				# Bonus setzen wenn die Stadt nicht eh schon alles hat.
 				if len(lNewBonus) > 0:
