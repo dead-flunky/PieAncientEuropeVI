@@ -1244,6 +1244,8 @@ def doMoveBonus(BonusPlots):
 																		continue
 																if eBonus == gc.getInfoTypeForString("BONUS_IVORY") and loopPlot.getFeatureType() != eJungle:
 																		continue
+																if loopPlot.getImprovementType() != -1 or loopPlot.isRoute():
+																		continue
 																lPlots.append(loopPlot)
 
 						if lPlots:
