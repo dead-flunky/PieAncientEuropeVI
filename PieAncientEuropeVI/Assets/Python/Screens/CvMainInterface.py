@@ -1981,30 +1981,31 @@ class CvMainInterface:
 														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
 																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
 																		continue
+														# Limes
+														if gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
+																continue
 
-												# Limes
-												if not (gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_BUILD and gc.getActionInfo(i).getMissionData() in L.LBuildLimes):
-														screen.appendMultiListButton("BottomButtonContainer", gc.getActionInfo(i).getButton(), 0, WidgetTypes.WIDGET_ACTION, i, -1, False)
-														screen.show("BottomButtonContainer")
+												screen.appendMultiListButton("BottomButtonContainer", gc.getActionInfo(i).getButton(), 0, WidgetTypes.WIDGET_ACTION, i, -1, False)
+												screen.show("BottomButtonContainer")
 
-														if not CyInterface().canHandleAction(i, False):
-																screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
+												if not CyInterface().canHandleAction(i, False):
+														screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
 
-														# funkt leider nicht
-														if gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_RANGE_ATTACK and not pHeadSelectedUnit.canMove():
-																screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
+												# funkt leider nicht
+												if gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_RANGE_ATTACK and not pHeadSelectedUnit.canMove():
+														screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
 
-														if pHeadSelectedUnit.isActionRecommended(i):  # or gc.getActionInfo(i).getCommandType() == CommandTypes.COMMAND_PROMOTION ):
-																screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-														else:
-																screen.enableMultiListPulse("BottomButtonContainer", False, 0, iCount)
+												if pHeadSelectedUnit.isActionRecommended(i):  # or gc.getActionInfo(i).getCommandType() == CommandTypes.COMMAND_PROMOTION ):
+														screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+												else:
+														screen.enableMultiListPulse("BottomButtonContainer", False, 0, iCount)
 
-														# PAE V: Aussenhandelsposten fuer HI nur ausserhalb der eigenen Kulturgrenzen baubar
-														# if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_HANDELSPOSTEN"):
-														#  if g_pSelectedUnit.plot().getOwner() == g_pSelectedUnit.getOwner():
-														#    screen.disableMultiListButton( "BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton() )
+												# PAE V: Aussenhandelsposten fuer HI nur ausserhalb der eigenen Kulturgrenzen baubar
+												# if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_HANDELSPOSTEN"):
+												#  if g_pSelectedUnit.plot().getOwner() == g_pSelectedUnit.getOwner():
+												#    screen.disableMultiListButton( "BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton() )
 
-														iCount += 1
+												iCount += 1
 
 										if CyInterface().canCreateGroup():
 												screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(

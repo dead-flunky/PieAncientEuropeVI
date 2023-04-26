@@ -7303,7 +7303,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_UNIT_GETS_HERO_6</Tag>
 		<English>Your unit %s1 is now a reliable fighter!</English>
-		<French>L'unit&#233; (%s1) est maintenant un combattant fiable !</French>
+		<French>L'unit&#233; (%s1) est maintenant un combattant fiable!</French>
 		<German>Eure Einheit %s1 ist nun ein zuverl&#228;ssiger K&#228;mpfer!</German>
 		<Italian>La tua unit&#224; %s1 ora &#232; un combattente affidabile!</Italian>
 		<Spanish>&#161;tu unidad %s1 es ahora un luchador confiable!</Spanish>
