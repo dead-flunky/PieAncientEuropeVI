@@ -7638,11 +7638,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GUSS_COPPER</Tag>
-		<English>Copperworks</English>
-		<French>Travaux de cuivre</French>
-		<German>Kupferh&#252;tte</German>
-		<Italian>Opere in rame</Italian>
-		<Spanish>Trabajos de cobre</Spanish>
+		<English>Large Smelter</English>
+		<French>Grand Fonderie</French>
+		<German>Gro&#223;e Schmelzst&#228;tte</German>
+		<Italian>Grande fonderia</Italian>
+		<Spanish>Fundici&#243;n grande</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GUSS_ZINN</Tag>

@@ -15907,11 +15907,11 @@
 			<Type>BUILDING_GUSS_COPPER</Type>
 			<SpecialBuildingType/>
 			<Description>TXT_KEY_BUILDING_GUSS_COPPER</Description>
-			<Civilopedia>TXT_KEY_TECH_METAL_CASTING_PEDIA</Civilopedia>
+			<Civilopedia>TXT_KEY_BUILDING_COPPER_HUB</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GUSS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_COPPER</ArtDefineTag>
-			<MovieDefineTag/>
+			<MovieDefineTag>ART_DEF_MOVIE_GUSS_COPPER</MovieDefineTag>
 			<HolyCity/>
 			<ReligionType/>
 			<StateReligion/>
@@ -15927,14 +15927,18 @@
 			<ObsoleteTech/>
 			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
 			<TechTypes/>
-			<Bonus>BONUS_COPPER</Bonus>
-			<PrereqBonuses/>
+			<Bonus/>
+			<PrereqBonuses>
+				<BonusType>BONUS_COPPER</BonusType>
+				<BonusType>BONUS_GOLD</BonusType>
+				<BonusType>BONUS_SILVER</BonusType>
+			</PrereqBonuses>
 			<ProductionTraits/>
 			<HappinessTraits/>
 			<NoBonus/>
 			<PowerBonus/>
-			<FreeBonus>BONUS_COPPER</FreeBonus>
-			<iNumFreeBonuses>1</iNumFreeBonuses>
+			<FreeBonus/>
+			<iNumFreeBonuses>0</iNumFreeBonuses>
 			<FreeBuilding/>
 			<FreePromotion/>
 			<CivicOption/>
@@ -15963,12 +15967,12 @@
 			<bPrereqReligion>0</bPrereqReligion>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<iCost>50</iCost>
+			<iCost>120</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iConquestProb>80</iConquestProb>
+			<iConquestProb>0</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
 			<iTeamsPrereq>0</iTeamsPrereq>
 			<iLevelPrereq>0</iLevelPrereq>
@@ -16025,11 +16029,7 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
-			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>1</iYield>
-			 <iYield>3</iYield>
-			</YieldChanges>
+			<YieldChanges/>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
 			<CommerceChangeDoubleTimes/>
@@ -16039,7 +16039,12 @@
 			<StateReligionCommerces/>
 			<CommerceHappinesses/>
 			<ReligionChanges/>
-			<SpecialistCounts/>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<FreeSpecialistCounts/>
 			<CommerceFlexibles/>
 			<CommerceChangeOriginalOwners/>
@@ -16054,12 +16059,29 @@
 			<PrereqBuildingClasses/>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SIEDLUNG</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<SpecialistYieldChanges/>
-			<BonusYieldModifiers/>
+			<BonusYieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_COPPER</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>50</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_SILVER</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>50</iYield>
+						<iYield>0</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+			</BonusYieldModifiers>
 			<ImprovementFreeSpecialists/>
 			<Flavors>
 				<Flavor>

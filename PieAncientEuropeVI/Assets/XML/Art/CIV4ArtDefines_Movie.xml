@@ -351,5 +351,9 @@
 			<Type>ART_DEF_MOVIE_SCHMIEDE_IRON</Type>
 			<Path>Art/Movies/Buildings/Eisenschmiede.bik</Path>
 		</MovieArtInfo>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_GUSS_COPPER</Type>
+			<Path>Art/Movies/Buildings/Coppersmelting.bik</Path>
+		</MovieArtInfo>
 	</MovieArtInfos>
 </Civ4ArtDefines>
