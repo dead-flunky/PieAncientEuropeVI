@@ -511,8 +511,8 @@ def setPath2City(iPlayer, pSource):
 				return
 
 		# Wenn keine Bonusressource am Plot ist
-		if pSource.getBonusType(-1) == -1:
-				return
+		#if pSource.getBonusType(-1) == -1:
+		#		return
 
 		pDest = None
 		pPlayer = gc.getPlayer(iPlayer)
