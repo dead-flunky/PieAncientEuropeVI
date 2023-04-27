@@ -13635,7 +13635,7 @@
 			<StateReligion>NONE</StateReligion>
 			<PrereqReligion>NONE</PrereqReligion>
 			<PrereqCorporation>NONE</PrereqCorporation>
-			<PrereqBuilding>BUILDING_GUSS_COPPER</PrereqBuilding>
+			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
 			<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
 			<TechTypes/>
 			<BonusType>BONUS_COPPER</BonusType>
@@ -26286,7 +26286,7 @@
 			<PrereqBuilding>BUILDING_SCHMIEDE1</PrereqBuilding>
 			<PrereqTech>TECH_SPEERSPITZEN</PrereqTech>
 			<TechTypes/>
-			<BonusType/>
+			<BonusType>BONUS_COPPER</BonusType>
 			<PrereqBonuses/>
 			<ProductionTraits/>
 			<Flavors/>
