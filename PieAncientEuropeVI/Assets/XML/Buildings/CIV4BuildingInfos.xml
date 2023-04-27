@@ -14283,6 +14283,7 @@
 			<Description>TXT_KEY_BUILDING_FURRIER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FURRIER_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FURRIER</ArtDefineTag>
 			<MovieDefineTag/>
@@ -14461,6 +14462,7 @@
 			<Description>TXT_KEY_BUILDING_GERBEREI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GERBEREI_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GERBEREI</ArtDefineTag>
 			<MovieDefineTag/>
@@ -15734,6 +15736,7 @@
 			<Description>TXT_KEY_BUILDING_GUSS_BLEI</Description>
 			<Civilopedia>TXT_KEY_TECH_METAL_CASTING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GUSS_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_BLEI</ArtDefineTag>
 			<MovieDefineTag/>
@@ -15908,7 +15911,8 @@
 			<SpecialBuildingType/>
 			<Description>TXT_KEY_BUILDING_GUSS_COPPER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COPPER_HUB</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GUSS_STRATEGY</Strategy>
+			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_COPPER</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_GUSS_COPPER</MovieDefineTag>
@@ -15930,8 +15934,8 @@
 			<Bonus/>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
-				<BonusType>BONUS_GOLD</BonusType>
 				<BonusType>BONUS_SILVER</BonusType>
+				<BonusType>BONUS_GOLD</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
 			<HappinessTraits/>
@@ -16062,6 +16066,10 @@
 					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_POTTERY</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<SpecialistYieldChanges/>
 			<BonusYieldModifiers>
@@ -16069,7 +16077,7 @@
 					<BonusType>BONUS_COPPER</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>50</iYield>
+						<iYield>25</iYield>
 						<iYield>0</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
@@ -16077,8 +16085,16 @@
 					<BonusType>BONUS_SILVER</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>50</iYield>
+						<iYield>25</iYield>
+						<iYield>25</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+				<BonusYieldModifier>
+					<BonusType>BONUS_GOLD</BonusType>
+					<YieldModifiers>
 						<iYield>0</iYield>
+						<iYield>25</iYield>
+						<iYield>25</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
@@ -16102,6 +16118,7 @@
 			<Description>TXT_KEY_BUILDING_GUSS_ZINN</Description>
 			<Civilopedia>TXT_KEY_TECH_METAL_CASTING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GUSS_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_ZINN</ArtDefineTag>
 			<MovieDefineTag/>
@@ -16277,6 +16294,7 @@
 			<Description>TXT_KEY_BUILDING_GUSS_ZINK</Description>
 			<Civilopedia>TXT_KEY_TECH_METAL_CASTING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GUSS_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GUSS_ZINK</ArtDefineTag>
 			<MovieDefineTag/>
@@ -18051,6 +18069,7 @@
 			<Description>TXT_KEY_BUILDING_MARMOR_WERKSTATT</Description>
 			<Civilopedia>TXT_KEY_TECH_STEINABBAU_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARMOR_WERKSTATT</ArtDefineTag>
 			<MovieDefineTag/>
@@ -25088,6 +25107,7 @@
 			<Description>TXT_KEY_BUILDING_WINERY</Description>
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WINERY</ArtDefineTag>
 			<MovieDefineTag/>
@@ -37225,6 +37245,7 @@
 			<Description>TXT_KEY_BUILDING_PAPYRUSPOST</Description>
 			<Civilopedia>TXT_KEY_BONUS_PAPYRUS_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PAPYRUSPOST</ArtDefineTag>
 			<MovieDefineTag/>
@@ -37399,6 +37420,7 @@
 			<Description>TXT_KEY_BUILDING_MUREX</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MUREX_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MUREX</ArtDefineTag>
 			<MovieDefineTag/>

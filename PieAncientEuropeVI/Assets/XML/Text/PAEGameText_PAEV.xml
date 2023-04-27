@@ -2369,6 +2369,14 @@
 		<Spanish>Las empalizadas solo se pueden construir en ciudades rodeadas de bosques. Durante la construcci&#243;n de una empalizada, se tala un trozo de bosque.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BONUS_NEARBY_HELP</Tag>
+		<English>[ICON_BULLET]This building can only be created in cities in close proximity to the necessary bonus resources.</English>
+		<French>[ICON_BULLET]Ce b&#226;timent ne peut &#234;tre cr&#233;&#233; que dans des villes proches des ressources bonus n&#233;cessaires.</French>
+		<German>[ICON_BULLET]Dieses Geb&#228;ude kann nur in St&#228;dten in unmittelbarer N&#228;he der notwendigen Bonusressourcen erstellt werden.</German>
+		<Italian>[ICON_BULLET]Questo edificio pu&#242; essere creato solo nelle citt&#224; vicine alle risorse bonus necessarie.</Italian>
+		<Spanish>[ICON_BULLET]Este edificio solo se puede crear en ciudades cercanas a los recursos de bonificaci&#243;n necesarios.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OLYMPIEION</Tag>
 		<English>Olympieion of Athens</English>
 		<French>Olympiaion d'Ath&#232;nes</French>
