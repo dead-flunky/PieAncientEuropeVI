@@ -2425,7 +2425,7 @@
 				<PrereqTech>TECH_LEADERSHIP</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_POTTERY</PrereqTech>
+				<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_102</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_102</Sound>

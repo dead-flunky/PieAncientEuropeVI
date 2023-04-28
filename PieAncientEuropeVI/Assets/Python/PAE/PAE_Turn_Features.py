@@ -311,7 +311,7 @@ def doPlotFeatures():
 																				continue
 
 														# Movement of wild animal bonus resources
-														if bMovingBonus and loopPlot.getBonusType(-1) in L.LMovingBonus and (loopPlot.getNumUnits() == 0 or iPlotImprovement == -1):
+														if bMovingBonus and loopPlot.getBonusType(-1) in L.LMovingBonus and loopPlot.getNumUnits() == 0 and iPlotImprovement == -1:
 																MovingBonus.append(loopPlot)
 
 
