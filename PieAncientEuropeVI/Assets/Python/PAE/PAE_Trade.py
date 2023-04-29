@@ -507,7 +507,7 @@ def getPlotTradingRoad(pSource, pDest):
 def setPath2City(iPlayer, pSource):
 
 		# Wenn kein gültiger Spieler oder bereits eine Strasse auf dem Plot
-		if iPlayer == -1 or pSource.isRoute():
+		if iPlayer == -1 or pSource.isRoute() or pSource.isWater():
 				return
 
 		# Wenn keine Bonusressource am Plot ist

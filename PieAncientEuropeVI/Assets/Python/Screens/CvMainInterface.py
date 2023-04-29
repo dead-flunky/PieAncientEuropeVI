@@ -1968,22 +1968,22 @@ class CvMainInterface:
 								if pHeadSelectedUnit.getOwner() == gc.getGame().getActivePlayer() and g_pSelectedUnit != pHeadSelectedUnit:
 
 										g_pSelectedUnit = pHeadSelectedUnit
+										pTeam = gc.getTeam(gc.getPlayer(g_pSelectedUnit.getOwner()).getTeam())
 										iCount = 0
 										actions = CyInterface().getActionsToShow()
 										for i in actions:
 
-												# Path and ore camp (wird obsolet)
-												if gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_BUILD:
-														pTeam = gc.getTeam(gc.getPlayer(g_pSelectedUnit.getOwner()).getTeam())
-														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
-																		continue
-														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-																		continue
-														# Limes
-														if gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
+												# Path (wird obsolet)
+												if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
 																continue
+												# Ore Camp (wird obsolet)
+												elif gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
+														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																continue
+												# Limes
+												elif gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
+														continue
 
 												screen.appendMultiListButton("BottomButtonContainer", gc.getActionInfo(i).getButton(), 0, WidgetTypes.WIDGET_ACTION, i, -1, False)
 												screen.show("BottomButtonContainer")

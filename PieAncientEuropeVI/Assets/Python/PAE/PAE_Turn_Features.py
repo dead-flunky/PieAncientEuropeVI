@@ -1225,8 +1225,8 @@ def doMoveBonus(BonusPlots):
 		eJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
 
 		for i in range(len(BonusPlots)):
-				# Chance 1:20
-				if CvUtil.myRandom(20, "chance of moving wild animal bonus") == 1:
+				# Chance 1:16
+				if CvUtil.myRandom(16, "chance of moving wild animal bonus") == 1:
 						pPlot = BonusPlots[i]
 						eBonus = pPlot.getBonusType(-1)
 
