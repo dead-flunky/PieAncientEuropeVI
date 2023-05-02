@@ -502,6 +502,7 @@ class CvGameUtils:
 		def colorPlots4strategicBonus(self, pHeadSelectedUnit, eBonus):
 				iPlayer = pHeadSelectedUnit.getOwner()
 				pPlayer = gc.getPlayer(iPlayer)
+				eBuilding = -1
 				#eCityStatus = gc.getInfoTypeForString("BUILDING_KOLONIE")
 				if eBonus == gc.getInfoTypeForString("BONUS_HORSE"):
 						eBuilding = gc.getInfoTypeForString("BUILDING_STABLE")
@@ -516,7 +517,7 @@ class CvGameUtils:
 				(loopCity, pIter) = pPlayer.firstCity(False)
 				while loopCity:
 						# if loopCity.isHasBuilding(eCityStatus):
-						if not loopCity.isHasBuilding(eBuilding):
+						if eBuilding == -1 or not loopCity.isHasBuilding(eBuilding):
 
 								iX = loopCity.getX()
 								iY = loopCity.getY()

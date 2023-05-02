@@ -3308,7 +3308,9 @@
 			<OrPreReqs>
 				<PrereqTech>TECH_WARENHANDEL</PrereqTech>
 			</OrPreReqs>
-			<AndPreReqs/>
+			<AndPreReqs>
+				<PrereqTech>TECH_THE_WHEEL</PrereqTech>
+			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_101</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_101</Sound>
 			<SoundMP>AS2D_TECH_PAE_QUOTE_101</SoundMP>

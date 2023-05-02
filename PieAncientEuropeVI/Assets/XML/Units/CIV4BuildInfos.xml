@@ -876,6 +876,55 @@
 			<Button>Art/Interface/Buttons/Actions/button_remove_burntforest.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
+			<Type>BUILD_KASTELL</Type>
+			<Description>TXT_KEY_IMPROVEMENT_BUILD_KASTELL</Description>
+			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
+			<PrereqTech>TECH_ROMAN_ROADS</PrereqTech>
+			<iTime>500</iTime>
+			<iCost>20</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_KASTELL</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>50</iTime>
+					<iProduction>5</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>300</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/button_kastell.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<!-- Wegen gc.getActionInfo(i).getMissionData() in MainInterface muss der Limes die letzte Modernisierung sein -->
 			<Type>BUILD_LIMES1</Type>
 			<Description>TXT_KEY_IMPROVEMENT_LIMES1</Description>
 			<Help/>
@@ -1216,54 +1265,8 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Structures/Improvements/limes2/button_limes9.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_KASTELL</Type>
-			<Description>TXT_KEY_IMPROVEMENT_BUILD_KASTELL</Description>
-			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
-			<PrereqTech>TECH_ROMAN_ROADS</PrereqTech>
-			<iTime>500</iTime>
-			<iCost>20</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_KASTELL</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>50</iTime>
-					<iProduction>5</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>300</iTime>
-					<iProduction>30</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Builds/button_kastell.dds</Button>
+			<!-- Wegen gc.getActionInfo(i).getMissionData() in MainInterface muss der Limes die letzte Modernisierung sein -->
+			<!-- Neue Modernisierungen müssen vor BUILD_LIMES1 sein -->
 		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>
