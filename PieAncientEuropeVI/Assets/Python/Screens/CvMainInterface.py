@@ -1976,12 +1976,10 @@ class CvMainInterface:
 												# Path (wird obsolet)
 												if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
 														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
-																iCount += 1
 																continue
 												# Ore Camp (wird obsolet)
 												elif gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
 														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-																iCount += 1
 																continue
 												# Limes
 												elif gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
