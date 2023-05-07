@@ -1755,7 +1755,8 @@ def doUnitSupply(pCity, iPlayer):
 		iCityUnits = 0
 		iRange = pCityPlot.getNumUnits()
 		for i in range(iRange):
-				if pCityPlot.getUnit(i).isMilitaryHappiness():
+				pLoopUnit = pCityPlot.getUnit(i)
+				if pLoopUnit.isMilitaryHappiness() and pLoopUnit.getOwner() == iPlayer:
 						iCityUnits += 1
 
 		# bis Pop 3: 10 Einheiten erlaubt
@@ -1780,7 +1781,7 @@ def doUnitSupply(pCity, iPlayer):
 				iRange = pCityPlot.getNumUnits()
 				for i in range(iRange):
 						pLoopUnit = pCityPlot.getUnit(i)
-						if pLoopUnit.getUnitCombatType() != -1:
+						if pLoopUnit.getUnitCombatType() != -1 and pLoopUnit.getOwner() == iPlayer:
 								if pLoopUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_HEALER"):
 										if pLoopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_SUPPLY_WAGON"):
 												iExtraSupply = PAE_Unit.getSupply(pLoopUnit)

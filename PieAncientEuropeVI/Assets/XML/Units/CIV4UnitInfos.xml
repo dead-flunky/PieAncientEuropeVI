@@ -4446,7 +4446,9 @@
 			<PrereqCorporation>NONE</PrereqCorporation>
 			<PrereqBuilding>BUILDING_KOLONIE</PrereqBuilding>
 			<PrereqTech>TECH_KULTIVIERUNG</PrereqTech>
-			<TechTypes/>
+			<TechTypes>
+				<PrereqTech>TECH_THE_WHEEL</PrereqTech>
+			</TechTypes>
 			<BonusType>NONE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ESEL</BonusType>

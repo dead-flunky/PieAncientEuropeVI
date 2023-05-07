@@ -1973,16 +1973,17 @@ class CvMainInterface:
 										actions = CyInterface().getActionsToShow()
 										for i in actions:
 
-												# Path (wird obsolet)
-												if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
-																continue
-												# Ore Camp (wird obsolet)
-												elif gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-																continue
+												if g_pSelectedUnit.getUnitType() == gc.getInfoTypeForString("UNIT_WORKER"):
+														# Path (wird obsolet)
+														#if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
+														#		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
+														#				continue
+														# Ore Camp (wird obsolet)
+														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																		continue
 												# Limes
-												elif gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
+												if gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
 														continue
 
 												screen.appendMultiListButton("BottomButtonContainer", gc.getActionInfo(i).getButton(), 0, WidgetTypes.WIDGET_ACTION, i, -1, False)
