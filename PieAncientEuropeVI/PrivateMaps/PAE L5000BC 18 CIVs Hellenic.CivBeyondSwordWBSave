@@ -13285,6 +13285,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=1
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=52,
@@ -22551,6 +22552,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=2
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=52,
@@ -26432,6 +26434,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=25
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=52,
@@ -29074,6 +29077,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=31
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -29574,6 +29578,7 @@ BeginPlot
 	x=79,y=4
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -29616,6 +29621,7 @@ BeginPlot
 	x=79,y=10
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -30790,6 +30796,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=82,y=17
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -31992,6 +31999,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=85,y=25
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

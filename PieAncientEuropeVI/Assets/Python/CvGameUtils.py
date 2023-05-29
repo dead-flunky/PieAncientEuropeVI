@@ -297,6 +297,11 @@ class CvGameUtils:
 																		#        CyEngine().addColoredPlotAlt(pSecondBestPlot.getX(), pSecondBestPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1.0)
 																(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
+								# Donkey/Esel
+								elif iUnitType == gc.getInfoTypeForString("UNIT_ESEL"):
+										eBonus = gc.getInfoTypeForString("BONUS_ESEL")
+										self.colorPlots4strategicBonus(pHeadSelectedUnit, eBonus)
+
 								# Horse/Pferd
 								elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE"):
 										eBonus = gc.getInfoTypeForString("BONUS_HORSE")

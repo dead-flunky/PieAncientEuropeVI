@@ -3802,7 +3802,8 @@ def getGoldkarren(pCity, pPlayer):
 		if iPop == 1:
 				iBeute = 1
 		else:
-				iBeute = iPop * 2
+				iBeute = iPop * 2 - 1
+		iBeute = min(10,iBeute) # maximal 10 Goldkarren
 		if iBeute > 0:
 				for _ in range(iBeute):
 						CvUtil.spawnUnit(gc.getInfoTypeForString("UNIT_GOLDKARREN"), pCity.plot(), pPlayer)

@@ -833,6 +833,7 @@ def _calculateBonusBuyingPrice(eBonus, iBuyer, iSeller):
 # Resi nicht vorhanden: +20%
 # pro Wunder: 5%
 # pro Haltung des Gegenübers (interner Handel = 0%): +5%
+# Karren und Karawane mehr +50% mehr Gewinn
 # -----------------------
 # Gewinn = ZwSumme - calculateDistanceMaintenanceTimes100() / 10 (in %)
 def calculateBonusSellingPrice(pUnit, pCity, bCalcOnly, iBonus2=-1):
@@ -901,9 +902,14 @@ def calculateBonusSellingPrice(pUnit, pCity, bCalcOnly, iBonus2=-1):
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iSum",int(iSum - iKorruption))), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
 		iSum -= iKorruption
+		
+		# Karren oder Karawane bringen mehr Gewinn
+		if pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT") or pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CARAVAN"):
+				iSum = int(iSum * 1.5)
+		
 		return max(2,iSum) # 2 Gold solls zur Not immer geben, falls es mal beziehungstechnisch ins Minus geht
 
-def calcBonusProfit(pCityFrom, pCityTo, iBonus):
+def calcBonusProfit(pCityFrom, pCityTo, iBonus, pUnit):
 		iBasis = getBonusValue(iBonus)  # Grundwert
 		iBuyer = pCityTo.getOwner()
 		iSeller = pCityFrom.getOwner()
@@ -930,6 +936,11 @@ def calcBonusProfit(pCityFrom, pCityTo, iBonus):
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCityTo.getName(),iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		
 		iSum -= iKorruption
+		
+		# Karren oder Karawane bringen mehr Gewinn
+		if pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT") or pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CARAVAN"):
+				iSum = int(iSum * 1.5)
+		
 		iSum -= iBasis
 		
 		return max(2,iSum)
@@ -1084,8 +1095,8 @@ def doPopupAutomatedTradeRoute(pUnit, iType, iData1, iData2):
 										if iType == 6:
 
 												# Profite auswerten
-												iProfit1 = calcBonusProfit(pCityPlot1.getPlotCity(), pCity, iBonus) # Bonus 1
-												iProfit2 = calcBonusProfit(pCity, pCityPlot1.getPlotCity(), eBonus) # möglicher Bonus hier
+												iProfit1 = calcBonusProfit(pCityPlot1.getPlotCity(), pCity, iBonus, pUnit) # Bonus 1
+												iProfit2 = calcBonusProfit(pCity, pCityPlot1.getPlotCity(), eBonus, pUnit) # möglicher Bonus hier
 												iProfit = iProfit1 + iProfit2
 
 												# Anzeige mit Profit des Handels (Bonus1<->Bonus2)

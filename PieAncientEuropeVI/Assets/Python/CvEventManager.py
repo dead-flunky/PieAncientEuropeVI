@@ -2342,16 +2342,23 @@ class CvEventManager:
 				#feat_forest = gc.getInfoTypeForString("FEATURE_SAVANNA")
 				#bonus_zedern = gc.getInfoTypeForString("BONUS_ZEDERNHOLZ")
 				#iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
-				#iMapW = gc.getMap().getGridWidth()
-				#iMapH = gc.getMap().getGridHeight()
 
-				# for x in range(iMapW):
-				#  for y in range(iMapH):
-				#    loopPlot = gc.getMap().plot(x,y)
-				#    #if loopPlot is not None and not loopPlot.isNone():
-				#    if loopPlot.getFeatureType() == iDarkIce: continue
-				#    if loopPlot.getBonusType(-1) == bonus_zedern and loopPlot.getFeatureType() != feat_forest:
-				#       loopPlot.setFeatureType(feat_forest,1)
+				#for i in xrange(CyMap().numPlots()):
+				#		loopPlot = CyMap().plotByIndex(i)
+				#		#if loopPlot is not None and not loopPlot.isNone():
+				#		if loopPlot.getFeatureType() == iDarkIce: continue
+				#		if loopPlot.getBonusType(-1) == bonus_zedern and loopPlot.getFeatureType() != feat_forest:
+				#			 loopPlot.setFeatureType(feat_forest,1)
+				# -----------
+
+				# River-Feature: Fluss soll zu River (TODO: auskommentieren/entfernen wenn es die Fluss-DLL gibt)
+				iTerrainRiver = gc.getInfoTypeForString("TERRAIN_RIVER")
+				iTerrainRiverFord = gc.getInfoTypeForString("TERRAIN_RIVER_FORD")
+				iTerrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+				for i in xrange(CyMap().numPlots()):
+						loopPlot = CyMap().plotByIndex(i)
+						if loopPlot.getTerrainType() == iTerrainRiver: loopPlot.setTerrainType(iTerrainCoast,1,1)
+						elif loopPlot.getTerrainType() == iTerrainRiverFord: loopPlot.setTerrainType(iTerrainCoast,1,1)
 				# -----------
 
 				# BTS Standard
@@ -5308,6 +5315,6 @@ class CvEventManager:
 				(loopUnit, iter) = pPlayer.nextUnit(iter, False)
 		## Break Endless AI Turn by Xyth ##
 
-		# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-		# BTS END OF FILE -----------------------------------------------------------------------
-		# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# BTS END OF FILE -----------------------------------------------------------------------
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

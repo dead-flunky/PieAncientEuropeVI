@@ -24744,6 +24744,7 @@ BeginPlot
 	x=53,y=31
 	isNOfRiver
 	RiverWEDirection=3
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=10,
@@ -26949,6 +26950,7 @@ EndPlot
 BeginPlot
 	x=58,y=28
 	RouteType=ROUTE_ROAD
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
@@ -28358,6 +28360,7 @@ BeginPlot
 	x=61,y=35
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=52,
@@ -28688,6 +28691,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=25
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -29969,6 +29973,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=28
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=7,52,
@@ -31614,6 +31619,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=17
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -32147,6 +32153,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=25
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -32677,6 +32684,7 @@ BeginPlot
 	x=71,y=37
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -34609,7 +34617,7 @@ BeginPlot
 	x=76,y=19
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_SPICES
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=52,

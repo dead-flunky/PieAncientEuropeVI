@@ -6732,7 +6732,7 @@
 			<Type>TECH_PIRACY</Type>
 			<Description>TXT_KEY_TECH_PIRACY</Description>
 			<Civilopedia>TXT_KEY_TECH_PIRACY_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_PIRACY_HELP</Help>
+			<Help/>
 			<Strategy>TXT_KEY_TECH_PIRACY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iAIWeight>0</iAIWeight>

@@ -3472,6 +3472,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=6
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=2,
@@ -7388,6 +7391,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=55
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=7,10,
@@ -12104,6 +12110,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=30
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
@@ -12159,6 +12168,8 @@ EndPlot
 BeginPlot
 	x=10,y=37
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,
@@ -16170,6 +16181,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=75
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,
@@ -31275,6 +31289,9 @@ BeginPlot
 	x=34,y=53
 	isNOfRiver
 	RiverWEDirection=3
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
@@ -42553,6 +42570,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=73
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=8,
@@ -50788,6 +50808,8 @@ EndPlot
 BeginPlot
 	x=60,y=56
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -59446,6 +59468,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=70
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=14,
@@ -71270,6 +71295,8 @@ EndPlot
 BeginPlot
 	x=89,y=82
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=11,15,
@@ -72011,8 +72038,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=91,y=7
-	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=4,
@@ -82779,6 +82807,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=108,y=2
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=3,
@@ -87067,6 +87098,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=114,y=80
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,15,
@@ -94585,6 +94619,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=126,y=36
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -98127,7 +98164,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=90
-	ImprovementType=IMPROVEMENT_COTTAGE_HILL
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
@@ -106415,6 +106454,8 @@ EndPlot
 BeginPlot
 	x=142,y=11
 	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -107070,7 +107111,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=13
-	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_ROAD
+	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -110597,7 +110640,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=148,y=72
+	RouteType=ROUTE_ROAD
 	ImprovementType=IMPROVEMENT_PASTURE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,9,

@@ -21,244 +21,244 @@ BeginGame
 	ModPath=
 EndGame
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=0
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=0
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=1
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=1
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=2
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=2
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=3
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=3
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=4
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=4
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=5
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=5
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=6
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=6
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=7
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=7
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=8
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=8
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=9
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=9
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=10
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=10
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=11
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=11
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=12
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=12
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=13
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=13
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=14
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=14
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=15
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=15
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=16
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=16
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  LeaderType=NONE
-  CivType=NONE
-  Team=17
-  RandomStartLocation=true
+	LeaderType=NONE
+	CivType=NONE
+	Team=17
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=18
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=18
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=19
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=19
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=20
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=20
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=21
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=21
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=22
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=22
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=23
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=23
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=24
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=24
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=25
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=25
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=26
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=26
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=27
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=27
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=28
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=28
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=29
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=29
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=30
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=30
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=31
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=31
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=32
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=32
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=33
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=33
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=34
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=34
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=35
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=35
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=36
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=36
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=37
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=37
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=38
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=38
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginPlayer
-  Team=39
-  LeaderType=NONE
-  CivType=NONE
-  RandomStartLocation=true
+	Team=39
+	LeaderType=NONE
+	CivType=NONE
+	RandomStartLocation=true
 EndPlayer
 BeginMap
 	grid width=84
@@ -20397,6 +20397,7 @@ BeginPlot
 	x=53,y=31
 	isNOfRiver
 	RiverWEDirection=3
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -22303,6 +22304,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=28
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -23546,6 +23548,7 @@ BeginPlot
 	x=61,y=35
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -23849,6 +23852,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=25
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -24987,6 +24991,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=28
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -26473,6 +26478,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=17
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -26912,6 +26918,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=25
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -27379,6 +27386,7 @@ BeginPlot
 	x=71,y=37
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -29226,6 +29234,7 @@ BeginPlot
 	x=76,y=19
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

@@ -765,7 +765,7 @@
 			<Type>BUILD_HANDELSPOSTEN</Type>
 			<Description>TXT_KEY_BUILD_HANDELSPOSTEN</Description>
 			<Help>TXT_KEY_BUILD_FORT_HELP</Help>
-			<PrereqTech>TECH_THE_WHEEL2</PrereqTech>
+			<PrereqTech>TECH_KONSERVIERUNG</PrereqTech>
 			<iTime>1</iTime>
 			<iCost>0</iCost>
 			<bKill>1</bKill>

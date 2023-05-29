@@ -61,6 +61,7 @@
 							<BonusType>BONUS_DEER</BonusType>
 							<BonusType>BONUS_PIG</BonusType>
 							<BonusType>BONUS_SHEEP</BonusType>
+							<BonusType>BONUS_ESEL</BonusType>
 							<BonusType>BONUS_FISH</BonusType>
 			</PrereqBonuses>
 			<HeadquarterCommerces>

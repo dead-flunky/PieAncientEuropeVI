@@ -488,10 +488,10 @@ def doCultivation_AI(pUnit):
 										iValue = 1/iDistance
 
 						# VARIANTE 2: Je nach Stadtstufe kann ein Gut 1x verbreitet werden
-						elif not isCityHasBonus(loopCity, eBonusOnBoard):
-								if _isCityCultivationPossible(loopCity, iTyp):
-										if iDistance == 0: iValue = 2
-										else: iValue = 1/iDistance
+						#elif not isCityHasBonus(loopCity, eBonusOnBoard):
+						#		if _isCityCultivationPossible(loopCity, iTyp):
+						#				if iDistance == 0: iValue = 2
+						#				else: iValue = 1/iDistance
 
 						# VARIANTE 3: Je nach Stadtstufe kann ein Gut eines Typs (Getreide oder Vieh) x Mal verbreitet werden
 						# elif _isCityCultivationPossible(loopCity, iTyp):

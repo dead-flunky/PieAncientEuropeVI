@@ -15314,7 +15314,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
@@ -15516,7 +15516,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
@@ -15702,7 +15702,7 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 				<BuildingClassNeeded>
