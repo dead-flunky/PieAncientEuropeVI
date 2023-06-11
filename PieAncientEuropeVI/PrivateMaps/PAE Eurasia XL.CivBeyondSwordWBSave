@@ -31765,6 +31765,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=39
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -35454,6 +35455,7 @@ BeginPlot
 	x=86,y=41
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -37870,6 +37872,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=92,y=28
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

@@ -17353,7 +17353,6 @@ BeginPlot
 	x=35,y=12
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

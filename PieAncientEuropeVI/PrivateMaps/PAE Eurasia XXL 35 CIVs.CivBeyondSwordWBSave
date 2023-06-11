@@ -6,7 +6,6 @@ BeginGame
 	Calendar=CALENDAR_DEFAULT
 	Option=GAMEOPTION_RAGING_BARBARIANS
 	Option=GAMEOPTION_NO_TECH_BROKERING
-	Victory=VICTORY_TIME
 	Victory=VICTORY_CONQUEST
 	Victory=VICTORY_DOMINATION
 	Victory=VICTORY_CULTURAL
@@ -53105,6 +53104,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=93,y=50
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=23,
@@ -59757,6 +59757,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=105,y=31
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

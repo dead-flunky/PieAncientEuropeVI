@@ -209,11 +209,11 @@ def doBuildTradeRoad(pUnit, pCity):
 		else:
 				# Better resources increase chance
 				if eBonus in L.LBonusLuxury:
-						iChance = 20
+						iChance = 15
 				elif eBonus in L.LBonusRarity:
-						iChance = 30
-				elif eBonus in L.LBonusStrategic:
 						iChance = 25
+				elif eBonus in L.LBonusStrategic:
+						iChance = 20
 				else:
 						iChance = 10
 						

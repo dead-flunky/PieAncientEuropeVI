@@ -50098,6 +50098,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=93,y=50
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -56414,6 +56415,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=105,y=31
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

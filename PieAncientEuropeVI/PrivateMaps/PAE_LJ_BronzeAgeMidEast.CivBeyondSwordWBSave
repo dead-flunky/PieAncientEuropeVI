@@ -21131,7 +21131,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=68
-	BonusType=BONUS_HORSE
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -29260,6 +29260,7 @@ BeginPlot
 	x=57,y=42
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

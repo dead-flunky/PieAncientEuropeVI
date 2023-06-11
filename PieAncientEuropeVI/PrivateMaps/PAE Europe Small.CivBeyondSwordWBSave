@@ -7951,6 +7951,7 @@ BeginPlot
 	x=39,y=16
 	isNOfRiver
 	RiverWEDirection=3
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -8099,6 +8100,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=8
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2

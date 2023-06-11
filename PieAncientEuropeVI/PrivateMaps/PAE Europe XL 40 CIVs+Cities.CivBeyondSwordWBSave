@@ -37839,6 +37839,7 @@ BeginPlot
 	x=73,y=41
 	isNOfRiver
 	RiverWEDirection=3
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=10,
@@ -38690,6 +38691,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=75,y=25
+	BonusType=BONUS_ESEL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2

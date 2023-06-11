@@ -56251,6 +56251,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=116,y=85
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -67367,6 +67368,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=140,y=28
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -69322,6 +69324,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=85
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -71854,6 +71857,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=148,y=64
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

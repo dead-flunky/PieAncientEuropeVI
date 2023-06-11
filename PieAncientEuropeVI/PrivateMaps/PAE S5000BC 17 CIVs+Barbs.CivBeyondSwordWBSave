@@ -18120,6 +18120,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=24
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=52,
@@ -20597,7 +20598,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=20
-	BonusType=BONUS_OLIVES
+	BonusType=BONUS_ESEL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=6,
