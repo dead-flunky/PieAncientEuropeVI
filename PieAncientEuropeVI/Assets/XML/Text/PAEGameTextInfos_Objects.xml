@@ -3704,7 +3704,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SALINE</Tag>
-		<English>Saline</English>
+		<English>Saltworks</English>
 		<French>Marais salant</French>
 		<German>Saline</German>
 		<Italian>Salina</Italian>
@@ -6004,11 +6004,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_HANDELSPOSTEN</Tag>
-		<English>Foreign Trading Post</English>
-		<French>Poste de traite &#233;tranger</French>
-		<German>Au&#223;enhandelsposten</German>
-		<Italian>Posto di commercio estero</Italian>
-		<Spanish>Puesto de comercio exterior</Spanish>
+		<English>Trading Post</English>
+		<French>Poste de traite</French>
+		<German>Handelsposten</German>
+		<Italian>Posto di commercio</Italian>
+		<Spanish>Puesto de comercio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LUMBER_CAMP</Tag>

@@ -436,6 +436,23 @@ class CvEventManager:
 										return 1
 ## Break Endless AI Turn ##
 
+# Ronnar (CIV COL): EventTriggerMenu START
+# Shift+Ctrl+E in cheat mode
+						if( theKey == int(InputTypes.KB_E) and self.bShift and self.bCtrl and self.bAllowCheats) :
+							iPlayer = gc.getGame().getActivePlayer()
+							popupInfo = CyPopupInfo()
+							popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
+							popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_SELECT_EVENT",()))
+							popupInfo.setData1(iPlayer)
+							popupInfo.setOnClickedPythonCallback("selectOneEvent")
+							for i in range(gc.getNumEventTriggerInfos()):
+								trigger = gc.getEventTriggerInfo(i)
+								popupInfo.addPythonButton(str(trigger.getType()), "")
+							popupInfo.addPythonButton(CyTranslator().getText("TXT_KEY_ACTION_CANCEL", ()), "")
+							
+							popupInfo.addPopup(iPlayer)
+# Ronnar: EventTriggerMenu END
+
 						if self.bAllowCheats:
 								# Shift - T (Debug - No MP)
 								if theKey == int(InputTypes.KB_T):

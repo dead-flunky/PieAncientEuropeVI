@@ -1536,7 +1536,7 @@
 		<Tag>TXT_KEY_MESSAGE_SLAVES_HAUS_10</Tag>
 		<English>Due to a bad prophecy, the governor of %s1 murdered some household slaves.</English>
 		<French>A cause d'un mauvais pr&#233;sage, le gouverneur de %s1 a sacrifi&#233; des domestiques.</French>
-		<German>Auf Grund einer b&#246;sen Prophezeiung, lie&#223; der Statthalter von %s1 einige Haussklaven ermorden.</German>
+		<German>Aufgrund einer b&#246;sen Prophezeiung, lie&#223; der Statthalter von %s1 einige Haussklaven ermorden.</German>
 		<Italian>A causa di una cattiva profezia, il governatore di %s1 fece uccidere alcuni schiavi della casa.</Italian>
 		<Spanish>Debido a una mala profec&#237;a, el gobernador de %s1 asesin&#243; a algunos esclavos dom&#233;sticos.</Spanish>
 	</TEXT>
@@ -1792,7 +1792,7 @@
 		<Tag>TXT_KEY_MESSAGE_SLAVES_MINE_12</Tag>
 		<English>Due to a strike at a mine in %s1, the governor executed all mine slaves in public.</English>
 		<French>Une gr&#232;ve dans une mine &#224; %s1 a provoqu&#233; la col&#232;re du gouverneur qui a ordonn&#233; des ex&#233;cutions pour l'exemple.</French>
-		<German>Auf Grund eines Streiks in einer Mine in %s1, lie&#223; der Statthalter s&#228;mtliche Bergwerkssklaven &#246;ffentlich hinrichten.</German>
+		<German>Aufgrund eines Streiks in einer Mine in %s1, lie&#223; der Statthalter s&#228;mtliche Bergwerkssklaven &#246;ffentlich hinrichten.</German>
 		<Italian>A causa di uno sciopero in una miniera in %s1, il governatore ha giustiziato tutti gli schiavi delle mine in pubblico.</Italian>
 		<Spanish>Debido a una huelga en una mina de %s1, el gobernador ejecut&#243; a todos los esclavos de la mina en p&#250;blico.</Spanish>
 	</TEXT>
@@ -1878,11 +1878,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HANDELSPOSTEN</Tag>
-		<English>Set up a [LINK=IMPROVEMENT_HANDELSPOSTEN]Foreign Trading Post[\LINK]</English>
-		<French>Etablir un [LINK=IMPROVEMENT_HANDELSPOSTEN]Poste de traite &#233;tranger[\LINK]</French>
-		<German>[LINK=IMPROVEMENT_HANDELSPOSTEN]Au&#223;enhandelsposten[\LINK] erstellen</German>
-		<Italian>Crea un [LINK=IMPROVEMENT_HANDELSPOSTEN]posto di commercio estero[\LINK]</Italian>
-		<Spanish>Erigir un [LINK=IMPROVEMENT_HANDELSPOSTEN]puesto de comercio exterior[\LINK]</Spanish>
+		<English>Set up a [LINK=IMPROVEMENT_HANDELSPOSTEN]Trading Post[\LINK]</English>
+		<French>Etablir un [LINK=IMPROVEMENT_HANDELSPOSTEN]Poste de traite[\LINK]</French>
+		<German>[LINK=IMPROVEMENT_HANDELSPOSTEN]Handelsposten[\LINK] erstellen</German>
+		<Italian>Crea un [LINK=IMPROVEMENT_HANDELSPOSTEN]posto di commercio[\LINK]</Italian>
+		<Spanish>Erigir un [LINK=IMPROVEMENT_HANDELSPOSTEN]puesto de comercio[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GODS_INQUISTOR_CLEANSE_MOUSE_OVER</Tag>
@@ -2832,7 +2832,7 @@
 		<Tag>TXT_KEY_MESSAGE_DYING_SLAVES_8</Tag>
 		<English>A slave died of blood poisoning because of an open rupture!</English>
 		<French>Un esclave meurt d'infection &#224; cause d'une fracture ouverte !</French>
-		<German>Ein Sklave starb auf Grund eines offenen Bruchs an Blutvergiftung!</German>
+		<German>Ein Sklave starb aufgrund eines offenen Bruchs an Blutvergiftung!</German>
 		<Italian>A slave died of blood poisoning because of an open rupture!</Italian>
 		<Spanish>&#161;Un esclavo muri&#243; por envenenamiento de la sangre a causa de una herida abierta!</Spanish>
 	</TEXT>
@@ -2904,7 +2904,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_PEST_GLOBAL</Tag>
 		<English>Due to the lack of hygiene and the large population, the deadly plague broke out in the city of %s1!</English>
 		<French>L'insalubrit&#233; et la surpopulation ont d&#233;clench&#233; une &#233;pid&#233;mie de peste &#224; %s1 !</French>
-		<German>Auf Grund der mangelnden Hygiene und starker Bev&#246;lkerungszahl, ist in %s1 eine todbringende Seuche (Pest) ausgebrochen!</German>
+		<German>Aufgrund der mangelnden Hygiene und starker Bev&#246;lkerungszahl, ist in %s1 eine todbringende Seuche (Pest) ausgebrochen!</German>
 		<Italian>A causa della mancanza di igiene e della numerosa popolazione, &#232; scoppiata la peste mortale nella citt&#224; di %s1!</Italian>
 		<Spanish>Debido a la falta de higiene y a la gran poblaci&#243;n, &#161;la mortal peste estall&#243; en la ciudad de %s1!</Spanish>
 	</TEXT>
@@ -4886,11 +4886,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_TECH_UNIT_1</Tag>
-		<English>[ICON_BULLET]A free cultist of this cult.</English>
-		<French>[ICON_BULLET]Une unit&#233; gratuite de ce culte</French>
-		<German>[ICON_BULLET]Ein freier Anh&#228;nger dieses Kults.</German>
-		<Italian>Un fedele gratuito di questo culto.</Italian>
-		<Spanish>[ICON_BULLET]Un seguidor gratis de este culto.</Spanish>
+		<English>[ICON_BULLET]Two free cultists of this cult.</English>
+		<French>[ICON_BULLET]Deux unit&#233;s gratuites de ce culte</French>
+		<German>[ICON_BULLET]Zwei freie Anh&#228;nger dieses Kults.</German>
+		<Italian>[ICON_BULLET]Due cultisti gratuito di questo culto.</Italian>
+		<Spanish>[ICON_BULLET]Dos seguidores gratis de este culto.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_TECH_UNIT_2</Tag>
@@ -6384,7 +6384,7 @@
 		<Tag>TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION_3</Tag>
 		<English>Due to the longtime city experience in %s3, your unit %s1 got the promotion of %s2.</English>
 		<French>Le temps pass&#233; dans la ville de %s3 a permis &#224; votre unit&#233; (%s1) de gagner la promotion %s2.</French>
-		<German>Auf Grund der langj&#228;hrigen Stadterfahrung in %s3 bekam Eure Einheit %s1 die Bef&#246;rderung %s2.</German>
+		<German>Aufgrund der langj&#228;hrigen Stadterfahrung in %s3 bekam Eure Einheit %s1 die Bef&#246;rderung %s2.</German>
 		<Italian>Grazie ai molti anni di esperienza in citt&#224; a %s3, la tua unit&#224; %s1 ha ottenuto la promozione %s2.</Italian>
 		<Spanish>Debido a largo tiempo de experiencia en la ciudad de %s3, tu unidad %s1 obtuvo el ascenso de %s2.</Spanish>
 	</TEXT>
@@ -7056,7 +7056,7 @@
 		<Tag>TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION</Tag>
 		<English>Your unit %s1 has earned the promotion %s2 due to their splendid performance on the battlefield!</English>
 		<French>[NUM1:Votre:Votre:Vos:Vos] %s1_unit [NUM1:a:a:ont:ont] gagn&#233; la promotion %s2_promotion gr&#226;ce &#224; l'exp&#233;rience acquise au combat.</French>
-		<German>Eure Einheit %s1 wurde nun auf Grund ihrer gro&#223;artigen Leistung mit %s2 bef&#246;rdert.</German>
+		<German>Eure Einheit %s1 wurde nun aufgrund ihrer gro&#223;artigen Leistung mit %s2 bef&#246;rdert.</German>
 		<Italian>Your unit %s1 has earned the promotion %s2 due to their splendid performance on the battlefield!</Italian>
 		<Spanish>Ahora tu unidad %s1 ha sido ascendida con %s2 debido a su gran logro.</Spanish>
 	</TEXT>
@@ -7064,7 +7064,7 @@
 		<Tag>TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION_2</Tag>
 		<English>Due to the surrounding region of %s3 your unit %s1 has received the promotion of %s2.</English>
 		<French>L'exp&#233;rience du terrain environnant %s3 a permis &#224; [NUM1:votre:votre:vos:vos] %s1 de s'am&#233;liorer (%s2).</French>
-		<German>Auf Grund des Umlands von %s3 bekam Eure Einheit %s1 die Bef&#246;rderung %s2.</German>
+		<German>Aufgrund des Umlands von %s3 bekam Eure Einheit %s1 die Bef&#246;rderung %s2.</German>
 		<Italian>Due to the surrounding region of %s3 your unit %s1 has received the promotion of %s2.</Italian>
 		<Spanish>Debido a la regi&#243;n circundante de %s3 tu unidad %s1 obtiene el ascenso de %s2.</Spanish>
 	</TEXT>
@@ -7670,11 +7670,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CLOSED_TRADEPOST</Tag>
-		<English>Your Foreign Trading Post was broken down by foreign cultural borders!</English>
-		<French>Votre poste de traite &#233;tranger a &#233;t&#233; d&#233;truit par l'expansion culturelle &#233;trang&#232;re!</French>
-		<German>Euer Au&#223;enhandelsposten wurde durch fremde Kulturgrenzen abgebaut!</German>
-		<Italian>Il tuo posto di commercio estero &#232; stato abbattuto dai confini culturali stranieri!</Italian>
-		<Spanish>&#161;Tu puesto de comercio exterior ha sido destru&#237;do por fronteras culturales extranjeras!</Spanish>
+		<English>Your Trading Post was broken down by foreign cultural borders!</English>
+		<French>Votre poste de traite a &#233;t&#233; d&#233;truit par l'expansion culturelle &#233;trang&#232;re!</French>
+		<German>Euer Handelsposten wurde durch fremde Kulturgrenzen abgebaut!</German>
+		<Italian>Il tuo posto di commercio &#232; stato abbattuto dai confini culturali stranieri!</Italian>
+		<Spanish>&#161;Tu puesto de comercio ha sido destru&#237;do por fronteras culturales extranjeras!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_DOM_ELEFANT</Tag>
@@ -7792,7 +7792,7 @@
 		<Tag>TXT_KEY_TRADE_ROUTE_BUILT2</Tag>
 		<English>[ICON_TRADE] Because of your valuable trading, a paved trade road could be built between the cities %s1 and %s2 (+1[ICON_COMMERCE])!</English>
 		<French>[ICON_TRADE] En raison de vos &#233;changes commerciaux pr&#233;cieux, une route commerciale carrossable pourrait &#234;tre construite entre les villes %s1 et %s2 (+1 [ICON_COMMERCE])!</French>
-		<German>[ICON_TRADE] Auf Grund Eurer lukrativen Handelsgesch&#228;fte konnte zwischen den St&#228;dten %s1 und %s2 eine befestigte Handelsstra&#223;e entstehen (+1[ICON_COMMERCE])!</German>
+		<German>[ICON_TRADE] Aufgrund Eurer lukrativen Handelsgesch&#228;fte konnte zwischen den St&#228;dten %s1 und %s2 eine befestigte Handelsstra&#223;e entstehen (+1[ICON_COMMERCE])!</German>
 		<Italian>[ICON_TRADE] A causa del tuo prezioso commercio, &#232; possibile costruire una strada commerciale asfaltata tra le citt&#224; %s1 e %s2 (+1 [ICON_COMMERCE])!</Italian>
 		<Spanish>[ICON_TRADE] Debido al gran valor de tus negocios comerciales, &#161;una ruta comercial pavimentada podr&#237;a surgir entre las ciudades %s1 y %s2 (+1[ICON_COMMERCE])!</Spanish>
 	</TEXT>
@@ -8224,7 +8224,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_CIVIC_BARRACKS</Tag>
 		<English>The training camp was closed due to your polity.</English>
 		<French>Le camp d'entra&#238;nement a &#233;t&#233; ferm&#233; en raison de vos choix politiques.</French>
-		<German>Auf Grund Eurer Staatsform wurde das Ausbildungslager geschlossen und abgebaut.</German>
+		<German>Aufgrund Eurer Staatsform wurde das Ausbildungslager geschlossen und abgebaut.</German>
 		<Italian>Il campo di addestramento &#232; stato chiuso a causa della tua politica.</Italian>
 		<Spanish>El campo de entrenamiento fue cerrado debido a su pol&#237;tica.</Spanish>
 	</TEXT>
@@ -8272,7 +8272,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_4</Tag>
 		<English>In %s1 the %s3 has been demolished due to the lack of goods.</English>
 		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:est tomb&#233;:est tomb&#233;e:sont tomb&#233;s:sont tomb&#233;es] en d&#233;labrement suite &#224; la p&#233;nurie de marchandises.</French>
-		<German>In %s1 wurde auf Grund fehlender G&#252;ter das Geb&#228;ude %s3 abgebaut.</German>
+		<German>In %s1 wurde aufgrund fehlender G&#252;ter das Geb&#228;ude %s3 abgebaut.</German>
 		<Italian>A %s1 la %s3 &#232; stata chiusa a causa della mancanza di merci.</Italian>
 		<Spanish>En %s1 [NUM3:el:la:los:las] %s3 [NUM3:fue:fue:fueron:fueron] [NUM3:degradado:degradada:degradados:degradadas] por falta de bienes.</Spanish>
 	</TEXT>

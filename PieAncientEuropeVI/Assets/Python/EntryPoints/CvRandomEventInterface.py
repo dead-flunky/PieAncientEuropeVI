@@ -21,6 +21,7 @@ from CvPythonExtensions import (CyGlobalContext, CyTranslator, UnitAITypes,
 																WarPlanTypes, DomainTypes, plotDistance,
 																MemoryTypes, plotXY, isLimitedWonderClass)
 import PAE_City
+import PAE_Lists as L
 
 gc = CyGlobalContext()
 localText = CyTranslator()
@@ -3708,10 +3709,7 @@ def canTriggerBier(argsList):
 
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		team = gc.getTeam(player.getTeam())
-
-		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
-
-		if team.isHasTech(iTech):
+		if team.isHasTech(gc.getInfoTypeForString("TECH_GAERUNG")):
 				return False
 
 		return True
@@ -3725,9 +3723,7 @@ def applyBier(argsList):
 		iTeam = player.getTeam()
 		pTeam = gc.getTeam(iTeam)
 
-		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_GAERUNG')
-
-		pTeam.setHasTech(iTech, 1, kTriggeredData.ePlayer, 0, 1)
+		pTeam.setHasTech(gc.getInfoTypeForString("TECH_GAERUNG"), 1, kTriggeredData.ePlayer, 0, 1)
 
 
 ######## KAMEL DOMESTIZIERUNG ###########
@@ -3737,10 +3733,7 @@ def canTriggerKamel(argsList):
 
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		team = gc.getTeam(player.getTeam())
-
-		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
-
-		if team.isHasTech(iTech):
+		if team.isHasTech(gc.getInfoTypeForString("TECH_KAMELZUCHT")):
 				return False
 
 		return True
@@ -3754,9 +3747,7 @@ def applyKamel(argsList):
 		iTeam = player.getTeam()
 		pTeam = gc.getTeam(iTeam)
 
-		iTech = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_KAMELZUCHT')
-
-		pTeam.setHasTech(iTech, 1, kTriggeredData.ePlayer, 0, 1)
+		pTeam.setHasTech(gc.getInfoTypeForString("TECH_KAMELZUCHT"), 1, kTriggeredData.ePlayer, 0, 1)
 
 
 #######  Waldbrand ########
@@ -3765,9 +3756,7 @@ def applyForest_Fire(argsList):
 		kTriggeredData = argsList[1]
 
 		plot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
-		iVerbrannterWald = gc.getInfoTypeForString("FEATURE_FOREST_BURNT")
-
-		plot.setFeatureType(iVerbrannterWald, 1)
+		plot.setFeatureType(gc.getInfoTypeForString("FEATURE_FOREST_BURNT"), 1)
 
 ###### Reflexbogen #######
 
@@ -3777,10 +3766,7 @@ def canTriggerReflex(argsList):
 
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		team = gc.getTeam(player.getTeam())
-
-		iReflex = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_REFLEXBOGEN')
-
-		if team.isHasTech(iReflex):
+		if team.isHasTech(gc.getInfoTypeForString("TECH_REFLEXBOGEN")):
 				return False
 
 		return True
@@ -3794,9 +3780,7 @@ def applyReflex(argsList):
 		iTeam = player.getTeam()
 		pTeam = gc.getTeam(iTeam)
 
-		iReflex = CvUtil.findInfoTypeNum(gc.getTechInfo, gc.getNumTechInfos(), 'TECH_REFLEXBOGEN')
-
-		pTeam.setHasTech(iReflex, 1, kTriggeredData.ePlayer, 0, 1)
+		pTeam.setHasTech(gc.getInfoTypeForString("TECH_REFLEXBOGEN"), 1, kTriggeredData.ePlayer, 0, 1)
 
 ######## Rome_Religion_3 ###########
 
@@ -3890,6 +3874,20 @@ def canTriggerKupfer(argsList):
 						return True
 
 		return False
+
+
+def canTriggerNoWar(argsList):
+
+		kTriggeredData = argsList[0]
+		player = gc.getPlayer(kTriggeredData.ePlayer)
+		team = gc.getTeam(player.getTeam())
+		if player.getStateReligion() not in L.LMonoReligions:
+				if not team.getAtWarCount(True):
+						return True
+
+		return False
+
+
 
 #############################
 

@@ -1913,6 +1913,14 @@
 		<Spanish>En PAE, el men&#250; de compilaci&#243;n se divide en dos mitades. Las unidades se muestran a la izquierda y los edificios a la derecha.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_POPUP_SELECT_EVENT</Tag>
+		<English>Which event should be triggered?</English>
+		<French>Quel &#233;v&#233;nement doit &#234;tre d&#233;clench&#233; ?</French>
+		<German>Welches Event soll ausgel&#246;st werden?</German>
+		<Italian>Quale evento deve essere attivato?</Italian>
+		<Spanish>&#191;Qu&#233; evento debe activarse?</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL_POSITIVE</Tag>
 		<English>[NEWLINE][ICON_BULLET] Temporarily +1[ICON_HAPPY]</English>
 		<French>[NEWLINE][ICON_BULLET] Temporairement +1[ICON_HAPPY]</French>

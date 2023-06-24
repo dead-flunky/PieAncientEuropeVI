@@ -372,7 +372,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_3</Tag>
 		<English>Due to the excessive number (+%d2) of soldiers in %s1 a small epidemic has broken out!</English>
 		<French>A cause de sa garnison trop importante (+%d2), une &#233;pid&#233;mie a &#233;clat&#233; &#224; %s1 !</French>
-		<German>Auf Grund der &#252;berm&#228;&#223;igen Anzahl (+%d2) der Soldaten in %s1 ist eine kleine Seuche ausgebrochen!</German>
+		<German>Aufgrund der &#252;berm&#228;&#223;igen Anzahl (+%d2) der Soldaten in %s1 ist eine kleine Seuche ausgebrochen!</German>
 		<Italian>A causa del numero eccessivo (+%d2) di soldati in %s1 &#232; scoppiata una piccola epidemia!</Italian>
 		<Spanish>Debido al excesivo n&#250;mero (+%d2) de soldados en %s1 &#161;ha estallado una peque&#241;a epidemia!</Spanish>
 	</TEXT>
@@ -380,7 +380,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4</Tag>
 		<English>[ICON_EATENFOOD] Due to food shortages in %s1, the %s2 has left the city weakened!</English>
 		<French>[ICON_EATENFOOD] Pour &#233;chapper &#224; la famine &#224; %s1, une unit&#233; (%s2) a quitt&#233; la ville en piteux &#233;tat !</French>
-		<German>[ICON_EATENFOOD] Auf Grund der Nahrungsmittelknappheit in %s1 musste die Einheit %s2 geschw&#228;cht die Stadt verlassen!</German>
+		<German>[ICON_EATENFOOD] Aufgrund der Nahrungsmittelknappheit in %s1 musste die Einheit %s2 geschw&#228;cht die Stadt verlassen!</German>
 		<Italian>[ICON_EATENFOOD] A causa della mancanza di cibo a %s1, l'unit&#224; %s2 ha lasciato la citt&#224; indebolita!</Italian>
 		<Spanish>[ICON_EATENFOOD] Debido a la escasez de comida en %s1 &#161;una unidad de %s2 se ha amotinado y no volver&#225; a seguir tus &#243;rdenes mas!</Spanish>
 	</TEXT>
@@ -388,7 +388,7 @@
 		<Tag>TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_5</Tag>
 		<English>Due to food shortages in %s1 some units have left the city weakened!</English>
 		<French>Pour &#233;chapper &#224; la famine &#224; %s1, des unit&#233;s ont quitt&#233; la ville en piteux &#233;tat !</French>
-		<German>Auf Grund der Nahrungsmittelknappheit in %s1 haben einige Einheiten die Stadt geschw&#228;cht verlassen!</German>
+		<German>Aufgrund der Nahrungsmittelknappheit in %s1 haben einige Einheiten die Stadt geschw&#228;cht verlassen!</German>
 		<Italian>A causa della scarsit&#224; di cibo in %s1 alcune unit&#224; hanno lasciato la citt&#224; indebolito!</Italian>
 		<Spanish>&#161;Debido a la escasez de comida en %s1 algunas unidades han dejado la ciudad debilitada!</Spanish>
 	</TEXT>
@@ -1626,11 +1626,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_HANDELSPOSTEN</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Build Foreign Trading Post[COLOR_REVERT][NEWLINE][ICON_BULLET] Creates a Trading Post[NEWLINE][ICON_BULLET] Builds a road[NEWLINE][ICON_BULLET] Unit will be removed[NEWLINE][ICON_BULLET] Delivers [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Construire un Poste de traite &#233;tranger[COLOR_REVERT][NEWLINE][ICON_BULLET] Cr&#233;e un poste de traite &#233;tranger[NEWLINE][ICON_BULLET] Construit une route[NEWLINE][ICON_BULLET] L'unit&#233; sera supprim&#233;e[NEWLINE][ICON_BULLET] Fournit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Au&#223;enhandelsposten errichten[COLOR_REVERT][NEWLINE][ICON_BULLET] Handelsposten wird errichtet[NEWLINE][ICON_BULLET] Stra&#223;e wird errichtet[NEWLINE][ICON_BULLET] Einheit wird verbraucht[NEWLINE][ICON_BULLET] Liefert [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT] Crea un posto di commercio estero[COLOR_REVERT][NEWLINE][ICON_BULLET] Verr&#224; creato un posto di commercio[NEWLINE][ICON_BULLET] Verr&#224; costruita una strada[NEWLINE][ICON_BULLET] L'unit&#224; verr&#224; distrutta[NEWLINE][ICON_BULLET] Restituisce [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Construir un puesto de comercio exterior[COLOR_REVERT][NEWLINE][ICON_BULLET] Se crear&#225; un puesto de comercio exterior[NEWLINE][ICON_BULLET] Se construir&#225; una carretera[NEWLINE][ICON_BULLET] La unidad ser&#225; destruida[NEWLINE][ICON_BULLET] Entrega [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Build Trading Post[COLOR_REVERT][NEWLINE][ICON_BULLET] Creates a Trading Post[NEWLINE][ICON_BULLET] Builds a road[NEWLINE][ICON_BULLET] Unit will be removed[NEWLINE][ICON_BULLET] Delivers [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Construire un Poste de traite[COLOR_REVERT][NEWLINE][ICON_BULLET] Cr&#233;e un poste de traite &#233;tranger[NEWLINE][ICON_BULLET] Construit une route[NEWLINE][ICON_BULLET] L'unit&#233; sera supprim&#233;e[NEWLINE][ICON_BULLET] Fournit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Handelsposten errichten[COLOR_REVERT][NEWLINE][ICON_BULLET] Handelsposten wird errichtet[NEWLINE][ICON_BULLET] Stra&#223;e wird errichtet[NEWLINE][ICON_BULLET] Einheit wird verbraucht[NEWLINE][ICON_BULLET] Liefert [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT] Crea un posto di commercio[COLOR_REVERT][NEWLINE][ICON_BULLET] Verr&#224; creato un posto di commercio[NEWLINE][ICON_BULLET] Verr&#224; costruita una strada[NEWLINE][ICON_BULLET] L'unit&#224; verr&#224; distrutta[NEWLINE][ICON_BULLET] Restituisce [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Construir un puesto de comercio[COLOR_REVERT][NEWLINE][ICON_BULLET] Se crear&#225; un puesto de comercio exterior[NEWLINE][ICON_BULLET] Se construir&#225; una carretera[NEWLINE][ICON_BULLET] La unidad ser&#225; destruida[NEWLINE][ICON_BULLET] Entrega [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_PERMANENT_ALLIANCES</Tag>

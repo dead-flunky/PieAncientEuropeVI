@@ -252,16 +252,17 @@ def doReligionsKonflikt(pCity):
 		pTeam = gc.getTeam(pPlayer.getTeam())
 		
 		# 2%: Poly Reli als Staatsreli, aber kein aktiver Krieg
-		if CvUtil.myRandom(100, "ReligionsKonflikt1") < 2 and pPlayer.getStateReligion() not in L.LMonoReligions:
+		if gc.getGame().getHandicapType() > 5 and CvUtil.myRandom(100, "ReligionsKonflikt1") < 2 and pPlayer.getStateReligion() not in L.LMonoReligions:
 				if not pTeam.getAtWarCount(True):
 						pCity.changeOccupationTimer(1)
 						if pPlayer.isHuman():
 								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1", (pCity.getName(),)),
 								None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+						#pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_NO_WAR"))
 				return True
 
 		# 3%: Stadt hat 2 verschiedene Relis
-		if CvUtil.myRandom(100, "ReligionsKonflikt2") < 3:
+		if gc.getGame().getHandicapType() > 3 and CvUtil.myRandom(100, "ReligionsKonflikt2") < 3:
 				iReliCount = 0
 				iRange = gc.getNumReligionInfos()
 				for i in range(iRange):

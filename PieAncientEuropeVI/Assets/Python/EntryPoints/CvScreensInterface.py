@@ -2672,6 +2672,34 @@ def peloponnesianWarKeinpferd_Syra1(argsList):
 
 # --------------------
 
+#Ronnar (CIV COL): EventTriggerMenu START
+
+def selectOneEvent(argsList):
+		iButtonId = argsList[0]
+		iData1 = argsList[1]
+			
+		eventTriggerName = None
+		eventTriggerNumber = -1
+
+		if iButtonId < gc.getNumEventTriggerInfos():
+				eventTriggerName = gc.getEventTriggerInfo(iButtonId).getType()
+				eventTriggerNumber = iButtonId
+		if eventTriggerName == None:
+				return
+		if eventTriggerNumber == -1:
+				return
+		message = 'Event: %s[%d]' % (eventTriggerName, eventTriggerNumber)
+		CyInterface().addImmediateMessage(message, "")
+		#message = 'pyPrint: You selected Event: %s[%d]' % (eventTriggerName, eventTriggerNumber)
+		#CvUtil.pyPrint(message)
+		#message = 'print: You selected Event: %s[%d]' % (eventTriggerName, eventTriggerNumber)
+		#print message
+		pPlayer = gc.getPlayer(iData1)
+		pPlayer.trigger(eventTriggerNumber)
+
+#Ronnar: EventTriggerMenu END
+
+
 
 #######################################################################################
 # Handle Close Map

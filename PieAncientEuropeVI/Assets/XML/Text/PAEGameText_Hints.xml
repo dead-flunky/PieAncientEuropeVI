@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_HINT_52</Tag>
 		<English>If you collect more Espionage Points than an opponent, then your missions towards that opponent will be cheaper. Every point you spend throughout the game is added towards this total, so if you see a fierce rival outspending you in Espionage Points, it would be wise to increase your Espionage spending.</English>
@@ -34,11 +34,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_72</Tag>
-		<English>Only Great People can found new Cults. Cults also require specific resources for their product lines to thrive. If you aim to create a specific Cult to aid your nation's interests, try to plan ahead, choosing a Cult for which you can supply the needed resources and produce the needed Great Person.</English>
-		<French>Seuls les personnages illustres peuvent fonder de nouveaux cultes. Ces derniers requi&#232;rent &#233;galement des ressources sp&#233;cifiques pour pouvoir tourner &#224; plein r&#233;gime. Si vous souhaitez cr&#233;er un culte bien particuli&#232;re dans votre ville pour favoriser les int&#233;r&#234;ts de votre nation, essayez de planifier les choses en choisissant un culte requ&#233;rant des ressources pr&#233;sentes sur votre territoire et un personnage illustre que vous produirez en temps voulu.</French>
-		<German>Nur Gro&#223;e Pers&#246;nlichkeiten k&#246;nnen neue Kulte gr&#252;nden. Kulte ben&#246;tigen auch spezielle Ressourcen, um ihre Produktionsketten voranzutreiben. Wenn Sie einen speziellen Kult errichten m&#246;chten, der den Interessen Ihrer Nation dienen soll, versuchen Sie vorausschauend zu planen, indem Sie einen Kult w&#228;hlen, &#252;ber deren erforderliche Ressourcen Sie verf&#252;gen, und erstellen Sie die ben&#246;tigte Gro&#223;e Pers&#246;nlichkeit.</German>
-		<Italian>Solo i Grandi personaggi possono fondare nuove cultos. Queste ultime richiedono anche risorse specifiche per accrescere le proprie linee produttive. Se ambisci a creare un culto che possa fare gli interessi della tua nazione, cerca di pianificare in anticipo, scegliendo un culto a cui potrai fornire le risorse di cui avr bisogno, e producendo il Grande personaggio richiesto.</Italian>
-		<Spanish>Solo los grandes personajes pueden fundar nuevos cultos. Los cultos tambi&#233;n requieren recursos espec&#237;ficos para que sus l&#237;neas de productos prosperen. Si tu objetivo es crear un culto concreto para ayudar a los intereses de tu naci&#243;n, trata de planificar a largo plazo, y elige un culto que pueda suministrar los recursos necesarios y producir el gran personaje necesario.</Spanish>
+		<English>The research of certain technologies or Great People can found new Cults. Cults also require specific resources for their product lines to thrive. If you aim to create a specific Cult to aid your nation's interests, try to plan ahead, choosing a Cult for which you can supply the needed resources.</English>
+		<French>La recherche de certaines technologies ou des personnages illustres peuvent fonder de nouveaux cultes. Ces derniers requi&#232;rent &#233;galement des ressources sp&#233;cifiques pour pouvoir tourner &#224; plein r&#233;gime. Si vous souhaitez cr&#233;er un culte bien particuli&#232;re dans votre ville pour favoriser les int&#233;r&#234;ts de votre nation, essayez de planifier les choses en choisissant un culte requ&#233;rant des ressources pr&#233;sentes sur votre territoire.</French>
+		<German>Die Erforschung bestimmter Technologien oder Gro&#223;e Pers&#246;nlichkeiten k&#246;nnen neue Kulte gr&#252;nden. Kulte ben&#246;tigen auch spezielle Ressourcen, um ihre Produktionsketten voranzutreiben. Wenn Sie einen speziellen Kult errichten m&#246;chten, der den Interessen Ihrer Nation dienen soll, versuchen Sie vorausschauend zu planen, indem Sie einen Kult w&#228;hlen, &#252;ber deren erforderliche Ressourcen Sie verf&#252;gen.</German>
+		<Italian>La ricerca di determinate tecnologie o i Grandi personaggi possono fondare nuove cultos. Queste ultime richiedono anche risorse specifiche per accrescere le proprie linee produttive. Se ambisci a creare un culto che possa fare gli interessi della tua nazione, cerca di pianificare in anticipo, scegliendo un culto a cui potrai fornire le risorse di cui avr bisogno.</Italian>
+		<Spanish>La investigaci&#243;n de ciertas tecnolog&#237;as o los grandes personajes pueden fundar nuevos cultos. Los cultos tambi&#233;n requieren recursos espec&#237;ficos para que sus l&#237;neas de productos prosperen. Si tu objetivo es crear un culto concreto para ayudar a los intereses de tu naci&#243;n, trata de planificar a largo plazo, y elige un culto que pueda suministrar los recursos necesarios.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_101</Tag>

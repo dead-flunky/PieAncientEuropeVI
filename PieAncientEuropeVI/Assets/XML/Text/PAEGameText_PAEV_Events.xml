@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ABRAHAM</Tag>
 		<English>An old man named Abraham made a covenant with his God.</English>
@@ -2439,6 +2439,38 @@
 		<German>Lasst uns sogleich ein Kamelrennen veranstalten!</German>
 		<Italian>Facciamo subito una corsa di cammelli!</Italian>
 		<Spanish>&#161;Hagamos una carrera de camellos ahora mismo!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_NO_WAR</Tag>
+		<English>Your young warriors yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. You prevent this event if you are at war with another people or believe in a monotheistic religion.</English>
+		<French>Vos jeunes guerriers aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Vous emp&#234;chez cet &#233;v&#233;nement si vous &#234;tes en guerre avec un autre peuple ou si vous croyez en une religion monoth&#233;iste.</French>
+		<German>Eure jungen Krieger sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Ihr verhindert dieses Event, wenn Ihr mit einem anderen Volk Krieg f&#252;hrt oder an eine monotheistische Religion glaubt.</German>
+		<Italian>I tuoi giovani guerrieri bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Impedisci questo evento se sei in guerra con un altro popolo o credi in una religione monoteista.</Italian>
+		<Spanish>Tus j&#243;venes guerreros anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Evitas este evento si est&#225;s en guerra con otro pueblo o si crees en una religi&#243;n monote&#237;sta.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_1</Tag>
+		<English>Give the young warriors compensation so they can drown their frustrations in alcohol.</English>
+		<French>Donnez aux jeunes guerriers une compensation pour qu'ils puissent noyer leurs frustrations dans l'alcool.</French>
+		<German>Gebt den jungen Kriegern eine Entsch&#228;digung, sodass sie ihren Frust in Alkohol ertr&#228;nken k&#246;nnen.</German>
+		<Italian>Dai un compenso ai giovani guerrieri in modo che possano annegare le loro frustrazioni nell'alcool.</Italian>
+		<Spanish>Dales una compensaci&#243;n a los j&#243;venes guerreros para que puedan ahogar sus frustraciones en alcohol.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_2</Tag>
+		<English>Let them go, but protect the neighborhoods of our wealthy citizens.</English>
+		<French>Laissez-les partir, mais prot&#233;gez les quartiers de nos riches citoyens.</French>
+		<German>Lasst sie ziehen, aber sch&#252;tzt die Stadtteile unserer wohlhabenden B&#252;rger.</German>
+		<Italian>Lasciali andare, ma proteggi i quartieri dei nostri ricchi cittadini.</Italian>
+		<Spanish>D&#233;jalos ir, pero protege los vecindarios de nuestros ciudadanos ricos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_3</Tag>
+		<English>Let them roam the streets of the city, frustrating and plundering.</English>
+		<French>Laissez-les errer dans les rues de la ville, frustrant et pillant.</French>
+		<German>Lasst sie frustrierend und pl&#252;ndernd durch die Gassen der Stadt ziehen.</German>
+		<Italian>Lasciali vagare per le strade della citt&#224;, frustrando e saccheggiando.</Italian>
+		<Spanish>D&#233;jalos vagar por las calles de la ciudad, frustrando y saqueando.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MEUTEREI_2</Tag>

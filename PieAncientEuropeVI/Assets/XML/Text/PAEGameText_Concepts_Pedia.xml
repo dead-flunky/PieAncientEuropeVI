@@ -127,7 +127,7 @@ Therefore, the vassal-feature in PAE has been expanded.
 
 [H1]To become a vassal[\H1]
 In PAE, it is now easier to become a vassal. You have just conquered a city of a player who has only 4 or fewer cities, it offers to be a vassal.
-Probability 1: 120% - (20x number of cities)%
+Probability 1: 120% â€“ (20x number of cities)%
 Probability 2: The loser's civilization strength points (x2) are less than the winner's strength points
 This should help maintain a certain strength of the vassals. The same applies to human players. Now it is possible in PAE, as a human player to become a vassal of the AI.
 
@@ -155,7 +155,7 @@ Other conditions:
 			
 			[H1]Devenir un vassal[\H1]
 			Dans PAE, il est plus facile de devenir un vassal. Si vous capturez la ville d'une nation qui en compte 4 ou moins, celle-ci propose de devenir votre vassal.
-			Probabilit&#233; 1: 120% - (20x le nombre de villes)%
+			Probabilit&#233; 1: 120% â€“ (20x le nombre de villes)%
 			Probabilit&#233; 2: les points de force de civilisation du perdant (x2) sont inf&#233;rieurs aux points de force du gagnant
 			Cela devrait permettre de maintenir les vassaux &#224; un certain niveau. Les m&#234;mes conditions s'appliquent aux joueurs humains. Il est donc possible &#224; un joueur humain de devenir le vassal d'un joueur IA.
 			
@@ -182,7 +182,7 @@ Other conditions:
 			
 			[H1]Ein Vasall werden[\H1]
 			In PAE ist es nun leichter einen Vasallen zu bekommen. Hat man soeben eine Stadt eines Spielers erobert, der nur mehr 4 oder weniger St&#228;dte besitzt, bietet er an, Vasall zu werden. 
-			Wahrscheinlichkeit 1: 120% - (20xAnzahl der St&#228;dte)%
+			Wahrscheinlichkeit 1: 120% â€“ (20xAnzahl der St&#228;dte)%
 			Wahrscheinlichkeit 2: Civilizations-St&#228;rkepunkte des Verlierers (x2) sind kleiner als die St&#228;rkepunkte des Gewinners
 			Dies soll helfen, dass die Vasallen eine gewisse St&#228;rke beibehalten. Das gleiche gilt auch f&#252;r menschliche Spieler. Nun ist es in PAE m&#246;glich, auch als Mensch Vasall der KI zu werden.
 			
@@ -211,7 +211,7 @@ Other conditions:
 			
 			[H1] Un vassallo [\H1]
 			In PAE , ora &#232; pi&#249; facile ottenere un vassallo . Se avete appena conquistato una citt&#224; di un giocatore che ha solo 4 o meno citt&#224; , offre di diventare un vassallo .
-			Probabilit&#224; 1: 120% - (20x numero di citt&#224;)%
+			Probabilit&#224; 1: 120% â€“ (20x numero di citt&#224;)%
 			Probabilit&#224; 2: i punti di forza della civilt&#224; del perdente (x2) sono inferiori ai punti di forza del vincitore
 			Ci&#242; dovrebbe contribuire a che il vassallo mantenere una certa forza . Lo stesso vale per i giocatori umani . Ora &#232; possibile in PAE essere come un essere umano vassallo del AI .
 			
@@ -241,7 +241,7 @@ Other conditions:
 			
 			[H1]Para convertirse en vasallo[\H1]
 			En PAE, es f&#225;cil convertirse en vasallo. Solo tienes que conquistar una ciudad de un jugador que tiene 4 ciudades o menos, entonces se ofrece a ser un vasallo.
-			Probabilidad 1: 120% - (20 veces el n&#250;mero de ciudades)%
+			Probabilidad 1: 120% â€“ (20 veces el n&#250;mero de ciudades)%
 			Probabilidad 2: los puntos de fuerza de civilizaci&#243;n del perdedor (x2) son menores que los puntos de fuerza del ganador
 			Esto ayuda a que los vasallos mantengan cierta fuerza. Lo mismo se aplica a los jugadores humanos. En PAE ahora es posible, que un jugador humano se convierta en vasallo de la IA.
 			
@@ -2845,12 +2845,12 @@ If a unit fights on its own, this property is removed first. After that, one lev
 			
 			PAE incluye su propio sistema de experiencia (rangos) donde pueden ser ganados ciertos tipos sucesivamente en los combates victoriosos. &#201;stas no son las normalmente seleccionables con PE.
 			
-			Rango 1º: Entrenada    (+5% fuerza, 80% de probabilidad*)
-			Rango 2º: Experimentada (+5% fuerza, 70% de probabilidad*)
-			Rango 3º: Aguerrida     (+5% fuerza, 60% de probabilidad*)
-			Rango 4º: Veterana     (+5% fuerza, 50% de probabilidad*)
-			Rango 5º: &#201;lite         (+5% fuerza, 40% de probabilidad*)
-			Rango 6º: Legendaria    (+5% fuerza, 30% de probabilidad*)
+			Rango 1Âº: Entrenada    (+5% fuerza, 80% de probabilidad*)
+			Rango 2Âº: Experimentada (+5% fuerza, 70% de probabilidad*)
+			Rango 3Âº: Aguerrida     (+5% fuerza, 60% de probabilidad*)
+			Rango 4Âº: Veterana     (+5% fuerza, 50% de probabilidad*)
+			Rango 5Âº: &#201;lite         (+5% fuerza, 40% de probabilidad*)
+			Rango 6Âº: Legendaria    (+5% fuerza, 30% de probabilidad*)
 			
 			*La probabilidad que la unidad recibe este ascenso en un combate victorioso.
 			
@@ -3323,7 +3323,7 @@ Wine was spread from China to Persia in the Mediterranean.
 100 AD: Danube, Rhine
 
 [H1]Horses:[\H1]
-Horses were spread from the steppes of Asia by the Assyrians to Mesopotamia and later brought from the Scythians to Europe.
+Horses were spread from the plains of Asia by the Assyrians to Mesopotamia and later brought from the Scythians to Europe.
 Distribution: If you get horses by bargaining, you can build the national wonder horse breeding, which produces horses.
 
 [H1]War Dogs:[\H1]
@@ -3363,7 +3363,7 @@ Distribution: If you get war dogs by bargaining, you can build the national wond
 			
 			[H1]Ressources fournies par les b&#226;timents[\H1]
 			
-			[ICON_BULLET] Cuivre : Fonderie de cuivre / M&#233;tallurgie
+			[ICON_BULLET] CuivreÂ : Fonderie de cuivre / M&#233;tallurgie
 			[ICON_BULLET] Bronze (Cuivre + (Plomb ou &#201;tain)) : Bronzeerie / Travail du bronze
 			[ICON_BULLET] Fer (Minerai de fer) : Ferronnerie / Traitement du fer
 			[ICON_BULLET] Acteurs (Grecs): Od&#233;on / Construction + Th&#233;&#226;tre
@@ -3397,7 +3397,7 @@ Distribution: If you get war dogs by bargaining, you can build the national wond
 			100 ap. J.-C. : Danube, Rhin
 			
 			[H1]Chevaux :[\H1]
-			Les chevaux ont &#233;t&#233; amen&#233;s des steppes d'Asie en M&#233;sopotamie par les Assyriens, puis par les Scythes en Europe. Si vous obtenez des chevaux par le commerce vous pouvez construire la merveille nationale d'&#233;levage des chevaux.
+			Les chevaux ont &#233;t&#233; amen&#233;s des plaines d'Asie en M&#233;sopotamie par les Assyriens, puis par les Scythes en Europe. Si vous obtenez des chevaux par le commerce vous pouvez construire la merveille nationale d'&#233;levage des chevaux.
 			
 			[H1]Chiens de guerre :[\H1]
 			Les chiens de guerre ont &#233;t&#233; ramen&#233;s du plateau tib&#233;tain par Alexandre le Grand. Si vous obtenez des chiens de guerre par le commerce vous pouvez construire la merveille nationale d'&#233;levage des chiens.
@@ -6184,9 +6184,9 @@ At the top left and right are small round buttons that open the consultant windo
 			Puede ser una soluci&#243;n jugar con archivos FPK sin empaquetar (Si no intenta volver a descargar e instalar otra vez)
 			
 			[ICON_BULLET] Multijugador: &#161;Tenemos errores OOS (Out of Synchronization) cada turno!
-			Intenta 1º: Cuando us&#225;is diferentes sistemas operativos, tienes que iniciar el juego "como administrador" en los modernos SO-PCs.
-			Intenta 2º: Juego MJ simult&#225;neo: Desactiva tu firewall/cortafuegos (s&#243;lo los clientes deben hacerlo).
-			Intenta 3º: Otra raz&#243;n pueden ser los eventos activados. Pueden causar tambi&#233;n errores OOS.
+			Intenta 1Âº: Cuando us&#225;is diferentes sistemas operativos, tienes que iniciar el juego "como administrador" en los modernos SO-PCs.
+			Intenta 2Âº: Juego MJ simult&#225;neo: Desactiva tu firewall/cortafuegos (s&#243;lo los clientes deben hacerlo).
+			Intenta 3Âº: Otra raz&#243;n pueden ser los eventos activados. Pueden causar tambi&#233;n errores OOS.
 			Tip: Inhabilita el FileCaching (ambos) en Civilization.ini en MyGames/BTS-folder
 			
 			[ICON_BULLET] Multijugador: En mapas europeos con script de inicio automatizado, que pone a las CIVS en su posici&#243;n correcta, no uses CIVs que no est&#233;n geogr&#225;ficamente en la regi&#243;n. De otra forma provocar&#225;s un OOS en el primer turno. Por ejemplo con los indios en mapas peque&#241;os de Europa.
@@ -6828,26 +6828,26 @@ Requirements:
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_GET_BONUS_OF_NEUTRAL_PLOTS_PEDIA</Tag>
 		<English>[H1]Bonus resources on neutral terrain[\H1]
-Bonus resources on neutral (and even on own) terrain can be managed by a Foreign Trading Post. The Foreign Trading Post is buildable with a trade wagon or a trade caravan. The unit is dissolved and it creates a trading post and a road.
-If the Foreign Trading Post post is taken over by the culture of a foreign nation, the trading post is dissolved.</English>
+Bonus resources on neutral (and even on own) terrain can be managed by a Trading Post. The Trading Post is buildable with a trade wagon or a trade caravan. The unit is dissolved and it creates a trading post and a road.
+If the Trading Post post is taken over by the culture of a foreign nation, the trading post is dissolved.</English>
 		<French>
 			[H1]Ressources bonus en territoire neutre[\H1]
-			Les ressources de bonus sur un terrain neutre (ou dans vos fronti&#232;res) peuvent &#234;tre g&#233;r&#233;es par un Poste de traite &#233;tranger. Le Poste de traite &#233;tranger peut &#234;tre construit par une charrette commerciale ou une caravane. L'unit&#233; est dissoute et cr&#233;e un comptoir commercial et une route.
+			Les ressources de bonus sur un terrain neutre (ou dans vos fronti&#232;res) peuvent &#234;tre g&#233;r&#233;es par un Poste de traite. Le Poste de traite peut &#234;tre construit par une charrette commerciale ou une caravane. L'unit&#233; est dissoute et cr&#233;e un comptoir commercial et une route.
 			Si le comptoir est repris par la culture d'un pays &#233;tranger, il est dissout.
 		</French>
 		<German>
 			[H1]Bonusressourcen auf neutralem Gel&#228;nde[\H1]
-			Bonusressourcen auf neutralem (und auch auf eigenem) Terrain k&#246;nnen mit einem Au&#223;enhandelsposten bewirtschaftet werden. Dieser ist baubar mit einem Handelskarren oder einer Handelskarawane. Die Einheit wird dabei aufgel&#246;st. Dabei entsteht ein Handelsposten und eine Stra&#223;e.
-			Wird der Au&#223;enhandelsposten von der Kultur einer fremden Nation &#252;bernommen, wird der Handelsposten aufgel&#246;st.
+			Bonusressourcen auf neutralem (und auch auf eigenem) Terrain k&#246;nnen mit einem Handelsposten bewirtschaftet werden. Dieser ist baubar mit einem Handelskarren oder einer Handelskarawane. Die Einheit wird dabei aufgel&#246;st. Dabei entsteht ein Handelsposten und eine Stra&#223;e.
+			Wird der Handelsposten von der Kultur einer fremden Nation &#252;bernommen, wird der Handelsposten aufgel&#246;st.
 		</German>
 		<Italian>
 			[H1]Risorse bonus su un terreno neutro[\H1]
-			Le risorse bonus su terreno neutro (e anche sul proprio) possono essere gestite da un posto di commercio estero. Il Posto di commercio estero &#232; costruibile con un vagone commerciale o una roulotte commerciale. L'unit&#224; &#232; dissolta e crea un posto di commercio e una strada.
+			Le risorse bonus su terreno neutro (e anche sul proprio) possono essere gestite da un posto di commercio. Il Posto di commercio &#232; costruibile con un vagone commerciale o una roulotte commerciale. L'unit&#224; &#232; dissolta e crea un posto di commercio e una strada.
 			Se il posto di commercio estero &#232; occupato dalla cultura di una nazione straniera, il posto viene sciolto.
 		</Italian>
 		<Spanish>
 			[H1]Recursos en casillas neutrales[\H1]
-			Los recursos de bonificaci&#243;n en un terreno neutral (e incluso en el propio) pueden gestionarse mediante un puesto de comercio exterior. El puesto comercial se puede construir con un carro comercial o una caravana comercial. La unidad se disuelve y crea un puesto de comercio y una carretera.
+			Los recursos de bonificaci&#243;n en un terreno neutral (e incluso en el propio) pueden gestionarse mediante un puesto de comercio. El puesto comercial se puede construir con un carro comercial o una caravana comercial. La unidad se disuelve y crea un puesto de comercio y una carretera.
 			Si la cultura de una naci&#243;n extranjera asume el puesto de comercio exterior, el puesto se disuelve.
 		</Spanish>
 	</TEXT>
@@ -11275,7 +11275,7 @@ Misc:
 A resource can be spread as soon as it is in the city's trade network, where it has to be loaded with a wagon. If the resource is in the surrounding area of the city, the purchase is cheaper. Green circles on the map make a possible cultivation onto this plot visible. The wagon will be disbanded during a cultivation.
 If you drag the wagon onto a plot with a cultivable bonus resource, you can remove it from the plot and place it somewhere else. The info what the wagon is loaded is on the lower left of the unit properties in the main interface.
 
-Resources on Foreign Trading Posts can be added but not removed.
+Resources on Trading Posts can be added but not removed.
 
 [H1]Conditions[\H1]
 
@@ -11312,8 +11312,8 @@ The plots on which the resource can be distributed are divided into up to four p
 
 
 [H1]Horses[\H1]
-[ICON_BULLET] Req: Village status, steppe or grassland if flatland
-[ICON_BULLET] Prio 1: Steppe
+[ICON_BULLET] Req: Village status, plains or grassland if flatland
+[ICON_BULLET] Prio 1: Plains
 [ICON_BULLET] Prio 2: Grass
 [ICON_BULLET] Prio 1: unimproved
 [ICON_BULLET] Prio 2: improved
@@ -11322,7 +11322,7 @@ Captured (wild) horses (starting from the tech Horse Husbandy) can spread the bo
 [H1]Camels[\H1]
 [ICON_BULLET] Req: Village status, flatland and bordering desert, no flood plains and no oasis
 [ICON_BULLET] Prio 1: Desert
-[ICON_BULLET] Prio 2: Steppe
+[ICON_BULLET] Prio 2: Plains
 [ICON_BULLET] Prio 1: unimproved
 [ICON_BULLET] Prio 2: improved
 Captured (wild) camels (starting from the tech Camel Husbandy) can spread the bonus too. Only cities with a camel camp can train camel riders.
@@ -11331,7 +11331,7 @@ Captured (wild) camels (starting from the tech Camel Husbandy) can spread the bo
 Elephants were ripped out of their wilderness exclusively by mahouts and raised for life. They can not be distributed.
 
 [H1]War dogs[\H1]
-[ICON_BULLET] Spread on tundra, grassland or steppe
+[ICON_BULLET] Spread on tundra, grassland or plains
 [ICON_BULLET] Prio 1: Flatland
 [ICON_BULLET] Prio 2: Hills
 [ICON_BULLET] Prio 1: unimproved
@@ -11366,7 +11366,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			Il suffit que la ressource soit accessible par le r&#233;seau commercial d'une ville pour qu'elle puisse &#234;tre diffus&#233;e en &#233;tant charg&#233;e sur le chariot dans cette ville. Le co&#251;t d'achat est moindre si la ressource fait partie du territoire de la ville. Les cercles verts sur la carte montrent les cases de cultures potentielles. L'unit&#233; est dissoute lorsque une case de culture est cr&#233;&#233;e.
 			Une ressource bonus cultivable peut &#234;tre retir&#233;e d'une case et transf&#233;r&#233;e &#224; une autre en amenant un chariot sur la case de culture. Un chariot charg&#233; indique son statut dans l'&#233;cran principal par un sigle &#224; gauche sous les caract&#233;ristiques de l'unit&#233;.
 			
-			Les ressources sur les postes de traite &#233;tranger peuvent &#234;tre ajout&#233;es mais pas supprim&#233;es.
+			Les ressources sur les postes de traite peuvent &#234;tre ajout&#233;es mais pas supprim&#233;es.
 			
 			[H1]Conditions[\H1]
 			
@@ -11403,8 +11403,8 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			
 			
 			[H1]Chevaux[\H1]
-			[ICON_BULLET] Requis: Village, steppe ou prairie en plaine
-			[ICON_BULLET] Prio 1: steppe
+			[ICON_BULLET] Requis: Village, plaines ou prairie en plaine
+			[ICON_BULLET] Prio 1: plaines
 			[ICON_BULLET] Prio 2: prairie
 			[ICON_BULLET] Prio 1: case vierge
 			[ICON_BULLET] Prio 2: am&#233;nagement
@@ -11413,7 +11413,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			[H1]Dromadaires[\H1]
 			[ICON_BULLET] Requis: Village, plaine et d&#233;sert adjacent, sans plaines inondables ni oasis
 			[ICON_BULLET] Prio 1: d&#233;sert
-			[ICON_BULLET] Prio 2: steppe
+			[ICON_BULLET] Prio 2: plaine
 			[ICON_BULLET] Prio 1: case vierge
 			[ICON_BULLET] Prio 2: am&#233;nagement
 			Les dromadaires (par la tech. Domestication de chameaux) autorise l'&#233;levage de dromadaires (b&#226;timent) dans une ville adjacente &#224; au moins une case de d&#233;sert. Une ressource de Dromadaires est alors cr&#233;&#233;e sur une de ces cases. 
@@ -11423,7 +11423,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			Les &#233;l&#233;phants ont &#233;t&#233; arrach&#233;s de leur d&#233;sert exclusivement par des mahouts et &#233;lev&#233;s pour le reste de leur vie. Ils ne peuvent pas &#234;tre distribu&#233;s.
 			
 			[H1]Chiens de guerre[\H1]
-			[ICON_BULLET] Se propage sur toundra, prairie ou steppe
+			[ICON_BULLET] Se propage sur toundra, prairie ou plaine
 			[ICON_BULLET] Prio 1: plaine
 			[ICON_BULLET] Prio 2: collines
 			[ICON_BULLET] Prio 1: case vierge
@@ -11460,7 +11460,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			
 			Zieht man mit dem Fuhrwerk auf ein Feld mit einer kultivierbaren Bonusressource, kann man es vom Feld entfernen und woanders platzieren. Die Info, mit welcher Ressource das Fuhrwerk beladen ist, steht links unten bei den Einheiteneigenschaften im Hauptbildschirm.
 			
-			Bonusg&#252;ter auf Au&#223;enhandelsposten k&#246;nnen zwar aufgenommen aber nicht entfernt werden.
+			Bonusg&#252;ter auf Handelsposten k&#246;nnen zwar aufgenommen aber nicht entfernt werden.
 			
 			[H1]Bedingungen[\H1]
 			
@@ -11472,33 +11472,33 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			
 			[H2]Getreide[\H2]
 			[ICON_BULLET] Alle: Flachland
-			[ICON_BULLET] Weizen: Grasland, Steppe oder Schwemmland
-			[ICON_BULLET] Gerste: Steppe oder Schwemmland
+			[ICON_BULLET] Weizen: Grasland, Trockenebene oder Schwemmland
+			[ICON_BULLET] Gerste: Trockenebene oder Schwemmland
 			[ICON_BULLET] Hafer: Grasland oder Schwemmland
 			[ICON_BULLET] Roggen: Grasland
-			[ICON_BULLET] Hirse: Grasland, Steppe oder Schwemmland
+			[ICON_BULLET] Hirse: Grasland, Trockenebene oder Schwemmland
 			[ICON_BULLET] Reis: Dschungel auf Sumpf oder Gras
 			
 			Nicht immer kann Getreide leicht angebaut werden, deshalb gibt es hier eine Verbreitungschance von nur 80%.
 			
 			[H2]Vieh[\H2]
 			[ICON_BULLET] Alle: Flachland oder H&#252;gel
-			[ICON_BULLET] Kuh: Grasland oder Steppe
+			[ICON_BULLET] Kuh: Grasland oder Trockenebene 
 			[ICON_BULLET] Schwein: Grasland
-			[ICON_BULLET] Schaf: Steppe
+			[ICON_BULLET] Schaf: Trockenebene
 			
 			[H2]Sonstige[\H2]
-			[ICON_BULLET] Oliven: Steppe und nur K&#252;ste
+			[ICON_BULLET] Oliven: Trockenebene und nur K&#252;ste
 			[ICON_BULLET] Datteln: Flachland und nur W&#252;ste
-			[ICON_BULLET] Trauben: Grasland oder Steppe
+			[ICON_BULLET] Trauben: Grasland oder Trockenebene 
 			
 			[H1]Priorit&#228;ten[\H1]
 			Die Felder, auf denen die ausgew&#228;hlte Ressource verbreitet werden kann, werden nach bis zu vier Priorit&#228;ten geordnet. Die Ressource wird dabei immer auf einem Feld mit m&#246;glichst hoher Priorit&#228;t verbreitet, haben mehrere Felder dieselbe Priorit&#228;t, wird zuf&#228;llig gew&#228;hlt.
 			
 			
 			[H1]Pferde[\H1]
-			[ICON_BULLET] Voraussetzung: Dorfstatus, Steppe oder Grasland, Flachland
-			[ICON_BULLET] Prio 1: Steppe
+			[ICON_BULLET] Voraussetzung: Dorfstatus, Trockenebene oder Grasland, Flachland
+			[ICON_BULLET] Prio 1: Trockenebene
 			[ICON_BULLET] Prio 2: Gras
 			[ICON_BULLET] Prio 1: unmodernisiert
 			[ICON_BULLET] Prio 2: modernisiert
@@ -11507,7 +11507,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			[H1]Kamele[\H1]
 			[ICON_BULLET] Voraussetzung: Dorfstatus, Flachland und eine angrenzenden W&#252;ste, kein Schwemmland sowie keine Oase
 			[ICON_BULLET] Prio 1: W&#252;ste
-			[ICON_BULLET] Prio 2: Steppe
+			[ICON_BULLET] Prio 2: Trockenebene
 			[ICON_BULLET] Prio 1: unmodernisiert
 			[ICON_BULLET] Prio 2: modernisiert
 			Eroberte Kamele (ab der Tech Kameldomestizierung) k&#246;nnen ebenfalls das Bonusgut verbreiten. Erst St&#228;dte mit einem Kamellager k&#246;nnen Kamelreiter ausgebilden. 
@@ -11516,7 +11516,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			Elefanten wurden ausschlie&#223;lich von Mahouts aus ihrer freien Wildbahn gerissen und ein Leben lang aufgezogen. Sie k&#246;nnen nicht verbreitet werden.
 			
 			[H1]Kampfhunde[\H1]
-			[ICON_BULLET] Verbreitung auf Tundra, Grasland oder Steppe
+			[ICON_BULLET] Verbreitung auf Tundra, Grasland oder Trockenebene
 			[ICON_BULLET] Prio 1: Flachland
 			[ICON_BULLET] Prio 2: H&#252;gel
 			[ICON_BULLET] Prio 1: unmodernisiert
@@ -11553,7 +11553,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			
 			Se sposti il &#8203;&#8203;carro in un campo con una risorsa bonus coltivabile, puoi rimuoverlo dal campo e posizionarlo da qualche altra parte. Le informazioni sulla risorsa con cui &#232; caricato il veicolo si trovano in basso a sinistra delle propriet&#224; dell'unit&#224; nella schermata principale.
 			
-			Le merci bonus sulle postazioni commerciali estere possono essere raccolte ma non rimosse.
+			Le merci bonus sulle postazioni commerciali possono essere raccolte ma non rimosse.
 			
 			[H1]Condizioni[\H1]
 			
@@ -11609,7 +11609,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			Gli elefanti sono stati prelevati dalla natura esclusivamente da mahout e allevati per la vita. Non possono essere diffusi.
 			
 			[H1]Cani da combattimento[\H1]
-			[ICON_BULLET] Distribuzione nella tundra, nelle praterie o nelle steppe
+			[ICON_BULLET] Distribuzione nella tundra, nelle praterie o nelle painure
 			[ICON_BULLET] Priorit&#224; 1: pianura
 			[ICON_BULLET] Priorit&#224; 2: colline
 			[ICON_BULLET] Priorit&#224; 1: non modernizzato
@@ -11645,7 +11645,7 @@ If war dogs are negotiated, the national wonder war dog breeding can be built, w
 			
 			Un recurso puede cultivarse tan pronto est&#233; en la red comercial de la ciudad, donde es cargado mediante un carruaje. Si el recurso est&#225; en las inmediaciones del &#225;rea de la ciudad, el precio de compra ser&#225; barato. Los c&#237;rculos verdes en el mapa marcan los posibles lugares de cultivo visibles. El carruaje ser&#225; disuelta durante el cultivo. Si seleccionas un carruaje que est&#225; encima de un recurso cultivable, es posible quitarlo de esa casilla y moverlo a cualquier otra parte. La informaci&#243;n sobre lo que tiene cargado el carruaje est&#225; en la esquina izquierda de las propiedades de la unidad, en la pantalla principal.
 			
-			Los recursos en puesto de comercio exterior se pueden agregar pero no eliminar.
+			Los recursos en puesto de comercio se pueden agregar pero no eliminar.
 			
 			[H1]Condiciones[\H1]
 			
