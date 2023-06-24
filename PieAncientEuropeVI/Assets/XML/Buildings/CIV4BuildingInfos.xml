@@ -13123,13 +13123,15 @@
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
-			<YieldChanges/>
+			<YieldChanges>
+				<iYield>1</iYield>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
 			<CommerceChangeDoubleTimes/>
-			<CommerceModifiers>
-				<iCommerce>10</iCommerce>
-			</CommerceModifiers>
+			<CommerceModifiers/>
 			<GlobalCommerceModifiers/>
 			<SpecialistExtraCommerces/>
 			<StateReligionCommerces/>
@@ -14404,9 +14406,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>1</iYield>
-			 <iYield>2</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>2</iYield>
 			</YieldChanges>
 			<YieldModifiers>
 				<iYield>0</iYield>
@@ -14587,9 +14589,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>1</iYield>
-			 <iYield>2</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>2</iYield>
 			</YieldChanges>
 			<YieldModifiers>
 				<iYield>0</iYield>
@@ -14937,11 +14939,10 @@
 			<FreeStartEra/>
 			<MaxStartEra/>
 			<ObsoleteTech/>
-			<PrereqTech>TECH_SCHMIEDEKUNST</PrereqTech>
+			<PrereqTech>TECH_IRON_WORKING</PrereqTech>
 			<TechTypes/>
 			<Bonus/>
 			<PrereqBonuses>
-				<BonusType>BONUS_BRONZE</BonusType>
 				<BonusType>BONUS_IRON2</BonusType>
 			</PrereqBonuses>
 			<ProductionTraits/>
@@ -14978,7 +14979,7 @@
 			<bPrereqReligion>0</bPrereqReligion>
 			<bCenterInCity>0</bCenterInCity>
 			<iAIWeight>0</iAIWeight>
-			<iCost>60</iCost>
+			<iCost>80</iCost>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -15043,7 +15044,7 @@
 			<YieldChanges/>
 			<YieldModifiers>
 				<iYield>0</iYield>
-				<iYield>0</iYield>
+				<iYield>25</iYield>
 				<iYield>0</iYield>
 			</YieldModifiers>
 			<CommerceChanges/>
@@ -15073,79 +15074,14 @@
 					<BuildingClassType>BUILDINGCLASS_KOLONIE</BuildingClassType>
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_SCHMIEDE1</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
 			</BuildingClassNeededs>
 			<SpecialistYieldChanges/>
-			<BonusYieldModifiers>
-				<BonusYieldModifier>
-					<BonusType>BONUS_COAL</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_ZINN</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_ZINK</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_COPPER</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_BRONZE</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-				<BonusYieldModifier>
-					<BonusType>BONUS_IRON2</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>5</iYield>
-						<iYield>0</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-			</BonusYieldModifiers>
+			<BonusYieldModifiers/>
 			<ImprovementFreeSpecialists/>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>8</iFlavor>
-				</Flavor>
-				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>10</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>8</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
 			<HotKey/>
@@ -15854,9 +15790,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>0</iYield>
-			 <iYield>4</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>4</iYield>
 			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
@@ -16236,9 +16172,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>0</iYield>
-			 <iYield>4</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>4</iYield>
 			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
@@ -16588,9 +16524,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>2</iYield>
-			 <iYield>2</iYield>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
+				<iYield>2</iYield>
 			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges/>
@@ -17523,9 +17459,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>0</iYield>
-			 <iYield>0</iYield>
-			 <iYield>2</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>2</iYield>
 			</YieldChanges>
 			<YieldModifiers>
 				<iYield>0</iYield>
@@ -32008,9 +31944,9 @@
 			<RiverPlotYieldChanges/>
 			<GlobalSeaPlotYieldChanges/>
 			<YieldChanges>
-			 <iYield>1</iYield>
-			 <iYield>0</iYield>
-			 <iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
 			</YieldChanges>
 			<CommerceChanges/>
 			<ObsoleteSafeCommerceChanges>
@@ -33528,9 +33464,9 @@
 												<RiverPlotYieldChanges/>
 												<GlobalSeaPlotYieldChanges/>
 												<YieldChanges>
-												 <iYield>1</iYield>
-												 <iYield>0</iYield>
-												 <iYield>0</iYield>
+													<iYield>1</iYield>
+													<iYield>0</iYield>
+													<iYield>0</iYield>
 												</YieldChanges>
 												<CommerceChanges/>
 												<ObsoleteSafeCommerceChanges>

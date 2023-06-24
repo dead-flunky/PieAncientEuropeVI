@@ -13186,7 +13186,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GAULOS</Type>
-			<Button>Art/Interface/Buttons/Units/button_segelboot.dds</Button>
+			<Button>Art/Interface/Buttons/Units/button_unit_gaulos.dds</Button>
 			<fScale>0.22</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

@@ -509,10 +509,8 @@ class CvGameUtils:
 				pPlayer = gc.getPlayer(iPlayer)
 				eBuilding = -1
 				#eCityStatus = gc.getInfoTypeForString("BUILDING_KOLONIE")
-				if eBonus == gc.getInfoTypeForString("BONUS_HORSE"):
-						eBuilding = gc.getInfoTypeForString("BUILDING_STABLE")
-				elif eBonus == gc.getInfoTypeForString("BONUS_CAMEL"):
-						eBuilding = gc.getInfoTypeForString("BUILDING_CAMEL_STABLE")
+				#if eBonus == gc.getInfoTypeForString("BONUS_HORSE"): eBuilding = gc.getInfoTypeForString("BUILDING_STABLE")
+				#elif eBonus == gc.getInfoTypeForString("BONUS_CAMEL"): eBuilding = gc.getInfoTypeForString("BUILDING_CAMEL_STABLE")
 				# elif eBonus == gc.getInfoTypeForString("BONUS_IVORY"): eBuilding = gc.getInfoTypeForString("BUILDING_ELEPHANT_STABLE")
 				# elif eBonus == gc.getInfoTypeForString("BONUS_HUNDE"): eBuilding = gc.getInfoTypeForString("BUILDING_HUNDEZUCHT")
 

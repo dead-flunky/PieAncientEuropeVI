@@ -406,7 +406,7 @@
 			<iTrainPercent>140</iTrainPercent>
 			<iConstructPercent>160</iConstructPercent>
 			<iCreatePercent>160</iCreatePercent>
-			<iResearchPercent>160</iResearchPercent>
+			<iResearchPercent>180</iResearchPercent>
 			<iBuildPercent>160</iBuildPercent>
 			<iImprovementPercent>160</iImprovementPercent>
 			<iGreatPeoplePercent>180</iGreatPeoplePercent>
@@ -426,11 +426,11 @@
 			<iVictoryDelayPercent>150</iVictoryDelayPercent>
 <!-- 10 Jahre: -5000 bis -2000 -->
 <!-- 5 Jahre: -2000 bis -500 -->
-<!-- 2 Jahre: -500 bis -100 -->
-<!-- 1 Jahre: -100 bis 100 -->
+<!-- 2 Jahre: -2000 bis -500 -->
+<!-- 1 Jahre: -500 bis 100 -->
 <!-- 0,5 Jahre: 100 bis 400 -->
 <!-- 1 Jahre: 400 bis 500 -->
-<!-- 1700 Runden -->
+<!-- 1450 Runden -->
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>120</iMonthIncrement>
@@ -446,15 +446,15 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>200</iTurnsPerIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>600</iTurnsPerIncrement>
+					<iTurnsPerIncrement>50</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>100</iTurnsPerIncrement>
+					<iTurnsPerIncrement>450</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
 		</GameSpeedInfo>
@@ -521,7 +521,7 @@
 			<iTrainPercent>160</iTrainPercent>
 			<iConstructPercent>180</iConstructPercent>
 			<iCreatePercent>180</iCreatePercent>
-			<iResearchPercent>160</iResearchPercent>
+			<iResearchPercent>200</iResearchPercent>
 			<iBuildPercent>180</iBuildPercent>
 			<iImprovementPercent>180</iImprovementPercent>
 			<iGreatPeoplePercent>200</iGreatPeoplePercent>
@@ -541,12 +541,12 @@
 			<iVictoryDelayPercent>150</iVictoryDelayPercent>
 <!-- 20 Jahre: -6000 bis -5000 -->
 <!-- 10 Jahre: -5000 bis -2000 -->
-<!-- 5 Jahre: -2000 bis -500 -->
-<!-- 2 Jahre: -500 bis -200 -->
-<!-- 1 Jahr: -200 bis 0 -->
-<!-- 0.5 Jahre: 0 bis 100 -->
-<!-- 1 Jahr: 100 bis 500 -->
-<!-- 1600 Runden -->
+<!--  5 Jahre: -2000 bis -500 -->
+<!--  2 Jahre: -500 bis -200 -->
+<!--  1 Jahr:  -200 bis 0 -->
+<!--  0.5 Jahre: 0 bis 100 -->
+<!--  1 Jahr:  100 bis 500 -->
+<!--  1600 Runden -->
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>240</iMonthIncrement>
@@ -607,10 +607,9 @@
 <!-- 10 Jahre: -6000 bis -3000 -->
 <!-- 5 Jahre: -3000 bis -500 -->
 <!-- 2 Jahre: -500 bis -100 -->
-<!-- 1 Jahre: -100 bis 0 -->
-<!-- 0.5 Jahre: 0 bis 200 -->
-<!-- 1 Jahr: 200 bis 500 -->
-<!-- 1800 Runden -->
+<!-- 1 Jahre: -100 bis 400 -->
+<!-- 0,5 Jahre: 400 bis 500 -->
+<!-- 1700 Runden -->
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>120</iMonthIncrement>
@@ -626,15 +625,11 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>100</iTurnsPerIncrement>
+					<iTurnsPerIncrement>500</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>400</iTurnsPerIncrement>
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+					<iTurnsPerIncrement>200</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
 		</GameSpeedInfo>
