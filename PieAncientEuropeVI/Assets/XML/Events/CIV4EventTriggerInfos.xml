@@ -17157,20 +17157,10 @@
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_NO_WAR</Type>
-			<WorldNewsTexts>
-				<Text>TXT_KEY_EVENTTRIGGER_NO_WAR</Text>
-			</WorldNewsTexts>
+			<WorldNewsTexts/>
 			<TriggerTexts>
 				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_NO_WAR_1</Text>
-					<Era>NONE</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_NO_WAR_2</Text>
-					<Era>NONE</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_NO_WAR_3</Text>
+					<Text>TXT_KEY_EVENTTRIGGER_NO_WAR</Text>
 					<Era>NONE</Era>
 				</TriggerText>
 			</TriggerTexts>
