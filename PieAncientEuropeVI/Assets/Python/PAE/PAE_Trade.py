@@ -2040,10 +2040,11 @@ def getMaxTradeUnits():
 
 
 def getCountTradeUnits(pPlayer):
-		iAnz1 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_CARAVAN"))
-		iAnz2 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT"))
-		iAnz3 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANTMAN"))
-		return iAnz1 + iAnz2 + iAnz3
+		iAnz = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_CARAVAN"))
+		iAnz += pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT"))
+		iAnz += pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANTMAN"))
+		iAnz += pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT_MAN"))
+		return iAnz
 
 
 def getCountTradePosts(pPlayer):

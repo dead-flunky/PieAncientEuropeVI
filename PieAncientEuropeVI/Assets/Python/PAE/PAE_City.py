@@ -1116,7 +1116,7 @@ def doEmigrant(pCity, pUnit):
 # disband city
 def doDisbandCity(pCity, pUnit, pPlayer):
 		iRand = CvUtil.myRandom(10, "disbandCity")
-		if iRand < 8:
+		if iRand < 9:
 
 				# Missionar
 				getCityMissionar(pCity, pCity.getOwner())

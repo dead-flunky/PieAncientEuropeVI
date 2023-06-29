@@ -8366,11 +8366,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM4</Tag>
-		<English>You own %d1 [NUM1:merchant:merchants] (%d2 Trade [NUM2:Wagon:Wagons], %d3 Trade [NUM3:Caravan:Caravans], %d4 Merchant[NUM4:man:men])</English>
-		<French>Vous poss&#233;dez %d1 [NUM1:Marchand:Marchands] (%d2 [NUM2:Charrette commerciale:Charrettes commerciales], %d3 [NUM3:Caravane marchande:Caravanes marchandes], %d4 [NUM4:Navire marchand:Navires marchands])</French>
-		<German>Du besitzt %d1 H&#228;ndler (%d2 Handelskarren, %d3 Handelskarawan[NUM3:e:en], %d4 Handels[NUM4:schiff:schiffe])</German>
-		<Italian>Possiedi %d1 Commerciant[NUM1:e:i] (%d2 Carr[NUM2:o:i] commercial[NUM2:e:i], %d3 Carovan[NUM3:a:e] commercial[NUM3:e:i], %d4 Bastiment[NUM4:o:i])</Italian>
-		<Spanish>Usted posee %d1 Comerciant[NUM1:e:es] (%d2 Mercad[NUM2:er:eres], %d3 Caravan[NUM3:a:as] Comercia[NUM3:l:les], %d4 Mercant[NUM4:e:es])</Spanish>
+		<English>You own %d1 [NUM1:merchant:merchants] (%d2 [NUM2:Merchant:Merchants], %d3 Trade [NUM3:Wagon:Wagons], %d4 Trade [NUM4:Caravan:Caravans], %d5 Merchant[NUM5:man:men])</English>
+		<French>Vous poss&#233;dez %d1 [NUM1:Marchand:Marchands] (%d2 [NUM2:Marchand:Marchands], %d3 [NUM3:Charrette commerciale:Charrettes commerciales], %d4 [NUM4:Caravane marchande:Caravanes marchandes], %d5 [NUM5:Navire marchand:Navires marchands])</French>
+		<German>Du besitzt %d1 H&#228;ndler (%d2 H&#228;ndler, %d3 Handelskarren, %d4 Handelskarawan[NUM4:e:en], %d5 Handels[NUM5:schiff:schiffe])</German>
+		<Italian>Possiedi %d1 Commerciant[NUM1:e:i] (%d2 Commerciant[NUM2:e:i], %d3 Carr[NUM3:o:i] commercial[NUM3:e:i], %d4 Carovan[NUM4:a:e] commercial[NUM4:e:i], %d5 Bastiment[NUM5:o:i])</Italian>
+		<Spanish>Usted posee %d1 Comerciant[NUM1:e:es] (%d2 Comerciant[NUM2:e:es], %d3 Mercad[NUM3:er:eres], %d4 Caravan[NUM4:a:as] Comercia[NUM4:l:les], %d5 Mercant[NUM5:e:es])</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERO_MOVE_INTO_CITY_POPUP</Tag>

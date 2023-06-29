@@ -259,10 +259,11 @@ class CvTradeRouteAdvisor:
 				) + u"</font>"
 				screen.setLabel("TextBottom3", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 50, self.H_SCREEN-98, -2.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-				iAnz1 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT"))
-				iAnz2 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_CARAVAN"))
-				iAnz3 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANTMAN"))
-				szText = u"<font=3>" + localText.getText("TXT_KEY_TRADE_ADVISOR_BOTTOM4", (PAE_Trade.getCountTradeUnits(pPlayer),iAnz1,iAnz2,iAnz3)) + u"</font>"
+				iAnz1 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT_MAN"))
+				iAnz2 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANT"))
+				iAnz3 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_CARAVAN"))
+				iAnz4 = pPlayer.getUnitClassCountPlusMaking(gc.getInfoTypeForString("UNITCLASS_TRADE_MERCHANTMAN"))
+				szText = u"<font=3>" + localText.getText("TXT_KEY_TRADE_ADVISOR_BOTTOM4", (PAE_Trade.getCountTradeUnits(pPlayer),iAnz1,iAnz2,iAnz3,iAnz4)) + u"</font>"
 				screen.setLabel("TextBottom4", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 50, self.H_SCREEN-78, -2.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		def refreshScreen(self):

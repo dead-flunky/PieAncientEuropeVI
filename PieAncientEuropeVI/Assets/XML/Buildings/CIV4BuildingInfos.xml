@@ -16021,7 +16021,7 @@
 					<BonusType>BONUS_SILVER</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>25</iYield>
+						<iYield>0</iYield>
 						<iYield>25</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
@@ -16029,7 +16029,7 @@
 					<BonusType>BONUS_GOLD</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>25</iYield>
+						<iYield>0</iYield>
 						<iYield>25</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>

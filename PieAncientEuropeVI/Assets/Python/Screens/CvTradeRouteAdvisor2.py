@@ -86,6 +86,7 @@ class CvTradeRouteAdvisor2:
 
 				# +++ 1 +++ Units with trade routes
 				lTradeUnitsLand = [
+						gc.getInfoTypeForString("UNIT_TRADE_MERCHANT_MAN"),
 						gc.getInfoTypeForString("UNIT_TRADE_MERCHANT"),
 						gc.getInfoTypeForString("UNIT_CARAVAN")
 				]

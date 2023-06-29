@@ -558,6 +558,7 @@ class CvEventManager:
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
 						PAE_City.doDisbandCity(pCity, pUnit, pPlayer)
+						PAE_Unit.doGoToNextUnit(pUnit)
 				# Hunnen
 				elif iData1 == 674:
 						# iData2 = iPlayer , iData3 = unitID

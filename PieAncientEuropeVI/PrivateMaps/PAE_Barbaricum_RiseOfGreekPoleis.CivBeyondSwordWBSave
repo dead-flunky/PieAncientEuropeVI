@@ -9268,6 +9268,8 @@ BeginPlot
 	x=10,y=40
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -9839,8 +9841,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=39
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -11958,8 +11958,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=52
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -12371,8 +12369,6 @@ BeginPlot
 	x=15,y=27
 	isNOfRiver
 	RiverWEDirection=3
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -18115,8 +18111,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=24
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -19515,6 +19509,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=23
+	BonusType=BONUS_OLIVES
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -20726,6 +20721,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=33
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -20738,8 +20735,6 @@ BeginPlot
 	x=28,y=34
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -27762,6 +27757,8 @@ BeginPlot
 	x=42,y=6
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -28127,7 +28124,8 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=22,52,
@@ -28137,8 +28135,6 @@ BeginPlot
 	x=42,y=67
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -28213,8 +28209,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=6
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -28892,6 +28886,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=22
+	BonusType=BONUS_OLIVES
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -31568,8 +31563,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=21
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -31581,8 +31575,8 @@ BeginPlot
 	x=49,y=22
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_CAMP
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -34060,6 +34054,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=64
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -34068,8 +34064,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=65
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -36335,8 +36329,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=39
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -36384,6 +36376,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=42
+	BonusType=BONUS_OLIVES
+	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
@@ -41480,8 +41474,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_OLIVES
-	ImprovementType=IMPROVEMENT_OLIVE_PRESS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
