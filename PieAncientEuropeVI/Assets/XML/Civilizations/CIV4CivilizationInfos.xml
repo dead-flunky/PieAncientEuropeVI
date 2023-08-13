@@ -7511,10 +7511,6 @@
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
 				<DisableTech>
-					<TechType>TECH_WRITING</TechType>
-					<bDisableTech>1</bDisableTech>
-				</DisableTech>
-				<DisableTech>
 					<TechType>TECH_WRITING2</TechType>
 					<bDisableTech>1</bDisableTech>
 				</DisableTech>
