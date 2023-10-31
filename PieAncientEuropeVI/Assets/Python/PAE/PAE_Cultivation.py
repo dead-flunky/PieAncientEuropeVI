@@ -262,8 +262,11 @@ def canHaveBonus(pPlot, eBonus, bIgnoreLatitude):
 						return False
 
 		# Pferde nicht auf bebauten Bauernhoefen zulassen
-		if eBonus == gc.getInfoTypeForString("BONUS_HORSE") and pPlot.getImprovementType() == gc.getInfoTypeForString("IMPROVEMENT_FARM"):
-				return False
+		#if eBonus == gc.getInfoTypeForString("BONUS_HORSE") and pPlot.getImprovementType() == gc.getInfoTypeForString("IMPROVEMENT_FARM"):
+		#		return False
+
+		if eBonus == gc.getInfoTypeForString("BONUS_CAMEL") or eBonus == gc.getInfoTypeForString("BONUS_HORSE"):
+				if pPlot.getBonusType(-1) != -1: return False
 
 		# wenn das Terrain passt
 		if gc.getBonusInfo(eBonus).isTerrain(pPlot.getTerrainType()):

@@ -3,13 +3,14 @@ import re
 from CvPythonExtensions import (CyGlobalContext, CyInterface, CyMap,
 																CyTranslator, DirectionTypes, CommerceTypes,
 																InterfaceMessageTypes, CommandTypes, YieldTypes,
-																ColorTypes, UnitAITypes, CyPopupInfo,
+																ColorTypes, UnitAITypes, CyPopupInfo, GameOptionTypes,
 																ButtonPopupTypes, MissionTypes, MissionAITypes,
 																DomainTypes, plotXY, plotDirection,
 																plotDistance, directionXYFromPlot)
 
 import CvUtil
 import PAE_City
+import PAE_Vassal
 import PAE_Lists as L
 
 # TODO remove
@@ -21,7 +22,7 @@ import PAE_Lists as L
 # Defines
 gc = CyGlobalContext()
 
-# PAE - InstanceChanceModifier for units in getting Fighting-Promotions (per turn)
+# PAE - for units in getting Fighting-Promotions (per turn)
 # [PlayerID, UnitID]
 PAEInstanceFightingModifier = []
 
@@ -79,10 +80,10 @@ def onUnitMoveOnSea(pUnit):
 		# if iCargo > 0:
 		#    pUnit.changeMoves(iCargo*10)
 
-		# Workboats sink in unknown terrain (neutral or from other team): Chance 1:6
+		# Workboats sink in unknown terrain (neutral or from other team): Chance 1:8
 		if pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_WORKBOAT"):
 				if pPlot.getOwner() != pUnit.getOwner():
-						if CvUtil.myRandom(6, "WorkboatSink") == 1:
+						if CvUtil.myRandom(8, "WorkboatSink") == 1:
 								if gc.getPlayer(pUnit.getOwner()).isHuman():
 										CyInterface().addMessage(pUnit.getOwner(), True, 15, CyTranslator().getText("TXT_KEY_MESSAGE_SINKING_SHIP", (pUnit.getName(),)),
 																						 "AS2D_SINKING_W0RKBOAT", 2, pUnit.getButton(), ColorTypes(7), pPlot.getX(), pPlot.getY(), True, True)
@@ -150,8 +151,9 @@ def stackDoTurn(iPlayer, iGameTurn):
 		pTeam = gc.getTeam(iTeam)
 
 		# PAE 6.10: no unit supply for AI
-		if not pPlayer.isHuman():
-				return
+		# Ab 6.16 doch nicht
+		#if not pPlayer.isHuman():
+		#		return
 
 		PlotArrayRebellion = []
 		PlotArraySupply = []
@@ -172,7 +174,7 @@ def stackDoTurn(iPlayer, iGameTurn):
 		iStackLimit2 = iStackLimit1 * 2  # Rebellionschance
 		if not pPlayer.isHuman():
 				iStackLimit1 += 10
-				iStackLimit2 += 10
+				iStackLimit2 += 30
 
 		(sUnit, pIter) = pPlayer.firstUnit(False)
 		while sUnit:
@@ -336,7 +338,7 @@ def stackDoTurn(iPlayer, iGameTurn):
 														iSupplyChange += 20
 												if pPlayer.isHuman() and iSupplyChange > 0:
 														CyInterface().addMessage(iPlayer, True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_SUPPLY_RELOAD_1",
-																																															(pLoopOwner.getCivilizationAdjectiveKey(), 0)), None, 2, lHealer[0].getButton(), ColorTypes(8), iX, iY, True, True)
+														(pLoopOwner.getCivilizationAdjectiveKey(), 0)), None, 2, lHealer[0].getButton(), ColorTypes(8), iX, iY, True, True)
 
 										# Versorger auf freundlichem Terrain - Aufladechance 30%, 20% oder 10%
 										elif not pTeam.isAtWar(iTeamPlot):
@@ -367,7 +369,7 @@ def stackDoTurn(iPlayer, iGameTurn):
 																iSupplyChange += 20
 														if pPlayer.isHuman() and iSupplyChange > 0:
 																CyInterface().addMessage(iPlayer, True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_SUPPLY_RELOAD_2",
-																																																	(pLoopOwner.getCivilizationAdjectiveKey(), 0)), None, 2, lHealer[0].getButton(), ColorTypes(8), iX, iY, True, True)
+																(pLoopOwner.getCivilizationAdjectiveKey(), 0)), None, 2, lHealer[0].getButton(), ColorTypes(8), iX, iY, True, True)
 
 										# Versorger steht auf feindlichem Terrain
 										else:
@@ -478,6 +480,10 @@ def stackDoTurn(iPlayer, iGameTurn):
 								PlotArrayRebellion.append(loopPlot)
 
 						if iSum > 0 and iSum > iStackLimit1:
+								# PAE - Message for StacksOfDoom only once per turn
+								iUnitStackMelee = 0
+								iUnitStackMounted = 0
+
 								iRange = loopPlot.getNumUnits()
 								for iUnit in range(iRange):
 										if iSum <= 0:
@@ -496,17 +502,24 @@ def stackDoTurn(iPlayer, iGameTurn):
 										if xUnit.getUnitCombatType() in L.LMountedSupplyCombats:
 												if xDamage + 25 < 100:
 														xUnit.changeDamage(15, False)
-														if gc.getPlayer(xUnit.getOwner()).isHuman():
-																CyInterface().addMessage(xUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_PLOT", (xUnit.getName(), 15)), None, 2, None, ColorTypes(12), loopPlot.getX(), loopPlot.getY(), True, True)
-																xUnit.getGroup().pushMission(MissionTypes.MISSION_IDLE, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, xUnit.plot(), xUnit)
+														xUnit.getGroup().pushMission(MissionTypes.MISSION_IDLE, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, xUnit.plot(), xUnit)
+														iUnitStackMounted += 1
 														iSum -= 1
 										elif xUnit.getUnitCombatType() in L.LMeleeSupplyCombats:
 												if xDamage + 30 < 100:
 														xUnit.changeDamage(20, False)
-														if gc.getPlayer(xUnit.getOwner()).isHuman():
-																CyInterface().addMessage(xUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_PLOT", (xUnit.getName(), 20)), None, 2, None, ColorTypes(12), loopPlot.getX(), loopPlot.getY(), True, True)
-																xUnit.getGroup().pushMission(MissionTypes.MISSION_IDLE, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, xUnit.plot(), xUnit)
+														xUnit.getGroup().pushMission(MissionTypes.MISSION_IDLE, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, xUnit.plot(), xUnit)
+														iUnitStackMelee += 1
 														iSum -= 1
+
+								if iUnitStackMelee and pPlayer.isHuman():
+										CyInterface().addMessage(iPlayer, True, 15, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_PLOT_1", (iUnitStackMelee, 20, iStackLimit1)), None, 2, None, ColorTypes(12), loopPlot.getX(), loopPlot.getY(), True, True)
+
+								if iUnitStackMounted and pPlayer.isHuman():
+										CyInterface().addMessage(iPlayer, True, 15, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_PLOT_2", (iUnitStackMounted, 15, iStackLimit1)), None, 2, None, ColorTypes(12), loopPlot.getX(), loopPlot.getY(), True, True)
+
+
+
 
 		# +++++ Rebellious STACKs ---------------
 		# Stack can become independent / rebellious
@@ -718,7 +731,7 @@ def doUpgradeVeteran(pUnit, iNewUnit, bChangeCombatPromo):
 		if not iNewUnit in range(gc.getNumUnitInfos()):
 				# ***TEST***
 				CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",
-																																																	("Upgrade Veteran: Invalid New Unit Type", iNewUnit)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+								("Upgrade Veteran: Invalid New Unit Type", iNewUnit)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				return
 		if pUnit is not None and not pUnit.isNone():
 				pUnitOwner = gc.getPlayer(pUnit.getOwner())
@@ -726,7 +739,8 @@ def doUpgradeVeteran(pUnit, iNewUnit, bChangeCombatPromo):
 
 						NewUnit = pUnitOwner.initUnit(iNewUnit, pUnit.getX(), pUnit.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
 
-						forbiddenPromos = []
+						# Einheit: max Combat 2
+						forbiddenPromos = L.LVeteranForbiddenPromos
 						if pUnit.getUnitCombatType() != gc.getInfoTypeForString("UNITCOMBAT_ARCHER"):
 								forbiddenPromos.extend(L.LVeteranForbiddenPromos1)
 						else:
@@ -745,22 +759,6 @@ def doUpgradeVeteran(pUnit, iNewUnit, bChangeCombatPromo):
 										if pUnit.isHasPromotion(j):
 												NewUnit.setHasPromotion(j, True)
 
-						# Einheit: max Combat 2
-						# iPromoCombat2 = gc.getInfoTypeForString("PROMOTION_COMBAT2")
-						iPromoCombat3 = gc.getInfoTypeForString("PROMOTION_COMBAT3")
-						iPromoCombat4 = gc.getInfoTypeForString("PROMOTION_COMBAT4")
-						iPromoCombat5 = gc.getInfoTypeForString("PROMOTION_COMBAT5")
-						iPromoCombat6 = gc.getInfoTypeForString("PROMOTION_COMBAT6")
-						if bChangeCombatPromo:
-								if NewUnit.isHasPromotion(iPromoCombat6):
-										NewUnit.setHasPromotion(iPromoCombat6, False)
-								if NewUnit.isHasPromotion(iPromoCombat5):
-										NewUnit.setHasPromotion(iPromoCombat5, False)
-								if NewUnit.isHasPromotion(iPromoCombat4):
-										NewUnit.setHasPromotion(iPromoCombat4, False)
-								if NewUnit.isHasPromotion(iPromoCombat3):
-										NewUnit.setHasPromotion(iPromoCombat3, False)
-
 						NewUnit.setExperience(pUnit.getExperience(), -1)
 						NewUnit.setLevel(pUnit.getLevel())
 
@@ -777,8 +775,186 @@ def doUpgradeVeteran(pUnit, iNewUnit, bChangeCombatPromo):
 						# pUnit.doCommand(CommandTypes.COMMAND_DELETE, -1, -1)
 						pUnit.kill(True, -1)  # RAMK_CTD
 
+						return NewUnit
+
 # Unit Rang/Rank Promos (PAE, ModMessage:751)
 # PromoUp
+
+def canUpgradeUnit(pUnit):
+		if pUnit is None or pUnit.isNone():
+				return -1
+		iPlayer = pUnit.getOwner()
+		pPlayer = gc.getPlayer(iPlayer)
+		iCiv = pPlayer.getCivilizationType()
+		pTeam = gc.getTeam(pPlayer.getTeam())
+		iUnitType = pUnit.getUnitType()
+		iNewUnit = -1
+
+		if iUnitType in L.LNoRankUnits:
+				return -1
+
+		eMounted = gc.getInfoTypeForString("UNITCOMBAT_MOUNTED")
+		eBonus = gc.getInfoTypeForString("BONUS_HORSE")
+
+		# Etrusker = Rom
+		if iCiv == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS"):
+				iCiv = gc.getInfoTypeForString("CIVILIZATION_ROME")
+		# Griechen
+		if iCiv in L.LGreeks:
+				iCiv = gc.getInfoTypeForString("CIVILIZATION_GREECE")
+
+		for data in L.LRankUnits:
+				if iCiv == data[0]:
+						# Praetorianer Check, im 2 Jhd. n. Chr. wurden Praetorianer abgeschafft
+						if iUnitType in L.LPraetorians or data[1] in L.LPraetorians or data[2] in L.LPraetorians:
+								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
+										return -1
+
+						if (iUnitType == data[1] 
+									or data[1] == -1 and pUnit.getUnitCombatType() in L.LMeleeCombats
+									or data[1] == -2 and pUnit.getUnitCombatType() == eMounted
+								):
+								# neue Unit darf nicht schwächer sein als die alte
+								if gc.getUnitInfo(iUnitType).getCombat() > gc.getUnitInfo(data[2]).getCombat():
+										return -1
+								# bestimmte Promotion erforderlich
+								if pUnit.isHasPromotion(data[3]):
+										if pTeam.isHasTech(gc.getUnitInfo(data[2]).getPrereqAndTech()):
+												iNewUnit = data[2]
+												if gc.getUnitInfo(data[2]).getUnitCombatType() == eMounted and not pPlayer.hasBonus(eBonus):
+														iNewUnit = -1
+		return iNewUnit
+
+# Kein Check (notwendig den Helptext in den CvGameUtils)
+def getUpgradeUnit(iPlayer, iUnitType):
+		pPlayer = gc.getPlayer(iPlayer)
+		iCiv = pPlayer.getCivilizationType()
+		iNewUnit = -1
+		
+		LPromo = [
+				gc.getInfoTypeForString("PROMOTION_COMBAT4"),
+				gc.getInfoTypeForString("PROMOTION_COMBAT5")
+		]
+
+		for data in L.LRankUnits:
+				if iCiv == data[0]:
+						if (iUnitType == data[1] 
+									or data[1] == -1 and pUnit.getUnitCombatType() in L.LMeleeCombats
+									or data[1] == -2 and pUnit.getUnitCombatType() == iMounted
+								):
+								iNewUnit = data[2]
+								# Primär die Einheit schicken, die mit Rang und nicht mit Veteranstatus befördert wird
+								if data[3] not in LPromo:
+										return iNewUnit
+
+		return iNewUnit
+
+		"""
+		# Rome
+		if iUnitType == gc.getInfoTypeForString("UNIT_LEGION"):
+				return gc.getInfoTypeForString("UNIT_LEGION_OPTIO")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION2"):
+				return gc.getInfoTypeForString("UNIT_LEGION_OPTIO2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_OPTIO"):
+				return gc.getInfoTypeForString("UNIT_LEGION_CENTURIO")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"):
+				return gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"):
+				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+						return gc.getInfoTypeForString("UNIT_LEGION_TRIBUN")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_EQUITES") or iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"):
+				return gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"):
+				return gc.getInfoTypeForString("UNIT_LEGION_TRIBUN")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES"):
+				return gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"):
+				return gc.getInfoTypeForString("UNIT_ROME_COMITATENSES3")
+
+		# Griechen
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT"):
+				return gc.getInfoTypeForString("UNIT_HOPLIT_2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"):
+				return gc.getInfoTypeForString("UNIT_HOPLIT_2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_2"):
+				return gc.getInfoTypeForString("UNIT_ELITE_HOPLIT")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"):
+				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+						return gc.getInfoTypeForString("UNIT_GREEK_STRATEGOS")
+
+		# Sparta
+		elif iUnitType == gc.getInfoTypeForString("UNIT_SPARTA_1"):
+				return gc.getInfoTypeForString("UNIT_SPARTA_2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_SPARTA_2"):
+				return gc.getInfoTypeForString("UNIT_SPARTA_3")
+		# Makedonen
+		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI") and iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
+				return gc.getInfoTypeForString("UNIT_PEZHETAIROI2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI2"):
+				return gc.getInfoTypeForString("UNIT_PEZHETAIROI3")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI3"):
+				return gc.getInfoTypeForString("UNIT_PEZHETAIROI4")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER") and iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
+				return gc.getInfoTypeForString("UNIT_HYPASPIST")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST"):
+				return gc.getInfoTypeForString("UNIT_HYPASPIST2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST2"):
+				return gc.getInfoTypeForString("UNIT_HYPASPIST3")
+		# Perser
+		elif iUnitType == gc.getInfoTypeForString("UNIT_SPEARMAN_PERSIA") or iUnitType == gc.getInfoTypeForString("UNIT_UNSTERBLICH") or iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_PERSIA"):
+				return gc.getInfoTypeForString("UNIT_APFELTRAEGER")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_APFELTRAEGER"):
+				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+						if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+								return gc.getInfoTypeForString("UNIT_PERSIA_AZADAN")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_PERSIA"):
+				return gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1"):
+				return gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA"):
+				return gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE2")
+
+		# Egypt, Nubia
+		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_EGYPT") or iCivType == gc.getInfoTypeForString("CIVILIZATION_NUBIA"):
+				if iUnitType == gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"):
+						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+										return gc.getInfoTypeForString("UNIT_WAR_CHARIOT")
+				else:
+						return gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT")
+		# Karthago
+		elif iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD") or iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"):
+				return gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2")
+		elif iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"):
+				return gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_OFFICER")
+		# Assyrer und Babylonier
+		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ASSYRIA") or iCivType == gc.getInfoTypeForString("CIVILIZATION_BABYLON"):
+				if iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG1"):
+						return gc.getInfoTypeForString("UNIT_ASSUR_RANG2")
+				elif iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG2"):
+						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+										return gc.getInfoTypeForString("UNIT_ASSUR_RANG3")
+				elif iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG3"):
+						return gc.getInfoTypeForString("UNIT_ELITE_ASSUR")
+				else:
+						return gc.getInfoTypeForString("UNIT_ASSUR_RANG1")
+		# Sumerer
+		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
+				if iUnitType == gc.getInfoTypeForString("UNIT_SUMER_RANG1"):
+						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+										return gc.getInfoTypeForString("UNIT_SUMER_RANG2")
+				else:
+						return gc.getInfoTypeForString("UNIT_SUMER_RANG1")
+		# Germanen, Vandalen, Hunnen
+		elif iCivType in L.LCivGermanen:
+				return gc.getInfoTypeForString("UNIT_STAMMESFUERST")
+		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_HUNNEN"):
+				return gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN_HUN")
+
+		return -1
+		"""
 
 
 def doUpgradeRang(iPlayer, iUnit):
@@ -790,151 +966,90 @@ def doUpgradeRang(iPlayer, iUnit):
 		bInfoBonus = False
 		iInfoTech = -1
 
-		# Rome
-		if iUnitType == gc.getInfoTypeForString("UNIT_LEGION"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_OPTIO")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_OPTIO2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_OPTIO"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_CENTURIO")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"):
-				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-						iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_TRIBUN")
-						setLegionName(pUnit)
-				else:
-						bInfoBonus = True
-		elif iUnitType == gc.getInfoTypeForString("UNIT_EQUITES") or iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_LEGION_TRIBUN")
-				setLegionName(pUnit)
-		elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_ROME_COMITATENSES3")
+		iNewUnit = canUpgradeUnit(pUnit)
 
-		# Griechen
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HOPLIT_2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HOPLIT_2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_ELITE_HOPLIT")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"):
-				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-						iNewUnit = gc.getInfoTypeForString("UNIT_GREEK_STRATEGOS")
-				else:
-						bInfoBonus = True
+		LRomanLegion = [
+				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"),
+				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"),
+				gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO")
+		]
 
-		# Sparta
-		elif iUnitType == gc.getInfoTypeForString("UNIT_SPARTA_1"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_SPARTA_2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_SPARTA_2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_SPARTA_3")
-		# Makedonen
-		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI3"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_PEZHETAIROI4")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_PEZHETAIROI3")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER") and iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HYPASPIST")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI") or iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_PEZHETAIROI2")
-		# Perser
-		elif iUnitType == gc.getInfoTypeForString("UNIT_SPEARMAN_PERSIA") or iUnitType == gc.getInfoTypeForString("UNIT_UNSTERBLICH") or iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_PERSIA"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_APFELTRAEGER")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_APFELTRAEGER"):
-				if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-						if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
-								iNewUnit = gc.getInfoTypeForString("UNIT_PERSIA_AZADAN")
-						else:
-								iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
-				else:
-						bInfoBonus = True
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_PERSIA"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE2")
+		# Warum die Einheit nicht upgegradet werden kann
+		if iNewUnit == -1:
+				# Rome
+				if iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"):
+						if not pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+								bInfoBonus = True
 
-		# Egypt, Nubia
-		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_EGYPT") or iCivType == gc.getInfoTypeForString("CIVILIZATION_NUBIA"):
-				if iUnitType == gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"):
+				# Griechen
+				elif iUnitType == gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"):
+						if not pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+								bInfoBonus = True
+
+				# Perser
+				elif iNewUnit == gc.getInfoTypeForString("UNIT_PERSIA_AZADAN"):
 						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
-										iNewUnit = gc.getInfoTypeForString("UNIT_WAR_CHARIOT")
-								else:
+								if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
 										iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
 						else:
 								bInfoBonus = True
-				else:
-						iNewUnit = gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT")
-		# Karthago
-		elif iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD") or iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2")
-		elif iUnitType == gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"):
-				iNewUnit = gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_OFFICER")
-		# Assyrer und Babylonier
-		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ASSYRIA") or iCivType == gc.getInfoTypeForString("CIVILIZATION_BABYLON"):
-				if iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG1"):
-						iNewUnit = gc.getInfoTypeForString("UNIT_ASSUR_RANG2")
-				elif iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG2"):
-						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
-										iNewUnit = gc.getInfoTypeForString("UNIT_ASSUR_RANG3")
-								else:
-										iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
-						else:
-								bInfoBonus = True
-				else:
-						iNewUnit = gc.getInfoTypeForString("UNIT_ASSUR_RANG1")
-		# Sumerer
-		elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
-				if iUnitType == gc.getInfoTypeForString("UNIT_SUMER_RANG1"):
-						if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
-								if gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
-										iNewUnit = gc.getInfoTypeForString("UNIT_SUMER_RANG2")
-								else:
-										iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
-						else:
-								bInfoBonus = True
-				else:
-						iNewUnit = gc.getInfoTypeForString("UNIT_SUMER_RANG1")
-		# Germanen, Vandalen, Hunnen
-		elif iNewUnit == -1:
-				if iCivType in L.LCivGermanen:
-						iNewUnit = gc.getInfoTypeForString("UNIT_STAMMESFUERST")
-				elif iCivType == gc.getInfoTypeForString("CIVILIZATION_HUNNEN"):
-						iNewUnit = gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN_HUN")
 
-		# Meldung no bonus
-		if bInfoBonus and iPlayer == gc.getGame().getActivePlayer():
-				CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_BONUS_INFO", ("",)), None, 2, None, ColorTypes(7), 0, 0, False, False)
-		elif iInfoTech != -1 and iPlayer == gc.getGame().getActivePlayer():
-				CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_TECH_INFO", (gc.getTechInfo(iInfoTech).getDescription(),)), None, 2, None, ColorTypes(7), 0, 0, False, False)
+				# Egypt, Nubia
+				elif iCivType == gc.getInfoTypeForString("CIVILIZATION_EGYPT") or iCivType == gc.getInfoTypeForString("CIVILIZATION_NUBIA"):
+						if iUnitType == gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"):
+								if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+										if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+												iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
+								else:
+										bInfoBonus = True
 
-		# Neue Einheit
-		if iNewUnit != -1:
-				# ScriptData leeren
-				CvUtil.removeScriptData(pUnit, "P")
-				doUpgradeVeteran(pUnit, iNewUnit, True)
-				if pPlayer.isHuman():
-						pPlayer.changeGold(-50)
-						if iPlayer == gc.getGame().getActivePlayer():
-								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_PROMOTED", (gc.getUnitInfo(
-										iUnitType).getDescription(), gc.getUnitInfo(iNewUnit).getDescription())), None, 2, None, ColorTypes(8), 0, 0, False, False)
-				return True
-		else:
+				# Assyrer und Babylonier
+				elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ASSYRIA") or iCivType == gc.getInfoTypeForString("CIVILIZATION_BABYLON"):
+						if iUnitType == gc.getInfoTypeForString("UNIT_ASSUR_RANG2"):
+								if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+										if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+												iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
+								else:
+										bInfoBonus = True
+				# Sumerer
+				elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
+						if iUnitType == gc.getInfoTypeForString("UNIT_SUMER_RANG1"):
+								if pPlayer.hasBonus(gc.getInfoTypeForString("BONUS_HORSE")):
+										if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+												iInfoTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
+								else:
+										bInfoBonus = True
+
+				# Meldung no bonus
+				if bInfoBonus and iPlayer == gc.getGame().getActivePlayer():
+						CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_BONUS_INFO", ("",)), None, 2, None, ColorTypes(7), 0, 0, False, False)
+				elif iInfoTech != -1 and iPlayer == gc.getGame().getActivePlayer():
+						CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_TECH_INFO", (gc.getTechInfo(iInfoTech).getDescription(),)), None, 2, None, ColorTypes(7), 0, 0, False, False)
+
 				# ***TEST***
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST", ("Upgrade Rang: not possible (wrong unit, horse or tech)", iUnitType)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				return False
 
+		# Neue Einheit
+		else:
+				# ScriptData leeren
+				CvUtil.removeScriptData(pUnit, "P")
+				pNewUnit = doUpgradeVeteran(pUnit, iNewUnit, True)
+
+				# Rome
+				if iUnitType in LRomanLegion:
+						setLegionName(pNewUnit)
+
+				if pPlayer.isHuman():
+						pPlayer.changeGold(-30)
+						if iPlayer == gc.getGame().getActivePlayer():
+								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RANK_PROMOTED", (gc.getUnitInfo(
+										iUnitType).getDescription(), gc.getUnitInfo(iNewUnit).getDescription())), None, 2, None, ColorTypes(8), 0, 0, False, False)
+
+				return True
+
+
 # Legion in Ausbildung (PAE, ModMessage:756)
-
-
 def doKastell(iPlayer, iUnit):
 		pPlayer = gc.getPlayer(iPlayer)
 		pUnit = pPlayer.getUnit(iUnit)
@@ -1835,7 +1950,7 @@ def doBlessUnits(pUnit):
 						loopUnit.setHasPromotion(iPromo, True)
 						loopUnit.finishMoves()
 
-# onModNetMessage 759, iTyp (1: Rhetorik, 2: Sklavenopfer)
+# onModNetMessage 759, iTyp (1: Rhetorik, 2: Sklavenopfer, 3: Zeus)
 def doMoralUnits(pUnit, iTyp):
 		pPlayer = gc.getPlayer(pUnit.getOwner())
 		iPromo = gc.getInfoTypeForString("PROMOTION_MORALE")
@@ -1852,7 +1967,7 @@ def doMoralUnits(pUnit, iTyp):
 												if pUnit.getID() != loopUnit.getID():
 														iUnits += 1
 														# Promo geben: Chance 1:4
-														if CvUtil.myRandom(4, "doMoralUnits") == 1 or iTyp == 2:
+														if iTyp != 1 or CvUtil.myRandom(4, "doMoralUnits") == 1:
 																doMoralUnit(loopUnit)
 																iAnz += 1
 														loopUnit.finishMoves()
@@ -2119,6 +2234,9 @@ def doHunterHero(pWinner, pLoser):
 def doRankPromo(pWinner):
 		iWinnerPlayer = pWinner.getOwner()
 		pWinnerPlayer = gc.getPlayer(iWinnerPlayer)
+		pWinnerTeam = gc.getTeam(pWinnerPlayer.getTeam())
+		iWinnerCiv = pWinnerPlayer.getCivilizationType()
+		iUnitType = pWinner.getUnitType()
 		iNewPromo = -1
 
 		# DEBUG
@@ -2130,9 +2248,8 @@ def doRankPromo(pWinner):
 				return
 
 		# Manche units sollen keinen Rang bekommen
-		if pWinner.getUnitType() in L.LNoRankUnits:
+		if iUnitType in L.LNoRankUnits:
 				return
-
 
 		# Ab PAE 6.14: bestimmte Rankings nur für bestimmte CIVs
 		LRome = [
@@ -2152,6 +2269,10 @@ def doRankPromo(pWinner):
 			gc.getInfoTypeForString("CIVILIZATION_BABYLON"),
 			gc.getInfoTypeForString("CIVILIZATION_ASSYRIA")
 		]
+		LCarthago = [
+			gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"),
+			gc.getInfoTypeForString("CIVILIZATION_PHON")
+		]
 
 		if pWinnerPlayer.getCivilizationType() in LRome:
 				# ROM Pedes
@@ -2169,9 +2290,10 @@ def doRankPromo(pWinner):
 												continue
 										if "_RANG_ROM_" in iPromoType:
 												if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_11"):
+														#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_11"):
+														if canUpgradeUnit(pWinner) != -1:
 																# Auxiliar nur bis ausgenommen Optio
-																if pWinner.getUnitType() not in L.LUnitAuxiliar:
+																if iUnitType not in L.LUnitAuxiliar:
 																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2184,7 +2306,6 @@ def doRankPromo(pWinner):
 														iNewPromo = iPromo
 				# ROM Eques
 				elif pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_1")):
-						if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_5")):
 								# Chance: 1:4
 								# if CvUtil.myRandom(4, "RangEques") == 1:
 								iNumPromos = gc.getNumPromotionInfos() - 1
@@ -2194,7 +2315,8 @@ def doRankPromo(pWinner):
 												break
 										if "_RANG_ROM_EQUES" in iPromoType:
 												if pWinner.isHasPromotion(iPromo):
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_3"):
+														#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_3"):
+														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2217,7 +2339,8 @@ def doRankPromo(pWinner):
 												break
 										if "_RANG_ROM_LATE" in iPromoType:
 												if pWinner.isHasPromotion(iPromo):
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_5") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_10"):
+														#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_5") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_10"):
+														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2243,7 +2366,8 @@ def doRankPromo(pWinner):
 												continue
 										if "_RANG_GREEK_" in iPromoType:
 												if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_10"):
+														#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_10"):
+														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2256,32 +2380,44 @@ def doRankPromo(pWinner):
 														iNewPromo = iPromo
 		# Sparta
 		elif pWinnerPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_SPARTA"):
-			if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_1")):
-				if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_10")):
-						iNumPromos = gc.getNumPromotionInfos()-1
-						iPromo = iNumPromos
-						for iPromo in xrange(iNumPromos, 0, -1):
-								iPromoType = gc.getPromotionInfo(iPromo).getType()
-								if "_RANG_GREEK_" in iPromoType:
-										break
-								if "_RANG_SPARTA_" in iPromoType:
-										if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-												if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_7"):
-														CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-												else:
-														pWinner.setHasPromotion(iNewPromo, True)
-														# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
-														if pWinnerPlayer.isHuman():
-																CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_CIV_RANG", (pWinner.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
-																												 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
-												break
-										else:
-												iNewPromo = iPromo
+				if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_10")):
+						return
+				if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX")):
+						if pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN") or pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
+								iNewPromo = gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_1")
+								if pWinner.isHasPromotion(iNewPromo):
+										iNumPromos = gc.getNumPromotionInfos()-1
+										iPromo = iNumPromos
+										for iPromo in xrange(iNumPromos, 0, -1):
+												iPromoType = gc.getPromotionInfo(iPromo).getType()
+												if "_RANG_GREEK_" in iPromoType:
+														break
+												if "_RANG_SPARTA_" in iPromoType:
+														if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
+																#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_7"):
+																if canUpgradeUnit(pWinner) != -1:
+																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
+																else:
+																		pWinner.setHasPromotion(iNewPromo, True)
+																		# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
+																		if pWinnerPlayer.isHuman():
+																				CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_CIV_RANG", (pWinner.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
+																																 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
+																break
+														else:
+																iNewPromo = iPromo
+								else:
+										pWinner.setHasPromotion(iNewPromo, True)
+										# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
+										if pWinnerPlayer.isHuman():
+												CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_CIV_RANG", (pWinner.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
+																								 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
+
 		# Makedonen
 		elif pWinnerPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
 				if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_10")):
 						return
-				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_PHALANX2")):
+				if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX2")):
 						if pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN") or pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
 								iNewPromo = gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_1")
 								if pWinner.isHasPromotion(iNewPromo):
@@ -2294,7 +2430,8 @@ def doRankPromo(pWinner):
 														break
 												if "_RANG_MACEDON_" in iPromoType:
 														if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-																if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_9"):
+																#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_4") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_7") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_9"):
+																if canUpgradeUnit(pWinner) != -1:
 																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 																else:
 																		pWinner.setHasPromotion(iNewPromo, True)
@@ -2325,12 +2462,7 @@ def doRankPromo(pWinner):
 												break
 										if "_RANG_PERSIA2_" in iPromoType:
 												if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_5"):
-																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-														elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_7"):
-																if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_HORSE_ARMOR")):
-																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-														elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_11"):
+														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2342,7 +2474,7 @@ def doRankPromo(pWinner):
 												else:
 														iNewPromo = iPromo
 				# Perser Fusssoldaten
-				elif gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_SKIRMISH_TACTICS")):
+				elif pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_SKIRMISH_TACTICS")):
 						iNewPromo = gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_1")
 						if pWinner.isHasPromotion(iNewPromo):
 								if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_10")):
@@ -2355,7 +2487,8 @@ def doRankPromo(pWinner):
 														break
 												if "_RANG_PERSIA_" in iPromoType:
 														if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-																if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_5") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_7"):
+																#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_5") or iPromo == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_7"):
+																if canUpgradeUnit(pWinner) != -1:
 																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 																else:
 																		pWinner.setHasPromotion(iNewPromo, True)
@@ -2379,7 +2512,7 @@ def doRankPromo(pWinner):
 		elif pWinnerPlayer.getCivilizationType() in LEgypt:
 				if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_10")):
 						return
-				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG3")):
+				if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG3")):
 						if pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN") or \
 										pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN") or \
 										pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_AXEMAN"):
@@ -2396,12 +2529,8 @@ def doRankPromo(pWinner):
 																break
 														if "_RANG_EGYPT_" in iPromoType:
 																if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-																		if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_5"):
+																		if canUpgradeUnit(pWinner) != -1:
 																				CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-																		elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_10"):
-																				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
-																						CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-
 																		else:
 																				pWinner.setHasPromotion(iNewPromo, True)
 																				# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
@@ -2419,7 +2548,7 @@ def doRankPromo(pWinner):
 																								 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
 
 		# Karthago
-		elif pWinnerPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"):
+		elif pWinnerPlayer.getCivilizationType() in LCarthago:
 			if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_1")):
 				if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_6")):
 						iRand = CvUtil.myRandom(3, "PROMOTION_RANG_CARTHAGE")
@@ -2432,10 +2561,7 @@ def doRankPromo(pWinner):
 												break
 										if "_RANG_CARTHAGE_" in iPromoType:
 												if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-														if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_2"):
-																if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
-																		CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-														elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_4"):
+														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 														else:
 																pWinner.setHasPromotion(iNewPromo, True)
@@ -2450,7 +2576,7 @@ def doRankPromo(pWinner):
 		# Assur, Babylon
 		elif pWinnerPlayer.getCivilizationType() in LBabylon:
 				if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_12")):
-						if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
+						if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
 								if pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN") or \
 												pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN") or \
 												pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_AXEMAN"):
@@ -2465,14 +2591,8 @@ def doRankPromo(pWinner):
 																break
 														if "_RANG_ASSUR_" in iPromoType:
 																if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-																		if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_3"):
-																				CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-																		elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_6"):
-																				CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-																		elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_10"):
-																				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+																		if canUpgradeUnit(pWinner) != -1:
 																						CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-
 																		else:
 																				pWinner.setHasPromotion(iNewPromo, True)
 																				# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
@@ -2493,7 +2613,7 @@ def doRankPromo(pWinner):
 		elif pWinnerPlayer.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
 				if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_SUMER_10")):
 						return
-				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
+				if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
 						if pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN") or \
 										pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN") or \
 										pWinner.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_AXEMAN"):
@@ -2510,12 +2630,8 @@ def doRankPromo(pWinner):
 																break
 														if "_RANG_SUMER_" in iPromoType:
 																if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
-																		if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SUMER_4"):
-																				CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-																		elif iPromo == gc.getInfoTypeForString("PROMOTION_RANG_SUMER_9"):
-																				if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL3")):
+																		if canUpgradeUnit(pWinner) != -1:
 																						CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
-
 																		else:
 																				pWinner.setHasPromotion(iNewPromo, True)
 																				# Der Kommandant Eurer Einheit (%s1) hat nun den Rang: %s2!
@@ -2533,9 +2649,9 @@ def doRankPromo(pWinner):
 																								 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
 
 		# Ab Kriegerethos : kampferfahren
-		if gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_KRIEGERETHOS")):
+		if pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_KRIEGERETHOS")):
 				if pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT3")):
-						if pWinner.getUnitType() not in L.LUnitsHeadRang:
+						if iUnitType not in L.LUnitsHeadRang:
 								if pWinnerPlayer.getCivilizationType() in L.LCivGermanen:
 										if not pWinner.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_GER_3")):
 												iRand = CvUtil.myRandom(4, "PROMOTION_RANG_GER_3")
@@ -2563,7 +2679,7 @@ def doRankPromo(pWinner):
 																		CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_CIV_RANG", (pWinner.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
 																														 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pWinner.getX(), pWinner.getY(), True, True)
 												# Geissel Gottes ab Panzerreiter (nur als Kaghan)
-												elif gc.getTeam(pWinnerPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_PANZERREITER")):
+												elif pWinnerTeam.isHasTech(gc.getInfoTypeForString("TECH_PANZERREITER")):
 														CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
 
 
@@ -2592,7 +2708,8 @@ def flee(pLoser, pWinner, iWinnerDamage):
 		# Eine einzelne kaperbare Unit darf nicht fluechten
 		# if pLoser.getCaptureUnitType(pLoser.getOwner()) > -1 and pLoser.plot().getNumUnits() > 1:
 		# oder mit der UnitInfo CaptureClass? gc.getUnitInfo(pLoser.getUnitType()).getUnitCaptureClassType()
-		if pLoser.getCaptureUnitType(pLoser.getCivilizationType()) == -1 or pLoser.isHasPromotion(iGeneralForm):
+		# PAE 6.16: Verlierer darf nicht angegriffen haben (zB von einer Stadt aufs Feld angreifen)
+		if not pLoser.isMadeAttack() and (pLoser.getCaptureUnitType(pLoser.getCivilizationType()) == -1 or pLoser.isHasPromotion(iGeneralForm)):
 				bIsCity = False
 				bIsVillage = False
 				pLoserPlot = pLoser.plot()
@@ -2740,28 +2857,28 @@ def flee(pLoser, pWinner, iWinnerDamage):
 
 
 def doAutomatedRanking(pWinner, pLoser):
-		"""
 		# Feature - Automated Unit Ranking via Promotions: Trained, Experienced, Seasoned, Veteran, Elite, Legendary
 		# Trainiert, Kampferfahren, Routiniert, Veteran, Elite, Legende
 		# Each promotion gives +x% Strength
 		# Animal Attack brings only 1st Ranking
-		"""
+
 		# tuple contain (Promo, %-Probabiblity)
 		LPromo = [
-				(gc.getInfoTypeForString('PROMOTION_COMBAT1'), 70),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT2'), 60),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT3'), 50),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT4'), 40),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT5'), 20),
-				(gc.getInfoTypeForString('PROMOTION_COMBAT6'), 10)
+				(gc.getInfoTypeForString("PROMOTION_COMBAT1"), 80),
+				(gc.getInfoTypeForString("PROMOTION_COMBAT2"), 70),
+				(gc.getInfoTypeForString("PROMOTION_COMBAT3"), 60),
+				(gc.getInfoTypeForString("PROMOTION_COMBAT4"), 50),
+				(gc.getInfoTypeForString("PROMOTION_COMBAT5"), 30),
+				(gc.getInfoTypeForString("PROMOTION_COMBAT6"), 10)
 		]
 		LPromoNegative = [
-				(gc.getInfoTypeForString('PROMOTION_MORAL_NEG1'), 10),
-				(gc.getInfoTypeForString('PROMOTION_MORAL_NEG2'), 20),
-				(gc.getInfoTypeForString('PROMOTION_MORAL_NEG3'), 30),
-				(gc.getInfoTypeForString('PROMOTION_MORAL_NEG4'), 40),
-				(gc.getInfoTypeForString('PROMOTION_MORAL_NEG5'), 50)
+				(gc.getInfoTypeForString("PROMOTION_MORAL_NEG1"), 10),
+				(gc.getInfoTypeForString("PROMOTION_MORAL_NEG2"), 20),
+				(gc.getInfoTypeForString("PROMOTION_MORAL_NEG3"), 30),
+				(gc.getInfoTypeForString("PROMOTION_MORAL_NEG4"), 40),
+				(gc.getInfoTypeForString("PROMOTION_MORAL_NEG5"), 50)
 		]
+
 		if (pLoser.isMilitaryHappiness()
 				or pLoser.getUnitAIType() in [UnitAITypes.UNITAI_ANIMAL, UnitAITypes.UNITAI_EXPLORE]
 						or pLoser.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL")):
@@ -3110,10 +3227,11 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 						# PAE 6.14: +1 :) in jeder Stadt (Status Stadt, sofern Happyness < 0
 
 						# PopUp
+						#[H1]Ein gegnerischer General ist gefallen![\H1]
 						if pWinnerPlayer.isHuman():
 								iRand = 1 + CvUtil.myRandom(9, "Stadtaufruhr_Message")
 								szTextKey = "TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_" + str(iRand)
-								szText = CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText("TXT_KEY_MESSAGE_CITY_DYING_GENERAL_POSITIVE", ())
+								szText = CyTranslator().getText("TXT_KEY_MESSAGE_CITY_DYING_GENERAL_TITLE", ()) + CyTranslator().getText(szTextKey, ("",)) + CyTranslator().getText("TXT_KEY_MESSAGE_CITY_DYING_GENERAL_POSITIVE", ())
 								popupInfo = CyPopupInfo()
 								popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
 								popupInfo.setText(szText)
@@ -3135,6 +3253,12 @@ def doDyingGeneral(pUnit, iWinnerPlayer=-1):
 												#		)
 
 								(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
+
+						# PAE 6.16
+						# --- Vasallen-Feature / Vassal feature
+						# wenn ein General stirbt sollen die Vasallenverhältnisse gecheckt werden
+						if not gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_VASSAL_STATES):
+								PAE_Vassal.onCityAcquired(None, iWinnerPlayer, iPlayer)
 
 
 def unsettledSlaves(iPlayer):

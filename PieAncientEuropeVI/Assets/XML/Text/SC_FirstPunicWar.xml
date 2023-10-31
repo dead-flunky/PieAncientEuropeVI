@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE_FIRST_PUNIC_WAR</Tag>
 		<English>Pie's Ancient Europe - The First Punic War</English>
@@ -94,9 +94,7 @@
 		<French>Bruttiens</French>
 		<German>Bruttier</German>
 		<Italian>Bruzi e Lucani</Italian>
-		<Spanish>
-<Text>Brucios</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Brucios</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRUTTII_ET_LUCANI_SHORT_DESC</Tag>
@@ -104,23 +102,15 @@
 		<French>Bruttium</French>
 		<German>Bruttium</German>
 		<Italian>Brutium</Italian>
-		<Spanish>
-<Text>Brucia</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Brucia</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRUTTII_ET_LUCANI_ADJECTIVE</Tag>
 		<English>Bruttian</English>
 		<French>brutte</French>
-		<German>
-<Text>bruttisch:bruttischen:bruttisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>brucio:brucia:bruci:brucie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>brucio:brucia:brucios:brucias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>bruttisch:bruttischen:bruttisches:bruttischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>brucio:brucia:bruci:brucie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>brucio:brucia:brucios:brucias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LUCANI_DESC</Tag>
@@ -128,9 +118,7 @@
 		<French>Lucanes</French>
 		<German>Lukanier</German>
 		<Italian>Lucani</Italian>
-		<Spanish>
-<Text>Lucanos</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Lucanos</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LUCANI_SHORT_DESC</Tag>
@@ -138,23 +126,15 @@
 		<French>Lucanie</French>
 		<German>Lukanien</German>
 		<Italian>Lucania</Italian>
-		<Spanish>
-<Text>Lucania</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Lucania</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LUCANI_ADJECTIVE</Tag>
 		<English>Lucan</English>
 		<French>lucanienne</French>
-		<German>
-<Text>lukanisch:lukanischen:lukanisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>lucano:lucana:lucani:lucane</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>lucano:lucana:lucanos:lucanas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>lukanisch:lukanischen:lukanisches:lukanischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>lucano:lucana:lucani:lucane</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>lucano:lucana:lucanos:lucanas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SAMNITES_DESC</Tag>
@@ -170,23 +150,15 @@
 		<French>Samnite</French>
 		<German>Samniten</German>
 		<Italian>Sanniti</Italian>
-		<Spanish>
-<Text>Samnitas</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Samnitas</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SAMNITES_ADJECTIVE</Tag>
 		<English>Samnite</English>
 		<French>samnite</French>
-		<German>
-<Text>samnitisch:samnitischen:samnitisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>sannita:sannita:sanniti:sannite</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>samnita:samnita:samnitas:samnitas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>samnitisch:samnitischen:samnitisches:samnitischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>sannita:sannita:sanniti:sannite</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>samnita:samnita:samnitas:samnitas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_GAIUS_PONTIUS_TELESINUS</Tag>
@@ -218,9 +190,7 @@
 		<French>Mamertins</French>
 		<German>Mamertiner</German>
 		<Italian>Mamertini</Italian>
-		<Spanish>
-<Text>Mamertinos</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Mamertinos</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MESSANA_SHORT_DESC</Tag>
@@ -234,15 +204,9 @@
 		<Tag>TXT_KEY_CIV_MESSANA_ADJECTIVE</Tag>
 		<English>Mamertine</English>
 		<French>Prison Mamertine</French>
-		<German>
-<Text>mamertinisch:mamertinischen:mamertinische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>mamertino:mamertina:mamertini:mamertine</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>mamertino:mamertina:mamertinos:mamertinas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>mamertinisch:mamertinischen:mamertinische:mamertinischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>mamertino:mamertina:mamertini:mamertine</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>mamertino:mamertina:mamertinos:mamertinas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CAPUA_DESC</Tag>
@@ -264,15 +228,9 @@
 		<Tag>TXT_KEY_CIV_CAPUA_ADJECTIVE</Tag>
 		<English>Capuan</English>
 		<French>Capoue</French>
-		<German>
-<Text>capuanisch:capuanischen:capuanische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>capuano:capuana:capuani:capuane</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>capuano:capuana:capuanos:capuanas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>capuanisch:capuanischen:capuanische:capuanischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>capuano:capuana:capuani:capuane</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>capuano:capuana:capuanos:capuanas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TARENTUM_DESC</Tag>
@@ -294,15 +252,9 @@
 		<Tag>TXT_KEY_CIV_TARENTUM_ADJECTIVE</Tag>
 		<English>Tarentian</English>
 		<French>Tarentin</French>
-		<German>
-<Text>tarentinisch:tarentinischen:tarentinisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>tarentino:tarentina:tarentini:tarentine</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>tarentino:tarentina:tarentinos:tarentinas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>tarentinisch:tarentinischen:tarentinisches:tarentischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>tarentino:tarentina:tarentini:tarentine</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>tarentino:tarentina:tarentinos:tarentinas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SYRACUSAE_DESC</Tag>
@@ -332,39 +284,25 @@
 		<Tag>TXT_KEY_CIV_MAGNA_GRAECIA_DESC</Tag>
 		<English>Magna Graecia</English>
 		<French>Magna Graecia</French>
-		<German>
-<Text>Magna Graecia</Text><Gender>Female</Gender><Plural>0</Plural>
-		</German>
+		<German><Text>Magna Graecia</Text><Gender>Female</Gender><Plural>0</Plural></German>
 		<Italian>Magna Graecia</Italian>
-		<Spanish>
-<Text>Magna Grecia</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Magna Grecia</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAGNA_GRAECIA_SHORT_DESC</Tag>
 		<English>Magna Graecia</English>
 		<French>Magna Graecia</French>
 		<German>Magna Graecia</German>
-		<Italian>
-<Text>Magna Graecia</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Italian>
-		<Spanish>
-<Text>Magna Grecia</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Italian><Text>Magna Graecia</Text><Gender>Female</Gender><Plural>0</Plural></Italian>
+		<Spanish><Text>Magna Grecia</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAGNA_GRAECIA_ADJECTIVE</Tag>
 		<English>Greek</English>
 		<French>grecien</French>
-		<German>
-<Text>griechisch:griechischen:griechische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:1</Plural>
-		</German>
-		<Italian>
-<Text>greco:greca:grechi:greche</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>greco:greca:grecos:grecas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>griechisch:griechischen:griechische:griechischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>greco:greca:grechi:greche</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>greco:greca:grecos:grecas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_WESTERN_GREEK_COLONIES_DESC</Tag>
@@ -372,39 +310,23 @@
 		<French>Colonies grecques</French>
 		<German>Griechische Kolonien</German>
 		<Italian>colonie greche</Italian>
-		<Spanish>
-<Text>Colonias Griegas</Text><Gender>Female</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Colonias Griegas</Text><Gender>Female</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_WESTERN_GREEK_COLONIES_SHORT_DESC</Tag>
-		<English>
-<Text>Greek Colonies</Text><Plural>1</Plural>
-		</English>
-		<French>
-<Text>Colonies grecques</Text><Gender>Female</Gender><Plural>1</Plural>
-		</French>
-		<German>
-<Text>Griechische Kolonien</Text><Gender>Female</Gender><Plural>1</Plural>
-		</German>
+		<English><Text>Greek Colonies</Text><Plural>1</Plural></English>
+		<French><Text>Colonies grecques</Text><Gender>Female</Gender><Plural>1</Plural></French>
+		<German><Text>Griechische Kolonien</Text><Gender>Female</Gender><Plural>1</Plural></German>
 		<Italian>colonie greche</Italian>
-		<Spanish>
-<Text>Colonias Griegas</Text><Gender>Female</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Colonias Griegas</Text><Gender>Female</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_WESTERN_GREEK_COLONIES_ADJECTIVE</Tag>
 		<English>Greek</English>
 		<French>Grec</French>
-		<German>
-<Text>griechisch:griechischen:griechische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:1</Plural>
-		</German>
-		<Italian>
-<Text>greco:greca:grechi:greche</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>griego:griega:griegos:griegas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>griechisch:griechischen:griechische:griechischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>greco:greca:grechi:greche</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>griego:griega:griegos:griegas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BOII_DESC</Tag>
@@ -412,9 +334,7 @@
 		<French>Tribu des Bo&#239;ens</French>
 		<German>Stamm der Boier</German>
 		<Italian>Trib&#249; dei Boi</Italian>
-		<Spanish>
-<Text>Tribu de los Boios</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Tribu de los Boios</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BOII_SHORT_DESC</Tag>
@@ -422,23 +342,15 @@
 		<French>Bo&#239;en</French>
 		<German>Boier</German>
 		<Italian>Boi</Italian>
-		<Spanish>
-<Text>Boios</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Boios</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BOII_ADJECTIVE</Tag>
 		<English>Boian</English>
 		<French>Bo&#239;en</French>
-		<German>
-<Text>boisch:boischen:boische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>boio:boia:boii:boie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>boio:boia:boios:boias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>boisch:boischen:boische:boischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>boio:boia:boii:boie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>boio:boia:boios:boias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INSUBRES_DESC</Tag>
@@ -446,9 +358,7 @@
 		<French>Tribu des Insubres</French>
 		<German>Stamm der Insubrer</German>
 		<Italian>Trib&#249; dei Insubri</Italian>
-		<Spanish>
-<Text>Tribu de los &#205;nsubres</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Tribu de los &#205;nsubres</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INSUBRES_SHORT_DESC</Tag>
@@ -456,23 +366,15 @@
 		<French>Insubres</French>
 		<German>Insubrer</German>
 		<Italian>Insubri</Italian>
-		<Spanish>
-<Text>&#205;nsubres</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>&#205;nsubres</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INSUBRES_ADJECTIVE</Tag>
 		<English>Insubrian</English>
 		<French>Insubres</French>
-		<German>
-<Text>insubrisch:insubrischen:insubrische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>insubre:insubra:insubri:insubre</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>&#237;nsubre:&#237;nsubre:&#237;nsubres:&#237;nsubres</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>insubrisch:insubrischen:insubrische:insubrischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>insubre:insubra:insubri:insubre</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>&#237;nsubre:&#237;nsubre:&#237;nsubres:&#237;nsubres</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LIGURES_DESC</Tag>
@@ -480,9 +382,7 @@
 		<French>Tribu des Ligures</French>
 		<German>Ligurer</German>
 		<Italian>Tribe of the Ligures</Italian>
-		<Spanish>
-<Text>Tribu de los Ligures</Text><Gender>Female</Gender><Plural>0</Plural>
-		</Spanish>
+		<Spanish><Text>Tribu de los Ligures</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LIGURES_SHORT_DESC</Tag>
@@ -496,15 +396,9 @@
 		<Tag>TXT_KEY_CIV_LIGURES_ADJECTIVE</Tag>
 		<English>Liguran</English>
 		<French>Ligurian</French>
-		<German>
-<Text>ligurisch:ligurischen:ligurische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>liguro:ligura:liguri:ligure</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>ligur:ligur:ligures:ligures</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>ligurisch:ligurischen:ligurische:ligurischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>liguro:ligura:liguri:ligure</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>ligur:ligur:ligures:ligures</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALLOBROGES_DESC</Tag>
@@ -512,9 +406,7 @@
 		<French>Allobroges</French>
 		<German>Allobroger</German>
 		<Italian>Allobrogi</Italian>
-		<Spanish>
-<Text>Al&#243;broges</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Al&#243;broges</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALLOBROGES_SHORT_DESC</Tag>
@@ -522,23 +414,15 @@
 		<French>Allobroges</French>
 		<German>Allobroger</German>
 		<Italian>Allobrogi</Italian>
-		<Spanish>
-<Text>Al&#243;broges</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Al&#243;broges</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALLOBROGES_ADJECTIVE</Tag>
 		<English>Allobrogan</English>
 		<French>Allobroge</French>
-		<German>
-<Text>allobrogisch:allobrogischen:allobrogische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>allobrogo:allobroga:allobrogi:allobroge</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>al&#243;broge:al&#243;broges:al&#243;broges:al&#243;broges</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>allobrogisch:allobrogischen:allobrogische:allobrogischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>allobrogo:allobroga:allobrogi:allobroge</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>al&#243;broge:al&#243;broges:al&#243;broges:al&#243;broges</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARVERNI_DESC</Tag>
@@ -546,27 +430,15 @@
 		<French>Averne</French>
 		<German>Arverner</German>
 		<Italian>Arverni</Italian>
-		<Spanish>
-<Text>Arvernos</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Arvernos</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARVERNI_SHORT_DESC</Tag>
-		<English>
-<Text>Arverni</Text><Plural>1</Plural>
-		</English>
-		<French>
-<Text>Arvernes</Text><Gender>Male</Gender><Plural>1</Plural>
-		</French>
-		<German>
-<Text>Arverner</Text><Gender>Female</Gender><Plural>1</Plural>
-		</German>
-		<Italian>
-<Text>Arverni</Text><Gender>Female</Gender><Plural>1</Plural>
-		</Italian>
-		<Spanish>
-<Text>Arvernos</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<English><Text>Arverni</Text><Plural>1</Plural></English>
+		<French><Text>Arvernes</Text><Gender>Male</Gender><Plural>1</Plural></French>
+		<German><Text>Arverner</Text><Gender>Female</Gender><Plural>1</Plural></German>
+		<Italian><Text>Arverni</Text><Gender>Female</Gender><Plural>1</Plural></Italian>
+		<Spanish><Text>Arvernos</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARVERNI_ADJECTIVE</Tag>
@@ -582,9 +454,7 @@
 		<French>Voconce</French>
 		<German>Vokonter</German>
 		<Italian>Vokonter</Italian>
-		<Spanish>
-<Text>Voconcios</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Voconcios</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VOCONTII_SHORT_DESC</Tag>
@@ -592,23 +462,15 @@
 		<French>Voconce</French>
 		<German>Vokonter</German>
 		<Italian>Vokonter</Italian>
-		<Spanish>
-<Text>Voconcios</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Voconcios</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VOCONTII_ADJECTIVE</Tag>
 		<English>Vocontian</English>
 		<French>Voconce</French>
-		<German>
-<Text>vokontisch:vokontischen:vokontische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>voconcio:voconcia:voconci:voconcie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>voconcio:voconcia:voconios:voconcias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>vokontisch:vokontischen:vokontische:vokontischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>voconcio:voconcia:voconci:voconcie</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>voconcio:voconcia:voconios:voconcias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_EPEIROS_DESC</Tag>
@@ -616,9 +478,7 @@
 		<French>Epirots</French>
 		<German>Epiroten</German>
 		<Italian>Epirots</Italian>
-		<Spanish>
-<Text>Epirotes</Text><Gender>Male</Gender><Plural>1</Plural>
-		</Spanish>
+		<Spanish><Text>Epirotes</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_EPEIROS_SHORT_DESC</Tag>
@@ -632,15 +492,9 @@
 		<Tag>TXT_KEY_CIV_EPEIROS_ADJECTIVE</Tag>
 		<English>Epirotian</English>
 		<French>epirotien</French>
-		<German>
-<Text>epirotisch:epirotischen:epirotische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-<Text>epirote:epirota:epiroti:epirote</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Italian>
-		<Spanish>
-<Text>epirote:epirota:epirotes:epirotas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural>
-		</Spanish>
+		<German><Text>epirotisch:epirotischen:epirotische:epirotischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>epirote:epirota:epiroti:epirote</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
+		<Spanish><Text>epirote:epirota:epirotes:epirotas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TEMPLE_PAESTUM</Tag>

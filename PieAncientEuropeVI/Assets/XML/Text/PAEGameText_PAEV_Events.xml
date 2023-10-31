@@ -578,11 +578,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SPARTACUS_1</Tag>
-		<English>The escaped pack poses a serious problem for the %s1_civ_adjective empire.</English>
-		<French>La foule de gladiateurs en col&#232;re pose un s&#233;rieux probl&#232;me pour l'empire %s1_civ_adjective.</French>
-		<German>Die entflohene Meute stellt ein ernstes Problem f&#252;r das %s1:2_civ_adjective Reich dar.</German>
-		<Italian>La folla in fuga pone un problema serio per l'impero %s1:2_civ_adjective.</Italian>
-		<Spanish>El grupo huido supone un serio problema para el imperio %s1:1.</Spanish>
+		<English>The escaped pack poses a serious problem for the empire.</English>
+		<French>La foule de gladiateurs en col&#232;re pose un s&#233;rieux probl&#232;me pour l'empire.</French>
+		<German>Die entflohene Meute stellt ein ernstes Problem f&#252;r das Reich dar.</German>
+		<Italian>La folla in fuga pone un problema serio per l'impero.</Italian>
+		<Spanish>El grupo huido supone un serio problema para el imperio.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TROJA</Tag>
@@ -610,11 +610,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TROJA_OTHER_1</Tag>
-		<English>Your envoys have returned with a wonderful trophy. Your son has won the heart of the %s1_civ_adjective leader's wife. However, the %s1_civ_adjective leader does not seem to care about the loss.</English>
-		<French>Vos &#233;missaires ont ramen&#233; un superbe troph&#233;e. En effet, votre fils a gagn&#233; le coeur de l'&#233;pouse du dirigeant %s1_civ_adjective. Pas d'inqui&#233;tude, ce dernier ne semble pas se soucier de sa disparition.</French>
-		<German>Eure Gesandten sind mit einer wundersch&#246;nen Troph&#228;e zur&#252;ckgekehrt. Euer Sohn hat das Herz der Frau des %s1:2_civ_adjective Herrschers erobert, dem der Verlust aber nicht weiter zu interessieren scheint.</German>
-		<Italian>I vostri legati sono tornati con un bel trofeo. Tuo figlio ha conquistato il cuore della moglie del regnante %s1:2_civ_adjective, ma questa perdita non gli sembra creare ulteriore interesse.</Italian>
-		<Spanish>Tus enviados han vuelto con un maravilloso trofeo. Tu hijo se ha ganado el coraz&#243;n de la esposa del l&#237;der %s1:1. Sin embargo, el l&#237;der %s1:1 no parece preocuparse de la p&#233;rdida.</Spanish>
+		<English>Your envoys have returned with a wonderful trophy. Your son has won the heart of the leader's wife. However, the %s1_civ_adjective leader does not seem to care about the loss.</English>
+		<French>Vos &#233;missaires ont ramen&#233; un superbe troph&#233;e. En effet, votre fils a gagn&#233; le coeur de l'&#233;pouse du dirigeant. Pas d'inqui&#233;tude, ce dernier ne semble pas se soucier de sa disparition.</French>
+		<German>Eure Gesandten sind mit einer wundersch&#246;nen Troph&#228;e zur&#252;ckgekehrt. Euer Sohn hat das Herz der Frau des Herrschers erobert, dem der Verlust aber nicht weiter zu interessieren scheint.</German>
+		<Italian>I vostri legati sono tornati con un bel trofeo. Tuo figlio ha conquistato il cuore della moglie del regnante, ma questa perdita non gli sembra creare ulteriore interesse.</Italian>
+		<Spanish>Tus enviados han vuelto con un maravilloso trofeo. Tu hijo se ha ganado el coraz&#243;n de la esposa del l&#237;der. Sin embargo, el l&#237;der %s1:1 no parece preocuparse de la p&#233;rdida.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TROJA_2</Tag>
@@ -626,11 +626,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TROJA_OTHER_2</Tag>
-		<English>Your envoys have betrayed the hospitality of the %s1_civ_adjective leader by kidnapping his wife. Also, other leaders who follow the same religion are horrified.</English>
-		<French>Vos &#233;missaires ont trahi l'hospitalit&#233; du dirigeant %s1_civ_adjective en kidnappant son &#233;pouse. Les autres dirigeants partageant sa foi sont outr&#233;s.</French>
-		<German>Eure Gesandten haben mit dem Raub der Frau des %s1:2_civ_adjective Herrschers das Gastrecht gebrochen. Auch die ihm religi&#246;s verbundenen Herrscher sind entsetzt.</German>
-		<Italian>I tuoi legati hanno rotto le sacri leggi dell'ospitalit&#224; con la rapina della moglie di %s1:2_civ_adjective. Anche gli altri religiosamente affiliati regnanti sono terrorizzati.</Italian>
-		<Spanish>Tus enviados han traicionado la hospitalidad del l&#237;der %s1:1 secuestrando a su esposa. Tambi&#233;n, otros l&#237;deres que segu&#237;an la misma religi&#243;n han quedado horrorizados.</Spanish>
+		<English>Your envoys have betrayed the hospitality of the leader by kidnapping his wife. Also, other leaders who follow the same religion are horrified.</English>
+		<French>Vos &#233;missaires ont trahi l'hospitalit&#233; du dirigeant en kidnappant son &#233;pouse. Les autres dirigeants partageant sa foi sont outr&#233;s.</French>
+		<German>Eure Gesandten haben mit dem Raub der Frau des Herrschers das Gastrecht gebrochen. Auch die ihm religi&#246;s verbundenen Herrscher sind entsetzt.</German>
+		<Italian>I tuoi legati hanno rotto le sacri leggi dell'ospitalit&#224; con la rapina della moglie. Anche gli altri religiosamente affiliati regnanti sono terrorizzati.</Italian>
+		<Spanish>Tus enviados han traicionado la hospitalidad del l&#237;der secuestrando a su esposa. Tambi&#233;n, otros l&#237;deres que segu&#237;an la misma religi&#243;n han quedado horrorizados.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TROJA_3</Tag>
@@ -642,11 +642,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TROJA_OTHER_3</Tag>
-		<English>The crime against his wife has driven the %s1_civ_adjective leader into such a fury that he has declared war on you and asked for the support of leaders who are friendly with him.</English>
-		<French>L'offense envers sa femme a plong&#233; le dirigeant %s1_civ_adjective dans une telle col&#232;re qu'il a requis l'appui de ses alli&#233;s et vous a d&#233;clar&#233; la guerre.</French>
-		<German>Der Raub seiner Frau hat den %s1:2_civ_adjective Herrscher in solche Wut versetzt, dass er euch den Krieg erkl&#228;rt hat und sich Unterst&#252;tzung bei den mit ihm befreundeten Herrschern erbeten hat.</German>
-		<Italian>Il ratto di sua moglie ha messo il regnante %s1:2_civ_adjective in una tale rabbia che ti ha detto la guerra e ha anche chiesto l'assistenza dei suoi alleati.</Italian>
-		<Spanish>El crimen contra su esposa ha conducido al l&#237;der %s1:1 a tal furia que te ha declarado la guerra y ha buscado apoyos de l&#237;deres que son amistosos con &#233;l.</Spanish>
+		<English>The crime against his wife has driven the leader into such a fury that he has declared war on you and asked for the support of leaders who are friendly with him.</English>
+		<French>L'offense envers sa femme a plong&#233; le dirigeant dans une telle col&#232;re qu'il a requis l'appui de ses alli&#233;s et vous a d&#233;clar&#233; la guerre.</French>
+		<German>Der Raub seiner Frau hat den Herrscher in solche Wut versetzt, dass er euch den Krieg erkl&#228;rt hat und sich Unterst&#252;tzung bei den mit ihm befreundeten Herrschern erbeten hat.</German>
+		<Italian>Il ratto di sua moglie ha messo il regnante in una tale rabbia che ti ha detto la guerra e ha anche chiesto l'assistenza dei suoi alleati.</Italian>
+		<Spanish>El crimen contra su esposa ha conducido al l&#237;der a tal furia que te ha declarado la guerra y ha buscado apoyos de l&#237;deres que son amistosos con &#233;l.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_VERSKLAVUNG</Tag>
@@ -1738,11 +1738,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HELLE_DONE_1</Tag>
-		<English>Every inhabitant throughout your realm is now clear that because of your reign, the %s1_civ_adjective civilization is the most glorious of all time.</English>
-		<French>Tous les habitants de votre royaume s'accordent &#224; penser que votre r&#232;gne est le plus glorieux qu'ait connu la civilisation %s1:2_civ_adjective.</French>
-		<German>Jedem Einwohner eures Reichs ist nun klar, dass aufgrund eurer Herrschaft die %s1:2_civ_adjective Zivilisation die glanzvollste aller Zeiten ist.</German>
-		<Italian>Per ogni abitante nel vostro regno &#232; ormai chiaro che a causa del vostro regno, la civilisazione %s1:2_civ_adjective &#232; la pi&#249; gloriosa di tutti i tempi.</Italian>
-		<Spanish>Cada habitante a lo largo de tu reino est&#225; ahora purificado debido a tu reinado, la civilizaci&#243;n %s1:2 es la m&#225;s gloriosa de todos los tiempos.</Spanish>
+		<English>Every inhabitant throughout your realm is now clear that because of [BOLD]your reign[\BOLD], this civilization is the most glorious of all time.</English>
+		<French>Il est d&#233;sormais clair pour chaque habitant de votre empire que gr&#226;ce &#224; [BOLD]votre r&#232;gne[\BOLD], cette civilisation est la plus magnifique de tous les temps.</French>
+		<German>Jedem Einwohner eures Reichs ist nun klar, dass aufgrund [BOLD]Eurer Herrschaft[\BOLD], diese Zivilisation die glanzvollste aller Zeiten ist.</German>
+		<Italian>Ora &#232; chiaro a ogni abitante del tuo impero che, grazie al [BOLD]tuo governo[\BOLD], questa civilt&#224; &#232; la pi&#249; magnifica di tutti i tempi.</Italian>
+		<Spanish>Ahora est&#225; claro para todos los habitantes de vuestro imperio que gracias a [BOLD]vuestro gobierno[\BOLD], esta civilizaci&#243;n es la m&#225;s magn&#237;fica de todos los tiempos.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHER_1</Tag>
@@ -2313,6 +2313,14 @@
 		<Spanish>&#161;Vamos a rendir homenaje a los dioses con esta variedad!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL</Tag>
+		<English>The citizens are demanding a brothel!</English>
+		<French>Les citoyens r&#233;clament une bordel !</French>
+		<German>Eure B&#252;rger verlangen nach einem Freudenhaus!</German>
+		<Italian>I cittadini chiedono un bordello!</Italian>
+		<Spanish>&#161;Los ciudadanos exigen un burdel!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REFLEX_1</Tag>
 		<English>A bow maker in the Military Academy of %s2_city has developed a new, strange forward curved bow, which is clearly superior to conventional bows in range and penetrating power.</English>
 		<French>Un facteur d'arcs dans l'acad&#233;mie militaire de %s2_city a d&#233;velopp&#233; un nouvel arc &#233;trangement courb&#233;, nettement meilleur que les arcs classiques en termes de port&#233;e et de p&#233;n&#233;tration.</French>
@@ -2425,6 +2433,30 @@
 		<Spanish>Cerrar las salas de masajes por un periodo de tiempo indefinido.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_NO_WAR_1</Tag>
+		<English>Sacrifice a slave to appease the god of war!</English>
+		<French>Sacrifiez un esclave pour apaiser le dieu de la guerre !</French>
+		<German>Opfert einen Sklaven um den Kriegsgott zu bes&#228;nftigen!</German>
+		<Italian>Sacrifica uno schiavo per placare il dio della guerra!</Italian>
+		<Spanish>&#161;Sacrifica a un esclavo para apaciguar al dios de la guerra!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NO_WAR_HELP1</Tag>
+		<English>[ICON_BULLET]A slave (unit) is consumed.</English>
+		<French>[ICON_BULLET]Un esclave (unit&#233;) est consomm&#233;.</French>
+		<German>[ICON_BULLET]Ein Sklave (Einheit) wird verbraucht.</German>
+		<Italian>[ICON_BULLET]Uno schiavo (unit&#224;) viene consumato.</Italian>
+		<Spanish>[ICON_BULLET]Se consume un esclavo (unidad).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NO_WAR_HELP3</Tag>
+		<English>[ICON_BULLET]Construction progress -50% [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET]Avancement des travaux -50% [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET]Baufortschitt -50% [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET]Avanzamento della costruzione -50% [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET]Progreso de la construcci&#243;n -50% [ICON_PRODUCTION]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_KAMEL</Tag>
 		<English>You managed to domesticate wild dromedaries! Once you've captured and tamed a few, you'll soon find that it makes an ideal transport animal. No other farm animal is considered as tough, frugal and yet powerful as this legendary desert ship.</English>
 		<French>Vous avez r&#233;ussi &#224; domestiquer des dromadaires sauvages ! Une fois que vous en avez captur&#233; et apprivois&#233; quelques-uns, vous d&#233;couvrirez rapidement qu'il s'agit d'un animal de transport id&#233;al. Aucun autre animal de ferme n'est consid&#233;r&#233; comme aussi dur, frugal et pourtant puissant que ce l&#233;gendaire navire du d&#233;sert.</French>
@@ -2435,42 +2467,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KAMEL</Tag>
 		<English>Let's have a camel race right away!</English>
-		<French>Faisons une course de chameaux tout de suite !</French>
+		<French>Faisons une course de chameaux tout de suiteÂ !</French>
 		<German>Lasst uns sogleich ein Kamelrennen veranstalten!</German>
 		<Italian>Facciamo subito una corsa di cammelli!</Italian>
 		<Spanish>&#161;Hagamos una carrera de camellos ahora mismo!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_NO_WAR</Tag>
-		<English>Your young warriors yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. You prevent this event if you are at war with another people or believe in a monotheistic religion.</English>
-		<French>Vos jeunes guerriers aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Vous emp&#234;chez cet &#233;v&#233;nement si vous &#234;tes en guerre avec un autre peuple ou si vous croyez en une religion monoth&#233;iste.</French>
-		<German>Eure jungen Krieger sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Ihr verhindert dieses Event, wenn Ihr mit einem anderen Volk Krieg f&#252;hrt oder an eine monotheistische Religion glaubt.</German>
-		<Italian>I tuoi giovani guerrieri bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Impedisci questo evento se sei in guerra con un altro popolo o credi in una religione monoteista.</Italian>
-		<Spanish>Tus j&#243;venes guerreros anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Evitas este evento si est&#225;s en guerra con otro pueblo o si crees en una religi&#243;n monote&#237;sta.</Spanish>
+		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR</Tag>
+		<English>The young warriors of %s2_city yearn for the favor of the god of war. But without war and conquest against another country, this is difficult to implement. You prevent this event if you are at war with another people or believe in a monotheistic religion.</English>
+		<French>Les jeunes guerriers de %s2_city aspirent &#224; la faveur du dieu de la guerre. Mais sans guerre et conqu&#234;te contre un autre pays, cela est difficile &#224; mettre en oeuvre. Vous emp&#234;chez cet &#233;v&#233;nement si vous &#234;tes en guerre avec un autre peuple ou si vous croyez en une religion monoth&#233;iste.</French>
+		<German>Die jungen Krieger in %s2_city sehnen sich nach der Gunst des Kriegsgottes. Aber ohne Krieg und Eroberung gegen ein anderes Land l&#228;sst sich das schwer umsetzen. Ihr verhindert dieses Event, wenn Ihr mit einem anderen Volk Krieg f&#252;hrt oder an eine monotheistische Religion glaubt.</German>
+		<Italian>I giovani guerrieri di %s2_city bramano il favore del dio della guerra. Ma senza guerra e conquista contro un altro paese, questo &#232; difficile da attuare. Impedisci questo evento se sei in guerra con un altro popolo o credi in una religione monoteista.</Italian>
+		<Spanish>Los j&#243;venes guerreros de %s2_city anhelan el favor del dios de la guerra. Pero sin guerra y conquista contra otro pa&#237;s, esto es dif&#237;cil de implementar. Evitas este evento si est&#225;s en guerra con otro pueblo o si crees en una religi&#243;n monote&#237;sta.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_1</Tag>
-		<English>Give the young warriors compensation so they can drown their frustrations in alcohol.</English>
-		<French>Donnez aux jeunes guerriers une compensation pour qu'ils puissent noyer leurs frustrations dans l'alcool.</French>
-		<German>Gebt den jungen Kriegern eine Entsch&#228;digung, sodass sie ihren Frust in Alkohol ertr&#228;nken k&#246;nnen.</German>
-		<Italian>Dai un compenso ai giovani guerrieri in modo che possano annegare le loro frustrazioni nell'alcool.</Italian>
-		<Spanish>Dales una compensaci&#243;n a los j&#243;venes guerreros para que puedan ahogar sus frustraciones en alcohol.</Spanish>
+		<Tag>TXT_KEY_EVENT_NO_WAR_3</Tag>
+		<English>Let them go, but protect our construction sites with our garrisons. (-15 [ICON_GOLD], -50% [ICON_FOOD])</English>
+		<French>Laissez-les partir, mais prot&#233;gez nos chantiers avec nos garnisons. (-15 [ICON_GOLD], -50% [ICON_FOOD])</French>
+		<German>Lasst sie ziehen, aber sch&#252;tzt unsere Baustellen mit unseren Garnisonen. (-15 [ICON_GOLD], -50% [ICON_FOOD])</German>
+		<Italian>Lasciateli andare, ma proteggi i nostri cantieri con i nostri presidi. (-15 [ICON_GOLD], -50% [ICON_FOOD])</Italian>
+		<Spanish>D&#233;jalos ir, pero protege nuestras obras con nuestras guarniciones. (-15 [ICON_GOLD], -50% [ICON_FOOD])</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_2</Tag>
-		<English>Let them go, but protect the neighborhoods of our wealthy citizens.</English>
-		<French>Laissez-les partir, mais prot&#233;gez les quartiers de nos riches citoyens.</French>
-		<German>Lasst sie ziehen, aber sch&#252;tzt die Stadtteile unserer wohlhabenden B&#252;rger.</German>
-		<Italian>Lasciali andare, ma proteggi i quartieri dei nostri ricchi cittadini.</Italian>
-		<Spanish>D&#233;jalos ir, pero protege los vecindarios de nuestros ciudadanos ricos.</Spanish>
+		<Tag>TXT_KEY_EVENT_NO_WAR_4</Tag>
+		<English>Let them go, but protect our food supplies with our garrisons. (-15 [ICON_GOLD], -50% [ICON_PRODUCTION])</English>
+		<French>Laissez-les partir, mais prot&#233;gez nos r&#233;serves alimentaires avec nos garnisons. (-15 [ICON_GOLD], -50% [ICON_PRODUCTION])</French>
+		<German>Lasst sie ziehen, aber sch&#252;tzt unsere Nahrungsmittelvorr&#228;te mit unseren Garnisonen. (-15 [ICON_GOLD], -50% [ICON_PRODUCTION])</German>
+		<Italian>Lasciali andare, ma proteggi le nostre scorte di cibo con i nostri presidi. (-15 [ICON_GOLD], -50% [ICON_PRODUCTION])</Italian>
+		<Spanish>D&#233;jenlos ir, pero protejan nuestros suministros de alimentos con nuestras guarniciones. (-15 [ICON_GOLD], -50% [ICON_PRODUCTION])</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NO_WAR_3</Tag>
-		<English>Let them roam the streets of the city, frustrating and plundering.</English>
-		<French>Laissez-les errer dans les rues de la ville, frustrant et pillant.</French>
-		<German>Lasst sie frustrierend und pl&#252;ndernd durch die Gassen der Stadt ziehen.</German>
-		<Italian>Lasciali vagare per le strade della citt&#224;, frustrando e saccheggiando.</Italian>
-		<Spanish>D&#233;jalos vagar por las calles de la ciudad, frustrando y saqueando.</Spanish>
+		<Tag>TXT_KEY_EVENT_NO_WAR_5</Tag>
+		<English>Let them roam the streets of the city, frustrating and plundering. (-50% [ICON_FOOD], -50% [ICON_PRODUCTION])</English>
+		<French>Laissez-les errer dans les rues de la ville, frustrant et pillant. (-50% [ICON_FOOD], -50% [ICON_PRODUCTION])</French>
+		<German>Lasst sie frustrierend und pl&#252;ndernd durch die Gassen der Stadt ziehen. (-50% [ICON_FOOD], -50% [ICON_PRODUCTION])</German>
+		<Italian>Lasciali vagare per le strade della citt&#224;, frustrando e saccheggiando. (-50% [ICON_FOOD], -50% [ICON_PRODUCTION])</Italian>
+		<Spanish>D&#233;jalos vagar por las calles de la ciudad, frustrando y saqueando. (-50% [ICON_FOOD], -50% [ICON_PRODUCTION])</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MEUTEREI_2</Tag>
@@ -2479,6 +2511,22 @@
 		<German>Die Ruderer auf eurer Quadrireme haben sich zusammengeschlossen und die Aufseher &#252;berw&#228;ltigt.</German>
 		<Italian>I rematori della tua quadrireme si sono ammutinati e hanno sopraffatto i sorveglianti.</Italian>
 		<Spanish>Los remeros de tu quatrirreme se han unido y abrumado a los capataces.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CITY_FIRE_2</Tag>
+		<English>The city of %s2_city fell victim to a huge fire.</English>
+		<French>La ville de %s2_city a &#233;t&#233; victime d'un immense incendie.</French>
+		<German>Die Stadt %s2_city wurde Opfer eines gewaltigen Brandes.</German>
+		<Italian>La citt&#224; di %s2_city &#232; stata vittima di un enorme incendio.</Italian>
+		<Spanish>La ciudad de %s2_city fue v&#237;ctima de un gran incendio.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CITY_FIRE_1</Tag>
+		<English>A severe fire raged in the %s1_civ_adjective city of %s2_city.</English>
+		<French>Un grave incendie a fait rage dans la ville %s1:2_civ_adjective de %s2_city.</French>
+		<German>In der %s1:2_civ_adjective Stadt %s2_city hat ein heftiger Brand gew&#252;tet.</German>
+		<Italian>Un grave incendio &#232; divampato nella citt&#224; %s1_civ_adjective di %s2_city.</Italian>
+		<Spanish>Un severo incendio arras&#243; la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_KUPFER</Tag>
@@ -2495,6 +2543,38 @@
 		<German>In den H&#252;geln ist ein reiches Bleivorkommen entdeckt worden!</German>
 		<Italian>Nelle colline &#232; stato scoperto un ricco filone di piombo!</Italian>
 		<Spanish>&#161;Se ha descubierto una rica veta de plomo en las colinas!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CITY_FIRE_1</Tag>
+		<English>A violent fire raged in the city of %s2_city.</English>
+		<French>Un violent incendie a fait rage dans la ville de %s2_city.</French>
+		<German>Ein heftiger Brand hat in der Stadt %s2_city gew&#252;tet.</German>
+		<Italian>Un violento incendio &#232; divampato nella citt&#224; di %s2_city.</Italian>
+		<Spanish>Un violento incendio arras&#243; la ciudad de %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CITY_FIRE_2</Tag>
+		<English>The %s1_civ_adjective city of %s2_city fell victim to a huge fire.</English>
+		<French>La ville %s1:2_civ_adjective de %s2_city a &#233;t&#233; victime d'un immense incendie.</French>
+		<German>Die %s1:3_civ_adjective Stadt %s2_city ist Opfer eines gewaltigen Brandes geworden.</German>
+		<Italian>La citt&#224; %s1_civ_adjective di %s2_city &#232; stata vittima di un enorme incendio.</Italian>
+		<Spanish>La ciudad %s1:2_civ_adjective de %s2_city fue v&#237;ctima de un gran incendio.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CITY_FIRE_3</Tag>
+		<English>A violent fire destroyed parts of the %s1_civ_adjective city of %s2_city.</English>
+		<French>Un violent incendie a d&#233;truit des parties de la ville %s1:2_civ_adjective de %s2_city.</French>
+		<German>Ein heftiger Brand zerst&#246;rte Teile der %s1:2_civ_adjective Stadt %s2_city.</German>
+		<Italian>Un violento incendio distrusse parti della citt&#224; %s1_civ_adjective di %s2_city.</Italian>
+		<Spanish>Un violento incendio destruy&#243; partes de la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CITY_FIRE_4</Tag>
+		<English>A gigantic fire seemed to swallow the %s1_civ_adjective city of %s2_city.</English>
+		<French>Un gigantesque incendie semblait engloutir la ville %s1:2_civ_adjective de %s2_city.</French>
+		<German>Ein gigantischer Brand schien die %s1:3_civ_adjective Stadt %s2_city zu verschlucken.</German>
+		<Italian>Un gigantesco incendio sembr&#242; inghiottire la citt&#224; %s1_civ_adjective di %s2_city.</Italian>
+		<Spanish>Un fuego gigantesco pareci&#243; devorar la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MEUTEREI_3</Tag>
@@ -2535,5 +2615,93 @@
 		<German>Ein Meisterschmied hat verbesserte Steigb&#252;gel entwickelt, die es den berittenen %s1:2_civ_adjective Einheiten erm&#246;glichen, schneller anzugreifen und anschlie&#223;end den R&#252;ckzug anzutreten ohne gleich vom Pferd zu fallen.</German>
 		<Italian>Un maestro fabbro ha sviluppato dei migliori staffa di cavallo, aumentando le probabilit&#224; delle unit&#224; montate %s1_civ_adjective di colpire e poi fuggire senza cadere immediatamente da cavallo.</Italian>
 		<Spanish>Un maestro herrero ha desarrollado estribos mejorados, que aumentan las posibilidades de que las unidades montadas %s1:4 ataquen y luego se retiren sin caerse inmediatamente de sus caballos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CITY_FIRE_3</Tag>
+		<English>A violent fire destroyed parts of the city of %s2_city.</English>
+		<French>Un violent incendie a d&#233;truit des parties de la ville de %s2_city.</French>
+		<German>Ein heftiger Brand zerst&#246;rte Teile der Stadt %s2_city.</German>
+		<Italian>Un violento incendio distrusse parti della citt&#224; di %s2_city.</Italian>
+		<Spanish>Un violento incendio destruy&#243; partes de la ciudad de %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CITY_FIRE_4</Tag>
+		<English>A gigantic fire seemed to swallow the city of %s2_city.</English>
+		<French>Un gigantesque incendie semblait engloutir la ville de %s2_city.</French>
+		<German>Ein gigantischer Brand schien die Stadt %s2_city zu verschlucken.</German>
+		<Italian>Un gigantesco incendio sembr&#242; inghiottire la citt&#224; di %s2_city.</Italian>
+		<Spanish>Un fuego gigantesco pareci&#243; devorar la ciudad de %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CITY_FIRE_5</Tag>
+		<English>A violent fire broke out in the %s1_civ_adjective city of %s2_city.</English>
+		<French>Un violent incendie s'est d&#233;clar&#233; dans la ville %s1:2_civ_adjective de %s2_city.</French>
+		<German>In der %s1:2_civ_adjective Stadt %s2_city ist ein heftiger Brand ausgebrochen.</German>
+		<Italian>Un violento incendio &#232; scoppiato nella citt&#224; %s1_civ_adjective di %s2_city.</Italian>
+		<Spanish>Un violento incendio se desat&#243; en la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CITY_FIRE_5</Tag>
+		<English>A violent fire broke out in %s2_city.</English>
+		<French>Un violent incendie se d&#233;clare &#224; %s2_city.</French>
+		<German>In %s2_city ist ein heftiger Brand ausgebrochen.</German>
+		<Italian>Un violento incendio &#232; scoppiato a %s2_city.</Italian>
+		<Spanish>En %s2_city se produjo un violento incendio.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL_1</Tag>
+		<English>It's scandalous! The residents of %s2_city crave fun and distraction.</English>
+		<French>C'est scandaleux! Les habitants de %s2_city ont soif de divertissement et de distraction.</French>
+		<German>Es ist skandal&#246;s! Die Einwohner von %s2_city verlangen nach Spa&#223; und Ablenkung.</German>
+		<Italian>&#200; scandaloso! Gli abitanti di %s2_city bramano divertimento e distrazione.</Italian>
+		<Spanish>&#161;Es escandaloso! Los residentes de %s2_city anhelan diversi&#243;n y distracci&#243;n.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL_2</Tag>
+		<English>The residents of %s2_city are getting stinky! There is no brothel anywhere!</English>
+		<French>Les habitants de %s2_city r&#233;clament une bordel !</French>
+		<German>Die Bewohner von %s2_city werden stinkig! Es gibt nirgends ein Freudenhaus!</German>
+		<Italian>Gli abitanti di %s2_city stanno diventando puzzolenti! Non c'&#232; nessun bordello da nessuna parte!</Italian>
+		<Spanish>&#161;Los residentes de %s2_city se est&#225;n poniendo apestosos! &#161;No hay ning&#250;n burdel por ning&#250;n lado!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL_3</Tag>
+		<English>The men in %s2_city are taking to the streets, because there isn't a brothel here far and wide!</English>
+		<French>Les hommes de %s2_city descendent dans la rue, parce qu'il n'y a pas de bordel ici, partout !</French>
+		<German>Die M&#228;nner in %s2_city gehen auf die Stra&#223;e, denn es gibt hier weit und breit kein Freudenhaus!</German>
+		<Italian>Gli uomini di %s2_city scendono in strada, perch&#233; non c'&#232; un bordello qui in lungo e in largo!</Italian>
+		<Spanish>&#161;Los hombres de %s2_city est&#225;n saliendo a las calles, porque aqu&#237; no hay un burdel en todas partes!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL_4</Tag>
+		<English>The men in %s2_city complain that there is simply nothing worth staying in the city for.</English>
+		<French>Les hommes de %s2_city se plaignent que rien ne vaut la peine de rester en ville.</French>
+		<German>Die M&#228;nner in %s2_city beklagen, dass es hier einfach nichts gibt, wof&#252;r es sich lohnt in der Stadt zu bleiben.</German>
+		<Italian>Gli uomini di %s2_city si lamentano del fatto che semplicemente non c'&#232; nulla per cui valga la pena restare in citt&#224;.</Italian>
+		<Spanish>Los hombres de %s2_city se quejan de que simplemente no hay nada por lo que valga la pena quedarse en la ciudad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_BORDELL_5</Tag>
+		<English>The men of %s2_city go to the barricades. They demand some variety from their everyday lives and... um... yes, from their wives too.</English>
+		<French>Les hommes de %s2_city se dirigent vers les barricades. Ils exigent une certaine vari&#233;t&#233; dans leur vie quotidienne et... euh... oui, de la part de leurs femmes aussi.</French>
+		<German>Die M&#228;nner von %s2_city gehen auf die Barrikaden. Sie verlangen etwas Abwechslung von ihrem Alltag und... &#228;hm... ja, auch ihren Frauen.</German>
+		<Italian>Gli uomini di %s2_city vanno sulle barricate. Chiedono un po' di variet&#224; dalla loro vita quotidiana e... ehm... s&#236;, anche dalle loro mogli.</Italian>
+		<Spanish>Los hombres de %s2_city van a las barricadas. Exigen cierta variedad en su vida cotidiana y... um... s&#237;, tambi&#233;n en sus esposas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NO_WAR_2</Tag>
+		<English>Give the young warriors compensation so they can drown their frustrations in alcohol. (-30 [ICON_GOLD])</English>
+		<French>Donnez aux jeunes guerriers une compensation pour qu'ils puissent noyer leurs frustrations dans l'alcool. (-30 [ICON_GOLD])</French>
+		<German>Gebt den jungen Kriegern eine Entsch&#228;digung, sodass sie ihren Frust in Alkohol ertr&#228;nken k&#246;nnen. (-30 [ICON_GOLD])</German>
+		<Italian>Dai un compenso ai giovani guerrieri in modo che possano annegare le loro frustrazioni nell'alcool. (-30 [ICON_GOLD])</Italian>
+		<Spanish>Dales una compensaci&#243;n a los j&#243;venes guerreros para que puedan ahogar sus frustraciones en alcohol. (-30 [ICON_GOLD])</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NO_WAR_HELP2</Tag>
+		<English>[ICON_BULLET]The town must have a tavern or brewery or access to wine.</English>
+		<French>[ICON_BULLET]La ville doit avoir une taverne ou une brasserie ou avoir acc&#232;s au vin.</French>
+		<German>[ICON_BULLET]Die Stadt muss eine Braust&#228;tte oder Taverne besitzen oder Zugang zu Wein haben.</German>
+		<Italian>[ICON_BULLET]La citt&#224; deve avere una taverna o un birrificio o avere accesso al vino.</Italian>
+		<Spanish>[ICON_BULLET]El pueblo debe tener taberna o cervecer&#237;a o acceso al vino.</Spanish>
 	</TEXT>
 </Civ4GameText>

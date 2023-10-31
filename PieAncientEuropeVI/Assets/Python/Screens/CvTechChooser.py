@@ -1004,11 +1004,12 @@ class CvTechChooser:
 																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 679, 679, False)
 								fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_MANUFAKTUREN"):
-								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2MANUFAKTUR_FOOD").getPath(),
-																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 680, 680, False)
-								fX += X_INCREMENT
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2MANUFAKTUR_PROD").getPath(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 681, 681, False)
+								fX += X_INCREMENT
+						elif i == gc.getInfoTypeForString("TECH_WASSERRAD"):
+								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVE2BROTMANUFAKTUR").getPath(),
+																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 680, 680, False)
 								fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_ENSLAVEMENT"):
 								screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_SLAVES_PALACE").getPath(), iX +
@@ -1077,6 +1078,11 @@ class CvTechChooser:
 								fX += X_INCREMENT
 						elif i == gc.getInfoTypeForString("TECH_MEDICINE3") or i == gc.getInfoTypeForString("TECH_ANATOMIE"):
 								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Units/button_slave.dds", iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 721, 19, False)
+								fX += X_INCREMENT
+
+						# Auswanderer und Siedler können Dörfer zu Gemeinden vergrößern
+						elif i == gc.getInfoTypeForString("TECH_HEILKUNDE"):
+								screen.addDDSGFCAt("", szTechRecord, "Art/Interface/Buttons/Actions/button_action_slave2village.dds", iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 721, 21, False)
 								fX += X_INCREMENT
 
 						# Limes

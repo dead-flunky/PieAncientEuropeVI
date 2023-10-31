@@ -2104,21 +2104,21 @@
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<!-- LEAF 2x2 BUILDINGS -->
-								<!-- GENERIC PALACES -->
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_african_palace.nif</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_MONGOL</Attribute>
-												<Attribute Class="Era">ERA_ANCIENT</Attribute>
-												<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-												<Scale>1.15</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_african_palace.nif</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_MONGOL</Attribute>
-												<Attribute Class="Era">ERA_ALL</Attribute>
-												<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-												<Scale>1.15</Scale>
-								</ArtRef>
+		<!-- GENERIC PALACES -->
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_african_palace.nif</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_ALL,!ARTSTYLE_MONGOL</Attribute>
+						<Attribute Class="Era">ERA_ANCIENT</Attribute>
+						<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+						<Scale>1.15</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_african_palace.nif</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_MONGOL</Attribute>
+						<Attribute Class="Era">ERA_ALL</Attribute>
+						<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+						<Scale>1.15</Scale>
+		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_2x2">
 			<Scale>1.0</Scale>
 		</ArtRef>
@@ -2131,56 +2131,49 @@
 		<Width>3</Width>
 		<Height>2</Height>
 		<!-- LEAF 3x2 BUILDINGS -->
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_eastern_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_BRONZE,ERA_IRON</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST,ARTSTYLE_EGYPT</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.2</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eastern_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST,ARTSTYLE_EGYPT</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.2</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eu_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_BRONZE,ERA_IRON,ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_NORSE</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.15</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eu_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_BRONZE,ERA_IRON</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN,ARTSTYLE_ANATOLIA,ARTSTYLE_INDIA</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.15</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_greco_roman_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN,ARTSTYLE_ANATOLIA</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.25</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/palaces/afro_militaryacademy/militaryacademy.nif</Attribute>
-												<Attribute Class="Era">ERA_BRONZE,ERA_IRON,ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
-												<Scale>1.25</Scale>
-								</ArtRef>
-								<ArtRef Name="building:LSYSTEM_PALACE">
-												 <Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_eastern_palace.nif</Attribute>
-												<Attribute Class="Era">ERA_IRON</Attribute>
-												<Attribute Class="ArtStyle">ARTSTYLE_INDIA</Attribute>
-												<Attribute Class="Rotation">0,180</Attribute>
-												<Scale>1.25</Scale>
-								</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/an_eastern_palace.nif</Attribute>
+						<Attribute Class="Era">ERA_BRONZE,ERA_IRON</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST,ARTSTYLE_EGYPT,ARTSTYLE_INDIA</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Scale>1.2</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eastern_palace.nif</Attribute>
+						<Attribute Class="Era">ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST,ARTSTYLE_EGYPT,ARTSTYLE_INDIA</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Scale>1.2</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eu_palace.nif</Attribute>
+						<Attribute Class="Era">ERA_BRONZE,ERA_IRON,ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_NORSE</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Scale>1.15</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_eu_palace.nif</Attribute>
+						<Attribute Class="Era">ERA_BRONZE,ERA_IRON</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN,ARTSTYLE_ANATOLIA</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Scale>1.15</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Palaces/clas_greco_roman_palace.nif</Attribute>
+						<Attribute Class="Era">ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN,ARTSTYLE_ANATOLIA</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Scale>1.25</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_PALACE">
+						<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/palaces/afro_militaryacademy/militaryacademy.nif</Attribute>
+						<Attribute Class="Era">ERA_BRONZE,ERA_IRON,ERA_CLASSICAL,ERA_LATE_ANTIQUITY,ERA_MEDIEVAL</Attribute>
+						<Attribute Class="ArtStyle">ARTSTYLE_AFRICA</Attribute>
+						<Attribute Class="Rotation">0,180</Attribute>
+						<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+						<Scale>1.25</Scale>
+		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_3x2">
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Scale>1.0</Scale>

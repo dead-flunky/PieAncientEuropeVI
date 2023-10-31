@@ -730,11 +730,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CELERES_STRATEGY</Tag>
-		<English>This elite unit can be commended from a Hasta Spearman who has achieved the status of a veteran (for Romans and Etruscans only).</English>
-		<French>Cette unit&#233; d'&#233;lite peut &#234;tre promue &#224; partir d'un Lancier hasta ayant acquis le statut de V&#233;t&#233;ran (uniquement pour les romains et les &#233;trusques).</French>
-		<German>Diese Eliteeinheit kann aus einem Hasta-K&#228;mpfer erstellt werden, der den Status eines Veterans erreicht hat (nur f&#252;r Etrusker und R&#246;mer). </German>
-		<Italian>Questa unit&#224; d'elite pu&#242; essere creato da un Hasta-combattente che ha raggiunto lo status di veterano (solo per romano e etrusco).</Italian>
-		<Spanish>Esta unidad de &#233;lite puede ser promovida de un guerrero con hasta que ha conseguido el estatus de veterano (s&#243;lo para los etruscos y romanos).</Spanish>
+		<English>This elite unit can be commended from a Hasta Spearman who has achieved the status of a veteran (Romans and Etruscans).</English>
+		<French>Cette unit&#233; d'&#233;lite peut &#234;tre promue &#224; partir d'un Lancier hasta ayant acquis le statut de V&#233;t&#233;ran (romains et &#233;trusques).</French>
+		<German>Diese Eliteeinheit kann aus einem Hasta-K&#228;mpfer erstellt werden, der den Status eines Veterans erreicht hat (Etrusker und R&#246;mer).</German>
+		<Italian>Questa unit&#224; d'elite pu&#242; essere creato da un Hasta-combattente che ha raggiunto lo status di veterano (romano e etrusco).</Italian>
+		<Spanish>Esta unidad de &#233;lite puede ser promovida de un guerrero con hasta que ha conseguido el estatus de veterano (etruscos y romanos).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SAMNIT_STRATEGY</Tag>

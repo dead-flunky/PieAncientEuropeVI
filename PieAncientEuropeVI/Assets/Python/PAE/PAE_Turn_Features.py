@@ -1237,15 +1237,20 @@ def doMoveBonus(BonusPlots):
 						for iI in range(DirectionTypes.NUM_DIRECTION_TYPES):
 								loopPlot = plotDirection(iX, iY, DirectionTypes(iI))
 								if loopPlot is not None and not loopPlot.isNone():
-										if not loopPlot.isWater() and not loopPlot.isPeak():
-												if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce:
-														if loopPlot.canHaveBonus(eBonus, True):
-																if eBonus in LNoForest and loopPlot.getFeatureType() in LForests:
-																		continue
-																if eBonus == gc.getInfoTypeForString("BONUS_IVORY") and loopPlot.getFeatureType() != eJungle:
-																		continue
-																if loopPlot.getImprovementType() != -1 or loopPlot.isRoute():
-																		continue
+										if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce:
+												if loopPlot.canHaveBonus(eBonus, True):
+														if eBonus in LNoForest and loopPlot.getFeatureType() in LForests:
+																continue
+														if eBonus == gc.getInfoTypeForString("BONUS_IVORY") and loopPlot.getFeatureType() != eJungle:
+																continue
+														if loopPlot.getImprovementType() != -1 or loopPlot.isRoute():
+																continue
+														# Wasserplots nur bei Fisch
+														if loopPlot.isWater():
+																if eBonus == gc.getInfoTypeForString("BONUS_FISH"):
+																		lPlots.append(loopPlot)
+														# nur Landplots
+														else:
 																lPlots.append(loopPlot)
 
 						if lPlots:
@@ -1257,7 +1262,8 @@ def doMoveBonus(BonusPlots):
 										pPlayer = gc.getPlayer(iPlayer)
 										if pPlayer is not None and not pPlayer.isNone() and pPlayer.isAlive():
 												iTeam = pPlayer.getTeam()
-												if gc.getPlayer(iPlayer).isHuman() and (pPlot.isRevealed(iTeam, False) or pNewPlot.isRevealed(iTeam, False)):
+												#if gc.getPlayer(iPlayer).isHuman() and (pPlot.isRevealed(iTeam, False) or pNewPlot.isRevealed(iTeam, False)):
+												if gc.getPlayer(iPlayer).isHuman() and pPlot.getOwner() == iPlayer:
 														if eBonus == gc.getInfoTypeForString("BONUS_FISH"):
 																text = "TXT_KEY_INFO_MOVE_ANIMAL_BONUS_FISH"
 														else:

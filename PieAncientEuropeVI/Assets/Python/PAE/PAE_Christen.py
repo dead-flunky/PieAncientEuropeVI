@@ -241,24 +241,25 @@ def removePagans(pCity, iReligion):
 
 
 def doReligionsKonflikt(pCity):
-
-		# Chance 80% to abort
-		iChance = CvUtil.myRandom(10, "ReligionsKonflikt")
-		if iChance > 1:
-			return False
-
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
 		pTeam = gc.getTeam(pPlayer.getTeam())
-		
+
+		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HERESY")): iChance = 15
+		else: iChance = 5
+
+		# Chance to abort
+		if CvUtil.myRandom(100, "ReligionsKonflikt") > iChance:
+			return False
+
 		# 2%: Poly Reli als Staatsreli, aber kein aktiver Krieg
-		if gc.getGame().getHandicapType() > 5 and CvUtil.myRandom(100, "ReligionsKonflikt1") < 2 and pPlayer.getStateReligion() not in L.LMonoReligions:
-				if not pTeam.getAtWarCount(True):
-						pCity.changeOccupationTimer(1)
-						if pPlayer.isHuman():
-								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1", (pCity.getName(),)),
-								None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
-						#pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_NO_WAR"))
+		if gc.getGame().getHandicapType() > 2 and pPlayer.getStateReligion() not in L.LMonoReligions and CvUtil.myRandom(50, "ReligionsKonflikt1") == 1:
+				#if not pTeam.getAtWarCount(True):
+						#pCity.changeOccupationTimer(1)
+						#if pPlayer.isHuman():
+						#		CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_1", (pCity.getName(),)),
+						#		None, 2, "Art/Interface/Buttons/General/button_icon_angry.dds", ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
+				pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_NO_WAR"))
 				return True
 
 		# 3%: Stadt hat 2 verschiedene Relis

@@ -61,6 +61,8 @@ LKeilUnits = []
 LNoSchildwallUnits = []
 LDrillUnits = []
 LTestudoUnits = []
+LUnits4Praetorians = []
+LPraetorians = []
 LFluchtCombats = []
 LFormationen = []
 LUnitsNoAIReservists = []
@@ -88,6 +90,7 @@ LTemples = []
 LPromoPillage = []
 LWoodRemovedByLumberCamp = []
 LCityGarrison = []
+LVeteranForbiddenPromos = []
 LVeteranForbiddenPromos1 = []
 LCityRaider = []
 LVeteranForbiddenPromos4 = []
@@ -103,6 +106,7 @@ LNearEast = []
 LNorthern = []
 LegioNames = []
 LHeldendenkmal = []
+LRankUnits = []
 LNoRankUnits = []
 LRankUnitBuilt = []
 LAngstUnits = []
@@ -115,6 +119,7 @@ LFireUnits = []
 LCamelUnits = []
 LUnits4HorseSwap = []
 LMovingBonus = []
+
 
 
 def init():
@@ -164,6 +169,8 @@ def init():
 		global LNoSchildwallUnits
 		global LDrillUnits
 		global LTestudoUnits
+		global LUnits4Praetorians
+		global LPraetorians
 		global LFluchtCombats
 		global LFormationen
 		global LUnitsNoAIReservists
@@ -191,6 +198,7 @@ def init():
 		global LPromoPillage
 		global LWoodRemovedByLumberCamp
 		global LCityGarrison
+		global LVeteranForbiddenPromos
 		global LVeteranForbiddenPromos1
 		global LCityRaider
 		global LVeteranForbiddenPromos4
@@ -206,6 +214,7 @@ def init():
 		global LNorthern
 		global LegioNames
 		global LHeldendenkmal
+		global LRankUnits
 		global LNoRankUnits
 		global LRankUnitBuilt
 		global LAngstUnits
@@ -295,6 +304,7 @@ def init():
 				gc.getInfoTypeForString("UNITCOMBAT_SKIRMISHER")
 		]
 		LMeleeCombats = [
+				gc.getInfoTypeForString("UNITCOMBAT_MELEE"),
 				gc.getInfoTypeForString("UNITCOMBAT_AXEMAN"),
 				gc.getInfoTypeForString("UNITCOMBAT_SWORDSMAN"),
 				gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN")
@@ -490,6 +500,20 @@ def init():
 				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"),
 				gc.getInfoTypeForString("UNIT_PRAETORIAN2"),
 				gc.getInfoTypeForString("UNIT_PRAETORIAN3")
+		]
+		LUnits4Praetorians = [
+				gc.getInfoTypeForString("UNIT_LEGION"),
+				gc.getInfoTypeForString("UNIT_LEGION2"),
+				gc.getInfoTypeForString("UNIT_LEGION_OPTIO"),
+				gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"),
+				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"),
+				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2")
+		]
+		LPraetorians = [
+				gc.getInfoTypeForString("UNIT_PRAETORIAN"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN2"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN3"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN_RIDER")
 		]
 		LFluchtCombats = [
 				gc.getInfoTypeForString("UNITCOMBAT_MELEE"),
@@ -706,10 +730,10 @@ def init():
 				gc.getInfoTypeForString("PROMOTION_PILLAGE5"): gc.getInfoTypeForString("BUILDING_PROMO_PILLAGE"),
 				gc.getInfoTypeForString("PROMOTION_NAVIGATION4"): gc.getInfoTypeForString("BUILDING_PROMO_NAVI")
 		}
+		# Upgrades for slaves and emigrants
 		LVillages = [
 				gc.getInfoTypeForString("IMPROVEMENT_COTTAGE"),
 				gc.getInfoTypeForString("IMPROVEMENT_HAMLET"),
-				gc.getInfoTypeForString("IMPROVEMENT_VILLAGE"),
 				gc.getInfoTypeForString("IMPROVEMENT_COTTAGE_HILL"),
 				gc.getInfoTypeForString("IMPROVEMENT_HAMLET_HILL")
 		]
@@ -817,6 +841,12 @@ def init():
 				gc.getInfoTypeForString("PROMOTION_CITY_GARRISON3"),
 				gc.getInfoTypeForString("PROMOTION_CITY_GARRISON4"),
 				gc.getInfoTypeForString("PROMOTION_CITY_GARRISON5")
+		]
+		LVeteranForbiddenPromos = [
+				gc.getInfoTypeForString("PROMOTION_COMBAT3"),
+				gc.getInfoTypeForString("PROMOTION_COMBAT4"),
+				gc.getInfoTypeForString("PROMOTION_COMBAT5"),
+				gc.getInfoTypeForString("PROMOTION_COMBAT6")
 		]
 		LVeteranForbiddenPromos1 = [
 				gc.getInfoTypeForString("PROMOTION_SKIRMISH1"),
@@ -1271,6 +1301,141 @@ def init():
 				gc.getInfoTypeForString("BONUS_HUNDE")
 		]
 
+		# List besteht aus: Civ, iUnit oder (-1: Fusstrupp, -2: Beritten), iNewUnit, req Promo
+		# Diese Liste befindet sich auch in CvPediaMain (inkl UNIT_PRAETORIANs) (RangPromoUp)
+		# UNIT_PRAETORIAN upgrades gehen via XML
+		# CvPediaMain: (-1,0,0,0) = Leerzeile
+		iRome = gc.getInfoTypeForString("CIVILIZATION_ROME")
+		LRankUnits = [
+						(iRome, gc.getInfoTypeForString("UNIT_ARCHER_ROME"), gc.getInfoTypeForString("UNIT_ARCHER_LEGION"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_ARCHER_LEGION"), gc.getInfoTypeForString("UNIT_HORSE_ARCHER_ROMAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_HASTA"), gc.getInfoTypeForString("UNIT_CELERES"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_PRINCIPES"), gc.getInfoTypeForString("UNIT_TRIARII"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_HASTATI"), gc.getInfoTypeForString("UNIT_TRIARII"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_PILUMNI"), gc.getInfoTypeForString("UNIT_TRIARII"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_TRIARII"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION"), gc.getInfoTypeForString("UNIT_LEGION_OPTIO"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_OPTIO"), gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_7")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"), gc.getInfoTypeForString("UNIT_LEGION_TRIBUN"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_11")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_OPTIO"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION2"), gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"), gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_7")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"), gc.getInfoTypeForString("UNIT_LEGION_TRIBUN"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_11")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION2"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_OPTIO2"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"), gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						#(iRome, gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("UNIT_PRAETORIAN2"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						#(iRome, gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						#(iRome, gc.getInfoTypeForString("UNIT_PRAETORIAN"), gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(iRome, gc.getInfoTypeForString("UNIT_LEGION_EVOCAT"), gc.getInfoTypeForString("UNIT_PRAETORIAN3"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_PRAETORIAN2"), gc.getInfoTypeForString("UNIT_PRAETORIAN3"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"), gc.getInfoTypeForString("UNIT_PRAETORIAN3"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_EQUITES"), gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_3")),
+						(iRome, gc.getInfoTypeForString("UNIT_EQUITES"), gc.getInfoTypeForString("UNIT_PRAETORIAN_RIDER"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"), gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_3")),
+						(iRome, gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"), gc.getInfoTypeForString("UNIT_LEGION_TRIBUN"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_LIMITANEI"), gc.getInfoTypeForString("UNIT_ROME_LIMITANEI_GARDE"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_COMITATENSES"), gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"), gc.getInfoTypeForString("UNIT_ROME_COMITATENSES3"), gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_10")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"), gc.getInfoTypeForString("UNIT_ROME_PALATINI"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_COMITATENSES3"), gc.getInfoTypeForString("UNIT_ROME_PALATINI"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_ROME_PALATINI"), gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_CLIBANARII_ROME"), gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(iRome, gc.getInfoTypeForString("UNIT_CATAPHRACT_ROME"), gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_HOPLIT"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_HOPLIT"), gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_HOPLIT_SPARTA"), gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_HOPLIT"), gc.getInfoTypeForString("UNIT_HOPLIT_2"), gc.getInfoTypeForString("PROMOTION_RANG_GREEK_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), gc.getInfoTypeForString("UNIT_HOPLIT_2"), gc.getInfoTypeForString("PROMOTION_RANG_GREEK_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_HOPLIT_2"), gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"), gc.getInfoTypeForString("PROMOTION_RANG_GREEK_7")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"), gc.getInfoTypeForString("UNIT_GREEK_STRATEGOS"), gc.getInfoTypeForString("PROMOTION_RANG_GREEK_10")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"), gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_GREECE"), -2, gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_SPARTA"), gc.getInfoTypeForString("UNIT_HOPLIT"), gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_SPARTA"), gc.getInfoTypeForString("UNIT_HOPLIT_SPARTA"), gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_SPARTA"), -1, gc.getInfoTypeForString("UNIT_SPARTA_1"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_SPARTA"), gc.getInfoTypeForString("UNIT_SPARTA_1"), gc.getInfoTypeForString("UNIT_SPARTA_2"), gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_SPARTA"), gc.getInfoTypeForString("UNIT_SPARTA_2"), gc.getInfoTypeForString("UNIT_SPARTA_3"), gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_7")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"), gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"), gc.getInfoTypeForString("UNIT_HYPASPIST"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_HYPASPIST"), gc.getInfoTypeForString("UNIT_HYPASPIST2"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_7")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_HYPASPIST2"), gc.getInfoTypeForString("UNIT_HYPASPIST3"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_9")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_PEZHETAIROI2"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_PEZHETAIROI"), gc.getInfoTypeForString("UNIT_PEZHETAIROI2"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_PEZHETAIROI2"), gc.getInfoTypeForString("UNIT_PEZHETAIROI3"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_7")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_PEZHETAIROI3"), gc.getInfoTypeForString("UNIT_PEZHETAIROI4"), gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_9")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON"), gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"), gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"), gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"), gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_UNSTERBLICH"), gc.getInfoTypeForString("UNIT_UNSTERBLICH_2"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), -1, gc.getInfoTypeForString("UNIT_APFELTRAEGER"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_5")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_APFELTRAEGER"), gc.getInfoTypeForString("UNIT_UNSTERBLICH_2"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_7")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_APFELTRAEGER"), gc.getInfoTypeForString("UNIT_PERSIA_AZADAN"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_10")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_UNSTERBLICH_2"), gc.getInfoTypeForString("UNIT_PERSIA_AZADAN"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_10")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_HORSEMAN_PERSIA"), gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_5")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE1"), gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_7")),
+						(gc.getInfoTypeForString("CIVILIZATION_PERSIA"), gc.getInfoTypeForString("UNIT_CATAPHRACT_PERSIA"), gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE2"), gc.getInfoTypeForString("PROMOTION_RANG_PERSIA2_11")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_EGYPT"), -1, gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_EGYPT"), gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"), gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_5")),
+						(gc.getInfoTypeForString("CIVILIZATION_EGYPT"), gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"), gc.getInfoTypeForString("UNIT_WAR_CHARIOT"), gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_10")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_NUBIA"), -1, gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_NUBIA"), gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"), gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_5")),
+						(gc.getInfoTypeForString("CIVILIZATION_NUBIA"), gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"), gc.getInfoTypeForString("UNIT_WAR_CHARIOT"), gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_10")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"), -1, gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"), -1, gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_2")),
+						(gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_2")),
+						(gc.getInfoTypeForString("CIVILIZATION_CARTHAGE"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_OFFICER"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_4")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_PHON"), gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_PHON"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(gc.getInfoTypeForString("CIVILIZATION_PHON"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_SWORD"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_2")),
+						(gc.getInfoTypeForString("CIVILIZATION_PHON"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_2")),
+						(gc.getInfoTypeForString("CIVILIZATION_PHON"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"), gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_OFFICER"), gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_4")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_ASSYRIA"), -1, gc.getInfoTypeForString("UNIT_ASSUR_RANG1"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_3")),
+						(gc.getInfoTypeForString("CIVILIZATION_ASSYRIA"), gc.getInfoTypeForString("UNIT_ASSUR_RANG2"), gc.getInfoTypeForString("UNIT_ASSUR_RANG3"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_6")),
+						(gc.getInfoTypeForString("CIVILIZATION_ASSYRIA"), gc.getInfoTypeForString("UNIT_ASSUR_RANG3"), gc.getInfoTypeForString("UNIT_ELITE_ASSUR"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_10")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_BABYLON"), -1, gc.getInfoTypeForString("UNIT_ASSUR_RANG1"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_3")),
+						(gc.getInfoTypeForString("CIVILIZATION_BABYLON"), gc.getInfoTypeForString("UNIT_ASSUR_RANG2"), gc.getInfoTypeForString("UNIT_ASSUR_RANG3"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_6")),
+						(gc.getInfoTypeForString("CIVILIZATION_BABYLON"), gc.getInfoTypeForString("UNIT_ASSUR_RANG3"), gc.getInfoTypeForString("UNIT_ELITE_ASSUR"), gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_10")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_SUMERIA"), -1, gc.getInfoTypeForString("UNIT_SUMER_RANG1"), gc.getInfoTypeForString("PROMOTION_RANG_SUMER_4")),
+						(gc.getInfoTypeForString("CIVILIZATION_SUMERIA"), gc.getInfoTypeForString("UNIT_SUMER_RANG1"), gc.getInfoTypeForString("UNIT_SUMER_RANG2"), gc.getInfoTypeForString("PROMOTION_RANG_SUMER_9")),
+						(gc.getInfoTypeForString("CIVILIZATION_SUMERIA"), -1, gc.getInfoTypeForString("UNIT_ELITE_SUMER"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_ISRAEL"), gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"), gc.getInfoTypeForString("UNIT_MACCABEE"), gc.getInfoTypeForString("PROMOTION_COMBAT4")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_INDIA"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_RADSCHA"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_INDIA"), gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"), gc.getInfoTypeForString("UNIT_INDIAN_NAYAR"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_DAKER"), gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"), gc.getInfoTypeForString("UNIT_FUERST_DAKER"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_GERMANEN"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_GERMANEN"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_GERMAN_HARIER"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_GERMANEN"), gc.getInfoTypeForString("UNIT_AXEMAN2"), gc.getInfoTypeForString("UNIT_BERSERKER_GERMAN"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_CELT"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_GALLIEN"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_VANDALS"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_BRITEN"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_BRITEN"), -1, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(gc.getInfoTypeForString("CIVILIZATION_BRITEN"), gc.getInfoTypeForString("UNIT_SPEARMAN"), gc.getInfoTypeForString("UNIT_CELTIC_FIANNA"), gc.getInfoTypeForString("PROMOTION_COMBAT5")),
+						(-1,0,0,0),
+						(gc.getInfoTypeForString("CIVILIZATION_HUNNEN"), gc.getInfoTypeForString("UNIT_MONGOL_KESHIK"), gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN_HUN"), gc.getInfoTypeForString("PROMOTION_COMBAT5"))
+		]
+
 		LNoRankUnits = [
 				gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"),
 				gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH_RIDER"),
@@ -1288,6 +1453,7 @@ def init():
 				gc.getInfoTypeForString("UNIT_BELGIER"),
 				gc.getInfoTypeForString("UNIT_BERSERKER_GERMAN"),
 				gc.getInfoTypeForString("UNIT_HYPASPIST3"),
+				gc.getInfoTypeForString("UNIT_PEZHETAIROI4"),
 				gc.getInfoTypeForString("UNIT_FOEDERATI"),
 				gc.getInfoTypeForString("UNIT_INDIAN_NAYAR"),
 				gc.getInfoTypeForString("UNIT_THRAKIEN_WARRIOR"),
@@ -1332,15 +1498,31 @@ def init():
 
 		# diese Einheiten muessen in der Hauptstadt oder Provinzhauptstadt belobigt werden
 		LCapitalPromoUpUnits = [
-				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO"),
-				gc.getInfoTypeForString("UNIT_LEGION_CENTURIO2"),
-				gc.getInfoTypeForString("UNIT_HORSEMAN_DECURIO"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN2"),
+				gc.getInfoTypeForString("UNIT_PRAETORIAN3"),
+				gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"),
+				gc.getInfoTypeForString("UNIT_LEGION_TRIBUN"),
+				gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"),
 				gc.getInfoTypeForString("UNIT_ELITE_HOPLIT"),
+				gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"),
+				gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"),
+				gc.getInfoTypeForString("UNIT_HYPASPIST3"),
+				gc.getInfoTypeForString("UNIT_PEZHETAIROI3"),
+				gc.getInfoTypeForString("UNIT_PEZHETAIROI4"),
+				gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"),
+				gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_OFFICER"),
 				gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2"),
-				gc.getInfoTypeForString("UNIT_APFELTRAEGER"),
+				gc.getInfoTypeForString("UNIT_MOUNTED_SACRED_BAND_CARTHAGE"),
 				gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT"),
 				gc.getInfoTypeForString("UNIT_ASSUR_RANG2"),
-				gc.getInfoTypeForString("UNIT_SUMER_RANG1")
+				gc.getInfoTypeForString("UNIT_ELITE_ASSUR"),
+				gc.getInfoTypeForString("UNIT_SUMER_RANG2"),
+				gc.getInfoTypeForString("UNIT_ELITE_SUMER"),
+				gc.getInfoTypeForString("UNIT_RADSCHA"),
+				gc.getInfoTypeForString("UNIT_INDIAN_NAYAR"),
+				gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE2"),
+				gc.getInfoTypeForString("UNIT_PERSIA_AZADAN")
 		]
 
 		# monotheistische Religionen

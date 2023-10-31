@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GUSS_STRATEGY</Tag>
 		<English>Foundries generate another bonus resource for trading.</English>
@@ -58,11 +58,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GREAT_WALL_GORGAN_HELP</Tag>
-		<English>[ICON_BULLET]Can only be built by [COLOR_UNIT_TEXT]Assyrians, Babylonians, Sumerians, Persians and Parthians[COLOR_REVERT]</English>
-		<French>[ICON_BULLET]Ne peut &#234;tre construit que par les [COLOR_UNIT_TEXT]Assyriens, Babyloniens, Sum&#233;riens, Perses et Parthes[COLOR_REVERT]</French>
-		<German>[ICON_BULLET]Kann nur von [COLOR_UNIT_TEXT]Assyrer, Babylonier, Sumerer, Perser und Parther[COLOR_REVERT] gebaut werden</German>
-		<Italian>[ICON_BULLET]Pu&#242; essere costruito solo da [COLOR_UNIT_TEXT]assiri, babilonesi, sumeri, persiani e partici[COLOR_REVERT]</Italian>
-		<Spanish>[ICON_BULLET]Solo puede ser construido por [COLOR_UNIT_TEXT]asirios, babilonios, sumerios, persas y partos[COLOR_REVERT]</Spanish>
+		<English>[ICON_BULLET]Can only be built by [COLOR_UNIT_TEXT]Assyrians, Babylonians, Sumerians, Persians and Parthians[COLOR_REVERT][NEWLINE][ICON_BULLET]You have to wage war with at least 2 civilizations</English>
+		<French>[ICON_BULLET]Ne peut &#234;tre construit que par les [COLOR_UNIT_TEXT]Assyriens, Babyloniens, Sum&#233;riens, Perses et Parthes[COLOR_REVERT][NEWLINE][ICON_BULLET]Vous devez faire la guerre avec au moins 2 civilisations</French>
+		<German>[ICON_BULLET]Kann nur von [COLOR_UNIT_TEXT]Assyrer, Babylonier, Sumerer, Perser und Parther[COLOR_REVERT] gebaut werden[NEWLINE][ICON_BULLET]Man muss mit mindestens 2 Zivilisationen Krieg f&#252;hren</German>
+		<Italian>[ICON_BULLET]Pu&#242; essere costruito solo da [COLOR_UNIT_TEXT]assiri, babilonesi, sumeri, persiani e partici[COLOR_REVERT][NEWLINE][ICON_BULLET]Devi fare la guerra con almeno 2 civilt&#224;</Italian>
+		<Spanish>[ICON_BULLET]Solo puede ser construido por [COLOR_UNIT_TEXT]asirios, babilonios, sumerios, persas y partos[COLOR_REVERT][NEWLINE][ICON_BULLET]Tienes que hacer la guerra con al menos 2 civilizaciones</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HADRIAN_WALLS_STRATEGY</Tag>
@@ -183,14 +183,6 @@
 		<German>Die [COLOR_BUILDING_TEXT]Messingh&#252;tte[COLOR_REVERT] erzeugt [COLOR_HIGHLIGHT_TEXT]Messing[COLOR_REVERT] (+1[ICON_HAPPY]). [COLOR_HIGHLIGHT_TEXT]Messing[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Oreichalkos[COLOR_REVERT] sind Voraussetzung f&#252;r den Bau einer [COLOR_HIGHLIGHT_TEXT]Edlen R&#252;stung[COLOR_REVERT] (Bef&#246;rderung).</German>
 		<Italian>Il [COLOR_BUILDING_TEXT] capanna ottone [COLOR_REVERT] generato [COLOR_HIGHLIGHT_TEXT] Brass [COLOR_REVERT] (+1 [ICON_HAPPY]). [COLOR_HIGHLIGHT_TEXT] Brass [COLOR_REVERT] o [COLOR_HIGHLIGHT_TEXT] Oriharukon [COLOR_REVERT] &#232; un prerequisito per la costruzione di un [COLOR_HIGHLIGHT_TEXT] Noble Armatura [COLOR_REVERT] (trasporti).</Italian>
 		<Spanish>La [COLOR_BUILDING_TEXT]fundici&#243;n de lat&#243;n[COLOR_REVERT] produce lat&#243;n (+1[ICON_HAPPY]). El [COLOR_HIGHLIGHT_TEXT]lat&#243;n[COLOR_REVERT] o el [COLOR_HIGHLIGHT_TEXT]oricalco[COLOR_REVERT] es requerido para la construcci&#243;n de una [COLOR_HIGHLIGHT_TEXT]armadura de noble[COLOR_REVERT] (ascenso).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GAERUNG_STRATEGY</Tag>
-		<English>This knowledge is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]grain resource[COLOR_REVERT] is connected to the trade network of the capital.</English>
-		<French>Ce savoir a de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]C&#233;r&#233;ale[COLOR_REVERT] circule par le r&#233;seau commercial jusqu'&#224; la capitale.</French>
-		<German>Dieses Wissen wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Getreideart[COLOR_REVERT] ans Handelsnetz der Hauptstadt angeschlossen wurde.</German>
-		<Italian>Questa conoscenza viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa granulosa[COLOR_REVERT] viene connessa alla rete commerciale della capitale.</Italian>
-		<Spanish>Este conocimiento es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]recurso de grano[COLOR_REVERT] est&#233; conectado a la red comercial de la capital.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_KOLONIE_PROVINZ_STRATEGY</Tag>

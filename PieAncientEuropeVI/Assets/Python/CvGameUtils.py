@@ -140,6 +140,7 @@ class CvGameUtils:
 						iUnitType = pHeadSelectedUnit.getUnitType()
 						iPlayer = pHeadSelectedUnit.getOwner()
 						pPlayer = gc.getPlayer(iPlayer)
+						pTeam = gc.getTeam(pPlayer.getTeam())
 
 						if not CyInterface().isCityScreenUp():
 								# Worker, Arbeitstrupp oder Sklave, Slave
@@ -242,6 +243,9 @@ class CvGameUtils:
 																				iImprovement = loopPlot.getImprovementType()
 																				if iImprovement in L.LVillages or (iImprovement == -1 and loopPlot.canHaveImprovement(iCottage, iTeam, False)):
 																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_TECH_GREEN", 1)
+																				elif iImprovement == gc.getInfoTypeForString("IMPROVEMENT_VILLAGE") and pTeam.isHasTech(gc.getInfoTypeForString("TECH_HEILKUNDE")):
+																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_TECH_GREEN", 1)
+
 
 								# Cultivation
 								elif iUnitType in L.LCultivationUnits:
@@ -337,30 +341,43 @@ class CvGameUtils:
 
 								# Great General
 								elif iUnitType == gc.getInfoTypeForString("UNIT_GREAT_GENERAL"):
-										pTeam = gc.getTeam(pPlayer.getTeam())
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MILIT_STRAT")):
-												iBuilding1 = gc.getInfoTypeForString("BUILDING_STADT")
-												iBuilding2 = gc.getInfoTypeForString("BUILDING_MILITARY_ACADEMY")
-												(loopCity, pIter) = pPlayer.firstCity(False)
-												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
-																if loopCity.isHasBuilding(iBuilding1):
-																		if not loopCity.isHasBuilding(iBuilding2):
-																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
-														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+										iBuilding1 = gc.getInfoTypeForString("BUILDING_ROMAN_SHRINE")
+										iBuilding2 = gc.getCivilizationInfo(pPlayer.getCivilizationType()).getCivilizationBuildings(gc.getInfoTypeForString("BUILDINGCLASS_HEROIC_EPIC"))
+										iBuilding3 = gc.getInfoTypeForString("BUILDING_MILITARY_ACADEMY")
+										iBuilding4 = gc.getInfoTypeForString("BUILDING_SIEGESSTATUE")
+										iBuilding5 = gc.getInfoTypeForString("BUILDING_SIEGESSAEULE")
+										iBuilding6 = gc.getInfoTypeForString("BUILDING_ELEPHANTMONUMENT")
+										iBuilding7 = gc.getInfoTypeForString("BUILDING_TRIUMPH")
+										(loopCity, pIter) = pPlayer.firstCity(False)
+										while loopCity:
+												if loopCity is not None and not loopCity.isNone():
+														if pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding1):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding2):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding3):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding4):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding5):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding6):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding7):
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+
 
 								# Gladiator
 								elif iUnitType == gc.getInfoTypeForString("UNIT_GLADIATOR"):
-										pTeam = gc.getTeam(pPlayer.getTeam())
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2")):
+										if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KONZIL5")) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2")):
 												iBuilding1 = gc.getInfoTypeForString("BUILDING_STADT")
 												iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
 														if loopCity is not None and not loopCity.isNone():
-																if loopCity.isHasBuilding(iBuilding1):
-																		if not loopCity.isHasBuilding(iBuilding2):
-																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+																if loopCity.isHasBuilding(iBuilding1) and not loopCity.isHasBuilding(iBuilding2):
+																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 								# Reliquie / Relic
@@ -457,7 +474,7 @@ class CvGameUtils:
 										while loopCity:
 												if loopCity is not None and not loopCity.isNone():
 														if loopCity.isHasBuilding(iBuilding):
-																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
+																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
 														# elif loopCity.canConstruct (iBuilding, False, False, True):
 														#  CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
 												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -483,7 +500,6 @@ class CvGameUtils:
 								# Praetorianer, Cohortes Urbanae koennen Latifundien bauen
 								elif gc.getUnitInfo(pHeadSelectedUnit.getUnitType()).getBuilds(gc.getInfoTypeForString("BUILD_LATIFUNDIUM")):
 										# elif iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN"):
-										pTeam = gc.getTeam(pPlayer.getTeam())
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_RESERVISTEN")):
 												iMapW = gc.getMap().getGridWidth()
 												iMapH = gc.getMap().getGridHeight()
@@ -807,6 +823,12 @@ class CvGameUtils:
 						if gc.getPlayer(pCity.getOwner()).getCivilizationType() not in L.LCivsWithAqueduct:
 								return True
 
+				# Wonder Gorgan Walls
+				elif eBuilding == gc.getInfoTypeForString("BUILDING_GREAT_WALL_GORGAN"):
+						pPlayer = gc.getPlayer(pCity.getOwner())
+						if gc.getTeam(pPlayer.getTeam()).getAtWarCount(True) < 2:
+								return True
+
 				# Buildings, die pro Ressource baubar sind
 				elif eBuilding == gc.getInfoTypeForString("BUILDING_SCHMIEDE_BRONZE"):
 						pPlayer = gc.getPlayer(pCity.getOwner())
@@ -873,11 +895,12 @@ class CvGameUtils:
 						gc.getInfoTypeForString("BUILDING_WINERY"),
 						gc.getInfoTypeForString("BUILDING_PAPYRUSPOST"),
 						gc.getInfoTypeForString("BUILDING_MUREX"),
+						#gc.getInfoTypeForString("BUILDING_GERBEREI"),
+						gc.getInfoTypeForString("BUILDINGCLASS_WINDOFEN"),
 						gc.getInfoTypeForString("BUILDING_GUSS_BLEI"),
 						gc.getInfoTypeForString("BUILDING_GUSS_COPPER"),
 						gc.getInfoTypeForString("BUILDING_GUSS_ZINN"),
 						gc.getInfoTypeForString("BUILDING_GUSS_ZINK"),
-						gc.getInfoTypeForString("BUILDING_GERBEREI"),
 						gc.getInfoTypeForString("BUILDING_FURRIER"),
 						gc.getInfoTypeForString("BUILDING_MARMOR_WERKSTATT")
 				]
@@ -1656,7 +1679,7 @@ class CvGameUtils:
 								#						return True
 								# Beobachtungsturm / Spähturm / Look-out
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HOLZWEHRANLAGEN")):
-										if pPlot.isHills() and pPlot.getImprovementType() == -1 and pPlot.getBonusType(-1) == -1:
+										if pPlot.isHills() and pPlot.getImprovementType() == -1 and pPlot.getBonusType(-1) == -1 and not pPlot.isCity():
 												if pPlot.getOwner() == -1 or pPlot.getOwner() == pUnit.getOwner() and not pPlot.isCultureRangeCity(iOwner, 2):
 														# Check, ob im Umkreis Türme sind
 														bTurm = False
@@ -1722,7 +1745,25 @@ class CvGameUtils:
 												pUnit.setHasPromotion(iPromo, False)
 												pUnit.setHasPromotion(iPromo2, False)
 
-								# ab hier mit BarbUnits raus aus der Funktion
+								# Barbarische Emigranten stehen nur rum und benoetigen unnoetig Rechenzeit
+								elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_EMIGRANT"):
+										pUnit.kill(True, -1)
+										return True
+								# Barbarische befreite Sklaven stehen nur rum und benoetigen unnoetig Rechenzeit
+								elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_FREED_SLAVE"):
+										pUnit.kill(True, -1)
+										return True
+								# Barbarische Haendler sind unnoetig
+								elif pUnit.getUnitType() in L.LTradeUnits:
+										pUnit.kill(True, -1)
+										return True
+								# Barbarische Tiere sollen keine Stadt betreten / Barbarian animals will be disbanded when moving into a city
+								elif pUnit.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL:
+										if pPlot.isCity() or pPlot.getFeatureType() == gc.getInfoTypeForString("FEATURE_DARK_ICE"):
+												pUnit.kill(True, -1)
+												return True
+
+								# ab hier mit BarbUnits raus aus der kompletten Funktion AI_unitUpdate
 								return False
 						# -------------------------------
 
@@ -1816,6 +1857,13 @@ class CvGameUtils:
 										pUnit.kill(True, -1)
 										return True
 
+								# Handelsschiffe tauchen in Inlandsstädten auf
+								if not pPlot.isCoastalLand() and pUnit.getDomainType() == DomainTypes.DOMAIN_SEA:
+										pOwner.changeGold(25)
+										pUnit.kill(True, -1)
+										return True
+
+
 								# if pUnit.getGroup().getLengthMissionQueue() > 0: return True
 								# if PAE_Trade.doAutomateMerchant(pUnit):
 								#    if iOwner == 12: CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, "AI doAutomateMerchant", None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -1854,285 +1902,18 @@ class CvGameUtils:
 
 						iCivType = pUnit.getCivilizationType()
 
+						# PAE Veterans und Rank Unit Promo Features
+
 						# PAE 6.5 Katapult -> Feuerkatapult
 						if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_ACCURACY3")):
 								if pUnit.getUnitClassType() == gc.getInfoTypeForString("UNITCLASS_CATAPULT"):
 										PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_FIRE_CATAPULT"), True)
 										return True
 
-						# PAE 6.9 GREEKS and Perioikian hoplite (SPARTA)
-						if iCivType in L.LGreeks or iCivType == gc.getInfoTypeForString("CIVILIZATION_SPARTA"):
-								# experienced hoplite -> Kalos Kagathos (special hoplite)
-								if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT2")):
-										if iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT") or iUnitType == gc.getInfoTypeForString("UNIT_HOPLIT_SPARTA"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HOPLIT_KALOS"), True)
-												return True
-
-						# Veteran -> Eliteunit (netMessage 705)
-						# und weiter unten aendern!
-						if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT4")):
-
-								# Eliteeinheiten
-								if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT5")):
-										if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"):
-												# Elite Cohors Equitata -> Equites Singulares Augusti
-												if iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_PRAETORIAN_RIDER"), True)
-														return True
-										else:
-												# Elite Limitanei -> Imperial Guard
-												if iUnitType == gc.getInfoTypeForString("UNIT_ROME_LIMITANEI"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ROME_LIMITANEI_GARDE"), True)
-														return True
-												# Elite Comitatenses -> Palatini
-												elif iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES") or iUnitType == gc.getInfoTypeForString("UNIT_ROME_COMITATENSES2"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ROME_PALATINI"), True)
-														return True
-												# Elite Praetorians or Cohorte praetoriae -> Praetorian Garde
-												elif iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION_EVOCAT") or iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN2") or iUnitType == gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_PRAETORIAN3"), True)
-														return True
-												# Elite Assyrer und Babylon: Quradu
-												elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ASSYRIA") or iCivType == gc.getInfoTypeForString("CIVILIZATION_BABYLON"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
-																if iUnitType not in L.LNoRankUnits:
-																		PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ELITE_ASSUR"), True)
-																		return True
-												# Elite Sumerer: Gardu
-												elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SUMERIA"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")):
-																if iUnitType not in L.LNoRankUnits:
-																		PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ELITE_SUMER"), True)
-																		return True
-												# Stammesfürst
-												elif iCivType in L.LNorthern:
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
-																# nur Nahkaempfer
-																if pUnit.getUnitCombatType() in L.LMeleeCombats:
-																		PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_STAMMESFUERST"), True)
-																		return True
-
-										# Elite Palatini or Clibanari or Cataphracti -> Scholae
-										if (iUnitType == gc.getInfoTypeForString("UNIT_ROME_PALATINI")
-												or iUnitType == gc.getInfoTypeForString("UNIT_CLIBANARII_ROME")
-														or iUnitType == gc.getInfoTypeForString("UNIT_CATAPHRACT_ROME")):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ROME_SCHOLAE"), True)
-												return True
-
-								# weiter mit Veteran
-
-								# ROME
-								if (iCivType == gc.getInfoTypeForString("CIVILIZATION_ROME")
-												or iCivType == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS")):
-
-										if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_ARCHER"):
-
-												# Sagittarii (Reflex) -> Arquites
-												if iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_ROME"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LORICA_SEGMENTATA")):
-																PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ARCHER_LEGION"), True)
-																return True
-												# Arquites -> Equites Sagittarii (Horse Archer)
-												elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_LEGION"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HORSE_ARCHER")):
-																PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HORSE_ARCHER_ROMAN"), True)
-																return True
-
-										# sollte ueber XML funktionieren
-										# elif iUnitType == gc.getInfoTypeForString("UNIT_PRAETORIAN"):
-										#     #UNIT_PRAETORIAN ->
-										#     #UNIT_PRAETORIAN2 : Cohors Praetoria
-										#     #UNIT_ROME_COHORTES_URBANAE: Cohors Urbana
-										#     #UNIT_HORSEMAN_EQUITES2 (Lorica): Cohors Equitata
-										#
-										#     # fix Cohors Urbana machen, wenn Anz = 0
-										#     if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PRINCIPAT")):
-										#       if eCiv.getCivilizationUnits(gc.getInfoTypeForString("UNITCLASS_PRAETORIAN2")) < 3:
-										#          PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_PRAETORIAN2"), True)
-										#          return True
-										#     if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LORICA_SEGMENTATA")):
-										#       if eCiv.getCivilizationUnits(gc.getInfoTypeForString("UNITCLASS_HORSEMAN_EQUITES2")) < 5:
-										#          PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"), True)
-										#          return True
-										#     if pTeam.isHasTech(gc.getInfoTypeForString("TECH_FEUERWEHR")):
-										#          PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ROME_COHORTES_URBANAE"), True)
-										#          return True
-
-										else:
-												# Legion or Legion 2 -> Praetorians
-												if iUnitType == gc.getInfoTypeForString("UNIT_LEGION") or iUnitType == gc.getInfoTypeForString("UNIT_LEGION2"):
-														# obsolete with Marching/Border Army
-														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
-																		# Rang: Immunes
-																		if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_3")):
-																				PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_PRAETORIAN"), True)
-																				return True
-												# Triari -> Praetorians
-												elif iUnitType == gc.getInfoTypeForString("UNIT_TRIARII") and pTeam.isHasTech(gc.getInfoTypeForString("TECH_BERUFSSOLDATEN")):
-														# obsolete with Marching/Border Army
-														if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
-																PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_PRAETORIAN"), True)
-																return True
-												# Principes, Hastati, Pilumni -> Triarii
-												elif iUnitType == gc.getInfoTypeForString("UNIT_PRINCIPES") or \
-																iUnitType == gc.getInfoTypeForString("UNIT_HASTATI") or \
-																iUnitType == gc.getInfoTypeForString("UNIT_PILUMNI"):
-														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
-																PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_TRIARII"), True)
-																return True
-												# Hasta Warrior -> Celeres
-												elif iUnitType == gc.getInfoTypeForString("UNIT_HASTA"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_CELERES"), True)
-														return True
-
-								# GREEKS
-								elif iCivType in L.LGreeks:
-										# Elite Reiter -> Hipparchos
-										if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"):
-												if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT5")):
-														if iUnitType not in L.LNoRankUnits:
-																PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), True)
-																return True
-										# Archer -> Reflex
-										elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), True)
-												return True
-
-								# SPARTA
-								elif iCivType == gc.getInfoTypeForString("CIVILIZATION_SPARTA"):
-										if iUnitType == gc.getInfoTypeForString("UNIT_SPEARMAN") or iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_SPARTA_1"), True)
-												return True
-
-								# MACEDONIA
-								elif iCivType == gc.getInfoTypeForString("CIVILIZATION_MACEDONIA"):
-										# Reiter
-										if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"):
-												# Prodomoi -> Hetairoi
-												if iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), True)
-														return True
-												# Hetairoi -> Ilearchos
-												if iUnitType == gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"), True)
-														return True
-												# Ilearchos -> Ile basilikoi
-												if iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON3"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"), True)
-														return True
-												# Ile basilikoi -> Hipparchos
-												if iUnitType == gc.getInfoTypeForString("UNIT_HORSEMAN_MACEDON4"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_GREEK_HIPPARCH"), True)
-														return True
-
-										#  Lochagos (Pezhetairoi) -> Hetairoi
-										elif iUnitType == gc.getInfoTypeForString("UNIT_PEZHETAIROI3"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_COMPANION_CAVALRY"), True)
-												return True
-										#  Schildtraeger -> Hypaspist (Spezialeinheit, Standard nur 3)
-										elif iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HYPASPIST"), True)
-												return True
-										#  Hypaspist -> Argyraspidai (Silberschild)
-										elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HYPASPIST2"), True)
-												return True
-										#  Argyraspidai -> Royal Hypaspist
-										elif iUnitType == gc.getInfoTypeForString("UNIT_HYPASPIST2"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HYPASPIST3"), True)
-												return True
-										# Archer -> Reflex
-										elif iUnitType == gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_ARCHER_REFLEX_GREEK2"), True)
-												return True
-
-								# PERSIA
-								elif iCivType == gc.getInfoTypeForString("CIVILIZATION_PERSIA"):
-										if iUnitType == gc.getInfoTypeForString("UNIT_APFELTRAEGER"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_UNSTERBLICH_2"), True)
-												return True
-
-								# EGYPT
-								elif iCivType == gc.getInfoTypeForString("CIVILIZATION_EGYPT") or iCivType == gc.getInfoTypeForString("CIVILIZATION_NUBIA"):
-										# Pharaonengarde oder kuschitischen Fuerst
-										if iUnitType not in L.LNoRankUnits:
-												if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG4")):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_EGYPT_CHEPESCH"), True)
-														return True
-
-								# weiter mit routiniert
-
-								# Schildtraeger
-								if iUnitType == gc.getInfoTypeForString("UNIT_SCHILDTRAEGER"):
-
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
-
-												if iCivType == gc.getInfoTypeForString("CIVILIZATION_DAKER"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_FUERST_DAKER"), True)
-														return True
-												elif iCivType == gc.getInfoTypeForString("CIVILIZATION_ISRAEL"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_MACCABEE"), True)
-														return True
-
-										# if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
-										#    if iCivType in L.LNearEast:
-										#        PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_SYRIAN_GARDE"), True)
-										#        return True
-
-								# weiter mit routiniert
-
-								# Axeman
-								elif iUnitType == gc.getInfoTypeForString("UNIT_AXEMAN2"):
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
-												if iCivType == gc.getInfoTypeForString("CIVILIZATION_GERMANEN"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_BERSERKER_GERMAN"), True)
-														return True
-
-								# Spearman
-								elif iUnitType == gc.getInfoTypeForString("UNIT_SPEARMAN"):
-
-										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LINOTHORAX")):
-												# INDIA Spearman -> Radscha
-												if iCivType == gc.getInfoTypeForString("CIVILIZATION_INDIA"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_RADSCHA"), True)
-														return True
-												# GREEKS Spearman -> Hoplit
-												elif iCivType in L.LGreeks:
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HOPLIT"), True)
-														return True
-												# CARTHAGE Spearman -> Punic Hoplite
-												elif iCivType == gc.getInfoTypeForString("CIVILIZATION_CARTHAGE") or iCivType == gc.getInfoTypeForString("CIVILIZATION_PHON"):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT"), True)
-														return True
-
-										if iCivType == gc.getInfoTypeForString("CIVILIZATION_GERMANEN"):
-												if pTeam.isHasTech(gc.getInfoTypeForString("TECH_EISENWAFFEN")):
-														PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_GERMAN_HARIER"), True)
-														return True
-
-								# Swordsman
-								elif iUnitType == gc.getInfoTypeForString("UNIT_SWORDSMAN"):
-										if iCivType == gc.getInfoTypeForString("CIVILIZATION_INDIA"):
-												PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_INDIAN_NAYAR"), True)
-												return True
-
-								# Steppenreiter -> Geissel Gottes
-								elif iUnitType == gc.getInfoTypeForString("UNIT_MONGOL_KESHIK"):
-										PAE_Unit.doUpgradeVeteran(pUnit, gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN_HUN"), True)
-										return True
-
-								# Allgemein Veteran -> Reservist
-								if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MORAL_NEG1")):
-										if CvUtil.myRandom(20, "ai_vet_res") == 1:
-												if self._doReservist_AI(pUnit):
-														return True
-
-						# ---- ENDE Veteran (Routiniert Combat3) -------
-
 						# Unit Rang Promo -------
 						# KI: immer und kostenlos
-						if CvUtil.getScriptData(pUnit, ["P", "t"]) == "RangPromoUp":
+						iNewUnit = PAE_Unit.canUpgradeUnit(pUnit)
+						if iNewUnit != -1: # and CvUtil.getScriptData(pUnit, ["P", "t"]) == "RangPromoUp":
 								if PAE_Unit.doUpgradeRang(iOwner, pUnit.getID()):
 										return True
 
@@ -2428,9 +2209,33 @@ class CvGameUtils:
 														pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, pCity.getX(), pCity.getY(), 1, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
 														return True
 
-						# Auswanderer / Emigrant -> zu schwachen Staedten
+						# Auswanderer / Emigrant
 						elif iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
 
+								# Auswanderer sollen Gemeinden bauen
+								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HEILKUNDE")):
+										LImpUpgradePlot = None
+										iDistance = 999
+										for i in xrange(CyMap().numPlots()):
+												pLoopPlot = CyMap().sPlotByIndex(i)
+												if pLoopPlot.getOwner() == iOwner:
+														iImp = pLoopPlot.getImprovementType()
+														if iImp == gc.getInfoTypeForString("IMPROVEMENT_VILLAGE"):
+														
+																iDistanceCheck = CyMap().calculatePathDistance(pUnit.plot(), pLoopPlot)
+																if iDistanceCheck != -1 and iDistanceCheck < iDistance:
+																		iDistance = iDistanceCheck
+																		LImpUpgradePlot = pLoopPlot
+
+										if LImpUpgradePlot != None:
+												if LImpUpgradePlot.getX() == pUnit.getX() and LImpUpgradePlot.getY() == pUnit.getY():
+														LImpUpgradePlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TOWN"))
+														pUnit.kill(True, -1)
+														return True
+												else:
+														pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, LImpUpgradePlot.getX(), LImpUpgradePlot.getY(), 1, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
+
+								# zu schwachen Staedten
 								if pPlot.isCity() and pPlot.getOwner() == iOwner:
 
 										lCityX = None
@@ -2578,7 +2383,7 @@ class CvGameUtils:
 												if pUnit.getUnitCombatType() not in L.LCombatNoRuestung:
 														# Removed 'is not None' check getUnitCombatType() never returns None
 														if pUnit.getUnitType() not in L.LUnitNoRuestung:
-																iBuilding = gc.getInfoTypeForString("BUILDING_FORGE")
+																iBuilding = gc.getInfoTypeForString("BUILDING_FORGE_WEAPONS")
 																bonus1 = gc.getInfoTypeForString("BONUS_OREICHALKOS")
 																bonus2 = gc.getInfoTypeForString("BONUS_MESSING")
 																if pCity.isHasBuilding(iBuilding) and (pCity.hasBonus(bonus1) or pCity.hasBonus(bonus2)):
@@ -2677,6 +2482,7 @@ class CvGameUtils:
 														if CvUtil.myRandom(4, "AI_Leader_BurnDownTheForest") == 1:
 																PAE_Unit.doBurnDownForest(pUnit)
 																return True
+
 
 						# Governor / Statthalter
 						# if pUnit.getUnitClassType() == gc.getInfoTypeForString("UNITCLASS_STATTHALTER"):
@@ -3335,8 +3141,7 @@ class CvGameUtils:
 						# Trojanisches Pferd
 						elif iData1 == 697:
 								return CyTranslator().getText("TXT_KEY_BUTTON_TROJAN_HORSE", ())
-						# 698 ist FREI (ehemals freie Missionare: nun bei 676)
-						# elif iData1 == 698:
+						# 698 INFO RangPromoUp (gemeinsam mit 751)
 						# Unit -> Edle Ruestung
 						elif iData1 == 699:
 								if bOption:
@@ -3370,6 +3175,8 @@ class CvGameUtils:
 								return CyTranslator().getText("TXT_KEY_HELP_MERCENARIES_CITYBUTTON", ())
 
 						# ID 708-715 Hire/Assign Mercenaries
+						elif iData1 == 709:
+								return CyTranslator().getText("TXT_KEY_POPUP_MERCENARIES_ASSIGN", ())
 
 						# ID 716-717 Torture of assigend mercenary
 
@@ -3390,7 +3197,7 @@ class CvGameUtils:
 						elif iData1 == 720:
 								return CyTranslator().getText("TXT_KEY_HELP_LEGEND_HERO_TO_GENERAL", ())
 
-						# INFO BUTTONS: Elefanten / Kamel / Hunter
+						# INFO BUTTONS: Techs/ Elefanten / Kamel / Hunter
 						elif iData1 == 721:
 								if iData2 == 1:
 										return CyTranslator().getText("TXT_KEY_HELP_ELEFANTENSTALL1", ())
@@ -3432,6 +3239,8 @@ class CvGameUtils:
 										return CyTranslator().getText("TXT_KEY_DYING_SLAVE_TECH_REDUCE_HELP", ())
 								elif iData2 == 20:
 										return CyTranslator().getText("TXT_KEY_HELP_ADD_ESEL", ())
+								elif iData2 == 21:
+										return CyTranslator().getText("TXT_KEY_HELP_TECH_VILLAGE2TOWN", ())
 
 						# Piraten-Feature
 						elif iData1 == 722:
@@ -3578,11 +3387,53 @@ class CvGameUtils:
 						# Unit Ethnic (MainInterface Unit Detail Promo Icons)
 						elif iData1 == 750 and iData2 > -1:
 								return gc.getCivilizationInfo(iData2).getAdjective(0)
-						# Unit Rang Promo
-						elif iData1 == 751:
-								if bOption and gc.getPlayer(iData2).getGold() > 50:
-										return CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP", ())
-								return CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP2", ())
+
+						# Unit Rang Promo (INFO TEXT Military ranking)
+						# 751 für die Ausführung in CvEventManager
+						# 698 nur für die INFO (wird nicht im CvEventManager ausgeführt)
+						elif iData1 == 751 or iData1 == 698:
+								iPlayer = gc.getGame().getActivePlayer()
+								iUnit = gc.getPlayer(iPlayer).getUnit(iData2).getUnitType()
+								iNewUnit = PAE_Unit.getUpgradeUnit(iPlayer, iUnit)
+
+								sText = u"<font=3>" + CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP", ()) + u"</font>"
+								sText += u"<font=2>" + CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP2", ()) + u"</font>"
+								if iNewUnit in L.LCapitalPromoUpUnits:
+										sText += CyTranslator().getText("[NEWLINE][ICON_BULLET]", ()) + u"<font=3>" + CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP3", ()) + u"</font>"
+
+								sText += u"<font=2>"
+								if iUnit != -1 and iNewUnit != -1:
+										sText += CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP4", (gc.getUnitInfo(iUnit).getDescription(),gc.getUnitInfo(iNewUnit).getDescription()))
+										sText += CyTranslator().getText("  %d1[ICON_STRENGTH]", (gc.getUnitInfo(iNewUnit).getCombat(),))
+										sText += CyTranslator().getText(" %d1[ICON_MOVES]", (gc.getUnitInfo(iNewUnit).getMoves(),))
+										if gc.getUnitInfo(iNewUnit).getExtraCost() > 0:
+												sText += CyTranslator().getText(" +%d1[ICON_GOLD]", (gc.getUnitInfo(iNewUnit).getExtraCost(),))
+										iUnitCombatType = gc.getUnitInfo(iNewUnit).getUnitCombatType()
+										sText += CyTranslator().getText("[NEWLINE][COLOR_UNIT_TEXT](%s1)[COLOR_REVERT][NEWLINE][NEWLINE]", (gc.getUnitCombatInfo(iUnitCombatType).getDescription(),))
+
+								sText += CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP5", ())
+								iDiff = gc.getUnitInfo(iNewUnit).getCombat() - gc.getUnitInfo(iUnit).getCombat()
+								if iDiff > 0:
+										sText += CyTranslator().getText(" +%d1[ICON_STRENGTH]", (iDiff,))
+								iDiff = gc.getUnitInfo(iNewUnit).getMoves() - gc.getUnitInfo(iUnit).getMoves()
+								if iDiff > 0:
+										sText += CyTranslator().getText(" +%d1[ICON_MOVES]", (iDiff,))
+								iDiff = gc.getUnitInfo(iNewUnit).getExtraCost() - gc.getUnitInfo(iUnit).getExtraCost()
+								if iDiff > 0:
+										sText += CyTranslator().getText(" +%d1[ICON_GOLD]", (iDiff,))
+								iNewUnit2 = PAE_Unit.getUpgradeUnit(iPlayer, iNewUnit)
+								if iNewUnit2 != -1:
+										sText += CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP6", (gc.getUnitInfo(iNewUnit2).getDescription(),))
+										sText += CyTranslator().getText("  %d1[ICON_STRENGTH]", (gc.getUnitInfo(iNewUnit2).getCombat(),))
+										sText += CyTranslator().getText(" %d1[ICON_MOVES]", (gc.getUnitInfo(iNewUnit2).getMoves(),))
+										if gc.getUnitInfo(iNewUnit2).getExtraCost() > 0:
+												sText += CyTranslator().getText(" +%d1[ICON_GOLD]", (gc.getUnitInfo(iNewUnit2).getExtraCost(),))
+										iUnitCombatType = gc.getUnitInfo(iNewUnit2).getUnitCombatType()
+										sText += CyTranslator().getText("[NEWLINE][COLOR_HIGHLIGHT_TEXT](%s1)[COLOR_REVERT]", (gc.getUnitCombatInfo(iUnitCombatType).getDescription(),))
+								sText += CyTranslator().getText("</font>[NEWLINE]", ())
+
+								return sText
+
 						# Bless units (Hagia Sophia, Great General)
 						# Increase morale (Zeus)
 						elif iData1 == 752:
@@ -3590,10 +3441,12 @@ class CvGameUtils:
 										return CyTranslator().getText("TXT_KEY_BUTTON_MORALE_UNIT", ())
 								else:
 										return CyTranslator().getText("TXT_KEY_BUTTON_BLESS_UNITS", ())
-						# Slave -> Latifundium
+						# Slave -> Village, Latifundium, Emigrant -> Village/Town, Settler -> Village->Town
 						elif iData1 == 753:
 								if iData2 == 1:
 										return CyTranslator().getText("TXT_KEY_BUTTON_SLAVE2LATIFUNDIUM", ())
+								elif iData2 == 2:
+										return CyTranslator().getText("TXT_KEY_BUTTON_VILLAGE2TOWN", ())
 								else:
 										return CyTranslator().getText("TXT_KEY_BUTTON_SLAVE2VILLAGE", ())
 						# Obsolete units (Tech Screen)
@@ -3669,7 +3522,7 @@ class CvGameUtils:
 
 						# Great Prophet Holy City
 						elif iData1 == 769:
-								return CyTranslator().getText("TXT_KEY_BUTTON_GREAT_PROPHET_HOLY_CITY", (gc.getReligionInfo(iData2).getDescription(),)) + u" %c" % (gc.getReligionInfo(iData2).getChar())
+								return CyTranslator().getText("TXT_KEY_BUTTON_GREAT_PROPHET_HOLY_CITY", ()) + u" %c" % (gc.getReligionInfo(iData2).getChar())
 
 						# General: Ramme bauen
 						elif iData1 == 770:

@@ -83,8 +83,8 @@
 			<iVictoryDelayPercent>150</iVictoryDelayPercent>
 <!--  10 Jahre: -5000 bis -2000 -->
 <!--  4 Jahre:  -2000 bis -1400 -->
-<!--  2 Jahre:  -1400 bis  -800 -->
-<!--  1 Jahre:  -800 bis   600 -->
+<!--  2 Jahre:  -1400 bis -1200 -->
+<!--  1 Jahre:  -1200 bis   600 -->
 			<GameTurnInfos>
 				<GameTurnInfo>
 					<iMonthIncrement>120</iMonthIncrement>
@@ -96,11 +96,11 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+					<iTurnsPerIncrement>100</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>1400</iTurnsPerIncrement>
+					<iTurnsPerIncrement>1800</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
 		</GameSpeedInfo>
@@ -131,9 +131,8 @@
 			<iInflationOffset>-450</iInflationOffset>
 			<iVictoryDelayPercent>100</iVictoryDelayPercent>
 <!--  15 Jahre: -5000 bis -3500 -->
-<!--  10 Jahre: -3500 bis -900 -->
-<!--  3 Jahre:  -900 bis  -600 -->
-<!--  2 Jahre:  -600 bis  -200 -->
+<!--  10 Jahre: -3500 bis -1000 -->
+<!--  2 Jahre:  -1000 bis -200 -->
 <!--  1 Jahre:  -200 bis   300 -->
 <!--  2 Jahre:   300 bis   500 -->
 			<GameTurnInfos>
@@ -143,15 +142,11 @@
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>120</iMonthIncrement>
-					<iTurnsPerIncrement>260</iTurnsPerIncrement>
-				</GameTurnInfo>
-				<GameTurnInfo>
-					<iMonthIncrement>36</iMonthIncrement>
-					<iTurnsPerIncrement>200</iTurnsPerIncrement>
+					<iTurnsPerIncrement>250</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>24</iMonthIncrement>
-					<iTurnsPerIncrement>200</iTurnsPerIncrement>
+					<iTurnsPerIncrement>400</iTurnsPerIncrement>
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>

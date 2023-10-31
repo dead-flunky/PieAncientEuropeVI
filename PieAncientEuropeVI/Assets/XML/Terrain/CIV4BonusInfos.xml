@@ -1167,7 +1167,7 @@
 			<iAITradeModifier>6</iAITradeModifier>
 			<iAIObjective>0</iAIObjective>
 			<iHealth>1</iHealth>
-			<iHappiness>0</iHappiness>
+			<iHappiness>1</iHappiness>
 			<iPlacementOrder>6</iPlacementOrder>
 			<iConstAppearance>50</iConstAppearance>
 			<iMinAreaSize>3</iMinAreaSize>
@@ -3584,7 +3584,7 @@
 			</YieldChanges>
 			<iAITradeModifier>6</iAITradeModifier>
 			<iAIObjective>0</iAIObjective>
-			<iHealth>2</iHealth>
+			<iHealth>1</iHealth>
 			<iHappiness>0</iHappiness>
 			<iPlacementOrder>7</iPlacementOrder>
 			<iConstAppearance>75</iConstAppearance>

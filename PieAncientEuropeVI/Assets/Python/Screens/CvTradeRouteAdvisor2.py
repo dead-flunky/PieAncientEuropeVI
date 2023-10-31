@@ -98,21 +98,31 @@ class CvTradeRouteAdvisor2:
 
 				list1 = []
 				list2 = []
+				list3 = []
+				list4 = []
 
 				pPlayer = gc.getPlayer(CyGame().getActivePlayer())
 				(unit, pIter) = pPlayer.firstUnit(False)
 				while unit:
 						if unit.getUnitType() in lTradeUnitsLand:
+								# Mit Auftrag
 								if int(CvUtil.getScriptData(unit, ["autA"], 0)):
 										list1.append(unit)
+								# Ohne Auftrag
+								else:
+										list3.append(unit)
 						elif unit.getUnitType() in lTradeUnitsSea:
+								# Mit Auftrag
 								if int(CvUtil.getScriptData(unit, ["autA"], 0)):
 										list2.append(unit)
+								# Ohne Auftrag
+								else:
+										list4.append(unit)
 
 						(unit, pIter) = pPlayer.nextUnit(pIter, False)
 
-				# Zeige zuerst Landeinheiten, danach Schiffe
-				lHandelseinheiten = list1 + list2
+				# Sortierte Liste: Zeige zuerst Landeinheiten, danach Schiffe (zuerst mit Auftag, danach ohne)
+				lHandelseinheiten = list1 + list2 + list3 + list4
 
 				iY = 80
 				i = 0
@@ -124,6 +134,7 @@ class CvTradeRouteAdvisor2:
 				else:
 						for j in range(iRange):
 								pUnit = lHandelseinheiten[j]
+								bTradeRouteActive = int(CvUtil.getScriptData(pUnit, ["autA"], 0))
 
 								screen.addPanel("PanelBG_"+str(i), u"", u"", True, False, 40, iY, 935, 51, PanelStyles.PANEL_STYLE_MAIN_BLACK25)
 								iY += 4
@@ -148,32 +159,33 @@ class CvTradeRouteAdvisor2:
 								screen.setLabel("L3_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 100, iY+24, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 								# City 1
-								iCityX = int(CvUtil.getScriptData(pUnit, ["autX1"], -1))
-								iCityY = int(CvUtil.getScriptData(pUnit, ["autY1"], -1))
-								tmpPlot = CyMap().plot(iCityX, iCityY)
-								if tmpPlot and not tmpPlot.isNone() and tmpPlot.isCity():
-										szText = tmpPlot.getPlotCity().getName()
-										if tmpPlot.getOwner() == CyGame().getActivePlayer():
-												iTmpX = 470
-										else:
-												iTmpX = 500
-										screen.setLabel("L4_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, iTmpX, iY+5, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-								if tmpPlot.getOwner() != -1:
-										iCiv = gc.getPlayer(tmpPlot.getOwner()).getCivilizationType()
-										# Flagge
-										if tmpPlot.getOwner() == CyGame().getActivePlayer():
-												screen.addFlagWidgetGFC("L5_"+str(i), 480, iY, 24, 54, tmpPlot.getOwner(), WidgetTypes.WIDGET_FLAG, tmpPlot.getOwner(), -1)
-										# Civ-Button
-										else:
-												screen.setImageButton("L5_"+str(i), gc.getCivilizationInfo(iCiv).getButton(), 476, iY+24, 24, 24, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
-										szText = gc.getPlayer(tmpPlot.getOwner()).getCivilizationDescription(0)
-										screen.setLabel("L6_"+str(i), "Background", u"<font=2>" + szText + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY,
-																		470, iY+28, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
+								if bTradeRouteActive:
+										iCityX = int(CvUtil.getScriptData(pUnit, ["autX1"], -1))
+										iCityY = int(CvUtil.getScriptData(pUnit, ["autY1"], -1))
+										tmpPlot = CyMap().plot(iCityX, iCityY)
+										if tmpPlot and not tmpPlot.isNone() and tmpPlot.isCity():
+												szText = tmpPlot.getPlotCity().getName()
+												if tmpPlot.getOwner() == CyGame().getActivePlayer():
+														iTmpX = 470
+												else:
+														iTmpX = 500
+												screen.setLabel("L4_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, iTmpX, iY+5, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+										if tmpPlot.getOwner() != -1:
+												iCiv = gc.getPlayer(tmpPlot.getOwner()).getCivilizationType()
+												# Flagge
+												if tmpPlot.getOwner() == CyGame().getActivePlayer():
+														screen.addFlagWidgetGFC("L5_"+str(i), 480, iY, 24, 54, tmpPlot.getOwner(), WidgetTypes.WIDGET_FLAG, tmpPlot.getOwner(), -1)
+												# Civ-Button
+												else:
+														screen.setImageButton("L5_"+str(i), gc.getCivilizationInfo(iCiv).getButton(), 476, iY+24, 24, 24, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
+												szText = gc.getPlayer(tmpPlot.getOwner()).getCivilizationDescription(0)
+												screen.setLabel("L6_"+str(i), "Background", u"<font=2>" + szText + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY,
+																				470, iY+28, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
 
-								# Button Bonus 1
-								iBonus = CvUtil.getScriptData(pUnit, ["autB1"], -1)
-								if iBonus != -1:
-										screen.setImageButton("L7_"+str(i), gc.getBonusInfo(iBonus).getButton(), 510, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, iBonus, -1)
+										# Button Bonus 1
+										iBonus = CvUtil.getScriptData(pUnit, ["autB1"], -1)
+										if iBonus != -1:
+												screen.setImageButton("L7_"+str(i), gc.getBonusInfo(iBonus).getButton(), 510, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, iBonus, -1)
 
 								# Buttons Arrow to left
 								screen.setImageButton("L8_"+str(i), "Art/Interface/Buttons/arrow_left.tga", 580, iY+9, 32, 32, WidgetTypes.WIDGET_GENERAL, -1, -1)
@@ -186,37 +198,45 @@ class CvTradeRouteAdvisor2:
 								# Button Arrow to right
 								screen.setImageButton("L9_"+str(i), "Art/Interface/Buttons/arrow_right.tga", 650, iY+9, 32, 32, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-								# Button Bonus 2
-								iBonus = CvUtil.getScriptData(pUnit, ["autB2"], -1)
-								if iBonus != -1:
-										screen.setImageButton("L10_"+str(i), gc.getBonusInfo(iBonus).getButton(), 700, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, iBonus, -1)
 
 								# City 2
-								iCityX = int(CvUtil.getScriptData(pUnit, ["autX2"], -1))
-								iCityY = int(CvUtil.getScriptData(pUnit, ["autY2"], -1))
-								tmpPlot = CyMap().plot(iCityX, iCityY)
-								if tmpPlot and not tmpPlot.isNone() and tmpPlot.isCity():
-										szText = tmpPlot.getPlotCity().getName()
-										if tmpPlot.getOwner() == CyGame().getActivePlayer():
-												iTmpX = 790
-										else:
-												iTmpX = 760
-										screen.setLabel("L11_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, iTmpX, iY+5, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-								if tmpPlot.getOwner() != -1:
-										iCiv = gc.getPlayer(tmpPlot.getOwner()).getCivilizationType()
-										# Flagge
-										if tmpPlot.getOwner() == CyGame().getActivePlayer():
-												screen.addFlagWidgetGFC("L12_"+str(i), 756, iY, 24, 54, tmpPlot.getOwner(), WidgetTypes.WIDGET_FLAG, tmpPlot.getOwner(), -1)
-										# Civ-Button
-										else:
-												screen.setImageButton("L12_"+str(i), gc.getCivilizationInfo(iCiv).getButton(), 760, iY+24, 24, 24, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
-										szText = gc.getPlayer(tmpPlot.getOwner()).getCivilizationDescription(0)
-										screen.setLabel("L13_"+str(i), "Background", u"<font=2>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY,
-																		790, iY+28, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
+								if bTradeRouteActive:
+										iCityX = int(CvUtil.getScriptData(pUnit, ["autX2"], -1))
+										iCityY = int(CvUtil.getScriptData(pUnit, ["autY2"], -1))
+								
+										# Button Bonus 2
+										iBonus = CvUtil.getScriptData(pUnit, ["autB2"], -1)
+										if iBonus != -1:
+												screen.setImageButton("L10_"+str(i), gc.getBonusInfo(iBonus).getButton(), 700, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BONUS, iBonus, -1)
 
-								# Cancel Button
-								screen.setImageButton("L15_"+str(i), ArtFileMgr.getInterfaceArtInfo("INTERFACE_TRADE_AUTO_STOP").getPath(),
-																			900, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, 748, pUnit.getID())
+										tmpPlot = CyMap().plot(iCityX, iCityY)
+										if tmpPlot and not tmpPlot.isNone() and tmpPlot.isCity():
+												szText = tmpPlot.getPlotCity().getName()
+												if tmpPlot.getOwner() == CyGame().getActivePlayer():
+														iTmpX = 790
+												else:
+														iTmpX = 760
+												screen.setLabel("L11_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, iTmpX, iY+5, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+										if tmpPlot.getOwner() != -1:
+												iCiv = gc.getPlayer(tmpPlot.getOwner()).getCivilizationType()
+												# Flagge
+												if tmpPlot.getOwner() == CyGame().getActivePlayer():
+														screen.addFlagWidgetGFC("L12_"+str(i), 756, iY, 24, 54, tmpPlot.getOwner(), WidgetTypes.WIDGET_FLAG, tmpPlot.getOwner(), -1)
+												# Civ-Button
+												else:
+														screen.setImageButton("L12_"+str(i), gc.getCivilizationInfo(iCiv).getButton(), 760, iY+24, 24, 24, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
+												szText = gc.getPlayer(tmpPlot.getOwner()).getCivilizationDescription(0)
+												screen.setLabel("L13_"+str(i), "Background", u"<font=2>" + szText + u"</font>", CvUtil.FONT_LEFT_JUSTIFY,
+																				790, iY+28, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, iCiv, -1)
+
+
+								if bTradeRouteActive:
+										# Cancel Button
+										screen.setImageButton("L15_"+str(i), ArtFileMgr.getInterfaceArtInfo("INTERFACE_TRADE_AUTO_STOP").getPath(),
+																					900, iY, BUTTON_SIZE, BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, 748, pUnit.getID())
+								else:
+										szText = localText.getText("TXT_KEY_TRADE_ADVISOR_INFO3", ())
+										screen.setLabel("L6_"+str(i), "Background", u"<font=3>" + szText + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, 900+BUTTON_SIZE, iY+14, 0.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 								# ----
 								i += 1

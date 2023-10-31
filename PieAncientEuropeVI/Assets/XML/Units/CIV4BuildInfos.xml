@@ -369,23 +369,59 @@
 			<Button>Art/Interface/Buttons/Builds/button_brunnen.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_ORE_CAMP</Type>
-			<Description>TXT_KEY_BUILD_ORE_CAMP</Description>
+			<Type>BUILD_QUARRY</Type>
+			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<Help/>
-			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
-			<iTime>200</iTime>
-			<iCost>4</iCost>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<iTime>300</iTime>
+			<iCost>15</iCost>
 			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_ORE_CAMP</ImprovementType>
+			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_O</HotKey>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SAVANNA</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>100</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>50</iTime>
+					<iProduction>5</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>300</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_Q</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds</Button>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildQuarry.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,9</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_MINE</Type>
@@ -424,6 +460,25 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Builds/button_build_salzmine.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_ORE_CAMP</Type>
+			<Description>TXT_KEY_BUILD_ORE_CAMP</Description>
+			<Help/>
+			<PrereqTech>TECH_METAL_SMELTING</PrereqTech>
+			<iTime>200</iTime>
+			<iCost>4</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_ORE_CAMP</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_O</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_PLANTATION</Type>
@@ -534,61 +589,6 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,1,13</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_QUARRY</Type>
-			<Description>TXT_KEY_BUILD_QUARRY</Description>
-			<Help/>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<iTime>300</iTime>
-			<iCost>15</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_SAVANNA</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>100</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>0</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>50</iTime>
-					<iProduction>5</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>300</iTime>
-					<iProduction>30</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_Q</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildQuarry.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,9</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_COTTAGE</Type>

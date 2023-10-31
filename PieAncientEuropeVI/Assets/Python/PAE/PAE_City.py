@@ -575,7 +575,7 @@ def doCheckGlobalBuilding(iPlayer, iBuilding):
 				loopCity.setNumRealBuilding(iBuilding, 1)
 				iCount = 0
 				while loopCity:
-						if loopCity.getNumBuilding(iBuilding) > 0:
+						if loopCity.isHasBuilding(iBuilding):
 								iCount += 1
 								if iCount > 1:
 										loopCity.setNumRealBuilding(iBuilding, 0)
@@ -761,8 +761,9 @@ def doTurnCityRevolt(pCity):
 
 		# high taxes
 		# PAE V: not for AI
-		if pPlayer.getCommercePercent(0) > 50 and pPlayer.isHuman():
-				iChance = int((pPlayer.getCommercePercent(0) - 50) / 5)
+		iTaxesLimit = getTaxesLimit(pPlayer)
+		if pPlayer.getCommercePercent(0) > iTaxesLimit and pPlayer.isHuman():
+				iChance = int((pPlayer.getCommercePercent(0) - iTaxesLimit) / 5)
 				# Pro Happy Citizen 5% Nachlass
 				iChance = iChance - pCity.happyLevel() + pCity.unhappyLevel(0)
 				if iChance > 0 and CvUtil.myRandom(100, "doTurnCityRevolt5") < iChance:
@@ -2310,7 +2311,7 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_JUWELIER"),
 				gc.getInfoTypeForString("BUILDING_BILDHAUER"),
 				gc.getInfoTypeForString("BUILDING_GUSS_IRON"),
-				gc.getInfoTypeForString("BUILDING_FORGE")
+				gc.getInfoTypeForString("BUILDING_FORGE_WEAPONS")
 		]
 		if bLager:
 				iRand = 30
@@ -2346,7 +2347,7 @@ def removeNoBonusNoBuilding(pCity):
 				gc.getInfoTypeForString("BUILDING_WINERY"),
 				gc.getInfoTypeForString("BUILDING_PAPYRUSPOST"),
 				gc.getInfoTypeForString("BUILDING_MUREX"),
-				gc.getInfoTypeForString("BUILDING_GERBEREI"),
+				#gc.getInfoTypeForString("BUILDING_GERBEREI"),
 				gc.getInfoTypeForString("BUILDING_FURRIER"),
 				gc.getInfoTypeForString("BUILDING_MARMOR_WERKSTATT")
 		]
@@ -2559,6 +2560,7 @@ def doEmigrantSpawn(pCity):
 		bRevoltDanger = False
 		iChance = 4
 		iCityUnhappy = pCity.unhappyLevel(0) - pCity.happyLevel()
+		iTaxesLimit = getTaxesLimit(pPlayer)
 
 		# Unhappiness per non state religion (by Dertuek)
 		iHappNonState = pPlayer.getNonStateReligionHappiness()
@@ -2592,8 +2594,8 @@ def doEmigrantSpawn(pCity):
 		elif pPlayer.getStateReligion() != -1 and not pCity.isHasReligion(pPlayer.getStateReligion()):
 				bRevoltDanger = True
 				text = CyTranslator().getText("TXT_KEY_MESSAGE_CITY_EMIGRANTS_4", (pCity.getName(), popNeu, popCity))
-		elif pPlayer.getCommercePercent(0) > 50:
-				iChance = int((pPlayer.getCommercePercent(0) - 50) / 5)
+		elif pPlayer.getCommercePercent(0) > iTaxesLimit:
+				iChance = int((pPlayer.getCommercePercent(0) - iTaxesLimit) / 5)
 				# Pro Happy Citizen 5% Nachlass
 				iChance = iChance - pCity.happyLevel() + pCity.unhappyLevel(0)
 				bRevoltDanger = iChance > 0
@@ -4034,8 +4036,11 @@ def getCityStatus(pCity, iPlayer, iCity, bReturnButton):
 
 # City Civil War
 def doCheckCivilWar(pCity):
-		if pCity.isNone(): return
-		if pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
+		# BTS Bug 10.2023: wo zufällig eine Stadt ohne Namen und falscher ID geschickt wird (im WB wird sie mit Namen und anderer ID angezeigt)
+		# getName() check verhindert somit einen python Fehler (c++ exception) auf großen Karten
+		if pCity.isNone() or pCity == None or pCity.getName() == "":
+				return
+		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_CIVIL_WAR")):
 				# ***TEST***
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("CIVIL WAR",pCity.getX())), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCity.getName(),pCity.getY())), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -4280,11 +4285,17 @@ def doCheckDyingGeneral(pCity, bOnCityAcquired):
 
 # Eventmanager onUnitBuilt
 # Wenn eine monotheistische Religionen in der Stadt ist, aber diese nicht als Staatsreligion deklariert ist, verweigert die Einheit den Kriegsdienst
+# Feature wird mit Toleranzedikt beendet (ausser bei Staatsform Exklusivismus)
 def doRefuseUnitBuilt(pCity, pUnit):
-		if not pUnit.isMilitaryHappiness(): return
+		if not pUnit.isMilitaryHappiness():
+				return
 
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
+
+		if not pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_EXCLUSIVE")) and gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_TOLERANZ")):
+				return
+
 		LReligions = [
 				gc.getInfoTypeForString("RELIGION_JUDAISM"),
 				gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
@@ -4306,3 +4317,11 @@ def doRefuseUnitBuilt(pCity, pUnit):
 						szText = u"%s: " % (pCity.getName()) + CyTranslator().getText(LText[iRandText], ())
 						CyInterface().addMessage(iPlayer, True, 10, szText, None, 2, pUnit.getButton(), ColorTypes(7), pCity.getX(), pCity.getY(), True, True)
 
+def getTaxesLimit(pPlayer):
+		if (pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_DEMOCRACY")) or
+				pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_ARISTOKRATIE")) or
+				pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_IMPERATOR"))
+		):
+				return 50
+		else:
+				return 75

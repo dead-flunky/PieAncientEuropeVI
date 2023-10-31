@@ -712,7 +712,10 @@ class CvEventManager:
 																		if iDamage > 0:
 																				PAE_Unit.doTrojanHorse(pCity, pUnit)
 
-				# 698 FREI (ehemals freie Missionare durch Tech: nun bei 676)
+				# 698 reine INFO für RangPromoUp (Grüne-Pfeil-Beförderung)
+				# Ausführung für RangPromoUp in 751
+				elif iData1 == 698:
+						CyInterface().addMessage(iData4, True, 10, CyTranslator().getText("TXT_KEY_BUTTON_RANG_PROMO_UP3", ()), None, 2, None, ColorTypes(13), 0, 0, False, False)
 
 				# Unit bekommt Edle Ruestung
 				elif iData1 == 699:
@@ -1858,6 +1861,9 @@ class CvEventManager:
 						PAE_Unit.doUpgradeRang(iData4, iData5)
 
 				# 752: bless units
+				# iData2 0: Bless units (Hagia Sophia)
+				# iData2 1,2: ?
+				# iData2 3: Better morale (Zeus)
 				elif iData1 == 752:
 						# iData1, iData2, ... , iData5
 						# 752, 0 or 1, -1, iPlayer, iUnitID
@@ -1865,19 +1871,27 @@ class CvEventManager:
 						if iData2 == 1:
 								PAE_Unit.doMoralUnit(pUnit)
 								PAE_Unit.doGoToNextUnit(pUnit)
+						elif iData2 == 3:
+								PAE_Unit.doMoralUnits(pUnit,3)
+								PAE_Unit.doGoToNextUnit(pUnit)
 						else:
 								PAE_Unit.doBlessUnits(pUnit)
 
 				# Slave -> Latifundium oder Village/Dorf
+				# Emigrant -> Village/Dorf
+				# Emigrant+Settler -> Village->Town (Tech: Heilkunde)
 				elif iData1 == 753:
-						# 753, 0 oder 1, -1, iPlayer, iUnitID
+						# 753, 0,1 oder 2, -1, iPlayer, iUnitID
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
 						pPlot = pUnit.plot()
 						if iData2 == 1:
 								PAE_Sklaven.doUpgradeLatifundium(pPlot)
+						elif iData2 == 2:
+								pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_TOWN"))
 						else:
 								pPlot.changeUpgradeProgress(10)
+						CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_SETTLER")
 						pUnit.doCommand(CommandTypes.COMMAND_DELETE, 1, 1)
 						pUnit = None
 
@@ -1918,7 +1932,7 @@ class CvEventManager:
 				# 759: give units morale
 				elif iData1 == 759:
 						# iData1, iData2, ... , iData5
-						# 759, iTyp (Rhetorik oder Druide), -1, iPlayer, iUnitID
+						# 759, iTyp (1: Rhetorik, 2:Sklavenopfer), -1, iPlayer, iUnitID
 						pUnit = gc.getPlayer(iData4).getUnit(iData5)
 						PAE_Unit.doMoralUnits(pUnit, iData2)
 						if iData2 == 2:
@@ -1970,12 +1984,12 @@ class CvEventManager:
 						PAE_Unit.doBurnDownForest(pUnit)
 						PAE_Unit.doGoToNextUnit(pUnit)
 
-				# Pferdewechsel (Held, General oder bestimmte Einheiten mit sehr hohem Rang)
+				# Horse change / Pferdewechsel (Held, General oder bestimmte Einheiten mit sehr hohem Rang)
 				elif iData1 == 766:
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
 						CyInterface().addMessage(iData4, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_PFERDEWECHSEL_DONE", ()), None, 2, None, ColorTypes(8), 0, 0, False, False)
-						pUnit.setMoves(0)
+						pUnit.finishMoves()
 
 				# Magnetkompass
 				elif iData1 == 767:
@@ -2044,7 +2058,6 @@ class CvEventManager:
 						pUnit.finishMoves()
 						PAE_Unit.doGoToNextUnit(pUnit)
 
-				# iData1 698 wieder frei
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -2712,11 +2725,80 @@ class CvEventManager:
 				if iGameTurn > 1:
 						PAE_Barbaren.createCampUnit(iPlayer, iGameTurn)
 
+				# PAE 6.16: Triggering PAE events
+				iRand = CvUtil.myRandom(10, "Trigger PAE Sumpf Events")
+				if iRand < 10:
+						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_BORDELL"))
+				elif iRand < 3:
+						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_MOOR"))
+				elif iRand < 4:
+						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO"))
+
+				#if pPlayer.isHuman():
+				#		pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_SPARTACUS"))
+
 				# MESSAGES: city growing (nur im Hot-Seat-Modus)
 				if gc.getGame().isHotSeat():
 						if pPlayer.isHuman():
 								for pyCity in PyPlayer(iPlayer).getCityList():
 										PAE_City.doMessageCityGrowing(pyCity.GetCy())
+
+
+				# PAE 6.16 Ranged Combat / Range Attack / Fernangriff
+				"""
+				if not pPlayer.isHuman():
+						iRange = 1
+						pTeam = gc.getTeam(pPlayer.getTeam())
+						(loopUnit, pIter) = pPlayer.firstUnit(False)
+						while loopUnit:
+								if loopUnit.isRanged() and loopUnit.canAttack():
+										pAttackPlot1 = []
+										pAttackPlot2 = []
+										iDamage = 100
+										bDoRangeAttack = False
+										# Plot holen
+										plot = loopUnit.plot()
+										# wenn Unit in der Stadt, immer verteidigen
+										# wenn Unit alleine auf dem Feld, nicht angreifen sondern eher wegbewegen (AI choice)
+										if plot.isCity() or plot.getNumUnits() > 1:
+												bDoRangeAttack = True
+										# Plots rundum checken
+										if bDoRangeAttack:
+												iX = loopUnit.getX()
+												iY = loopUnit.getY()
+												for x in range(-iRange, iRange+1):
+														for y in range(-iRange, iRange+1):
+																loopPlot = plotXY(iX, iY, x, y)
+																if loopPlot is not None and not loopPlot.isNone():
+																		iNumUnits = loopPlot.getNumUnits()
+																		if iNumUnits > 0:
+																				for i in range(iNumUnits):
+																						iOwner = loopPlot.getUnit(i).getOwner()
+																						if iOwner != iPlayer:
+																								if pTeam.isAtWar(gc.getPlayer(iOwner).getTeam()):
+																										iUnitDamage = loopPlot.getUnit(i).getDamage()
+																										if iUnitDamage < iDamage:
+																												iDamage = iUnitDamage
+																												if iDamage == 0:
+																														pAttackPlot1.append(loopPlot)
+																												else:
+																														pAttackPlot2.append(loopPlot)
+																												break
+
+										pAttackPlot = []
+										if len(pAttackPlot1):
+												iRand = CvUtil.myRandom(len(pAttackPlot1), "onEndPlayerTurn (AI): Choose primary Plot for Ranged Combat")
+												pAttackPlot.append(pAttackPlot1[iRand])
+										elif len(pAttackPlot2):
+												iRand = CvUtil.myRandom(len(pAttackPlot2), "onEndPlayerTurn (AI): Choose secondary Plot for Ranged Combat")
+												pAttackPlot.append(pAttackPlot2[iRand])
+
+										if len(pAttackPlot):
+												loopUnit.rangeStrike(pAttackPlot[0].getX(), pAttackPlot[0].getY())
+												loopUnit.finishMoves()
+
+								(loopUnit, pIter) = pPlayer.nextUnit(pIter, False)
+				"""
 
 				# PAE Debug Mark 3
 				#"""
@@ -3150,7 +3232,7 @@ class CvEventManager:
 												# Unit ranks / Unit Rang Promo
 												if pLoser.isMilitaryHappiness() and pLoser.getUnitAIType() != UnitAITypes.UNITAI_EXPLORE:
 														# PAE Feature 3: Unit Rang Promos
-														if pWinner.isMadeAttack() or CvUtil.myRandom(2, "Rank of a losing unit") == 1:
+														if pWinner.isMadeAttack() or CvUtil.myRandom(2, "Rank of a defending unit") == 1:
 																PAE_Unit.doRankPromo(pWinner)
 
 												# ---- Script DATAs in Units
@@ -3804,6 +3886,8 @@ class CvEventManager:
 																popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
 																popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_HERO_MOVE_INTO_CITY_POPUP",("", )))
 																popupInfo.addPopup(pUnit.getOwner())
+										# PAE 6.16: Einheit wird wegen dem Chaos/Bürgerkrieg in der Stadt gestoppt
+										pUnit.finishMoves()
 
 								# Keine Formationen in der Stadt (=> rausgegeben ab PAE V Patch 2, Formationen sind auf Stadtangriff/verteidigung angepasst)
 								#PAE_Unit.doUnitFormation (pUnit, -1)

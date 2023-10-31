@@ -4,7 +4,6 @@ BeginGame
 	Era=ERA_BRONZE
 	Speed=GAMESPEED_NORMAL
 	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_NO_CITY_RAZING
 	Option=GAMEOPTION_NO_TECH_BROKERING
 	Option=GAMEOPTION_PERMANENT_ALLIANCES
 	Option=GAMEOPTION_NEW_RANDOM_SEED
@@ -4740,7 +4739,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -4911,7 +4909,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -6213,7 +6210,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -7606,7 +7602,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -8615,7 +8610,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -10626,7 +10620,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -12134,7 +12127,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -13160,7 +13152,6 @@ BeginPlot
 		BuildingType=BUILDING_LIGHT_WALLS
 		BuildingType=BUILDING_WALLS
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -13335,7 +13326,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -15630,7 +15620,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -17542,7 +17531,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -17864,7 +17852,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -18848,7 +18835,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -19041,7 +19027,6 @@ BeginPlot
 		BuildingType=BUILDING_LIGHT_WALLS
 		BuildingType=BUILDING_WALLS
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -21070,7 +21055,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -21540,7 +21524,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -23031,7 +23014,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -26276,7 +26258,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -28578,7 +28559,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -29796,7 +29776,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -29985,7 +29964,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -30840,7 +30818,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -34359,7 +34336,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
@@ -34567,7 +34543,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -35272,7 +35247,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -35472,7 +35446,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_GREEK_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
@@ -36592,7 +36565,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -39365,7 +39337,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -39939,7 +39910,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -41273,7 +41243,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -42522,7 +42491,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY
@@ -43087,7 +43055,6 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_WINERY

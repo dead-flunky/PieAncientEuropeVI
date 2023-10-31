@@ -526,23 +526,11 @@ def doOnUnitMove(pUnit, pPlot, pOldPlot):
 								if pPlot.getOwner() == gc.getGame().getActivePlayer():
 										CyAudioGame().Play2DSound("AS2D_THEIRDECLAREWAR")
 
-		# Barbarische Tiere sollen keine Stadt betreten / Barbarian animals will be disbanded when moving into a city
-		elif pUnit.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL:
-				if pPlot.isCity() or pPlot.getFeatureType() == gc.getInfoTypeForString("FEATURE_DARK_ICE"):
+		# Ziegen bleiben auf Bergen, wenn sie wegen Kulturgrenzen ausgeschlossen sind
+		if pPlot.isPeak() and pOldPlot.isPeak():
+				if CvUtil.myRandom(3, "killGoatsOnPeaks") == 1:
 						pUnit.kill(True, -1)
 						return True
-		# Barbarische Emigranten stehen nur rum und benoetigen unnoetig Rechenzeit
-		elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_EMIGRANT"):
-				pUnit.kill(True, -1)
-				return True
-		# Barbarische befreite Sklaven stehen nur rum und benoetigen unnoetig Rechenzeit
-		elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_FREED_SLAVE"):
-				pUnit.kill(True, -1)
-				return True
-		# Barbarische Haendler sind unnoetig
-		elif pUnit.getUnitType() in L.LTradeUnits:
-				pUnit.kill(True, -1)
-				return True
 
 		return False
 

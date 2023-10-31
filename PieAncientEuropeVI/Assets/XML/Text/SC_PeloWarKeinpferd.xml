@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<Civ4GameText xmlns="http://www.firaxis.com">
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="https://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_SCENARIO_PELOPONNESIAN_WAR_KEINPFERD</Tag>
 		<English>In the Peloponnesian War, Sparta and Athens vie for supremacy in Greece. After the joint victory over the Persians, Athens made large parts of eastern Greece tribute to the annoyance of Sparta. The poor Spartans, on the other hand, controlled the Peloponnese. Sparta's fighters are the cities of the Peloponnese, Thebes, temporarily Macedonia and Corinth. The rich Corinth, with the third largest, and Korkyrea (Corfu), with the second largest fleet, are fighting for supremacy in western Greece. All of southern Italy is in the hands of the coalition of Greek colonies known as Magna Graecia. In Sicily, Syracuse is flourishing as an important regional power. The hated Persians sit in the east. Each of these factions is playable. Spartans or Athenians are of course recommended. Thanks to an undefeated hoplite force, Sparta rules the country. The Athenians, on the other hand, have the largest fleet and sea sovereignty. Or be the laughing third party as Thebans or Corinthians![NEWLINE][NEWLINE]Huge map size. Turns correspond to months. Created by Keinpferd and Boggy.</English>
@@ -644,8 +644,8 @@
 		<Tag>TXT_KEY_CIV_CORINTHIANS_ADJECTIVE</Tag>
 		<English>Corinthian</English>
 		<French><Text>corinthien:corinthienne:corinthiens:corinthiennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
-		<German><Text>Korinthisch:korinthischen:korinthische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural></German>
-		<Italian>corinto</Italian>
+		<German><Text>Korinthisch:korinthischen:korinthische:korinthischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
+		<Italian><Text>corinzio:corinzia:corinzie:corinzi</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>corintio:corintia:corintios:corintias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
@@ -720,7 +720,7 @@
 		<Tag>TXT_KEY_CIV_KORKYRA_ADJECTIVE</Tag>
 		<English>Corcyran</English>
 		<French>corcyre</French>
-		<German><Text>korkyrisch:korkyrischen:korkyrische</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural></German>
+		<German><Text>korkyrisch:korkyrischen:korkyrische:korkyrischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian>corcyro</Italian>
 		<Spanish>corciro</Spanish>
 	</TEXT>
@@ -744,7 +744,7 @@
 		<Tag>TXT_KEY_CIV_EPIDAMNOS_ADJECTIVE</Tag>
 		<English>Epidamnian</English>
 		<French><Text>&#201;pidamnien:&#201;pidamnienne:&#201;pidamniens:&#201;pidamniennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
-		<German><Text>epidamnisch:epidamnischen:epidamnisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural></German>
+		<German><Text>epidamnisch:epidamnischen:epidamnisches:epidamnischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian><Text>epidamno:epidamna:epidamni:epidamne</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>epidamno:epidamna:epidamnos:epidamnas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>
@@ -768,7 +768,7 @@
 		<Tag>TXT_KEY_CIV_THESSALIEN_ADJECTIVE</Tag>
 		<English>Thessalian</English>
 		<French><Text>thessalien:thessalienne:thessaliens:thessaliennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
-		<German><Text>thessalisch:thessalischen:thessalisches</Text><Gender>Neuter:Neuter:Neuter</Gender><Plural>0:0:0</Plural></German>
+		<German><Text>thessalisch:thessalischen:thessalische:thessalischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian><Text>tessaglio:tessaglia:tessagli:tessagle</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>tesalia:tesalia:tesalios:tesalias</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
 	</TEXT>

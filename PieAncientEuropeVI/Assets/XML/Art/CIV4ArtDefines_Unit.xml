@@ -1891,7 +1891,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARCHER_ROMAN1</Type>
-			<Button>,Art/Interface/Buttons/Units/Archer.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,1</Button>
+			<Button>Art/Interface/Buttons/Units/button_roman_compositbow.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3821,7 +3821,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARCHER_KURZ_GREEK</Type>
-			<Button>Art/Interface/Buttons/Units/button_unit_kurzbogen.dds</Button>
+			<Button>Art/Interface/Buttons/Units/button_kurzbogen_greek.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4552,7 +4552,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARCHER_REFLEX_MACEDON</Type>
-			<Button>,Art/Interface/Buttons/Units/Maceman.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,1,7</Button>
+			<Button>Art/Interface/Buttons/Units/button_reflex_macedon.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5483,7 +5483,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WARBAND_GERMAN</Type>
-			<Button>Art/Interface/Buttons/Units/button_unit_warband.dds</Button>
+			<Button>Art/Interface/Buttons/Units/button_unit_warband_german.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

@@ -376,6 +376,40 @@ class CvPediaBuilding:
 
 				screen.setSelectedListBoxStringGFC(self.top.LIST_ID, iSelected)
 
+		# BTS Standard
+		"""
+		def getBuildingType(self, iBuilding):
+			if (isWorldWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType())):
+				return True
+
+			if (isTeamWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType())):
+				return True
+
+			if (isNationalWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType())):
+				return True
+
+			# Regular building
+			return False
+			
+		def getBuildingSortedList(self, bWonder):
+			listBuildings = []
+			iCount = 0
+			for iBuilding in range(gc.getNumBuildingInfos()):
+				if (self.getBuildingType(iBuilding) == bWonder and not gc.getBuildingInfo(iBuilding).isGraphicalOnly()):
+					listBuildings.append(iBuilding)
+					iCount += 1
+			
+			listSorted = [(0,0)] * iCount
+			iI = 0
+			for iBuilding in listBuildings:
+				listSorted[iI] = (gc.getBuildingInfo(iBuilding).getDescription(), iBuilding)
+				iI += 1
+			listSorted.sort()
+			return listSorted
+		"""
+		# ---------------
+
+		# PAE
 		def getBuildingType(self, iBuilding):
 				if (isWorldWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType())):
 						return 1
@@ -387,9 +421,9 @@ class CvPediaBuilding:
 						return 2
 
 				# Special Building
-				lBuildingClasses = self.getStandardBuildings()
-				if iBuilding not in lBuildingClasses:
-						return 3
+				#lBuildingClasses = self.getStandardBuildings()
+				#if iBuilding not in lBuildingClasses:
+				#		return 3
 
 				# Regular building
 				return 0
@@ -399,17 +433,17 @@ class CvPediaBuilding:
 				listBuildings = []
 				iCount = 0
 
-				lBuildingClasses = []
-				if iTyp == 0 or iTyp == 3:
-						lBuildingClasses = self.getStandardBuildings()
+				#lBuildingClasses = []
+				#if iTyp == 0 or iTyp == 3:
+				#		lBuildingClasses = self.getStandardBuildings()
 
 				for iBuilding in range(gc.getNumBuildingInfos()):
 						if not gc.getBuildingInfo(iBuilding).isGraphicalOnly() and gc.getBuildingInfo(iBuilding).getArtDefineTag() != "ART_DEF_BUILDING_FAKE":
-								if (iTyp == 0 and self.getBuildingType(iBuilding) == 0 and iBuilding in lBuildingClasses or
-												iTyp == 1 and self.getBuildingType(iBuilding) == 1 or
-												iTyp == 2 and self.getBuildingType(iBuilding) == 2 or
-												iTyp == 3 and self.getBuildingType(iBuilding) == 3 or
-												iTyp == 0 and self.getBuildingType(iBuilding) == 3):  # normal und special bei Tyü 0 anzeigen
+								if (iTyp == 0 and self.getBuildingType(iBuilding) == 0 or #and iBuilding in lBuildingClasses or
+										iTyp == 1 and self.getBuildingType(iBuilding) == 1 or
+										iTyp == 2 and self.getBuildingType(iBuilding) == 2
+										#iTyp == 3 and self.getBuildingType(iBuilding) == 3
+										):
 										listBuildings.append(iBuilding)
 										iCount += 1
 
@@ -428,6 +462,7 @@ class CvPediaBuilding:
 						if iBuilding != -1 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0:
 								list.append(iBuilding)
 				return list
+
 
 		# Will handle the input for this screen...
 

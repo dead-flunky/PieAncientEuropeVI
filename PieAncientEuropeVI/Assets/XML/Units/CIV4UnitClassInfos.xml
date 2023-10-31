@@ -26,8 +26,6 @@
 <!-- ++++ UNITCLASS_SPECIAL2 (max 3 units) ++++ -->
 <!-- UNIT_STAMMESFUERST: Kelten, Gallien, Briten, Germanen, Vandals -->
 <!-- UNIT_FALXMAN: Daker -->
-<!-- UNIT_COMPANION_CAVALRY -->
-<!-- UNIT_CELERES: Etrusker -->
 <!-- UNIT_EGYPT_CHEPESCH_RIDER: Egypt, Nubia -->
 <!-- UNIT_INDIAN_LONGBOW: India -->
 <!-- ++++ -->
@@ -43,15 +41,17 @@
 <!-- UNIT_CARTH_SACRED_BAND_SWORD: Karthager -->
 <!-- UNIT_WARBAND: Kelten, Gallien, Briten, Germanen, Vandals -->
 <!-- UNIT_SPARTA_1: Sparta -->
+<!-- UNIT_COMPANION_CAVALRY: Makedon -->
 <!-- UNIT_CHARIOT_RUNNER: Hethiter -->
 <!-- UNIT_BERGKRIEGER: Illyrer -->
 <!-- UNIT_MONGOL_KESHIK: Hunnen -->
 <!-- ++++ -->
 <!-- ++++ UNITCLASS_ELITE1 (max 1 units) ++++ -->
+<!-- UNIT_CELERES: Rom, Etrusker -->
 <!-- UNIT_ARVERNER: Kelten, Gallien, Iberer -->
 <!-- UNIT_BERSERKER_GERMAN: Germanen, Vandals -->
 <!-- UNIT_SPARTA_2: Sparta, Griechen -->
-<!-- UNIT_COMPANION_CAVALRY: Makedon -->
+<!-- UNIT_THORAKITAI: Makedon -->
 <!-- UNIT_AMAZONE: Hethiter -->
 <!-- UNIT_MARDUK_PRIEST: Babylon, Sumer -->
 <!-- UNIT_PHILISTER: Israel, Phoen -->
@@ -63,12 +63,10 @@
 <!-- ++++ UNITCLASS_ELITE2 (max 1 units) ++++ -->
 <!-- UNIT_BELGIER: Kelten, Gallien, Briten, Germanen -->
 <!-- UNIT_SACRED_BAND: Griechen, Theben -->
-<!-- UNIT_ARGYRASPIDAI: Makedon -->
 <!-- UNIT_APFELTRAEGER: Perser -->
 <!-- ++++ -->
 <!-- ++++ UNITCLASS_ELITE3 (max 1 units) ++++ -->
 <!-- UNIT_GERMAN_HARIER: Germanen, Vandals -->
-<!-- UNIT_THORAKITAI: Makedon -->
 <!-- UNIT_MACCABEE: Israel -->
 <!-- ++++ -->
 <!-- UnitClass Schema -->

@@ -100,8 +100,12 @@ def onCityAcquired(pCity, iNewOwner, iPreviousOwner):
 
 																popupInfo = CyPopupInfo()
 																popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-																popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_10", (pCity.getName(),
-																									pPlayer.getCivilizationAdjective(3), gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getDescription())))
+																if pCity == None:
+																		popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_14", (
+																											pPlayer.getCivilizationAdjective(3), gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getDescription())))
+																else:
+																		popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_10", (pCity.getName(),
+																											pPlayer.getCivilizationAdjective(3), gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getDescription())))
 																popupInfo.setData1(iNewOwner)
 																popupInfo.setData2(iPreviousOwner)
 																popupInfo.setData3(iVassal)
@@ -241,6 +245,7 @@ def onCityAcquired(pCity, iNewOwner, iPreviousOwner):
 
 							# Abfrage ob man als Gewinner den Schwaecheren zum Vasall nimmt
 							# HI-HI
+							# pCity darf None sein
 							if pWinner.isHuman() and pLoser.isHuman():
 									VassalHItoHI(iNewOwner, iPreviousOwner, pCity)
 
@@ -270,7 +275,10 @@ def onCityAcquired(pCity, iNewOwner, iPreviousOwner):
 							iGold = int(iGold)
 							popupInfo = CyPopupInfo()
 							popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
-							popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_02", (pCity.getName(), gc.getLeaderHeadInfo(pWinner.getLeaderType()).getDescription(), iGold)))
+							if pCity == None:
+									popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_15", (gc.getLeaderHeadInfo(pWinner.getLeaderType()).getDescription(), iGold)))
+							else:
+									popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_02", (pCity.getName(), gc.getLeaderHeadInfo(pWinner.getLeaderType()).getDescription(), iGold)))
 							popupInfo.setData1(iNewOwner)
 							popupInfo.setData2(iPreviousOwner)
 							popupInfo.setData3(iGold)

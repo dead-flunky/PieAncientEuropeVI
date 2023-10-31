@@ -20,6 +20,10 @@
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
+											<iThreshold>0</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_PELOPONNESIAN</GameSpeedType>
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
@@ -68,6 +72,10 @@
 							</SpeedThreshold>
 							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_WAROFDIADOCHI_JD</GameSpeedType>
+											<iThreshold>0</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
 											<iThreshold>0</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -122,6 +130,10 @@
 											<iThreshold>20</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
+											<iThreshold>20</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_PELOPONNESIAN</GameSpeedType>
 											<iThreshold>30</iThreshold>
 							</SpeedThreshold>
@@ -170,6 +182,10 @@
 							</SpeedThreshold>
 							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_WAROFDIADOCHI_JD</GameSpeedType>
+											<iThreshold>200</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
 											<iThreshold>200</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
@@ -224,6 +240,10 @@
 											<iThreshold>2000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
+											<iThreshold>2000</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_PELOPONNESIAN</GameSpeedType>
 											<iThreshold>3000</iThreshold>
 							</SpeedThreshold>
@@ -275,6 +295,10 @@
 											<iThreshold>10000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
+											<iThreshold>20000</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_PELOPONNESIAN</GameSpeedType>
 											<iThreshold>20000</iThreshold>
 							</SpeedThreshold>
@@ -324,6 +348,10 @@
 							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_WAROFDIADOCHI_JD</GameSpeedType>
 											<iThreshold>40000</iThreshold>
+							</SpeedThreshold>
+							<SpeedThreshold>
+											<GameSpeedType>GAMESPEED_SECONDPUNICWAR_JD_BARCAS</GameSpeedType>
+											<iThreshold>100000</iThreshold>
 							</SpeedThreshold>
 							<SpeedThreshold>
 											<GameSpeedType>GAMESPEED_PELOPONNESIAN</GameSpeedType>

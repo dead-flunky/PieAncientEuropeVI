@@ -10,8 +10,8 @@
 # No other modules should import this
 #
 # lots of ancient BTS events
-# all PAE events made by Thorgal (at least until PAE 6)
-# the new ones by the civ community
+# all PAE events made by Thorgal (until PAE 6)
+# the new ones by the civ community and me
 import CvUtil
 from CvPythonExtensions import (CyGlobalContext, CyTranslator, UnitAITypes,
 																DirectionTypes, GameOptionTypes, CyMap,
@@ -2564,12 +2564,10 @@ def canTriggerMoor(argsList):
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		unit = player.getUnit(kTriggeredData.iUnitId)
 
-		if unit.isNone():
-				return False
-
-		iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
-		if unit.isHasPromotion(iSumpf):
-				return False
+		if unit.isNone(): return False
+		if unit.getImmobileTimer() > 0: return False
+		if unit.plot().getImprovementType() != -1: return False
+		if unit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1")): return False
 
 		return True
 
@@ -2582,15 +2580,11 @@ def canTriggerMoorPromo(argsList):
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		unit = player.getUnit(kTriggeredData.iUnitId)
 
-		if unit.isNone():
-				return False
+		if unit.isNone(): return False
 
-		if unit.getExperience() < 5:
-				return False
+		if unit.getExperience() < 5: return False
 
-		iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
-		if unit.isHasPromotion(iSumpf):
-				return False
+		if unit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1")): return False
 
 		return True
 
@@ -3875,19 +3869,65 @@ def canTriggerKupfer(argsList):
 
 		return False
 
+#############################
 
 def canTriggerNoWar(argsList):
-
 		kTriggeredData = argsList[0]
-		player = gc.getPlayer(kTriggeredData.ePlayer)
-		team = gc.getTeam(player.getTeam())
-		if player.getStateReligion() not in L.LMonoReligions:
-				if not team.getAtWarCount(True):
-						return True
-
+		pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+		pTeam = gc.getTeam(pPlayer.getTeam())
+		if pPlayer.getStateReligion() not in L.LMonoReligions:
+				if not pTeam.getAtWarCount(True): return True
 		return False
 
+def canDoNO_WAR_1(argsList):
+		kTriggeredData = argsList[1]
+		pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+		pPlot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+		for iUnit in range(pPlot.getNumUnits()):
+				pLoopUnit = pPlot.getUnit(iUnit)
+				if pLoopUnit.getOwner() == kTriggeredData.ePlayer and pLoopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_SLAVE"):
+						return True
+		return False
+
+def canDoNO_WAR_2(argsList):
+		kTriggeredData = argsList[1]
+		pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+		pCity = pPlayer.getCity(kTriggeredData.iCityId)
+		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_TAVERN")):
+				return True
+		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_BRAUSTAETTE")):
+				return True
+		if pCity.hasBonus(gc.getInfoTypeForString("BONUS_WINE")):
+				return True
+		return False
+
+def doNO_WAR_Building(argsList):
+		kTriggeredData = argsList[1]
+		pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
+		pCity = pPlayer.getCity(kTriggeredData.iCityId)
+		if pCity.isProductionBuilding():
+				iChange = int(pCity.getProduction() / 2)
+				pCity.changeProduction(-iChange)
+
+def getHelpNoWarSlave(argsList):
+		return localText.getText("TXT_KEY_EVENT_NO_WAR_HELP1", ())
+
+def getHelpNoWarTavern(argsList):
+		return localText.getText("TXT_KEY_EVENT_NO_WAR_HELP2", ())
+
+def getHelpNoWarBuilding(argsList):
+		return localText.getText("TXT_KEY_EVENT_NO_WAR_HELP3", ())
 
 
 #############################
+
+def canTriggerBordell(argsList):
+		pPlayer = gc.getPlayer(argsList[1])
+		iCity = argsList[2]
+		pCity = pPlayer.getCity(iCity)
+		if pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_BORDELL")): return False
+		# Tech Check muss sein, weil dieses Event direkt im EventManager ausgeführt wird und es sonst immer startet
+		if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_SYNKRETISMUS")): return False
+		return True
+
 

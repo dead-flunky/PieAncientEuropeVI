@@ -103,7 +103,7 @@
 			<iGreatPeoplePercent>110</iGreatPeoplePercent>
 			<iCulturePercent>110</iCulturePercent>
 			<iAnarchyPercent>75</iAnarchyPercent>
-			<iEventChancePerTurn>2</iEventChancePerTurn>
+			<iEventChancePerTurn>4</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -173,7 +173,7 @@
 			<iGreatPeoplePercent>125</iGreatPeoplePercent>
 			<iCulturePercent>125</iCulturePercent>
 			<iAnarchyPercent>100</iAnarchyPercent>
-			<iEventChancePerTurn>2</iEventChancePerTurn>
+			<iEventChancePerTurn>6</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -241,13 +241,13 @@
 			<iTrainPercent>125</iTrainPercent>
 			<iConstructPercent>125</iConstructPercent>
 			<iCreatePercent>125</iCreatePercent>
-			<iResearchPercent>125</iResearchPercent>
+			<iResearchPercent>100</iResearchPercent>
 			<iBuildPercent>125</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>125</iGreatPeoplePercent>
 			<iCulturePercent>125</iCulturePercent>
 			<iAnarchyPercent>125</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
+			<iEventChancePerTurn>8</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -337,13 +337,13 @@
 			<iTrainPercent>150</iTrainPercent>
 			<iConstructPercent>150</iConstructPercent>
 			<iCreatePercent>150</iCreatePercent>
-			<iResearchPercent>150</iResearchPercent>
+			<iResearchPercent>100</iResearchPercent>
 			<iBuildPercent>150</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>150</iGreatPeoplePercent>
 			<iCulturePercent>150</iCulturePercent>
 			<iAnarchyPercent>150</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
+			<iEventChancePerTurn>8</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -435,12 +435,12 @@
 			<iConstructPercent>150</iConstructPercent>
 			<iCreatePercent>150</iCreatePercent>
 			<iResearchPercent>150</iResearchPercent>
-			<iBuildPercent>150</iBuildPercent>
+			<iBuildPercent>100</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>150</iGreatPeoplePercent>
 			<iCulturePercent>150</iCulturePercent>
 			<iAnarchyPercent>150</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
+			<iEventChancePerTurn>10</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -537,7 +537,7 @@
 			<iGreatPeoplePercent>100</iGreatPeoplePercent>
 			<iCulturePercent>100</iCulturePercent>
 			<iAnarchyPercent>40</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
+			<iEventChancePerTurn>10</iEventChancePerTurn>
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -589,7 +589,7 @@
 			<iGreatPeoplePercent>80</iGreatPeoplePercent>
 			<iCulturePercent>80</iCulturePercent>
 			<iAnarchyPercent>34</iAnarchyPercent>
-			<iEventChancePerTurn>6</iEventChancePerTurn>
+			<iEventChancePerTurn>10</iEventChancePerTurn>
 			<iSoundtrackSpace>120</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
@@ -653,7 +653,7 @@
 			<iGreatPeoplePercent>70</iGreatPeoplePercent>
 			<iCulturePercent>70</iCulturePercent>
 			<iAnarchyPercent>34</iAnarchyPercent>
-			<iEventChancePerTurn>8</iEventChancePerTurn>
+			<iEventChancePerTurn>10</iEventChancePerTurn>
 			<iSoundtrackSpace>80</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>

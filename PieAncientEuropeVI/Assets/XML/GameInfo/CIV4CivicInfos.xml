@@ -7,6 +7,7 @@
 			<Description>TXT_KEY_CIVIC_CHIEF</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOTISM_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES1_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,1</Button>
 			<TechPrereq>NONE</TechPrereq>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -72,6 +73,7 @@
 			<Description>TXT_KEY_CIVIC_MONARCH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES1_HELP</Help>
 			<Button>Art/Interface/Buttons/Civics/civic_koenigsrat.dds</Button>
 			<TechPrereq>TECH_LEADERSHIP</TechPrereq>
 			<iAnarchyLength>0</iAnarchyLength>
@@ -137,6 +139,7 @@
 			<Description>TXT_KEY_CIVIC_TYRANNIS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TYRANNIS_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES1_HELP</Help>
 			<Button>Art/Interface/Buttons/Techs/button_tech_denkmal.dds</Button>
 			<TechPrereq>TECH_TYRANNIS</TechPrereq>
 			<iAnarchyLength>0</iAnarchyLength>
@@ -202,6 +205,7 @@
 			<Description>TXT_KEY_CIVIC_CITIZENS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DEMOCRACY_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES2_HELP</Help>
 			<Button>Art/Interface/Buttons/Civics/button_civic_demokratie.dds</Button>
 			<TechPrereq>TECH_DEMOCRACY</TechPrereq>
 			<iAnarchyLength>0</iAnarchyLength>
@@ -271,6 +275,7 @@
 			<Description>TXT_KEY_CIVIC_ARISTOKRATIE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ARISTOKRATIE_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES2_HELP</Help>
 			<Button>Art/Interface/Buttons/Civics/civic_senat.dds</Button>
 			<TechPrereq>TECH_ARISTOKRATIE</TechPrereq>
 			<iAnarchyLength>0</iAnarchyLength>
@@ -345,6 +350,7 @@
 			<Description>TXT_KEY_CIVIC_IMPERATOR</Description>
 			<Civilopedia>TXT_KEY_TECH_IMPERIALISM_PEDIA</Civilopedia>
 			<Strategy/>
+			<Help>TXT_KEY_CIVIC_TAXES2_HELP</Help>
 			<Button>Art/Interface/Buttons/Civics/button_civic_herrscherkult.dds</Button>
 			<TechPrereq>TECH_NATIONALISM</TechPrereq>
 			<iAnarchyLength>0</iAnarchyLength>
