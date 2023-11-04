@@ -2356,9 +2356,9 @@
 		<Tag>TXT_KEY_CIV_CELT_SHORT_DESC</Tag>
 		<English>Celtia</English>
 		<French>Celtes</French>
-		<German><Text>Keltenreich</Text><Gender>Neuter</Gender><Plural>0</Plural></German>
+		<German><Text>Kelten</Text><Gender>Neuter</Gender><Plural>0</Plural></German>
 		<Italian><Text>Celti</Text><Gender>Male</Gender><Plural>1</Plural></Italian>
-		<Spanish><Text>Naci&#243;n Celta</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
+		<Spanish><Text>Celtas</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DAKER_ADJECTIVE</Tag>
@@ -4782,7 +4782,7 @@
 		<French>Vercing&#233;torix le Gaule</French>
 		<German>Vercingetorix der Gallier</German>
 		<Italian>Vercingetorix il Gallico</Italian>
-		<Spanish>Vercing&#233;torix el galo</Spanish>
+		<Spanish>Vercing&#233;torix el Galo</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_XERXES</Tag>

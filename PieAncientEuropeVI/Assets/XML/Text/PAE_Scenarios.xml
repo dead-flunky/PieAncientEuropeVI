@@ -204,7 +204,7 @@
 		<Tag>TXT_KEY_CHERSUKER_ADJECTIVE</Tag>
 		<English>Cheruscan</English>
 		<French>ch&#233;rusque</French>
-		<German>cheruskische</German>
+		<German>Cheruskische</German>
 		<Italian>cherusco</Italian>
 		<Spanish>cherusco</Spanish>
 	</TEXT>
@@ -439,6 +439,22 @@
 		<German>Ambiorix der Belger</German>
 		<Italian>Ambiorix il Belgi</Italian>
 		<Spanish>Ambiorix el Belgi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BITURIGEN</Tag>
+		<English>Biturigia</English>
+		<French>Biturigien</French>
+		<German>Biturigen</German>
+		<Italian>Biturigia</Italian>
+		<Spanish>Biturigia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BITURIGEN_ADJECTIVE</Tag>
+		<English>Biturigian</English>
+		<French>biturigii</French>
+		<German>biturigii</German>
+		<Italian>biturigii</Italian>
+		<Spanish>biturigii</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BRIGANTEN_ADJECTIVE</Tag>
@@ -980,7 +996,7 @@
 		<Tag>TXT_KEY_CIV_PARISI_ADJECTIVE</Tag>
 		<English>Parisian</English>
 		<French>parisien</French>
-		<German>parisische</German>
+		<German>Parisische</German>
 		<Italian>parisi</Italian>
 		<Spanish>parisi</Spanish>
 	</TEXT>
@@ -1561,6 +1577,14 @@
 		<Spanish>El mapa m&#225;s grande posible en PAE (205x120 mosaicos) - por brettschmitt[NEWLINE]&#161;Toma la competencia contra 52 naciones para gobernar el mundo antiguo![NEWLINE]_____________________[NEWLINE]&#161;Los recursos son raros! Algunas personas tienen ventajas significativas por su posici&#243;n inicial y un acceso m&#225;s f&#225;cil a los recursos. Por lo general, estas son las naciones poderosas de la antig&#252;edad, como Roma, el Bajo Egipto, Cartago o Persia. Otras naciones antiguas no tan conocidas tienen mucho m&#225;s que luchar al principio. &#161;Utilice la distribuci&#243;n de recursos mediante vagones de suministros para desarrollar su pa&#237;s![NEWLINE]Algunas naciones son Citystates. &#161;No pueden fundar sus propias ciudades y no pueden fundar una religi&#243;n! Los Citystates tienen su palacio desde el principio (aunque no el liderazgo tecnol&#243;gico) y una peque&#241;a ventaja en la cultura. Las ciudades-estado jugables son Erstrucans, Sparta y Babylon. Entonces Roma y Grecia tienen vecinos directos ... que, por cierto, no son amistosos.[NEWLINE]_____________________[NEWLINE]El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferido poder absoluto, &#161;esperando en que la noble gracia de los dioses nunca te abandone![NEWLINE]1) Intenta fundar una religi&#243;n o captura una.[NEWLINE]2) Construye un palacio tan pronto como puedas (Tec: Liderazgo). Despu&#233;s de eso, ser&#225;s capaz de afrontar los costes de mantenimiento de otras ciudades.[NEWLINE]3) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)[NEWLINE]4) &#161;Atenci&#243;n: Las mejoras cuestan dinero![NEWLINE]5) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.[NEWLINE][H2]Todas las caracter&#237;sticas pueden ser encontradas en la civilopedia sobre los conceptos del PAE.[\H2]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DAWN_OF_MAN_GALLIA_EST_OMNIS</Tag>
+		<English>On this huge map (116 x 81), 51 civilizations fight for dominance in Gaul, now France. Explore the river landscapes navigable by ships. Overcome the Alps. Spread your faith and influence to dominate all of Gaul.</English>
+		<French>Sur cette immense carte (116 x 81), 51 civilisations se battent pour la domination de la Gaule, aujourd'hui la France. Explorez les paysages fluviaux navigables par les navires. Surmontez les Alpes. R&#233;pandez votre foi et votre influence pour dominer toute la Gaule.</French>
+		<German>Auf dieser riesigen Karte (116 x 81) k&#228;mpfen 51 Zivilisationen um die Vorherrschaft in Gallien, dem heutigen Frankreich. Erforsche die mit Schiffen befahrbaren Flusslandschaften. &#220;berwinde die Alpen. Verbreite deinen Glauben und deinen Einfluss um ganz Gallien zu beherrschen.</German>
+		<Italian>Su questa enorme mappa (116 x 81), 51 civilt&#224; combattono per il dominio in Gallia, l'attuale Francia. Esplora i paesaggi fluviali navigabili dalle navi. Superare le Alpi. Diffondi la tua fede e la tua influenza per dominare tutta la Gallia.</Italian>
+		<Spanish>En este enorme mapa (116 x 81), 51 civilizaciones luchan por el dominio en la Galia, ahora Francia. Explora los paisajes fluviales navegables en barcos. Superar los Alpes. Difunde tu fe e influencia para dominar toda la Galia.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_IBERIAN_CONQUEST</Tag>
 		<English>After losing the war against Rome, Carthage had to cede its possessions in Sicily, Sardinia and Corsica to Rome. In order to be able to raise the tributes to the Romans, the Council of Carthage sends the war hero Hamilcar Barcas to Iberia to bring the silver mines on the peninsula under control. But will the warlike tribes there be so easily subdued?</English>
 		<French>Apr&#232;s avoir perdu la guerre contre Rome, Carthage a d&#251; c&#233;der ses possessions en Sicile, en Sardaigne et en Corse &#224; Rome. Afin de pouvoir &#233;lever les tributs aux Romains, le Conseil de Carthage envoie le h&#233;ros de guerre Hamilcar Barcas en Ib&#233;rie pour mettre sous contr&#244;le les mines d'argent de la p&#233;ninsule. Mais les tribus guerri&#232;res y seront-elles si facilement ma&#238;tris&#233;es ?</French>
@@ -1671,6 +1695,14 @@
 		<German>Pie's Ancient Europe - Eurasia XXXL</German>
 		<Italian>Pie's Ancient Europe - Eurasia XXXL</Italian>
 		<Spanish>Pie's Ancient Europe - Eurasia XXXL</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE_GALLIA_EST_OMNIS</Tag>
+		<English>Pie's Ancient Europe - Gallia est omnis</English>
+		<French>Pie's Ancient Europe - Gallia est omnis</French>
+		<German>Pie's Ancient Europe - Gallia est omnis</German>
+		<Italian>Pie's Ancient Europe - Gallia est omnis</Italian>
+		<Spanish>Pie's Ancient Europe - Gallia est omnis</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_SCREEN_TITLE_ICE_AGE</Tag>
@@ -2058,11 +2090,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV1_ADJECTIVE</Tag>
-		<English>Menapi</English>
-		<French>M&#233;napiens</French>
-		<German>Menapier</German>
-		<Italian>Menapi</Italian>
-		<Spanish>Menapios</Spanish>
+		<English>Menapic</English>
+		<French>M&#233;napien</French>
+		<German>Menapische</German>
+		<Italian>Menapio</Italian>
+		<Spanish>Menapio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV1_DESC</Tag>
@@ -2082,11 +2114,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV2_ADJECTIVE</Tag>
-		<English>Lingones</English>
-		<French>Lingons</French>
-		<German>Lingonen</German>
+		<English>Lingonic</English>
+		<French>Lingonien</French>
+		<German>Lingonische</German>
 		<Italian>Lingoni</Italian>
-		<Spanish>Lingones</Spanish>
+		<Spanish>Lingono</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV2_DESC</Tag>
@@ -2130,19 +2162,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV4_ADJECTIVE</Tag>
-		<English>Varisci</English>
-		<French>Varasques</French>
-		<German>Narister</German>
-		<Italian>Naristi</Italian>
-		<Spanish>Naristios</Spanish>
+		<English>Variscian</English>
+		<French>Varisque</French>
+		<German>Naristische</German>
+		<Italian>Naristio</Italian>
+		<Spanish>Naristio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV4_DESC</Tag>
 		<English>Tribe of Varisci</English>
-		<French>Tribu des Varasques</French>
+		<French>Tribu des Varisques</French>
 		<German>Stamm der Narister</German>
 		<Italian>Tribu di Naristi</Italian>
-		<Spanish>Tribu de los Varisci</Spanish>
+		<Spanish>Tribu de los Naristios</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_CIV4_SHORT_DESC</Tag>
@@ -2222,7 +2254,7 @@
 		<French>Ekwin, le Varisque</French>
 		<German>Ekwin der Narister</German>
 		<Italian>Ekwin il Narister</Italian>
-		<Spanish>Ekwin la Narister</Spanish>
+		<Spanish>Ekwin el Naristio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_PERSON15</Tag>
@@ -2509,8 +2541,8 @@
 		<English>Avestes the Menapian</English>
 		<French>Avestes le M&#233;napien</French>
 		<German>Avestes der Menapier</German>
-		<Italian>Avestes Menapi[NEWLINE]</Italian>
-		<Spanish>Avestes los menapios[NEWLINE]</Spanish>
+		<Italian>Avestes il Menapio</Italian>
+		<Spanish>Avestes el Menapio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIMES_PERSON8</Tag>
@@ -2985,6 +3017,14 @@
 		<Spanish>El mapa de Eurasia m&#225;s grande posible (205x120 casillas).[NEWLINE]&#161;Lucha con 52 civilizaciones por la supremac&#237;a del entonces conocido mundo![NEWLINE]Entre ellos se encuentran 3 ciudades-estado jugables (OCC, sin colonos): Etruscos, Espartanos y Babilonia.[NEWLINE][NEWLINE]by brettschmitt</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCENARIO_GALLIA_EST_OMNIS</Tag>
+		<English>On this huge map (116 x 81 = 9396 plots) 51 civilizations fight for dominance in Gaul, parts of Iberia, Britain, Germania and Italica. Choose between Gauls, Celts, Britons, Teutons, Vandals, Dacians, Illyrians, Romans, Etruscans and Greeks. Explore the river landscapes navigable by ships. Overcome the Alps. Spread your faith and influence to dominate all of Gaul.[NEWLINE][NEWLINE]Created by John Day.</English>
+		<French>Sur cette immense carte (116 x 81 = 9 396 parcelles), 51 civilisations se battent pour la domination de la Gaule, de certaines parties de la p&#233;ninsule ib&#233;rique, de la Grande-Bretagne, de la Germanie et de l'Italica. Choisissez entre les Gaulois, les Celtes, les Britanniques, les Teutons, les Vandales, les Daces, les Illyriens, les Romains, les &#201;trusques et les Grecs. Explorez les paysages fluviaux navigables par les navires. Surmontez les Alpes. R&#233;pandez votre foi et votre influence pour dominer toute la Gaule.[NEWLINE][NEWLINE]Cr&#233;&#233; par John Day.</French>
+		<German>Auf dieser riesigen gro&#223;en Karte (116 x 81 = 9396 Plots) k&#228;mpfen 51 Zivilisationen um die Vorherrschaft in Gallien, Teilen von Iberien, Britannien, Germanien und Italika. W&#228;hle zwischen Galliern, Kelten, Briten, Germanen, Vandalen, Dakern, Illyrern, R&#246;mern, Etruskern und Griechen. Erforsche die mit Schiffen befahrbaren Flusslandschaften. &#220;berwinde die Alpen. Verbreite deinen Glauben und deinen Einfluss um ganz Gallien zu beherrschen.[NEWLINE][NEWLINE]Erstellt von John Day.</German>
+		<Italian>Su questa enorme mappa (116 x 81 = 9396 grafici) 51 civilt&#224; combattono per il dominio in Gallia, parti dell'Iberia, della Gran Bretagna, della Germania e dell'Italica. Scegli tra Galli, Celti, Britanni, Teutoni, Vandali, Daci, Illiri, Romani, Etruschi e Greci. Esplora i paesaggi fluviali navigabili dalle navi. Superare le Alpi. Diffondi la tua fede e la tua influenza per dominare tutta la Gallia.[NEWLINE][NEWLINE]Creato da John Day.</Italian>
+		<Spanish>En este enorme mapa (116 x 81 = 9396 parcelas) 51 civilizaciones luchan por el dominio en la Galia, partes de Iberia, Gran Breta&#241;a, Germania e It&#225;lica. Elige entre galos, celtas, brit&#225;nicos, teutones, v&#225;ndalos, dacios, ilirios, romanos, etruscos y griegos. Explora los paisajes fluviales navegables en barcos. Superar los Alpes. Difunde tu fe e influencia para dominar toda la Galia.[NEWLINE][NEWLINE]Creado por John Day.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCENARIO_ICE_AGE</Tag>
 		<English>Big map of europe. The Ice Age has ended and the planet thaws.[NEWLINE]Featurers:[NEWLINE]-) The ice covering the oceans melts which causes the sea level to rise (coastal areas can be flooded).[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains and grassland.[NEWLINE]-) Africa dries out and becomes a desert slowly.[NEWLINE][NEWLINE]Created by BoggyB</English>
 		<French>Grande carte de l'Europe. La glaciation est termin&#233;e et la plan&#232;te commence &#224; d&#233;geler.[NEWLINE]Caract&#233;ristiques:[NEWLINE]-) La glace couvrant les oc&#233;ans fond ce qui cause une augmentation du niveau de la mer (les zones c&#244;ti&#232;res peuvent &#234;tre inond&#233;es).[NEWLINE]-) La glace se transforme en toundra, la toundra se transforme en plaine et prairie.[NEWLINE]-) L'Afrique s'ass&#232;che et devient progressivement un d&#233;sert.[NEWLINE][NEWLINE]Cr&#233;&#233; par BoggyB</French>
@@ -3129,6 +3169,710 @@
 		<Spanish>Moericus de Celticia</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ADUATUKER</Tag>
+		<English>Aduatucs</English>
+		<French>Aduatuques</French>
+		<German>Aduatuker</German>
+		<Italian>Aduatuci</Italian>
+		<Spanish>Aduatucos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ADUATUKER_ADJ</Tag>
+		<English>Aduatuc</English>
+		<French>Aduatuque</French>
+		<German>Aduatukische</German>
+		<Italian>aduatuco</Italian>
+		<Spanish>aduatuco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ADUATUKER_LEADER</Tag>
+		<English>Boduognatus the Aduatuc</English>
+		<French>Boduognatus l'Aduatuque</French>
+		<German>Boduognatus der Aduatuker</German>
+		<Italian>Boduognato il Aduatuco</Italian>
+		<Spanish>Boduognato el Aduatuco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ARECOMICER</Tag>
+		<English>Arecomics</English>
+		<French>Arecomices</French>
+		<German>Arecomicer</German>
+		<Italian>Arecomici</Italian>
+		<Spanish>Arecomicos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ARECOMICER_ADJ</Tag>
+		<English>arecomic</English>
+		<French>arecomique</French>
+		<German>Arecomicische</German>
+		<Italian>arecomico</Italian>
+		<Spanish>arecomico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ARECOMICER_LEADER</Tag>
+		<English>Tectosa the Arecomic</English>
+		<French>T&#233;ctosa l' Arecomicien</French>
+		<German>Tektosa der Arecomicer</German>
+		<Italian>Tectosa il Arecomico</Italian>
+		<Spanish>Tect&#243;sa el Arecomico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ASTURIEN</Tag>
+		<English>Asturia</English>
+		<French>Asturie</French>
+		<German>Asturien</German>
+		<Italian>Asturia</Italian>
+		<Spanish>Asturia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ASTURIEN_ADJ</Tag>
+		<English>Asturian</English>
+		<French>Asturien</French>
+		<German>Asturiansche</German>
+		<Italian>Asturiano</Italian>
+		<Spanish>Asturiano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ASTURIEN_LEADER</Tag>
+		<English>Argantonio of Asturia</English>
+		<French>Argantonio d'Asturie</French>
+		<German>Argantonio von Asturien</German>
+		<Italian>Argantonio il Asturiano</Italian>
+		<Spanish>Argantonio el Asturiano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ATREBATEN</Tag>
+		<English>Atrebates</English>
+		<French>Atrebates</French>
+		<German>Atrebaten</German>
+		<Italian>Atrebati</Italian>
+		<Spanish>Atrebatos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ATREBATEN_ADJ</Tag>
+		<English>Atrebatian</English>
+		<French>atrebatien</French>
+		<German>Atrebatisch</German>
+		<Italian>atrebatio</Italian>
+		<Spanish>atrebatio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ATREBATEN_LEADER</Tag>
+		<English>Cuminos of the Atrebates</English>
+		<French>Cuminos l'Atrebatien</French>
+		<German>Cuminos von den Atrebaten</German>
+		<Italian>Cuminos il Atrebato</Italian>
+		<Spanish>Cuminos el Atrebato</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_AULERKER</Tag>
+		<English>Aulerk</English>
+		<French>Aulerk</French>
+		<German>Aulerker</German>
+		<Italian>Aulercia</Italian>
+		<Spanish>Aulercia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_AULERKER_ADJ</Tag>
+		<English>Aulerkic</English>
+		<French>aulerkien</French>
+		<German>aulerkische</German>
+		<Italian>aulerco</Italian>
+		<Spanish>aulerco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_AULERKER_LEADER</Tag>
+		<English>Camolugenus the Aulerk</English>
+		<French>Camolugenus l'Aulerk</French>
+		<German>Camolugenus der Aulerker</German>
+		<Italian>Camolugenus il Aulerco</Italian>
+		<Spanish>Camolugeno el Aulerco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BATAVER_ADJ</Tag>
+		<English>Batavian</English>
+		<French>Batavique</French>
+		<German>Bataverische</German>
+		<Italian>batavio</Italian>
+		<Spanish>batavio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BATAVER_LEADER</Tag>
+		<English>Chariovalda the Batavian</English>
+		<French>Chariovalda le Bataves</French>
+		<German>Chariovalda der Bataver</German>
+		<Italian>Chariovalda il Batavio</Italian>
+		<Spanish>Chariovalda el Batavio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BELLOVAKER</Tag>
+		<English>Bellovaks</English>
+		<French>B&#233;llovaks</French>
+		<German>Bellovaker</German>
+		<Italian>Bellocavi</Italian>
+		<Spanish>Bellovacos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BELLOVAKER_ADJ</Tag>
+		<English>bellovakian</English>
+		<French>bellovacien</French>
+		<German>bellovakische</German>
+		<Italian>bellovaci</Italian>
+		<Spanish>bellovaco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BELLOVAKER_LEADER</Tag>
+		<English>Correus the Bellovak</English>
+		<French>Correus le B&#233;llovak</French>
+		<German>Correus der Bellovaker</German>
+		<Italian>Correus il Bellovaco</Italian>
+		<Spanish>Correus el Bellocavo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BOIER_ADJ</Tag>
+		<English>boii</English>
+		<French>bo&#239;en</French>
+		<German>Boiische</German>
+		<Italian>boii</Italian>
+		<Spanish>boii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BOIER_LEADER</Tag>
+		<English>Brennus the Boii</English>
+		<French>Brennus le Bo&#239;en</French>
+		<German>Brennus der Boier</German>
+		<Italian>Brenno il Boii</Italian>
+		<Spanish>Brenno el Boii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BRUKTERER</Tag>
+		<English>Bructers</English>
+		<French>Bruct&#232;res</French>
+		<German>Brukterer</German>
+		<Italian>Bructeri</Italian>
+		<Spanish>Br&#250;cteros</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BRUKTERER_ADJ</Tag>
+		<English>Bructeric</English>
+		<French>Bruct&#232;rien</French>
+		<German>Brukterische</German>
+		<Italian>bructerio</Italian>
+		<Spanish>br&#250;cterio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_BRUKTERER_LEADER</Tag>
+		<English>Maelo the Bruct</English>
+		<French>Maelo le Bruct&#232;re</French>
+		<German>Maelo der Brukterer</German>
+		<Italian>Maelo il Bructero</Italian>
+		<Spanish>Maelo el Br&#250;ctero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CANTABRER</Tag>
+		<English>Cantabrians</English>
+		<French>Cantabriens</French>
+		<German>Cantabrer</German>
+		<Italian>Cantabri</Italian>
+		<Spanish>Cantabrios</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CANTABRER_ADJ</Tag>
+		<English>cantabrian</English>
+		<French>cantabrien</French>
+		<German>Cantabrische</German>
+		<Italian>cantabrio</Italian>
+		<Spanish>cantabrio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CANTABRER_LEADER</Tag>
+		<English>Corocotta the Cantabrian</English>
+		<French>Corocotta le Cantabrien</French>
+		<German>Corocotta der Cantabrer</German>
+		<Italian>Corocotta il Cantabrio</Italian>
+		<Spanish>Corocotta el Cantabrio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CARNUTEN</Tag>
+		<English>Carnuten</English>
+		<French>Carnutiens</French>
+		<German>Carnuten</German>
+		<Italian>Carnutii</Italian>
+		<Spanish>Carnutos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CARNUTEN_ADJECTIVE</Tag>
+		<English>Carnutian</English>
+		<French>carnutian</French>
+		<German>carnutische</German>
+		<Italian>carnuti</Italian>
+		<Spanish>carnutio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CHATTEN_ADJ</Tag>
+		<English>chattic</English>
+		<French>chattes</French>
+		<German>chattische</German>
+		<Italian>chattii</Italian>
+		<Spanish>chattii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_CHATTEN_LEADER</Tag>
+		<English>Adgandestrius of the Chatti</English>
+		<French>Adgandestrius du Chattes</French>
+		<German>Adgandestrius der Chatte</German>
+		<Italian>Adgandestrio di Chatti</Italian>
+		<Spanish>Adgandestrio de los Catos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_DUMNON_ADJ</Tag>
+		<English>dumnonian</English>
+		<French>dumnonien</French>
+		<German>Dumnonische</German>
+		<Italian>dumnonio</Italian>
+		<Spanish>dumnonio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_DUMNON_LEADER</Tag>
+		<English>Dumnorix the Dumnonian</English>
+		<French>Dumnorix le Dumnonien</French>
+		<German>Dumnorix der Dumnonier</German>
+		<Italian>Dumnorix il Dumnonio</Italian>
+		<Spanish>Dumnorix el Dumnonio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ILERGETES</Tag>
+		<English>Ilergets</English>
+		<French>Il&#233;rg&#233;tes</French>
+		<German>Ilergetes</German>
+		<Italian>Ilergeti</Italian>
+		<Spanish>Ilergetos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ILERGETES_ADJ</Tag>
+		<English>Ilergetian</English>
+		<French>Il&#233;rg&#233;tien</French>
+		<German>Ilergetische</German>
+		<Italian>Ilergetio</Italian>
+		<Spanish>Ilergetio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_ILERGETES_LEADER</Tag>
+		<English>Indibil of the Ilergets</English>
+		<French>Indibil d'Il&#233;rg&#233;tes</French>
+		<German>Indibil von Ilergetes</German>
+		<Italian>Indibil di Ilergeti</Italian>
+		<Spanish>Indibil de los Ilergetos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_LEXOVIER</Tag>
+		<English>Lexovians</English>
+		<French>Lexoviens</French>
+		<German>Lexovier</German>
+		<Italian>Lexovi</Italian>
+		<Spanish>Lexovios</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_LEXOVIER_ADJ</Tag>
+		<English>Lexovian</English>
+		<French>lexovique</French>
+		<German>Lexovische</German>
+		<Italian>lexovio</Italian>
+		<Spanish>lexovio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_LEXOVIER_LEADER</Tag>
+		<English>Atrius the Lexovian</English>
+		<French>Atrius le Lexovien</French>
+		<German>Atrius der Lexovier</German>
+		<Italian>Atrius il Lexovio</Italian>
+		<Spanish>Atrius el Lexovio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_LINGONEN_LEADER</Tag>
+		<English>Britomaris the Lingon</English>
+		<French>Britomaris le Lingonien</French>
+		<German>Britomaris der Lingone</German>
+		<Italian>Britomario il Lingono</Italian>
+		<Spanish>Britomario el Lingono</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MASSILIA</Tag>
+		<English>Massilians</English>
+		<French>Massiliens</French>
+		<German>Massilianer</German>
+		<Italian>Massiliani</Italian>
+		<Spanish>Massilianos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MASSILIA_ADJ</Tag>
+		<English>Massilian</English>
+		<French>Massilien</French>
+		<German>Massilianische</German>
+		<Italian>massiliano</Italian>
+		<Spanish>massiliano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MASSILIA_LEADER</Tag>
+		<English>Gyptis of Massilia</English>
+		<French>Gyptis de Massilia</French>
+		<German>Gyptis von Massilia</German>
+		<Italian>Gyptio di Massilia</Italian>
+		<Spanish>Gyptio de Massilia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MORINER</Tag>
+		<English>Morins</English>
+		<French>Morins</French>
+		<German>Moriner</German>
+		<Italian>Morini</Italian>
+		<Spanish>M&#243;rinos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MORINER_ADJ</Tag>
+		<English>Morin</English>
+		<French>morin</French>
+		<German>Morinische</German>
+		<Italian>morino</Italian>
+		<Spanish>morino</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_MORINER_LEADER</Tag>
+		<English>Turnus the Moriner</English>
+		<French>Turnus le Morinier</French>
+		<German>Turnus der Moriner</German>
+		<Italian>Turno il Morino</Italian>
+		<Spanish>Turno el M&#243;rino</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_NARISTER_LEADER</Tag>
+		<English>Valao the Variscian</English>
+		<French>Valao le Varisque</French>
+		<German>Valao der Narister</German>
+		<Italian>Valao il Naristio</Italian>
+		<Spanish>Valao el Naristio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_NORIKER</Tag>
+		<English>Noricans</English>
+		<French>Noriciens</French>
+		<German>Noriker</German>
+		<Italian>Norici</Italian>
+		<Spanish>Noricos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_NORIKER_ADJECTIVE</Tag>
+		<English>noric</English>
+		<French>norician</French>
+		<German>Norikische</German>
+		<Italian>norico</Italian>
+		<Spanish>norico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_NORIKER_LEADER</Tag>
+		<English>Cincibilus the Noric</English>
+		<French>Cincibilus le Noricien</French>
+		<German>Cincibilus der Noriker</German>
+		<Italian>Cincibilus il Norico</Italian>
+		<Spanish>Cincibilus el Norico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_PICTONEN_ADJ</Tag>
+		<English>pictonian</English>
+		<French>pictonien</French>
+		<German>Piktonische</German>
+		<Italian>pictonio</Italian>
+		<Spanish>pictonio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_PICTONEN_LEADER</Tag>
+		<English>Duratius of the Pictons</English>
+		<French>Duratius de les Pictones</French>
+		<German>Duratius von den Piktonen</German>
+		<Italian>Duratio di Pictoni</Italian>
+		<Spanish>Duratio de los Pictones</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_RAETER_ADJ</Tag>
+		<English>raetic</English>
+		<French>raetique</French>
+		<German>Raetische</German>
+		<Italian>raeti</Italian>
+		<Spanish>raeti</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_REMER</Tag>
+		<English>Remers</English>
+		<French>R&#233;meurs</French>
+		<German>Remer</German>
+		<Italian>Remi</Italian>
+		<Spanish>Remos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_REMER_ADJ</Tag>
+		<English>Remerian</English>
+		<French>r&#233;meur</French>
+		<German>remerische</German>
+		<Italian>remeii</Italian>
+		<Spanish>remeo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_REMER_LEADER</Tag>
+		<English>Iccius the Remer</English>
+		<French>Iccius le R&#233;meur</French>
+		<German>Iccius der Remer</German>
+		<Italian>Iccius il Remo</Italian>
+		<Spanish>Iccio el Remo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_RUTENI</Tag>
+		<English>Rutens</English>
+		<French>Rutiens</French>
+		<German>Rutener</German>
+		<Italian>Ruteni</Italian>
+		<Spanish>Rutenos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_RUTENI_ADJ</Tag>
+		<English>Rutian</English>
+		<French>rutenique</French>
+		<German>Rutenische</German>
+		<Italian>ruteno</Italian>
+		<Spanish>ruteno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_RUTENI_LEADER</Tag>
+		<English>Cubutix the Ruten</English>
+		<French>Cubutix le Rutenien</French>
+		<German>Cubutix der Rutener</German>
+		<Italian>Cubutix il Ruteno</Italian>
+		<Spanish>Cubutix el Ruteno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SANTONEN</Tag>
+		<English>Santons</English>
+		<French>Santons</French>
+		<German>Santonen</German>
+		<Italian>Santoni</Italian>
+		<Spanish>Santonos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SANTONEN_ADJ</Tag>
+		<English>Santon</English>
+		<French>Santonien</French>
+		<German>Santonische</German>
+		<Italian>santono</Italian>
+		<Spanish>santono</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SANTONEN_LEADER</Tag>
+		<English>Lavinia the Santon</English>
+		<French>Lavinia le Santon</French>
+		<German>Lavinia der Santone</German>
+		<Italian>Lavinio il Santono</Italian>
+		<Spanish>Lavinio el Santono</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEGUSIAVI</Tag>
+		<English>Segusiavi</English>
+		<French>Segusiavi</French>
+		<German>Segusiavi</German>
+		<Italian>Segusiavi</Italian>
+		<Spanish>Segusiavi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEGUSIAVI_ADJ</Tag>
+		<English>Segusiavic</English>
+		<French>Segusiavique</French>
+		<German>Segusiavische</German>
+		<Italian>Segusiavi</Italian>
+		<Spanish>Segusiavi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEGUSIAVI_LEADER</Tag>
+		<English>Belarius the Segusiavi</English>
+		<French>Belarius le Segusiavi</French>
+		<German>Belarius der Segusiavi</German>
+		<Italian>Belarius il Segusiavo</Italian>
+		<Spanish>Belarius el Segusiavo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEQUAN</Tag>
+		<English>Sequans</English>
+		<French>S&#233;quanes</French>
+		<German>Sequaner</German>
+		<Italian>Sequani</Italian>
+		<Spanish>Sequanos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEQUAN_ADJECTIVE</Tag>
+		<English>sequan</English>
+		<French>s&#233;quane</French>
+		<German>sequanische</German>
+		<Italian>sequano</Italian>
+		<Spanish>sequano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_SEQUAN_LEADER</Tag>
+		<English>Casticus the Sequan</English>
+		<French>Casticus le S&#233;quan</French>
+		<German>Casticus der Sequaner</German>
+		<Italian>Castico il Sequano</Italian>
+		<Spanish>Castico el Sequano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TASGETIUS</Tag>
+		<English>Tasgetius</English>
+		<French>Tasgetius</French>
+		<German>Tasgetius der Carnute</German>
+		<Italian>Tasgetius</Italian>
+		<Spanish>Tasgetius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TIGURIN</Tag>
+		<English>Tigurins</English>
+		<French>Tigurins</French>
+		<German>Tiguriner</German>
+		<Italian>Tigurini</Italian>
+		<Spanish>Tigurinos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TIGURIN_ADJ</Tag>
+		<English>Tigurin</English>
+		<French>tigurinien</French>
+		<German>Tigurinische</German>
+		<Italian>tigurino</Italian>
+		<Spanish>tigurino</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TIGURIN_LEADER</Tag>
+		<English>Divico the Tigurin</English>
+		<French>Divico le Tigurin</French>
+		<German>Divico der Tiguriner</German>
+		<Italian>Divico il Tigurino</Italian>
+		<Spanish>Divico el Tigurino</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TREVERER_ADJECTIVE</Tag>
+		<English>Treverian</English>
+		<French>Tr&#233;virien</French>
+		<German>Treverische</German>
+		<Italian>trevero</Italian>
+		<Spanish>trevero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TREVERER_LEADER</Tag>
+		<English>Indutiomarus the Treverian</English>
+		<French>Indutiomarus le Tr&#233;vire</French>
+		<German>Indutiomarus der Treverer</German>
+		<Italian>Indutiomaro il Treveriano</Italian>
+		<Spanish>Indutiomaro el Treveriano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TRIBOK</Tag>
+		<English>Tribocians</English>
+		<French>Tribocians</French>
+		<German>Triboker</German>
+		<Italian>Triboci</Italian>
+		<Spanish>Triboccos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TRIBOK_ADJECTIVE</Tag>
+		<English>tribocian</English>
+		<French>tribocien</French>
+		<German>tribokische</German>
+		<Italian>tribocii</Italian>
+		<Spanish>tribocio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_TRIBOK_LEADER</Tag>
+		<English>Virdumarus the Tribocian</English>
+		<French>Virdumarus le Tribocien</French>
+		<German>Virdumarus der Triboker</German>
+		<Italian>Virdumaro il Triboco</Italian>
+		<Spanish>Virdumaro el Triboco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VENETER_ADJECTIVE</Tag>
+		<English>Venetian</English>
+		<French>v&#233;n&#232;te</French>
+		<German>Venetische</German>
+		<Italian>venetii</Italian>
+		<Spanish>venetii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VENETICA</Tag>
+		<English>Venetica</English>
+		<French>Venetica</French>
+		<German>Venetica</German>
+		<Italian>Venetica</Italian>
+		<Spanish>Venetica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VENETICA_ADJ</Tag>
+		<English>veneticai</English>
+		<French>veneticai</French>
+		<German>Veneticaische</German>
+		<Italian>veneticaii</Italian>
+		<Spanish>veneticaio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VENETICA_LEADER</Tag>
+		<English>Antenor the Veneticae</English>
+		<French>Antenor le Veneticae</French>
+		<German>Antenor der Veneticaer</German>
+		<Italian>Antenor il Veneticae</Italian>
+		<Spanish>Antenor el Veneticae</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VERAGRER</Tag>
+		<English>Veragriens</English>
+		<French>Veragrie</French>
+		<German>Veragrer</German>
+		<Italian>Veragri</Italian>
+		<Spanish>Veragrios</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VERAGRER_ADJ</Tag>
+		<English>Veragrian</English>
+		<French>veragrique</French>
+		<German>Veragrische</German>
+		<Italian>veragrio</Italian>
+		<Spanish>veragrio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VERAGRER_LEADER</Tag>
+		<English>Randagar the Veragrian</English>
+		<French>Randagar le Veragrien</French>
+		<German>Randagar der Veragrer</German>
+		<Italian>Randagar il Veragro</Italian>
+		<Spanish>Randagar el Veragro</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VOLCAE</Tag>
+		<English>Volcae</English>
+		<French>Volcae</French>
+		<German>Volcae</German>
+		<Italian>Volcae</Italian>
+		<Spanish>Volcae</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VOLCAE_ADJ</Tag>
+		<English>volcaeic</English>
+		<French>volcaeique</French>
+		<German>volcaeische</German>
+		<Italian>volcaeio</Italian>
+		<Spanish>volcaeio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_CIV_VOLCAE_LEADER</Tag>
+		<English>Tekatae of Volcae</English>
+		<French>Tekatae le Volcae</French>
+		<German>Tekatae der Volcae</German>
+		<Italian>Tekatae il Volcae</Italian>
+		<Spanish>Tekatae el Volcae</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_EDETANI_LEADER</Tag>
 		<English>Edeko of Edetania</English>
 		<French>Edeko d'Edetani</French>
@@ -3159,6 +3903,14 @@
 		<German>Alyattes von Bithynien</German>
 		<Italian>Alyates di Bithynia</Italian>
 		<Spanish>Alyattes de Bithynia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_AMBICATUS</Tag>
+		<English>Ambicatus the Biturigian</English>
+		<French>Ambicatus le Biturigian</French>
+		<German>Ambicatus der Bituriger</German>
+		<Italian>Ambicato il Biturigo</Italian>
+		<Spanish>Ambicato el Biturigo</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_AMBRAKIA</Tag>
@@ -3241,20 +3993,20 @@
 		<Spanish>Arsaces I de Partia</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_ATULLOS</Tag>
+		<English>Atullos the Helvetian</English>
+		<French>Atullos l'Helv&#233;tien</French>
+		<German>Atullos der Helvetier</German>
+		<Italian>Atullos l'Elvetico</Italian>
+		<Spanish>Atullos el Helv&#233;tico</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_BELGIUS</Tag>
 		<English>Bolgios the Belgian</English>
 		<French>Belgios le Belge</French>
 		<German>Belgius der Belgier</German>
 		<Italian>Belgio il belga</Italian>
 		<Spanish>Belgio el belga</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SCEN_LEADER_BOIORIX</Tag>
-		<English>Boiorix of the Boii</English>
-		<French>Boiorix des Bo&#239;ens</French>
-		<German>Boiorix der Boier</German>
-		<Italian>Boiorix dei Boii</Italian>
-		<Spanish>Boiorix de los Boios</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_BOLGIOS</Tag>
@@ -3395,18 +4147,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_DIVICO</Tag>
 		<English>Divico the Helvetian</English>
-		<French>Divico des Helv&#232;tes</French>
+		<French>Divico l'Helv&#233;tien</French>
 		<German>Divico der Helvetier</German>
 		<Italian>Divico l'Elvetico</Italian>
 		<Spanish>Divico el Helv&#233;tico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_DIVICO2</Tag>
-		<English>Divico of the Aquitanians</English>
-		<French>Divico des Aquitains</French>
-		<German>Divico der Aquitaner</German>
-		<Italian>Divico degli Aquitani</Italian>
-		<Spanish>Divico de los Aquitanos</Spanish>
+		<English>Divico the Aquitanian</English>
+		<French>Divico l'Aquitain</French>
+		<German>Divico der Aquitanier</German>
+		<Italian>Divico l'Aquitano</Italian>
+		<Spanish>Divico el Aquitano</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_DUMNORIX</Tag>
@@ -3423,6 +4175,14 @@
 		<German>Fritigern von den Angeln</German>
 		<Italian>Fritigern di Anglia</Italian>
 		<Spanish>Fritigern de Anglia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_GONDOVALD</Tag>
+		<English>Gondovald the Aquitanian</English>
+		<French>Gondovald l'Aquitain</French>
+		<German>Gondovald der Aquitanier</German>
+		<Italian>Gondovald l'Aquitano</Italian>
+		<Spanish>Gondovald el Aquitano</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_HANNIBAL</Tag>
@@ -3625,6 +4385,14 @@
 		<Spanish>Saurmag I el iberio</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_SUVIRA</Tag>
+		<English>Suvira the Menapian</English>
+		<French>Suvira le M&#233;napien</French>
+		<German>Suvira der Menapier</German>
+		<Italian>Suvira il Menapio</Italian>
+		<Spanish>Suvira el Menapio</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_SYPHAX</Tag>
 		<English>Syphax the West-Numidian</English>
 		<French>Syphax, roi de Numidie occidentale</French>
@@ -3673,6 +4441,14 @@
 		<Spanish>Tlep&#243;lemo de Rodas</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_TULLIUS</Tag>
+		<English>Tullius the Etruscan</English>
+		<French>Tullius l'&#201;trusque</French>
+		<German>Tullius der Etrusker</German>
+		<Italian>Tullius di Etruschi</Italian>
+		<Spanish>Tulio el Etrusco</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_VERCINGETORIX</Tag>
 		<English>Vercingetorix the Arvernian</English>
 		<French>Vercing&#233;torix des Arvernes</French>
@@ -3689,12 +4465,36 @@
 		<Spanish>Viridomarus el Siluriano</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_VIRIDOMARUS</Tag>
+		<English>Viridomarus the Insubrian</English>
+		<French>Viridomarus l'Insubre</French>
+		<German>Viridomarus der Insubrer</German>
+		<Italian>Viridomaro il Insubrio</Italian>
+		<Spanish>Viridomaro el Insubrio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_VIRIDOVIX</Tag>
+		<English>Viridovix the Venetian</English>
+		<French>Viridovix le V&#233;n&#232;te</French>
+		<German>Viridovix der Veneter</German>
+		<Italian>Viridovix il Venetiano</Italian>
+		<Spanish>Viridovix el venetiano</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_LIGURES_LEADER</Tag>
 		<English>Donnus of Liguria</English>
 		<French>Donnus de Liguria</French>
 		<German>Donnus von Ligurien</German>
 		<Italian>Donnus di Liguria</Italian>
 		<Spanish>Donnus de Liguria</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCEN_LIGURES_LEADER2</Tag>
+		<English>Alebion the Liguran</English>
+		<French>Alebion le Ligurien</French>
+		<German>Alebion der Ligurer</German>
+		<Italian>Alebion il Ligurio</Italian>
+		<Spanish>Alebion el Ligurio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_MASSAESYLIA</Tag>
