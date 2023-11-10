@@ -728,6 +728,13 @@ class CvGameUtils:
 						if pCity.goodHealth() - pCity.badHealth(False) > 0 and pCity.happyLevel() - pCity.unhappyLevel(0) > 0:
 								return True
 
+				# KI Rammen Problem
+				if eUnit in L.LRammen:
+						iPlayer = pCity.getOwner()
+						pPlayer = gc.getPlayer(iPlayer)
+						if pPlayer.getUnitClassCountPlusMaking(eUnit) > 10:
+								return True
+
 				return False
 
 		def canConstruct(self, argsList):
@@ -2452,7 +2459,7 @@ class CvGameUtils:
 																return True
 
 								# Escorte
-								if iUnitType == gc.getInfoTypeForString("UNIT_CARAVAN") or iUnitType == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT"):
+								if iUnitType in L.LTradeUnits and pUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
 										iPromo == gc.getInfoTypeForString("PROMOTION_SCHUTZ")
 										if not pUnit.isHasPromotion(iPromo):
 												iCost = 20

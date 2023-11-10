@@ -3081,8 +3081,8 @@ class CvMainInterface:
 																		screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Buildings/button_building_limes.dds", 0, WidgetTypes.WIDGET_GENERAL, 733, -1, False)
 																		screen.show("BottomButtonContainer")
 																		iCount += 1
-														# Handelsposten
-														elif iUnitType == gc.getInfoTypeForString("UNIT_TRADE_MERCHANT") or iUnitType == gc.getInfoTypeForString("UNIT_CARAVAN"):
+														# Handelsposten / Trade post
+														elif iUnitType == in L.LTradeUnits and pUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
 																# Update: auch in eigenen Grenzen anzeigen (zB fuer Inseln), aber nur wenn nicht bereits was drauf steht
 																# if pUnit.plot().getOwner() == -1:
 																pPlot = pUnit.plot()

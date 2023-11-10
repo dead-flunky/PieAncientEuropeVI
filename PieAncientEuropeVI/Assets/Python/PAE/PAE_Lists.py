@@ -119,7 +119,7 @@ LFireUnits = []
 LCamelUnits = []
 LUnits4HorseSwap = []
 LMovingBonus = []
-
+LRammen = []
 
 
 def init():
@@ -227,6 +227,7 @@ def init():
 		global LCamelUnits
 		global LUnits4HorseSwap
 		global LMovingBonus
+		global LRammen
 
 		if gc.getInfoTypeForString("COLOR_EMPTY") == -1:
 				raise Exception("Called init() to early. getInfoTypeForString() returns -1.")
@@ -1575,6 +1576,13 @@ def init():
 				gc.getInfoTypeForString("BONUS_SHEEP"),
 				gc.getInfoTypeForString("BONUS_DEER"),
 				gc.getInfoTypeForString("BONUS_IVORY")
+		]
+
+		LRammen = [
+				gc.getInfoTypeForString("UNIT_RAM"),
+				gc.getInfoTypeForString("UNIT_BATTERING_RAM"),
+				gc.getInfoTypeForString("UNIT_SIEGE_TOWER"),
+				gc.getInfoTypeForString("UNIT_BATTERING_RAM2")
 		]
 
 		# # Transfer local defined variables into module ones.
