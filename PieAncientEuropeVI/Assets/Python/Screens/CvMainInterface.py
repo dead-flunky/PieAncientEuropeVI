@@ -3082,7 +3082,7 @@ class CvMainInterface:
 																		screen.show("BottomButtonContainer")
 																		iCount += 1
 														# Handelsposten / Trade post
-														elif iUnitType == in L.LTradeUnits and pUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
+														elif iUnitType in L.LTradeUnits and pUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
 																# Update: auch in eigenen Grenzen anzeigen (zB fuer Inseln), aber nur wenn nicht bereits was drauf steht
 																# if pUnit.plot().getOwner() == -1:
 																pPlot = pUnit.plot()
