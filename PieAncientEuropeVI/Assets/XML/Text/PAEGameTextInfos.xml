@@ -466,11 +466,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SLAVE_DRUIDE</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Sacrifice a slave[COLOR_REVERT][NEWLINE]Reduces war weariness and raises the morale of the troop</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Sacrifiez un esclave[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de la troupe</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Opfere einen Sklaven[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Truppe</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Sacrifica uno schiavo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale della truppa</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrificar un esclavo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Sacrifice a slave[COLOR_REVERT][NEWLINE]Reduces war weariness and raises the morale of the troop[NEWLINE](should only be used if at least one unit on the plot is suffering from war weariness)</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Sacrifiez un esclave[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de la troupe[NEWLINE](ne doit &#234;tre utilis&#233; que si au moins une unit&#233; sur le terrain souffre de fatigue de guerre)</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Opfere einen Sklaven[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Truppe[NEWLINE](sollte nur angewendet werden, wenn mindestens eine Einheit am Feld unter Kriegsm&#252;digkeit leidet)</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Sacrifica uno schiavo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale della truppa[NEWLINE](dovrebbe essere utilizzato solo se almeno un'unit&#224; sul campo soffre di stanchezza bellica)</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrificar un esclavo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.[NEWLINE](solo debe usarse si al menos una unidad en el campo sufre fatiga de guerra)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SLAVE_FIGHT4XP</Tag>
@@ -490,11 +490,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SLAVE_HEAD</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Sacrifice slaves and use head as a trophy[COLOR_REVERT][NEWLINE]Reduces the war weariness and increases the morale of the unit</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Sacrifier d'esclaves et monter t&#234;te en troph&#233;e[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de l'unit&#233;</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Sklaven opfern und Kopf als Troph&#228;e verwenden[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Einheit</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Sacrificio di schiavo e usa la testa come trofeo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale dell'unit&#224;</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrificio de esclavos y usa la cabeza como trofeo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Sacrifice slaves and use head as a trophy[COLOR_REVERT][NEWLINE]Reduces the war weariness and increases the morale of the unit[NEWLINE](should only be used if at least one unit on the plot is suffering from war weariness)</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Sacrifier d'esclaves et monter t&#234;te en troph&#233;e[COLOR_REVERT][NEWLINE]Diminue la lassitude de guerre et augmente le moral de l'unit&#233;[NEWLINE](ne doit &#234;tre utilis&#233; que si au moins une unit&#233; sur le terrain souffre de fatigue de guerre)</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Sklaven opfern und Kopf als Troph&#228;e verwenden[COLOR_REVERT][NEWLINE]Vermindert die Kriegsm&#252;digkeit und steigert die Moral der Einheit[NEWLINE](sollte nur angewendet werden, wenn mindestens eine Einheit am Feld unter Kriegsm&#252;digkeit leidet)</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Sacrificio di schiavo e usa la testa come trofeo[COLOR_REVERT][NEWLINE]Riduce la fatica della guerra e aumenta il morale dell'unit&#224;[NEWLINE](dovrebbe essere utilizzato solo se almeno un'unit&#224; sul campo soffre di stanchezza bellica)</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sacrificio de esclavos y usa la cabeza como trofeo[COLOR_REVERT][NEWLINE]Reduce la fatiga de guerra y aumenta la moral de la unidad.[NEWLINE](solo debe usarse si al menos una unidad en el campo sufre fatiga de guerra)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SPREAD_RELIGION</Tag>
@@ -2654,11 +2654,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CIVIL_WAR_4</Tag>
-		<English>You lost the city %s1.</English>
-		<French>Vous avez perdu la ville %s1.</French>
-		<German>Ihr habt die Stadt %s1 verloren.</German>
-		<Italian>Hai perso la citt&#224; %s1.</Italian>
-		<Spanish>Perdiste la ciudad %s1.</Spanish>
+		<English>You lost the city %s1_city.</English>
+		<French>Vous avez perdu la ville %s1_city.</French>
+		<German>Ihr habt die Stadt %s1_city verloren.</German>
+		<Italian>Hai perso la citt&#224; %s1_city.</Italian>
+		<Spanish>Perdiste la ciudad %s1_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CIVIL_WAR_5</Tag>
@@ -4464,8 +4464,8 @@
 		<Tag>TXT_KEY_MESSAGE_MERCENARIES_DONE_2</Tag>
 		<English>Attention! A troop of enemy units has gathered in your country! It is likely that these are paid mercenaries!</English>
 		<French>Alerte ! Une troupe ennemie a &#233;t&#233; signal&#233;e sur vos terres ! Il semble que nous ayons affaire &#224; des mercenaires &#224; la solde d'une civilisation rivale.</French>
-		<German>Achtung! In Eurem Land hat sich ein Trupp feindlicher Einheiten formiert! Es ist anzunehmen, dass es sich dabei um bezahlte S&#246;ldner handelt!</German>
-		<Italian>Attention! A troop of enemy units has gathered in your country! It is likely that these are paid mercenaries!</Italian>
+		<German>Achtung! In Eurem Land hat sich ein Trupp feindlicher Einheiten formiert! Es ist anzunehmen, dass es sich hierbei um bezahlte S&#246;ldner handelt!</German>
+		<Italian>Pericolo! Nel tuo paese si &#232; formata una squadra di unit&#224; nemiche! Si pu&#242; presumere che questi siano mercenari pagati!</Italian>
 		<Spanish>&#161;Atenci&#243;n! &#161;Tropas enemigas se han reunido en tu pa&#237;s! &#161;Es probable que sean mercenarios pagados!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4473,7 +4473,7 @@
 		<English>The mercenaries accepted the commission and now make the waters of the %s1 insecure!</English>
 		<French>Les mercenaires ont accept&#233; votre offre et maintenant r&#233;pande l'ins&#233;curit&#233; dans les eaux des %s1 !</French>
 		<German>Die S&#246;ldner nahmen den Auftrag an und machen nun die Gew&#228;sser der %s1 unsicher!</German>
-		<Italian>The mercenaries accepted the commission and now make the waters of the %s1 insecure!</Italian>
+		<Italian>I mercenari hanno accettato l'ordine e ora stanno rendendo insicure le acque di %s1!</Italian>
 		<Spanish>&#161;Los mercenarios aceptaron el encargo y ahora hacer las aguas de %s1 inseguro!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4481,7 +4481,7 @@
 		<English>Attention! Enemy ships were sighted on your waters! It is likely that these are paid mercenaries!</English>
 		<French>Alerte ! Sur vos eaux les navires ennemis ont &#233;t&#233; aper&#231;us ! Il semble que nous ayons affaire &#224; des mercenaires &#224; la solde d'une civilisation rivale.</French>
 		<German>Achtung! Auf Euren Gew&#228;ssern wurden feindliche Schiffe gesichtet! Es ist anzunehmen, dass es sich dabei um bezahlte S&#246;ldner handelt!</German>
-		<Italian>Attention! Enemy ships were sighted on your waters! It is likely that these are paid mercenaries!</Italian>
+		<Italian>Pericolo! Navi nemiche sono state avvistate nelle tue acque! Si pu&#242; presumere che questi siano mercenari pagati!</Italian>
 		<Spanish>&#161;Atenci&#243;n! &#161;En sus aguas se avistaron las naves enemigas! &#161;Es probable que sean mercenarios pagados!</Spanish>
 	</TEXT>
 	<TEXT>

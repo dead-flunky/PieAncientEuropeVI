@@ -1585,6 +1585,14 @@
 		<Spanish>Construir un [LINK=CONCEPT_MOVEMENT]Camino Real[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILD_REMOVE_DENSE_FOREST</Tag>
+		<English>Remove [LINK=FEATURE_FOREST_BURNT]Dense Forest[\LINK]</English>
+		<French>D&#233;fricher la [LINK=FEATURE_FOREST_BURNT]for&#234;t dense[\LINK]</French>
+		<German>[LINK=FEATURE_FOREST_BURNT]Dichten Wald[\LINK] abholzen</German>
+		<Italian>Rimuovi [LINK=FEATURE_FOREST_BURNT]Foresta Fitta[\LINK]</Italian>
+		<Spanish>Quitar [LINK=FEATURE_FOREST_BURNT]bosque denso[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_FOREST_BURNT</Tag>
 		<English>Remove [LINK=FEATURE_FOREST_BURNT]Burnt Forest[\LINK]</English>
 		<French>D&#233;fricher la [LINK=FEATURE_FOREST_BURNT]for&#234;t calcin&#233;e[\LINK]</French>
@@ -2186,11 +2194,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_PERMANENT_ALLIANCES</Tag>
-		<English>Alliances and no natural disasters</English>
-		<French>Alliances et pas de catastrophes naturelles</French>
-		<German>Allianzen und keine Naturkatastrophen</German>
-		<Italian>Alleanza e nessun disastro naturale</Italian>
-		<Spanish>Alianzas y sin desastres naturales</Spanish>
+		<English>No natural disasters</English>
+		<French>Pas de catastrophes naturelles</French>
+		<German>Keine Naturkatastrophen</German>
+		<Italian>Nessun disastro naturale</Italian>
+		<Spanish>Sin desastres naturales</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_PERMANENT_ALLIANCES_HELP</Tag>
@@ -3946,10 +3954,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_1</Tag>
-		<English>A significant portion of the poor in %s1 has joined Christianity.</English>
+		<English>A significant portion of the poor in %s1 has embraced Christianity.</English>
 		<French>Une part significative des classes populaires de %s1 s'est convertie au christianisme.</French>
 		<German>Ein beachtlicher Teil Eurer armen Bev&#246;lkerung in %s1 hat sich dem Christentum angeschlossen.</German>
-		<Italian>A significant portion of the poor in %s1 has joined Christianity.</Italian>
+		<Italian>Una parte significativa della popolazione povera di %s1 ha abbracciato il cristianesimo.</Italian>
 		<Spanish>Una parte significativa de tu poblaci&#243;n pobre en %s1 se ha unido al Cristianismo.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3957,7 +3965,7 @@
 		<English>A portion of the poor in your city of %s1 has switched to Christianity.</English>
 		<French>Une partie des classes populaires de %s1 s'est ralli&#233;e au christianisme.</French>
 		<German>Ein Teil Eurer armen Bev&#246;lkerungsschicht in %s1 bekennt sich nun zum Christentum.</German>
-		<Italian>A portion of the poor in your city of %s1 has switched to Christianity.</Italian>
+		<Italian>Una parte della tua povera popolazione in %s1 ora professa il cristianesimo.</Italian>
 		<Spanish>Una parte de tu poblaci&#243;n pobre en %s1 se ha unido ahora al Cristianismo.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3965,8 +3973,24 @@
 		<English>A majority of slaves in %s1 now believe in their Saviour Jesus Christ.</English>
 		<French>La majorit&#233; des esclaves de %s1 croit maintenant en son sauveur J&#233;sus Christ.</French>
 		<German>Ein Gro&#223;teil der Sklaven in %s1 glauben nun an ihren Erl&#246;ser Jesus Christus.</German>
-		<Italian>A majority of slaves in %s1 now believe in their Saviour Jesus Christ.</Italian>
+		<Italian>La maggioranza degli schiavi in &#8203;&#8203;%s1 ora crede nel loro Salvatore Ges&#249; Cristo.</Italian>
 		<Spanish>Una gran parte de esclavos en %s1 creen ahora en su salvador Jesucristo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2ISLAM</Tag>
+		<English>A significant portion of your population in %s1 has embraced Islam.</English>
+		<French>Une partie importante de votre population dans %s1 a embrass&#233; l'Islam.</French>
+		<German>Ein beachtlicher Teil Eure Bev&#246;lkerung in %s1 hat sich dem Islam angeschlossen.</German>
+		<Italian>Una parte significativa della tua popolazione in %s1 ha abbracciato l'Islam.</Italian>
+		<Spanish>Una parte importante de tu poblaci&#243;n en %s1 ha abrazado el Islam.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2JUDENTUM</Tag>
+		<English>A small portion of your population in %s1 has embraced Judaism.</English>
+		<French>Une petite partie de votre population dans %s1 a embrass&#233; le juda&#239;sme.</French>
+		<German>Ein kleiner Teil Eure Bev&#246;lkerung in %s1 hat sich dem Judentum angeschlossen.</German>
+		<Italian>Una piccola parte della tua popolazione in %s1 ha abbracciato l'ebraismo.</Italian>
+		<Spanish>Una peque&#241;a porci&#243;n de tu poblaci&#243;n en %s1 ha abrazado el juda&#237;smo.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_DARK_AGE_POPUP</Tag>
@@ -8029,7 +8053,7 @@
 		<English>Transports</English>
 		<French>Transporte</French>
 		<German>Transportiert</German>
-		<Italian>Transports</Italian>
+		<Italian>Trasportato</Italian>
 		<Spanish>Transporte</Spanish>
 	</TEXT>
 </Civ4GameText>

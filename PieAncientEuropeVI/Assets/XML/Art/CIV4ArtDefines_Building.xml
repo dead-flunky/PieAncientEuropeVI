@@ -1485,7 +1485,7 @@
 			<NIF>Art/Effects/cities_unhappy_burning/fx_unhappy_burning.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Civilizations/Barbarian.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,2</Button>
-		</BuildingArtInfo>    
+		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PLAGUE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
@@ -2631,24 +2631,34 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_STADION</Type>
-		 <LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.58</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/an_greek_stadium/colosseum.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/button_building_stadion.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HIPPODROME</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.58</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/OlympicGames/Olympia.nif</NIF>
 			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/button_building_stadion.dds</Button>
+			<Button>,Art/Interface/Buttons/Buildings/Colosseum.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,7</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CIRCUS</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
+			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Stadium/Stadium.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_circus.dds</Button>
-		</BuildingArtInfo>    
+		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CIRCUS_MAXIMUS</Type>
 			<LSystem>LSYSTEM_4x4</LSystem>

@@ -1339,10 +1339,6 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
-					<UnitType>UNIT_DRUIDE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
 					<UnitType>UNIT_STAMMESFUERST</UnitType>
 				</Unit>
 				<Unit>
@@ -1356,6 +1352,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_ELITE2</UnitClassType>
 					<UnitType>UNIT_BELGIER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_DRUIDE</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
@@ -1944,10 +1944,6 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
-					<UnitType>UNIT_DRUIDE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
 					<UnitType>UNIT_STAMMESFUERST</UnitType>
 				</Unit>
 				<Unit>
@@ -1965,6 +1961,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_ELITE2</UnitClassType>
 					<UnitType>UNIT_BELGIER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_DRUIDE</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
@@ -3109,10 +3109,6 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
-					<UnitType>UNIT_DRUIDE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
 					<UnitType>UNIT_STAMMESFUERST</UnitType>
 				</Unit>
 				<Unit>
@@ -3130,6 +3126,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_ELITE2</UnitClassType>
 					<UnitType>UNIT_BELGIER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_DRUIDE</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
@@ -3458,7 +3458,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
+					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
 					<UnitType>UNIT_STAMMESFUERST</UnitType>
 				</Unit>
 				<Unit>
@@ -4472,6 +4472,10 @@
 					<UnitType>UNIT_HEAVY_HORSEMAN_HUN</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_SCHAMANE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
 					<UnitType>UNIT_STATTHALTER_PERSIA</UnitType>
 				</Unit>
@@ -5205,19 +5209,19 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
-					<UnitType>UNIT_BRAHMANE</UnitType>
+					<UnitType>UNIT_RADSCHA</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
 					<UnitType>UNIT_INDIAN_LONGBOW</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL3</UnitClassType>
-					<UnitType>UNIT_RADSCHA</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ELITE1</UnitClassType>
 					<UnitType>UNIT_INDIAN_NAYAR</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_BRAHMANE</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SWORDSMAN</UnitClassType>
@@ -8422,6 +8426,10 @@
 					<UnitType>UNIT_MONGOL_KESHIK</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_SEHER</UnitClassType>
+					<UnitType>UNIT_SCHAMANE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
 					<UnitType>UNIT_STATTHALTER_PERSIA</UnitType>
 				</Unit>
@@ -9798,7 +9806,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SPECIAL2</UnitClassType>
+					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>
 					<UnitType>UNIT_STAMMESFUERST</UnitType>
 				</Unit>
 				<Unit>

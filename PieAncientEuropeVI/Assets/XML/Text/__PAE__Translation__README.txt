@@ -12,6 +12,9 @@
 <!-- It is possible to use the tool simultaneously! -->
 <!-- All texts get new imported in every patch. -->
 
+<!-- GREEN: [COLOR_POSITIVE_TEXT]Positive[COLOR_REVERT] -->
+<!-- RED: [COLOR_NEGATIVE_TEXT]Negative[COLOR_REVERT] -->
+<!-- RED: [COLOR_WARNING_TEXT]Warning[COLOR_REVERT] -->
 <!-- GREEN (Technologies): [COLOR_TECH_TEXT]Bronze Working[COLOR_REVERT] -->
 <!-- YELLOW (Units): [COLOR_UNIT_TEXT]Archers[COLOR_REVERT] -->
 <!-- GRAY (Buildings): [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT] -->

@@ -482,10 +482,11 @@ def doCheckCityState(pCity):
 		iBuildingProvinz = gc.getInfoTypeForString("BUILDING_PROVINZ")
 		iBuildingMetropole = gc.getInfoTypeForString("BUILDING_METROPOLE")
 
-		if pCity.getNumRealBuilding(iBuildingSiedlung) == 0:
+		# getNumBuilding instead getNumRealBuilding due of an c++ error
+		if pCity.getNumBuilding(iBuildingSiedlung) == 0:
 				pCity.setNumRealBuilding(iBuildingSiedlung, 1)
 
-		if pCity.getPopulation() >= iPopDorf and pCity.getNumRealBuilding(iBuildingKolonie) == 0:
+		if pCity.getPopulation() >= iPopDorf and pCity.getNumBuilding(iBuildingKolonie) == 0:
 				pCity.setNumRealBuilding(iBuildingKolonie, 1)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_1", (pCity.getName(), 0)),
@@ -493,7 +494,7 @@ def doCheckCityState(pCity):
 				if pCity.getProductionProcess() != -1:
 						pCity.clearOrderQueue()
 
-		if pCity.getPopulation() >= iPopStadt and pCity.getNumRealBuilding(iBuildingCity) == 0:
+		if pCity.getPopulation() >= iPopStadt and pCity.getNumBuilding(iBuildingCity) == 0:
 				pCity.setNumRealBuilding(iBuildingCity, 1)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_2", (pCity.getName(), 0)),
@@ -501,25 +502,25 @@ def doCheckCityState(pCity):
 				if pCity.getProductionProcess() != -1:
 						pCity.clearOrderQueue()
 
-		if pCity.getPopulation() >= iPopProvinz and pCity.getNumRealBuilding(iBuildingProvinz) == 0:
+		if pCity.getPopulation() >= iPopProvinz and pCity.getNumBuilding(iBuildingProvinz) == 0:
 				pCity.setNumRealBuilding(iBuildingProvinz, 1)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_3", (pCity.getName(), 0)),
 																		 "AS2D_WELOVEKING", 2, gc.getBuildingInfo(iBuildingProvinz).getButton(), ColorTypes(13), pCity.getX(), pCity.getY(), True, True)
 
-		if pCity.getPopulation() >= iPopMetropole and pCity.getNumRealBuilding(iBuildingMetropole) == 0:
+		if pCity.getPopulation() >= iPopMetropole and pCity.getNumBuilding(iBuildingMetropole) == 0:
 				pCity.setNumRealBuilding(iBuildingMetropole, 1)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_5", (pCity.getName(), 0)),
 																		 "AS2D_WELOVEKING", 2, gc.getBuildingInfo(iBuildingMetropole).getButton(), ColorTypes(13), pCity.getX(), pCity.getY(), True, True)
 
 		# Falls extremer Bev.rueckgang: Meldungen von hoeheren Status beginnend
-		if pCity.getPopulation() < iPopMetropole and pCity.getNumRealBuilding(iBuildingMetropole) == 1:
+		if pCity.getPopulation() < iPopMetropole and pCity.getNumBuilding(iBuildingMetropole) == 1:
 				pCity.setNumRealBuilding(iBuildingMetropole, 0)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_6", (pCity.getName(), 0)),
 																		 "AS2D_PLAGUE", 2, gc.getBuildingInfo(iBuildingProvinz).getButton(), ColorTypes(13), pCity.getX(), pCity.getY(), True, True)
-		if pCity.getPopulation() < iPopProvinz and pCity.getNumRealBuilding(iBuildingProvinz) == 1:
+		if pCity.getPopulation() < iPopProvinz and pCity.getNumBuilding(iBuildingProvinz) == 1:
 				pCity.setNumRealBuilding(iBuildingProvinz, 0)
 				if gc.getPlayer(pCity.getOwner()).isHuman():
 						CyInterface().addMessage(pCity.getOwner(), True, 15, CyTranslator().getText("TXT_INFO_CITYSTATUS_4", (pCity.getName(), 0)),
@@ -1488,9 +1489,11 @@ def doRenegadeCity(pCity, iNewOwner, LoserUnit):
 		# Kultur vorher entfernen (sonst CtD)
 		pCity.setCulture(iNewOwner, 0, True)
 
+		# Stadt wird überrannt
 		if LoserUnit != None:
 				# iLoserOwner = LoserUnit.getOwner()
 				iLoserID = LoserUnit.getID()
+		# Rebellion
 		else:
 				# iLoserOwner = -1
 				iLoserID = -1
@@ -1520,14 +1523,15 @@ def doRenegadeCity(pCity, iNewOwner, LoserUnit):
 						else:
 								JumpArray.append(pLoopUnit)
 
-		# Stadt laeuft automatisch ueber (CyCity pCity, BOOL bConquest, BOOL bTrade)
-		pNewOwner.acquireCity(pCity, 0, 1)
-
 		# Fremde Einheiten rauswerfen
 		for pLoopUnit in JumpArray:
-				#if pLoopUnit.getOwner() == gc.getBARBARIAN_PLAYER(): pLoopUnit.kill(True, -1)
-				# else:
 				pLoopUnit.jumpToNearestValidPlot()
+		# auch diese Einheiten müssen temporär raus, sonst c++ error
+		for pLoopUnit in UnitArray:
+				pLoopUnit.jumpToNearestValidPlot()
+
+		# Stadt laeuft automatisch ueber (CyCity pCity, BOOL bConquest, BOOL bTrade)
+		pNewOwner.acquireCity(pCity, 0, 1)
 
 		# Einheiten generieren
 		for pLoopUnit in UnitArray:
@@ -1571,8 +1575,7 @@ def doRenegadeCity(pCity, iNewOwner, LoserUnit):
 						PAE_Unit.copyName(NewUnit, iUnitType, pLoopUnit.getName())
 						if iUnitCombatType != -1:
 
-								#CvUtil.pyPrint('PAE_City doRenegadeCity: Unit %s, ID: %d, isDead: %d' % (pLoopUnit.getName(),pLoopUnit.getID(), int(pLoopUnit.isDead())))
-								# pLoopUnit.jumpToNearestValidPlot()
+								#CvUtil.pyPrint('doRenegadeCity: PAE_City %s (%d/%d), Unit %s, ID: %d, isDead: %d' % (pCity.getName(),pCity.getX(),pCity.getY(),pLoopUnit.getName(),pLoopUnit.getID(), int(pLoopUnit.isDead())))
 
 								PAE_Unit.initUnitFromUnit(pLoopUnit, NewUnit)
 								NewUnit.setDamage(pLoopUnit.getDamage(), -1)
@@ -1584,11 +1587,8 @@ def doRenegadeCity(pCity, iNewOwner, LoserUnit):
 
 				# Nicht die Einheit, die gerade gekillt wird killen, sonst Error
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Loser ID",iLoserID)), None, 2, None, ColorTypes(10), 0, 0, False, False)
-
-				# if pLoopUnit:
-				#  # TEST
-				#  #CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pLoopUnit.getName(),pLoopUnit.getID())), None, 2, None, ColorTypes(10), 0, 0, False, False)
-				#  pLoopUnit.kill(True, -1) # C++ Fehler ?
+				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pLoopUnit.getName(),pLoopUnit.getID())), None, 2, None, ColorTypes(10), 0, 0, False, False)
+				pLoopUnit.kill(True, -1)
 
 		if iNewOwner == gc.getBARBARIAN_PLAYER():
 				pNewOwner.initUnit(iPartisan, iX, iY, UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
@@ -1622,6 +1622,22 @@ def doRenegadeCity(pCity, iNewOwner, LoserUnit):
 						# Kolonie/Provinz checken
 						doCheckCityState(pCity)
 
+		# Meldung an Spieler
+		iOldTeam = gc.getPlayer(iOldOwner).getTeam()
+		for iPlayer in range(gc.getMAX_PLAYERS()):
+				if iPlayer != iNewOwner:
+						pPlayer = gc.getPlayer(iPlayer)
+						if pPlayer.isAlive() and pPlayer.isHuman():
+								iTeam = pPlayer.getTeam()
+								if gc.getTeam(iTeam).isHasMet(iOldTeam):
+										button = getCityStatus(pCity, -1, -1, True)
+										# Rebellion oder Belagerung
+										if iLoserID == -1:
+												text = "TXT_KEY_MESSAGE_RENEGADE_CITY_A"
+										else:
+												iRand = CvUtil.myRandom(5, "renCityMessageSiege") + 1
+												text = "TXT_KEY_MESSAGE_RENEGADE_CITY_B_" + str(iRand)
+										CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text, (pCity.getName(), gc.getPlayer(iOldOwner).getCivilizationDescription(0), pNewOwner.getCivilizationShortDescription(0))), "", 0, button, ColorTypes(10), iX, iY, True, True)
 
 def AI_defendAndHire(pCity, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)

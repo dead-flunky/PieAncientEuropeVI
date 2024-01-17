@@ -99,44 +99,6 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildFishingBoats.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,7</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_CAMP</Type>
-			<Description>TXT_KEY_BUILD_CAMP</Description>
-			<Help/>
-			<PrereqTech>TECH_HUNTING</PrereqTech>
-			<iTime>200</iTime>
-			<iCost>4</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_H</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_LUMBER_CAMP</Type>
-			<Description>TXT_KEY_BUILD_LUMBER_CAMP</Description>
-			<Help/>
-			<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-			<iTime>300</iTime>
-			<iCost>6</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_LUMBER_CAMP</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_L</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Builds/button_builds_holzlager.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_PASTURE</Type>
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<Help/>
@@ -183,6 +145,44 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildPasture.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,7</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_CAMP</Type>
+			<Description>TXT_KEY_BUILD_CAMP</Description>
+			<Help/>
+			<PrereqTech>TECH_HUNTING</PrereqTech>
+			<iTime>200</iTime>
+			<iCost>4</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_H</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildCamp.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,7</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_LUMBER_CAMP</Type>
+			<Description>TXT_KEY_BUILD_LUMBER_CAMP</Description>
+			<Help/>
+			<PrereqTech>TECH_BRONZE_WORKING</PrereqTech>
+			<iTime>300</iTime>
+			<iCost>6</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_LUMBER_CAMP</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_L</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/button_builds_holzlager.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_FARM</Type>
@@ -240,61 +240,6 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildFarm.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,3,7</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_WINERY</Type>
-			<Description>TXT_KEY_BUILD_WINERY</Description>
-			<Help/>
-			<PrereqTech>TECH_WEINBAU</PrereqTech>
-			<iTime>400</iTime>
-			<iCost>15</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_WINERY</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_SAVANNA</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>100</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>0</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
-					<iTime>50</iTime>
-					<iProduction>5</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>20</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
-					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
-					<iTime>300</iTime>
-					<iProduction>30</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_W</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildWinery.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,8</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_TORF</Type>
 			<Description>TXT_KEY_BUILD_TORF</Description>
 			<Help/>
@@ -350,29 +295,10 @@
 			<Button>Art/Interface/Buttons/Builds/button_torf.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_BRUNNEN</Type>
-			<Description>TXT_KEY_BUILD_BRUNNEN</Description>
-			<Help/>
-			<PrereqTech>TECH_IRRIGATION</PrereqTech>
-			<iTime>400</iTime>
-			<iCost>12</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_BRUNNEN</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_B</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Builds/button_brunnen.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_QUARRY</Type>
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<Help/>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>300</iTime>
 			<iCost>15</iCost>
 			<bKill>0</bKill>
@@ -479,6 +405,61 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/TerrainImprovements/button_camp_ore.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_WINERY</Type>
+			<Description>TXT_KEY_BUILD_WINERY</Description>
+			<Help/>
+			<PrereqTech>TECH_WEINBAU</PrereqTech>
+			<iTime>400</iTime>
+			<iCost>15</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_WINERY</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SAVANNA</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>100</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST_BURNT</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG</PrereqTech>
+					<iTime>50</iTime>
+					<iProduction>5</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>20</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
+					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>
+					<iTime>300</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_W</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildWinery.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,8</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_PLANTATION</Type>
@@ -589,6 +570,25 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,1,13</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_BRUNNEN</Type>
+			<Description>TXT_KEY_BUILD_BRUNNEN</Description>
+			<Help/>
+			<PrereqTech>TECH_IRRIGATION</PrereqTech>
+			<iTime>400</iTime>
+			<iCost>12</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_BRUNNEN</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs/>
+			<HotKey>KB_B</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/button_brunnen.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_COTTAGE</Type>
@@ -833,6 +833,26 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>1</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_REMOVE_DENSE_FOREST</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_DENSE_FOREST</Description>
+			<Help/>
+			<PrereqTech>NONE</PrereqTech>
+			<iTime>0</iTime>
+			<iCost>0</iCost>
+			<bKill>0</bKill>
+			<ImprovementType>NONE</ImprovementType>
+			<RouteType>NONE</RouteType>
+			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
+			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
 					<PrereqTech>TECH_BEWAFFNUNG2</PrereqTech>

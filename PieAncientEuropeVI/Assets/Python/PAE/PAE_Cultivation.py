@@ -56,8 +56,9 @@ def _isCityCultivationPossibleCoast(pCity, eBonus):
 
 
 def getCityCultivationAmount(pCity, iTyp):
+		# 1: wenn sich alles konkurrieren soll
 		if iTyp == 1:
-				return 4  # 1: wenn sich alles konkurrieren soll
+				return 4
 		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_METROPOLE")):
 				iAnz = 4
 		elif pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZ")):
@@ -380,7 +381,7 @@ def getCityCultivationPlot(pCity, eBonus):
 
 
 def isBonusCultivatable(pUnit):
-		if not pUnit.getUnitType() in L.LCultivationUnits:
+		if not pUnit.getUnitType() in L.LCultivationUnits + L.LTradeUnits:
 				return False
 
 		eBonus = int(CvUtil.getScriptData(pUnit, ["b"], -1))
@@ -694,7 +695,7 @@ def _calculateBonusBuyingPrice4Cultivation(eBonus, iBuyer, pPlot):
 
 
 def doBuyBonus4Cultivation(pUnit, eBonus):
-		if not pUnit.getUnitType() in L.LCultivationUnits:
+		if not pUnit.getUnitType() in L.LCultivationUnits + L.LTradeUnits:
 				return False
 		if eBonus == -1:
 				return False

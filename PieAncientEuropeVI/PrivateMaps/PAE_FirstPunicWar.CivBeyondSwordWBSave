@@ -56062,7 +56062,7 @@ BeginPlot
 		FacingDirection=4
 		Sleep
 		UnitAIType=UNITAI_COUNTER
-		ScriptData={\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"s\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\": 281}
+		ScriptData={"s": 281}
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SUPPLY_WAGON, UnitOwner=0

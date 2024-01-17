@@ -1182,8 +1182,8 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_EMIGRANT</Type>
 			<Button>Art/Interface/Buttons/Units/button_emigrant.dds</Button>
-			<fScale>0.35</fScale>
-			<fInterfaceScale>0.9</fInterfaceScale>
+			<fScale>0.30</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Diverses/Emigrant/Caravan_Food.nif</NIF>
@@ -16177,7 +16177,7 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AXEMAN</Type>
 			<Button>Art/Interface/Buttons/Units/button_axeman.dds</Button>
-			<fScale>0.44</fScale>
+			<fScale>0.48</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
@@ -16964,7 +16964,7 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_VIKING_BESERKER</Type>
 			<Button>,Art/Interface/Buttons/Units/Maceman.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,3,10</Button>
-			<fScale>0.44</fScale>
+			<fScale>0.48</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>

@@ -4624,7 +4624,7 @@
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
 			<iFriendlyHealChange>0</iFriendlyHealChange>
-			<iSameTileHealChange>4</iSameTileHealChange>
+			<iSameTileHealChange>5</iSameTileHealChange>
 			<iAdjacentTileHealChange>0</iAdjacentTileHealChange>
 			<iCombatPercent>0</iCombatPercent>
 			<iCityAttack>0</iCityAttack>
@@ -4723,7 +4723,7 @@
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
 			<iFriendlyHealChange>0</iFriendlyHealChange>
-			<iSameTileHealChange>2</iSameTileHealChange>
+			<iSameTileHealChange>5</iSameTileHealChange>
 			<iAdjacentTileHealChange>0</iAdjacentTileHealChange>
 			<iCombatPercent>0</iCombatPercent>
 			<iCityAttack>0</iCityAttack>
@@ -4822,8 +4822,8 @@
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
 			<iFriendlyHealChange>0</iFriendlyHealChange>
-			<iSameTileHealChange>2</iSameTileHealChange>
-			<iAdjacentTileHealChange>2</iAdjacentTileHealChange>
+			<iSameTileHealChange>5</iSameTileHealChange>
+			<iAdjacentTileHealChange>5</iAdjacentTileHealChange>
 			<iCombatPercent>0</iCombatPercent>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -4921,8 +4921,8 @@
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
 			<iFriendlyHealChange>0</iFriendlyHealChange>
-			<iSameTileHealChange>2</iSameTileHealChange>
-			<iAdjacentTileHealChange>2</iAdjacentTileHealChange>
+			<iSameTileHealChange>5</iSameTileHealChange>
+			<iAdjacentTileHealChange>5</iAdjacentTileHealChange>
 			<iCombatPercent>0</iCombatPercent>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -4992,8 +4992,8 @@
 			<iEnemyHealChange>0</iEnemyHealChange>
 			<iNeutralHealChange>0</iNeutralHealChange>
 			<iFriendlyHealChange>0</iFriendlyHealChange>
-			<iSameTileHealChange>2</iSameTileHealChange>
-			<iAdjacentTileHealChange>2</iAdjacentTileHealChange>
+			<iSameTileHealChange>5</iSameTileHealChange>
+			<iAdjacentTileHealChange>5</iAdjacentTileHealChange>
 			<iCombatPercent>0</iCombatPercent>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -15339,6 +15339,7 @@
 		<PromotionInfo>
 			<Type>PROMOTION_FORM_KEIL</Type>
 			<Description>TXT_KEY_PROMOTION_FORM_KEIL</Description>
+			<Help>TXT_KEY_PROMOTION_FORM_KEIL_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<LayerAnimationPath>NONE</LayerAnimationPath>
 			<PromotionPrereq>NONE</PromotionPrereq>

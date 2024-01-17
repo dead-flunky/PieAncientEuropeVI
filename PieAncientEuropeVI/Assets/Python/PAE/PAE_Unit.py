@@ -1073,15 +1073,14 @@ def canDoFormation(pUnit, iFormation):
 		pPlayer = gc.getPlayer(pUnit.getOwner())
 		pTeam = gc.getTeam(pPlayer.getTeam())
 
-		bCanDo = False
 		# Naval
 		if iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
 				if iUnitType not in L.LFormationNoNaval:
 						if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_KEIL") or iFormation == gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_ZANGE"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_LOGIK")):
-										bCanDo = True
+										return True
 						else:
-								bCanDo = True
+								return True
 
 		# Mounted mit Fernangriff
 		elif iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"):
@@ -1089,7 +1088,7 @@ def canDoFormation(pUnit, iFormation):
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FOURAGE"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BRANDSCHATZEN")):
 								if iUnitType not in L.LUnitWarAnimals:
-										bCanDo = True
+										return True
 
 				# Partherschuss oder Kantabrischer Kreis
 				elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_PARTHER") or iFormation == gc.getInfoTypeForString("PROMOTION_FORM_KANTAKREIS"):
@@ -1098,112 +1097,112 @@ def canDoFormation(pUnit, iFormation):
 								if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_PARTHER"):
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PARTHERSCHUSS")):
 												if pUnit.getCivilizationType() in L.LCivPartherschuss:
-														bCanDo = True
+														return True
 								# Kantabrischer Kreis
 								elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_KANTAKREIS"):
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KANTAKREIS")):
-												bCanDo = True
+												return True
 
 				# Keil (fuer schwere Kavallerie)
 				elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_KEIL"):
-						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KAMPFHUNDE")):
 								if iUnitType in L.LKeilUnits:
-										bCanDo = True
+										return True
 
 		# Melee and Spear
 		elif iUnitCombatType in L.LMeleeCombats:
 				# Fortress
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FORTRESS") and pUnit.baseMoves() == 1:
-						bCanDo = True
+						return True
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FORTRESS2") and pUnit.baseMoves() > 1:
-						bCanDo = True
+						return True
 
 				# Schildwall
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARMOR")):
 								if iUnitType not in L.LNoSchildwallUnits:
-										bCanDo = True
+										return True
 
 				# Drill: Manipel, Phalanx, ...
 				if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_DRILL1")):
 						# Roman Legion (Kohorte)
 						if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_KOHORTE"):
 								if pUnit.getUnitType() in L.LDrillUnits:
-										bCanDo = True
+										return True
 						# Treffen-Taktik
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_TREFFEN"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_TREFFEN")):
-										bCanDo = True
+										return True
 						# Manipel
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_MANIPEL"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MANIPEL")):
-										bCanDo = True
+										return True
 						# Phalanx-Arten (nur Speer)
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_SCHIEF"):
 								if iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX2")):
-												bCanDo = True
+												return True
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_PHALANX2"):
 								if iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX2")):
-												bCanDo = True
+												return True
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_PHALANX"):
 								if iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
 										if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PHALANX")):
-												bCanDo = True
+												return True
 						# Geschlossene Formation (alle Melee)
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_CLOSED_FORM"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_CLOSED_FORM")):
-										bCanDo = True
+										return True
 						# Testudo
 						elif iFormation == gc.getInfoTypeForString("PROMOTION_FORM_TESTUDO"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_TESTUDO")):
 										if pUnit.getUnitType() in L.LTestudoUnits:
-												bCanDo = True
+												return True
 				# -- Drill end
 
 				# Keil
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_KEIL"):
-						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
-								bCanDo = True
+						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KAMPFHUNDE")):
+								return True
 				# Zangenangriff
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_ZANGENANGRIFF"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MILIT_STRAT")):
-								bCanDo = True
+								return True
 				# Flankenschutz (nur Speer)
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FLANKENSCHUTZ"):
 						if iUnitCombatType == gc.getInfoTypeForString("UNITCOMBAT_SPEARMAN"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_TREFFEN")):
-										bCanDo = True
+										return True
 				# Elefantengasse (auch weiter unten fuer Bogen)
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_GASSE"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GEOMETRIE2")):
-								bCanDo = True
+								return True
 
 		# Archers
 		elif iUnitCombatType in L.LArcherCombats:
 				# Fortress
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FORTRESS") and pUnit.baseMoves() == 1:
-						bCanDo = True
+						return True
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FORTRESS2") and pUnit.baseMoves() > 1:
-						bCanDo = True
+						return True
 				# Elefantengasse (auch weiter unten fuer Bogen)
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_GASSE"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GEOMETRIE2")):
-								bCanDo = True
+								return True
 
 		# Flucht
 		if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_FLIGHT"):
 				if pUnit.getDamage() >= 70:
 						if iUnitCombatType in L.LFluchtCombats:
 								if pUnit.baseMoves() == 1:
-										bCanDo = True
+										return True
 		if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_LEADER_POSITION"):
 				if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
 						if pUnit.getDamage() < 25:
-								bCanDo = True
+								return True
 
-		return bCanDo
+		return False
 		# can do Formationen / Formations End ------
 
 # PAE UNIT FORMATIONS ------------------------------
@@ -1365,51 +1364,59 @@ def doAIUnitFormations(pUnit, bOffensive, bCity, bElefant):
 						return
 
 		lFormations = []
+
 		# Naval
-		if bOffensive:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_KEIL"))
-		else:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_ZANGE"))
-		# Mounted
-		lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PARTHER"))
-		lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KANTAKREIS"))
-		if bOffensive:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KEIL"))
-		# Melee
-		if bCity and CvUtil.myRandom(2, "Testudo") == 0:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_TESTUDO"))
-		lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KOHORTE"))
-		# Elefantengasse
-		if bElefant and (pUnit.getUnitCombatType() in L.LArcherCombats or CvUtil.myRandom(4, "Elefantengasse") == 0):
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_GASSE"))
-		if bOffensive:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_TREFFEN"))
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_MANIPEL"))
-				# Schiefe Schlachtordnung
-				if CvUtil.myRandom(2, "Schiefe Schlachtordnung") == 0:
-						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_SCHIEF"))
-				# Manipular-Phalanx
+		if pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
+				if bOffensive:
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_KEIL"))
 				else:
-						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PHALANX2"))
-				# Phalanx
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PHALANX"))
-				# Geschlossene Formation (alle Melee mit Drill)
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_CLOSED_FORM"))
-		# Defensive
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_NAVAL_ZANGE"))
 		else:
-				# Flankenschutz (nur Speer)
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_FLANKENSCHUTZ"))
-				# Zangenangriff (dem Keil vorziehen)
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_ZANGENANGRIFF"))
-		lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL"))
-		# Archer, vor allem Skirmisher
-		if bElefant:
-				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_GASSE"))
-		for iFormation in lFormations:
-				if canDoFormation(pUnit, iFormation):
-						doUnitFormation(pUnit, iFormation)
-						return
-				# PAE UNIT FORMATIONS END ------------------------------
+				# Mounted
+				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PARTHER"))
+				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KANTAKREIS"))
+				if bOffensive:
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KEIL"))
+				# Melee
+				if bCity and CvUtil.myRandom(2, "Testudo") == 0:
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_TESTUDO"))
+				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_KOHORTE"))
+				# Elefantengasse
+				if bElefant and (pUnit.getUnitCombatType() in L.LArcherCombats or CvUtil.myRandom(4, "Elefantengasse") == 0):
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_GASSE"))
+				if bOffensive:
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_TREFFEN"))
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_MANIPEL"))
+						# Schiefe Schlachtordnung
+						if CvUtil.myRandom(2, "Schiefe Schlachtordnung") == 0:
+								lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_SCHIEF"))
+						# Manipular-Phalanx
+						else:
+								lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PHALANX2"))
+						# Phalanx
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_PHALANX"))
+						# Geschlossene Formation (alle Melee mit Drill)
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_CLOSED_FORM"))
+				# Defensive
+				else:
+						# Flankenschutz (nur Speer)
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_FLANKENSCHUTZ"))
+						# Zangenangriff (dem Keil vorziehen)
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_ZANGENANGRIFF"))
+				lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL"))
+				# Archer, vor allem Skirmisher
+				if bElefant:
+						lFormations.append(gc.getInfoTypeForString("PROMOTION_FORM_GASSE"))
+
+		if len(lFormations):
+				# Max len() Versuche
+				for i in lFormations:
+						iRand = CvUtil.myRandom(len(lFormations), "doAIUnitFormations")
+						iFormation = lFormations[iRand]
+						if canDoFormation(pUnit, iFormation):
+								doUnitFormation(pUnit, iFormation)
+								return
+# PAE UNIT FORMATIONS END ------------------------------
 
 
 # PAE UNIT BATTLE PROMOTION
@@ -3892,13 +3899,14 @@ def initUnitFromUnit(pOldUnit, pNewUnit):
 		pNewUnit.setLevel(pOldUnit.getLevel())
 		copyName(pNewUnit, pOldUnit.getUnitType(), pOldUnit.getName())
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pNewUnit.getName(),pNewUnit.getID())), None, 2, None, ColorTypes(10), 0, 0, False, False)
+		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pOldUnit.getName(),pOldUnit.getID())), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		# Check its promotions
 		if pNewUnit.canAcquirePromotionAny():
 				iRange = gc.getNumPromotionInfos()
 				for j in range(iRange):
 						if "_FORM_" in gc.getPromotionInfo(j).getType():
 								continue
-						if pOldUnit.isHasPromotion(j):
+						if pOldUnit.isHasPromotion(j) and pNewUnit.canAcquirePromotion(j):
 								pNewUnit.setHasPromotion(j, True)
 		return pNewUnit
 

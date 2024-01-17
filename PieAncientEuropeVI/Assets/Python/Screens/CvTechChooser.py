@@ -267,7 +267,7 @@ class CvTechChooser:
 								gc.getInfoTypeForString("UNIT_HORSE_PERSIA_NOBLE2")
 						]
 
-						# Unlockable units...
+						# Unlockable units
 						for j in range(gc.getNumUnitClassInfos()):
 								eLoopUnit = gc.getCivilizationInfo(gc.getGame().getActiveCivilizationType()).getCivilizationUnits(j)
 								if eLoopUnit != -1 and eLoopUnit not in LDontShowTheseUnits:
@@ -280,7 +280,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Unlockable Buildings...
+						# Unlockable Buildings
 						for j in xrange(gc.getNumBuildingClassInfos()):
 								eLoopBuilding = gc.getCivilizationInfo(gc.getGame().getActiveCivilizationType()).getCivilizationBuildings(j)
 
@@ -302,7 +302,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Obsolete Buildings...
+						# Obsolete Buildings
 						for j in xrange(gc.getNumBuildingClassInfos()):
 								eLoopBuilding = gc.getCivilizationInfo(gc.getPlayer(self.iCivSelected).getCivilizationType()).getCivilizationBuildings(j)
 
@@ -320,7 +320,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Obsolete Bonuses...
+						# Obsolete Bonuses
 						for j in range(gc.getNumBonusInfos()):
 								if (gc.getBonusInfo(j).getTechObsolete() == i):
 										# Add obsolete picture here...
@@ -335,7 +335,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Obsolete Monastaries...
+						# Obsolete Monastaries
 						for j in range(gc.getNumSpecialBuildingInfos()):
 								if (gc.getSpecialBuildingInfo(j).getObsoleteTech() == i):
 										# Add obsolete picture here...
@@ -416,7 +416,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Health Rate bonus from this tech...
+						# Health Rate bonus from this tech
 						if (gc.getTechInfo(i).getHealth() != 0):
 								szHealthRateButton = "HealthRate" + str(i)
 								screen.addDDSGFCAt(szHealthRateButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_HEALTH").getPath(),
@@ -426,7 +426,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Happiness Rate bonus from this tech...
+						# Happiness Rate bonus from this tech
 						if (gc.getTechInfo(i).getHappiness() != 0):
 								szHappinessRateButton = "HappinessRate" + str(i)
 								screen.addDDSGFCAt(szHappinessRateButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_HAPPINESS").getPath(),
@@ -446,7 +446,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Line of Sight bonus...
+						# Line of Sight bonus
 						if (gc.getTechInfo(i).isExtraWaterSeeFrom()):
 								szLOSButton = "LOS" + str(i)
 								screen.addDDSGFCAt(szLOSButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_LOS").getPath(), iX +
@@ -456,7 +456,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Map Center Bonus...
+						# Map Center Bonus
 						if (gc.getTechInfo(i).isMapCentering()):
 								szMapCenterButton = "MapCenter" + str(i)
 								screen.addDDSGFCAt(szMapCenterButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_MAPCENTER").getPath(),
@@ -466,7 +466,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Map Reveal...
+						# Map Reveal
 						if (gc.getTechInfo(i).isMapVisible()):
 								szMapRevealButton = "MapReveal" + str(i)
 								screen.addDDSGFCAt(szMapRevealButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_MAPREVEAL").getPath(),
@@ -556,7 +556,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Irrigation unlocked...
+						# Irrigation unlocked
 						if (gc.getTechInfo(i).isIrrigation()):
 								szIrrigationButton = "Irrigation" + str(i)
 								screen.addDDSGFCAt(szIrrigationButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_IRRIGATION").getPath(),
@@ -566,7 +566,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Ignore Irrigation unlocked...
+						# Ignore Irrigation unlocked
 						if (gc.getTechInfo(i).isIgnoreIrrigation()):
 								szIgnoreIrrigationButton = "IgnoreIrrigation" + str(i)
 								screen.addDDSGFCAt(szIgnoreIrrigationButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_NOIRRIGATION").getPath(),
@@ -576,7 +576,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Coastal Work unlocked...
+						# Coastal Work unlocked
 						if (gc.getTechInfo(i).isWaterWork()):
 								szWaterWorkButton = "WaterWork" + str(i)
 								screen.addDDSGFCAt(szWaterWorkButton, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_TECH_WATERWORK").getPath(),
@@ -674,7 +674,7 @@ class CvTechChooser:
 						j = 0
 						k = 0
 
-						# Special buildings like monestaries...
+						# Special buildings like monestaries
 						for j in range(gc.getNumSpecialBuildingInfos()):
 								if (gc.getSpecialBuildingInfo(j).getTechPrereq() == i):
 										szSpecialBuilding = "SpecialBuildingButton" + str((i * 1000) + j)
@@ -911,7 +911,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, gc.getPromotionInfo(iFormation).getButton(), iX + fX, iY + Y_ROW,
 																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 								fX += X_INCREMENT
-						elif i == gc.getInfoTypeForString("TECH_KETTENPANZER"):
+						elif i == gc.getInfoTypeForString("TECH_KAMPFHUNDE"):
 								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_KEIL")
 								screen.addDDSGFCAt("", szTechRecord, gc.getPromotionInfo(iFormation).getButton(), iX + fX, iY + Y_ROW,
 																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
@@ -972,6 +972,7 @@ class CvTechChooser:
 								screen.addDDSGFCAt("", szTechRecord, gc.getPromotionInfo(iFormation).getButton(), iX + fX, iY + Y_ROW,
 																	 TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
 								fX += X_INCREMENT
+
 						# Actions und Rang/Rank
 						elif i == gc.getInfoTypeForString("TECH_HORSEBACK_RIDING"):
 								iPromotion = gc.getInfoTypeForString("PROMOTION_RANG_HUN")
@@ -1046,6 +1047,7 @@ class CvTechChooser:
 						#		screen.addDDSGFCAt("", szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_PROMO_OIL").getPath(), iX +
 						#											 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 701, -1, False)
 						#		fX += X_INCREMENT
+
 						# Reservisten
 						elif i == gc.getInfoTypeForString("TECH_RESERVISTEN"):
 								screen.addDDSGFCAt("", szTechRecord, ",Art/Interface/MainScreen/CityScreen/Great_Engineer.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,7,6",
@@ -1134,6 +1136,18 @@ class CvTechChooser:
 								screen.addDDSGFCAt(szObsoleteX, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_RED_X").getPath(),
 																	 iX + fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 754, j, False)
 								fX += X_INCREMENT
+						# Obsolete Ore Camp
+						elif i == gc.getInfoTypeForString("TECH_BEWAFFNUNG2"):
+								iImp = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+								j = gc.getInfoTypeForString("BUILD_ORE_CAMP")
+								szImprovementButton = "ObsoleteImprovement" + str((iImp * 1000) + j)
+								szObsoleteX = "ObsoleteImprovementX" + str(j)
+								screen.addDDSGFCAt(szImprovementButton, szTechRecord, gc.getBuildInfo(j).getButton(), iX + fX, iY +
+																	 Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_HELP_IMPROVEMENT, i, j, False)
+								screen.addDDSGFCAt(szObsoleteX, szTechRecord, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_RED_X").getPath(), iX +
+																	 fX, iY + Y_ROW, TEXTURE_SIZE, TEXTURE_SIZE, WidgetTypes.WIDGET_GENERAL, 749, 19, False)
+								fX += X_INCREMENT
+								
 						# Special Wonders
 						elif i == gc.getInfoTypeForString("TECH_MASONRY2"):
 								if gc.getPlayer(CyGame().getActivePlayer()).getCivilizationType() != gc.getInfoTypeForString("CIVILIZATION_BRITEN"):

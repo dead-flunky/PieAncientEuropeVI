@@ -5,17 +5,17 @@
 <!-- changed by Pie, Austria -->
 <!-- ++++ -->
 <!-- ++++ UNITCLASS_SPECIAL1 (max 3 units) ++++ -->
-<!-- UNIT_DRUIDE: Kelten, Gallier, Briten -->
-<!-- UNIT_SICHELKRIEGER: Daker  -->
-<!-- UNIT_SAMNIT: Rom, Etrusker  -->
+<!-- UNIT_STAMMESFUERST: Kelten, Gallien, Briten, Germanen, Vandals -->
+<!-- UNIT_SICHELKRIEGER: Daker -->
+<!-- UNIT_SAMNIT: Rom, Etrusker -->
 <!-- UNIT_HYPASPIST: Makedon -->
 <!-- UNIT_STADTWACHE_ISRAEL: Israel -->
 <!-- UNIT_HOPLIT_PERSIA: Persia -->
 <!-- UNIT_KERMA_WARRIOR: Nubia -->
 <!-- UNIT_EGYPT_RAM_CHARIOT: Egypt -->
-<!-- UNIT_BRAHMANE: India -->
 <!-- UNIT_CAMP: Skythen, Hunnen, Parther -->
 <!-- UNIT_GARDE_ASSUR: Assur, Babylon, Sumer -->
+<!-- UNIT_RADSCHA: India -->
 <!-- UNIT_SEEVOLK: Neutral -->
 <!-- UNIT_SEEVOLK_1: Neutral -->
 <!-- UNIT_SEEVOLK_2: Neutral -->
@@ -24,7 +24,6 @@
 <!-- UNIT_VIKING_2: Neutral -->
 <!-- ++++ -->
 <!-- ++++ UNITCLASS_SPECIAL2 (max 3 units) ++++ -->
-<!-- UNIT_STAMMESFUERST: Kelten, Gallien, Briten, Germanen, Vandals -->
 <!-- UNIT_FALXMAN: Daker -->
 <!-- UNIT_EGYPT_CHEPESCH_RIDER: Egypt, Nubia -->
 <!-- UNIT_INDIAN_LONGBOW: India -->
@@ -35,7 +34,6 @@
 <!-- UNIT_CELTIC_FIANNA: Briten -->
 <!-- UNIT_FUERST_DAKER: Daker -->
 <!-- UNIT_NUBIAFUERST: Nubia -->
-<!-- UNIT_RADSCHA: India -->
 <!-- ++++ -->
 <!-- ++++ UNITCLASS_SPECIAL4 (no limit) ++++ -->
 <!-- UNIT_CARTH_SACRED_BAND_SWORD: Karthager -->
@@ -125,6 +123,15 @@
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_STATTHALTER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SEHER</Type>
+			<Description>TXT_KEY_UNIT_SEHER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
+			<DefaultUnit>UNIT_SEHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SUPPLY_WAGON</Type>
@@ -1499,7 +1506,7 @@
 			<Description>TXT_KEY_UNIT_JEWISH_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_JEWISH_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>

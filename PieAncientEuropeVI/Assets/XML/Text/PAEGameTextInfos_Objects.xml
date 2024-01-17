@@ -7157,6 +7157,14 @@
 		<Spanish>Arquero en Carro:Arqueros en Carros</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
+		<English>Christian Priest</English>
+		<French>Pr&#234;tre chr&#233;tien</French>
+		<German>Christlicher Priester</German>
+		<Italian>Sacerdote cristiano</Italian>
+		<Spanish>Sacerdote cristiano</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_COMPANION_CAVALRY</Tag>
 		<English>Companion Cavalry</English>
 		<French>Compagnon</French>
@@ -7669,12 +7677,20 @@
 		<Spanish>Inquisidor:Inquisidores</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Tag>
+		<English>Da'iya</English>
+		<French>Da'iya</French>
+		<German>Da'iya</German>
+		<Italian>Da'iya</Italian>
+		<Spanish>Da'iya</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY</Tag>
-		<English>Jewish Emigrants</English>
-		<French>Emigrant juif</French>
-		<German>J&#252;dische Auswanderer</German>
-		<Italian>Emigranti Giudaici</Italian>
-		<Spanish>Emigrante Jud&#237;o:Emigrantes Jud&#237;os</Spanish>
+		<English>Rabbi</English>
+		<French>Rabbin</French>
+		<German>Rabbiner</German>
+		<Italian>Rabbino</Italian>
+		<Spanish>Rabino:Rabinos</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KILIKIEN</Tag>
@@ -8225,6 +8241,14 @@
 		<Spanish>Batall&#243;n Sagrado:Batallones Sagrados</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_SCHAMANE</Tag>
+		<English>Shaman</English>
+		<French><Text>Chaman</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<German><Text>Schamane</Text><Gender>Male</Gender><Plural>0</Plural></German>
+		<Italian><Text>Sciamano</Text><Gender>Male</Gender><Plural>0</Plural></Italian>
+		<Spanish><Text>Cham&#225;n</Text><Gender>Male</Gender><Plural>0</Plural></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCHILDTRAEGER</Tag>
 		<English>Shield Bearer</English>
 		<French>Porteur de bouclier</French>
@@ -8271,6 +8295,14 @@
 		<German>Scherden-Schwertk&#228;mpfer</German>
 		<Italian>Spadaccino shardano</Italian>
 		<Spanish>Soldado shirdano con Cimitarra:Soldados shirdanos con Cimitarra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SEHER</Tag>
+		<English>Seer</English>
+		<French><Text>Voyant</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<German><Text>Seher</Text><Gender>Male</Gender><Plural>0</Plural></German>
+		<Italian><Text>Veggente</Text><Gender>Male</Gender><Plural>0</Plural></Italian>
+		<Spanish><Text>Vidente</Text><Gender>Male</Gender><Plural>0</Plural></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE</Tag>

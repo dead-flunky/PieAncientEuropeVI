@@ -2727,12 +2727,12 @@ class CvEventManager:
 
 				# PAE 6.16: Triggering PAE events
 				iRand = CvUtil.myRandom(10, "Trigger PAE Sumpf Events")
-				if iRand < 10:
-						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_BORDELL"))
-				elif iRand < 3:
-						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_MOOR"))
-				elif iRand < 4:
-						pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO"))
+				if iRand < 3: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOOR")
+				elif iRand < 5: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO")
+				elif iRand < 10: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_BORDELL")
+
+				pPlayer.trigger(iEvent)
+				pPlayer.resetEventOccured(iEvent)
 
 				#if pPlayer.isHuman():
 				#		pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_SPARTACUS"))
@@ -5151,36 +5151,18 @@ class CvEventManager:
 				if not bRevolt and pCity.isHasBuilding(iBuilding):
 						bRevolt = PAE_City.provinceTribute(pCity)
 
-				# Christentum (ab PAE 6.15: auch Judentum und Islam) und Haeresie (Heresy) ----------------------------
-				bHeresy = False
-				if not bRevolt and iGameTurnYear > 0 and iGameTurnFounded % 2 == 0:
-						LReligions = [
-								gc.getInfoTypeForString("RELIGION_JUDAISM"),
-								gc.getInfoTypeForString("RELIGION_CHRISTIANITY"),
-								gc.getInfoTypeForString("RELIGION_ISLAM")
-						]
-						for iReligion in LReligions:
-								if gc.getGame().isReligionFounded(iReligion):
-										# zum Christentum konvertieren
-										if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
-												if not pCity.isHasReligion(iReligion):
-														if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_ISLAM")):
-																#if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_JUDAISM")): # hier solls erlaubt sein
-																if PAE_Christen.convertCity(pCity):
-																		bHeresy = True
-
-										# Bei monotheistisch beeinflussten Staedten - Kulte und Religionen langsam raus (alle!)
-										if not bHeresy and pCity.isHasReligion(iReligion):
-												if PAE_Christen.removePagans(pCity, iReligion):
-														bHeresy = True
-
 				# PAE Provinzcheck
 				if bCheckCityState:
 						PAE_City.doCheckCityState(pCity)
 
 				# CivilWar
 				PAE_City.doCheckCivilWar(pCity)
-				
+
+				# Christentum (ab PAE 6.15: auch Judentum und Islam) und Haeresie (Heresy) ----------------------------
+				bHeresy = False
+				if not bRevolt and iGameTurnYear > 0 and iGameTurnFounded % 2 == 0:
+						bHeresy = PAE_Christen.doSpreadReligion(pCity)
+
 				# PAE 6.14: Allgemeine Religionskonflikte
 				if not bHeresy:
 					if PAE_Christen.doReligionsKonflikt(pCity):

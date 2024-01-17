@@ -1980,7 +1980,7 @@ class CvMainInterface:
 														#				continue
 														# Ore Camp (wird obsolet)
 														if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_ORE_CAMP"):
-																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG2")):
 																		continue
 												# Limes
 												if gc.getActionInfo(i).getMissionData() in L.LBuildLimes:
@@ -2323,7 +2323,7 @@ class CvMainInterface:
 																						if pUnit.isHasPromotion(data[3]):
 																								if pTeam.isHasTech(gc.getUnitInfo(data[2]).getPrereqAndTech()):
 																										iNewUnit = data[2]
-																										if gc.getUnitInfo(data[2]).getUnitCombatType() == eMounted and not pPlayer.hasBonus(eBonus):
+																										if gc.getUnitInfo(data[2]).getUnitCombatType() == eMounted and not pUnitOwner.hasBonus(eBonus):
 																												iNewUnit = -1
 
 																								# PAE RangPromoUp + Veteran + Elite Units
@@ -2412,7 +2412,7 @@ class CvMainInterface:
 												# BEGIN Merchant trade/cultivation/collect Bonus (738-741) (Boggy)
 												if pUnit.canMove():  # and not pUnit.hasMoved():
 														pPlot = g_pSelectedUnit.plot()
-														if iUnitType in L.LCultivationUnits:
+														if iUnitType in L.LCultivationUnits + L.LTradeUnits:
 																# if pPlot.getOwner() == iUnitOwner or pPlot.getOwner() != -1 and gc.getTeam(gc.getPlayer(pPlot.getOwner()).getTeam()).isVassal(pUnitOwner.getTeam()):
 																eBonus = CvUtil.getScriptData(pUnit, ["b"], -1)
 																# Collect bonus from plot or city
@@ -3243,7 +3243,7 @@ class CvMainInterface:
 																										iCount += 1
 
 																				# Keil (auch weiter unten fuer Melee)
-																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
+																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KAMPFHUNDE")):
 																						if pUnit.getUnitType() in L.LKeilUnits:
 																								# Keil
 																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_KEIL")
@@ -3408,7 +3408,7 @@ class CvMainInterface:
 																				# Drill end ------------
 
 																				# Keil (auch bei Mounted)
-																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_KETTENPANZER")):
+																				if pUnit.getUnitCombatType() in L.LKeilUnits and pTeam.isHasTech(gc.getInfoTypeForString("TECH_KAMPFHUNDE")):
 																						# Keil
 																						iFormation = gc.getInfoTypeForString("PROMOTION_FORM_KEIL")
 																						if pUnit.isHasPromotion(iFormation):

@@ -3527,6 +3527,15 @@
 			<Attribute Class="Scalar">fCenterCut:50</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_TORF">
+			<Attribute Class="Improvement">IMPROVEMENT_TORF</Attribute>
+			<Attribute Class="Era">ERA_ALL</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:50</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
 		<ArtRef Name="goal:IMPROVEMENT_QUARRY">
 			<Attribute Class="Improvement">IMPROVEMENT_QUARRY</Attribute>
 			<Attribute Class="Era">ERA_ALL</Attribute>
@@ -3606,6 +3615,14 @@
 		<Attribute Class="Scalar">bNotBFS:1</Attribute>
 		<To Name="Leaf_LandImprovement_4x4">
 			<Translate>-0.6,1.8</Translate>
+			<Rotate>-40</Rotate>
+		</To>
+	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="LandImprovementProd">
+		<Attribute Class="Improvement">IMPROVEMENT_TORF</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Leaf_LandImprovement_4x4">
+			<Translate>0.1,0.1</Translate>
 			<Rotate>-40</Rotate>
 		</To>
 	</LProduction>

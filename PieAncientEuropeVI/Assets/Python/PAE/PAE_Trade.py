@@ -1230,7 +1230,6 @@ def doAutomateMerchant(pUnit):
 				# iTurn = gc.getGame().getGameTurn()
 				# pUnit.getGroup().clearMissionQueue()
 
-				# if iPlayer == iHumanPlayer:
 				#CyInterface().addMessage(iHumanPlayer, True, 10, "Unit autLTC: " + str(CvUtil.getScriptData(pUnit, ["autLTC"], -1)), None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 
 				# Verhindern, dass mehrmals pro Runden geprueft wird, um Rundenzeit zu sparen
@@ -1401,18 +1400,17 @@ def doAutomateMerchant(pUnit):
 								iDistance1 = plotDistance(pUnitPlot.getX(), pUnitPlot.getY(), pCityPlot1.getX(), pCityPlot1.getY()) - 1
 								#iDistance2 = CyMap().calculatePathDistance(pUnitPlot, pCityPlot2)
 								iDistance2 = plotDistance(pUnitPlot.getX(), pUnitPlot.getY(), pCityPlot2.getX(), pCityPlot2.getY()) - 1
-								# if iPlayer == 8:
-								#	CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is anywhere: else: Distance1: "+str(iDistance1) + u" Distanz2: "+str(iDistance2), None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
+								#CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is anywhere: else: Distance1: "+str(iDistance1) + u" Distanz2: "+str(iDistance2), None, 2, None, ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 								if iDistance1 == -1 and iDistance2 == -1:
 										# if iPlayer == 8:
 										#	CyInterface().addMessage(iHumanPlayer, True, 10, "doAutomateMerchant False: Plot unreachable", None, 2, None, ColorTypes(7), 0, 0, False, False)
 										return False  # plot unreachable
-								elif iDistance1 == -1:
+								elif iDistance1 == -1 or iDistance1 > iDistance2:
 										# if iPlayer == 8:
 										#	CyInterface().addMessage(iHumanPlayer, True, 10, "doAutomateMerchant iDistance1 == -1 ", None, 2, None, ColorTypes(6), 0, 0, False, False)
 										#pUnit.getGroup().pushMoveToMission(pCityPlot2.getX(), pCityPlot2.getY())
 										pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, iX2, iY2, 1, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
-								elif iDistance2 == -1 or iDistance1 <= iDistance2:
+								elif iDistance2 == -1:
 										# if iPlayer == 8:
 										#	CyInterface().addMessage(iHumanPlayer, True, 10, "doAutomateMerchant iDistance1 smaller than iDistance2 ", None, 2, None, ColorTypes(6), 0, 0, False, False)
 										#pUnit.getGroup().pushMoveToMission(pCityPlot1.getX(), pCityPlot1.getY())
@@ -1426,9 +1424,9 @@ def doAutomateMerchant(pUnit):
 												doAssignTradeRoute_AI(pUnit)
 								else:
 										# if iPlayer == 8:
-										#	CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is anywhere: else (2x)", None, 2, None, ColorTypes(6), 0, 0, False, False)
+										#CyInterface().addMessage(iHumanPlayer, True, 10, "Unit is anywhere: else (2x)", None, 2, None, ColorTypes(6), 0, 0, False, False)
 										#pUnit.getGroup().pushMoveToMission(pCityPlot2.getX(), pCityPlot2.getY())
-										pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, iX2, iY2, 1, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
+										pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, iX1, iY1, 1, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
 
 				#CyInterface().addMessage(iHumanPlayer, True, 10, "doAutomateMerchant returns True ", None, 2, None, ColorTypes(6), 0, 0, False, False)
 				return True

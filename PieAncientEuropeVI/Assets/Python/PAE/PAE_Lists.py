@@ -453,6 +453,11 @@ def init():
 				gc.getInfoTypeForString("UNIT_ARABIA_CAMELARCHER")
 		]
 		LKeilUnits = [
+				gc.getInfoTypeForString("UNIT_BEGLEITHUND"),
+				gc.getInfoTypeForString("UNIT_KAMPFHUND"),
+				gc.getInfoTypeForString("UNIT_KAMPFHUND_TIBET"),
+				gc.getInfoTypeForString("UNIT_KAMPFHUND_MACEDON"),
+				gc.getInfoTypeForString("UNIT_KAMPFHUND_BRITEN"),
 				gc.getInfoTypeForString("UNIT_MOUNTED_SACRED_BAND_CARTHAGE"),
 				gc.getInfoTypeForString("UNIT_EQUITES"),
 				gc.getInfoTypeForString("UNIT_HORSEMAN_EQUITES2"),
@@ -533,7 +538,7 @@ def init():
 				gc.getInfoTypeForString("PROMOTION_FORM_MANIPEL"),        # TECH_MANIPEL
 				gc.getInfoTypeForString("PROMOTION_FORM_TREFFEN"),        # TECH_TREFFEN
 				gc.getInfoTypeForString("PROMOTION_FORM_KOHORTE"),        # TECH_MARIAN_REFORM
-				gc.getInfoTypeForString("PROMOTION_FORM_KEIL"),           # TECH_HUFEISEN
+				gc.getInfoTypeForString("PROMOTION_FORM_KEIL"),           # TECH_KAMPFHUNDE
 				gc.getInfoTypeForString("PROMOTION_FORM_ZANGENANGRIFF"),  # TECH_HORSEBACK_RIDING_2
 				gc.getInfoTypeForString("PROMOTION_FORM_FLANKENSCHUTZ"),  # TECH_TREFFEN
 				gc.getInfoTypeForString("PROMOTION_FORM_GASSE"),          # TECH_GEOMETRIE2

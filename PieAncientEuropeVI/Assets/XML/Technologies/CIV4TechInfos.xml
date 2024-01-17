@@ -15292,6 +15292,7 @@
 			</Flavors>
 			<OrPreReqs>
 				<PrereqTech>TECH_BASILICA</PrereqTech>
+				<PrereqTech>TECH_SKLAVENRECHTE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_185</Quote>

@@ -537,6 +537,62 @@
 		<Spanish>GLA</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE</Tag>
+		<English>Legend</English>
+		<French>L&#233;gende</French>
+		<German>Legende</German>
+		<Italian>Legenda</Italian>
+		<Spanish>Leyenda</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_1</Tag>
+		<English>White: [COLOR_BUILDING_TEXT]The bonus resource is common to the city[COLOR_REVERT]</English>
+		<French>Blanc : [COLOR_BUILDING_TEXT]La ressource est commune &#224; la ville[COLOR_REVERT]</French>
+		<German>Wei&#223;: [COLOR_BUILDING_TEXT]Die Ressource ist bei der Stadt verbreitet[COLOR_REVERT]</German>
+		<Italian>Bianco: [COLOR_BUILDING_TEXT]La risorsa &#232; comune alla citt&#224;[COLOR_REVERT]</Italian>
+		<Spanish>Blanco: [COLOR_BUILDING_TEXT]El recurso es com&#250;n a la ciudad[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_2</Tag>
+		<English>[COLOR_BUILDING_TEXT]Gray: The bonus resource cannot currently be distributed[COLOR_REVERT]</English>
+		<French>[COLOR_BUILDING_TEXT]Gris : la ressource ne peut pas &#234;tre distribu&#233;e actuellement[COLOR_REVERT]</French>
+		<German>[COLOR_BUILDING_TEXT]Grau: Die Ressource kann derzeit nicht verbreitet werden[COLOR_REVERT]</German>
+		<Italian>[COLOR_BUILDING_TEXT]Grigio: la risorsa non pu&#242; attualmente essere distribuita[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Gris: el recurso no se puede distribuir actualmente[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_3</Tag>
+		<English>[COLOR_POSITIVE_TEXT]Green[COLOR_REVERT]: [COLOR_BUILDING_TEXT]The bonus resource can be distributed and is available on the trading network[COLOR_REVERT]</English>
+		<French>[COLOR_POSITIVE_TEXT]Vert[COLOR_REVERT] : [COLOR_BUILDING_TEXT]La ressource peut &#234;tre distribu&#233;e et est disponible sur le r&#233;seau commercial[COLOR_REVERT]</French>
+		<German>[COLOR_POSITIVE_TEXT]Gr&#252;n[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann verbreitet werden und ist im Handelsnetz verf&#252;gbar[COLOR_REVERT]</German>
+		<Italian>[COLOR_POSITIVE_TEXT]Verde[COLOR_REVERT]: [COLOR_BUILDING_TEXT]La risorsa pu&#242; essere distribuita ed &#232; disponibile sulla rete commerciale[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_POSITIVE_TEXT]Verde[COLOR_REVERT]: [COLOR_BUILDING_TEXT]El recurso se puede distribuir y est&#225; disponible en la red comercial[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_4</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]Red[COLOR_REVERT]: [COLOR_BUILDING_TEXT]The bonus resource can be distributed but is not available on the trading network[COLOR_REVERT]</English>
+		<French>[COLOR_NEGATIVE_TEXT]Rouge[COLOR_REVERT] : [COLOR_BUILDING_TEXT]La ressource peut &#234;tre distribu&#233;e mais n'est pas disponible sur le r&#233;seau commercial[COLOR_REVERT]</French>
+		<German>[COLOR_NEGATIVE_TEXT]Rot[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann verbreitet werden, ist aber nicht im Handelsnetz verf&#252;gbar[COLOR_REVERT]</German>
+		<Italian>[COLOR_NEGATIVE_TEXT]Rosso[COLOR_REVERT]: [COLOR_BUILDING_TEXT]La risorsa pu&#242; essere distribuita ma non &#232; disponibile sulla rete commerciale[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_NEGATIVE_TEXT]Rojo[COLOR_REVERT]: [COLOR_BUILDING_TEXT]El recurso se puede distribuir pero no est&#225; disponible en la red comercial[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_5</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT]: [COLOR_BUILDING_TEXT]These bonus resources are interdependent. A maximum of y of these resources can be spread around the city (depending on the city size: 3,6,12,20)[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT] : [COLOR_BUILDING_TEXT]Ces ressources sont interd&#233;pendantes. Un maximum de y de ces ressources peuvent &#234;tre r&#233;parties dans la ville (selon la taille de la ville : 3,6,12,20)[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Diese Ressourcen sind voneinander abh&#228;ngig. Es k&#246;nnen maximal y dieser Ressourcen um die Stadt verbreitet werden (je nach Stadtgr&#246;&#223;e: 3,6,12,20)[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Queste risorse sono interdipendenti. Un massimo di y di queste risorse pu&#242; essere distribuito nella citt&#224; (a seconda delle dimensioni della citt&#224;: 3,6,12,20)[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Estos recursos son interdependientes. Un m&#225;ximo de y de estos recursos se pueden distribuir por la ciudad (dependiendo del tama&#241;o de la ciudad: 3,6,12,20)[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_6</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]No value[COLOR_REVERT]: [COLOR_BUILDING_TEXT]The bonus resource cannot be distributed at all (no suitable terrain)[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Aucune valeur[COLOR_REVERT] : [COLOR_BUILDING_TEXT]La ressource ne peut pas &#234;tre distribu&#233;e du tout (terrain non adapt&#233;)[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Kein Wert[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann &#252;berhaupt nicht verbreitet werden (kein geeignetes Terrain)[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Nessun valore[COLOR_REVERT]: [COLOR_BUILDING_TEXT]La risorsa non pu&#242; essere distribuita affatto (terreno non adatto)[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Sin valor[COLOR_REVERT]: [COLOR_BUILDING_TEXT]El recurso no se puede distribuir en absoluto (terreno no adecuado)[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_SLAVES</Tag>
 		<English>SLA</English>
 		<French>ESC</French>
@@ -890,19 +946,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_MOVE_ANIMAL_BONUS</Tag>
-		<English>A herd of wild animals (%s1) have moved on and are now grazing in a different place. You prevent further movement by positioning a unit on the field or by farming the field.</English>
-		<French>Un troupeau d'animaux sauvages (%s1) s'est d&#233;plac&#233; et paissent maintenant dans un endroit diff&#233;rent. Vous emp&#234;chez une nouvelle migration en positionnant une unit&#233; sur le champ ou en cultivant le champ.</French>
-		<German>Eine Herde wilder Tiere (%s1) ist weitergewandert und grast nun an einem anderen Ort. Du verhinderst eine Weiterwanderung, indem du eine Einheit auf das Feld positionierst oder das Feld bewirtschaftest.</German>
+		<English>A herd of wild animals (%s1) have moved on and are now grazing in a different place. You prevent movement by positioning a unit on the field or by farming the field.</English>
+		<French>Un troupeau d'animaux sauvages (%s1) s'est d&#233;plac&#233; et paissent maintenant dans un endroit diff&#233;rent. Vous emp&#234;chez une migration en positionnant une unit&#233; sur le champ ou en cultivant le champ.</French>
+		<German>Eine Herde wilder Tiere (%s1) ist weitergewandert und grast nun an einem anderen Ort. Du verhinderst eine Wanderung, indem du eine Einheit auf das Feld positionierst oder das Feld bewirtschaftest.</German>
 		<Italian>Un branco di animali selvatici (%s1) si &#232; trasferito e ora pascola in un posto diverso. Impedisci ulteriori migrazioni posizionando un'unit&#224; sul campo o coltivando il campo.</Italian>
-		<Spanish>Una manada de animales salvajes (%s1) se ha mudado y ahora est&#225; pastando en un lugar diferente. Evitas una mayor migraci&#243;n colocando una unidad en el campo o cultivando el campo.</Spanish>
+		<Spanish>Una manada de animales salvajes (%s1) se ha mudado y ahora est&#225; pastando en un lugar diferente. Evitas una migraci&#243;n colocando una unidad en el campo o cultivando el campo.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_MOVE_ANIMAL_BONUS_FISH</Tag>
-		<English>A large school of fish has moved on. You prevent further movement by positioning a unit on the field or by farming the field.</English>
-		<French>Un grand banc de poissons s'est d&#233;plac&#233;. Vous emp&#234;chez une nouvelle migration en positionnant une unit&#233; sur le champ ou en cultivant le champ.</French>
-		<German>Ein gro&#223;er Fischschwarm ist weitergezogen. Du verhinderst eine Weiterwanderung, indem du eine Einheit auf das Feld positionierst oder das Feld bewirtschaftest.</German>
+		<English>A large school of fish has moved on. You prevent movement by positioning a unit on the field or by farming the field.</English>
+		<French>Un grand banc de poissons s'est d&#233;plac&#233;. Vous emp&#234;chez une migration en positionnant une unit&#233; sur le champ ou en cultivant le champ.</French>
+		<German>Ein gro&#223;er Fischschwarm ist weitergezogen. Du verhinderst eine Wanderung, indem du eine Einheit auf das Feld positionierst oder das Feld bewirtschaftest.</German>
 		<Italian>Un grande banco di pesci &#232; andato avanti. Impedisci ulteriori migrazioni posizionando un'unit&#224; sul campo o coltivando il campo.</Italian>
-		<Spanish>Un gran banco de peces se ha movido. Evitas una mayor migraci&#243;n colocando una unidad en el campo o cultivando el campo.</Spanish>
+		<Spanish>Un gran banco de peces se ha movido. Evitas una migraci&#243;n colocando una unidad en el campo o cultivando el campo.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_OLYMPIC_GAMES_WINNER</Tag>
@@ -1186,19 +1242,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_CULTS_1</Tag>
-		<English>%s1_cult got banished by followers of Christianity in %s2_city.</English>
-		<French>Un culte (%s1_cult) a &#233;t&#233; banni par les chr&#233;tiens &#224; %s2_city.</French>
-		<German>%s1_cult wurde durch Anh&#228;nger des Christentums aus %s2_city vertrieben.</German>
-		<Italian>%s1_cult &#232; stato bandito dai seguaci del cristianesimo a %s2_city.</Italian>
-		<Spanish>%s1_cult ha sido expulsado por los seguidores del Cristianismo en %s2_city.</Spanish>
+		<English>%s1_cult got banished by Followers of the Way (Christians) in %s2_city.</English>
+		<French>Un culte (%s1_cult) a &#233;t&#233; banni par les adeptes du chemin (chr&#233;tiens) &#224; %s2_city.</French>
+		<German>%s1_cult wurde durch Anh&#228;nger des rechten Weges (Christen) aus %s2_city vertrieben.</German>
+		<Italian>%s1_cult &#232; stato bandito dai seguaci della via (cristiani) a %s2_city.</Italian>
+		<Spanish>%s1_cult ha sido expulsado por los seguidores del camino correcto (cristianos) en %s2_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_CULTS_2</Tag>
-		<English>Followers of Christianity have destroyed holy sites (%s1_cult) in %s2_city.</English>
-		<French>Des chr&#233;tiens ont saccag&#233; des lieux sacr&#233;s (%s1_cult) &#224; %s2_city.</French>
-		<German>Anh&#228;nger des Christentums haben heilige St&#228;tten (%s1_cult) in %s2city zerst&#246;rt.</German>
-		<Italian>I seguaci del cristianesimo hanno distrutto luoghi sacri (%s1_cult) a %s2_city.</Italian>
-		<Spanish>Seguidores del Cristianismo han destru&#237;do lugares santos (%s1_cult) en %s2_city.</Spanish>
+		<English>Followers of the Way (Christians) have destroyed holy sites (%s1_cult) in %s2_city.</English>
+		<French>Adeptes du Chemin (chr&#233;tiens) ont saccag&#233; des lieux sacr&#233;s (%s1_cult) &#224; %s2_city.</French>
+		<German>Anh&#228;nger des Weges (Christen) haben heilige St&#228;tten (%s1_cult) in %s2city zerst&#246;rt.</German>
+		<Italian>Seguaci del Cammino (cristiani) hanno distrutto luoghi sacri (%s1_cult) a %s2_city.</Italian>
+		<Spanish>Seguidores del Camino (cristianos) han destru&#237;do lugares santos (%s1_cult) en %s2_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_CULTS_3</Tag>
@@ -1233,12 +1289,68 @@
 		<Spanish>La ciudad %s1 pierde 1 poblaci&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_4</Tag>
+		<English>The residents of the city %s1 have completely banished the unbelievers of the religion %s2 from the city.</English>
+		<French>Les habitants de la ville %s1 ont compl&#232;tement banni les incroyants de la religion %s2 de la ville.</French>
+		<German>Die Einwohner der Stadt %s1 haben die Ungl&#228;ubigen der Religion %s2 komplett aus der Stadt verbannt.</German>
+		<Italian>I residenti della citt&#224; %s1 hanno completamente bandito dalla citt&#224; i non credenti della religione %s2.</Italian>
+		<Spanish>Los residentes de la ciudad %s1 han desterrado por completo a los incr&#233;dulos de la religi&#243;n %s2 de la ciudad.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_RELIGION_INTO_CAPITAL</Tag>
 		<English>Your capital has been named the Holy City of your new religion!</English>
 		<French>Votre capitale est devenue la ville sainte de votre nouvelle religion !</French>
 		<German>Eure Hauptstadt wurde zur Heiligen Stadt Eurer neuen Religion ernannt!</German>
 		<Italian>La tua capitale &#232; stata nominata la Citt&#224; Santa della tua nuova religione!</Italian>
 		<Spanish>&#161;Tu capital ha sido nombrada la Ciudad Santa de tu nueva religi&#243;n!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_A</Tag>
+		<English>The provincial city %s1_city (%s2_civ) has broken away from the empire and rebelled (%s3_civ2).</English>
+		<French>La ville provinciale %s1_city (%s2_civ) s'est s&#233;par&#233;e de l'empire et s'est rebell&#233;e (%s3_civ2).</French>
+		<German>Die Provinzstadt %s1_city (%s2_civ) hat sich dem Reich losgesagt und rebelliert (%s3_civ2).</German>
+		<Italian>La citt&#224; di provincia %s1_city (%s2_civ) si &#232; staccata dall'impero e si &#232; ribellata (%s3_civ2).</Italian>
+		<Spanish>La ciudad provincial %s1_city (%s2_civ) se separ&#243; del imperio y se rebel&#243; (%s3_civ2).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_1</Tag>
+		<English>From now on, the citizens of %s1_city (%s2_civ) will fight for %s3_civ2.</English>
+		<French>D&#233;sormais, les citoyens de %s1_city (%s2_civ) se battront pour %s3_civ2.</French>
+		<German>Die B&#252;rger von %s1_city (%s2_civ) k&#228;mpfen von nun an f&#252;r %s3_civ2.</German>
+		<Italian>D'ora in poi, i cittadini di %s1_city (%s2_civ) combatteranno per %s3_civ2.</Italian>
+		<Spanish>A partir de ahora, los ciudadanos de %s1_city (%s2_civ) luchar&#225;n por %s3_civ2.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_2</Tag>
+		<English>The citizens of %s1_city (%s2_civ) handed over their city to %s3_civ2.</English>
+		<French>Les citoyens de %s1_city (%s2_civ) ont c&#233;d&#233; leur ville &#224; %s3_civ2.</French>
+		<German>Die B&#252;rger von %s1_city (%s2_civ) &#252;bergaben ihre Stadt an %s3_civ2.</German>
+		<Italian>I cittadini di %s1_city (%s2_civ) hanno consegnato la loro citt&#224; a %s3_civ2.</Italian>
+		<Spanish>Los ciudadanos de %s1_city (%s2_civ) entregaron su ciudad a %s3_civ2.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_3</Tag>
+		<English>After a heavy siege, the city %s1_city (%s2_civ) passed to %s3_civ2 without a fight.</English>
+		<French>Apr&#232;s un lourd si&#232;ge, la ville %s1_city (%s2_civ) est pass&#233;e &#224; %s3_civ2 sans combat.</French>
+		<German>Nach heftiger Belagerung ging die Stadt %s1_city (%s2_civ) kampflos an %s3_civ2.</German>
+		<Italian>Dopo un pesante assedio, la citt&#224; %s1_city (%s2_civ) pass&#242; a %s3_civ2 senza combattere.</Italian>
+		<Spanish>Despu&#233;s de un fuerte asedio, la ciudad %s1_city (%s2_civ) pas&#243; a %s3_civ2 sin luchar.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_4</Tag>
+		<English>%s1_city (%s2_civ) fell hopelessly into the hands of its opponents (%s3_civ2).</English>
+		<French>%s1_city (%s2_civ) est tomb&#233; d&#233;sesp&#233;r&#233;ment entre les mains de ses adversaires (%s3_civ2).</French>
+		<German>Aussichtslos fiel %s1_city (%s2_civ) in die Hand ihrer Gegner (%s3_civ2).</German>
+		<Italian>%s1_city (%s2_civ) &#232; caduta irrimediabilmente nelle mani dei suoi avversari (%s3_civ2).</Italian>
+		<Spanish>%s1_city (%s2_civ) cay&#243; irremediablemente en manos de sus oponentes (%s3_civ2).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_5</Tag>
+		<English>The overwhelming power of the enemy (%s3_civ2) forced the city of %s1_city (%s2_civ) to surrender.</English>
+		<French>La puissance &#233;crasante de l'ennemi (%s3_civ2) a forc&#233; la ville de %s1_city (%s2_civ) &#224; se rendre.</French>
+		<German>Die &#252;berw&#228;ltigende Macht des Feindes (%s3_civ2) zwang die Stadt %s1_city (%s2_civ) zur Kapitulation.</German>
+		<Italian>Lo strapotere del nemico (%s3_civ2) ha costretto la citt&#224; di %s1_city (%s2_civ) alla resa.</Italian>
+		<Spanish>El poder abrumador del enemigo (%s3_civ2) oblig&#243; a la ciudad de %s1_city (%s2_civ) a rendirse.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CIV_DESTROYED</Tag>

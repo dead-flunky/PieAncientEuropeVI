@@ -152,6 +152,18 @@ class CvGameUtils:
 										iMapW = gc.getMap().getGridWidth()
 										iMapH = gc.getMap().getGridHeight()
 										iDarkIce = gc.getInfoTypeForString("FEATURE_DARK_ICE")
+										iOreCamp = gc.getInfoTypeForString("IMPROVEMENT_ORE_CAMP")
+										iCamp = gc.getInfoTypeForString("IMPROVEMENT_CAMP")
+										lCampBonus = [
+												gc.getInfoTypeForString("BONUS_DEER"),
+												gc.getInfoTypeForString("BONUS_FUR"),
+												gc.getInfoTypeForString("BONUS_LION"),
+												gc.getInfoTypeForString("BONUS_CAMEL"),
+												gc.getInfoTypeForString("BONUS_HUNDE"),
+												gc.getInfoTypeForString("BONUS_WALRUS"),
+												gc.getInfoTypeForString("BONUS_IVORY"),
+												gc.getInfoTypeForString("BONUS_IVORY2")
+										]
 										for x in range(iMapW):
 												for y in range(iMapH):
 														loopPlot = gc.getMap().plot(x, y)
@@ -165,8 +177,21 @@ class CvGameUtils:
 																		if eBonus != -1:
 																				iImprovement = loopPlot.getImprovementType()
 																				# or not loopPlot.isConnectedToCapital(iPlayer)
-																				if iImprovement == -1 or not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity() or not loopPlot.isBonusNetwork(pPlayer.getTeam()):
+																				if (iImprovement == -1 or 
+																						not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity() or 
+																						not loopPlot.isBonusNetwork(pPlayer.getTeam())
+																				):
 																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																				elif iImprovement == iCamp and eBonus not in lCampBonus:
+																						if loopPlot.getFeatureType() == gc.getInfoTypeForString("FEATURE_FOREST"):
+																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG")):
+																										CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																						elif loopPlot.getFeatureType() == gc.getInfoTypeForString("FEATURE_DICHTERWALD"):
+																								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG2")):
+																										CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																				elif iImprovement == iOreCamp:
+																						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
+																								CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
 																		# Latifundium oder Village/Dorf
 																		if bSlave:
 																				iImprovement = loopPlot.getImprovementType()
@@ -248,7 +273,7 @@ class CvGameUtils:
 
 
 								# Cultivation
-								elif iUnitType in L.LCultivationUnits:
+								elif iUnitType in L.LCultivationUnits + L.LTradeUnits:
 
 										# Workboat, Arbeitsboot
 										if iUnitType == gc.getInfoTypeForString("UNIT_WORKBOAT"):
@@ -283,7 +308,7 @@ class CvGameUtils:
 																				pLoopPlot = loopCity.getCityIndexPlot(iI)
 																				if pLoopPlot is not None and not pLoopPlot.isNone():
 																						if PAE_Cultivation._isBonusCultivationChance(iPlayer, pLoopPlot, eBonus, False, loopCity):
-																								CyEngine().addColoredPlotAlt(pLoopPlot.getX(), pLoopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
+																								CyEngine().addColoredPlotAlt(pLoopPlot.getX(), pLoopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_TECH_GREEN", 1)
 																						elif eBonus not in L.LBonusPlantation:
 																								lPlots = PAE_Cultivation.getCityCultivatedPlots(loopCity, eBonus)
 																								if lPlots and len(lPlots):
@@ -3390,6 +3415,9 @@ class CvGameUtils:
 										return CyTranslator().getText("TXT_KEY_RANK_START_INFO_HUN", ())
 								elif iData2 == 18:
 										return CyTranslator().getText("TXT_KEY_RANK_START_INFO_PERSIA2", ())
+								elif iData2 == 19:
+										iBuild = gc.getInfoTypeForString("BUILD_ORE_CAMP")
+										return CyTranslator().getText("TXT_KEY_TECH_OBSOLETES_NO_LINK", (gc.getBuildInfo(iBuild).getDescription(),))
 						# -------------------------------------
 						# Unit Ethnic (MainInterface Unit Detail Promo Icons)
 						elif iData1 == 750 and iData2 > -1:

@@ -310,8 +310,8 @@ def doPlotFeatures():
 																				gc.getPlayer(iNewUnitOwner).initUnit(iUnitType, x, y, UnitAITypes.UNITAI_ANIMAL, DirectionTypes.DIRECTION_SOUTH)
 																				continue
 
-														# Movement of wild animal bonus resources
-														if bMovingBonus and loopPlot.getBonusType(-1) in L.LMovingBonus and loopPlot.getNumUnits() == 0 and iPlotImprovement == -1:
+														# Movement of wild animal bonus resources (nur auf neutralem Terrain)
+														if bMovingBonus and loopPlot.getBonusType(-1) in L.LMovingBonus and loopPlot.getNumUnits() == 0 and iPlotImprovement == -1 and iPlotOwner == -1:
 																MovingBonus.append(loopPlot)
 
 
@@ -1237,7 +1237,7 @@ def doMoveBonus(BonusPlots):
 						for iI in range(DirectionTypes.NUM_DIRECTION_TYPES):
 								loopPlot = plotDirection(iX, iY, DirectionTypes(iI))
 								if loopPlot is not None and not loopPlot.isNone():
-										if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce:
+										if not loopPlot.isUnit() and loopPlot.getFeatureType() != iDarkIce and loopPlot.getBonusType(-1) == -1:
 												if loopPlot.canHaveBonus(eBonus, True):
 														if eBonus in LNoForest and loopPlot.getFeatureType() in LForests:
 																continue

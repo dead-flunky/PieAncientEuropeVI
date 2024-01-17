@@ -482,8 +482,8 @@
 			<Type>ART_DEF_BONUS_PEARL</Type>
 			<fScale>0.8</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Clam/Clam.nif</NIF>
-			<KFM>Art/Terrain/Resources/Clam/Clam.kfm</KFM>
+			<NIF>Art/Terrain/Resources/Pearls/Clam.nif</NIF>
+			<KFM>Art/Terrain/Resources/Pearls/Clam.kfm</KFM>
 			<Button>Art/Interface/Buttons/Bonus/button_bonus_pearl.dds</Button>
 			<FontButtonIndex>52</FontButtonIndex>
 		</BonusArtInfo>

@@ -12,6 +12,7 @@ import CvUtil
 import CvScreenEnums
 import PAE_Cultivation
 import PAE_Vassal
+#import PAE_Lists as L <= geht hier nicht ;(
 
 # TODO remove
 # DEBUG code for Python 3 linter
@@ -34,9 +35,6 @@ import PAE_Vassal
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
-
-# geht hier nicht ;(
-#import PAE_Lists as L
 
 
 class CvDomesticAdvisor:
@@ -61,7 +59,7 @@ class CvDomesticAdvisor:
 				self.nScreenWidth = screen.getXResolution() - 30
 				self.nScreenHeight = screen.getYResolution() - 210
 				self.nTableWidth = self.nScreenWidth - 85  # 35
-				if (self.iActiveTab == 2 or self.iActiveTab == 4 or self.iActiveTab == 5):
+				if self.iActiveTab in [2,4,5]:
 						self.nTableHeight = self.nScreenHeight - 125
 				else:
 						self.nTableHeight = self.nScreenHeight - 85
@@ -218,7 +216,7 @@ class CvDomesticAdvisor:
 				elif (self.iActiveTab == 4):
 						screen.addTableControlGFC("CityListBackground", gc.getNumSpecialistInfos()+3, 78, 61, self.nTableWidth, self.nTableHeight, True, False, 24, 24, TableStyles.TABLE_STYLE_STANDARD)
 				elif (self.iActiveTab == 3):
-						screen.addTableControlGFC("CityListBackground", len(self.getBonuses())+2, 78, 21, self.nTableWidth, self.nTableHeight, True, False, 24, 24, TableStyles.TABLE_STYLE_STANDARD)
+						screen.addTableControlGFC("CityListBackground", len(self.getBonuses())+2, 78, 21, self.nTableWidth, self.nTableHeight - 25, True, False, 24, 24, TableStyles.TABLE_STYLE_STANDARD)
 				elif (self.iActiveTab == 2):
 						screen.addTableControlGFC("CityListBackground", 18, 78, 61, self.nTableWidth, self.nTableHeight - 25, True, False, 24, 24, TableStyles.TABLE_STYLE_STANDARD)
 				else:
@@ -399,7 +397,7 @@ class CvDomesticAdvisor:
 				iCityGlads = pLoopCity.getFreeSpecialistCount(gc.getInfoTypeForString("SPECIALIST_GLADIATOR"))
 				screen.setTableInt("CityListBackground", 5, i, unicode(iCityGlads), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Happiness...
+				# Happiness
 				iNetHappy = pLoopCity.happyLevel() - pLoopCity.unhappyLevel(0)
 				szText = unicode(iNetHappy)
 				if iNetHappy > 0:
@@ -408,7 +406,7 @@ class CvDomesticAdvisor:
 						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 6, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Health...
+				# Health
 				iNetHealth = pLoopCity.goodHealth() - pLoopCity.badHealth(0)
 				szText = unicode(iNetHealth)
 				if iNetHealth > 0:
@@ -417,7 +415,7 @@ class CvDomesticAdvisor:
 						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 7, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Food status...
+				# Food status
 				iNetFood = pLoopCity.foodDifference(True)
 
 				# PAE city supply
@@ -432,7 +430,7 @@ class CvDomesticAdvisor:
 						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 8, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Production status...
+				# Production status
 				screen.setTableInt("CityListBackground", 9, i, unicode(pLoopCity.getYieldRate(YieldTypes.YIELD_PRODUCTION)), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Gold and Maintainance
@@ -441,26 +439,25 @@ class CvDomesticAdvisor:
 
 				# Gold status
 				if iGold > iMaintenance:
-						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + unicode(iGold) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + unicode(iGold-iMaintenance) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				else:
-						szText = unicode(iGold)
+						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + unicode(iGold-iMaintenance) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 10, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Maintenance
-				iMaintenance = pLoopCity.getMaintenance()
-				if iMaintenance > pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_GOLD):
-						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + unicode(iMaintenance * (-1)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+				if iMaintenance > iGold:
+						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + unicode(iMaintenance) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				else:
-						szText = unicode(pLoopCity.getMaintenance() * (-1))
+						szText = unicode(iMaintenance)
 				screen.setTableInt("CityListBackground", 11, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Science rate...
+				# Science rate
 				screen.setTableInt("CityListBackground", 12, i, unicode(pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_RESEARCH)), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Espionage rate...
+				# Espionage rate
 				screen.setTableInt("CityListBackground", 13, i, unicode(pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_ESPIONAGE)), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Culture status...
+				# Culture status
 				szCulture = unicode(pLoopCity.getCommerceRate(CommerceTypes.COMMERCE_CULTURE))
 				iCultureTimes100 = pLoopCity.getCultureTimes100(CyGame().getActivePlayer())
 				iCultureRateTimes100 = pLoopCity.getCommerceRateTimes100(CommerceTypes.COMMERCE_CULTURE)
@@ -712,40 +709,50 @@ class CvDomesticAdvisor:
 
 				iSumSlaves = iCityGlads + iCitySlaves1 + iCitySlaves2 + iCitySlaves3
 
-				if iPop == iSumSlaves:
-						szColor = localText.getText("TXT_KEY_COLOR_YELLOW", ())
-				elif iPop < iSumSlaves:
+				if iPop < iSumSlaves:
 						szColor = localText.getText("TXT_KEY_COLOR_NEGATIVE", ())
 				else:
 						szColor = localText.getText("TXT_KEY_COLOR_POSITIVE", ())
 
 				# Field slaves
-				szText = szColor + u"%d" % (iCitySlaves2) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+				if iCitySlaves2:
+						szText = u"%d" % iCitySlaves2
+				else:
+						szText = szColor + u"%d" % (iCitySlaves2) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 3, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 				# Mine slaves
-				szText = szColor + u"%d" % (iCitySlaves3) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+				if iCitySlaves3:
+						szText = u"%d" % iCitySlaves3
+				else:
+						szText = szColor + u"%d" % (iCitySlaves3) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 4, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 				# House slaves
-				szText = szColor + u"%d" % (iCitySlaves1) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+				if iCitySlaves1:
+						szText = u"%d" % iCitySlaves1
+				else:
+						szText = szColor + u"%d" % (iCitySlaves1) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 5, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 				# Gladiators
-				szText = szColor + u"%d" % (iCityGlads) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+				if iCityGlads:
+						szText = u"%d" % iCityGlads
+				else:
+						szText = szColor + u"%d" % (iCityGlads) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				screen.setTableInt("CityListBackground", 6, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Slave market
 				if pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")):
-						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"1" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szText = u"1"
 				elif pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_STADT")):
-						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				else:
 						szText = u""
 				screen.setTableInt("CityListBackground", 7, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Gladiatorenschule
 				if pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")):
-						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"1" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szText = u"1"
 				elif pLoopCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_STADT")):
-						szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				else:
 						szText = u""
 				screen.setTableInt("CityListBackground", 8, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -845,11 +852,9 @@ class CvDomesticAdvisor:
 								iValue = pLoopCity.getBuildingCommerceChange(eBuildingClass, CommerceTypes.COMMERCE_CULTURE) / 2
 
 						if iValue == iMax:
-								return localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + (u"%d/%d" % (iValue, iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
-						elif iValue > 0:
-								return localText.getText("TXT_KEY_COLOR_YELLOW", ()) + (u"%d/%d" % (iValue, iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+								return u"%d/%d" % (iValue, iMax)
 						else:
-								return localText.getText("TXT_KEY_COLOR_GRAY", ()) + (u"0/%d" % iMax) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+								return localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + (u"%d/%d" % (iValue, iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
 
 				elif pLoopCity.canConstruct(eBuilding, False, False, False):
 						return localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + (u"0/%d" % iMax) + localText.getText("TXT_KEY_COLOR_REVERT", ())
@@ -892,6 +897,34 @@ class CvDomesticAdvisor:
 						screen.setTableColumnHeader("CityListBackground", 2+j, "<font=2>" + (u"%c" % gc.getBonusInfo(eBonus).getChar()) + "</font>", ColWidth)
 						j += 1
 
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE = "Legende"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_1 = "Weiß: [COLOR_BUILDING_TEXT]Die Ressource ist bei der Stadt verbreitet[COLOR_REVERT]"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_2 = "[COLOR_BUILDING_TEXT]Grau: Die Ressource kann derzeit nicht verbreitet werden[COLOR_REVERT]"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_3 = "[COLOR_POSITIVE_TEXT]Grün[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann verbreitet werden und ist im Handelsnetz verfügbar[COLOR_REVERT]"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_4 = "[COLOR_NEGATIVE_TEXT]Rot[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann verbreitet werden, ist aber nicht im Handelsnetz verfügbar[COLOR_REVERT]"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_5 = "[COLOR_HIGHLIGHT_TEXT]x/y[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Diese Ressourcen sind voneinander abhängig. Es können maximal y dieser Ressourcen um die Stadt verbreitet werden (je nach Stadtgröße: 3,6,12,20).[COLOR_REVERT]"
+				#TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_6 = "[COLOR_HIGHLIGHT_TEXT]Kein Wert[COLOR_REVERT]: [COLOR_BUILDING_TEXT]Die Ressource kann überhaupt nicht verbreitet werden (kein geeignetes Terrain)[COLOR_REVERT]"
+
+				# UNTEN (Bottom)
+				# Legende
+				screen.setText(self.getNextWidgetName(), "Background", u"<font=3>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE", ()).upper() + u"</font>", CvUtil.FONT_LEFT_JUSTIFY,
+						80, self.nScreenHeight - 85, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_CIVILOPEDIA).getActionInfoIndex(), -1)
+
+				screen.addPanel(self.getNextWidgetName(), u"", u"", True, False, 180, self.nScreenHeight-86, self.nScreenWidth-400, 76, PanelStyles.PANEL_STYLE_MAIN_BLACK25)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_1", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 190, self.nScreenHeight - 80, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_2", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 190, self.nScreenHeight - 64, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_3", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 660, self.nScreenHeight - 80, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_4", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 660, self.nScreenHeight - 64, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_5", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 190, self.nScreenHeight - 48, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				szText = u"<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_LEGENDE_6", ()) + u"</font>"
+				screen.setText(self.getNextWidgetName(), "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 190, self.nScreenHeight - 32, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+
+
 		def updateTable3(self, pLoopCity, i):
 
 				screen = self.getScreen()
@@ -906,23 +939,41 @@ class CvDomesticAdvisor:
 				szName = self.getCityName(pLoopCity)
 				screen.setTableText("CityListBackground", 1, i, szName, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
-				# Cultivation status
-				iAnz1 = PAE_Cultivation.getCityCultivatedBonuses(pLoopCity,0)
-				iAnz2 = PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)
-				
+				BonusClasses = [
+						gc.getInfoTypeForString("BONUSCLASS_GRAIN"),
+						gc.getInfoTypeForString("BONUSCLASS_LIVESTOCK")
+				]
 				j = 0
 				List = self.getBonuses()
 				for eBonus in List:
 						iAnz = PAE_Cultivation.isCityHasBonus(pLoopCity, eBonus)
-						if iAnz:
-								szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + (u"%d" % iAnz) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						# Getreide und Vieh
+						if gc.getBonusInfo(eBonus).getBonusClassType() in BonusClasses:
+								PossiblePlots = PAE_Cultivation.getCityCultivatablePlots(pLoopCity, eBonus)
+								iMax = PAE_Cultivation.getCityCultivationAmount(pLoopCity,0)
+								if PAE_Cultivation._isCityCultivationPossible(pLoopCity, 0):
+										iMax = min(iMax, len(PossiblePlots))
+										if iAnz >= iMax:
+												szText = u"%d/%d" % (iAnz,iMax)
+										else:
+												if gc.getPlayer(pLoopCity.getOwner()).hasBonus(eBonus):
+														szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + (u"%d/%d" % (iAnz,iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+												else:
+														szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + (u"%d/%d" % (iAnz,iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+								elif iAnz:
+										szText = u"%d/%d" % (iAnz,iMax)
+								else:
+										szText = localText.getText("TXT_KEY_COLOR_GRAY", ()) + (u"%d/%d" % (iAnz,iMax)) + localText.getText("TXT_KEY_COLOR_REVERT", ())
+						# der Rest
+						elif iAnz:
+								szText = u"%d" % iAnz
 						else:
 								PossiblePlots = PAE_Cultivation.getCityCultivatablePlots(pLoopCity, eBonus)
 								if len(PossiblePlots):
-										if iAnz1 < iAnz2:
+										if gc.getPlayer(pLoopCity.getOwner()).hasBonus(eBonus):
 												szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 										else:
-												szText = localText.getText("TXT_KEY_COLOR_GRAY", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
+												szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 								else:
 										szText = u""
 
@@ -1074,6 +1125,19 @@ class CvDomesticAdvisor:
 						screen.setTableColumnHeader("CityListBackground", 3+n, szText, ColWidth)
 						n += 1
 
+				Units = []
+				(loopUnit, iter) = player.firstUnit(False)
+				while(loopUnit):
+						if loopUnit.getUnitClassType() == gc.getInfoTypeForString("UNITCLASS_GREAT_GENERAL"):
+								Units.append(loopUnit)
+						(loopUnit, iter) = player.nextUnit(iter, False)
+
+				# PAE Untere Buttons (UNITS)
+				n = 60
+				iRange = min(len(Units),10)
+				for i in range(iRange):
+						screen.setImageButton(self.getNextWidgetName(), Units[i].getButton(), 80 + n*i, self.nScreenHeight - 60, 46, 46, WidgetTypes.WIDGET_GENERAL, 1, Units[i].getID())
+
 
 		def updateTable5(self, pLoopCity, i):
 
@@ -1160,7 +1224,8 @@ class CvDomesticAdvisor:
 
 				# PAE Untere Buttons (UNITS)
 				n = 60
-				for i in range(len(Units)):
+				iRange = min(len(Units),10)
+				for i in range(iRange):
 						screen.setImageButton(self.getNextWidgetName(), Units[i].getButton(), 300 + n*i, self.nScreenHeight - 60, 46, 46, WidgetTypes.WIDGET_GENERAL, 1, Units[i].getID())
 
 				szText = localText.getText("TXT_KEY_AVAILABLE_BUILDING_PROMO_UNITS", (iAnz, ))
