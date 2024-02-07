@@ -17917,7 +17917,7 @@
 			<FeatureImpassables/>
 			<TerrainPassableTechs/>
 			<FeaturePassableTechs/>
-			<iCombat>10</iCombat>
+			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iAirCombat>0</iAirCombat>
 			<iAirCombatLimit>0</iAirCombatLimit>
@@ -22948,7 +22948,7 @@
 			<FeatureImpassables/>
 			<TerrainPassableTechs/>
 			<FeaturePassableTechs/>
-			<iCombat>12</iCombat>
+			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iAirCombat>0</iAirCombat>
 			<iAirCombatLimit>0</iAirCombatLimit>
@@ -65304,6 +65304,7 @@
 			<Description>TXT_KEY_UNIT_GLADIATOR</Description>
 			<Civilopedia>TXT_KEY_UNIT_GLADIATOR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GLADIATOR_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_GLADIATOR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bAnimal>0</bAnimal>
 			<bFood>0</bFood>
@@ -65364,12 +65365,7 @@
 			<ReligionSpreads/>
 			<CorporationSpreads/>
 			<GreatPeoples/>
-			<Buildings>
-				<Building>
-					<BuildingType>BUILDING_GLADIATORENSCHULE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-			</Buildings>
+			<Buildings/>
 			<ForceBuildings/>
 			<HolyCity>NONE</HolyCity>
 			<ReligionType>NONE</ReligionType>

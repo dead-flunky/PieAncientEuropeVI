@@ -2685,6 +2685,54 @@
 		<Spanish>&#161;Tu puesto de comercio ha sido destru&#237;do por fronteras culturales extranjeras!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_1</Tag>
+		<English>Capital City</English>
+		<French>Capitale</French>
+		<German>Hauptstadt</German>
+		<Italian>Capitale</Italian>
+		<Spanish>Ciudad Capital</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_2</Tag>
+		<English>Provincial Capital</English>
+		<French>Capitale de la province</French>
+		<German>Provinzhauptstadt</German>
+		<Italian>Capoluogo di provincia</Italian>
+		<Spanish>Capital Provincial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_3</Tag>
+		<English>City is in turmoil</English>
+		<French>La ville est en &#233;bullition</French>
+		<German>Stadt ist in Aufruhr</German>
+		<Italian>La citt&#224; &#232; in subbuglio</Italian>
+		<Spanish>La ciudad est&#225; en crisis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_4</Tag>
+		<English>City can be handed over to another civilization</English>
+		<French>La ville peut &#234;tre c&#233;d&#233;e &#224; une autre civilisation</French>
+		<German>Stadt kann einem anderen Volk &#252;bergeben werden</German>
+		<Italian>La citt&#224; pu&#242; essere consegnata a un'altra civilt&#224;</Italian>
+		<Spanish>La ciudad puede ser entregada a otra civilizaci&#243;n.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_5</Tag>
+		<English>Olympian's current city</English>
+		<French>Ville actuelle de l'olympien</French>
+		<German>Aktuelle Stadt des Olympioniken</German>
+		<Italian>L'attuale citt&#224; di Olympian</Italian>
+		<Spanish>Ciudad actual del atleta ol&#237;mpico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INFO_DOMESTIC_ADVISOR_6</Tag>
+		<English>Current City of Thing Meetings</English>
+		<French>Ville actuelle pour la r&#233;union du Thing</French>
+		<German>Aktuelle Stadt der Thing-Treffen</German>
+		<Italian>Citt&#224; attuale per l'incontro dei Thing</Italian>
+		<Spanish>Ciudad actual para la reuni&#243;n de Thing</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_INFO_DOM_CAMEL</Tag>
 		<English>A herd of wild camels was sighted in your land. Explore the technology of Camel Husbandry to capture and use them.</English>
 		<French>Un troupeau de chameaux sauvages a &#233;t&#233; aper&#231;u sur vos terres. Recherchez la technologie Domestication de chameaux afin de les capturer pour votre profit.</French>
@@ -4614,19 +4662,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_NOSUPPLY_PLOT_1</Tag>
-		<English>[ICON_EATENFOOD] The lack of supply saps the stength of your units! %d1 of your foot soldiers are weakened by -%d2%%. If there are more than %d3 units on a plot, the squad has to carry a supply unit (cart, druid).</English>
-		<French>[ICON_EATENFOOD] Le manque de ravitaillement sape les forces de vos unit&#233;s ! %d1 de vos soldats de pied sont affaiblies de -%d2%%. S'il y a plus de %d3 unit&#233;s sur un terrain, l'escouade doit transporter une unit&#233; de ravitaillement (chariot, druide).</French>
-		<German>[ICON_EATENFOOD] Die mangelnde Versorgung zehrt an den Kr&#228;ften Eurer Einheiten! %d1 Eurer Fu&#223;soldaten wurden um -%d2%% geschw&#228;cht. Ab %d3 Einheiten auf einem Feld muss der Trupp eine Versorgungseinheit (Karren, Druide) mitf&#252;hren.</German>
-		<Italian>[ICON_EATENFOOD] La mancanza di rifornimenti sta minando la forza delle tue unit&#224;! %d1 dei tuoi soldati di piede sono indebolite del -%d2%%. Se ci sono %d3 unit&#224; su un campo, la squadra deve trasportare un'unit&#224; di rifornimento (carro, druido).</Italian>
-		<Spanish>[ICON_EATENFOOD] &#161;La falta de suministro mina la fuerza de tus unidades! %d1 de tus soldados de pie est&#225;n debilitadas en un -%d2%%. Si hay m&#225;s de %d3 unidades, la escuadra debe llevar una unidad de suministros (carro, druida).</Spanish>
+		<English>[ICON_EATENFOOD] The lack of supply saps the stength of your units! %d1 of your foot soldiers are weakened by -%d2%%. If there are more than %d3 units on a plot, the squad has to carry a Supply Wagon.</English>
+		<French>[ICON_EATENFOOD] Le manque de ravitaillement sape les forces de vos unit&#233;s ! %d1 de vos soldats de pied sont affaiblies de -%d2%%. S'il y a plus de %d3 unit&#233;s sur un terrain, l'escouade doit transporter une chariot de ravitaillement.</French>
+		<German>[ICON_EATENFOOD] Die mangelnde Versorgung zehrt an den Kr&#228;ften Eurer Einheiten! %d1 Eurer Fu&#223;soldaten wurden um -%d2%% geschw&#228;cht. Ab %d3 Einheiten auf einem Feld muss der Trupp einen Versorgungswagen mitf&#252;hren.</German>
+		<Italian>[ICON_EATENFOOD] La mancanza di rifornimenti sta minando la forza delle tue unit&#224;! %d1 dei tuoi soldati di piede sono indebolite del -%d2%%. Se ci sono %d3 unit&#224; su un campo, la squadra deve trasportare un carro di supporto.</Italian>
+		<Spanish>[ICON_EATENFOOD] &#161;La falta de suministro mina la fuerza de tus unidades! %d1 de tus soldados de pie est&#225;n debilitadas en un -%d2%%. Si hay m&#225;s de %d3 unidades, la escuadra debe llevar un carro de suministros.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_NOSUPPLY_PLOT_2</Tag>
-		<English>[ICON_EATENFOOD] The lack of supply saps the stength of your units! %d1 of your mounted soldiers are weakened by -%d2%%. If there are more than %d3 units on a plot, the squad has to carry a supply unit (cart, druid).</English>
-		<French>[ICON_EATENFOOD] Le manque de ravitaillement sape les forces de vos unit&#233;s ! %d1 de vos soldats mont&#233;es sont affaiblies de -%d2%%. S'il y a plus de %d3 unit&#233;s sur un terrain, l'escouade doit transporter une unit&#233; de ravitaillement (chariot, druide).</French>
-		<German>[ICON_EATENFOOD] Die mangelnde Versorgung zehrt an den Kr&#228;ften Eurer Einheiten! %d1 Eurer berittenen Soldaten wurden um -%d2%% geschw&#228;cht. Ab %d3 Einheiten auf einem Feld muss der Trupp eine Versorgungseinheit (Karren, Druide) mitf&#252;hren.</German>
-		<Italian>[ICON_EATENFOOD] La mancanza di rifornimenti sta minando la forza delle tue unit&#224;! %d1 dei tuoi soldati montate sono indebolite del -%d2%%. Se ci sono %d3 unit&#224; su un campo, la squadra deve trasportare un'unit&#224; di rifornimento (carro, druido).</Italian>
-		<Spanish>[ICON_EATENFOOD] &#161;La falta de suministro mina la fuerza de tus unidades! %d1 de tus soldados montadas est&#225;n debilitadas en un -%d2%%. Si hay m&#225;s de %d3 unidades, la escuadra debe llevar una unidad de suministros (carro, druida).</Spanish>
+		<English>[ICON_EATENFOOD] The lack of supply saps the stength of your units! %d1 of your mounted soldiers are weakened by -%d2%%. If there are more than %d3 units on a plot, the squad has to carry a supply wagon.</English>
+		<French>[ICON_EATENFOOD] Le manque de ravitaillement sape les forces de vos unit&#233;s ! %d1 de vos soldats mont&#233;es sont affaiblies de -%d2%%. S'il y a plus de %d3 unit&#233;s sur un terrain, l'escouade doit transporter une chariot de ravitaillement.</French>
+		<German>[ICON_EATENFOOD] Die mangelnde Versorgung zehrt an den Kr&#228;ften Eurer Einheiten! %d1 Eurer berittenen Soldaten wurden um -%d2%% geschw&#228;cht. Ab %d3 Einheiten auf einem Feld muss der Trupp einen Versorgungswagen mitf&#252;hren.</German>
+		<Italian>[ICON_EATENFOOD] La mancanza di rifornimenti sta minando la forza delle tue unit&#224;! %d1 dei tuoi soldati montate sono indebolite del -%d2%%. Se ci sono %d3 unit&#224; su un campo, la squadra deve trasportare un carro di supporto.</Italian>
+		<Spanish>[ICON_EATENFOOD] &#161;La falta de suministro mina la fuerza de tus unidades! %d1 de tus soldados montadas est&#225;n debilitadas en un -%d2%%. Si hay m&#225;s de %d3 unidades, la escuadra debe llevar un carro de suministros.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_ONLY_HORSE_LEFT</Tag>
@@ -5408,7 +5456,7 @@
 		<Tag>TXT_KEY_MESSAGE_TRADE_SPECIAL_1</Tag>
 		<English>[ICON_TRADE] The city of %s1_city no longer requires %s2_resource and has withdrawn its order.</English>
 		<French>[ICON_TRADE] La ville de %s1_city n'a plus besoin de %s2_resource et a r&#233;tract&#233; sa commande.</French>
-		<German>[ICON_TRADE] Die Stadt %s1_city verlangt nicht mehr nach %s2_resource und hat ihren Auftrag zur&#252;ckgezogen.</German>
+		<German>[ICON_TRADE] Die Stadt %s1_city verlangt nicht mehr nach %s2_resource und hat den Auftrag zur&#252;ckgezogen.</German>
 		<Italian>[ICON_TRADE] La citt&#224; di %s1_city non richiede pi&#249; %s2_resource e ha ritirato la sua richiesta.</Italian>
 		<Spanish>[ICON_TRADE] La ciudad de %s1_city ya no requiere %s2_resource y ha retirado su pedido.</Spanish>
 	</TEXT>
@@ -7910,11 +7958,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_VASSAL_TECH</Tag>
-		<English>[H1]A request![\H1][NEWLINE]%s1_leader (%c4) asks you, that you support %s2_civ_shortdesc technologically and requires the %s3_technology technology!</English>
-		<French>[H1]Une requ&#234;te ![\H1][NEWLINE]%s1_leader (%c4) aimerait que vous aidiez les %s2_civ_shortdesc en partageant les secrets d'une technologie (%s3_technology) avec eux.</French>
-		<German>[H1]Eine Anfrage![\H1][NEWLINE]%s1_leader (%c4) bittet Euch, dass Ihr %s2_civ_shortdesc technologisch zur Seite steht und verlangt nach der Technologie %s3_technology!</German>
-		<Italian>[H1]Una richiesta![\H1][NEWLINE]%s1_leader (%c4) chiede il tuo supporto tecnologico per %s2_civ_shortdesc e richiede la tecnologia %s3_technology!</Italian>
-		<Spanish>[H1]&#161;Una petici&#243;n![\H1][NEWLINE]%s1_leader (%c4) te pregunta, &#161;que si puedes ayudar a %s2_civ_shortdesc tecnol&#243;gicamente y requiere la tencnolog&#237;a %s3_technology!</Spanish>
+		<English>[H1]A request![\H1][NEWLINE]%s1_leader asks you, that you support %s2_civ_shortdesc technologically and requires the %s3_technology technology!</English>
+		<French>[H1]Une requ&#234;te ![\H1][NEWLINE]%s1_leader aimerait que vous aidiez les %s2_civ_shortdesc en partageant les secrets d'une technologie (%s3_technology) avec eux.</French>
+		<German>[H1]Eine Anfrage![\H1][NEWLINE]%s1_leader bittet Euch, dass Ihr %s2_civ_shortdesc technologisch zur Seite steht und verlangt nach der Technologie %s3_technology!</German>
+		<Italian>[H1]Una richiesta![\H1][NEWLINE]%s1_leader chiede il tuo supporto tecnologico per %s2_civ_shortdesc e richiede la tecnologia %s3_technology!</Italian>
+		<Spanish>[H1]&#161;Una petici&#243;n![\H1][NEWLINE]%s1_leader te pregunta, &#161;que si puedes ayudar a %s2_civ_shortdesc tecnol&#243;gicamente y requiere la tencnolog&#237;a %s3_technology!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_VASSAL_TECH_2</Tag>
@@ -8486,11 +8534,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TREIB2STRANDGUT</Tag>
-		<English>Flotsam has washed up on your beach!</English>
-		<French>Une &#233;pave s'est &#233;chou&#233;e sur votre plage !</French>
-		<German>Treibgut wurde an Euren Strand angeschwemmt!</German>
-		<Italian>Flotsam &#232; andato a riva sulla tua spiaggia!</Italian>
-		<Spanish>&#161;Un pecio ha sido arrastrado hasta tus playas!</Spanish>
+		<English>Flotsam has washed up on your beach.</English>
+		<French>Une &#233;pave s'est &#233;chou&#233;e sur votre plage.</French>
+		<German>Treibgut wurde an Euren Strand angeschwemmt.</German>
+		<Italian>Flotsam &#232; andato a riva sulla tua spiaggia.</Italian>
+		<Spanish>Un pecio ha sido arrastrado hasta tus playas.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAMEL_HELP</Tag>

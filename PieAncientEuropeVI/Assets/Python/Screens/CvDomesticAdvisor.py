@@ -491,18 +491,27 @@ class CvDomesticAdvisor:
 				screen.setTableText("CityListBackground", 18, i, pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")",
 														"", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
+				szText = u""
+				# Capital
+				if pLoopCity.isCapital():
+						szText += u"%c" % CyGame().getSymbolID(FontSymbols.STAR_CHAR)
+				# Provincial Palace
+				if pLoopCity.isGovernmentCenter():
+						szText += u"%c" % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR)
 				# City riot / civil war
 				if pLoopCity.getOccupationTimer():
-						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+						szText += u"%c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR)
 				# Liberation
-				elif pLoopCity.getLiberationPlayer(False) != -1:
-						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.MAP_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
-				# Capital
-				elif pLoopCity.isCapital():
-						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.STAR_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
-				# Provincial Palace
-				elif pLoopCity.isGovernmentCenter():
-						screen.setTableText("CityListBackground", 19, i, u"%c" % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				if pLoopCity.getLiberationPlayer(False) != -1:
+						szText += u"%c" % CyGame().getSymbolID(FontSymbols.MAP_CHAR)
+				# Olympic Games
+				if pLoopCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_OLYMPIONIKE")):
+						szText += u"%c" % gc.getReligionInfo(gc.getInfoTypeForString("RELIGION_GREEK")).getChar()
+				# Thing meetings
+				if pLoopCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_THING_CITY")):
+						szText += u"%c" % gc.getReligionInfo(gc.getInfoTypeForString("RELIGION_NORDIC")).getChar()
+
+				screen.setTableText("CityListBackground", 19, i, szText, "", WidgetTypes.WIDGET_GENERAL, 749, 20, CvUtil.FONT_LEFT_JUSTIFY)
 
 				# Stop Growth
 				if (pLoopCity.AI_isEmphasize(5)):

@@ -218,11 +218,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PAPYRUS</Tag>
-		<English>Cyperus Papyrus</English>
-		<French>Cyperus Papyrus</French>
-		<German>Cyperus Papyrus</German>
-		<Italian>Papiro Egiziano</Italian>
-		<Spanish>Cyperus Papyrus</Spanish>
+		<English>Reed</English>
+		<French>Roseau</French>
+		<German>Schilfrohr</German>
+		<Italian>Canna</Italian>
+		<Spanish>Junco</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PAPYRUS_PAPER</Tag>
@@ -6300,7 +6300,7 @@
 		<Tag>TXT_KEY_TECH_MOSAIK</Tag>
 		<English>Mosaics</English>
 		<French>Mosa&#239;que</French>
-		<German>Mosaik</German>
+		<German>Mosaike</German>
 		<Italian>Mosaici</Italian>
 		<Spanish><Text>Mosaicos</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
 	</TEXT>

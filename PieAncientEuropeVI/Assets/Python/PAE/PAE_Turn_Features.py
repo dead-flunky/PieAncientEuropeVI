@@ -1072,11 +1072,22 @@ def doOlympicGames():
 
 # Besonderes Thing
 def doThing():
+
+		# ***TEST***
+		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST", ("doThing",gc.getGame().countKnownTechNumTeams(gc.getInfoTypeForString("TECH_CODE_OF_LAWS")))), None, 2, None, ColorTypes(10), 0, 0, False, False)
+
 		# kann es Things geben?
 		if gc.getGame().countKnownTechNumTeams(gc.getInfoTypeForString("TECH_CODE_OF_LAWS")) > 0:
 
-				# alle 10 Runden
-				iTurns = 10
+				# alle 3 Jahre
+				if gc.getGame().getCalendar() == gc.getInfoTypeForString("CALENDAR_MONTHS"):
+						iTurns = 36
+				# alle 3 Jahre
+				elif gc.getGame().getCalendar() == gc.getInfoTypeForString("CALENDAR_SEASONS"):
+						iTurns = 12
+				# alle 5 Runden
+				else:
+						iTurns = 5
 
 				if gc.getGame().getElapsedGameTurns() % iTurns == 1:
 
@@ -1095,7 +1106,7 @@ def doThing():
 						for iPlayer in range(iNumPlayers):
 								pPlayer = gc.getPlayer(iPlayer)
 								if pPlayer is not None and not pPlayer.isNone() and pPlayer.isAlive():  # and not pPlayer.isBarbarian():
-									if iPlayer in L.LCivGermanen and pPlayer.getStateReligion() not in L.LMonoReligions:
+									if pPlayer.getCivilizationType() in L.LCivGermanen and pPlayer.getStateReligion() not in L.LMonoReligions:
 
 										# Hat der Spieler noch nicht die richtige Tech erforscht, isser nicht dabei
 										if not gc.getTeam(pPlayer.getTeam()).isHasTech(iTechRequired):

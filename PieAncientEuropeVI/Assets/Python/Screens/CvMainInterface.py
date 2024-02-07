@@ -192,6 +192,9 @@ g_pSelectedUnit = 0
 
 m_iNumPlotListButtons = 0
 
+# PAE: COMMAND_GIFT de/aktivieren: keine Militäreinheit verschenken (in isNetworkMultiPlayer)
+bNoMilitaryUnitGift = False
+
 
 class CvMainInterface:
 		"Main Interface Screen"
@@ -1627,6 +1630,7 @@ class CvMainInterface:
 				global g_NumProjectInfos
 				global g_NumProcessInfos
 				global g_NumActionInfos
+				global bNoMilitaryUnitGift
 
 				# Find out our resolution
 				xResolution = screen.getXResolution()
@@ -1991,6 +1995,10 @@ class CvMainInterface:
 
 												if not CyInterface().canHandleAction(i, False):
 														screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
+														
+												if bNoMilitaryUnitGift and gc.getActionInfo(i).getCommandType() == gc.getInfoTypeForString("COMMAND_GIFT") and CyGame().isNetworkMultiPlayer():
+														if pHeadSelectedUnit.isMilitaryHappiness():
+																screen.disableMultiListButton("BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton())
 
 												# funkt leider nicht
 												#if gc.getActionInfo(i).getMissionType() == MissionTypes.MISSION_RANGE_ATTACK and not pHeadSelectedUnit.canMove():
@@ -2847,7 +2855,17 @@ class CvMainInterface:
 																														0, WidgetTypes.WIDGET_GENERAL, 769, iReligion, False)
 																												screen.show("BottomButtonContainer")
 																												iCount += 1
-
+																# Gladiator in der Stadt
+																elif iUnitType == gc.getInfoTypeForString("UNIT_GLADIATOR"):
+																		if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
+																				if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KONZIL5")) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2")):
+																						iBuilding1 = gc.getInfoTypeForString("BUILDING_STADT")
+																						iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
+																						if pCity.isHasBuilding(iBuilding1) and not pCity.isHasBuilding(iBuilding2):
+																								screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Techs/button_gladiatoren.dds",
+																										0, WidgetTypes.WIDGET_GENERAL, 772, -1, False)
+																								screen.show("BottomButtonContainer")
+																								iCount += 1
 
 																# Reservist -> Veteran (in der eigenen Stadt)
 																iReservists = pCity.getFreeSpecialistCount(gc.getInfoTypeForString("SPECIALIST_RESERVIST"))  # SPECIALIST_RESERVIST
@@ -7451,6 +7469,11 @@ class CvMainInterface:
 								elif iData1 == 771:
 										CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_WORKER")
 										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+
+								# Gladiator: Gladiatorenschule bauen
+								elif iData1 == 772:
+										CyAudioGame().Play2DSound("AS2D_BUILD_COLOSSEUM")
+										CyMessageControl().sendModNetMessage(iData1, -1, pPlot.getPlotCity().getID(), iOwner, iUnitID)
 
 
 						# Platy ScoreBoard - Start

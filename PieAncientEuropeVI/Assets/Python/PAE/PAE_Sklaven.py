@@ -684,10 +684,32 @@ def freeSlaves(pCity, pPlayer):
 				# 3 = Klassik
 				# 4 = Late Antike
 				lUnits = []
-				if pPlayer.getCurrentEra() > 2:
+				if pPlayer.getCurrentEra() == 1:
 						lUnits = [
 								[gc.getInfoTypeForString('UNIT_SPY'), UnitAITypes.UNITAI_SPY],
-								[gc.getInfoTypeForString('UNIT_WARBAND'), UnitAITypes.UNITAI_ATTACK],
+								[gc.getInfoTypeForString('UNIT_AMAZONE'), UnitAITypes.UNITAI_COUNTER],
+								[gc.getInfoTypeForString('UNIT_AXEMAN2'), UnitAITypes.UNITAI_ATTACK],
+								[gc.getInfoTypeForString('UNIT_ARCHER_NUBIA'), UnitAITypes.UNITAI_CITY_COUNTER],
+								[gc.getInfoTypeForString('UNIT_JAVELIN_GERMAN'), UnitAITypes.UNITAI_ATTACK],
+								[gc.getInfoTypeForString('UNIT_COMPOSITE_ARCHER'), UnitAITypes.UNITAI_CITY_DEFENSE],
+								[gc.getInfoTypeForString('UNIT_PELTIST'), UnitAITypes.UNITAI_CITY_COUNTER],
+								[gc.getInfoTypeForString('UNIT_BALEAREN'), UnitAITypes.UNITAI_ATTACK]
+						]
+				elif pPlayer.getCurrentEra() == 2:
+						lUnits = [
+								[gc.getInfoTypeForString('UNIT_SPY'), UnitAITypes.UNITAI_SPY],
+								[gc.getInfoTypeForString('UNIT_ARCHER_KRETA'), UnitAITypes.UNITAI_CITY_DEFENSE],
+								[gc.getInfoTypeForString('UNIT_LIBYAN_AMAZON'), UnitAITypes.UNITAI_COUNTER],
+								[gc.getInfoTypeForString('UNIT_AXEMAN2'), UnitAITypes.UNITAI_ATTACK],
+								[gc.getInfoTypeForString('UNIT_ARCHER_NUBIA'), UnitAITypes.UNITAI_CITY_COUNTER],
+								[gc.getInfoTypeForString('UNIT_JAVELIN_GERMAN'), UnitAITypes.UNITAI_ATTACK],
+								[gc.getInfoTypeForString('UNIT_COMPOSITE_ARCHER'), UnitAITypes.UNITAI_CITY_DEFENSE],
+								[gc.getInfoTypeForString('UNIT_PELTIST'), UnitAITypes.UNITAI_CITY_COUNTER],
+								[gc.getInfoTypeForString('UNIT_BALEAREN'), UnitAITypes.UNITAI_ATTACK]
+						]
+				elif pPlayer.getCurrentEra() > 2:
+						lUnits = [
+								[gc.getInfoTypeForString('UNIT_SPY'), UnitAITypes.UNITAI_SPY],
 								[gc.getInfoTypeForString('UNIT_ARVERNER'), UnitAITypes.UNITAI_CITY_DEFENSE],
 								[gc.getInfoTypeForString('UNIT_SPARTA_1'), UnitAITypes.UNITAI_COUNTER],
 								[gc.getInfoTypeForString('UNIT_GEPANZERTER_ASSYRIA'), UnitAITypes.UNITAI_ATTACK],
@@ -710,33 +732,12 @@ def freeSlaves(pCity, pPlayer):
 								[gc.getInfoTypeForString('UNIT_BALEAREN'), UnitAITypes.UNITAI_ATTACK],
 								[gc.getInfoTypeForString('UNIT_SOLDURII'), UnitAITypes.UNITAI_ATTACK]
 						]
-				elif pPlayer.getCurrentEra() == 2:
-						lUnits = [
-								[gc.getInfoTypeForString('UNIT_SPY'), UnitAITypes.UNITAI_SPY],
-								[gc.getInfoTypeForString('UNIT_ARCHER_KRETA'), UnitAITypes.UNITAI_CITY_DEFENSE],
-								[gc.getInfoTypeForString('UNIT_LIBYAN_AMAZON'), UnitAITypes.UNITAI_COUNTER],
-								[gc.getInfoTypeForString('UNIT_AXEMAN2'), UnitAITypes.UNITAI_ATTACK],
-								[gc.getInfoTypeForString('UNIT_ARCHER_NUBIA'), UnitAITypes.UNITAI_CITY_COUNTER],
-								[gc.getInfoTypeForString('UNIT_JAVELIN_GERMAN'), UnitAITypes.UNITAI_ATTACK],
-								[gc.getInfoTypeForString('UNIT_COMPOSITE_ARCHER'), UnitAITypes.UNITAI_CITY_DEFENSE],
-								[gc.getInfoTypeForString('UNIT_PELTIST'), UnitAITypes.UNITAI_CITY_COUNTER],
-								[gc.getInfoTypeForString('UNIT_BALEAREN'), UnitAITypes.UNITAI_ATTACK]
-						]
-				elif pPlayer.getCurrentEra() == 1:
-						lUnits = [
-								[gc.getInfoTypeForString('UNIT_SPY'), UnitAITypes.UNITAI_SPY],
-								[gc.getInfoTypeForString('UNIT_AMAZONE'), UnitAITypes.UNITAI_COUNTER],
-								[gc.getInfoTypeForString('UNIT_AXEMAN2'), UnitAITypes.UNITAI_ATTACK],
-								[gc.getInfoTypeForString('UNIT_ARCHER_NUBIA'), UnitAITypes.UNITAI_CITY_COUNTER],
-								[gc.getInfoTypeForString('UNIT_JAVELIN_GERMAN'), UnitAITypes.UNITAI_ATTACK],
-								[gc.getInfoTypeForString('UNIT_COMPOSITE_ARCHER'), UnitAITypes.UNITAI_CITY_DEFENSE],
-								[gc.getInfoTypeForString('UNIT_PELTIST'), UnitAITypes.UNITAI_CITY_COUNTER],
-								[gc.getInfoTypeForString('UNIT_BALEAREN'), UnitAITypes.UNITAI_ATTACK]
-						]
 
-				if pPlayer.getCurrentEra() == 4:
+				if pPlayer.getCurrentEra() > 3:
 						lUnits.append([gc.getInfoTypeForString('UNIT_WURFAXT'), UnitAITypes.UNITAI_ATTACK])
 						lUnits.append([gc.getInfoTypeForString('UNIT_SWORDSMAN'), UnitAITypes.UNITAI_ATTACK])
+						lUnits.append([gc.getInfoTypeForString('UNIT_WARBAND'), UnitAITypes.UNITAI_ATTACK])
+						lUnits.append([gc.getInfoTypeForString('UNIT_FOEDERATI'), UnitAITypes.UNITAI_ATTACK])
 
 				iPromoCombat1 = gc.getInfoTypeForString("PROMOTION_COMBAT1")
 				iPromoCombat2 = gc.getInfoTypeForString("PROMOTION_COMBAT2")

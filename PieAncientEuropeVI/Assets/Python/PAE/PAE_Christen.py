@@ -92,110 +92,157 @@ def setHolyCity():
 				gc.getGame().setHolyCity(gc.getInfoTypeForString("RELIGION_CHRISTIANITY"), pCity, True)
 				bChristentum = True
 
-def doSpreadReligion(pCity):
+# Eventmanager in onEndGameTurn
+def doSpreadReligion():
 
-		bDone = False
-		iX = pCity.getX()
-		iY = pCity.getY()
-
+		iBuilding = gc.getInfoTypeForString("BUILDING_PROVINZPALAST")
 		iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
 		iIslam = gc.getInfoTypeForString("RELIGION_ISLAM")
-		LReligions = [iChristentum, iIslam, gc.getInfoTypeForString("RELIGION_JUDAISM")]
+		iJudentum = gc.getInfoTypeForString("RELIGION_JUDAISM")
+		LReligions = [iChristentum, iIslam, iJudentum]
 
 		for iReligion in LReligions:
-				if gc.getGame().isReligionFounded(iReligion):
-						# Christen oder Moslems
-						if pCity.isHasReligion(iReligion):
+			if gc.getGame().isReligionFounded(iReligion):
+				#gc.getGame().calculateReligionPercent(iReligion):
 
-								# Chance to abort
-								if iReligion == iChristentum:
-										if CvUtil.myRandom(10, "doSpreadReligion_Christentum") > 5:
-												return False
-								elif CvUtil.myRandom(10, "doSpreadReligion_IslamOrJudentum") > 2:
-										return False
+				# Chance to spread
+				iRand = CvUtil.myRandom(100, "doSpreadReligion")
+				# 33 % und später 50%
+				if iReligion == iChristentum:
+					if canSpreadChristentumOverall() and iRand > 50:
+						continue
+					elif iRand > 33:
+						continue
+				# 20%
+				elif iReligion == iIslam and iRand > 20:
+					continue
+				# 10%
+				elif iReligion == iJudentum and iRand > 10:
+					continue
 
-								lCities = []
-								iRange = 10
-								iCityCheck = 0
-								for i in range(-iRange, iRange+1):
-										for j in range(-iRange, iRange+1):
-												loopPlot = plotXY(iX, iY, i, j)
-												if loopPlot.isCity():
-														loopCity = loopPlot.getPlotCity()
-														if loopCity.isConnectedTo(pCity) and not loopCity.isHasReligion(iReligion):
-																if iReligion == iChristentum and not loopCity.isHasReligion(iIslam) or iReligion == iIslam and not loopCity.isHasReligion(iChristentum):
-																		lCities.append(loopCity)
+				# Stadt suchen
+				lCities = []
+				pCapitalCity = None
+				iNumPlayers = gc.getMAX_PLAYERS()
+				for i in range(iNumPlayers):
+					loopPlayer = gc.getPlayer(i)
+					if loopPlayer.isAlive():
+						iNumCities = loopPlayer.getNumCities()
+						for j in range(iNumCities):
+							loopCity = loopPlayer.getCity(j)
+							if loopCity is not None and not loopCity.isNone():
+								if loopCity.isHasReligion(iReligion):
+									lCities.append(loopCity)
 
-								# Christen nach 44 Runden auch über Handelswege verbreiten
-								if iReligion == iChristentum:
-										if gc.getGame().getReligionGameTurnFounded(iReligion) > gc.getGame().getGameTurn() + 44:
-												iTradeRoutes = pCity.getTradeRoutes()
-												for i in range(iTradeRoutes):
-														loopCity = pCity.getTradeCity(i)
-														if not loopCity.isHasReligion(iReligion) and not loopCity.isHasReligion(iIslam):
-																		lCities.append(loopCity)
-								
-								if len(lCities):
-										iRand = CvUtil.myRandom(len(lCities), "doSpreadReligionChooseCity")
-										convertCity(lCities[iRand], iReligion)
-										bDone = True
+				if len(lCities):
+					pCity = lCities[CvUtil.myRandom(len(lCities), "doSpreadReligion_RandomCity")]
+					if pCity is None or pCity.isNone(): return
 
-						# Bei allen monotheistisch beeinflussten Städten - Kulte und Religionen langsam raus
-						if pCity.isHasReligion(iReligion):
-								if PAE_Christen.removePagans(pCity, iReligion):
-										bDone = True
-		return bDone
+					iX = pCity.getX()
+					iY = pCity.getY()
+
+					# TEST
+					#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(gc.getReligionInfo(iReligion).getDescription(),iRand)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+					#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pCity.getName(),iRand)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+
+					lCities = []
+					iRange = 8
+					iCityCheck = 0
+					for i in range(-iRange, iRange+1):
+						for j in range(-iRange, iRange+1):
+							loopPlot = plotXY(iX, iY, i, j)
+							if loopPlot.isCity():
+								loopCity = loopPlot.getPlotCity()
+								if loopCity.isConnectedTo(pCity) and not loopCity.isHasReligion(iReligion):
+									if loopCity.isCapital() or loopCity.isHasBuilding(iBuilding):
+										pCapitalCity = loopCity
+									elif iReligion == iChristentum and not loopCity.isHasReligion(iIslam) or iReligion == iIslam and not loopCity.isHasReligion(iChristentum) or iReligion == iJudentum:
+										lCities.append(loopCity)
+
+					# Christen später auch über Handelswege verbreiten
+					# ausser es wurde eine Hauptstadt gefunden
+					if iReligion == iChristentum and not pCapitalCity is None:
+						if canSpreadChristentumOverall():
+							iTradeRoutes = pCity.getTradeRoutes()
+							for i in range(iTradeRoutes):
+								loopCity = pCity.getTradeCity(i)
+								if loopCity.isCapital() or loopCity.isHasBuilding(iBuilding):
+									pCapitalCity = loopCity
+								elif not loopCity.isHasReligion(iReligion) and not loopCity.isHasReligion(iIslam):
+									lCities.append(loopCity)
+					
+					# gefundene Hauptstadt immer konvertieren
+					if not pCapitalCity is None:
+						convertCity(pCapitalCity, iReligion)
+					
+					if len(lCities):
+						iRand = CvUtil.myRandom(len(lCities), "doSpreadReligionChooseCity")
+						convertCity(lCities[iRand], iReligion)
+
+						# Christianisiere eine 2. Stadt ab Apostelwanderung 2:3
+						if iReligion == iChristentum and canSpreadChristentumOverall() and CvUtil.myRandom(3, "doSpreadReligion") < 2:
+							iRand = CvUtil.myRandom(len(lCities), "doSpreadReligionChooseCity")
+							convertCity(lCities[iRand], iReligion)
+
+					# TEST
+					#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Nachbar-Cities",len(lCities))), None, 2, None, ColorTypes(10), 0, 0, False, False)
+
 
 def convertCity(pCity, iReligion):
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
+		
+		if pCity.isHasReligion(iReligion): return
 
 		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
 				# nicht bei Hindu, Buddh
 				if not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_HINDUISM")) and not pCity.isHasReligion(gc.getInfoTypeForString("RELIGION_BUDDHISM")):
 
-						if pCity.isCapital():
-								iChance = 25  # 4%
+						if pCity.isCapital() or pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
+								iChance = 100 # 100%
 						elif pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_STADT")):
 								if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")):
-										iChance = 30  # 3%
+										iChance = 90
 								else:
-										iChance = 50  # 2%
+										iChance = 80
 						elif pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")):
-								iChance = 40  # 2.5%
+								iChance = 70
 						else:
-								iChance = 75  # 1.5%
+								iChance = 50
 
 						# bei folgenden Civics Chance verringern
 						if pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_THEOCRACY")):
-								iChance += 25
+								iChance -= 20
 						if pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_AMPHIKTIONIE")):
-								iChance += 25
+								iChance -= 20
 
-						if CvUtil.myRandom(iChance, "convertCity") == 1:
+						if CvUtil.myRandom(100, "convertCity") < iChance:
 								pCity.setHasReligion(iReligion, 1, 1, 0)
 								if pPlayer.isHuman():
-										iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_2CHRIST_")
+										iRand = 1 + CvUtil.myRandom(10, "TXT_KEY_MESSAGE_HERESY_2CHRIST_")
 										CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_2CHRIST_"+str(iRand), (pCity.getName(), 0)),
 																						 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+								# TEST
+								#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_HERESY_2CHRIST_1", (pCity.getName(), 0)),
+								#														 None, 2, "Art/Interface/Buttons/Actions/button_kreuz.dds", ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
 								return True
 
 		elif iReligion == gc.getInfoTypeForString("RELIGION_ISLAM") or iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
 
 						if pCity.isCapital():
-								iChance = 40  # 2.5%
+								iChance = 75 # 75%
 						elif pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_STADT")):
-								iChance = 50  # 2%
+								iChance = 50
 						else:
-								iChance = 75  # 1.5%
+								iChance = 25
 
 						# bei folgenden Civics Chance verringern
 						if pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_THEOCRACY")):
-								iChance += 25
+								iChance -= 25
 						if pPlayer.isCivic(gc.getInfoTypeForString("CIVIC_AMPHIKTIONIE")):
-								iChance += 25
+								iChance -= 25
 
-						if CvUtil.myRandom(iChance, "convertCity") == 1:
+						if CvUtil.myRandom(iChance, "convertCity") < iChance:
 								pCity.setHasReligion(iReligion, 1, 1, 0)
 								if pPlayer.isHuman():
 										if iReligion == gc.getInfoTypeForString("RELIGION_ISLAM"):
@@ -209,114 +256,128 @@ def convertCity(pCity, iReligion):
 		return False
 
 
-def removePagans(pCity, iReligion):
+def removePagans(pCity):
 
-		# Chance 1:20 (5%)
-		iChance = 2
-		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
-			iChance = 5
-		elif iReligion == gc.getInfoTypeForString("RELIGION_ISLAM"):
-			iChance = 10
-		if CvUtil.myRandom(100, "removePagans") > iChance:
-			return False
-
+		iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+		iIslam = gc.getInfoTypeForString("RELIGION_ISLAM")
+		iJudentum = gc.getInfoTypeForString("RELIGION_JUDAISM")
+		LReligions = [iChristentum, iIslam, iJudentum]
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
-
-		# Kult
 		lCorp = []
-		iRange = gc.getNumCorporationInfos()
-		for i in range(iRange):
-				if pCity.isHasCorporation(i):
-						lCorp.append(i)
-
-		# Religion
 		lReli = []
-		iRange = gc.getNumReligionInfos()
-		for i in range(iRange):
-				if pCity.isHasReligion(i) and i != iReligion:
-						lReli.append(i)
+								
+		for iReligion in LReligions:
+				if gc.getGame().isReligionFounded(iReligion):
+						# Christen oder Moslems
+						if pCity.isHasReligion(iReligion):
 
-		# Kult oder Religion entfernen
-		txtReligionOrKult = ""
-		bUndoCorp = False
-		if lCorp and lReli:
-				if CvUtil.myRandom(2, "undoCorp") == 1:
-						bUndoCorp = True
+								# Chance to abort
+								iRand = CvUtil.myRandom(100, "removePagans")
+								# 5 %
+								if iReligion == iChristentum and iRand > 4:
+										return False
+								# 10%
+								elif iReligion == iIslam and iRand > 9:
+										return False
+								# 2%
+								elif iReligion == iJudentum and iRand > 1:
+										return False
 
-		# Kult
-		if lCorp or bUndoCorp:
-				iRand = CvUtil.myRandom(len(lCorp), "removePaganCult")
-				iRange = gc.getNumBuildingInfos()
-				for iBuildingLoop in range(iRange):
-						if pCity.getNumBuilding(iBuildingLoop) > 0:
-								pBuilding = gc.getBuildingInfo(iBuildingLoop)
-								if pBuilding.getPrereqCorporation() == lCorp[iRand]:
-										# Akademien (Corp7)
-										if pBuilding.getType() not in [
-												gc.getInfoTypeForString("BUILDING_ACADEMY_2"),
-												gc.getInfoTypeForString("BUILDING_ACADEMY_3"),
-												gc.getInfoTypeForString("BUILDING_ACADEMY_4")
-										]:
-												# Wunder sollen nicht betroffen werden
-												iBuildingClass = pBuilding.getBuildingClassType()
-												if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
-														pCity.setNumRealBuilding(iBuildingLoop, 0)
-				pCity.setHasCorporation(lCorp[iRand], 0, 0, 0)
-				txtReligionOrKult = gc.getCorporationInfo(lCorp[iRand]).getText()
+								# Kult
+								if len(lCorp) == 0:
+										iRange = gc.getNumCorporationInfos()
+										for i in range(iRange):
+												if pCity.isHasCorporation(i):
+														lCorp.append(i)
 
-		# Religion
-		elif lReli:
-				iRand = CvUtil.myRandom(len(lReli), "removePaganReli")
+								# Religion
+								if len(lReli) == 0:
+										iRange = gc.getNumReligionInfos()
+										for i in range(iRange):
+												if pCity.isHasReligion(i) and i != iReligion:
+														lReli.append(i)
 
-				# PAE 6.14: Reli der Heiligen Stadt erst zuletzt austreiben
-				iReli = lReli[iRand]
-				pHolyCity = gc.getGame().getHolyCity(iReli)
-				bHolyCity = False
-				bLastCityOfReligion = False
-				if not pHolyCity.isNone() and pCity.getID() == pHolyCity.getID():
-						bHolyCity = True
-						bLastCityOfReligion = True
-						(loopCity, pIter) = pPlayer.firstCity(False)
-						while loopCity:
-								if not loopCity.isNone():
-										if loopCity.getID() == pHolyCity.getID():
-												continue
-										if loopCity.isHasReligion(iReli):
-												bLastCityOfReligion = False
-												break
-								(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+								# Kult oder Religion entfernen
+								txtReligionOrKult = ""
+								bUndoCorp = False
+								if lCorp and lReli:
+										if CvUtil.myRandom(2, "undoCorp") == 1:
+												bUndoCorp = True
 
-				if not bLastCityOfReligion or (bHolyCity and bLastCityOfReligion):
+								# Kult
+								if lCorp or bUndoCorp:
+										iRand = CvUtil.myRandom(len(lCorp), "removePaganCult")
+										iRange = gc.getNumBuildingInfos()
+										for iBuildingLoop in range(iRange):
+												if pCity.getNumBuilding(iBuildingLoop) > 0:
+														pBuilding = gc.getBuildingInfo(iBuildingLoop)
+														if pBuilding.getPrereqCorporation() == lCorp[iRand]:
+																# Akademien (Corp7)
+																if pBuilding.getType() not in [
+																		gc.getInfoTypeForString("BUILDING_ACADEMY_2"),
+																		gc.getInfoTypeForString("BUILDING_ACADEMY_3"),
+																		gc.getInfoTypeForString("BUILDING_ACADEMY_4")
+																]:
+																		# Wunder sollen nicht betroffen werden
+																		iBuildingClass = pBuilding.getBuildingClassType()
+																		if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
+																				pCity.setNumRealBuilding(iBuildingLoop, 0)
+										pCity.setHasCorporation(lCorp[iRand], 0, 0, 0)
+										txtReligionOrKult = gc.getCorporationInfo(lCorp[iRand]).getText()
 
-						iRange = gc.getNumBuildingInfos()
-						for iBuildingLoop in range(iRange):
-								if pCity.isHasBuilding(iBuildingLoop):
-										pBuilding = gc.getBuildingInfo(iBuildingLoop)
-										if pBuilding.getPrereqReligion() == iReli:
-												# Holy City
-												if pBuilding.getHolyCity() == -1:
-														# Wunder sollen nicht betroffen werden
-														iBuildingClass = pBuilding.getBuildingClassType()
-														if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
-																pCity.setNumRealBuilding(iBuildingLoop, 0)
+								# Religion
+								elif lReli:
+										iRand = CvUtil.myRandom(len(lReli), "removePaganReli")
 
-						pCity.setHasReligion(iReli, 0, 0, 0)
-						txtReligionOrKult = gc.getReligionInfo(iReli).getText()
+										# PAE 6.14: Reli der Heiligen Stadt erst zuletzt austreiben
+										iReli = lReli[iRand]
+										pHolyCity = gc.getGame().getHolyCity(iReli)
+										bHolyCity = False
+										bLastCityOfReligion = False
+										if not pHolyCity.isNone() and pCity.getID() == pHolyCity.getID():
+												bHolyCity = True
+												bLastCityOfReligion = True
+												(loopCity, pIter) = pPlayer.firstCity(False)
+												while loopCity:
+														if not loopCity.isNone():
+																if loopCity.getID() == pHolyCity.getID():
+																		continue
+																if loopCity.isHasReligion(iReli):
+																		bLastCityOfReligion = False
+																		break
+														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
-		# Meldung
-		if pPlayer.isHuman() and txtReligionOrKult != "":
-			iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
-			if iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS2_"
-			elif iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
-			else:
-				text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
-			CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
-			None, 2, gc.getReligionInfo(iReligion).getButton(), ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
-			# "Art/Interface/Buttons/Actions/button_kreuz.dds"
-			return True
+										if not bLastCityOfReligion or (bHolyCity and bLastCityOfReligion):
+
+												iRange = gc.getNumBuildingInfos()
+												for iBuildingLoop in range(iRange):
+														if pCity.isHasBuilding(iBuildingLoop):
+																pBuilding = gc.getBuildingInfo(iBuildingLoop)
+																if pBuilding.getPrereqReligion() == iReli:
+																		# Holy City
+																		if pBuilding.getHolyCity() == -1:
+																				# Wunder sollen nicht betroffen werden
+																				iBuildingClass = pBuilding.getBuildingClassType()
+																				if not isWorldWonderClass(iBuildingClass) and not isTeamWonderClass(iBuildingClass) and not isNationalWonderClass(iBuildingClass):
+																						pCity.setNumRealBuilding(iBuildingLoop, 0)
+
+												pCity.setHasReligion(iReli, 0, 0, 0)
+												txtReligionOrKult = gc.getReligionInfo(iReli).getText()
+
+								# Meldung
+								if pPlayer.isHuman() and txtReligionOrKult != "":
+									iRand = 1 + CvUtil.myRandom(3, "TXT_KEY_MESSAGE_HERESY_CULTS_")
+									if iReligion == gc.getInfoTypeForString("RELIGION_JUDAISM"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS2_"
+									elif iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS_"
+									else:
+										text = "TXT_KEY_MESSAGE_HERESY_CULTS3_"
+									CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText(text+str(iRand), (txtReligionOrKult, pCity.getName())),
+									None, 2, gc.getReligionInfo(iReligion).getButton(), ColorTypes(11), pCity.getX(), pCity.getY(), True, True)
+									# "Art/Interface/Buttons/Actions/button_kreuz.dds"
+									return True
 
 		return False
 
@@ -374,3 +435,9 @@ def doReligionsKonflikt(pCity):
 
 		return False
 
+# Christen nach 44 Runden überall verbreiten
+def canSpreadChristentumOverall():
+		iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+		if gc.getGame().isReligionFounded(iReligion) and gc.getGame().getReligionGameTurnFounded(iReligion) > gc.getGame().getGameTurn() + 44:
+				return True
+		return False

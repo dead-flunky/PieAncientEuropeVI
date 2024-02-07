@@ -394,7 +394,7 @@ class CvGameUtils:
 
 
 								# Gladiator
-								elif iUnitType == gc.getInfoTypeForString("UNIT_GLADIATOR"):
+								elif iUnitType == gc.getInfoTypeForString("UNIT_GLADIATOR") and not pHeadSelectedUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
 										if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KONZIL5")) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2")):
 												iBuilding1 = gc.getInfoTypeForString("BUILDING_STADT")
 												iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
@@ -2220,7 +2220,7 @@ class CvGameUtils:
 																		return True
 
 						# Horses - create stables
-						if iUnitType == gc.getInfoTypeForString("UNIT_HORSE"):
+						elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE"):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_PFERDEZUCHT")):
 
 										if self.doSpreadStrategicBonus_AI(pUnit, gc.getInfoTypeForString("BUILDING_STABLE"), gc.getInfoTypeForString("BONUS_HORSE")):
@@ -2342,11 +2342,26 @@ class CvGameUtils:
 																				# pUnit.doCommand(CommandTypes.COMMAND_DELETE, -1, -1)
 																				pUnit.kill(True, -1)  # RAMK_CTD
 																				return True
+
+						# Gladiator und Gladiatorenschule
+						elif iUnitType == gc.getInfoTypeForString("UNIT_GLADIATOR") and not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
+								# nur wenn die Einheit im eigenen Terrain ist (und nicht im Kriegsgebiet)
+								if pPlot.getOwner() == iOwner:
+										if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_KONZIL5")) and pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2")):
+												iBuilding1 = gc.getInfoTypeForString("BUILDING_STADT")
+												iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
+												(loopCity, pIter) = pOwner.firstCity(False)
+												while loopCity:
+														if loopCity is not None and not loopCity.isNone():
+																if loopCity.isHasBuilding(iBuilding1) and not loopCity.isHasBuilding(iBuilding2):
+																		loopCity.setNumRealBuilding(iBuilding2, 1)
+																		pUnit.kill(True, -1)
+																		return True
+														(loopCity, pIter) = pOwner.nextCity(pIter, False)
 						# -----------------
 
 						# Legend can become a Great General
-						iLegend = gc.getInfoTypeForString("PROMOTION_COMBAT6")
-						if pUnit.isHasPromotion(iLegend):
+						if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT6")):
 								if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_LEADER")):
 										if pPlot.getOwner() == iOwner:
 												CvUtil.spawnUnit(gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), pUnit.plot(), pOwner)
@@ -3418,6 +3433,18 @@ class CvGameUtils:
 								elif iData2 == 19:
 										iBuild = gc.getInfoTypeForString("BUILD_ORE_CAMP")
 										return CyTranslator().getText("TXT_KEY_TECH_OBSOLETES_NO_LINK", (gc.getBuildInfo(iBuild).getDescription(),))
+								# Domestic Advisor Icon Info
+								elif iData2 == 20:
+										nl = CyTranslator().getText("[NEWLINE]", ())
+										sText = u"%c " % CyGame().getSymbolID(FontSymbols.STAR_CHAR) + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_1", ())
+										sText += nl + u"%c " % CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR) + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_2", ())
+										sText += nl + u"%c " % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR) + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_3", ())
+										sText += nl + u"%c " % CyGame().getSymbolID(FontSymbols.MAP_CHAR) + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_4", ())
+										sText += nl + u"%c " % gc.getReligionInfo(gc.getInfoTypeForString("RELIGION_GREEK")).getChar() + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_5", ())
+										sText += nl + u"%c " % gc.getReligionInfo(gc.getInfoTypeForString("RELIGION_NORDIC")).getChar() + CyTranslator().getText("TXT_KEY_INFO_DOMESTIC_ADVISOR_6", ())
+										return sText
+
+
 						# -------------------------------------
 						# Unit Ethnic (MainInterface Unit Detail Promo Icons)
 						elif iData1 == 750 and iData2 > -1:
@@ -3592,7 +3619,11 @@ class CvGameUtils:
 								elif iData == 4:
 										return
 
-						# iData1 698 wieder frei
+						# Gladiator: Gladiatorenschule bauen
+						elif iData1 == 772:
+								return CyTranslator().getText("TXT_KEY_BUILD_GLADIATORENSCHULE", ())
+
+
 
 						# CITY_TAB replacements
 						elif iData1 == 88000:

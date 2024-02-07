@@ -2556,8 +2556,6 @@ def applyKilikien1(argsList):
 				barbPlayer.initUnit(iUnitType1, plot.getX(), plot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
 
 ######## MOOR ###########
-
-
 def canTriggerMoor(argsList):
 		kTriggeredData = argsList[0]
 
@@ -2568,12 +2566,11 @@ def canTriggerMoor(argsList):
 		if unit.getImmobileTimer() > 0: return False
 		if unit.plot().getImprovementType() != -1: return False
 		if unit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1")): return False
+		if unit.plot().isCity(): return False
 
 		return True
 
 ######## MOORPROMO ###########
-
-
 def canTriggerMoorPromo(argsList):
 		kTriggeredData = argsList[0]
 
@@ -2581,13 +2578,11 @@ def canTriggerMoorPromo(argsList):
 		unit = player.getUnit(kTriggeredData.iUnitId)
 
 		if unit.isNone(): return False
-
 		if unit.getExperience() < 5: return False
-
 		if unit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1")): return False
+		if unit.plot().isCity(): return False
 
 		return True
-
 
 def canTriggerMoorPromoUnit(argsList):
 		# eTrigger = argsList[0]
@@ -2597,30 +2592,19 @@ def canTriggerMoorPromoUnit(argsList):
 		player = gc.getPlayer(ePlayer)
 		unit = player.getUnit(iUnit)
 
-		if unit.isNone():
-				return False
-
-		if unit.getExperience() < 7:
-				return False
-
-		iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
-		if unit.isHasPromotion(iSumpf):
-				return False
+		if unit.isNone(): return False
+		if unit.getExperience() < 7: return False
+		if unit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1")): return False
+		if unit.plot().isCity(): return False
 
 		return True
-
 
 def applyMoorPromo(argsList):
 		# iEvent = argsList[0]
 		kTriggeredData = argsList[1]
-
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		unit = player.getUnit(kTriggeredData.iUnitId)
-
-		iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
-
-		unit.setHasPromotion(iSumpf, True)
-
+		unit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_SUMPF1"), True)
 
 def getHelpMoorPromo(argsList):
 		# iEvent = argsList[0]
@@ -2629,7 +2613,8 @@ def getHelpMoorPromo(argsList):
 		player = gc.getPlayer(kTriggeredData.ePlayer)
 		unit = player.getUnit(kTriggeredData.iUnitId)
 
-		iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
+		#iSumpf = CvUtil.findInfoTypeNum(gc.getPromotionInfo, gc.getNumPromotionInfos(), 'PROMOTION_SUMPF1')
+		iSumpf = gc.getInfoTypeForString("PROMOTION_SUMPF1")
 
 		szHelp = localText.getText("TXT_KEY_EVENT_MOORPROMO_HELP", (unit.getNameKey(), gc.getPromotionInfo(iSumpf).getTextKey()))
 

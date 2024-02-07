@@ -284,6 +284,10 @@
 			<Path>Art/Movies/Buildings/military_academy.dds</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_GLADIATORENSCHULE_DDS</Type>
+			<Path>Art/Movies/Buildings/Gladiatorenschule.dds</Path>
+		</MovieArtInfo>
+		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_MUSEION</Type>
 			<Path>Art/Movies/Wonders/Mouseion.bik</Path>
 		</MovieArtInfo>

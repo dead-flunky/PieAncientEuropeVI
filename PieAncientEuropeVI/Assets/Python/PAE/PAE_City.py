@@ -13,6 +13,7 @@ import random
 
 import PAE_Sklaven
 import PAE_Unit
+import PAE_Christen
 import PAE_Mercenaries
 import PAE_Lists as L
 
@@ -3314,7 +3315,7 @@ def doSettledSlavesAndReservists(pCity):
 
 		# Sklaven oder Gladiatoren: sobald das Christentum entdeckt wurde -> 2%
 		iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
-		if not bRevolt and gc.getGame().isReligionFounded(iReligion):
+		if not bRevolt and PAE_Christen.canSpreadChristentumOverall():
 				if pPlayer.getStateReligion() != iReligion:
 
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HERESY")): 
@@ -3396,7 +3397,7 @@ def doSettledSlavesAndReservists(pCity):
 		# Christentum kommt in die Stadt 5%
 		if iCitySlaves > 0 and not bRevolt:
 				iReligion = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
-				if gc.getGame().isReligionFounded(iReligion):
+				if PAE_Christen.canSpreadChristentumOverall():
 						iRand = CvUtil.myRandom(20, "RELIGION_CHRISTIANITY")
 						if iRand == 1:
 								if not pCity.isHasReligion(iReligion):

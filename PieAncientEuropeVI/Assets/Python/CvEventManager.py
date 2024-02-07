@@ -2058,6 +2058,25 @@ class CvEventManager:
 						pUnit.finishMoves()
 						PAE_Unit.doGoToNextUnit(pUnit)
 
+				# Gladiatorenschule bauen
+				elif iData1 == 772:
+						pPlayer = gc.getPlayer(iData4)
+						pCity = pPlayer.getCity(iData3)
+						pUnit = pPlayer.getUnit(iData5)
+
+						iBuilding = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
+						pCity.setNumRealBuilding(iBuilding, 1)
+						pUnit.doCommand(CommandTypes.COMMAND_DELETE, 1, 1)
+						pUnit = None
+						
+						# Movie
+						popupInfo = CyPopupInfo()
+						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON_SCREEN)
+						popupInfo.setData1(iBuilding)
+						popupInfo.setData2(pCity.getID())
+						popupInfo.setData3(0)
+						popupInfo.setText(u"showWonderMovie")
+						popupInfo.addPopup(iData4)
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -2424,7 +2443,6 @@ class CvEventManager:
 				PAE_Turn_Features.doHistory()
 
 		# global
-
 		def onEndGameTurn(self, argsList):
 				'Called at the end of the end of each turn'
 				iGameTurn = argsList[0]
@@ -2499,6 +2517,9 @@ class CvEventManager:
 				if gc.getGame().getGameTurnYear() >= 0:
 						if not PAE_Christen.bChristentum:
 								PAE_Christen.setHolyCity()
+
+				# Religionsverbreitung monotheistischer Religionen
+				PAE_Christen.doSpreadReligion()
 
 				# PAE Debug Mark 1
 				#"""
@@ -2641,12 +2662,12 @@ class CvEventManager:
 																				iFaktor = 2
 																		iTechCost = int(gc.getTechInfo(iTech).getResearchCost() / iFaktor)
 																		# Attitude to Player
-																		iAttSymbol = CyGame().getSymbolID(FontSymbols.POWER_CHAR) + 4 + vPlayer.AI_getAttitude(iPlayer)
+																		iAttitude = CyGame().getSymbolID(FontSymbols.POWER_CHAR) + 4 + vPlayer.AI_getAttitude(iPlayer)
 
 																		popupInfo = CyPopupInfo()
 																		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
 																		popupInfo.setText(CyTranslator().getText("TXT_KEY_POPUP_VASSAL_TECH", (vPlayer.getName(),
-																											vPlayer.getCivilizationShortDescription(0), gc.getTechInfo(iTech).getDescription(), iTechCost, iAttSymbol)))
+																											vPlayer.getCivilizationShortDescription(0), gc.getTechInfo(iTech).getDescription(), iTechCost, iAttitude)))
 																		popupInfo.setData1(iPlayer)
 																		popupInfo.setData2(iVassal)
 																		popupInfo.setData3(iTech)
@@ -2674,6 +2695,23 @@ class CvEventManager:
 				# ***TEST***
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",(pPlayer.getName(),pPlayer.calculateGoldRate())), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Gold",pPlayer.getGold())), None, 2, None, ColorTypes(10), 0, 0, False, False)
+
+
+				# TEST PIE
+				if pPlayer.isHuman():
+						iSum = 0
+						iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+						iNumPlayers = gc.getMAX_PLAYERS()
+						for i in range(iNumPlayers):
+								loopPlayer = gc.getPlayer(i)
+								(loopCity, pIter) = loopPlayer.firstCity(False)
+								while loopCity:
+										if not loopCity.isNone() and loopCity.getOwner() == i:  # only valid cities
+												if loopCity.isHasReligion(iChristentum):
+														iSum += 1
+										(loopCity, pIter) = loopPlayer.nextCity(pIter, False)
+						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Christliche CITIES",iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+
 
 				# PAE Debug Mark 3
 				#"""
@@ -2726,16 +2764,15 @@ class CvEventManager:
 						PAE_Barbaren.createCampUnit(iPlayer, iGameTurn)
 
 				# PAE 6.16: Triggering PAE events
-				iRand = CvUtil.myRandom(10, "Trigger PAE Sumpf Events")
+				iEvent = -1
+				iRand = CvUtil.myRandom(20, "Trigger PAE Sumpf Events")
 				if iRand < 3: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOOR")
 				elif iRand < 5: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO")
 				elif iRand < 10: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_BORDELL")
-
-				pPlayer.trigger(iEvent)
-				pPlayer.resetEventOccured(iEvent)
-
-				#if pPlayer.isHuman():
-				#		pPlayer.trigger(gc.getInfoTypeForString("EVENTTRIGGER_SPARTACUS"))
+				if iEvent != -1: 
+						pPlayer.trigger(iEvent)
+						pPlayer.resetEventOccured(iEvent)
+				# -------------------------------
 
 				# MESSAGES: city growing (nur im Hot-Seat-Modus)
 				if gc.getGame().isHotSeat():
@@ -5111,8 +5148,8 @@ class CvEventManager:
 
 				# Gladiators
 				iCityGlads = PAE_Sklaven.freeCitizenGlad(pCity)
-				if iCityGlads > 0 or pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")) > 0:
-						# Gladiator Unit (2% with gladiators)
+				if iCityGlads > 0 and not pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")):
+						# Gladiator Unit (nur wenn bereits keine Gladiatorenschule in der Stadt steht)
 						pTeam = gc.getTeam(pPlayer.getTeam())
 						bTeamHasGladiators = False
 						iTech = gc.getInfoTypeForString("TECH_GLADIATOR2")
@@ -5158,15 +5195,8 @@ class CvEventManager:
 				# CivilWar
 				PAE_City.doCheckCivilWar(pCity)
 
-				# Christentum (ab PAE 6.15: auch Judentum und Islam) und Haeresie (Heresy) ----------------------------
-				bHeresy = False
-				if not bRevolt and iGameTurnYear > 0 and iGameTurnFounded % 2 == 0:
-						bHeresy = PAE_Christen.doSpreadReligion(pCity)
-
 				# PAE 6.14: Allgemeine Religionskonflikte
-				if not bHeresy:
-					if PAE_Christen.doReligionsKonflikt(pCity):
-						bHeresy = True
+				PAE_Christen.removePagans(pCity)
 
 				# PAE Debug Mark 10
 				#"""

@@ -12176,8 +12176,8 @@
 			<HappinessTraits/>
 			<NoBonus/>
 			<PowerBonus/>
-			<FreeBonus>BONUS_FISH</FreeBonus>
-			<iNumFreeBonuses>1</iNumFreeBonuses>
+			<FreeBonus/>
+			<iNumFreeBonuses>0</iNumFreeBonuses>
 			<FreeBuilding/>
 			<FreePromotion/>
 			<CivicOption/>
@@ -28072,7 +28072,7 @@
 			<iFreeSpecialist>0</iFreeSpecialist>
 			<iAreaFreeSpecialist>0</iAreaFreeSpecialist>
 			<iGlobalFreeSpecialist>0</iGlobalFreeSpecialist>
-			<iMaintenanceModifier>-50</iMaintenanceModifier>
+			<iMaintenanceModifier>-25</iMaintenanceModifier>
 			<iWarWearinessModifier>0</iWarWearinessModifier>
 			<iGlobalWarWearinessModifier>0</iGlobalWarWearinessModifier>
 			<iEnemyWarWearinessModifier>0</iEnemyWarWearinessModifier>
@@ -28248,7 +28248,7 @@
 			<iFreeSpecialist>0</iFreeSpecialist>
 			<iAreaFreeSpecialist>0</iAreaFreeSpecialist>
 			<iGlobalFreeSpecialist>0</iGlobalFreeSpecialist>
-			<iMaintenanceModifier>-75</iMaintenanceModifier>
+			<iMaintenanceModifier>-50</iMaintenanceModifier>
 			<iWarWearinessModifier>0</iWarWearinessModifier>
 			<iGlobalWarWearinessModifier>0</iGlobalWarWearinessModifier>
 			<iEnemyWarWearinessModifier>0</iEnemyWarWearinessModifier>
@@ -28428,7 +28428,7 @@
 			<iFreeSpecialist>0</iFreeSpecialist>
 			<iAreaFreeSpecialist>0</iAreaFreeSpecialist>
 			<iGlobalFreeSpecialist>0</iGlobalFreeSpecialist>
-			<iMaintenanceModifier>-75</iMaintenanceModifier>
+			<iMaintenanceModifier>-50</iMaintenanceModifier>
 			<iWarWearinessModifier>0</iWarWearinessModifier>
 			<iGlobalWarWearinessModifier>0</iGlobalWarWearinessModifier>
 			<iEnemyWarWearinessModifier>0</iEnemyWarWearinessModifier>
@@ -30347,7 +30347,7 @@
 			<iHurryAngerModifier>0</iHurryAngerModifier>
 			<bBorderObstacle>0</bBorderObstacle>
 			<bTeamShare>0</bTeamShare>
-			<bWater>1</bWater>
+			<bWater>0</bWater>
 			<bRiver>0</bRiver>
 			<bPower>0</bPower>
 			<bDirtyPower>0</bDirtyPower>
@@ -38627,7 +38627,7 @@
 			<Strategy>TXT_KEY_BUILDING_GLADIATORENSCHULE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GLADIATORENSCHULE</ArtDefineTag>
-			<MovieDefineTag/>
+			<MovieDefineTag>ART_DEF_MOVIE_GLADIATORENSCHULE_DDS</MovieDefineTag>
 			<HolyCity/>
 			<ReligionType/>
 			<StateReligion/>

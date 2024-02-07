@@ -1434,11 +1434,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THING_CITY_HELP</Tag>
-		<English>[ICON_BULLET]This building automatically switches to a city with a Thingstead every 10 turns.</English>
-		<French>[ICON_BULLET]Ce b&#226;timent bascule automatiquement vers une ville avec un Thing tous les 10 tours.</French>
-		<German>[ICON_BULLET]Diese Geb&#228;ude wechselt automatisch alle 10 Runden in eine Stadt mit Thingst&#228;tte.</German>
-		<Italian>[ICON_BULLET]Questo edificio passa automaticamente a una citt&#224; con Thing ogni 10 turni.</Italian>
-		<Spanish>[ICON_BULLET]Este edificio cambia autom&#225;ticamente a una ciudad Thing cada 10 turnos.</Spanish>
+		<English>[ICON_BULLET]This building automatically switches to a city with a Thingstead every 5 turns.</English>
+		<French>[ICON_BULLET]Ce b&#226;timent bascule automatiquement vers une ville avec un Thing tous les 5 tours.</French>
+		<German>[ICON_BULLET]Diese Geb&#228;ude wechselt automatisch alle 5 Runden in eine Stadt mit Thingst&#228;tte.</German>
+		<Italian>[ICON_BULLET]Questo edificio passa automaticamente a una citt&#224; con Thing ogni 5 turni.</Italian>
+		<Spanish>[ICON_BULLET]Este edificio cambia autom&#225;ticamente a una ciudad Thing cada 5 turnos.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THOLOS</Tag>
@@ -1551,6 +1551,14 @@
 		<German>[LINK=IMPROVEMENT_COTTAGE_HILL]Bergh&#252;tten[\LINK] errichten</German>
 		<Italian>Costruisci [LINK=IMPROVEMENT_COTTAGE_HILL]rifugi di montagna[\LINK]</Italian>
 		<Spanish>Construir de [LINK=IMPROVEMENT_COTTAGE_HILL]refugios[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_GLADIATORENSCHULE</Tag>
+		<English>Build a gladiator school[NEWLINE][ICON_BULLET]The unit will be dissolved.</English>
+		<French>Construire une &#233;cole de gladiateurs[NEWLINE][ICON_BULLET]L'unit&#233; sera dissoute.</French>
+		<German>Baue eine Gladiatorenschule[NEWLINE][ICON_BULLET]Die Einheit wird dabei aufgel&#246;st.</German>
+		<Italian>Costruisci una scuola di gladiatori[NEWLINE][ICON_BULLET]L'unit&#224; verr&#224; sciolta.</Italian>
+		<Spanish>Construye una escuela de gladiadores[NEWLINE][ICON_BULLET]La unidad se disolver&#225;.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_LATIFUNDIUM</Tag>
@@ -2604,7 +2612,7 @@
 		<Tag>TXT_KEY_INFO_THING_CITY_4</Tag>
 		<English>A humorous and charismatic chief runs the Thing in %s1_city (%s2_civ_desc). A welcome change for many tribal leaders to attend here in the years to come.</English>
 		<French>Un chef plein d'humour et charismatique dirige le Thing &#224; %s1_city (%s2_civ_desc). Un changement bienvenu pour de nombreux chefs tribaux &#224; venir ici dans les ann&#233;es &#224; venir.</French>
-		<German>Ein humorvolles und charismatisches Stammesoberhaupt leitet das Thing in %s1_city (%s2_civ_desc). Eine wohltuende Abwechslung f&#252;r viele Stammesf&#252;hrer hier in den kommenden Jahren beizuwohnen.</German>
+		<German>Ein humorvolles und charismatisches Stammesoberhaupt leitet das Thing in %s1_city (%s2_civ_desc). Eine wohltuende Abwechslung f&#252;r viele Stammesf&#252;hrer hier in den kommenden Jahren dem Thing beizuwohnen.</German>
 		<Italian>Un capo umoristico e carismatico dirige la Thing a %s1_city (%s2_civ_desc). Un gradito cambiamento per molti leader tribali che parteciperanno qui negli anni a venire.</Italian>
 		<Spanish>Un jefe humor&#237;stico y carism&#225;tico dirige el Thing en %s1_city (%s2_civ_desc). Un cambio bienvenido para que muchos l&#237;deres tribales asistan aqu&#237; en los pr&#243;ximos a&#241;os.</Spanish>
 	</TEXT>
@@ -3961,6 +3969,14 @@
 		<Spanish>Una parte significativa de tu poblaci&#243;n pobre en %s1 se ha unido al Cristianismo.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_10</Tag>
+		<English>Some of the citizens of %s1_city now profess to be "members of the Way" (Christianity).</English>
+		<French>Certains citoyens de %s1_city se d&#233;clarent d&#233;sormais "membres de la Voie" (christianisme).</French>
+		<German>Ein Teil der B&#252;rger von %s1_city bekennen sich nun als "Angeh&#246;rige des Weges" (Christentum).</German>
+		<Italian>Alcuni cittadini di %s1_city ora si professano "membri del Cammino" (cristianesimo).</Italian>
+		<Spanish>Algunos de los ciudadanos de %s1_city ahora profesan ser "miembros del Camino" (cristianismo).</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_2</Tag>
 		<English>A portion of the poor in your city of %s1 has switched to Christianity.</English>
 		<French>Une partie des classes populaires de %s1 s'est ralli&#233;e au christianisme.</French>
@@ -3975,6 +3991,54 @@
 		<German>Ein Gro&#223;teil der Sklaven in %s1 glauben nun an ihren Erl&#246;ser Jesus Christus.</German>
 		<Italian>La maggioranza degli schiavi in &#8203;&#8203;%s1 ora crede nel loro Salvatore Ges&#249; Cristo.</Italian>
 		<Spanish>Una gran parte de esclavos en %s1 creen ahora en su salvador Jesucristo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_4</Tag>
+		<English>A part of the population in %s1_city now professes Christianity.</English>
+		<French>Une partie de la population de %s1_city professe d&#233;sormais le christianisme.</French>
+		<German>Ein Teil der Bev&#246;lkerung in %s1_city bekennt sich nun zum Christentum.</German>
+		<Italian>Una parte della popolazione di %s1_city ora professa il cristianesimo.</Italian>
+		<Spanish>Una parte de la poblaci&#243;n de %s1_city ahora profesa el cristianismo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_5</Tag>
+		<English>Some of the residents in %s1_city now identify as "members of the Way" (Christianity).</English>
+		<French>Certains r&#233;sidents de %s1_city s'identifient d&#233;sormais comme "membres de la Voie" (christianisme).</French>
+		<German>Ein Teil der Bewohner in %s1_city identifizieren sich nun als "Angeh&#246;rige des Weges" (Christentum).</German>
+		<Italian>Alcuni residenti in %s1_city ora si identificano come "membri del Cammino" (Cristianesimo).</Italian>
+		<Spanish>Algunos de los residentes de %s1_city ahora se identifican como "miembros del Camino" (cristianismo).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_6</Tag>
+		<English>Some residents in %s1_city are now "members of the right path" (Christianity).</English>
+		<French>Certains r&#233;sidents de %s1_city sont d&#233;sormais "membres de la Voie droite" (christianisme).</French>
+		<German>Einige Einwohner in %s1_city sind nun "Angeh&#246;rige des richtigen Weges" (Christentum).</German>
+		<Italian>Alcuni residenti in %s1_city sono ora "membri della retta via" (Cristianesimo).</Italian>
+		<Spanish>Algunos residentes de %s1_city ahora son "miembros del camino correcto" (cristianismo).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_7</Tag>
+		<English>A significant portion of %s1_city's population now follows Christianity.</English>
+		<French>Une partie importante de la population de %s1_city suit d&#233;sormais le christianisme.</French>
+		<German>Ein beachtlicher Teil der Bev&#246;lkerung von %s1_city folgen nun dem Christentum.</German>
+		<Italian>Una parte significativa della popolazione di %s1_city ora segue il cristianesimo.</Italian>
+		<Spanish>Una porci&#243;n significativa de la poblaci&#243;n de %s1_city ahora sigue el cristianismo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_8</Tag>
+		<English>An apostle was able to convince all citizens of %s1_city to join the "right path" (Christianity).</English>
+		<French>Un ap&#244;tre a r&#233;ussi &#224; convaincre tous les citoyens de %s1_city de rejoindre la "bonne voie" (christianisme).</French>
+		<German>Ein Apostel konnte s&#228;mtliche B&#252;rger von %s1_city &#252;berzeugen sich dem "richtigen Weg" anzuschlie&#223;en (Christentum).</German>
+		<Italian>Un apostolo &#232; riuscito a convincere tutti i cittadini di %s1_city a imboccare la "retta via" (cristianesimo).</Italian>
+		<Spanish>Un ap&#243;stol pudo convencer a todos los ciudadanos de %s1_city a unirse al "camino correcto" (cristianismo).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_HERESY_2CHRIST_9</Tag>
+		<English>Several citizens in %s1_city now call themselves "Members of the Way" (Christianity).</English>
+		<French>Plusieurs citoyens de %s1_city s'appellent d&#233;sormais "Membres de la Voie" (christianisme).</French>
+		<German>Etliche B&#252;rger in %s1_city nennen sich nun als "Angeh&#246;rige des Weges" (Christentum).</German>
+		<Italian>Diversi cittadini di %s1_city ora si definiscono "Membri del Cammino" (Cristianesimo).</Italian>
+		<Spanish>Varios ciudadanos de %s1_city ahora se autodenominan "Miembros del Camino" (cristianismo).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERESY_2ISLAM</Tag>
@@ -4903,6 +4967,14 @@
 		<German>Keil</German>
 		<Italian>Cuneo</Italian>
 		<Spanish>Cu&#241;a</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORM_KEIL_HELP</Tag>
+		<English>[ICON_BULLET]Only possible for units with (iron) armor (infantry and cavalry), and (combat) dogs.</English>
+		<French>[ICON_BULLET]Uniquement possible pour les unit&#233;s dot&#233;es d'une armure (de fer) (infanterie et cavalerie) et de chiens (de combat).</French>
+		<German>[ICON_BULLET]Nur m&#246;glich f&#252;r Einheiten mit (Eisen)R&#252;stung (Infanterie und Kavallerie), sowie (Kampf)Hunde.</German>
+		<Italian>[ICON_BULLET]Possibile solo per unit&#224; con armatura (di ferro) (fanteria e cavalleria) e cani (da combattimento).</Italian>
+		<Spanish>[ICON_BULLET]Solo es posible para unidades con armadura (de hierro) (infanter&#237;a y caballer&#237;a) y perros (de combate).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_KOHORTE</Tag>
@@ -6927,6 +6999,14 @@
 		<German>Doppelk&#228;mpfer</German>
 		<Italian><Text>Doppelk&#228;mpfer Germanico</Text><Gender>Male</Gender><Plural>0</Plural></Italian>
 		<Spanish>Luchador Doble:Luchadores Dobles</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GLADIATOR_HELP</Tag>
+		<English>[ICON_BULLET]Gladiators who lose their unreliability (automatic promotion) in battle can found a [COLOR_BUILDING_TEXT]Gladiator School[COLOR_REVERT] in a city (city status: city).</English>
+		<French>[ICON_BULLET]Les gladiateurs qui perdent leur fiabilit&#233; (promotion automatique) au combat peuvent fonder une [COLOR_BUILDING_TEXT]&#233;cole de gladiateurs[COLOR_REVERT] dans une ville (statut de ville : ville).</French>
+		<German>[ICON_BULLET]Gladiatoren, die ihre Unzuverl&#228;ssigkeit (automatische Bef&#246;rderung) im Kampf verlieren, k&#246;nnen in einer Stadt (Stadtstatus: Stadt) eine [COLOR_BUILDING_TEXT]Gladiatorenschule[COLOR_REVERT] gr&#252;nden.</German>
+		<Italian>[ICON_BULLET]I gladiatori che perdono la loro inaffidabilit&#224; (promozione automatica) in battaglia possono fondare una [COLOR_BUILDING_TEXT]scuola di gladiatori[COLOR_REVERT] in una citt&#224; (stato di citt&#224;: citt&#224;).</Italian>
+		<Spanish>[ICON_BULLET]Los gladiadores que pierden su falta de confiabilidad (promoci&#243;n autom&#225;tica) en la batalla pueden fundar una [COLOR_BUILDING_TEXT]escuela de gladiadores[COLOR_REVERT] en una ciudad (estado de ciudad: ciudad).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREAT_ARTIST</Tag>

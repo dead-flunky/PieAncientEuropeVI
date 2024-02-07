@@ -4001,8 +4001,8 @@ The oblique order was firstly use by the theban general Epaminondas in the 4. ce
 
 [H2]Wedge formation[\H2]
 
-Requirement: Military Strategy and Drill I promotion
-Available for: Melee and Spear-Bearers
+Requirement: Tech Attack Dogs
+Available for attack dogs, infantry and cavalry with armor (chain armor)
 Effect:
 [ICON_BULLET] -25%[ICON_STRENGTH] against siege weapons
 [ICON_BULLET] +25%[ICON_STRENGTH] against Melee
@@ -4212,8 +4212,8 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			
 			[H2] Formation en coin[\H2]
 			
-			Condition: Tech. Strat&#233;gie militaire et promotion Exercice I
-			Disponible pour : M&#234;l&#233;e et porteurs de lance
+			Condition: Tech. chiens d'attaque
+			Disponible pour les chiens d'attaque, l'infanterie et la cavalerie avec armure (armure &#224; chenilles)
 			effet:
 			[ICON_BULLET] -25 % [ICON_STRENGTH] contre les armes de si&#232;ge
 			[ICON_BULLET] 25 % [ICON_STRENGTH] contre M&#234;l&#233;e
@@ -4224,7 +4224,7 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			
 			La formation en coin ne donne pas de malus contre les armes de si&#232;ge, en ville ou sur terrain accident&#233; et sert en plus contre les unit&#233;s de m&#234;l&#233;e. Elle n'est n&#233;anmoins toujours pas efficace en for&#234;t.
 			
-			[H2] tactiques Encounting ( manipule ) [\H2]
+			[H2] Tactiques de r&#233;union ( manipule ) [\H2]
 			
 			Condition: Tech. Maniple-Phalanx et promotion Exercice I
 			Disponible pour : M&#234;l&#233;e et lance-porteurs
@@ -4426,8 +4426,8 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			
 			[H2]Keil-Formation[\H2]
 			
-			Voraussetzung: Tech Milit&#228;rstrategie und Drill I Bef&#246;rderung
-			Verf&#252;gbar f&#252;r: Nahkampf und Speertr&#228;ger
+			Voraussetzung: Tech Kampfhunde
+			Verf&#252;gbar f&#252;r Kampfhunde, Infanterie sowie Kavallerie mit R&#252;stung (Kettenpanzer)
 			Auswirkungen:
 			[ICON_BULLET] -25%[ICON_STRENGTH] gegen Belagerungseinheiten
 			[ICON_BULLET] +25%[ICON_STRENGTH] gegen Nah
@@ -4643,8 +4643,8 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			
 			Formazione [H2] cuneo [\H2]
 			
-			Requisito : Strategia Militare e Drill io la promozione
-			Disponibile per : Melee e Spear-Portatori
+			Requisito : Cani da Attacco Tecnologici
+			Disponibile per cani da attacco, fanteria e cavalleria con armatura (armatura cingolata)
 			effetto:
 			[ICON_BULLET] -25 % [ICON_STRENGTH] contro le armi d'assedio
 			[ICON_BULLET] +25 % [ICON_STRENGTH] contro il corpo a corpo
@@ -4656,7 +4656,7 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			La formazione a cuneo ha nessuna citt&#224; o sulle colline deduzione e pu&#242; essere utilizzato anche da unit&#224; di corpo a corpo.
 			
 			
-			[H2] tattiche Encounting ( manipolo ) [\H2]
+			[H2] Tattiche di incontro ( manipolo ) [\H2]
 			
 			Requisito : Tech Manipolo-Phalanx e Drill di promozione io
 			Disponibile per : Melee e Spear-Portatori
@@ -4855,8 +4855,8 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			
 			[H2]Formaci&#243;n en cu&#241;a[\H2]
 			
-			Requisitos: Estrategia militar y ascenso instrucci&#243;n I
-			Disponible para: Cuerpo a cuerpo y unidades con lanza
+			Requisitos: Perros de ataque tecnol&#243;gico
+			Disponible para perros de ataque, infanter&#237;a y caballer&#237;a con armadura (armadura de oruga)
 			Efectos:
 			[ICON_BULLET] -25%[ICON_STRENGTH] contra armas de asedio
 			[ICON_BULLET] +25%[ICON_STRENGTH] contra cuerpo a cuerpo
@@ -4868,7 +4868,7 @@ The unit will get an offensive formation (more attack bonuses than defence bonus
 			La formaci&#243;n en cu&#241;a no tiene reducci&#243;n en ciudad o colinas y puede ser usada tambi&#233;n por unidades cuerpo a cuerpo.
 			
 			
-			[H2]T&#225;cticas de combate (Man&#237;pulo)[\H2]
+			[H2]T&#225;cticas de reuni&#243;n (Man&#237;pulo)[\H2]
 			
 			Requisitos: Tecnolog&#237;a falange man&#237;pulo y ascenso instrucci&#243;n I
 			Disponible para: Cuerpo a cuerpo y unidades con lanza
@@ -5076,7 +5076,7 @@ Exhibition fighters can die by the exercise of their activity (probability: 3% x
 
 With the civic [COLOR_HIGHLIGHT_TEXT]Civil right[COLOR_REVERT] (chance of 2%) or [COLOR_HIGHLIGHT_TEXT]International law[COLOR_REVERT] (chance of 3%), a settled exhibition fighters can ransom himself to a free citizen (+2 [ICON_COMMERCE]). Thereby a free citizen gets added and the exhibition fighter comes off.
 
-Settled exhibition fighters can become a [LINK=UNIT_GLADIATOR]gladiator[\LINK] unit, which can found a gladiator school or remain in your army (chance of 2% every turn, Tech Gladiator required)
+Settled exhibition fighters can become a [LINK=UNIT_GLADIATOR]gladiator[\LINK] unit, which can found a gladiator school or remain in your army (chance of 2% every turn, Tech Gladiator required). "Reliable" gladiators can establish gladiator schools. Unreliability (automatic promotion) can disappear in combat.
 
 [H1]Gladiator revolt[\H1]
 See [LINK=CONCEPT_SLAVES]Slaves and freed slaves[\LINK] concept.</English>
@@ -5093,7 +5093,7 @@ See [LINK=CONCEPT_SLAVES]Slaves and freed slaves[\LINK] concept.</English>
 			
 			Avec la doctrine [COLOR_HIGHLIGHT_TEXT]Droit civil[COLOR_REVERT] (2% de chances) ou [COLOR_HIGHLIGHT_TEXT]Loi internationale[COLOR_REVERT] (3% de chances), un gladiateur peut racheter sa libert&#233; et devenir un citoyen libre (+2 [ICON_COMMERCE]). Le sp&#233;cialiste Gladiateur est transform&#233; en sp&#233;cialiste Citoyen libre.
 			
-			Les gladiateurs affect&#233;s &#224; une ville peuvent rejoindre votre arm&#233;e en tant que [LINK=UNIT_GLADIATOR]Gladiateur[\LINK]. Cette unit&#233; peut fonder une Ecole de gladiateurs (N&#233;cessite la technologie Gladiateurs-Probabilit&#233; : 2% par tour)
+			Les gladiateurs affect&#233;s &#224; une ville peuvent rejoindre votre arm&#233;e en tant que [LINK=UNIT_GLADIATOR]Gladiateur[\LINK]. Cette unit&#233; peut fonder une Ecole de gladiateurs (N&#233;cessite la technologie Gladiateurs-Probabilit&#233; : 2% par tour). Les gladiateurs "fiables" peuvent cr&#233;er des &#233;coles de gladiateurs. Le manque de fiabilit&#233; (promotion automatique) peut dispara&#238;tre au combat.
 			
 			[H1]R&#233;voltes de gladiateurs[\H1]
 			Voir le concept [LINK=CONCEPT_SLAVES]Esclavage[\LINK].
@@ -5111,7 +5111,7 @@ See [LINK=CONCEPT_SLAVES]Slaves and freed slaves[\LINK] concept.</English>
 			
 			Mit der Staatsform B&#252;rgerrecht (2% Wahrscheinlichkeit) oder V&#246;lkerrecht (3% Wahrscheinlichkeit) k&#246;nnen sich Schauk&#228;mpfer zu freien B&#252;rgern freikaufen (+2 [ICON_COMMERCE]). Dabei wird ein freier B&#252;rger in die Stadt angesiedelt, ein Schauk&#228;mpfer kommt weg.
 			
-			Ab der Technologie "Gladiatoren" k&#246;nnen angesiedelte Schauk&#228;mpfer als [LINK=UNIT_GLADIATOR]Gladiator[\LINK] zu Euren Diensten stehen (2% Wahrscheinlichkeit pro Runde, der angesiedelte Schauk&#228;mpfer wird der Stadt abgezogen). Gladiatoren k&#246;nnen Gladiatorenschulen errichten.
+			Ab der Technologie "Gladiatoren" k&#246;nnen angesiedelte Schauk&#228;mpfer als [LINK=UNIT_GLADIATOR]Gladiator[\LINK] zu Euren Diensten stehen (2% Wahrscheinlichkeit pro Runde, der angesiedelte Schauk&#228;mpfer wird der Stadt abgezogen). "Zuverl&#228;ssige" Gladiatoren k&#246;nnen Gladiatorenschulen errichten. Unzuverl&#228;ssigkeit (automatische Bef&#246;rderung) kann im Kampf verschwinden.
 			
 			[H1]Gladiatorenaufstand[\H1]
 			Siehe [LINK=CONCEPT_SLAVES]Sklaven und befreite Sklaven[\LINK].
@@ -5130,7 +5130,7 @@ See [LINK=CONCEPT_SLAVES]Slaves and freed slaves[\LINK] concept.</English>
 			Con la forma di CD Diritti Civili dello Stato ( 2 % di Probabilit&#224; ) , o di Una Legge internazionale ( Probabilit&#224; del 3 % ) Guarda Combattenti Sono liberi di Acquistare Cittadini Liberi ( +2 [ICON_COMMERCE] ) .
 			In QUESTO Caso, ONU libero Cittadino con Sede nella Citt&#224; , ONU Combattente Spettacolo Venuta Fuori .
 			
-			Combattenti espositivi domiciliati possono come unit&#224; di gladiatori sono al vostro servizio , se hai studiato i gladiatori tech ( 2 % possibilit&#224; per round , i gladiatori tecnologia necessaria )
+			Combattenti espositivi domiciliati possono come unit&#224; di gladiatori sono al vostro servizio , se hai studiato i gladiatori tech ( 2 % possibilit&#224; per round , i gladiatori tecnologia necessaria ). I gladiatori "affidabili" possono fondare scuole di gladiatori. L'inaffidabilit&#224; (promozione automatica) pu&#242; scomparire in combattimento.
 			
 			[H1] gladiatore Ribellione [\H1]
 			VEDERE [LINK = CONCEPT_SLAVES] Schiavi e Gli Schiavi Liberati [\ LINK] .
@@ -5149,7 +5149,7 @@ See [LINK=CONCEPT_SLAVES]Slaves and freed slaves[\LINK] concept.</English>
 			Con el principio [COLOR_HIGHLIGHT_TEXT]derecho Civil[COLOR_REVERT] (posibilidad del 2%) o [COLOR_HIGHLIGHT_TEXT]ley internacional[COLOR_REVERT] (posibilidad del 3%), un luchador de espect&#225;culo puede liberarse &#233;l mismo como un ciudadano libre (+2 [ICON_COMMERCE]).
 			De ese modo se consigue un ciudadano libre y se pierde un luchador de espect&#225;culo.
 			
-			Los luchadores de espect&#225;culo asentados en una ciudad pueden convertirse en una unidad de [LINK=UNIT_GLADIATOR]gladiador[\LINK], la cual puede fundar una escuela de gladiadores o servir en tu ej&#233;rcito (probabilidad del 2% cada turno, tecnolog&#237;a necesaria: Gladiadores)
+			Los luchadores de espect&#225;culo asentados en una ciudad pueden convertirse en una unidad de [LINK=UNIT_GLADIATOR]gladiador[\LINK], la cual puede fundar una escuela de gladiadores o servir en tu ej&#233;rcito (probabilidad del 2% cada turno, tecnolog&#237;a necesaria: Gladiadores). Los gladiadores "confiables" pueden establecer escuelas de gladiadores. La falta de fiabilidad (promoci&#243;n autom&#225;tica) puede desaparecer en combate.
 			
 			[H1]Revuelta de gladiadores[\H1]
 			Ver concepto [LINK=CONCEPT_SLAVES]esclavos y esclavos liberados[\LINK].

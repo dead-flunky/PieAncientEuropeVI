@@ -337,7 +337,7 @@
 			<iTrainPercent>150</iTrainPercent>
 			<iConstructPercent>150</iConstructPercent>
 			<iCreatePercent>150</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
+			<iResearchPercent>150</iResearchPercent>
 			<iBuildPercent>150</iBuildPercent>
 			<iImprovementPercent>100</iImprovementPercent>
 			<iGreatPeoplePercent>150</iGreatPeoplePercent>
