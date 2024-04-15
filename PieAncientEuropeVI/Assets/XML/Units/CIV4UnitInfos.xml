@@ -3936,12 +3936,7 @@
 			<ReligionSpreads/>
 			<CorporationSpreads/>
 			<GreatPeoples/>
-			<Buildings>
-				<Building>
-					<BuildingType>BUILDING_HERBARY</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-			</Buildings>
+			<Buildings/>
 			<ForceBuildings/>
 			<HolyCity>NONE</HolyCity>
 			<ReligionType>NONE</ReligionType>
@@ -4130,12 +4125,7 @@
 			<ReligionSpreads/>
 			<CorporationSpreads/>
 			<GreatPeoples/>
-			<Buildings>
-				<Building>
-					<BuildingType>BUILDING_HERBARY</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-			</Buildings>
+			<Buildings/>
 			<ForceBuildings/>
 			<HolyCity>NONE</HolyCity>
 			<ReligionType>NONE</ReligionType>

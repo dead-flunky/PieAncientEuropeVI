@@ -1863,22 +1863,23 @@ def doUnitSupply(pCity, iPlayer):
 				# Betrifft Einheiten
 				iJumpedOut = 0
 				for iI in range(iMaintainUnits):
-						pUnit = lUnitsAll[iI]
-						# Unit nicht mehr killen (Weihnachtsbonus :D ab 7.12.2012)
-						iDamage = pUnit.getDamage()
-						if iDamage < 70:
-								pUnit.changeDamage(30, False)
-								if gc.getPlayer(pUnit.getOwner()).isHuman():
-										CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_CITY",
-																																															 (pCity.getName(), pUnit.getName(), 30)), None, 2, None, ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
-						else:
-								iJumpedOut += 1
-								if pUnit.getDamage() < 85:
-										pUnit.setDamage(85, pUnit.getOwner())
-								pUnit.jumpToNearestValidPlot()
-								if gc.getPlayer(pUnit.getOwner()).isHuman():
-										CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
-																																															 (pCity.getName(), pUnit.getName())), None, 2, pUnit.getButton(), ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
+						if iI < len(lUnitsAll):
+								pUnit = lUnitsAll[iI]
+								# Unit nicht mehr killen (Weihnachtsbonus :D ab 7.12.2012)
+								iDamage = pUnit.getDamage()
+								if iDamage < 70:
+										pUnit.changeDamage(30, False)
+										if gc.getPlayer(pUnit.getOwner()).isHuman():
+												CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_NOSUPPLY_CITY",
+												(pCity.getName(), pUnit.getName(), 30)), None, 2, None, ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
+								else:
+										iJumpedOut += 1
+										if pUnit.getDamage() < 85:
+												pUnit.setDamage(85, pUnit.getOwner())
+										pUnit.jumpToNearestValidPlot()
+										if gc.getPlayer(pUnit.getOwner()).isHuman():
+												CyInterface().addMessage(pUnit.getOwner(), True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
+												(pCity.getName(), pUnit.getName())), None, 2, pUnit.getButton(), ColorTypes(12), pUnit.getX(), pUnit.getY(), True, True)
 
 				# Wenn die Stadt durch Buildings stark heilt
 				if iJumpedOut == 0:
@@ -1887,11 +1888,12 @@ def doUnitSupply(pCity, iPlayer):
 								iAnzahl = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
 								#lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:iAnzahl]
 								for iI in range(iAnzahl):
-										pUnit = lUnitsAll[iI]
-										pUnit.jumpToNearestValidPlot()
-										if pPlayer.isHuman():
-												CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
-																																																		(pCity.getName(), pUnit.getName())), "AS2D_STRIKE", 2, pUnit.getButton(), ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
+										if iI < len(lUnitsAll):
+												pUnit = lUnitsAll[iI]
+												pUnit.jumpToNearestValidPlot()
+												if pPlayer.isHuman():
+														CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",
+														(pCity.getName(), pUnit.getName())), "AS2D_STRIKE", 2, pUnit.getButton(), ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 
 
 def doJewRevolt(pCity):
