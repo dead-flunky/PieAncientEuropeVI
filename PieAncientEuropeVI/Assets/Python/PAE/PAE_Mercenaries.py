@@ -809,6 +809,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 		pPlayerCiv = gc.getCivilizationInfo(pPlayer.getCivilizationType())
 		sFaktor = str(iFaktor)
 		iCost = 0
+		iImmobile = 1
 		# iSize = 0
 
 		# PAEInstanceHiringModifier per turn
@@ -827,10 +828,13 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 		# size
 		if sFaktor[2] == "2":
 				iCost += 150
+				iImmobile += 1
 		elif sFaktor[2] == "3":
 				iCost += 300
+				iImmobile += 2
 		elif sFaktor[2] == "4":
 				iCost += 400
+				iImmobile += 1
 
 		# inter/national/elite units
 		if sFaktor[3] == "1":
@@ -1310,14 +1314,14 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 										NewUnit.setHasPromotion(iPromo2, False)
 										# Unit Rang / Unit ranking
 										doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-										NewUnit.setImmobileTimer(2)
+										NewUnit.setImmobileTimer(iImmobile)
 										ScriptUnit.append(NewUnit)
 								# Goldkarren
 								eGoldkarren = gc.getInfoTypeForString("UNIT_GOLDKARREN")
 								NewUnit = CvUtil.spawnUnit(eGoldkarren, CivPlots[iPlot], pBarbPlayer)
-								NewUnit.setImmobileTimer(2)
+								NewUnit.setImmobileTimer(iImmobile)
 								NewUnit = CvUtil.spawnUnit(eGoldkarren, CivPlots[iPlot], pBarbPlayer)
-								NewUnit.setImmobileTimer(2)
+								NewUnit.setImmobileTimer(iImmobile)
 
 						# standard units
 						else:
@@ -1327,7 +1331,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 												ScriptUnit.append(NewUnit)
 								if iAnzAxe > 0:
 										for _ in range(iAnzAxe):
@@ -1335,7 +1339,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 												ScriptUnit.append(NewUnit)
 								if iAnzSword > 0 and iUnitSword != -1:
 										for _ in range(iAnzSword):
@@ -1343,7 +1347,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 												ScriptUnit.append(NewUnit)
 								if iAnzArcher > 0:
 										for _ in range(iAnzArcher):
@@ -1351,20 +1355,20 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 								if iAnzSlinger > 0:
 										for _ in range(iAnzSlinger):
 												NewUnit = pBarbPlayer.initUnit(iUnitSlinger, CivPlots[iPlot].getX(), CivPlots[iPlot].getY(), UnitAI_Type, DirectionTypes.DIRECTION_SOUTH)
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 								if iAnzSiege > 0 and iUnitSiege != -1:
 										for _ in range(iAnzSiege):
 												NewUnit = pBarbPlayer.initUnit(iUnitSiege, CivPlots[iPlot].getX(), CivPlots[iPlot].getY(), UnitAITypes.UNITAI_ATTACK_CITY, DirectionTypes.DIRECTION_SOUTH)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 
 								# Vessels / Naval units : get land unit
 								if iAnzShip1 > 0 or iAnzShip2 > 0:
@@ -1380,7 +1384,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 												NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 
 												# Cargo
 												iRand = CvUtil.myRandom(len(lUnit), "doCommissionMercenaries3")
@@ -1394,7 +1398,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 														NewUnit.setHasPromotion(iPromo, True)
 												# Unit Rang / Unit ranking
 												doMercenaryRanking(NewUnit, iMinRanking, iMaxRanking)
-												NewUnit.setImmobileTimer(2)
+												NewUnit.setImmobileTimer(iImmobile)
 
 												# Cargo
 												iRand = CvUtil.myRandom(len(lUnit), "doCommissionMercenaries4")
@@ -1404,7 +1408,7 @@ def doCommissionMercenaries(iTargetPlayer, iFaktor, iPlayer):
 								# Goldkarren bei Landeinheiten
 								if not CivPlots[iPlot].isWater():
 										NewUnit = CvUtil.spawnUnit(gc.getInfoTypeForString("UNIT_GOLDKARREN"), CivPlots[iPlot], pBarbPlayer)
-										NewUnit.setImmobileTimer(2)
+										NewUnit.setImmobileTimer(iImmobile)
 
 						# Plot anzeigen
 						CivPlots[iPlot].setRevealed(gc.getPlayer(iPlayer).getTeam(), 1, 0, -1)

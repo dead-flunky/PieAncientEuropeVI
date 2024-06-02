@@ -33,52 +33,6 @@ if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_BARBARIANS):
 if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_RAGING_BARBARIANS):
 		bRageBarbs = True
 
-lNumHistoryTexts = {
-		-3480: 4,
-		-3000: 5,
-		-2680: 4,
-		-2000: 6,
-		-1680: 5,
-		-1480: 7,
-		-1280: 5,
-		-1200: 6,
-		-1000: 5,
-		-800: 6,
-		-750: 3,
-		-700: 6,
-		-615: 5,
-		-580: 5,
-		-540: 4,
-		-510: 5,
-		-490: 5,
-		-450: 4,
-		-400: 5,
-		-350: 7,
-		-330: 4,
-		-260: 3,
-		-230: 5,
-		-215: 4,
-		-200: 4,
-		-150: 5,
-		-120: 2,
-		-100: 2,
-		-70: 3,
-		-50: 2,
-		-30: 2,
-		-20: 2,
-		-10: 3,
-		10: 3,
-		60: 4,
-		90: 3,
-		130: 3,
-		210: 3,
-		250: 2,
-		280: 2,
-		370: 2,
-		400: 2,
-		440: 3,
-}
-
 # ------ Handelsposten erzeugen Kultur (PAE V Patch 3: und wieder Forts/Festungen)
 # ------ Berberloewen erzeugen
 # ------ Wildpferde, Wildelefanten, Wildkamele ab PAE V
@@ -692,9 +646,53 @@ def doSeewind():
 												else:
 														break
 
-
-def doHistory():
 		"""++++++++++++++++++ Historische Texte ++++++++++++++++++++++++++++++++++++++++++++++"""
+def doHistory():
+		lNumHistoryTexts = {
+		-3480: 4,
+		-3000: 5,
+		-2680: 4,
+		-2000: 6,
+		-1680: 5,
+		-1480: 7,
+		-1280: 5,
+		-1200: 6,
+		-1000: 5,
+		-800: 6,
+		-750: 3,
+		-700: 6,
+		-615: 5,
+		-580: 5,
+		-540: 4,
+		-510: 5,
+		-490: 5,
+		-450: 4,
+		-400: 5,
+		-350: 7,
+		-330: 4,
+		-260: 3,
+		-230: 5,
+		-215: 4,
+		-200: 4,
+		-150: 5,
+		-120: 2,
+		-100: 2,
+		-70: 3,
+		-50: 2,
+		-30: 2,
+		-20: 2,
+		-10: 3,
+		10: 3,
+		60: 4,
+		90: 3,
+		130: 3,
+		210: 3,
+		250: 2,
+		280: 2,
+		370: 2,
+		400: 2,
+		440: 3,
+		}
 		iGameYear = gc.getGame().getGameTurnYear()
 		# txts = 0
 		if iGameYear in lNumHistoryTexts:
