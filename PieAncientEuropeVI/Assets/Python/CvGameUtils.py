@@ -177,8 +177,8 @@ class CvGameUtils:
 																		if eBonus != -1:
 																				iImprovement = loopPlot.getImprovementType()
 																				# or not loopPlot.isConnectedToCapital(iPlayer)
-																				if (iImprovement == -1 or 
-																						not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity() or 
+																				if (iImprovement == -1 or
+																						not gc.getImprovementInfo(iImprovement).isImprovementBonusTrade(eBonus) and not gc.getImprovementInfo(iImprovement).isActsAsCity() or
 																						not loopPlot.isBonusNetwork(pPlayer.getTeam())
 																				):
 																						CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1)
