@@ -412,7 +412,7 @@ def doReligionsKonflikt(pCity):
 						if pCity.isHasReligion(i):
 								LOtherReligions.append(i)
 
-				if len(LOtherReligions) > 0:
+				if LOtherReligions:
 						pCity.changeOccupationTimer(1)
 						if pPlayer.isHuman():
 								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_RELIGIONSKONFLIKT_2", (pCity.getName(),)),
