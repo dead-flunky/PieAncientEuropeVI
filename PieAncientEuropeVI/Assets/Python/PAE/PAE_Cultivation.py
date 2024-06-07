@@ -769,7 +769,7 @@ def _isBonusCultivableInRealm(iPlayer, eBonus):
 		pPlayer = gc.getPlayer(iPlayer)
 		(loopCity, pIter) = pPlayer.firstCity(False)
 		while loopCity:
-				if loopCity is not None and not loopCity.isNone() and loopCity.getOwner() == pPlayer.getID():
+				if not loopCity.isNone() and loopCity.getOwner() == pPlayer.getID():
 						for iI in range(gc.getNUM_CITY_PLOTS()):
 								pLoopPlot = loopCity.getCityIndexPlot(iI)
 								if pLoopPlot is not None and not pLoopPlot.isNone():
