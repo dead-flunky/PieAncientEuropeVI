@@ -1637,7 +1637,7 @@ def _getBestCity4Trade(pUnit, iPlayer):
 		while loopCity:
 				if not loopCity.isNone():
 						lBonuses = getCitySaleableGoods(loopCity, -1)
-						if len(lBonuses) > 0:
+						if lBonuses:
 
 								if bWater and loopCity.isCoastal(4):
 										iLoopCityDistance = plotDistance(pUnitPlot.getX(), pUnitPlot.getY(), loopCity.getX(), loopCity.getY()) - 1
