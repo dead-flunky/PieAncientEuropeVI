@@ -33,6 +33,7 @@ import PAE_Lists as L
 
 # globals
 gc = CyGlobalContext()
+localText = CyTranslator()
 PyPlayer = PyHelpers.PyPlayer
 PyInfo = PyHelpers.PyInfo
 PyCity = PyHelpers.PyCity
@@ -202,7 +203,7 @@ class CvGameUtils:
 										if bSlave:
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if loopCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_STADT")):
 																		if not loopCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")):
 																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
@@ -303,7 +304,7 @@ class CvGameUtils:
 														(loopCity, pIter) = pPlayer.firstCity(False)
 														while loopCity:
 																#loopCity = pHeadSelectedUnit.plot().getWorkingCity()
-																if loopCity is not None and not loopCity.isNone() and loopCity.getOwner() == pPlayer.getID():
+																if not loopCity.isNone() and loopCity.getOwner() == pPlayer.getID():
 																		for iI in range(gc.getNUM_CITY_PLOTS()):
 																				pLoopPlot = loopCity.getCityIndexPlot(iI)
 																				if pLoopPlot is not None and not pLoopPlot.isNone():
@@ -311,13 +312,12 @@ class CvGameUtils:
 																								CyEngine().addColoredPlotAlt(pLoopPlot.getX(), pLoopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_TECH_GREEN", 1)
 																						elif eBonus not in L.LBonusPlantation:
 																								lPlots = PAE_Cultivation.getCityCultivatedPlots(loopCity, eBonus)
-																								if lPlots and len(lPlots):
-																										for p in lPlots:
-																												ePlotBonus = p.getBonusType(pHeadSelectedUnit.getOwner())
-																												if ePlotBonus in L.LBonusCorn and eBonus in L.LBonusCorn or ePlotBonus in L.LBonusLivestock and eBonus in L.LBonusLivestock:
-																														CyEngine().addColoredPlotAlt(p.getX(), p.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_YIELD_FOOD", 1)
-																												else:
-																														CyEngine().addColoredPlotAlt(p.getX(), p.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_PALE_RED", 1)
+																								for p in lPlots:
+																										ePlotBonus = p.getBonusType(pHeadSelectedUnit.getOwner())
+																										if ePlotBonus in L.LBonusCorn and eBonus in L.LBonusCorn or ePlotBonus in L.LBonusLivestock and eBonus in L.LBonusLivestock:
+																												CyEngine().addColoredPlotAlt(p.getX(), p.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_YIELD_FOOD", 1)
+																										else:
+																												CyEngine().addColoredPlotAlt(p.getX(), p.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_PALE_RED", 1)
 																		#pBestPlot = PAE_Cultivation.AI_bestCultivation(loopCity, 0, eBonus)
 																		# if pBestPlot:
 																		#    CyEngine().addColoredPlotAlt(pBestPlot.getX(), pBestPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_HIGHLIGHT_TEXT", 1.0)
@@ -375,7 +375,7 @@ class CvGameUtils:
 										iBuilding7 = gc.getInfoTypeForString("BUILDING_TRIUMPH")
 										(loopCity, pIter) = pPlayer.firstCity(False)
 										while loopCity:
-												if loopCity is not None and not loopCity.isNone():
+												if not loopCity.isNone():
 														if pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding1):
 																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
 														elif pHeadSelectedUnit.canConstruct(loopCity.plot(), iBuilding2):
@@ -400,7 +400,7 @@ class CvGameUtils:
 												iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if loopCity.isHasBuilding(iBuilding1) and not loopCity.isHasBuilding(iBuilding2):
 																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -410,7 +410,7 @@ class CvGameUtils:
 										iBuilding = gc.getInfoTypeForString("BUILDING_MARTYRION")
 										(loopCity, pIter) = pPlayer.firstCity(False)
 										while loopCity:
-												if loopCity is not None and not loopCity.isNone():
+												if not loopCity.isNone():
 														if not loopCity.isHasBuilding(iBuilding):
 																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -421,7 +421,7 @@ class CvGameUtils:
 										if iBuilding != -1:
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if not loopCity.isHasBuilding(iBuilding):
 																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -433,7 +433,7 @@ class CvGameUtils:
 										if iReligion != -1:
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if not loopCity.isHasReligion(iReligion):
 																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -448,7 +448,7 @@ class CvGameUtils:
 																if pVassalTeam.isVassal(iPlayerTeam):
 																		(loopCity, pIter) = pVassal.firstCity(False)
 																		while loopCity:
-																				if loopCity is not None and not loopCity.isNone():
+																				if not loopCity.isNone():
 																						if not loopCity.isHasReligion(iReligion):
 																								CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 																				(loopCity, pIter) = pVassal.nextCity(pIter, False)
@@ -457,7 +457,7 @@ class CvGameUtils:
 										if iKult != -1:
 												(loopCity, pIter) = pPlayer.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if not loopCity.isHasCorporation(iKult):
 																		CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -472,7 +472,7 @@ class CvGameUtils:
 																if pVassalTeam.isVassal(iPlayerTeam):
 																		(loopCity, pIter) = pVassal.firstCity(False)
 																		while loopCity:
-																				if loopCity is not None and not loopCity.isNone():
+																				if not loopCity.isNone():
 																						if not loopCity.isHasCorporation(iKult):
 																								CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_WHITE", 1)
 																				(loopCity, pIter) = pVassal.nextCity(pIter, False)
@@ -484,7 +484,7 @@ class CvGameUtils:
 
 										(loopCity, pIter) = pPlayer.firstCity(False)
 										while loopCity:
-												if loopCity is not None and not loopCity.isNone():
+												if not loopCity.isNone():
 														if loopCity.isCapital() or loopCity.isHasBuilding(iBuilding) or loopCity.isHasBuilding(iBuilding2):
 																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
 												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -497,7 +497,7 @@ class CvGameUtils:
 
 										(loopCity, pIter) = pPlayer.firstCity(False)
 										while loopCity:
-												if loopCity is not None and not loopCity.isNone():
+												if not loopCity.isNone():
 														if loopCity.isHasBuilding(iBuilding):
 																CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
 														# elif loopCity.canConstruct (iBuilding, False, False, True):
@@ -517,7 +517,7 @@ class CvGameUtils:
 
 														(loopCity, pIter) = pPlayer.firstCity(False)
 														while loopCity:
-																if loopCity is not None and not loopCity.isNone():
+																if not loopCity.isNone():
 																		if loopCity.isHasBuilding(iBuilding1) or loopCity.isHasBuilding(iBuilding2):
 																				CyEngine().addColoredPlotAlt(loopCity.getX(), loopCity.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1)
 																(loopCity, pIter) = pPlayer.nextCity(pIter, False)
@@ -2352,7 +2352,7 @@ class CvGameUtils:
 												iBuilding2 = gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")
 												(loopCity, pIter) = pOwner.firstCity(False)
 												while loopCity:
-														if loopCity is not None and not loopCity.isNone():
+														if not loopCity.isNone():
 																if loopCity.isHasBuilding(iBuilding1) and not loopCity.isHasBuilding(iBuilding2):
 																		loopCity.setNumRealBuilding(iBuilding2, 1)
 																		pUnit.kill(True, -1)
@@ -2736,6 +2736,17 @@ class CvGameUtils:
 
 		def getWidgetHelp(self, argsList):
 				eWidgetType, iData1, iData2, bOption = argsList
+				
+				# PB Mod
+				if iData1 == 302016:
+						return localText.getText("TXT_KEY_MOD_UNPAUSE_DESC", ())
+				if iData1 == 47292:
+						if iData2 == 1:
+								return localText.getText("TXT_KEY_MOD_F9_DESELECT_OPPONENTS", ())
+						if iData2 == 2:
+								return localText.getText("TXT_KEY_MOD_F9_SELECT_ALL", ())
+						if iData2 == 3:
+								return localText.getText("TXT_KEY_MOD_F9_SELECT_BY_F4", ())
 
 ## ---------------------- ##
 ##   Platy WorldBuilder   ##
@@ -3702,7 +3713,7 @@ class CvGameUtils:
 												if pUnit.plot().getArea() == loopCity.plot().getArea():
 														#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, u"Schritt 3: CultivationCheck - " + loopCity.getName(), None, 2, None, ColorTypes(10), 0, 0, False, False)
 														lPlotsCheck = PAE_Cultivation.getCityCultivatablePlots(loopCity, eBonus)
-														if len(lPlotsCheck):
+														if lPlotsCheck:
 																iDistanceCheck = CyMap().calculatePathDistance(pUnit.plot(), loopCity.plot())
 																if iDistanceCheck != -1 and iDistanceCheck < iDistance:
 																		iDistance = iDistanceCheck
@@ -3710,7 +3721,7 @@ class CvGameUtils:
 																		lPlots = lPlotsCheck
 										(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
-								if pCity != None and len(lPlots):
+								if pCity is not None and lPlots:
 										iRand = CvUtil.myRandom(len(lPlots), "GameUtils_doSpreadStrategicBonus_AI")
 										pPlot = lPlots[iRand]
 
@@ -3724,41 +3735,41 @@ class CvGameUtils:
 														pUnit.kill(True, -1)
 														#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, u"Schritt 5: doCultivateBonus", None, 2, None, ColorTypes(10), 0, 0, False, False)
 												return True
-								"""
-								# wenn keine Stadt gefunden wurde: Bonusgut mit dem meisten Bonusgut ersetzen
-								# aber nur, wenn AI keins oder nur 1 davon besitzt
-								# Bonus checken
-								iNum = pPlayer.countOwnedBonuses(eBonus)
-								if iNum < 2:
-										iErsetzeBonus = -1
-										for B in  L.LBonusStratCultivatable:
-												if eBonus != B:
-													iCheck = pPlayer.countOwnedBonuses(B)
-													if iCheck > iNum:
-															iNum = iCheck
-															iErsetzeBonus = B
-										# Stadt aussuchen
-										if iErsetzeBonus != -1:
-												(loopCity, pIter) = pPlayer.firstCity(False)
-												while loopCity:
-														if loopCity.isHasBuilding(eCityStatus):
-															if not loopCity.isHasBuilding(eBuilding):
-
-																bOK = False
-																lPlots = PAE_Cultivation.getCityCultivatedPlots(loopCity, iErsetzeBonus)
-																if len(lPlots):
-																	for p in lPlots:
-																		if p.getBonusType(-1) == iErsetzeBonus:
-																			if PAE_Cultivation._bonusIsCultivatableFromCity(iOwner, loopCity, eBonus, False):
-																					p.setBonusType(-1)
-																					p.setImprovementType(-1)
-																					loopCity.setNumRealBuilding(eBuilding, 1)
-																					PAE_Cultivation.doBuildingCultivate(loopCity, eBuilding)
-																					pUnit.kill(True, -1)
-																					return True
-
-														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
-								"""
+								
+								## wenn keine Stadt gefunden wurde: Bonusgut mit dem meisten Bonusgut ersetzen
+								## aber nur, wenn AI keins oder nur 1 davon besitzt
+								## Bonus checken
+								#iNum = pPlayer.countOwnedBonuses(eBonus)
+								#if iNum < 2:
+								#		iErsetzeBonus = -1
+								#		for B in  L.LBonusStratCultivatable:
+								#				if eBonus != B:
+								#					iCheck = pPlayer.countOwnedBonuses(B)
+								#					if iCheck > iNum:
+								#							iNum = iCheck
+								#							iErsetzeBonus = B
+								#		# Stadt aussuchen
+								#		if iErsetzeBonus != -1:
+								#				(loopCity, pIter) = pPlayer.firstCity(False)
+								#				while loopCity:
+								#						if loopCity.isHasBuilding(eCityStatus):
+								#							if not loopCity.isHasBuilding(eBuilding):
+								#
+								#								bOK = False
+								#								lPlots = PAE_Cultivation.getCityCultivatedPlots(loopCity, iErsetzeBonus)
+								#								if len(lPlots):
+								#									for p in lPlots:
+								#										if p.getBonusType(-1) == iErsetzeBonus:
+								#											if PAE_Cultivation._bonusIsCultivatableFromCity(iOwner, loopCity, eBonus, False):
+								#													p.setBonusType(-1)
+								#													p.setImprovementType(-1)
+								#													loopCity.setNumRealBuilding(eBuilding, 1)
+								#													PAE_Cultivation.doBuildingCultivate(loopCity, eBuilding)
+								#													pUnit.kill(True, -1)
+								#													return True
+								#
+								#						(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+								
 								# wenn gar nix geht, Unit verkaufen
 								iRand = CvUtil.myRandom(10, "GameUtils_doSpreadStrategicBonus_AI_sellHorse")
 								if iRand == 1:
@@ -3950,10 +3961,10 @@ class CvGameUtils:
 						return 10
 				elif iUnitType == gc.getInfoTypeForString("UNIT_CHRISTIAN_MISSIONARY"):
 						return 11
-				elif iUnitType == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
-						return 12
-				elif iUnitType == gc.getInfoTypeForString("UNIT_ORTHODOX_MISSIONARY"):
-						return 13
+				#elif iUnitType == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
+				#		return 12
+				#elif iUnitType == gc.getInfoTypeForString("UNIT_ORTHODOX_MISSIONARY"):
+				#		return 13
 				elif iUnitType == gc.getInfoTypeForString("UNIT_ISLAMIC_MISSIONARY"):
 						return 14
 				return -1
@@ -3997,7 +4008,7 @@ class CvGameUtils:
 
 				(loopCity, pIter) = pPlayer.firstCity(False)
 				while loopCity:
-						if loopCity is not None and not loopCity.isNone():
+						if not loopCity.isNone():
 								if not loopCity.isHasReligion(iReligion):
 
 										# mission automatically
@@ -4017,7 +4028,7 @@ class CvGameUtils:
 								if pVassalTeam.isVassal(iPlayerTeam):
 										(loopCity, pIter) = pVassal.firstCity(False)
 										while loopCity:
-												if loopCity is not None and not loopCity.isNone():
+												if not loopCity.isNone():
 														if not loopCity.isHasReligion(iReligion):
 
 																# mission automatically
