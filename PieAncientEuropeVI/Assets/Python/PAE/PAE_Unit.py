@@ -1709,11 +1709,10 @@ def doMobiliseFortifiedArmy(pCity):
 				if pCity.isCapital():
 						(pUnit, pIter) = pPlayer.firstUnit(False)
 						while pUnit:
-								if pUnit is not None:
-										pUnit.setHasPromotion(iPromoFort, False)
-										pUnit.setHasPromotion(iPromoFort2, False)
-										pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, iX, iY, 0, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
-										(pUnit, pIter) = pPlayer.nextUnit(pIter, False)
+								pUnit.setHasPromotion(iPromoFort, False)
+								pUnit.setHasPromotion(iPromoFort2, False)
+								pUnit.getGroup().pushMission(MissionTypes.MISSION_MOVE_TO, iX, iY, 0, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
+								(pUnit, pIter) = pPlayer.nextUnit(pIter, False)
 				else:
 						iCityOwner = pCity.getOwner()
 						iRange = 4  # Radius
@@ -1724,7 +1723,7 @@ def doMobiliseFortifiedArmy(pCity):
 												iRange2 = loopPlot.getNumUnits()
 												for iLoopUnit in range(iRange2):
 														pUnit = loopPlot.getUnit(iLoopUnit)
-														if pUnit is not None:
+														if pUnit:
 																if pUnit.getOwner() == iCityOwner:
 																		pUnit.setHasPromotion(iPromoFort, False)
 																		pUnit.setHasPromotion(iPromoFort2, False)
@@ -3911,10 +3910,10 @@ def initUnitFromUnit(pOldUnit, pNewUnit):
 		return pNewUnit
 
 
-def TrojanHorsePossible(g_pSelectedUnit):
-		iX = g_pSelectedUnit.getX()
-		iY = g_pSelectedUnit.getY()
-		iUnitOwner = g_pSelectedUnit.getOwner()
+def TrojanHorsePossible(pUnit):
+		iX = pUnit.getX()
+		iY = pUnit.getY()
+		iUnitOwner = pUnit.getOwner()
 		for iI in range(DirectionTypes.NUM_DIRECTION_TYPES):
 				loopPlot = plotDirection(iX, iY, DirectionTypes(iI))
 				if loopPlot is not None and not loopPlot.isNone():
