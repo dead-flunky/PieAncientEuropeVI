@@ -2766,9 +2766,12 @@ class CvEventManager:
 				# PAE 6.16: Triggering PAE events
 				iEvent = -1
 				iRand = CvUtil.myRandom(20, "Trigger PAE Sumpf Events")
-				if iRand < 3: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOOR")
-				elif iRand < 5: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO")
-				elif iRand < 10: iEvent = gc.getInfoTypeForString("EVENTTRIGGER_BORDELL")
+				if iRand < 3:
+						iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOOR")
+				elif iRand < 5:
+						iEvent = gc.getInfoTypeForString("EVENTTRIGGER_MOORPROMO")
+				elif iRand < 10:
+						iEvent = gc.getInfoTypeForString("EVENTTRIGGER_BORDELL")
 				if iEvent != -1: 
 						pPlayer.trigger(iEvent)
 						pPlayer.resetEventOccured(iEvent)
