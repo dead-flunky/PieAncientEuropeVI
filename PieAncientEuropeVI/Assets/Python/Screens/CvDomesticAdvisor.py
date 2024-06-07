@@ -978,7 +978,7 @@ class CvDomesticAdvisor:
 								szText = u"%d" % iAnz
 						else:
 								PossiblePlots = PAE_Cultivation.getCityCultivatablePlots(pLoopCity, eBonus)
-								if len(PossiblePlots):
+								if PossiblePlots:
 										if gc.getPlayer(pLoopCity.getOwner()).hasBonus(eBonus):
 												szText = localText.getText("TXT_KEY_COLOR_POSITIVE", ()) + u"0" + localText.getText("TXT_KEY_COLOR_REVERT", ())
 										else:
