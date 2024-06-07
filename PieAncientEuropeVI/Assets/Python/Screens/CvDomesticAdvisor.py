@@ -6,7 +6,7 @@ from CvPythonExtensions import (CyGlobalContext, CyArtFileMgr, CyTranslator,
 																CyGInterfaceScreen, CommerceTypes, CyMessageControl,
 																PopupStates, ButtonPopupTypes, CyPopupInfo,
 																ButtonStyles, FontSymbols, ControlTypes,
-																YieldTypes, TableStyles)
+																YieldTypes, TableStyles, ChatTargetTypes)
 import CvUtil
 # import ScreenInput
 import CvScreenEnums
@@ -90,6 +90,8 @@ class CvDomesticAdvisor:
 				screen.addPanel("DomesticAdvisorBG", u"", u"", True, False, 0, 0, self.nScreenWidth, self.nScreenHeight, PanelStyles.PANEL_STYLE_MAIN)
 				screen.setText("DomesticExit", "Background", u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY,
 											 self.nScreenWidth - 25, self.nScreenHeight - 45, -0.1, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1)
+				# PB Mod Unpause MOD
+				screen.setText("DomesticUnpause", "Background", localText.getText("TXT_KEY_MOD_UNPAUSE", ()).upper(), CvUtil.FONT_LEFT_JUSTIFY, 25, self.nScreenHeight - 45, -0.1, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, 301311, 2013 )
 
 				# PAE: Page 2 for Slave Buildings
 				# PAE: Page 3 for Cultivation
@@ -1518,6 +1520,18 @@ class CvDomesticAdvisor:
 										CyCamera().JustLookAtPlot(pUnit.plot())
 										CyInterface().selectUnit(pUnit, True, True, True)
 										self.getScreen().hideScreen()
+						 
+						#PB Mod - Remove Pause
+						if inputClass.getData1() == 301311:
+							if gc.getGame().isPaused() and not CyGame().isPitbossHost():
+								# Cause crash on PB server is host os is Linux
+								#gc.sendPause(-1)
+								# Workaround.
+								gc.sendChat("RemovePause", ChatTargetTypes.CHATTARGET_ALL)
+								screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
+								screen.hideScreen()
+						
+						
 
 				return 0
 
