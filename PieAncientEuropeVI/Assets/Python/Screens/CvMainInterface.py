@@ -5,20 +5,20 @@
 # import time
 
 from CvPythonExtensions import (CyGlobalContext, CyArtFileMgr, CyTranslator,
-																CyUserProfile, PlayerOptionTypes, WidgetTypes,
-																ControlTypes, DomainTypes, CommerceTypes,
-																CyInterface, CyGInterfaceScreen, ButtonStyles,
-																InterfaceVisibility, CyMessageControl, CyGame,
-																TableStyles, CyEngine, CyAudioGame, HitTestTypes,
-																InterfaceModeTypes, MissionTypes,
-																isLimitedWonderClass, InfoBarTypes,
-																ActivityTypes, PanelStyles, FontTypes,
-																GameOptionTypes, PopupStates, CyGameTextMgr,
-																FontSymbols, OrderTypes, MultiplayerOptionTypes,
-																InterfaceDirtyBits, NotifyCode,
-																CyGlobeLayerManager, YieldTypes,
-																EndTurnButtonStates, getClockText,
-																CultureLevelTypes, CityTabTypes)
+								CyUserProfile, PlayerOptionTypes, WidgetTypes,
+								ControlTypes, DomainTypes, CommerceTypes,
+								CyInterface, CyGInterfaceScreen, ButtonStyles,
+								InterfaceVisibility, CyMessageControl, CyGame,
+								TableStyles, CyEngine, CyAudioGame, HitTestTypes,
+								InterfaceModeTypes, MissionTypes,
+								isLimitedWonderClass, InfoBarTypes,
+								ActivityTypes, PanelStyles, FontTypes,
+								GameOptionTypes, PopupStates, CyGameTextMgr,
+								FontSymbols, OrderTypes, MultiplayerOptionTypes,
+								InterfaceDirtyBits, NotifyCode,
+								CyGlobeLayerManager, YieldTypes,
+								EndTurnButtonStates, getClockText,
+								CultureLevelTypes, CityTabTypes)
 
 import CvUtil
 # import ScreenInput
@@ -222,6 +222,11 @@ class CvMainInterface:
 
 				# PAE Taxes Bar
 				self.bHideTaxes = False
+
+				# PBMod
+				self.diploScreenDirty = True
+				self.diploScreenActive = False
+				self.pauseActive = CyGame().isPaused()
 
 		def numPlotListButtons(self):
 				return self.m_iNumPlotListButtons
@@ -1077,7 +1082,27 @@ class CvMainInterface:
 						# python as default.)
 						CvEventInterface.getEventManager().onUpdate((0.0,))
 				# PAE - River tiles end
-
+				"""
+				PB Mod
+				Add unpause button if diplo screen is open.
+				It's important to redraw the button just if the state
+				changes. Otherwise (drawing every frame) the click event
+				does not work.
+				"""
+				if(CyGame().isDiploScreenUp() != self.diploScreenActive
+					or CyGame().isPaused() != self.pauseActive):
+					self.diploScreenDirty = True
+					self.diploScreenActive = CyGame().isDiploScreenUp()
+					self.pauseActive = CyGame().isPaused()
+		
+				if self.diploScreenDirty:
+					self.diploScreenDirty = False
+					if gc.getGame().isPaused() and CyGame().isDiploScreenUp():
+						screen.setButtonGFC("DiploScreenUnpauseBtn", localText.getText("TXT_KEY_MOD_UNPAUSE", ()), "",
+								screen.centerX(512)-100, screen.centerY(384)+370, 200, 20, WidgetTypes.WIDGET_GENERAL,
+								302016, -1, ButtonStyles.BUTTON_STYLE_LABEL )
+					else:
+						screen.hide("DiploScreenUnpauseBtn")
 				return 0
 
 		# Will update the percent buttons
@@ -1972,12 +1997,12 @@ class CvMainInterface:
 								if pHeadSelectedUnit.getOwner() == gc.getGame().getActivePlayer() and g_pSelectedUnit != pHeadSelectedUnit:
 
 										g_pSelectedUnit = pHeadSelectedUnit
-										pTeam = gc.getTeam(gc.getPlayer(g_pSelectedUnit.getOwner()).getTeam())
+										pTeam = gc.getTeam(gc.getPlayer(pHeadSelectedUnit.getOwner()).getTeam())
 										iCount = 0
 										actions = CyInterface().getActionsToShow()
 										for i in actions:
 
-												if g_pSelectedUnit.getUnitType() == gc.getInfoTypeForString("UNIT_WORKER"):
+												if pHeadSelectedUnit.getUnitType() == gc.getInfoTypeForString("UNIT_WORKER"):
 														# Path (wird obsolet)
 														#if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_PATH"):
 														#		if pTeam.isHasTech(gc.getInfoTypeForString("TECH_THE_WHEEL2")):
@@ -2011,7 +2036,7 @@ class CvMainInterface:
 
 												# PAE V: Aussenhandelsposten fuer HI nur ausserhalb der eigenen Kulturgrenzen baubar
 												# if gc.getActionInfo(i).getMissionData() == gc.getInfoTypeForString("BUILD_HANDELSPOSTEN"):
-												#  if g_pSelectedUnit.plot().getOwner() == g_pSelectedUnit.getOwner():
+												#  if pHeadSelectedUnit.plot().getOwner() == pHeadSelectedUnit.getOwner():
 												#    screen.disableMultiListButton( "BottomButtonContainer", 0, iCount, gc.getActionInfo(i).getButton() )
 
 												iCount += 1
@@ -2029,7 +2054,7 @@ class CvMainInterface:
 												iCount += 1
 
 										############################################ Unit Buttons #############################################
-										pUnit = g_pSelectedUnit
+										pUnit = pHeadSelectedUnit
 										iUnitType = pUnit.getUnitType()
 										iUnitOwner = pUnit.getOwner()
 										pUnitOwner = gc.getPlayer(iUnitOwner)
@@ -2039,9 +2064,10 @@ class CvMainInterface:
 										if pUnitOwner.isTurnActive() or CyGame().isNetworkMultiPlayer():
 												bCapital = False
 												bCity = False
-												if g_pSelectedUnit.plot().isCity():
+												pPlot = pUnit.plot()
+												if pPlot.isCity():
 														bCity = True
-														pCity = g_pSelectedUnit.plot().getPlotCity()
+														pCity = pPlot.getPlotCity()
 														if pCity.getOwner() == iUnitOwner:
 																if (pCity.isCapital() or pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST"))
 																				or pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PRAEFECTUR"))):
@@ -2077,7 +2103,6 @@ class CvMainInterface:
 												# Worker / Schürflager (wird mit Bergbau obsolet)
 												#elif iUnitType == gc.getInfoTypeForString("UNIT_WORKER"):
 												#		if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_MINING")):
-												#				pPlot = pUnit.plot()
 												#				# Build Option: Lager
 												#				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_METAL_SMELTING")):
 												#						if pPlot.getOwner() == pUnit.getOwner():
@@ -2093,7 +2118,6 @@ class CvMainInterface:
 												# --------------------
 												# Hunter / Jaeger -> INFO BUTTON ob Cities in Reichweite sind
 												elif iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
-														pPlot = pUnit.plot()
 
 														# Build Option: Lager
 														#if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HUNTING")):
@@ -2144,7 +2168,6 @@ class CvMainInterface:
 												# --------------------
 												# Donkey/Esel (Button per XML) (not in city)
 												elif iUnitType == gc.getInfoTypeForString("UNIT_ESEL"):
-														pPlot = pUnit.plot()
 														if pPlot.getOwner() == iUnitOwner:
 																# Check plot
 																eBonus = gc.getInfoTypeForString("BONUS_ESEL")
@@ -2158,7 +2181,6 @@ class CvMainInterface:
 												# --------------------
 												# Horse/Pferd (Button per XML) (not in city)
 												elif iUnitType == gc.getInfoTypeForString("UNIT_HORSE"):
-														pPlot = pUnit.plot()
 														if pPlot.getOwner() == iUnitOwner:
 																# Check plot
 																eBonus = gc.getInfoTypeForString("BONUS_HORSE")
@@ -2172,7 +2194,6 @@ class CvMainInterface:
 												# --------------------
 												# Camel/Kamel (not in city)
 												elif iUnitType == gc.getInfoTypeForString("UNIT_CAMEL"):
-														pPlot = pUnit.plot()
 														if pPlot.getOwner() == iUnitOwner:
 																# Check plot
 																eBonus = gc.getInfoTypeForString("BONUS_CAMEL")
@@ -2397,7 +2418,6 @@ class CvMainInterface:
 
 																# Pferd suchen
 																if bSearchPlot:
-																		pPlot = g_pSelectedUnit.plot()
 																		UnitHorse = gc.getInfoTypeForString("UNIT_HORSE")
 																		for iUnit in range(pPlot.getNumUnits()):
 																				if pPlot.getUnit(iUnit).getUnitType() == UnitHorse and pPlot.getUnit(iUnit).getOwner() == iUnitOwner and pPlot.getUnit(iUnit).canMove():
@@ -2419,7 +2439,6 @@ class CvMainInterface:
 												# ------------------
 												# BEGIN Merchant trade/cultivation/collect Bonus (738-741) (Boggy)
 												if pUnit.canMove():  # and not pUnit.hasMoved():
-														pPlot = g_pSelectedUnit.plot()
 														if iUnitType in L.LCultivationUnits + L.LTradeUnits:
 																# if pPlot.getOwner() == iUnitOwner or pPlot.getOwner() != -1 and gc.getTeam(gc.getPlayer(pPlot.getOwner()).getTeam()).isVassal(pUnitOwner.getTeam()):
 																eBonus = CvUtil.getScriptData(pUnit, ["b"], -1)
@@ -2545,9 +2564,8 @@ class CvMainInterface:
 
 												# Goldkarren / Treasure / Beutegold -> in die Hauptstadt / Provinzhauptstadt / Bischofssitz
 												if iUnitType == gc.getInfoTypeForString("UNIT_GOLDKARREN"):
-														pPlot = g_pSelectedUnit.plot()
 														if pPlot.isCity():
-																pCity = g_pSelectedUnit.plot().getPlotCity()
+																pCity = pPlot.getPlotCity()
 																if pCity.getOwner() == pUnit.getOwner():
 																		if bCapital:
 																				# Gold in die Schatzkammer bringen
@@ -2568,7 +2586,7 @@ class CvMainInterface:
 
 												# --------- Einheiten in einer Stadt
 												if bCity and pUnit.canMove():
-														pCity = g_pSelectedUnit.plot().getPlotCity()
+														pCity = pPlot.getPlotCity()
 														# In der eigenen Stadt
 														if pCity.getOwner() == iUnitOwner:
 
@@ -3030,8 +3048,6 @@ class CvMainInterface:
 												# ---- Einheit nicht in der Stadt
 
 														if pUnit.isMilitaryHappiness():
-																pPlot = pUnit.plot()
-
 																# Pillage Road
 																if pPlot.getRouteType() > -1:
 																		if pPlot.getOwner() < 0 or pPlot.getOwner() == iUnitOwner or gc.getTeam(pPlot.getOwner()).isAtWar(pUnitOwner.getTeam()):
@@ -3103,7 +3119,6 @@ class CvMainInterface:
 														elif iUnitType in L.LTradeUnits and pUnit.getDomainType() == DomainTypes.DOMAIN_LAND:
 																# Update: auch in eigenen Grenzen anzeigen (zB fuer Inseln), aber nur wenn nicht bereits was drauf steht
 																# if pUnit.plot().getOwner() == -1:
-																pPlot = pUnit.plot()
 																if not pPlot.isWater():
 																		if pPlot.getOwner() == -1 or (pPlot.getImprovementType() == -1 and pPlot.getOwner() == iUnitOwner):
 																				if pPlot.getBonusType(-1) != -1:
@@ -3115,7 +3130,6 @@ class CvMainInterface:
 																								iCount += 1
 														# Sklaven und Auswanderer ausserhalb der Stadt
 														elif iUnitType == gc.getInfoTypeForString("UNIT_SLAVE") or iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
-																pPlot = pUnit.plot()
 																if pPlot.getOwner() == pUnit.getOwner():
 																		if pPlot.getImprovementType() in L.LVillages:
 																				if pPlot.getUpgradeTimeLeft(pPlot.getImprovementType(), iUnitOwner) > 1:
@@ -3133,7 +3147,7 @@ class CvMainInterface:
 																				iCount += 1
 														# Trojanisches Pferd vor der Stadt
 														elif iUnitType == gc.getInfoTypeForString("UNIT_TROJAN_HORSE"):
-																if PAE_Unit.TrojanHorsePossible(g_pSelectedUnit):
+																if PAE_Unit.TrojanHorsePossible(pHeadSelectedUnit):
 																		# Stadtverteidigung auf 0 setzen
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																				"INTERFACE_TROJAN_HORSE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 697, 697, False)
@@ -3144,7 +3158,6 @@ class CvMainInterface:
 														# Siedler und Auswanderer ausserhalb der Stadt
 														if pTeam.isHasTech(gc.getInfoTypeForString("TECH_HEILKUNDE")):
 																if iUnitType == gc.getInfoTypeForString("UNIT_SETTLER") or iUnitType == gc.getInfoTypeForString("UNIT_EMIGRANT"):
-																		pPlot = pUnit.plot()
 																		if pPlot.getOwner() == pUnit.getOwner():
 																				if pPlot.getImprovementType() == gc.getInfoTypeForString("IMPROVEMENT_VILLAGE"):
 																						screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Actions/button_action_slave2village.dds",
@@ -3162,7 +3175,6 @@ class CvMainInterface:
 												if pUnit.canMove() or bFormationUndo:
 														# PAE V Patch 2: disabled for fights on his own units
 														if not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY")):
-																pPlot = pUnit.plot()
 																iImp = pPlot.getImprovementType()
 																#iFeat = pPlot.getFeatureType()
 																# in Festungen (keine Formationen erlauben, ausser PROMOTION_FORM_FORTRESS)
@@ -3647,7 +3659,6 @@ class CvMainInterface:
 																				iCount += 1
 
 																# Sklaven auf dem Plot -> Moral steigern
-																pPlot = g_pSelectedUnit.plot()
 																bSlaves = False
 																iUnitSlave = gc.getInfoTypeForString("UNIT_SLAVE")
 																for iUnit in range(pPlot.getNumUnits()):
@@ -3679,8 +3690,8 @@ class CvMainInterface:
 																		# nur in einer Stadt mit Holzarena
 																		if pUnit.getLevel() < 3:
 																				bCheck = False
-																				if g_pSelectedUnit.plot().isCity():
-																						pCity = g_pSelectedUnit.plot().getPlotCity()
+																				if pPlot.isCity():
+																						pCity = pPlot.getPlotCity()
 																						# kann auch in einer fremden Stadt gemacht werden (ohne iOwner Check)
 																						if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_ARENA")):
 																								bCheck = True
@@ -3775,23 +3786,22 @@ class CvMainInterface:
 						szName = "ReligionButton" + str(i)
 						screen.hide(szName)
 
-				i = 0
 				if CyInterface().shouldShowResearchButtons() and CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW:
 						iCount = 0
 						for i in range(gc.getNumTechInfos()):
 								if gc.getActivePlayer().canResearch(i, False):
 										if iCount < 20:
+												iCount += 1
 												szName = "ResearchButton" + str(i)
-												bDone = False
 												for j in range(gc.getNumReligionInfos()):
-														if not bDone:
-																if gc.getReligionInfo(j).getTechPrereq() == i:
-																		if not gc.getGame().isReligionSlotTaken(j):
-																				szName = "ReligionButton" + str(j)
-																				bDone = True
+														if gc.getReligionInfo(j).getTechPrereq() == i:
+																if not gc.getGame().isReligionSlotTaken(j):
+																		szName = "ReligionButton" + str(j)
+																		break
 												screen.show(szName)
 												self.setResearchButtonPosition(szName, iCount)
-										iCount += 1
+										else:
+												break
 				return 0
 
 		# SPECIALIST STACKER        05/02/07      JOHNY
@@ -7040,442 +7050,452 @@ class CvMainInterface:
 								return u"%c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR) + u" Stadtstaat"
 
 				# Initialisierung
-				if g_pSelectedUnit:
-						iOwner = g_pSelectedUnit.getOwner()
-						iUnitID = g_pSelectedUnit.getID()
-						pPlot = g_pSelectedUnit.plot()
+				pHeadSelectedUnit = CyInterface().getHeadSelectedUnit()
+				if pHeadSelectedUnit:
+						iOwner = pHeadSelectedUnit.getOwner()
+						iUnitID = pHeadSelectedUnit.getID()
+						pPlot = pHeadSelectedUnit.plot()
 
-				if inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL:
 						if inputClass.getNotifyCode() == 11:
-								iData1 = inputClass.getData1()
-								iData2 = inputClass.getData2()
-								bOption = inputClass.getOption()
+								if inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL:
+										iData1 = inputClass.getData1()
+										iData2 = inputClass.getData2()
+										bOption = inputClass.getOption()
 
-								# Inquisitor
-								if iData1 == 665 and iData2 == 665:
-										CyMessageControl().sendModNetMessage(665, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Inquisitor
+										if iData1 == 665 and iData2 == 665:
+												CyMessageControl().sendModNetMessage(665, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Horse down
-								elif iData1 == 666 and iData2 == 666:
-										CyAudioGame().Play2DSound('AS2D_HORSE_DOWN')
-										CyMessageControl().sendModNetMessage(666, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Horse down
+										elif iData1 == 666 and iData2 == 666:
+												CyAudioGame().Play2DSound('AS2D_HORSE_DOWN')
+												CyMessageControl().sendModNetMessage(666, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Horse up
-								elif iData1 == 667 and iData2 == 667:
-										CyAudioGame().Play2DSound('AS2D_HORSE_UP')
-										CyMessageControl().sendModNetMessage(667, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Horse up
+										elif iData1 == 667 and iData2 == 667:
+												CyAudioGame().Play2DSound('AS2D_HORSE_UP')
+												CyMessageControl().sendModNetMessage(667, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Sklave -> Bordell / Freudenhaus
-								elif iData1 == 668 and iData2 == 668:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(668, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# Sklave -> Gladiator
-								elif iData1 == 669 and iData2 == 669:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(669, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# Sklave -> Theater
-								elif iData1 == 670 and iData2 == 670:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(670, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 671 frei
-
-								# Auswanderer / Emigrant
-								elif iData1 == 672 and iData2 == 672:
-										CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_SETTLER')
-										CyMessageControl().sendModNetMessage(672, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# Stadt aufloesen / disband city
-								elif iData1 == 673 and iData2 == 673 and bOption:
-										CyMessageControl().sendModNetMessage(673, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 674 vergeben durch Hunnen-PopUp (CvScreensInterface - popupHunsPayment)
-
-								# ID 675 vergeben durch Revolten-PopUp (CvScreensInterface - popupRevoltPayment)
-
-								# ID 676 vergeben durch freie Unit durch Tech (Kulte)
-
-								# Goldkarren
-								elif iData1 == 677:
-										if iData2 == 1:
+										# Sklave -> Bordell / Freudenhaus
+										elif iData1 == 668 and iData2 == 668:
 												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(677, iData2, -1, iOwner, iUnitID)
+												CyMessageControl().sendModNetMessage(668, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 678 vergeben durch Provinz-PopUp
+										# Sklave -> Gladiator
+										elif iData1 == 669 and iData2 == 669:
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(669, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Sklave -> Schule
-								elif iData1 == 679 and iData2 == 679:
-										CyAudioGame().Play2DSound('AS2D_BUILD_UNIVERSITY')
-										CyMessageControl().sendModNetMessage(679, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Sklave -> Theater
+										elif iData1 == 670 and iData2 == 670:
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(670, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Sklave -> Manufaktur Nahrung
-								elif iData1 == 680 and iData2 == 680:
-										CyAudioGame().Play2DSound('AS2D_BUILD_GRANARY')
-										CyMessageControl().sendModNetMessage(680, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# ID 671 frei
 
-								# Sklave -> Manufaktur Produktion
-								elif iData1 == 681 and iData2 == 681:
-										CyAudioGame().Play2DSound('AS2D_BUILD_FORGE')
-										CyMessageControl().sendModNetMessage(681, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Auswanderer / Emigrant
+										elif iData1 == 672 and iData2 == 672:
+												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_SETTLER')
+												CyMessageControl().sendModNetMessage(672, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 682 PopUp Vassal03
-								# ID 683 PopUp Vassal04
-								# ID 684 PopUp Vassal05
-								# ID 685 PopUp Vassal06
-								# ID 686 PopUp Vassal07
-								# ID 687 PopUp Vassal08
-								# ID 688 PopUp Vassal09
-								# ID 689 PopUp Vassal10
-								# ID 690 PopUp Vassal11
-								# ID 691 PopUp Vassal12
+										# Stadt aufloesen / disband city
+										elif iData1 == 673 and iData2 == 673 and bOption:
+												CyMessageControl().sendModNetMessage(673, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Sklave -> Palast
-								elif iData1 == 692 and iData2 == 692:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(692, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# ID 674 vergeben durch Hunnen-PopUp (CvScreensInterface - popupHunsPayment)
 
-								# Sklave -> Tempel
-								elif iData1 == 693 and iData2 == 693:
-										CyAudioGame().Play2DSound('AS2D_BUILD_TAOIST')
-										CyMessageControl().sendModNetMessage(693, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# ID 675 vergeben durch Revolten-PopUp (CvScreensInterface - popupRevoltPayment)
 
-								# Sklave wird verkauft
-								elif iData1 == 694 and iData2 == 694:
-										CyAudioGame().Play2DSound('AS2D_COINS')
-										CyMessageControl().sendModNetMessage(694, iOwner, iUnitID, 0, 0)
+										# ID 676 vergeben durch freie Unit durch Tech (Kulte)
 
-								# Unit wird verkauft
-								elif iData1 == 695:
-										# Confirmation required
-										CyMessageControl().sendModNetMessage(695, 0, 0, iOwner, iUnitID)
-
-								# Sklave -> Feuerwehr
-								elif iData1 == 696 and iData2 == 696:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(696, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# Trojanisches Pferd
-								elif iData1 == 697 and iData2 == 697:
-										CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_UNIT')
-										CyMessageControl().sendModNetMessage(697, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 698 INFO text RankPromoUp
-								elif iData1 == 698:
-										CyAudioGame().Play2DSound('AS2D_ERROR')
-										CyMessageControl().sendModNetMessage(698, -1, -1, iOwner, iUnitID)
-
-								# ID 699 Kauf einer Edlen Ruestung
-								elif iData1 == 699 and bOption:
-										CyAudioGame().Play2DSound('AS2D_COINS')
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(699, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 700
-								elif iData1 == 700:
-										CyAudioGame().Play2DSound('AS2D_PILLAGE')
-										CyMessageControl().sendModNetMessage(700, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 701 Kauf des Wellen-Oels
-								elif iData1 == 701 and bOption:
-										CyAudioGame().Play2DSound('AS2D_COINS')
-										CyMessageControl().sendModNetMessage(701, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# ID 702 PopUp Vassal Tech
-								# ID 703 PopUp Vassal Tech2
-								# ID 704 Religionsaustreibung
-
-								# ID 705 Update Veteran Einheit zu neuer Elite Einheit
-								# Bsp: Principes or Hastati Veterans -> Triarii
-								elif iData1 == 705:
-										CyAudioGame().Play2DSound("AS2D_IF_LEVELUP")
-										CyAudioGame().Play2DSound("AS2D_WELOVEKING")
-										CyMessageControl().sendModNetMessage(705, 0, iData2, iOwner, iUnitID)
-
-								# ID 706 PopUp Renegade City (keep or raze)
-
-								# ID 707 Soeldner anheuern / Mercenaries hire or assign
-								elif iData1 == 707 and iData2 == 707:
-										CyMessageControl().sendModNetMessage(707, pPlot.getPlotCity().getID(), -1, -1, iOwner)
-
-								# ID 708-715 Hire/Assign Mercenaries
-								# ID 716-717 Mercenary Torture
-
-								# ID 718 Unit Formations (eigenes Widget weiter unten)
-
-								# ID 719 Promotion Trainer Building (Forest 1, Hills1, ...)
-								elif iData1 == 719:
-										CyAudioGame().Play2DSound('AS2D_BUILD_BARRACKS')
-										CyMessageControl().sendModNetMessage(719, pPlot.getPlotCity().getID(), iData2, iOwner, iUnitID)
-
-								# ID 720 Legendary Hero can become a Great General
-								elif iData1 == 720:
-										CyAudioGame().Play2DSound('AS2D_WELOVEKING')
-										CyMessageControl().sendModNetMessage(720, 0, 0, iOwner, iUnitID)
-
-								# ID 721: 1,4,14,20: Stallungen, Camel, Elefant, Pferd, Esel
-								elif iData1 == 721:
-										if iData2 in [1, 4, 14, 20]:
-												if pPlot.isCity():
-														iCityID = pPlot.getPlotCity().getID()
-												else:
-														iCityID = -1
+										# Goldkarren
+										elif iData1 == 677:
 												if iData2 == 1:
-														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_WAR_ELEPHANT')
-														eBonus = gc.getInfoTypeForString("BONUS_IVORY")
-												elif iData2 == 4:
-														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_ARABIAN_CAMEL_ARCHER')
-														eBonus = gc.getInfoTypeForString("BONUS_CAMEL")
-												elif iData2 == 14:
-														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_HORSE_ARCHER')
-														eBonus = gc.getInfoTypeForString("BONUS_HORSE")
-												elif iData2 == 20:
-														CyAudioGame().Play2DSound('AS2D_UNIT_ESEL')
-														eBonus = gc.getInfoTypeForString("BONUS_ESEL")
-												CyMessageControl().sendModNetMessage(721, iCityID, eBonus, iOwner, iUnitID)
+														CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(677, iData2, -1, iOwner, iUnitID)
 
-								# ID 722 Piraten-Feature
-								# Data2=1: Pirat->Normal, Data2=2: Normal->Pirat
-								elif iData1 == 722:
-										if iData2 != 3:
-												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_GALLEY')
-												CyMessageControl().sendModNetMessage(722, iData2, 0, iOwner, iUnitID)
+										# ID 678 vergeben durch Provinz-PopUp
 
-								# ID 723 EspionageMission Info im TechChooser
+										# Sklave -> Schule
+										elif iData1 == 679 and iData2 == 679:
+												CyAudioGame().Play2DSound('AS2D_BUILD_UNIVERSITY')
+												CyMessageControl().sendModNetMessage(679, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 724 Veteran Unit -> Reservist in city
-								elif iData1 == 724:
-										CyAudioGame().Play2DSound("AS2D_GOODY_SETTLER")
-										CyMessageControl().sendModNetMessage(724, pPlot.getPlotCity().getID(), 0, iOwner, iUnitID)
+										# Sklave -> Manufaktur Nahrung
+										elif iData1 == 680 and iData2 == 680:
+												CyAudioGame().Play2DSound('AS2D_BUILD_GRANARY')
+												CyMessageControl().sendModNetMessage(680, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 725 Reservist -> Veteran Unit
-								elif iData1 == 725:
-										CyMessageControl().sendModNetMessage(725, pPlot.getPlotCity().getID(), iOwner, -1, 0)
+										# Sklave -> Manufaktur Produktion
+										elif iData1 == 681 and iData2 == 681:
+												CyAudioGame().Play2DSound('AS2D_BUILD_FORGE')
+												CyMessageControl().sendModNetMessage(681, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 726 Bonusverbreitung (Obsolete)
-								# elif iData1 == 726:
-								#  CyMessageControl().sendModNetMessage( 726, -1, -1, iOwner, iUnitID )
+										# ID 682 PopUp Vassal03
+										# ID 683 PopUp Vassal04
+										# ID 684 PopUp Vassal05
+										# ID 685 PopUp Vassal06
+										# ID 686 PopUp Vassal07
+										# ID 687 PopUp Vassal08
+										# ID 688 PopUp Vassal09
+										# ID 689 PopUp Vassal10
+										# ID 690 PopUp Vassal11
+										# ID 691 PopUp Vassal12
 
-								# ID 727
-								# iData2: Nahrung an Stadt liefern
-								# iData2: Nahrung aufsammeln
-								elif iData1 == 727:
-										CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
-										CyMessageControl().sendModNetMessage(727, pPlot.getPlotCity().getID(), iData2, iOwner, iUnitID)
+										# Sklave -> Palast
+										elif iData1 == 692 and iData2 == 692:
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(692, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# ID 728 Karte zeichnen
-								elif iData1 == 728:
-										CyMessageControl().sendModNetMessage(728, -1, -1, iOwner, iUnitID)
+										# Sklave -> Tempel
+										elif iData1 == 693 and iData2 == 693:
+												CyAudioGame().Play2DSound('AS2D_BUILD_TAOIST')
+												CyMessageControl().sendModNetMessage(693, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Sklave -> Library
-								elif iData1 == 729:
-										CyAudioGame().Play2DSound('AS2D_BUILD_UNIVERSITY')
-										CyMessageControl().sendModNetMessage(729, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Sklave wird verkauft
+										elif iData1 == 694 and iData2 == 694:
+												CyAudioGame().Play2DSound('AS2D_COINS')
+												CyMessageControl().sendModNetMessage(694, iOwner, iUnitID, 0, 0)
 
-								# Release slaves
-								elif iData1 == 730:
-										CyMessageControl().sendModNetMessage(730, pPlot.getPlotCity().getID(), 0, iOwner, -1)
+										# Unit wird verkauft
+										elif iData1 == 695:
+												# Confirmation required
+												CyMessageControl().sendModNetMessage(695, 0, 0, iOwner, iUnitID)
 
-								# Send Missionary to a friendly city
-								elif iData1 == 731:
-										CyMessageControl().sendModNetMessage(731, -1, -1, iOwner, iUnitID)
+										# Sklave -> Feuerwehr
+										elif iData1 == 696 and iData2 == 696:
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(696, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Send Trade merchant into next foreign city (Obsolete)
-								# elif iData1 == 732:
-								#  CyMessageControl().sendModNetMessage( 732, -1, -1, iOwner, iUnitID )
+										# Trojanisches Pferd
+										elif iData1 == 697 and iData2 == 697:
+												CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_UNIT')
+												CyMessageControl().sendModNetMessage(697, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Build Limes PopUp
-								elif iData1 == 733:
-										CyMessageControl().sendModNetMessage(733, -1, -1, iOwner, iUnitID)
+										# ID 698 INFO text RankPromoUp
+										elif iData1 == 698:
+												CyAudioGame().Play2DSound('AS2D_ERROR')
+												CyMessageControl().sendModNetMessage(698, -1, -1, iOwner, iUnitID)
 
-								# Sklaven zu Feldsklaven oder Bergwerkssklaven
-								elif iData1 == 734:
-										if iData2 == 1:
-												if bOption:
-														CyMessageControl().sendModNetMessage(734, pPlot.getPlotCity().getID(), 1, iOwner, iUnitID)
-										elif iData2 == 2:
-												if bOption:
-														CyMessageControl().sendModNetMessage(734, pPlot.getPlotCity().getID(), 2, iOwner, iUnitID)
+										# ID 699 Kauf einer Edlen Ruestung
+										elif iData1 == 699 and bOption:
+												CyAudioGame().Play2DSound('AS2D_COINS')
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(699, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Salae oder Dezimierung
-								elif iData1 == 735:
-										if iData2 == 1:
-												if bOption:
-														CyMessageControl().sendModNetMessage(735, 1, 0, iOwner, iUnitID)
-										elif iData2 == 2:
-												if bOption:
-														CyMessageControl().sendModNetMessage(735, 2, 0, iOwner, iUnitID)
+										# ID 700
+										elif iData1 == 700:
+												CyAudioGame().Play2DSound('AS2D_PILLAGE')
+												CyMessageControl().sendModNetMessage(700, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Handelsposten erstellen
-								elif iData1 == 736:
-										CyMessageControl().sendModNetMessage(736, iData2, 0, iOwner, iUnitID)
+										# ID 701 Kauf des Wellen-Oels
+										elif iData1 == 701 and bOption:
+												CyAudioGame().Play2DSound('AS2D_COINS')
+												CyMessageControl().sendModNetMessage(701, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Provinzstatthalter / Tribut
-								elif iData1 == 737:
-										CyMessageControl().sendModNetMessage(737, pPlot.getPlotCity().getID(), iOwner, -1, -1)
+										# ID 702 PopUp Vassal Tech
+										# ID 703 PopUp Vassal Tech2
+										# ID 704 Religionsaustreibung
 
-								# Bonus cultivation (Boggy)
-								elif iData1 == 738:
-										# Karren aufladen
-										if bOption:
-												iIsCity = 1
-										else:
-												iIsCity = 0
-										CyMessageControl().sendModNetMessage(738, iOwner, iUnitID, iIsCity, -1)
-
-								# Collect bonus (iData2: 0 = remove, 1 = kaufen)
-								elif iData1 == 739:
-										if bOption:
-												CyMessageControl().sendModNetMessage(739, -1, iData2, iOwner, iUnitID)
-
-								# Buy bonus (in city)
-								elif iData1 == 740:
-										CyMessageControl().sendModNetMessage(740, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# Sell bonus (in city)
-								elif iData1 == 741:
-										CyMessageControl().sendModNetMessage(741, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
-
-								# 742 is used by CvScreensInterface.
-
-								# Automated trade route - choose civ 1
-								elif iData1 == 744:
-										CyMessageControl().sendModNetMessage(744, -1, -1, iOwner, iUnitID)
-
-								# 745, 746, 747 are used by CvScreensInterface.
-
-								elif iData1 == 748:
-										# Button von TradeAdvisor2
-										if iData2 != 748:
-												#iOwner = gc.getActivePlayer()
-												iUnitID = iData2
-										CyMessageControl().sendModNetMessage(748, -1, -1, iOwner, iUnitID)
-
-								# 749: Generelle MouseOverInfos lediglich fuer (aktionslose) Buttons
-
-								# 750: Unit Ethnic Info
-
-								# Unit Rang Promo / Upgrade to new unit with new rank
-								elif iData1 == 751:
-										# Unit can be promoted
-										if iData2 != -1:
-												CyAudioGame().Play2DSound("AS2D_COINS")
+										# ID 705 Update Veteran Einheit zu neuer Elite Einheit
+										# Bsp: Principes or Hastati Veterans -> Triarii
+										elif iData1 == 705:
 												CyAudioGame().Play2DSound("AS2D_IF_LEVELUP")
 												CyAudioGame().Play2DSound("AS2D_WELOVEKING")
-												CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+												CyMessageControl().sendModNetMessage(705, 0, iData2, iOwner, iUnitID)
 
-								# iData2 0: Bless units (Hagia Sophia)
-								# iData2 1,2: Rhetorik, Sklavenopfer
-								# iData2 3: Better morale (Zeus)
-								elif iData1 == 752:
-										if iData2 == 0:
-												CyAudioGame().Play2DSound("AS2D_BUILD_CHRISTIAN")
-										else:
-												CyAudioGame().Play2DSound("AS2D_WELOVEKING")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# ID 706 PopUp Renegade City (keep or raze)
 
-								# Slave -> Latifundium oder Village
-								elif iData1 == 753:
-										CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
-										CyMessageControl().sendModNetMessage(iData1, iData2, 0, iOwner, iUnitID)
+										# ID 707 Soeldner anheuern / Mercenaries hire or assign
+										elif iData1 == 707 and iData2 == 707:
+												CyMessageControl().sendModNetMessage(707, pPlot.getPlotCity().getID(), -1, -1, iOwner)
 
-								# 754: Obsolete Unit text in Tech Screen
+										# ID 708-715 Hire/Assign Mercenaries
+										# ID 716-717 Mercenary Torture
 
-								# Sklave -> Manufaktur Nahrung
-								elif iData1 == 755 and iData2 == 755:
-										CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
-										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# ID 718 Unit Formations (eigenes Widget weiter unten)
 
-								# Legion Rang Ausbildung / Upgrade to rank via academy/kastell
-								elif iData1 == 756:
-										if bOption:
-												CyAudioGame().Play2DSound("AS2D_COINS")
-												CyAudioGame().Play2DSound("AS2D_IF_LEVELUP")
-												CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+										# ID 719 Promotion Trainer Building (Forest 1, Hills1, ...)
+										elif iData1 == 719:
+												CyAudioGame().Play2DSound('AS2D_BUILD_BARRACKS')
+												CyMessageControl().sendModNetMessage(719, pPlot.getPlotCity().getID(), iData2, iOwner, iUnitID)
 
-								# Statthalter ansiedeln
-								elif iData1 == 757:
-										CyAudioGame().Play2DSound("AS2D_WELOVEKING")
-										CyMessageControl().sendModNetMessage(iData1, -1, iOwner, iUnitID, pPlot.getPlotCity().getID())
+										# ID 720 Legendary Hero can become a Great General
+										elif iData1 == 720:
+												CyAudioGame().Play2DSound('AS2D_WELOVEKING')
+												CyMessageControl().sendModNetMessage(720, 0, 0, iOwner, iUnitID)
 
-								# Collect Heldendenkmal (iData2: 0 = collect, 1 = build)
-								elif iData1 == 758:
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# ID 721: 1,4,14,20: Stallungen, Camel, Elefant, Pferd, Esel
+										elif iData1 == 721:
+												if iData2 in [1, 4, 14, 20]:
+														if pPlot.isCity():
+																iCityID = pPlot.getPlotCity().getID()
+														else:
+																iCityID = -1
+														if iData2 == 1:
+																CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_WAR_ELEPHANT')
+																eBonus = gc.getInfoTypeForString("BONUS_IVORY")
+														elif iData2 == 4:
+																CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_ARABIAN_CAMEL_ARCHER')
+																eBonus = gc.getInfoTypeForString("BONUS_CAMEL")
+														elif iData2 == 14:
+																CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_HORSE_ARCHER')
+																eBonus = gc.getInfoTypeForString("BONUS_HORSE")
+														elif iData2 == 20:
+																CyAudioGame().Play2DSound('AS2D_UNIT_ESEL')
+																eBonus = gc.getInfoTypeForString("BONUS_ESEL")
+														CyMessageControl().sendModNetMessage(721, iCityID, eBonus, iOwner, iUnitID)
 
-								# Give units morale
-								elif iData1 == 759:
-										if iData2 == 2:
-												CyAudioGame().Play2DSound("AS2D_HIT_UNIT")
-										CyAudioGame().Play2DSound("AS2D_WELOVEKING")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# ID 722 Piraten-Feature
+										# Data2=1: Pirat->Normal, Data2=2: Normal->Pirat
+										elif iData1 == 722:
+												if iData2 != 3:
+														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_GALLEY')
+														CyMessageControl().sendModNetMessage(722, iData2, 0, iOwner, iUnitID)
 
-								# Slave on plot: head off
-								elif iData1 == 760:
-										CyAudioGame().Play2DSound("AS2D_HIT_UNIT")
-										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# ID 723 EspionageMission Info im TechChooser
 
-								# Slave on plot: win XP
-								elif iData1 == 761:
-										if bOption:
+										# ID 724 Veteran Unit -> Reservist in city
+										elif iData1 == 724:
+												CyAudioGame().Play2DSound("AS2D_GOODY_SETTLER")
+												CyMessageControl().sendModNetMessage(724, pPlot.getPlotCity().getID(), 0, iOwner, iUnitID)
+
+										# ID 725 Reservist -> Veteran Unit
+										elif iData1 == 725:
+												CyMessageControl().sendModNetMessage(725, pPlot.getPlotCity().getID(), iOwner, -1, 0)
+
+										# ID 726 Bonusverbreitung (Obsolete)
+										# elif iData1 == 726:
+										#  CyMessageControl().sendModNetMessage( 726, -1, -1, iOwner, iUnitID )
+
+										# ID 727
+										# iData2: Nahrung an Stadt liefern
+										# iData2: Nahrung aufsammeln
+										elif iData1 == 727:
+												CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
+												CyMessageControl().sendModNetMessage(727, pPlot.getPlotCity().getID(), iData2, iOwner, iUnitID)
+
+										# ID 728 Karte zeichnen
+										elif iData1 == 728:
+												CyMessageControl().sendModNetMessage(728, -1, -1, iOwner, iUnitID)
+
+										# Sklave -> Library
+										elif iData1 == 729:
+												CyAudioGame().Play2DSound('AS2D_BUILD_UNIVERSITY')
+												CyMessageControl().sendModNetMessage(729, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+										# Release slaves
+										elif iData1 == 730:
+												CyMessageControl().sendModNetMessage(730, pPlot.getPlotCity().getID(), 0, iOwner, -1)
+
+										# Send Missionary to a friendly city
+										elif iData1 == 731:
+												CyMessageControl().sendModNetMessage(731, -1, -1, iOwner, iUnitID)
+
+										# Send Trade merchant into next foreign city (Obsolete)
+										# elif iData1 == 732:
+										#  CyMessageControl().sendModNetMessage( 732, -1, -1, iOwner, iUnitID )
+
+										# Build Limes PopUp
+										elif iData1 == 733:
+												CyMessageControl().sendModNetMessage(733, -1, -1, iOwner, iUnitID)
+
+										# Sklaven zu Feldsklaven oder Bergwerkssklaven
+										elif iData1 == 734:
+												if iData2 == 1:
+														if bOption:
+																CyMessageControl().sendModNetMessage(734, pPlot.getPlotCity().getID(), 1, iOwner, iUnitID)
+												elif iData2 == 2:
+														if bOption:
+																CyMessageControl().sendModNetMessage(734, pPlot.getPlotCity().getID(), 2, iOwner, iUnitID)
+
+										# Salae oder Dezimierung
+										elif iData1 == 735:
+												if iData2 == 1:
+														if bOption:
+																CyMessageControl().sendModNetMessage(735, 1, 0, iOwner, iUnitID)
+												elif iData2 == 2:
+														if bOption:
+																CyMessageControl().sendModNetMessage(735, 2, 0, iOwner, iUnitID)
+
+										# Handelsposten erstellen
+										elif iData1 == 736:
+												CyMessageControl().sendModNetMessage(736, iData2, 0, iOwner, iUnitID)
+
+										# Provinzstatthalter / Tribut
+										elif iData1 == 737:
+												CyMessageControl().sendModNetMessage(737, pPlot.getPlotCity().getID(), iOwner, -1, -1)
+
+										# Bonus cultivation (Boggy)
+										elif iData1 == 738:
+												# Karren aufladen
+												if bOption:
+														iIsCity = 1
+												else:
+														iIsCity = 0
+												CyMessageControl().sendModNetMessage(738, iOwner, iUnitID, iIsCity, -1)
+
+										# Collect bonus (iData2: 0 = remove, 1 = kaufen)
+										elif iData1 == 739:
+												if bOption:
+														CyMessageControl().sendModNetMessage(739, -1, iData2, iOwner, iUnitID)
+
+										# Buy bonus (in city)
+										elif iData1 == 740:
+												CyMessageControl().sendModNetMessage(740, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+										# Sell bonus (in city)
+										elif iData1 == 741:
+												CyMessageControl().sendModNetMessage(741, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+										# 742 is used by CvScreensInterface.
+
+										# Automated trade route - choose civ 1
+										elif iData1 == 744:
+												CyMessageControl().sendModNetMessage(744, -1, -1, iOwner, iUnitID)
+
+										# 745, 746, 747 are used by CvScreensInterface.
+
+										elif iData1 == 748:
+												# Button von TradeAdvisor2
+												if iData2 != 748:
+														#iOwner = gc.getActivePlayer()
+														iUnitID = iData2
+												CyMessageControl().sendModNetMessage(748, -1, -1, iOwner, iUnitID)
+
+										# 749: Generelle MouseOverInfos lediglich fuer (aktionslose) Buttons
+
+										# 750: Unit Ethnic Info
+
+										# Unit Rang Promo / Upgrade to new unit with new rank
+										elif iData1 == 751:
+												# Unit can be promoted
+												if iData2 != -1:
+														CyAudioGame().Play2DSound("AS2D_COINS")
+														CyAudioGame().Play2DSound("AS2D_IF_LEVELUP")
+														CyAudioGame().Play2DSound("AS2D_WELOVEKING")
+														CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+
+										# iData2 0: Bless units (Hagia Sophia)
+										# iData2 1,2: Rhetorik, Sklavenopfer
+										# iData2 3: Better morale (Zeus)
+										elif iData1 == 752:
+												if iData2 == 0:
+														CyAudioGame().Play2DSound("AS2D_BUILD_CHRISTIAN")
+												else:
+														CyAudioGame().Play2DSound("AS2D_WELOVEKING")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+
+										# Slave -> Latifundium oder Village
+										elif iData1 == 753:
+												CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
+												CyMessageControl().sendModNetMessage(iData1, iData2, 0, iOwner, iUnitID)
+
+										# 754: Obsolete Unit text in Tech Screen
+
+										# Sklave -> Manufaktur Nahrung
+										elif iData1 == 755 and iData2 == 755:
+												CyAudioGame().Play2DSound("AS2D_BUILD_GRANARY")
 												CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Escort for merchant / Begleitschutz
-								elif iData1 == 762:
-										CyAudioGame().Play2DSound("AS2D_COINS")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# Legion Rang Ausbildung / Upgrade to rank via academy/kastell
+										elif iData1 == 756:
+												if bOption:
+														CyAudioGame().Play2DSound("AS2D_COINS")
+														CyAudioGame().Play2DSound("AS2D_IF_LEVELUP")
+														CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
 
-								# Fort/Handelsposten erobern
-								elif iData1 == 763:
-										CyAudioGame().Play2DSound("AS2D_CITYCAPTURED")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# Statthalter ansiedeln
+										elif iData1 == 757:
+												CyAudioGame().Play2DSound("AS2D_WELOVEKING")
+												CyMessageControl().sendModNetMessage(iData1, -1, iOwner, iUnitID, pPlot.getPlotCity().getID())
 
-								# Provinzstatthalter / Tribut
-								elif iData1 == 764:
-										CyMessageControl().sendModNetMessage(iData1, iOwner, -1, -1, -1)
+										# Collect Heldendenkmal (iData2: 0 = collect, 1 = build)
+										elif iData1 == 758:
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
 
-								# General: Wald verbrennen
-								elif iData1 == 765:
-										CyAudioGame().Play2DSound("AS2D_PILLAGE")
-										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Give units morale
+										elif iData1 == 759:
+												if iData2 == 2:
+														CyAudioGame().Play2DSound("AS2D_HIT_UNIT")
+												CyAudioGame().Play2DSound("AS2D_WELOVEKING")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
 
-								# Pferdewechsel
-								elif iData1 == 766:
-										CyAudioGame().Play2DSound("AS2D_HORSE_UP")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# Slave on plot: head off
+										elif iData1 == 760:
+												CyAudioGame().Play2DSound("AS2D_HIT_UNIT")
+												CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Kauf eines Magnetkompasses
-								elif iData1 == 767:
-										CyAudioGame().Play2DSound("AS2D_COINS")
-										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Slave on plot: win XP
+										elif iData1 == 761:
+												if bOption:
+														CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Kauf eines Magnetkompasses
-								elif iData1 == 768:
-										CyAudioGame().Play2DSound("AS2D_COINS")
-										CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+										# Escort for merchant / Begleitschutz
+										elif iData1 == 762:
+												CyAudioGame().Play2DSound("AS2D_COINS")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
 
-								# Great Prophet Holy City
-								elif iData1 == 769:
-										CyMessageControl().sendModNetMessage(iData1, iData2, pPlot.getPlotCity().getID(), iOwner, iUnitID)
+										# Fort/Handelsposten erobern
+										elif iData1 == 763:
+												CyAudioGame().Play2DSound("AS2D_CITYCAPTURED")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
 
-								# General: Bau einer Ramme
-								elif iData1 == 770:
-										CyAudioGame().Play2DSound("AS2D_CHOP_WOOD")
-										CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+										# Provinzstatthalter / Tribut
+										elif iData1 == 764:
+												CyMessageControl().sendModNetMessage(iData1, iOwner, -1, -1, -1)
 
-								# Hunter: Lager oder Beobachtungsturm
-								# Worker and Hunter: Ore Camp
-								# Hunter: Pfad
-								elif iData1 == 771:
-										CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_WORKER")
-										CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+										# General: Wald verbrennen
+										elif iData1 == 765:
+												CyAudioGame().Play2DSound("AS2D_PILLAGE")
+												CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
-								# Gladiator: Gladiatorenschule bauen
-								elif iData1 == 772:
-										CyAudioGame().Play2DSound("AS2D_BUILD_COLOSSEUM")
-										CyMessageControl().sendModNetMessage(iData1, -1, pPlot.getPlotCity().getID(), iOwner, iUnitID)
+										# Pferdewechsel
+										elif iData1 == 766:
+												CyAudioGame().Play2DSound("AS2D_HORSE_UP")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
 
+										# Kauf eines Magnetkompasses
+										elif iData1 == 767:
+												CyAudioGame().Play2DSound("AS2D_COINS")
+												CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
 
+										# Kauf eines Magnetkompasses
+										elif iData1 == 768:
+												CyAudioGame().Play2DSound("AS2D_COINS")
+												CyMessageControl().sendModNetMessage(iData1, pPlot.getX(), pPlot.getY(), iOwner, iUnitID)
+
+										# Great Prophet Holy City
+										elif iData1 == 769:
+												CyMessageControl().sendModNetMessage(iData1, iData2, pPlot.getPlotCity().getID(), iOwner, iUnitID)
+
+										# General: Bau einer Ramme
+										elif iData1 == 770:
+												CyAudioGame().Play2DSound("AS2D_CHOP_WOOD")
+												CyMessageControl().sendModNetMessage(iData1, -1, -1, iOwner, iUnitID)
+
+										# Hunter: Lager oder Beobachtungsturm
+										# Worker and Hunter: Ore Camp
+										# Hunter: Pfad
+										elif iData1 == 771:
+												CyAudioGame().Play2DSound("AS2D_UNIT_BUILD_WORKER")
+												CyMessageControl().sendModNetMessage(iData1, iData2, -1, iOwner, iUnitID)
+
+										# Gladiator: Gladiatorenschule bauen
+										elif iData1 == 772:
+												CyAudioGame().Play2DSound("AS2D_BUILD_COLOSSEUM")
+												CyMessageControl().sendModNetMessage(iData1, -1, pPlot.getPlotCity().getID(), iOwner, iUnitID)
+								# ID 718 Unit Formations
+								# Zusatz: Eigenes Widget for Formations!
+								elif inputClass.getButtonType() == WidgetTypes.WIDGET_HELP_PROMOTION:
+										if inputClass.getData2() == 718 and inputClass.getOption():
+												if pHeadSelectedUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
+														CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_GALLEY')
+												else:
+														CyAudioGame().Play2DSound('AS2D_BUILD_BARRACKS')
+												CyMessageControl().sendModNetMessage(718, 0, inputClass.getData1(), iOwner, iUnitID)
+
+				if inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL:
 						# Platy ScoreBoard - Start
 						if inputClass.getFunctionName() == "ScoreRowPlus":
 								self.iScoreRows -= 1
@@ -7492,17 +7512,12 @@ class CvMainInterface:
 						elif inputClass.getFunctionName() == "ScoreHidePoints":
 								self.iScoreHidePoints = not self.iScoreHidePoints
 								self.updateScoreStrings()
+						elif inputClass.getData1() == 302016:
+							# Cause crash on PB server is host os is Linux
+							#gc.sendPause(-1)
+							# Workaround.
+							gc.sendChat("RemovePause", ChatTargetTypes.CHATTARGET_ALL)
 						# Platy ScoreBoard - End
-
-				# ID 718 Unit Formations
-				# Zusatz: Eigenes Widget for Formations !!!
-				elif inputClass.getButtonType() == WidgetTypes.WIDGET_HELP_PROMOTION:
-						if inputClass.getNotifyCode() == 11 and inputClass.getData2() == 718 and inputClass.getOption():
-								if g_pSelectedUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL"):
-										CyAudioGame().Play2DSound('AS2D_UNIT_BUILD_GALLEY')
-								else:
-										CyAudioGame().Play2DSound('AS2D_BUILD_BARRACKS')
-								CyMessageControl().sendModNetMessage(718, 0, inputClass.getData1(), iOwner, iUnitID)
 
 				# PAE, Ramk - Fix jumping in build menu
 				if inputClass.getButtonType() in self.buildWidges:
