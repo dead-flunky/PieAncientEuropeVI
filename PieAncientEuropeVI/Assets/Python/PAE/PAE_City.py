@@ -577,7 +577,7 @@ def doCheckGlobalBuilding(iPlayer, iBuilding):
 				loopCity.setNumRealBuilding(iBuilding, 1)
 				iCount = 0
 				while loopCity:
-						if loopCity.isHasBuilding(iBuilding):
+						if not loopCity.isNone() and loopCity.isHasBuilding(iBuilding):
 								iCount += 1
 								if iCount > 1:
 										loopCity.setNumRealBuilding(iBuilding, 0)
@@ -3419,7 +3419,7 @@ def doMissionaryForCivs(iPlayer):
 						pCity = loopCity
 						break
 				(loopCity, pIter) = pPlayer.nextCity(pIter, False)
-		if pCity is not None:
+		if pCity:
 				# # -- Nordischer Missionar fuer Germanen/Vandalen
 				# if gc.getGame().getGameTurnYear() == -2250:
 				# Civ = gc.getInfoTypeForString("CIVILIZATION_GERMANEN")
