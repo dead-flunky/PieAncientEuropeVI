@@ -31,12 +31,12 @@
 # import itertools  # faster repeating of stuff
 
 from CvPythonExtensions import (CyGlobalContext, CyTranslator, plotXY,
-																DomainTypes, InputTypes, ColorTypes, CyMap, UnitAITypes, CommandTypes,
-																CyInterface, DirectionTypes, CyPopupInfo, ButtonPopupTypes,
-																CyGame, CyEngine, CyAudioGame, MissionTypes, FontSymbols, PlotTypes,
-																InterfaceDirtyBits, InterfaceMessageTypes, GameOptionTypes, UnitTypes,
-																EventContextTypes, getChtLvl, plotDirection, MissionAITypes, RouteTypes,
-																PlayerTypes, CyCamera)
+								DomainTypes, InputTypes, ColorTypes, CyMap, UnitAITypes, CommandTypes,
+								CyInterface, DirectionTypes, CyPopupInfo, ButtonPopupTypes,
+								CyGame, CyEngine, CyAudioGame, MissionTypes, FontSymbols, PlotTypes,
+								InterfaceDirtyBits, InterfaceMessageTypes, GameOptionTypes, UnitTypes,
+								EventContextTypes, getChtLvl, plotDirection, MissionAITypes, RouteTypes,
+								PlayerTypes, CyCamera, NotifyCode)
 import CvUtil
 import CvScreensInterface
 import CvDebugTools
@@ -48,7 +48,8 @@ import CvAdvisorUtils
 # import CvWBPopups
 # import CvWorldBuilderScreen
 # import CvTechChooser
-# import CvScreenEnums
+from ScreenInput import ScreenInput
+import CvScreenEnums
 
 ### Starting points part 1 (by The_J) ###
 import StartingPointsUtil
@@ -120,12 +121,16 @@ PyInfo = PyHelpers.PyInfo
 PyCity = PyHelpers.PyCity
 PyGame = PyHelpers.PyGame
 
+iPlayerOptionCheck = 0  # Triggers for == 1, decrements for >= 0 -- From PB Mod
 ###################################################
 
 
 class CvEventManager:
 
 		def __init__(self):
+				self.bGameTurnProcessing = False
+				self.latestPlayerEndsTurn = 0  # Used to find latest human player before turn ends
+				self.pbServerChatMessage = ""
 				#################### ON EVENT MAP ######################
 				# print "EVENTMANAGER INIT"
 				# In CvEventManager.__init__:
@@ -522,6 +527,72 @@ class CvEventManager:
 				# print "Modder's net message!"
 				CvUtil.pyPrint('onModNetMessage')
 
+				# PB Mod, assemble chat message.
+				chatFlags = (iData5 >> 24) & 0x7F
+				if (chatFlags & 0x70) == 0x70:
+					try:
+						# Convert sign flags back into 32th bit
+						if iData1 < 0: iData1 = -iData1 | 0x80000000
+						if iData2 < 0: iData2 = -iData2 | 0x80000000
+						if iData3 < 0: iData3 = -iData3 | 0x80000000
+						if iData4 < 0: iData4 = -iData4 | 0x80000000
+
+						if (chatFlags & 0x04) == 0x04:
+							# Begin of new message
+							self.pbServerChatMessage = ""
+
+						if iData1 != 0:
+							self.pbServerChatMessage += "%c%c%c%c" %(
+								chr((iData1 >> 0) & 0xFF),
+								chr((iData1 >> 8) & 0xFF),
+								chr((iData1 >> 16) & 0xFF),
+								chr((iData1 >> 24) & 0xFF))
+						if iData2 != 0:
+							self.pbServerChatMessage += "%c%c%c%c" %(
+								chr((iData2 >> 0) & 0xFF),
+								chr((iData2 >> 8) & 0xFF),
+								chr((iData2 >> 16) & 0xFF),
+								chr((iData2 >> 24) & 0xFF))
+						if iData3 != 0:
+							self.pbServerChatMessage += "%c%c%c%c" %(
+								chr((iData3 >> 0) & 0xFF),
+								chr((iData3 >> 8) & 0xFF),
+								chr((iData3 >> 16) & 0xFF),
+								chr((iData3 >> 24) & 0xFF))
+						if iData4 != 0:
+							self.pbServerChatMessage += "%c%c%c%c" %(
+								chr((iData4 >> 0) & 0xFF),
+								chr((iData4 >> 8) & 0xFF),
+								chr((iData4 >> 16) & 0xFF),
+								chr((iData4 >> 24) & 0xFF))
+						if (iData5 & 0x00FFFFFF) != 0:
+							self.pbServerChatMessage += "%c%c%c" %(
+								chr((iData5 >> 0) & 0xFF),
+								chr((iData5 >> 8) & 0xFF),
+								chr((iData5 >> 16) & 0xFF))
+
+						if (chatFlags & 0x08) == 0x08:
+							# End of message
+							msg_u = self.pbServerChatMessage.rstrip().decode('utf-8')
+							# CvUtil.pyPrint('Final chat message: ' + msg_u)
+							self.pbServerChatMessage = ""
+
+							sounds = ["AS2D_CHAT",
+									"AS2D_PING",
+									"AS2D_WELOVEKING",  # ^^
+									"AS2D_DECLAREWAR"]
+							sound = sounds[chatFlags & 0x03]
+
+							if not CyGame().isPitbossHost():
+								# Use unicode msg_u with cp1252 charset
+								sColor = localText.getText("[COLOR_WARNING_TEXT]", ())
+								color_msg = u"%sPitboss:</color> %s" % (sColor, msg_u)
+								CyInterface().addImmediateMessage(color_msg, sound)
+
+					except Exception, e:
+						CvUtil.pyPrint("Chat message decoding failed. Error: %s" % (e,))
+
+				
 				# iData1 = iMessageID (!)
 
 				# Inquisitor
@@ -1419,8 +1490,8 @@ class CvEventManager:
 								iReligion = 10
 						elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CHRISTIAN_MISSIONARY"):
 								iReligion = 11
-						elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
-								iReligion = 12
+						#elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
+						#		iReligion = 12
 
 						if iReligion != -1:
 								bCanSpread = False
@@ -2110,6 +2181,11 @@ class CvEventManager:
 		def onUnInit(self, argsList):
 				'Called when Civ shuts down'
 				CvUtil.pyPrint('OnUnInit')
+				# Start PB Mod Copy
+				if "__ee_whip_handle" in self.__dict__:
+						CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
+						del self.__dict__["__ee_whip_handle"]
+				# End PB Mod Copy
 
 		def onPreSave(self, argsList):
 				"called before a game is actually saved"
@@ -2145,6 +2221,18 @@ class CvEventManager:
 
 				# --------- BTS --------
 				CvAdvisorUtils.resetNoLiberateCities()
+
+				# Start PB Mod Copy
+				global iPlayerOptionCheck
+				# Attention, for iPlayerOptionCheck = 1 you will check aggainst
+				# the option values stored in the save file, but not the current one!
+				iPlayerOptionCheck = 8   # 1 = 1/4 sec
+				if "__ee_whip_handle" in self.__dict__:
+					CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
+					del self.__dict__["__ee_whip_handle"]
+
+				# End PB Mod Copy
+
 				return 0
 
 		# +++++ PAE Debug: disband/delete things (for different reasons: CtD or OOS)
@@ -2439,6 +2527,11 @@ class CvEventManager:
 				## AI AutoPlay ##
 				# CvTopCivs.CvTopCivs().turnChecker(iGameTurn)
 
+				## PB Mod ##
+				genEndTurnSave(iGameTurn, self.latestPlayerEndsTurn)
+				self.bGameTurnProcessing = True
+				## PB Mod ##
+
 				# Historische Texte ---------
 				PAE_Turn_Features.doHistory()
 
@@ -2523,6 +2616,9 @@ class CvEventManager:
 
 				# PAE Debug Mark 1
 				#"""
+
+				## PB Mod ##
+				self.bGameTurnProcessing = False
 
 		# global
 		def onBeginPlayerTurn(self, argsList):
@@ -2681,7 +2777,10 @@ class CvEventManager:
 
 																		# max eine Techanfrage
 																		break
-
+				
+				## PB Mod ## 
+				if gc.getPlayer(iPlayer).isHuman():
+						self.latestPlayerEndsTurn = iPlayer
 				# PAE Debug Mark 2
 				#"""
 
@@ -2785,60 +2884,60 @@ class CvEventManager:
 
 
 				# PAE 6.16 Ranged Combat / Range Attack / Fernangriff
-				"""
-				if not pPlayer.isHuman():
-						iRange = 1
-						pTeam = gc.getTeam(pPlayer.getTeam())
-						(loopUnit, pIter) = pPlayer.firstUnit(False)
-						while loopUnit:
-								if loopUnit.isRanged() and loopUnit.canAttack():
-										pAttackPlot1 = []
-										pAttackPlot2 = []
-										iDamage = 100
-										bDoRangeAttack = False
-										# Plot holen
-										plot = loopUnit.plot()
-										# wenn Unit in der Stadt, immer verteidigen
-										# wenn Unit alleine auf dem Feld, nicht angreifen sondern eher wegbewegen (AI choice)
-										if plot.isCity() or plot.getNumUnits() > 1:
-												bDoRangeAttack = True
-										# Plots rundum checken
-										if bDoRangeAttack:
-												iX = loopUnit.getX()
-												iY = loopUnit.getY()
-												for x in range(-iRange, iRange+1):
-														for y in range(-iRange, iRange+1):
-																loopPlot = plotXY(iX, iY, x, y)
-																if loopPlot is not None and not loopPlot.isNone():
-																		iNumUnits = loopPlot.getNumUnits()
-																		if iNumUnits > 0:
-																				for i in range(iNumUnits):
-																						iOwner = loopPlot.getUnit(i).getOwner()
-																						if iOwner != iPlayer:
-																								if pTeam.isAtWar(gc.getPlayer(iOwner).getTeam()):
-																										iUnitDamage = loopPlot.getUnit(i).getDamage()
-																										if iUnitDamage < iDamage:
-																												iDamage = iUnitDamage
-																												if iDamage == 0:
-																														pAttackPlot1.append(loopPlot)
-																												else:
-																														pAttackPlot2.append(loopPlot)
-																												break
-
-										pAttackPlot = []
-										if len(pAttackPlot1):
-												iRand = CvUtil.myRandom(len(pAttackPlot1), "onEndPlayerTurn (AI): Choose primary Plot for Ranged Combat")
-												pAttackPlot.append(pAttackPlot1[iRand])
-										elif len(pAttackPlot2):
-												iRand = CvUtil.myRandom(len(pAttackPlot2), "onEndPlayerTurn (AI): Choose secondary Plot for Ranged Combat")
-												pAttackPlot.append(pAttackPlot2[iRand])
-
-										if len(pAttackPlot):
-												loopUnit.rangeStrike(pAttackPlot[0].getX(), pAttackPlot[0].getY())
-												loopUnit.finishMoves()
-
-								(loopUnit, pIter) = pPlayer.nextUnit(pIter, False)
-				"""
+				
+				#if not pPlayer.isHuman():
+				#		iRange = 1
+				#		pTeam = gc.getTeam(pPlayer.getTeam())
+				#		(loopUnit, pIter) = pPlayer.firstUnit(False)
+				#		while loopUnit:
+				#				if loopUnit.isRanged() and loopUnit.canAttack():
+				#						pAttackPlot1 = []
+				#						pAttackPlot2 = []
+				#						iDamage = 100
+				#						bDoRangeAttack = False
+				#						# Plot holen
+				#						plot = loopUnit.plot()
+				#						# wenn Unit in der Stadt, immer verteidigen
+				#						# wenn Unit alleine auf dem Feld, nicht angreifen sondern eher wegbewegen (AI choice)
+				#						if plot.isCity() or plot.getNumUnits() > 1:
+				#								bDoRangeAttack = True
+				#						# Plots rundum checken
+				#						if bDoRangeAttack:
+				#								iX = loopUnit.getX()
+				#								iY = loopUnit.getY()
+				#								for x in range(-iRange, iRange+1):
+				#										for y in range(-iRange, iRange+1):
+				#												loopPlot = plotXY(iX, iY, x, y)
+				#												if loopPlot is not None and not loopPlot.isNone():
+				#														iNumUnits = loopPlot.getNumUnits()
+				#														if iNumUnits > 0:
+				#																for i in range(iNumUnits):
+				#																		iOwner = loopPlot.getUnit(i).getOwner()
+				#																		if iOwner != iPlayer:
+				#																				if pTeam.isAtWar(gc.getPlayer(iOwner).getTeam()):
+				#																						iUnitDamage = loopPlot.getUnit(i).getDamage()
+				#																						if iUnitDamage < iDamage:
+				#																								iDamage = iUnitDamage
+				#																								if iDamage == 0:
+				#																										pAttackPlot1.append(loopPlot)
+				#																								else:
+				#																										pAttackPlot2.append(loopPlot)
+				#																								break
+				#
+				#						pAttackPlot = []
+				#						if len(pAttackPlot1):
+				#								iRand = CvUtil.myRandom(len(pAttackPlot1), "onEndPlayerTurn (AI): Choose primary Plot for Ranged Combat")
+				#								pAttackPlot.append(pAttackPlot1[iRand])
+				#						elif len(pAttackPlot2):
+				#								iRand = CvUtil.myRandom(len(pAttackPlot2), "onEndPlayerTurn (AI): Choose secondary Plot for Ranged Combat")
+				#								pAttackPlot.append(pAttackPlot2[iRand])
+				#
+				#						if len(pAttackPlot):
+				#								loopUnit.rangeStrike(pAttackPlot[0].getX(), pAttackPlot[0].getY())
+				#								loopUnit.finishMoves()
+				#
+				#				(loopUnit, pIter) = pPlayer.nextUnit(pIter, False)
+				
 
 				# PAE Debug Mark 3
 				#"""
@@ -2889,9 +2988,23 @@ class CvEventManager:
 						return
 				## Platy WorldBuilder ##
 				iTeamX, iHasMetTeamY = argsList
-				if not self.__LOG_CONTACT:
-						return
-				CvUtil.pyPrint('Team %d has met Team %d' % (iTeamX, iHasMetTeamY))
+
+				## PB Mod ## 
+				if self.__LOG_CONTACT:
+					CvUtil.pyPrint('Team %d has met Team %d' %(iTeamX, iHasMetTeamY))
+
+
+				if gc.getGame().getActiveTeam() == iTeamX:
+					inputClass = ScreenInput([NotifyCode.NOTIFY_CLICKED, 0, 0, 0, "",
+											"ScoreRowPlus",
+											False, False, False,
+											-1, -1, -1,
+											 1, -1, False])  # iData1, iData2, bOption
+
+					main = CvScreensInterface.HandleInputMap[CvScreenEnums.MAIN_INTERFACE]
+					main.handleInput(inputClass)
+					CyInterface().setDirty(InterfaceDirtyBits.Score_DIRTY_BIT, False)
+				## PB Mod ##
 
 		def onCombatResult(self, argsList):
 				'Combat Result'
@@ -5229,7 +5342,34 @@ class CvEventManager:
 		def onCityHurry(self, argsList):
 				'City is renamed'
 				pCity = argsList[0]
-				# iHurryType = argsList[1]
+				iHurryType = argsList[1]
+
+				## PB Mod ##
+				# EE
+				if (pCity.getOwner() == gc.getGame().getActivePlayer()
+					and iHurryType == 0):
+					if "__ee_whip_played" not in self.__dict__:
+						# Check if previous instance is running
+						bPlay = True
+						if "__ee_whip_handle" in self.__dict__:
+							if CyAudioGame().Is2DSoundPlaying(self.__ee_whip_handle):
+								bPlay = False
+							else:
+								CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
+								del self.__dict__["__ee_whip_handle"]
+
+						if bPlay:
+							r = gc.getASyncRand().get(500, "Whip ASYNC")
+							# CvUtil.pyPrint("EE_WHIP random val: %i" % (r,))
+							if r == 0:
+								self.__ee_whip_played = True
+								self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP")
+
+							elif r <= 5:
+								# can trigger more than once
+								# self.__ee_whip_played = True
+								self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP_SHORT")
+				## PB Mod ##
 
 				# Kolonie / Provinz ----------
 				PAE_City.doCheckCityState(pCity)
@@ -5258,6 +5398,15 @@ class CvEventManager:
 				'sample generic event, called on each game turn slice'
 				# genericArgs = argsList[0][0]  # tuple of tuple of my args
 				# turnSlice = genericArgs[0]
+
+				## PB Mod ##
+				global iPlayerOptionCheck
+				if iPlayerOptionCheck > 0:
+					iPlayerOptionCheck -= 1
+					if iPlayerOptionCheck == 0:
+						check_stack_attack()
+						check_show_ressources()
+				## PB Mod ##
 
 				if CIV4_SHELL:
 						civ4Console.update(self.glob, self.loc)
@@ -5431,6 +5580,73 @@ class CvEventManager:
 					loopUnit.finishMoves()
 				(loopUnit, iter) = pPlayer.nextUnit(iter, False)
 		## Break Endless AI Turn by Xyth ##
+
+
+## PB Mod - Functions ##
+
+def check_stack_attack():
+	iPlayer = gc.getGame().getActivePlayer()
+	if (iPlayer != -1
+			# and not CyGame().isPitbossHost() and CyGame().isPitboss()
+			and gc.getPlayer(iPlayer).isOption(PlayerOptionTypes.PLAYEROPTION_STACK_ATTACK)):
+		szBody = localText.getText("TXT_KEY_MOD_POPUP_WARNING_STACK_ATTACK", ())
+		popupInfo = CyPopupInfo()
+		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
+		popupInfo.setText(szBody)
+		popupInfo.addPopup(iPlayer)
+
+def check_show_ressources():
+	iPlayer = gc.getGame().getActivePlayer()
+	# Requires implementation of doControlWithoutWidget in DLL. Comment in after implementation.
+	# if (iPlayer != -1
+		# and gc.getPlayer(iPlayer).isOption(
+			# PlayerOptionTypes.PLAYEROPTION_MODDER_1)
+	# ):
+		# CvUtil.pyPrint('toggle resource symbols on')
+		# bResourceOn = ControlTypes.CONTROL_RESOURCE_ALL + 1001
+		# CyGame().doControlWithoutWidget(bResourceOn)  # Ctrl+r
+
+def genEndTurnSave(iGameTurn, iPlayerTurnActive):
+	# To creates a save shortly before the turn ends
+	if not CyGame().isPitbossHost():
+		return
+
+	altroot = gc.getAltrootDir()
+	filename = "%s\\Saves\\multi\\auto\\EndSave_T%i.CivBeyondSwordSave" % (altroot, iGameTurn,)
+	PB = CyPitboss()
+	PB.consoleOut("Save '" + filename + "' ...")
+
+	# Backup current state
+	td = PB.getTurnTimeLeft()  # Simply 0!? No, timer of next round will be returned instead of 0
+	iP = CyGame().getPausePlayer()  # -1
+	#PB.consoleOut("Timer is %d " % (td,))
+
+	# Minimal bound of timer in save
+	tdMax = CyGame().getPitbossTurnTime() * 3600 * 4 - 1
+	# PB.consoleOut("Compare timers: " + str(td) + ", " + str(tdMax))
+	if td < 60 * 4 or td == tdMax:
+		timer_change = 60 * 4 - td  # One minute
+	else:
+		timer_change = 0
+
+	# Avoid turn change on reload
+	gc.getPlayer(iPlayerTurnActive).setTurnActive(True)
+	CyGame().setPausePlayer(iPlayerTurnActive)
+	if PB.getTurnTimer():
+		CyGame().incrementTurnTimer(timer_change)
+
+	# Save paused game
+	PB.save(filename)
+
+	# Restore current state
+	if PB.getTurnTimer():
+		CyGame().incrementTurnTimer(-timer_change)
+
+	CyGame().setPausePlayer(iP)
+	gc.getPlayer(iPlayerTurnActive).setTurnActive(False)
+
+	PB.consoleOut("Done")
+
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # BTS END OF FILE -----------------------------------------------------------------------
