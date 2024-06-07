@@ -1,0 +1,12 @@
+{
+ "update_urls": [
+  "http://kirk.zulan.net/pb/ModUpdates/PB93"
+ ],
+ "visit_url": "https://www.civforum.de/showthread.php?114987-PB93-Unreiner-Kartenpool",
+ "current_version": "Update_1.zip",
+ "check_at_startup": 0,
+ "startup_delay": -1,
+ "installed_updates": [
+  "Update_1.zip"
+ ]
+}
