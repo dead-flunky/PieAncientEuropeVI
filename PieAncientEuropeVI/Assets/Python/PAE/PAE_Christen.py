@@ -332,24 +332,18 @@ def removePagans(pCity):
 
 										# PAE 6.14: Reli der Heiligen Stadt erst zuletzt austreiben
 										iReli = lReli[iRand]
-										pHolyCity = gc.getGame().getHolyCity(iReli)
-										bHolyCity = False
+										bHolyCity = pCity.isHolyCityByType(iReli)
 										bLastCityOfReligion = False
-										if not pHolyCity.isNone() and pCity.getID() == pHolyCity.getID():
-												bHolyCity = True
-												bLastCityOfReligion = True
-												(loopCity, pIter) = pPlayer.firstCity(False)
-												while loopCity:
-														if not loopCity.isNone():
-																if loopCity.getID() == pHolyCity.getID():
-																		continue
-																if loopCity.isHasReligion(iReli):
-																		bLastCityOfReligion = False
-																		break
-														(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+										if bHolyCity:
+											bLastCityOfReligion = True
+											(loopCity, pIter) = pPlayer.firstCity(False)
+											while loopCity:
+													if not loopCity.isNone() and loopCity.getID() != pCity.getID() and loopCity.isHasReligion(iReli):
+															bLastCityOfReligion = False
+															break
+													(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 										if not bLastCityOfReligion or (bHolyCity and bLastCityOfReligion):
-
 												iRange = gc.getNumBuildingInfos()
 												for iBuildingLoop in range(iRange):
 														if pCity.isHasBuilding(iBuildingLoop):
