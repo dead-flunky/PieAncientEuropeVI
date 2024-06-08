@@ -47,29 +47,31 @@ import CvUtil
 # import CvPopupInterface
 import CvScreenUtilsInterface
 import ScreenInput as PyScreenInput
+import Popup as PyPopup
+
 from CvPythonExtensions import (CyGlobalContext, CyGame, CyInterface, ButtonPopupTypes,
-																CyMap, FeatTypes, TaskTypes, CyPopupInfo, CyTranslator,
-																CyMessageControl, AdvancedStartActionTypes, UnitAITypes,
-																DirectionTypes)
+								CyMap, FeatTypes, TaskTypes, CyPopupInfo, CyTranslator,
+								CyMessageControl, AdvancedStartActionTypes, UnitAITypes,
+								DirectionTypes)
 
 from CvScreenEnums import (SPACE_SHIP_SCREEN, MAIN_INTERFACE,
-													 DOMESTIC_ADVISOR, RELIGION_SCREEN, CORPORATION_SCREEN, CIVICS_SCREEN,
-													 TECH_CHOOSER, FOREIGN_ADVISOR, FINANCE_ADVISOR, MILITARY_ADVISOR,
-													 DAWN_OF_MAN, WONDER_MOVIE_SCREEN, ERA_MOVIE_SCREEN,
-													 INTRO_MOVIE_SCREEN, OPTIONS_SCREEN, INFO_SCREEN, TECH_SPLASH,
-													 REPLAY_SCREEN, VICTORY_SCREEN, TOP_CIVS, HALL_OF_FAME,
-													 VICTORY_MOVIE_SCREEN, ESPIONAGE_ADVISOR, DAN_QUAYLE_SCREEN,
-													 PEDIA_MAIN, PEDIA_TECH, PEDIA_UNIT, PEDIA_BUILDING,
-													 PEDIA_PROMOTION, PEDIA_PROJECT, PEDIA_UNIT_CHART,
-													 PEDIA_BONUS, PEDIA_IMPROVEMENT, PEDIA_TERRAIN, PEDIA_FEATURE,
-													 PEDIA_CIVIC, PEDIA_CIVILIZATION, PEDIA_LEADER, PEDIA_RELIGION,
-													 PEDIA_CORPORATION, PEDIA_HISTORY, PEDIA_SPECIALIST,
-													 WORLDBUILDER_SCREEN, DEBUG_INFO_SCREEN, WB_PLOT, WB_PLOT_RIVER,
-													 WB_EVENT, WB_BUILDING, WB_CITYDATA, WB_CITYEDIT, WB_TECH,
-													 WB_PROJECT, WB_TEAM, WB_PLAYER, WB_UNIT, WB_PROMOTION,
-													 WB_DIPLOMACY, WB_GAMEDATA, WB_UNITLIST, WB_RELIGION,
-													 WB_CORPORATION, WB_INFO, WB_TRADE, TRADEROUTE_ADVISOR,
-													 TRADEROUTE_ADVISOR2)
+							DOMESTIC_ADVISOR, RELIGION_SCREEN, CORPORATION_SCREEN, CIVICS_SCREEN,
+							TECH_CHOOSER, FOREIGN_ADVISOR, FINANCE_ADVISOR, MILITARY_ADVISOR,
+							DAWN_OF_MAN, WONDER_MOVIE_SCREEN, ERA_MOVIE_SCREEN,
+							INTRO_MOVIE_SCREEN, OPTIONS_SCREEN, INFO_SCREEN, TECH_SPLASH,
+							REPLAY_SCREEN, VICTORY_SCREEN, TOP_CIVS, HALL_OF_FAME,
+							VICTORY_MOVIE_SCREEN, ESPIONAGE_ADVISOR, DAN_QUAYLE_SCREEN,
+							PEDIA_MAIN, PEDIA_TECH, PEDIA_UNIT, PEDIA_BUILDING,
+							PEDIA_PROMOTION, PEDIA_PROJECT, PEDIA_UNIT_CHART,
+							PEDIA_BONUS, PEDIA_IMPROVEMENT, PEDIA_TERRAIN, PEDIA_FEATURE,
+							PEDIA_CIVIC, PEDIA_CIVILIZATION, PEDIA_LEADER, PEDIA_RELIGION,
+							PEDIA_CORPORATION, PEDIA_HISTORY, PEDIA_SPECIALIST,
+							WORLDBUILDER_SCREEN, DEBUG_INFO_SCREEN, WB_PLOT, WB_PLOT_RIVER,
+							WB_EVENT, WB_BUILDING, WB_CITYDATA, WB_CITYEDIT, WB_TECH,
+							WB_PROJECT, WB_TEAM, WB_PLAYER, WB_UNIT, WB_PROMOTION,
+							WB_DIPLOMACY, WB_GAMEDATA, WB_UNITLIST, WB_RELIGION,
+							WB_CORPORATION, WB_INFO, WB_TRADE, TRADEROUTE_ADVISOR,
+							TRADEROUTE_ADVISOR2)
 
 import PAE_Trade
 import PAE_Cultivation
@@ -335,7 +337,36 @@ def showVictoryScreen():
 		if CyGame().getActivePlayer() > -1:
 				victoryScreen.interfaceScreen()
 
+# PB Mod #
+def showModChecksumPopup(args):
+    # Status flag meaning: 
+    #  0 - Everything is fine
+    #  1 - Wrong mod name
+    #  2 - Wrong mod version
+    #  4 - Save is password protected.
+    #  8 - Server does not send checksums (8 is like 1 xor 2).
 
+	status = args[0]
+	if (status & 0x2) or (status & 0x8):
+		popup = PyPopup.PyPopup()
+		popup.setHeaderString(CyTranslator().getText("TXT_KEY_MISC_WARNING", ()))
+		popup.setBodyString(CyTranslator().getText("TXT_KEY_PBMOD_WRONG_MODNAME", ()))
+		popup.launch()
+	elif (status & 0x1):
+		popup = PyPopup.PyPopup()
+		popup.setHeaderString(CyTranslator().getText("TXT_KEY_MISC_WARNING", ()))
+		if (status & 0x4):
+			popup.setBodyString(CyTranslator().getText("TXT_KEY_PBMOD_WRONG_MODVERSION", ()))
+		else:
+			popup.setBodyString(CyTranslator().getText("TXT_KEY_PBMOD_WRONG_MODVERSION_MAYBE_OK", ()))
+		popup.launch()
+	elif False:
+		popup = PyPopup.PyPopup()
+		popup.setHeaderString(CyTranslator().getText("TXT_KEY_MISC_OK", ()))
+		popup.setBodyString(CyTranslator().getText("TXT_KEY_MISC_OK", ()))
+		popup.launch()
+
+# PB Mod #
 #################################################
 # Civilopedia
 #################################################
