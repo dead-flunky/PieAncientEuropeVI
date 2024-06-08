@@ -90,12 +90,12 @@ class CvEspionageAdvisor:
         screen.setLabel(self.WIDGET_HEADER, "Background", u"<font=4b>" + localText.getText("TXT_KEY_ESPIONAGE_SCREEN", ()).upper() + u"</font>",
                         CvUtil.FONT_CENTER_JUSTIFY, self.X_SCREEN, self.Y_TITLE, self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-        if (CyGame().isDebugMode()):
+        if CyGame().isDebugMode():
             self.iDebugDropdownID = 554
             self.szDropdownName = self.DEBUG_DROPDOWN_ID
             screen.addDropDownBoxGFC(self.szDropdownName, 22, 12, 300, WidgetTypes.WIDGET_GENERAL, self.iDebugDropdownID, -1, FontTypes.GAME_FONT)
             for j in range(gc.getMAX_PLAYERS()):
-                if (gc.getPlayer(j).isAlive()):
+                if gc.getPlayer(j).isAlive() and not pPlayer.isWatchingCiv():
                     screen.addPullDownString(self.szDropdownName, gc.getPlayer(j).getName(), j, j, False)
 
         # draw the contents
@@ -138,16 +138,16 @@ class CvEspionageAdvisor:
         for iLoop in range(gc.getMAX_PLAYERS()):
             pPlayer = gc.getPlayer(iLoop)
             if (pPlayer.getTeam() != pActivePlayer.getTeam() and not pPlayer.isBarbarian()):
-                if (pPlayer.isAlive()):
-                    if (pActiveTeam.isHasMet(pPlayer.getTeam())):
+                if pPlayer.isAlive() and not pPlayer.isWatchingCiv():
+                    if pActiveTeam.isHasMet(pPlayer.getTeam()):
 
                         self.aiKnownPlayers.append(iLoop)
                         self.iNumEntries = self.iNumEntries + 1
 
-                        if (self.iTargetPlayer == -1):
+                        if self.iTargetPlayer == -1:
                             self.iTargetPlayer = iLoop
 
-        while(self.iNumEntries < 17):
+        while self.iNumEntries < 17:
             self.iNumEntries = self.iNumEntries + 1
             self.aiUnknownPlayers.append(self.iNumEntries)
 
