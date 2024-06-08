@@ -15,7 +15,12 @@ import CvUtil
 # from array import *
 
 from CvWBKeys import (CivDescKeys, CivAdjectiveKeys, LeaderKeys)
-import CvPlatyBuilderScreen
+
+try: # Try vom PB Mod. PAE Original hat einfach import Platy
+	import CvPlatyBuilderScreen
+	WITH_PLATY = True
+except:
+    WITH_PLATY = False
 
 # TODO remove
 # DEBUG code for Python 3 linter
@@ -677,6 +682,7 @@ class CvPlayerDesc:
 				self.artStyle = "NONE"
 				self.isPlayableCiv = 1
 				self.isMinorNationCiv = 0
+				self.isWatchingCiv = 0 # PB Mod, Beobachter Ziv
 				self.iStartingGold = 0
 				self.iStartingX = -1
 				self.iStartingY = -1
@@ -765,6 +771,7 @@ class CvPlayerDesc:
 						f.write("\tArtStyle=%s\n" % (gc.getArtStyleTypes(pPlayer.getArtStyleType())))
 						f.write("\tPlayableCiv=%d\n" % (int(pPlayer.isPlayable())))
 						f.write("\tMinorNationStatus=%d\n" % (pPlayer.isMinorCiv()))
+						f.write("\tWatchingCiv=%d\n" %(pPlayer.isWatchingCiv())) # PB Mod, Beobachter Ziv
 						f.write("\tStartingGold=%d\n" % (pPlayer.getGold()))
 
 						if pPlayer.isAlive():
@@ -908,6 +915,13 @@ class CvPlayerDesc:
 								if v != -1:
 										self.isMinorNationCiv = int(v)
 										continue
+
+								# PB Mod Beobachter Ziv #
+								v = parser.findTokenValue(toks, "WatchingCiv")
+								if v != -1:
+									self.isWatchingCiv = int(v)
+									continue
+								# PB Mod # 
 
 								v = parser.findTokenValue(toks, "StartingGold")
 								if v != -1:
@@ -2119,8 +2133,10 @@ class CvWBDesc:
 				The techs/buildings will be restored after the writing of the save game.
 				This should not call any Python-Events (bad side effect).
 				"""
-				backup_bPython = CvPlatyBuilderScreen.bPython
-				CvPlatyBuilderScreen.bPython = False
+				if WITH_PLATY: # Abfrage vom PB Mod
+						backup_bPython = CvPlatyBuilderScreen.bPython
+						CvPlatyBuilderScreen.bPython = False
+
 				global teamTechs
 				global cityBuildings
 				global bFirstWrite
@@ -2203,7 +2219,9 @@ class CvWBDesc:
 										pTeam.setHasTech(i, True, PlayerTypes.NO_PLAYER, False, False)
 				else:
 						bFirstWrite = False
-				CvPlatyBuilderScreen.bPython = backup_bPython
+
+				if WITH_PLATY: # ABfrage vom PB Mod
+						CvPlatyBuilderScreen.bPython = backup_bPython
 				""" End, Restore buildings and techs """
 
 				print("WBSave done\n")
@@ -2396,6 +2414,12 @@ class CvWBDesc:
 						for iTeamLoop in pWBPlot.abTeamPlotRevealed:
 								pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
 								pPlot.setRevealed(iTeamLoop, True, False, TeamTypes.NO_TEAM)
+
+		        # PB Mod BeobchterZiv
+				for iPlayerLoop in xrange(len(self.playersDesc)):
+					pPlayer = gc.getPlayer(iPlayerLoop)
+					pWBPlayer = self.playersDesc[iPlayerLoop]
+					pPlayer.setWatchingCiv(pWBPlayer.isWatchingCiv == 1)
 
 				# units
 				for pDesc in self.plotDesc:
