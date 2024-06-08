@@ -36,7 +36,7 @@ from CvPythonExtensions import (CyGlobalContext, CyTranslator, plotXY,
 								CyGame, CyEngine, CyAudioGame, MissionTypes, FontSymbols, PlotTypes,
 								InterfaceDirtyBits, InterfaceMessageTypes, GameOptionTypes, UnitTypes,
 								EventContextTypes, getChtLvl, plotDirection, MissionAITypes, RouteTypes,
-								PlayerTypes, CyCamera, NotifyCode)
+								PlayerTypes, CyCamera, NotifyCode, PlayerOptionTypes, ControlTypes)
 import CvUtil
 import CvScreensInterface
 import CvDebugTools
