@@ -65,7 +65,7 @@
 			<Button>Art/Terrain/Routes/handelsstrasse/button_handelsstrasse.dds</Button>
 		</RouteInfo>
 		<RouteInfo>
-			<Type>ROUTE_RAILROAD</Type>
+			<Type>ROUTE_ROMAN_ROAD</Type>
 			<Description>TXT_KEY_ROUTE_ROMAN_ROAD</Description>
 			<iValue>5</iValue>
 			<iAdvancedStartCost>50</iAdvancedStartCost>

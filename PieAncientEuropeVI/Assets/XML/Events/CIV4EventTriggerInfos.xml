@@ -358,7 +358,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -1086,7 +1086,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -1184,7 +1184,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -3229,7 +3229,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -4080,7 +4080,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -4508,7 +4508,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -4598,7 +4598,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -6381,7 +6381,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -6638,7 +6638,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -6810,7 +6810,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -6988,7 +6988,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>
@@ -7078,7 +7078,7 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_RAILROAD</RouteType>
+				<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 				<RouteType>ROUTE_PERSIAN_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired/>

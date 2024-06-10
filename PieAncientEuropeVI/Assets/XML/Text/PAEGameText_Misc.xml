@@ -748,7 +748,7 @@
 		<Tag>TXT_KEY_FEAT_1_MILLION</Tag>
 		<English>Congratulations, the burgeoning %s1Civ_Name now holds a Million souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
 		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais un million d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
-		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt eine Million Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt EINE MILLION Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
 		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene un milione di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
 		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga a un mill&#243;n de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
 	</TEXT>
@@ -823,6 +823,62 @@
 		<German>Herzlichen Gl&#252;ckwunsch! Ihr habt Euer erstes Nationales Wunder ([COLOR_BUILDING_TEXT]%s1Building_Name[COLOR_REVERT]) in %s2City_Name fertig gestellt! Diese m&#228;chtigen Geb&#228;ude eignen sich f&#252;r die Spezialisierung Eurer St&#228;dte. In PAE gibt es keine Anzahlbeschr&#228;nkung von Nationalwundern in einer Stadt.</German>
 		<Italian>Congratulazioni, hai completato la tua prima Meraviglia Nazionale ([COLOR_BUILDING_TEXT]%s1Building_Name[COLOR_REVERT]) a %s2City_Name! Questi potenti edifici sono particolarmente indicati per specializzare le tue citt&#224;. In PAE there is no National Wonder limit in a city.</Italian>
 		<Spanish>Felicidades, hab&#233;is completado en %s2City_Name vuestra primera maravilla nacional, [COLOR_BUILDING_TEXT]%s1Building_Name[COLOR_REVERT]. Estos poderosos edificios son &#250;tiles para especializar las ciudades. En PAE no hay limitaci&#243;n de maravillas nacionales por ciudad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_100K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 100.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 100.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 100.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 100.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 100.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_10K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 10.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 10.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 10.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 10.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 10.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_1K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 1.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 1.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 1.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 1.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 1.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_250K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 250.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 250.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 250.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 250.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 250.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_25K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 25.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 25.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 25.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 25.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 25.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_50K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 50.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 50.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 50.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 50.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 50.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEAT_POPULATION_5K</Tag>
+		<English>Congratulations, the burgeoning %s1Civ_Name now holds 5.000 souls! Larger cities allow more citizens and specialists, increasing our productivity!</English>
+		<French>F&#233;licitations, la civilisation des %s1Civ_Name est en plein essor et compte d&#233;sormais 5.000 d'&#226;mes ! Les grandes villes peuvent abriter plus de citoyens et de sp&#233;cialistes, ce qui augmente leur productivit&#233; !</French>
+		<German>Herzlichen Gl&#252;ckwunsch! In der expandierenden Zivilisation %s1Civ_Name leben jetzt 5.000 Einwohner! Gr&#246;&#223;ere St&#228;dte bieten Platz f&#252;r mehr B&#252;rger und Spezialisten, die wiederum unsere Produktivit&#228;t erh&#246;hen!</German>
+		<Italian>Congratulazioni, la fiorente citt&#224; %s1Civ_Name ora contiene 5.000 di abitanti! Le grandi citt&#224; ospitano pi&#249; cittadini e specialisti, aumentando la produttivit&#224;!</Italian>
+		<Spanish>Felicidades, el pr&#243;spero %s1Civ_Name ya alberga 5.000 de almas. Unas mayores ciudades permiten que haya m&#225;s habitantes y especialistas, lo que aumenta a su vez la productividad.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEAT_SUPPLY_FOOD</Tag>

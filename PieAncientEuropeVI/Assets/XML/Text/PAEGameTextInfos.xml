@@ -193,7 +193,7 @@
 		<Spanish>Erigir un [LINK=IMPROVEMENT_HANDELSPOSTEN]puesto de comercio[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_RAILROAD</Tag>
+		<Tag>TXT_KEY_BUILD_ROMAN_ROAD</Tag>
 		<English>Build a [LINK=CONCEPT_MOVEMENT]Paved Road[\LINK]</English>
 		<French>Construire une [LINK=CONCEPT_MOVEMENT]Voie pav&#233;e[\LINK]</French>
 		<German>[LINK=CONCEPT_MOVEMENT]Befestigte Stra&#223;e[\LINK] bauen</German>
