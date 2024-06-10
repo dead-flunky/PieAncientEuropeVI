@@ -1490,8 +1490,8 @@ class CvEventManager:
 								iReligion = 10
 						elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CHRISTIAN_MISSIONARY"):
 								iReligion = 11
-						#elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_MISSIONARY_JAINISMUS"):
-						#		iReligion = 12
+						elif pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_ISLAMIC_MISSIONARY"):
+								iReligion = 12
 
 						if iReligion != -1:
 								bCanSpread = False
