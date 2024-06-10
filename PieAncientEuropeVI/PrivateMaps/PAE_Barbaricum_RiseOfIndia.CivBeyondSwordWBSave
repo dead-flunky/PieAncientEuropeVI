@@ -3139,7 +3139,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=38, StartingY=30
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3209,7 +3209,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=3, StartingY=49
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3248,7 +3248,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=44, StartingY=9
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3317,7 +3317,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=33, StartingY=7
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3464,7 +3464,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=26, StartingY=32
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3647,7 +3647,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=39, StartingY=7
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3825,7 +3825,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=58, StartingY=21
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -3882,7 +3882,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=240
 	StartingX=38, StartingY=49
-	StateReligion=RELIGION_JAINISMUS
+	StateReligion=RELIGION_HINDUISM
 	StartingEra=ERA_IRON
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL
@@ -7895,12 +7895,12 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
 		BuildingType=BUILDING_TRAIT_CREATIVE_GLOBAL
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player6Culture=20
@@ -9486,11 +9486,11 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player6Culture=20
@@ -10071,7 +10071,7 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
@@ -10079,8 +10079,8 @@ BeginPlot
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
-		ReligionType=RELIGION_JAINISMUS
-		HolyCityReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
+		HolyCityReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -10373,10 +10373,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player4Culture=20
@@ -11528,14 +11528,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -13507,10 +13507,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player4Culture=20
@@ -16792,14 +16792,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -17550,10 +17550,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player15Culture=20
@@ -19044,10 +19044,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player15Culture=20
@@ -20710,10 +20710,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player10Culture=20
@@ -21533,14 +21533,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -21617,10 +21617,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player10Culture=20
@@ -23627,12 +23627,12 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
 		BuildingType=BUILDING_TRAIT_CREATIVE_GLOBAL
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		Player1Culture=20
 	EndCity
 	TeamReveal=1,
@@ -23715,11 +23715,11 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		Player1Culture=20
 	EndCity
 	TeamReveal=1,2,5,12,
@@ -25583,7 +25583,7 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
@@ -25591,7 +25591,7 @@ BeginPlot
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
 		BuildingType=BUILDING_TRAIT_CREATIVE_LOCAL
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -25810,10 +25810,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player22Culture=20
@@ -27653,14 +27653,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -29517,10 +29517,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player22Culture=20
@@ -30615,14 +30615,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -32489,10 +32489,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player3Culture=20
@@ -34411,10 +34411,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player3Culture=20
@@ -38289,10 +38289,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player20Culture=20
@@ -39025,14 +39025,14 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
 		BuildingType=BUILDING_STADT
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_PROD
@@ -40805,10 +40805,10 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_LEVEE
-		BuildingType=BUILDING_JAIN_TEMPLE
+		BuildingType=BUILDING_HINDU_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
 		BuildingType=BUILDING_KOLONIE
-		ReligionType=RELIGION_JAINISMUS
+		ReligionType=RELIGION_HINDUISM
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		FreeSpecialistType=SPECIALIST_SLAVE_FOOD
 		Player20Culture=20
