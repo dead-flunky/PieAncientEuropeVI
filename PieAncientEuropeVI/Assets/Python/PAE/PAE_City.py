@@ -19,6 +19,7 @@ import PAE_Lists as L
 
 # Defines
 gc = CyGlobalContext()
+PAEMod = "PieAncientEuropeVII"
 
 # PAE Stadtstatus
 iPopDorf = 3
@@ -3953,8 +3954,7 @@ def doCheckCityName(pCity):
 				# thisCityName = pCity.getName()
 				thisCityX = pCity.getX()
 				thisCityY = pCity.getY()
-
-				CityNamesFile = open("Mods/PieAncientEuropeVI/Assets/XML/Misc/" + Filename)
+				CityNamesFile = open(os.path.join("Mods", PAEMod, "Assets", "XML","Misc",Filename))
 				for CurString in CityNamesFile.readlines():
 						if "#" in CurString:
 								continue

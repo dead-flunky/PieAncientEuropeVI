@@ -95,6 +95,8 @@ import EurasiaXXXLCivs
 # Diverse Einstellungen
 # +++++++++++++++++++++
 
+PAEMod = "PieAncientEuropeVII"
+
 # Modernisierungen sollen mit automatischen Pfaden erstellt werden
 # wenn deaktivert, sollte im XML BUILD_PATH bei UNIT_WORKER eingebaut werden
 bAutomatischePfade = True
@@ -2351,7 +2353,7 @@ class CvEventManager:
 						if MapName != "":
 								Debugging = False
 								AddPositionsToMap = False
-								MyFile = open("Mods/PieAncientEuropeVI/Assets/XML/Misc/" + MapName)
+								MyFile = open(os.path.join("Mods", PAEMod, "Assets", "XML","Misc",MapName))
 								StartingPointsUtil.ReadMyFile(MyFile, Debugging, AddPositionsToMap, bPlaceCivs, bPlaceBarbs)
 								MyFile.close()
 				# --------------------------------
