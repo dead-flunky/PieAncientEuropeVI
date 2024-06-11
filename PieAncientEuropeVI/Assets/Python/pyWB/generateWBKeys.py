@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-import os.path
 import re
 
 # XML file with keys for civilization releated keys.

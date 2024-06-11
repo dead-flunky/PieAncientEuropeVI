@@ -1,5 +1,5 @@
 # Imports
-# Imports
+import os
 from CvPythonExtensions import (CyGlobalContext, CyInterface,
 																CyTranslator, CyMap, DirectionTypes,
 																ColorTypes, UnitAITypes, CyPopupInfo,

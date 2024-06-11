@@ -24,6 +24,7 @@
 # 13 = orange
 # 14 = graublau
 #####################
+import os
 # import sys
 # import pickle
 # import math

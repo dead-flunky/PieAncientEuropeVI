@@ -1097,7 +1097,7 @@ class CvMainInterface:
 						self.diploScreenDirty = True
 						self.diploScreenActive = CyGame().isDiploScreenUp()
 						self.pauseActive = CyGame().isPaused()
-			
+
 					if self.diploScreenDirty:
 						self.diploScreenDirty = False
 						if gc.getGame().isPaused() and CyGame().isDiploScreenUp():
