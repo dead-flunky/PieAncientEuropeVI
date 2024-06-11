@@ -2496,13 +2496,13 @@ class CvEventManager:
 				# -----------
 
 				# River-Feature: Fluss soll zu River (TODO: auskommentieren/entfernen wenn es die Fluss-DLL gibt)
-				iTerrainRiver = gc.getInfoTypeForString("TERRAIN_RIVER")
-				iTerrainRiverFord = gc.getInfoTypeForString("TERRAIN_RIVER_FORD")
-				iTerrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-				for i in xrange(CyMap().numPlots()):
-						loopPlot = CyMap().plotByIndex(i)
-						if loopPlot.getTerrainType() == iTerrainRiver: loopPlot.setTerrainType(iTerrainCoast,1,1)
-						elif loopPlot.getTerrainType() == iTerrainRiverFord: loopPlot.setTerrainType(iTerrainCoast,1,1)
+				#iTerrainRiver = gc.getInfoTypeForString("TERRAIN_RIVER")
+				#iTerrainRiverFord = gc.getInfoTypeForString("TERRAIN_RIVER_FORD")
+				#iTerrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+				#for i in xrange(CyMap().numPlots()):
+				#		loopPlot = CyMap().plotByIndex(i)
+				#		if loopPlot.getTerrainType() == iTerrainRiver: loopPlot.setTerrainType(iTerrainCoast,1,1)
+				#		elif loopPlot.getTerrainType() == iTerrainRiverFord: loopPlot.setTerrainType(iTerrainCoast,1,1)
 				# -----------
 
 				# BTS Standard
