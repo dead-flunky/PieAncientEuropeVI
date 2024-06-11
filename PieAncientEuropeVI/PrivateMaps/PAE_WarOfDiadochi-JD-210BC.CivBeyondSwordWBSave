@@ -72592,7 +72592,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -73648,7 +73648,7 @@ EndPlot
 BeginPlot
 	x=54,y=58
 	ImprovementType=IMPROVEMENT_TOWN
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -74916,7 +74916,7 @@ BeginPlot
 	x=55,y=58
 	BonusType=BONUS_WHEAT
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -76465,7 +76465,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_TOWN
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,16,
@@ -77524,7 +77524,7 @@ BeginPlot
 	x=57,y=58
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -79252,7 +79252,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -80760,7 +80760,7 @@ BeginPlot
 	x=59,y=56
 	BonusType=BONUS_MARS
 	ImprovementType=IMPROVEMENT_TOWN
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,6,7,14,16,
@@ -82015,7 +82015,7 @@ EndPlot
 BeginPlot
 	x=60,y=56
 	ImprovementType=IMPROVEMENT_TOWN
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -83504,7 +83504,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_HAMLET_HILL
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,5,6,7,14,16,
@@ -84750,7 +84750,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=2,5,6,7,14,16,
@@ -84763,7 +84763,7 @@ BeginPlot
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=2,5,6,7,14,16,
@@ -86165,7 +86165,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=2,5,6,7,14,16,
@@ -87358,7 +87358,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=2,5,6,7,14,16,17,33,35,

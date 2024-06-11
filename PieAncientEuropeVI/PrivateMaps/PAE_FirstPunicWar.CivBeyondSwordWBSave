@@ -37969,7 +37969,7 @@ BeginPlot
 	x=57,y=58
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,3,11,13,14,15,
@@ -38491,7 +38491,7 @@ BeginPlot
 	x=58,y=58
 	ImprovementType=IMPROVEMENT_VILLAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,3,11,13,14,15,
@@ -39147,7 +39147,7 @@ BeginPlot
 	x=59,y=58
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,3,11,13,14,15,
@@ -39680,7 +39680,7 @@ BeginPlot
 	x=60,y=58
 	ImprovementType=IMPROVEMENT_LUMBER_CAMP
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,3,11,13,14,15,
@@ -40201,7 +40201,7 @@ BeginPlot
 	x=61,y=58
 	ImprovementType=IMPROVEMENT_VILLAGE
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,3,11,13,14,15,
@@ -40823,7 +40823,7 @@ EndPlot
 BeginPlot
 	x=62,y=58
 	ImprovementType=IMPROVEMENT_MINE
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,3,11,13,14,15,
@@ -41429,7 +41429,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_MINE
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,3,11,13,14,15,
@@ -42031,7 +42031,7 @@ BeginPlot
 	x=64,y=59
 	ImprovementType=IMPROVEMENT_LUMBER_CAMP
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,3,11,13,14,15,
@@ -43275,7 +43275,7 @@ BeginPlot
 	isWOfRiver
 	BonusType=BONUS_GERSTE
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,11,13,

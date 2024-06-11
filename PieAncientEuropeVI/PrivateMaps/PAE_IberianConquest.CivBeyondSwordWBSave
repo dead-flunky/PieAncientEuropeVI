@@ -105595,7 +105595,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_VILLAGE_HILL
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
@@ -106270,7 +106270,7 @@ EndPlot
 BeginPlot
 	x=141,y=86
 	ImprovementType=IMPROVEMENT_VILLAGE_HILL
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
@@ -106927,7 +106927,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=142,y=84
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -106935,7 +106935,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=142,y=85
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=9,
@@ -107457,7 +107457,7 @@ EndPlot
 BeginPlot
 	x=143,y=78
 	ImprovementType=IMPROVEMENT_TOWN
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -107465,7 +107465,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=79
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -107474,7 +107474,7 @@ EndPlot
 BeginPlot
 	x=143,y=80
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -107485,7 +107485,7 @@ BeginPlot
 	RiverWEDirection=3
 	BonusType=BONUS_WHEAT
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -107493,7 +107493,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=82
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -107502,7 +107502,7 @@ EndPlot
 BeginPlot
 	x=143,y=83
 	ImprovementType=IMPROVEMENT_COTTAGE
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,
@@ -108728,7 +108728,7 @@ EndPlot
 BeginPlot
 	x=145,y=76
 	ImprovementType=IMPROVEMENT_CAMP
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,9,
@@ -109269,21 +109269,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=146,y=73
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,11,52,
 EndPlot
 BeginPlot
 	x=146,y=74
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,11,52,
 EndPlot
 BeginPlot
 	x=146,y=75
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=9,11,
@@ -109899,7 +109899,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=147,y=72
-	RouteType=ROUTE_RAILROAD
+	RouteType=ROUTE_ROMAN_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,9,
