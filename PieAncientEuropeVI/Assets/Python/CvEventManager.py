@@ -101,6 +101,9 @@ PAEMod = "PieAncientEuropeVII"
 # wenn deaktivert, sollte im XML BUILD_PATH bei UNIT_WORKER eingebaut werden
 bAutomatischePfade = True
 
+# PB Mod
+PBMod = False
+
 # Flag to enable Civ4 shell (See Extras/Pyconsole).
 # Note that the flag will also be used to enable/disable
 # other debugging features of Ramkhamhaeng
@@ -530,69 +533,70 @@ class CvEventManager:
 				CvUtil.pyPrint('onModNetMessage')
 
 				# PB Mod, assemble chat message.
-				chatFlags = (iData5 >> 24) & 0x7F
-				if (chatFlags & 0x70) == 0x70:
-					try:
-						# Convert sign flags back into 32th bit
-						if iData1 < 0: iData1 = -iData1 | 0x80000000
-						if iData2 < 0: iData2 = -iData2 | 0x80000000
-						if iData3 < 0: iData3 = -iData3 | 0x80000000
-						if iData4 < 0: iData4 = -iData4 | 0x80000000
+				if PBMod:
+						chatFlags = (iData5 >> 24) & 0x7F
+						if (chatFlags & 0x70) == 0x70:
+							try:
+								# Convert sign flags back into 32th bit
+								if iData1 < 0: iData1 = -iData1 | 0x80000000
+								if iData2 < 0: iData2 = -iData2 | 0x80000000
+								if iData3 < 0: iData3 = -iData3 | 0x80000000
+								if iData4 < 0: iData4 = -iData4 | 0x80000000
 
-						if (chatFlags & 0x04) == 0x04:
-							# Begin of new message
-							self.pbServerChatMessage = ""
+								if (chatFlags & 0x04) == 0x04:
+									# Begin of new message
+									self.pbServerChatMessage = ""
 
-						if iData1 != 0:
-							self.pbServerChatMessage += "%c%c%c%c" %(
-								chr((iData1 >> 0) & 0xFF),
-								chr((iData1 >> 8) & 0xFF),
-								chr((iData1 >> 16) & 0xFF),
-								chr((iData1 >> 24) & 0xFF))
-						if iData2 != 0:
-							self.pbServerChatMessage += "%c%c%c%c" %(
-								chr((iData2 >> 0) & 0xFF),
-								chr((iData2 >> 8) & 0xFF),
-								chr((iData2 >> 16) & 0xFF),
-								chr((iData2 >> 24) & 0xFF))
-						if iData3 != 0:
-							self.pbServerChatMessage += "%c%c%c%c" %(
-								chr((iData3 >> 0) & 0xFF),
-								chr((iData3 >> 8) & 0xFF),
-								chr((iData3 >> 16) & 0xFF),
-								chr((iData3 >> 24) & 0xFF))
-						if iData4 != 0:
-							self.pbServerChatMessage += "%c%c%c%c" %(
-								chr((iData4 >> 0) & 0xFF),
-								chr((iData4 >> 8) & 0xFF),
-								chr((iData4 >> 16) & 0xFF),
-								chr((iData4 >> 24) & 0xFF))
-						if (iData5 & 0x00FFFFFF) != 0:
-							self.pbServerChatMessage += "%c%c%c" %(
-								chr((iData5 >> 0) & 0xFF),
-								chr((iData5 >> 8) & 0xFF),
-								chr((iData5 >> 16) & 0xFF))
+								if iData1 != 0:
+									self.pbServerChatMessage += "%c%c%c%c" %(
+										chr((iData1 >> 0) & 0xFF),
+										chr((iData1 >> 8) & 0xFF),
+										chr((iData1 >> 16) & 0xFF),
+										chr((iData1 >> 24) & 0xFF))
+								if iData2 != 0:
+									self.pbServerChatMessage += "%c%c%c%c" %(
+										chr((iData2 >> 0) & 0xFF),
+										chr((iData2 >> 8) & 0xFF),
+										chr((iData2 >> 16) & 0xFF),
+										chr((iData2 >> 24) & 0xFF))
+								if iData3 != 0:
+									self.pbServerChatMessage += "%c%c%c%c" %(
+										chr((iData3 >> 0) & 0xFF),
+										chr((iData3 >> 8) & 0xFF),
+										chr((iData3 >> 16) & 0xFF),
+										chr((iData3 >> 24) & 0xFF))
+								if iData4 != 0:
+									self.pbServerChatMessage += "%c%c%c%c" %(
+										chr((iData4 >> 0) & 0xFF),
+										chr((iData4 >> 8) & 0xFF),
+										chr((iData4 >> 16) & 0xFF),
+										chr((iData4 >> 24) & 0xFF))
+								if (iData5 & 0x00FFFFFF) != 0:
+									self.pbServerChatMessage += "%c%c%c" %(
+										chr((iData5 >> 0) & 0xFF),
+										chr((iData5 >> 8) & 0xFF),
+										chr((iData5 >> 16) & 0xFF))
 
-						if (chatFlags & 0x08) == 0x08:
-							# End of message
-							msg_u = self.pbServerChatMessage.rstrip().decode('utf-8')
-							# CvUtil.pyPrint('Final chat message: ' + msg_u)
-							self.pbServerChatMessage = ""
+								if (chatFlags & 0x08) == 0x08:
+									# End of message
+									msg_u = self.pbServerChatMessage.rstrip().decode('utf-8')
+									# CvUtil.pyPrint('Final chat message: ' + msg_u)
+									self.pbServerChatMessage = ""
 
-							sounds = ["AS2D_CHAT",
-									"AS2D_PING",
-									"AS2D_WELOVEKING",  # ^^
-									"AS2D_DECLAREWAR"]
-							sound = sounds[chatFlags & 0x03]
+									sounds = ["AS2D_CHAT",
+											"AS2D_PING",
+											"AS2D_WELOVEKING",  # ^^
+											"AS2D_DECLAREWAR"]
+									sound = sounds[chatFlags & 0x03]
 
-							if not CyGame().isPitbossHost():
-								# Use unicode msg_u with cp1252 charset
-								sColor = localText.getText("[COLOR_WARNING_TEXT]", ())
-								color_msg = u"%sPitboss:</color> %s" % (sColor, msg_u)
-								CyInterface().addImmediateMessage(color_msg, sound)
+									if not CyGame().isPitbossHost():
+										# Use unicode msg_u with cp1252 charset
+										sColor = localText.getText("[COLOR_WARNING_TEXT]", ())
+										color_msg = u"%sPitboss:</color> %s" % (sColor, msg_u)
+										CyInterface().addImmediateMessage(color_msg, sound)
 
-					except Exception, e:
-						CvUtil.pyPrint("Chat message decoding failed. Error: %s" % (e,))
+							except Exception, e:
+								CvUtil.pyPrint("Chat message decoding failed. Error: %s" % (e,))
 
 				
 				# iData1 = iMessageID (!)
@@ -2184,7 +2188,7 @@ class CvEventManager:
 				'Called when Civ shuts down'
 				CvUtil.pyPrint('OnUnInit')
 				# Start PB Mod Copy
-				if "__ee_whip_handle" in self.__dict__:
+				if PBMod and "__ee_whip_handle" in self.__dict__:
 						CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
 						del self.__dict__["__ee_whip_handle"]
 				# End PB Mod Copy
@@ -2229,7 +2233,7 @@ class CvEventManager:
 				# Attention, for iPlayerOptionCheck = 1 you will check aggainst
 				# the option values stored in the save file, but not the current one!
 				iPlayerOptionCheck = 8   # 1 = 1/4 sec
-				if "__ee_whip_handle" in self.__dict__:
+				if PBMod and "__ee_whip_handle" in self.__dict__:
 					CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
 					del self.__dict__["__ee_whip_handle"]
 
@@ -2530,8 +2534,9 @@ class CvEventManager:
 				# CvTopCivs.CvTopCivs().turnChecker(iGameTurn)
 
 				## PB Mod ##
-				genEndTurnSave(iGameTurn, self.latestPlayerEndsTurn)
-				self.bGameTurnProcessing = True
+				if PBMod:
+						genEndTurnSave(iGameTurn, self.latestPlayerEndsTurn)
+						self.bGameTurnProcessing = True
 				## PB Mod ##
 
 				# Historische Texte ---------
@@ -2620,7 +2625,7 @@ class CvEventManager:
 				#"""
 
 				## PB Mod ##
-				self.bGameTurnProcessing = False
+				if PBMod: self.bGameTurnProcessing = False
 
 		# global
 		def onBeginPlayerTurn(self, argsList):
@@ -2781,7 +2786,7 @@ class CvEventManager:
 																		break
 				
 				## PB Mod ## 
-				if gc.getPlayer(iPlayer).isHuman():
+				if PBMod and gc.getPlayer(iPlayer).isHuman():
 						self.latestPlayerEndsTurn = iPlayer
 				# PAE Debug Mark 2
 				#"""
@@ -2991,21 +2996,22 @@ class CvEventManager:
 				## Platy WorldBuilder ##
 				iTeamX, iHasMetTeamY = argsList
 
-				## PB Mod ## 
-				if self.__LOG_CONTACT:
-					CvUtil.pyPrint('Team %d has met Team %d' %(iTeamX, iHasMetTeamY))
+				## PB Mod ##
+				if PBMod:
+						if self.__LOG_CONTACT:
+							CvUtil.pyPrint('Team %d has met Team %d' %(iTeamX, iHasMetTeamY))
 
 
-				if gc.getGame().getActiveTeam() == iTeamX:
-					inputClass = ScreenInput([NotifyCode.NOTIFY_CLICKED, 0, 0, 0, "",
-											"ScoreRowPlus",
-											False, False, False,
-											-1, -1, -1,
-											 1, -1, False])  # iData1, iData2, bOption
+						if gc.getGame().getActiveTeam() == iTeamX:
+							inputClass = ScreenInput([NotifyCode.NOTIFY_CLICKED, 0, 0, 0, "",
+													"ScoreRowPlus",
+													False, False, False,
+													-1, -1, -1,
+													 1, -1, False])  # iData1, iData2, bOption
 
-					main = CvScreensInterface.HandleInputMap[CvScreenEnums.MAIN_INTERFACE]
-					main.handleInput(inputClass)
-					CyInterface().setDirty(InterfaceDirtyBits.Score_DIRTY_BIT, False)
+							main = CvScreensInterface.HandleInputMap[CvScreenEnums.MAIN_INTERFACE]
+							main.handleInput(inputClass)
+							CyInterface().setDirty(InterfaceDirtyBits.Score_DIRTY_BIT, False)
 				## PB Mod ##
 
 		def onCombatResult(self, argsList):
@@ -5347,30 +5353,31 @@ class CvEventManager:
 				iHurryType = argsList[1]
 
 				## PB Mod ##
-				# EE
-				if (pCity.getOwner() == gc.getGame().getActivePlayer()
-					and iHurryType == 0):
-					if "__ee_whip_played" not in self.__dict__:
-						# Check if previous instance is running
-						bPlay = True
-						if "__ee_whip_handle" in self.__dict__:
-							if CyAudioGame().Is2DSoundPlaying(self.__ee_whip_handle):
-								bPlay = False
-							else:
-								CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
-								del self.__dict__["__ee_whip_handle"]
+				if PBMod:
+						# EE
+						if (pCity.getOwner() == gc.getGame().getActivePlayer()
+							and iHurryType == 0):
+							if "__ee_whip_played" not in self.__dict__:
+								# Check if previous instance is running
+								bPlay = True
+								if "__ee_whip_handle" in self.__dict__:
+									if CyAudioGame().Is2DSoundPlaying(self.__ee_whip_handle):
+										bPlay = False
+									else:
+										CyAudioGame().Destroy2DSound(self.__ee_whip_handle)
+										del self.__dict__["__ee_whip_handle"]
 
-						if bPlay:
-							r = gc.getASyncRand().get(500, "Whip ASYNC")
-							# CvUtil.pyPrint("EE_WHIP random val: %i" % (r,))
-							if r == 0:
-								self.__ee_whip_played = True
-								self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP")
+								if bPlay:
+									r = gc.getASyncRand().get(500, "Whip ASYNC")
+									# CvUtil.pyPrint("EE_WHIP random val: %i" % (r,))
+									if r == 0:
+										self.__ee_whip_played = True
+										self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP")
 
-							elif r <= 5:
-								# can trigger more than once
-								# self.__ee_whip_played = True
-								self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP_SHORT")
+									elif r <= 5:
+										# can trigger more than once
+										# self.__ee_whip_played = True
+										self.__ee_whip_handle = CyAudioGame().Play2DSound("AS2D_MOD_EE_WHIP_SHORT")
 				## PB Mod ##
 
 				# Kolonie / Provinz ----------
@@ -5403,11 +5410,12 @@ class CvEventManager:
 
 				## PB Mod ##
 				global iPlayerOptionCheck
-				if iPlayerOptionCheck > 0:
-					iPlayerOptionCheck -= 1
-					if iPlayerOptionCheck == 0:
-						check_stack_attack()
-						check_show_ressources()
+				if PBMod:
+						if iPlayerOptionCheck > 0:
+							iPlayerOptionCheck -= 1
+							if iPlayerOptionCheck == 0:
+								check_stack_attack()
+								check_show_ressources()
 				## PB Mod ##
 
 				if CIV4_SHELL:
@@ -5648,8 +5656,4 @@ def genEndTurnSave(iGameTurn, iPlayerTurnActive):
 	gc.getPlayer(iPlayerTurnActive).setTurnActive(False)
 
 	PB.consoleOut("Done")
-
-
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# BTS END OF FILE -----------------------------------------------------------------------
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## PB Mod - Functions End ##

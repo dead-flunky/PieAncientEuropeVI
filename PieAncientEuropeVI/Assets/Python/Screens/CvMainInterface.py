@@ -44,6 +44,7 @@ gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
 PyInfo = PyHelpers.PyInfo
+PBMod = False
 
 g_NumEmphasizeInfos = 0
 g_NumCityTabTypes = 0
@@ -224,9 +225,10 @@ class CvMainInterface:
 				self.bHideTaxes = False
 
 				# PBMod
-				self.diploScreenDirty = True
-				self.diploScreenActive = False
-				self.pauseActive = CyGame().isPaused()
+				if PBMod:
+						self.diploScreenDirty = True
+						self.diploScreenActive = False
+						self.pauseActive = CyGame().isPaused()
 
 		def numPlotListButtons(self):
 				return self.m_iNumPlotListButtons
@@ -1089,20 +1091,21 @@ class CvMainInterface:
 				changes. Otherwise (drawing every frame) the click event
 				does not work.
 				"""
-				if(CyGame().isDiploScreenUp() != self.diploScreenActive
-					or CyGame().isPaused() != self.pauseActive):
-					self.diploScreenDirty = True
-					self.diploScreenActive = CyGame().isDiploScreenUp()
-					self.pauseActive = CyGame().isPaused()
-		
-				if self.diploScreenDirty:
-					self.diploScreenDirty = False
-					if gc.getGame().isPaused() and CyGame().isDiploScreenUp():
-						screen.setButtonGFC("DiploScreenUnpauseBtn", localText.getText("TXT_KEY_MOD_UNPAUSE", ()), "",
-								screen.centerX(512)-100, screen.centerY(384)+370, 200, 20, WidgetTypes.WIDGET_GENERAL,
-								302016, -1, ButtonStyles.BUTTON_STYLE_LABEL )
-					else:
-						screen.hide("DiploScreenUnpauseBtn")
+				if PBMod:
+					if(CyGame().isDiploScreenUp() != self.diploScreenActive
+						or CyGame().isPaused() != self.pauseActive):
+						self.diploScreenDirty = True
+						self.diploScreenActive = CyGame().isDiploScreenUp()
+						self.pauseActive = CyGame().isPaused()
+			
+					if self.diploScreenDirty:
+						self.diploScreenDirty = False
+						if gc.getGame().isPaused() and CyGame().isDiploScreenUp():
+							screen.setButtonGFC("DiploScreenUnpauseBtn", localText.getText("TXT_KEY_MOD_UNPAUSE", ()), "",
+									screen.centerX(512)-100, screen.centerY(384)+370, 200, 20, WidgetTypes.WIDGET_GENERAL,
+									302016, -1, ButtonStyles.BUTTON_STYLE_LABEL )
+						else:
+							screen.hide("DiploScreenUnpauseBtn")
 				return 0
 
 		# Will update the percent buttons

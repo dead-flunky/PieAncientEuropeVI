@@ -20,7 +20,7 @@ try: # Try vom PB Mod. PAE Original hat einfach import Platy
 	import CvPlatyBuilderScreen
 	WITH_PLATY = True
 except:
-    WITH_PLATY = False
+	WITH_PLATY = False
 
 # TODO remove
 # DEBUG code for Python 3 linter
@@ -42,6 +42,7 @@ localText = CyTranslator()
 global bFirstWrite
 bFirstWrite = True
 
+PBMod = False
 #############
 
 
@@ -771,7 +772,7 @@ class CvPlayerDesc:
 						f.write("\tArtStyle=%s\n" % (gc.getArtStyleTypes(pPlayer.getArtStyleType())))
 						f.write("\tPlayableCiv=%d\n" % (int(pPlayer.isPlayable())))
 						f.write("\tMinorNationStatus=%d\n" % (pPlayer.isMinorCiv()))
-						f.write("\tWatchingCiv=%d\n" %(pPlayer.isWatchingCiv())) # PB Mod, Beobachter Ziv
+						if PBMod: f.write("\tWatchingCiv=%d\n" %(pPlayer.isWatchingCiv())) # PB Mod, Beobachter Ziv
 						f.write("\tStartingGold=%d\n" % (pPlayer.getGold()))
 
 						if pPlayer.isAlive():
@@ -917,10 +918,11 @@ class CvPlayerDesc:
 										continue
 
 								# PB Mod Beobachter Ziv #
-								v = parser.findTokenValue(toks, "WatchingCiv")
-								if v != -1:
-									self.isWatchingCiv = int(v)
-									continue
+								if PBMod:
+										v = parser.findTokenValue(toks, "WatchingCiv")
+										if v != -1:
+											self.isWatchingCiv = int(v)
+											continue
 								# PB Mod # 
 
 								v = parser.findTokenValue(toks, "StartingGold")
@@ -2415,11 +2417,12 @@ class CvWBDesc:
 								pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
 								pPlot.setRevealed(iTeamLoop, True, False, TeamTypes.NO_TEAM)
 
-		        # PB Mod BeobchterZiv
-				for iPlayerLoop in xrange(len(self.playersDesc)):
-					pPlayer = gc.getPlayer(iPlayerLoop)
-					pWBPlayer = self.playersDesc[iPlayerLoop]
-					pPlayer.setWatchingCiv(pWBPlayer.isWatchingCiv == 1)
+				# PB Mod BeobchterZiv
+				if PBMod:
+						for iPlayerLoop in xrange(len(self.playersDesc)):
+							pPlayer = gc.getPlayer(iPlayerLoop)
+							pWBPlayer = self.playersDesc[iPlayerLoop]
+							pPlayer.setWatchingCiv(pWBPlayer.isWatchingCiv == 1)
 
 				# units
 				for pDesc in self.plotDesc:
