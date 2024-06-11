@@ -55,7 +55,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_125</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_125</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_125</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civilizations/button_flag_greek.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -109,7 +109,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_126</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_126</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_126</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civilizations/button_flag_rome.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -168,7 +168,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_MYSTICISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_MYSTICISM</Sound>
-			<SoundMP>AS2D_TECH_MP_MYSTICISM</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mystik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -227,7 +227,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_HUNTING_QUOTE</Quote>
 			<Sound>AS2D_TECH_HUNTING</Sound>
-			<SoundMP>AS2D_TECH_MP_HUNTING</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Hunting.dds,Art/Interface/Buttons/TechTree_Atlas.dds,7,4</Button>
 		</TechInfo>
 		<TechInfo>
@@ -285,8 +285,8 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_139</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_brunnen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -402,7 +402,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_schamanismus.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -463,7 +463,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_FISHING_QUOTE</Quote>
 			<Sound>AS2D_TECH_FISHING</Sound>
-			<SoundMP>AS2D_TECH_MP_FISHING</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Fishing.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,10</Button>
 		</TechInfo>
 		<TechInfo>
@@ -525,7 +525,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_ANIMAL_HUSBANDRY_QUOTE</Quote>
 			<Sound>AS2D_TECH_ANIMALHUSB</Sound>
-			<SoundMP>AS2D_TECH_MP_ANIMALHUSB</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/AnimalHusbandry.dds,Art/Interface/Buttons/TechTree_Atlas.dds,3,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -586,7 +586,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_AGRICULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_AGRICULTURE</Sound>
-			<SoundMP>AS2D_TECH_MP_AGRICULTURE</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_landwirtschaft.dds</Button>
 		</TechInfo>
 
@@ -656,7 +656,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mystik_hindu.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -717,7 +717,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_POLYTHEISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_POLYTHEISM</Sound>
-			<SoundMP>AS2D_TECH_MP_POLYTHEISM</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Polytheism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,7,6</Button>
 		</TechInfo>
 		<TechInfo>
@@ -778,7 +778,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_28</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_28</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_28</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_bootsbau.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -841,7 +841,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_MASONRY_QUOTE</Quote>
 			<Sound>AS2D_TECH_MASONRY</Sound>
-			<SoundMP>AS2D_TECH_MP_MASONRY</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_fences.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -902,7 +902,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_36</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_36</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_36</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_pflug.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -967,7 +967,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_114</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_114</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_114</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_weinbau.dds</Button>
 		</TechInfo>
 
@@ -1037,7 +1037,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_poly_sumer.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1106,7 +1106,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_poly_egypt.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1170,7 +1170,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ARCHERY_QUOTE</Quote>
 			<Sound>AS2D_TECH_ARCHERY</Sound>
-			<SoundMP>AS2D_TECH_MP_ARCHERY</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Archery.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1232,7 +1232,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_POTTERY_QUOTE</Quote>
 			<Sound>AS2D_TECH_POTTERY</Sound>
-			<SoundMP>AS2D_TECH_MP_POTTERY</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Pottery.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,6</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1297,7 +1297,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_120</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_120</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_120</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_gaerung.dds</Button>
 		</TechInfo>
 
@@ -1363,7 +1363,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_PRIESTHOOD_QUOTE</Quote>
 			<Sound>AS2D_TECH_PRIESTHOOD</Sound>
-			<SoundMP>AS2D_TECH_MP_PRIESTHOOD</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/civic_hohepriester.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1498,7 +1498,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_51</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_51</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_51</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_steinabbau.dds</Button>
 		</TechInfo>
 
@@ -1564,7 +1564,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_WRITING_QUOTE</Quote>
 			<Sound>AS2D_TECH_WRITING</Sound>
-			<SoundMP>AS2D_TECH_MP_WRITING</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Writing.dds,Art/Interface/Buttons/TechTree_Atlas.dds,6,12</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1629,7 +1629,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_WRITING_QUOTE</Quote>
 			<Sound>AS2D_TECH_WRITING</Sound>
-			<SoundMP>AS2D_TECH_MP_WRITING</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Writing.dds,Art/Interface/Buttons/TechTree_Atlas.dds,6,12</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1716,7 +1716,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_5</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_5</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_5</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1909,7 +1909,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_115</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_115</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_115</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_zahlen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -1970,7 +1970,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_8</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_8</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_8</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Astronomy.dds,Art/Interface/Buttons/TechTree_Atlas.dds,7,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2037,7 +2037,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_116</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_116</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_116</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_ceremonial.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2102,7 +2102,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_THE_WHEEL_QUOTE</Quote>
 			<Sound>AS2D_TECH_THE_WHEEL</Sound>
-			<SoundMP>AS2D_TECH_MP_THE_WHEEL</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/TheWheel.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,12</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2162,8 +2162,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_140</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_speerspitzen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2224,7 +2224,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_53</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_53</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_53</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_glas1.dds</Button>
 		</TechInfo>
 
@@ -2290,7 +2290,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_48</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_48</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_48</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_geometrie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2353,7 +2353,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_100</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_100</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_100</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_sonnenuhr.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2429,7 +2429,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_102</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_102</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_102</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_staaten.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2490,7 +2490,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_77</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_77</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_77</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_axt.dds</Button>
 		</TechInfo>
 
@@ -2556,7 +2556,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_47</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_47</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_47</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_fruchtbarkeit.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2705,7 +2705,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_27</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_27</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_27</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Builds/BuildVillage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,9</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2776,7 +2776,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MINING_QUOTE</Quote>
 			<Sound>AS2D_TECH_MINING</Sound>
-			<SoundMP>AS2D_TECH_MP_MINING</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Mining.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,5</Button>
 		</TechInfo>
 
@@ -2846,7 +2846,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_poly_phoen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2910,7 +2910,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_AGRICULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_AGRICULTURE</Sound>
-			<SoundMP>AS2D_TECH_MP_AGRICULTURE</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Builds/BuildFarm.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,3,7</Button>
 		</TechInfo>
 		<TechInfo>
@@ -2991,7 +2991,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_29</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_29</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_29</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_smelting.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3117,7 +3117,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_112</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_112</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_112</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,12</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3187,8 +3187,8 @@
 				<PrereqTech>TECH_STEINABBAU</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_196</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_masonry.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3313,7 +3313,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_101</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_101</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_101</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_speichenrad.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3376,7 +3376,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_76</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_76</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_76</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konservierung.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3447,7 +3447,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_110</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_110</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_110</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,2</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3508,7 +3508,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_70</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_70</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_70</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_kamelzucht.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3568,8 +3568,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_189</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/button_civic_tempelwirtschaft.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3632,8 +3632,8 @@
 				<PrereqTech>TECH_METAL_CASTING</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_193</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_goldschmiede.dds</Button>
 		</TechInfo>
 
@@ -3703,7 +3703,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_90</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_90</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_90</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_pferdezucht.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3764,7 +3764,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_111</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_111</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_111</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Medicine.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,5</Button>
 		</TechInfo>
 		<TechInfo>
@@ -3830,7 +3830,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_CODE_OF_LAWS_QUOTE</Quote>
 			<Sound>AS2D_TECH_CODE_OF_LAWS</Sound>
-			<SoundMP>AS2D_TECH_MP_CODE_OF_LAWS</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_codex.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4025,7 +4025,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_55</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_55</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_55</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_glas2.dds</Button>
 		</TechInfo>
 
@@ -4113,7 +4113,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_78</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_78</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_78</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_warchariots.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4200,7 +4200,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_16</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_16</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_16</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_astrologie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4261,7 +4261,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_107</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_107</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_107</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_soeldner.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4322,7 +4322,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_25</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_25</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_25</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Builds/button_cistern.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4385,7 +4385,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_57</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_57</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_57</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_pfeilspitze.dds</Button>
 		</TechInfo>
 
@@ -4455,7 +4455,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_poly_greek.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4540,7 +4540,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_85</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_85</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_85</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mantik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4601,7 +4601,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_40</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_40</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_40</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_zoro.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4686,7 +4686,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_31</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_31</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_31</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_buchstaben.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4772,7 +4772,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_10</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_10</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_10</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,7</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4845,7 +4845,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_26</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_26</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_26</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_irrigation.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -4908,7 +4908,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_105</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_105</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_105</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_verbaxt.dds</Button>
 		</TechInfo>
 
@@ -4978,7 +4978,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mystik_nordic.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5043,7 +5043,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_121</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_121</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_121</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_sacred_grove.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5112,7 +5112,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mystik_celt.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5201,7 +5201,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_6</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_6</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_6</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_krypto.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5266,7 +5266,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_3</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_3</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_3</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_brandschatzen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5338,7 +5338,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_SAILING_QUOTE</Quote>
 			<Sound>AS2D_TECH_SAILING</Sound>
-			<SoundMP>AS2D_TECH_MP_SAILING</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_carvel.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5475,7 +5475,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_56</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_56</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_56</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_gottesherrschaft.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5606,7 +5606,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_METAL_CASTING_QUOTE</Quote>
 			<Sound>AS2D_TECH_METALCAST</Sound>
-			<SoundMP>AS2D_TECH_MP_METALCAST</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_kurzschwert.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5669,7 +5669,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_75</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_75</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_75</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_composite.dds</Button>
 		</TechInfo>
 
@@ -5758,7 +5758,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_IRON_WORKING_QUOTE</Quote>
 			<Sound>AS2D_TECH_IRONWORK</Sound>
-			<SoundMP>AS2D_TECH_MP_IRONWORK</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Buildings/Forge.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,9</Button>
 		</TechInfo>
 		<TechInfo>
@@ -5898,7 +5898,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_17</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_17</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_17</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_belagerung.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6137,7 +6137,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_74</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_74</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_74</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Sailing.dds,Art/Interface/Buttons/TechTree_Atlas.dds,6,7</Button>
 		</TechInfo>
 
@@ -6229,7 +6229,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ALPHABET_QUOTE</Quote>
 			<Sound>AS2D_TECH_ALPHABET</Sound>
-			<SoundMP>AS2D_TECH_MP_ALPHABET</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Alphabet.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6314,7 +6314,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_4</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_4</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_4</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Constitution.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,2</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6395,7 +6395,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_76</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_76</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_76</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Builds/button_saline.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6465,7 +6465,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_62</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_62</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_62</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_handelsschiffe.dds</Button>
 		</TechInfo>
 
@@ -6529,7 +6529,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MONOTHEISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_MONOTHEISM</Sound>
-			<SoundMP>AS2D_TECH_MP_MONOTHEISM</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Monotheism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,11</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6594,7 +6594,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_50</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_50</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_50</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_grammatik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6664,7 +6664,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_poly_rome.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6725,7 +6725,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_60</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_60</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_60</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Feudalism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,10</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6786,7 +6786,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_92</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_92</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_92</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_piraterie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6857,7 +6857,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_COMPASS_QUOTE</Quote>
 			<Sound>AS2D_TECH_COMPASS</Sound>
-			<SoundMP>AS2D_TECH_MP_COMPASS</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_magnetkompass.dds</Button>
 		</TechInfo>
 
@@ -6919,7 +6919,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_31</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_31</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_31</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Buildings/Library.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,4</Button>
 		</TechInfo>
 		<TechInfo>
@@ -6992,7 +6992,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_MATHEMATICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_MATHEMATICS</Sound>
-			<SoundMP>AS2D_TECH_MP_MATHEMATICS</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Mathematics.dds,Art/Interface/Buttons/TechTree_Atlas.dds,3,5</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7057,7 +7057,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_71</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_71</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_71</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Civics/Free_Market.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7118,7 +7118,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_95</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_95</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_95</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_armor.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7259,7 +7259,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_PHILOSOPHY_QUOTE</Quote>
 			<Sound>AS2D_TECH_PHILOSOPHY</Sound>
-			<SoundMP>AS2D_TECH_MP_PHILOSOPHY</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Philosophy.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,6</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7346,7 +7346,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CONSTRUCTION_QUOTE</Quote>
 			<Sound>AS2D_TECH_CONSTRUCTION</Sound>
-			<SoundMP>AS2D_TECH_MP_CONSTRUCTION</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Construction.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,9</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7431,7 +7431,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_88</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_88</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_88</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_muenzen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7514,7 +7514,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_93</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_93</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_93</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/HorsebackRiding.dds,Art/Interface/Buttons/TechTree_Atlas.dds,6,4</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7581,7 +7581,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_59</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_59</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_59</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Formations/button_form_phalanx.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7666,7 +7666,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_58</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_58</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_58</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_buergersoldaten.dds</Button>
 		</TechInfo>
 
@@ -7734,7 +7734,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_79</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_79</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_79</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/button_civic_synkretismus.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7819,7 +7819,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_44</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_44</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_44</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_elementar.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7883,8 +7883,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_190</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_persian_roads.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -7969,7 +7969,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_CURRENCY_QUOTE</Quote>
 			<Sound>AS2D_TECH_CURRENCY</Sound>
-			<SoundMP>AS2D_TECH_MP_CURRENCY</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Banking.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,1</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8054,7 +8054,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_75</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_75</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_75</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_reflexbogen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8139,7 +8139,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_30</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_30</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_30</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_breitschwert.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8226,7 +8226,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_117</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_117</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_117</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_ruderer2.dds</Button>
 		</TechInfo>
 
@@ -8292,7 +8292,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_MEDITATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_MEDITATION</Sound>
-			<SoundMP>AS2D_TECH_MP_MEDITATION</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Meditation.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,5</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8377,7 +8377,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_11</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_11</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_11</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_alchemie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8464,7 +8464,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_118</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_118</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_118</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_baukunst.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8529,7 +8529,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_18</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_18</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_18</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_elefantenzucht.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8618,7 +8618,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_2</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_2</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_2</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Code ofLaws.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,2</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8703,7 +8703,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_98</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_98</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_98</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_schaukampf.dds</Button>
 		</TechInfo>
 
@@ -8789,7 +8789,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_32</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_32</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_32</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_askese.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8876,7 +8876,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MEDICINE_QUOTE</Quote>
 			<Sound>AS2D_TECH_MEDICINE</Sound>
-			<SoundMP>AS2D_TECH_MP_MEDICINE</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_humoral.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -8963,7 +8963,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_24</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_24</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_24</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_beweismathe.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9119,7 +9119,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_19</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_19</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_19</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/civic_senat.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9204,7 +9204,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_12</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_12</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_12</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,1</Button>
 		</TechInfo>
 
@@ -9290,7 +9290,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_91</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_91</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_91</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_pharmazie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9375,7 +9375,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_83</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_83</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_83</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_logik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9462,7 +9462,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_DEMOCRACY_QUOTE</Quote>
 			<Sound>AS2D_TECH_DEMOCRACY</Sound>
-			<SoundMP>AS2D_TECH_MP_DEMOCRACY</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_demokratie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9526,7 +9526,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_103</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_103</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_103</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_servianreform.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9652,8 +9652,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_142</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_kriegerethos.dds</Button>
 		</TechInfo>
 
@@ -9731,7 +9731,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_43</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_43</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_43</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_geometrie2.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9814,7 +9814,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_39</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_39</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_39</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_ruderer3.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -9975,7 +9975,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_119</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_119</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_119</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,7,4</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10063,8 +10063,8 @@
 				<PrereqTech>TECH_ARISTOKRATIE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_163</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/button_civic_oligarchie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10127,7 +10127,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_96</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_96</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_96</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_sattel.dds</Button>
 		</TechInfo>
 
@@ -10205,7 +10205,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_86</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_86</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_86</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mechanik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10361,7 +10361,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_BANKING_QUOTE</Quote>
 			<Sound>AS2D_TECH_BANKING</Sound>
-			<SoundMP>AS2D_TECH_MP_BANKING</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_bankwesen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10436,8 +10436,8 @@
 				<PrereqTech>TECH_ARMOR</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_145</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_linothorax.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10523,7 +10523,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_61</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_61</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_61</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_milit_strat.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10655,7 +10655,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_29</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_29</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_29</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Corporations/button_manufaktur.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10748,7 +10748,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_MUSIC_QUOTE</Quote>
 			<Sound>AS2D_TECH_MUSIC</Sound>
-			<SoundMP>AS2D_TECH_MP_MUSIC</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Music.dds,Art/Interface/Buttons/TechTree_Atlas.dds,3,11</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10819,7 +10819,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_71</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_71</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_71</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_karten.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -10893,7 +10893,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_131</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_131</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_131</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_skirmish_tactics.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11031,7 +11031,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_73</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_73</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_73</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_klangmusik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11092,7 +11092,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_87</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_87</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_87</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_mosaik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11152,8 +11152,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_192</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_aqua.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11214,7 +11214,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_21</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_21</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_21</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_reittechnik.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11301,7 +11301,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_132</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_132</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_132</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_hundezucht.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11369,7 +11369,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_106</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_106</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_106</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/button_civic_volksversammlung.dds</Button>
 		</TechInfo>
 
@@ -11435,7 +11435,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_41</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_41</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_41</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_eisenpflug.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11500,7 +11500,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_37</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_37</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_37</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_dionysos.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11726,7 +11726,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_72</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_72</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_72</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_kettenpanzer.dds</Button>
 		</TechInfo>
 
@@ -11791,8 +11791,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_147</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_wasserrad.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11853,7 +11853,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_LITERATURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_LITERATURE</Sound>
-			<SoundMP>AS2D_TECH_MP_LITERATURE</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Literature.dds,Art/Interface/Buttons/TechTree_Atlas.dds,7,10</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11920,7 +11920,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_45</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_45</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_45</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_corvus.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -11984,7 +11984,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_7</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_7</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_7</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_torsion.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12047,7 +12047,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_42</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_42</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_42</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_eisenwaffen.dds</Button>
 		</TechInfo>
 
@@ -12135,7 +12135,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_65</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_65</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_65</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_hippo_eid.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12220,7 +12220,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_64</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_64</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_64</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_hellenismus.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12285,7 +12285,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_DRAMA_QUOTE</Quote>
 			<Sound>AS2D_TECH_DRAMA</Sound>
-			<SoundMP>AS2D_TECH_MP_DRAMA</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Drama.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,3</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12354,7 +12354,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_33</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_33</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_33</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_pilum.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12417,7 +12417,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_67</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_67</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_67</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_hufschuhe.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12536,7 +12536,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_14</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_14</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_14</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_anatomie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12607,7 +12607,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_81</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_81</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_81</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_kueste.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12672,7 +12672,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_63</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_63</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_63</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_helio.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12732,8 +12732,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_148</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_marktrecht.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12796,7 +12796,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_HORSEBACK_RIDING_QUOTE</Quote>
 			<Sound>AS2D_TECH_HORSERIDING</Sound>
-			<SoundMP>AS2D_TECH_MP_HORSERIDING</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_partherschuss.dds</Button>
 		</TechInfo>
 
@@ -12860,7 +12860,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_69</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_69</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_69</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_liburne.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -12994,7 +12994,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_34</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_34</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_34</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_deichbau.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13064,7 +13064,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_35</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_35</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_35</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Civics/civic_herrscherkult.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13133,7 +13133,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_89</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_89</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_89</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Paper.dds,Art/Interface/Buttons/TechTree_Atlas.dds,3,6</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13258,7 +13258,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_52</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_52</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_52</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_gladiatoren.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13319,7 +13319,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_35</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_35</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_35</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_denkmal.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13381,8 +13381,8 @@
 				<PrereqTech>TECH_HUFEISEN</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_152</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_horse_armor.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13511,7 +13511,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_123</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_123</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_123</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_berufssoldaten.dds</Button>
 		</TechInfo>
 		
@@ -13702,7 +13702,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_82</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_82</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_82</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_langschwert.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13770,7 +13770,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_80</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_80</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_80</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Nationalism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,6</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13832,7 +13832,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_101</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_101</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_101</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Builds/BuildRailroad.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,3,9</Button>
 		</TechInfo>
 		<TechInfo>
@@ -13893,7 +13893,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_126</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_126</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_126</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_kohorte.dds</Button>
 		</TechInfo>
 
@@ -14026,7 +14026,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_128</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_128</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_128</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_kantakreis.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14089,7 +14089,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CALENDAR_QUOTE</Quote>
 			<Sound>AS2D_TECH_CALENDAR</Sound>
-			<SoundMP>AS2D_TECH_MP_CALENDAR</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_juliankalender.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14180,7 +14180,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_104</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_104</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_104</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_steno.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14306,8 +14306,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_151</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_parkanlagen.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14376,7 +14376,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_129</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_129</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_129</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_strassenkarten.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14447,8 +14447,8 @@
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_153</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_principat.dds</Button>
 		</TechInfo>
 
@@ -14516,7 +14516,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_13</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_13</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_13</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Medicine.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,5</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14580,8 +14580,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_154</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_basilica.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14653,7 +14653,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_THEOLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_THEOLOGY</Sound>
-			<SoundMP>AS2D_TECH_MP_THEOLOGY</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Priesthood.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,11</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14715,7 +14715,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_22</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_22</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_22</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Buildings/button_building_limes.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14780,7 +14780,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_127</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_127</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_127</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_lorica.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14906,7 +14906,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_1</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_1</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_1</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_feuerwehr.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -14985,7 +14985,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_23</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_23</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_23</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_beton.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15045,8 +15045,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_156</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_sklavenrechte.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15170,8 +15170,8 @@
 				<PrereqTech>TECH_WASSERRAD</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_157</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_waffenmanu.dds</Button>
 		</TechInfo>
 
@@ -15235,7 +15235,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_54</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_54</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_54</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_glas3.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15296,8 +15296,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_185</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Corporations/button_corp7.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15364,7 +15364,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_49</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_49</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_49</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_weltbild.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15428,7 +15428,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_99</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_99</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_99</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_seife.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15489,8 +15489,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_164</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_spatha.dds</Button>
 		</TechInfo>
 
@@ -15555,8 +15555,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_155</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_glas4.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15624,8 +15624,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_158</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_bischofstum.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15687,8 +15687,8 @@
 				<PrereqTech>TECH_HORSE_ARMOR</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_160</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_panzerreiter.dds</Button>
 		</TechInfo>
 
@@ -15749,8 +15749,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_161</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_erdbestattung.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15835,7 +15835,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_68</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_68</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_68</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_heresy.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -15895,8 +15895,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_159</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_dioecesis.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16015,8 +16015,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_188</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_gnosis.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16076,8 +16076,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_186</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_martyrium.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16142,7 +16142,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_38</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_38</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_38</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/techs_polyarchie.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16207,7 +16207,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_46</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_46</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_46</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_defences_2.dds</Button>
 		</TechInfo>
 
@@ -16268,8 +16268,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_162</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_neoplaton.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16337,8 +16337,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_165</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/Civics/State_Property.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,3</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16398,8 +16398,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_167</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_muenzen2.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16459,8 +16459,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_168</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_foederati.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16522,8 +16522,8 @@
 				<PrereqTech>TECH_ROMAN</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_169</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_grenzheer.dds</Button>
 		</TechInfo>
 
@@ -16584,8 +16584,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_178</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_assimilation.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16654,7 +16654,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_130</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_130</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_130</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/Theology.dds,Art/Interface/Buttons/TechTree_Atlas.dds,5,12</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16718,8 +16718,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_166</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_preisedikt.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16779,8 +16779,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_170</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_staurogramm.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16843,8 +16843,8 @@
 				<PrereqTech>TECH_TORSION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_176</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_crossbow.dds</Button>
 		</TechInfo>
 
@@ -16911,8 +16911,8 @@
 				<PrereqTech>TECH_DIOECESIS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_171</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konzil1.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -16972,8 +16972,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_177</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_steigbuegel.dds</Button>
 		</TechInfo>
 
@@ -17035,7 +17035,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_DIVINE_RIGHT_QUOTE</Quote>
 			<Sound>AS2D_TECH_DIVINE_RIGHT</Sound>
-			<SoundMP>AS2D_TECH_MP_DIVINE_RIGHT</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/DivineRight.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,3</Button>
 		</TechInfo>
 
@@ -17098,8 +17098,8 @@
 				<PrereqTech>TECH_NEOPLATON</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_187</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_daemon.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -17161,8 +17161,8 @@
 				<PrereqTech>TECH_DAEMON</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_172</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konzil2.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -17224,8 +17224,8 @@
 				<PrereqTech>TECH_KONZIL2</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_173</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konzil3.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -17344,8 +17344,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_179</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_papsttum.dds</Button>
 		</TechInfo>
 
@@ -17406,8 +17406,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_174</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konzil4.dds</Button>
 		</TechInfo>
 
@@ -17484,8 +17484,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_180</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_christianisierung.dds</Button>
 		</TechInfo>
 
@@ -17550,8 +17550,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_138</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_codex2.dds</Button>
 		</TechInfo>
 		<TechInfo>
@@ -17614,7 +17614,7 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_PAE_QUOTE_122</Quote>
 			<Sound>AS2D_TECH_PAE_QUOTE_122</Sound>
-			<SoundMP>AS2D_TECH_PAE_QUOTE_122</SoundMP>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_wurfaxt.dds</Button>
 		</TechInfo>
 
@@ -17676,8 +17676,8 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<Quote>TXT_KEY_PAE_QUOTE_175</Quote>
-			<Sound></Sound>
-			<SoundMP></SoundMP>
+			<Sound/>
+			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/tech_konzil5.dds</Button>
 		</TechInfo>
 
@@ -17845,7 +17845,7 @@
 			<AndPreReqs/>
 			<Quote>TXT_KEY_TECH_FUTURE_TECH_QUOTE</Quote>
 			<Sound>AS2D_TECH_FUTURE</Sound>
-			<SoundMP>AS2D_TECH_MP_FUTURE</SoundMP>
+			<SoundMP/>
 			<Button>,Art/Interface/Buttons/TechTree/FutureTech.dds,Art/Interface/Buttons/TechTree_Atlas.dds,2,4</Button>
 		</TechInfo>
 
@@ -18008,7 +18008,7 @@
 				<AndPreReqs/>
 				<Quote>TXT_KEY_TECH_LIBERALISM_QUOTE</Quote>
 				<Sound>AS2D_TECH_LIBERALISM</Sound>
-				<SoundMP>AS2D_TECH_MP_LIBERALISM</SoundMP>
+				<SoundMP/>
 				<Button>,Art/Interface/Buttons/TechTree/Liberalism.dds,Art/Interface/Buttons/TechTree_Atlas.dds,6,10</Button>
 		</TechInfo>
 		<TechInfo>
@@ -18062,7 +18062,7 @@
 				<AndPreReqs/>
 				<Quote>TXT_KEY_TECH_SCIENTIFIC_METHOD_QUOTE</Quote>
 				<Sound>AS2D_TECH_SCIMETHOD</Sound>
-				<SoundMP>AS2D_TECH_MP_SCIMETHOD</SoundMP>
+				<SoundMP/>
 				<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,7</Button>
 		</TechInfo>
 	</TechInfos>
