@@ -9,7 +9,6 @@ sys.dont_write_bytecode = True
 
 import zipfile
 import os
-import os.path
 import re
 from hashlib import md5
 

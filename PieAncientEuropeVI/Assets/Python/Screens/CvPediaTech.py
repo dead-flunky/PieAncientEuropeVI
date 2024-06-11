@@ -1,5 +1,6 @@
 # Sid Meier's Civilization 4
 # Copyright Firaxis Games 2005
+import os
 from CvPythonExtensions import (CyGlobalContext, CyArtFileMgr, CyTranslator,
 																FontTypes, WidgetTypes, PanelStyles,
 																CyGameTextMgr, GenericButtonSizes,
@@ -16,7 +17,7 @@ import CvScreenEnums
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
-
+PAEMod = "PieAncientEuropeVII"
 
 class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		"Civilopedia Screen for Techs"
@@ -388,30 +389,30 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		def getTechOfCivs(self):
 				lCivs = []
 				"""
-								bRead = False
+				bRead = False
 
-								# Tech vorerst allen Civs zuweisen
-								iNumCivs = gc.getNumCivilizationInfos()
-								for i in range(iNumCivs): lCivs.append(i)
+				# Tech vorerst allen Civs zuweisen
+				iNumCivs = gc.getNumCivilizationInfos()
+				for i in range(iNumCivs): lCivs.append(i)
 
-								# Datei auslesen und bei disable Tech Civ aus der Liste droppen
-								datei = open("Mods/PieAncientEuropeVII/Assets/XML/Civilizations/CIV4CivilizationInfos.xml")
-								for zeile in datei:
-									if "<CivilizationInfo>" in zeile: bRead = False
-									if "<Type>CIVILIZATION" in zeile: sCiv = zeile[zeile.find(">")+1:zeile.find("</")]
-									if "<DisableTechs>" in zeile: bRead = True
-									if bRead:
-										if "<TechType>" in zeile:
-											sTech = zeile[zeile.find(">")+1:zeile.find("</")]
-											iTech = gc.getInfoTypeForString(sTech)
-											iCiv = gc.getInfoTypeForString(sCiv)
-											if iTech == self.iTech and iCiv in lCivs: lCivs.remove(iCiv)
-								datei.close()
+				# Datei auslesen und bei disable Tech Civ aus der Liste droppen
+				datei = open(os.path.join("Mods", PAEMod, "Assets", "XML","Civilizations","CIV4CivilizationInfos.xml"))
+				for zeile in datei:
+					if "<CivilizationInfo>" in zeile: bRead = False
+					if "<Type>CIVILIZATION" in zeile: sCiv = zeile[zeile.find(">")+1:zeile.find("</")]
+					if "<DisableTechs>" in zeile: bRead = True
+					if bRead:
+						if "<TechType>" in zeile:
+							sTech = zeile[zeile.find(">")+1:zeile.find("</")]
+							iTech = gc.getInfoTypeForString(sTech)
+							iCiv = gc.getInfoTypeForString(sCiv)
+							if iTech == self.iTech and iCiv in lCivs: lCivs.remove(iCiv)
+				datei.close()
 
-								if len(lCivs) == iNumCivs: lCivs = []
-								else: lCivs.remove(gc.getInfoTypeForString("CIVILIZATION_MINOR"))
+				if len(lCivs) == iNumCivs: lCivs = []
+				else: lCivs.remove(gc.getInfoTypeForString("CIVILIZATION_MINOR"))
 
-								return lCivs
+				return lCivs
 				"""
 
 				# Tech vorerst allen Civs zuweisen

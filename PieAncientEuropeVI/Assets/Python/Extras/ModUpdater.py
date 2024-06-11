@@ -5,7 +5,6 @@ import sys
 sys.dont_write_bytecode = True
 
 import zipfile
-import os.path
 import os
 import re
 import md5
@@ -522,7 +521,6 @@ class ModUpdater:
 if __name__ == "__main__":
     # Select Mod folder as target
     import sys
-    import os.path
     script_folder = os.path.dirname(os.path.realpath(sys.argv[0]))
     iAssetsPos = script_folder.rfind("Assets")
     if iAssetsPos == -1:
