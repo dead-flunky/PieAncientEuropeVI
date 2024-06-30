@@ -354,7 +354,7 @@ class CvGameUtils:
 										for x in range(iMapW):
 												for y in range(iMapH):
 														loopPlot = gc.getMap().plot(x, y)
-														if loopPlot is not None and not loopPlot.isNone():
+														if loopPlot and not loopPlot.isNone():
 																if loopPlot.getFeatureType() == iDarkIce:
 																		continue
 																if loopPlot.isWater() or loopPlot.isPeak() or loopPlot.isCity():
@@ -2205,7 +2205,7 @@ class CvGameUtils:
 														LImpUpgrade = L.LLatifundien
 														break
 
-								if len(LImpUpgrade) > 0:
+								if LImpUpgrade:
 										for i in xrange(CyMap().numPlots()):
 												pLoopPlot = CyMap().sPlotByIndex(i)
 												if pLoopPlot.getOwner() == iOwner:

@@ -170,11 +170,11 @@ def doSpreadReligion():
 									pCapitalCity = loopCity
 								elif not loopCity.isHasReligion(iReligion) and not loopCity.isHasReligion(iIslam):
 									lCities.append(loopCity)
-					
+
 					# gefundene Hauptstadt immer konvertieren
 					if not pCapitalCity is None:
 						convertCity(pCapitalCity, iReligion)
-					
+
 					if len(lCities):
 						iRand = CvUtil.myRandom(len(lCities), "doSpreadReligionChooseCity")
 						convertCity(lCities[iRand], iReligion)
@@ -191,7 +191,7 @@ def doSpreadReligion():
 def convertCity(pCity, iReligion):
 		iPlayer = pCity.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
-		
+
 		if pCity.isHasReligion(iReligion): return
 
 		if iReligion == gc.getInfoTypeForString("RELIGION_CHRISTIANITY"):
@@ -257,6 +257,8 @@ def convertCity(pCity, iReligion):
 
 
 def removePagans(pCity):
+		if pCity is None or pCity.isNone() or pCity.getName() == "":
+				return
 
 		iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
 		iIslam = gc.getInfoTypeForString("RELIGION_ISLAM")
@@ -266,7 +268,7 @@ def removePagans(pCity):
 		pPlayer = gc.getPlayer(iPlayer)
 		lCorp = []
 		lReli = []
-								
+
 		for iReligion in LReligions:
 				if gc.getGame().isReligionFounded(iReligion):
 						# Christen oder Moslems
@@ -389,7 +391,8 @@ def doReligionsKonflikt(pCity):
 			return False
 
 		# 2%: Poly Reli als Staatsreli, aber kein aktiver Krieg
-		if gc.getGame().getHandicapType() > 2 and pPlayer.getStateReligion() not in L.LMonoReligions and CvUtil.myRandom(50, "ReligionsKonflikt1") == 1:
+		if gc.getGame().getHandicapType() > 2 and pPlayer.getStateReligion() not in L.LMonoReligions:
+			if CvUtil.myRandom(50, "ReligionsKonflikt1") == 1:
 				#if not pTeam.getAtWarCount(True):
 						#pCity.changeOccupationTimer(1)
 						#if pPlayer.isHuman():

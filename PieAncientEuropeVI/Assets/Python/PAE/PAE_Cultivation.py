@@ -80,7 +80,7 @@ def getCityCultivatedBonuses(pCity, iTyp):
 		iAnz = 0
 		for i in range(gc.getNUM_CITY_PLOTS()):
 				pLoopPlot = pCity.getCityIndexPlot(i)
-				if pLoopPlot is not None and not pLoopPlot.isNone():
+				if pLoopPlot and not pLoopPlot.isNone():
 						iLoopBonus = pLoopPlot.getBonusType(-1)
 						if iTyp != -1 and iLoopBonus in L.LBonusPlantation:
 								continue  # nur wenns ein Limit pro Stadtstufe gibt
@@ -101,7 +101,7 @@ def getCityCultivatedPlots(pCity, eBonus):
 		plots = []
 		for i in range(gc.getNUM_CITY_PLOTS()):
 				pLoopPlot = pCity.getCityIndexPlot(i)
-				if pLoopPlot is not None and not pLoopPlot.isNone():
+				if pLoopPlot and not pLoopPlot.isNone():
 						bonus = pLoopPlot.getBonusType(-1)
 						if bonus in List:
 								plots.append(pLoopPlot)
@@ -112,7 +112,7 @@ def getCityCultivatablePlots(pCity, eBonus):
 		plots = []
 		for iI in range(gc.getNUM_CITY_PLOTS()):
 				pLoopPlot = pCity.getCityIndexPlot(iI)
-				if pLoopPlot is not None and not pLoopPlot.isNone():
+				if pLoopPlot and not pLoopPlot.isNone():
 						ePlotBonus = pLoopPlot.getBonusType(-1)
 						if ePlotBonus == eBonus:
 								return []

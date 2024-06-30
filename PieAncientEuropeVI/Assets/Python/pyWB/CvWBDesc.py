@@ -2417,7 +2417,7 @@ class CvWBDesc:
 								pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
 								pPlot.setRevealed(iTeamLoop, True, False, TeamTypes.NO_TEAM)
 
-				# PB Mod BeobchterZiv
+				# PB Mod BeobachterZiv
 				if PBMod:
 						for iPlayerLoop in xrange(len(self.playersDesc)):
 							pPlayer = gc.getPlayer(iPlayerLoop)

@@ -624,7 +624,7 @@ def doSeewind():
 
 						# Start Windplots
 						for j in range(iWindplots):
-								if loopPlot is not None and not loopPlot.isNone():
+								if loopPlot and not loopPlot.isNone():
 										if loopPlot.getFeatureType() == iDarkIce:
 												continue
 										if loopPlot.getFeatureType() != feat_ice and (loopPlot.getTerrainType() == terr_ocean or loopPlot.getTerrainType() == terr_ocean2):

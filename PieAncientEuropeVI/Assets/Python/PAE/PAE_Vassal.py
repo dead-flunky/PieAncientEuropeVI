@@ -1161,7 +1161,7 @@ def doGiveCity2Vassal(pCity, iNewOwner):
 		# Pointer anpassen
 		if pPlot.isCity():
 				pCity = pPlot.getPlotCity()
-				if pCity is not None and not pCity.isNone():
+				if pCity and not pCity.isNone():
 						# Stadtgroesse kontrollieren
 						if pCity.getPopulation() < 1:
 								pCity.setPopulation(1)

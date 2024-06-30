@@ -1591,8 +1591,9 @@ def doUnitGetsPromo(pUnitTarget, pUnitSource, pPlot, bMadeAttack, bOpponentAnima
 						pUnitTarget.setHasPromotion(iNewPromo, True)
 						PAEInstanceFightingModifier.append((pUnitTarget.getOwner(), pUnitTarget.getID()))
 						if gc.getPlayer(pUnitTarget.getOwner()).isHuman():
-								CyInterface().addMessage(pUnitTarget.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION", (pUnitTarget.getName(), gc.getPromotionInfo(
-										iNewPromo).getDescription())), "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pUnitTarget.getX(), pUnitTarget.getY(), True, True)
+								CyInterface().addMessage(pUnitTarget.getOwner(), True, 10,
+									CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION", (pUnitTarget.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
+									"AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pUnitTarget.getX(), pUnitTarget.getY(), True, True)
 
 		# 2. chance: enemy combat type
 		iNewPromo = -1
@@ -1659,8 +1660,9 @@ def doUnitGetsPromo(pUnitTarget, pUnitSource, pPlot, bMadeAttack, bOpponentAnima
 						pUnitTarget.setHasPromotion(iNewPromo, True)
 						PAEInstanceFightingModifier.append((iPlayer, pUnitTarget.getID()))
 						if pPlayer.isHuman():
-								CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION", (pUnitTarget.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
-																				 "AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pUnitTarget.getX(), pUnitTarget.getY(), True, True)
+								CyInterface().addMessage(iPlayer, True, 10,
+									CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_GETS_PROMOTION", (pUnitTarget.getName(), gc.getPromotionInfo(iNewPromo).getDescription())),
+									"AS2D_IF_LEVELUP", 2, gc.getPromotionInfo(iNewPromo).getButton(), ColorTypes(13), pUnitTarget.getX(), pUnitTarget.getY(), True, True)
 						return True
 		return False
 
@@ -3639,7 +3641,7 @@ def doNavalOnCombatResult(pWinner, pLoser, bWinnerIsDead):
 						iY = pLoser.getY()
 						for iI in range(DirectionTypes.NUM_DIRECTION_TYPES):
 								loopPlot = plotDirection(iX, iY, DirectionTypes(iI))
-								if loopPlot is not None and not loopPlot.isNone():
+								if loopPlot and not loopPlot.isNone():
 										if loopPlot.getFeatureType() != iDarkIce:
 												if not loopPlot.isUnit():
 														if loopPlot.isWater():
@@ -3648,12 +3650,40 @@ def doNavalOnCombatResult(pWinner, pLoser, bWinnerIsDead):
 						if lNewPlot:
 								iRand = CvUtil.myRandom(len(lNewPlot), "Treibgut einfangen5")
 								pJumpPlot = lNewPlot[iRand]
-						elif pLoser.jumpToNearestValidPlot():
-								pJumpPlot = pLoser.plot()
-						if pJumpPlot != None:
+						else: 
+								pJumpPlot = getNearestValidPlot(pUnit)
+						# elif pLoser.jumpToNearestValidPlot():
+						# 		pJumpPlot = pLoser.plot()
+						if pJumpPlot:
 								# Create unit
 								CvUtil.spawnUnit(iUnitTreibgut, pJumpPlot, gc.getPlayer(gc.getBARBARIAN_PLAYER()))
 		return bUnitDone
+
+def getNearestValidPlot(pUnit):
+	pNearestCity = GC.getMap().findCity(pUnit.getX(), pUnit.getY(), pUnit.getOwner())
+	iBestValue = MAX_INT
+	pBestPlot = None
+
+	for iI in xrange(GC.getMap().numPlots()):
+		pLoopPlot = GC.getMap().plotByIndex(iI)
+
+		if pLoopPlot.isValidDomainForLocation(pUnit):
+			if pUnit.canMoveInto(pLoopPlot, False, False, True):
+				if pUnit.canEnterArea(pLoopPlot.getTeam(), pLoopPlot.area(), False):  # and not pUnit.isEnemy(pLoopPlot.getTeam(), pLoopPlot):
+					if (pUnit.getDomainType() != DOMAIN_AIR) or pLoopPlot.isFriendlyCity(pUnit, True):
+						if pLoopPlot.isRevealed(pUnit.getTeam(), False):
+							iValue = (plotDistance(pUnit.getX(), pUnit.getY(), pLoopPlot.getX(), pLoopPlot.getY()) * 2)
+							if pNearestCity:
+								iValue += plotDistance(pLoopPlot.getX(), pLoopPlot.getY(), pNearestCity.getX(), pNearestCity.getY())
+							if pUnit.getDomainType() == DOMAIN_SEA and not pUnit.plot().isWater():
+								if not pLoopPlot.isWater() or not pLoopPlot.isAdjacentToArea(pUnit.area()):
+									iValue *= 3
+							elif pLoopPlot.area() != pUnit.area():
+								iValue *= 3
+							if iValue < iBestValue:
+								iBestValue = iValue
+								pBestPlot = pLoopPlot
+	return pBestPlot
 
 
 def doLoserLoseHorse(pLoser, iWinnerPlayer):

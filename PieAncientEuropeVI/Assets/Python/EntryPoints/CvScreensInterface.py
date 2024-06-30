@@ -2222,7 +2222,7 @@ def peloponnesianWarKeinpferd_Megara1(argsList):
 						iNumCities = pPlayer.getNumCities()
 						for iCity in range(iNumCities):
 								pCity = pPlayer.getCity(iCity)
-								if pCity is not None and not pCity.isNone():
+								if pCity and not pCity.isNone():
 										if pCity.isHasBuilding(eHafen):
 												iStandard = pCity.getBuildingCommerceByBuilding(0, eHafen)  # 0 = Gold
 												pCity.setBuildingCommerceChange(eHafenClass, 0, iStandard + iVerlust)

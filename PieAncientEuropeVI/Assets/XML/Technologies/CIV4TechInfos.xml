@@ -12799,7 +12799,6 @@
 			<SoundMP/>
 			<Button>Art/Interface/Buttons/Techs/button_tech_partherschuss.dds</Button>
 		</TechInfo>
-
 		<TechInfo>
 			<Type>TECH_WARSHIPS2</Type>
 			<Description>TXT_KEY_TECH_WARSHIPS2</Description>

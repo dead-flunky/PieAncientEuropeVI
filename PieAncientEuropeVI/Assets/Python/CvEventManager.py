@@ -3192,9 +3192,18 @@ class CvEventManager:
 												CyInterface().addMessage(iWinnerPlayer, True, 5,
 																								 CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_FUROR_SUICIDE", (pWinner.getName(), 0)),
 																								 None, 2, pWinner.getButton(), ColorTypes(7), pWinner.getX(), pWinner.getY(), True, True)
+				
+				#### ---- Meldung für Auflösung Brander ---- ####
+				iPromoBrander = gc.getInfoTypeForString("PROMOTION_BRANDER")
+				if pWinner.isHasPromotion(iPromoBrander):
+					if pWinnerPlayer.isHuman():
+							CyInterface().addMessage(iWinnerPlayer, True, 5,
+													 CyTranslator().getText("TXT_KEY_MESSAGE_UNIT_BRANDER_SUICIDE", (pWinner.getName(), 0)),
+													 None, 2, pWinner.getButton(), ColorTypes(7), pWinner.getX(), pWinner.getY(), True, True)
+							
 
 				# Einheiten, die Wälder niederbrennen können
-				elif pWinner.getUnitType() in L.LFireUnits or pLoser.getUnitType() in L.LFireUnits:
+				if pWinner.getUnitType() in L.LFireUnits or pLoser.getUnitType() in L.LFireUnits:
 
 						# Brandchance 20%
 						if pWinner.getUnitType() in L.LFireUnits:
@@ -4188,7 +4197,7 @@ class CvEventManager:
 								iRange = pPlot.getNumUnits()
 								for i in range(iRange):
 										pLoopUnit = pPlot.getUnit(i)
-										if pLoopUnit is not None and not pLoopUnit.isNone():
+										if pLoopUnit and not pLoopUnit.isNone():
 												if pLoopUnit.getUnitType() == iUnitType and pLoopUnit.getOwner() == iPlayer:
 														iNum += 1
 								# UnitAIType 10 = UNITAI_CITY_DEFENSE
@@ -4467,10 +4476,8 @@ class CvEventManager:
 								listNames = L.LGGStandard
 
 						GG_Name = ""
-						i = 0
 						listlength = len(listNames)
-						while i < listlength:
-								i += 1
+						for i in xrange(listlength):
 								iRand = CvUtil.myRandom(listlength, "GGNames first try")
 								if listNames[iRand] not in self.GG_UsedNames:
 										GG_Name = listNames[iRand]
@@ -5213,14 +5220,12 @@ class CvEventManager:
 				# prevent negative culture due to civil war
 				iBuilding = gc.getInfoTypeForString("BUILDING_CIVIL_WAR")
 				if pCity.isHasBuilding(iBuilding):
-						if pCity.getCulture(pCity.getOwner()) < 0:
+						if pCity.getCulture(pCity.getOwner()) <= 0:
 								pCity.setCulture(pCity.getOwner(), 1, True)
 
 				# Trade feature: Check for free bonuses aquired via trade (Boggy)
 				PAE_Trade.doCityCheckFreeBonuses(pCity)
 
-				# PAE Provinzcheck
-				bCheckCityState = False
 
 				# Check City: Auswirkungen Dying General
 				if pPlayer.isHuman():
@@ -5247,7 +5252,7 @@ class CvEventManager:
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_COLONIZATION")):
 								PAE_City.doEmigrantSpawn(pCity)
 
-				# LEPROSY (Lepra) and PLAGUE (Pest) , Lepra ab 5, Pest ab 9, CIV-Event Influenza (Grippe)
+				# LEPROSY (Lepra) and PLAGUE (Pest), Lepra ab 5, Pest ab 9, CIV-Event Influenza (Grippe)
 				iBuildingPlague = gc.getInfoTypeForString("BUILDING_PLAGUE")
 				bDecline = pCity.isHasBuilding(iBuildingPlague)
 				# Pest Auswirkungen
@@ -5256,7 +5261,7 @@ class CvEventManager:
 						PAE_City.doPlagueEffects(pCity)
 				# Pest ab 9
 				elif pCity.getPopulation() >= 9:
-						PAE_City.doSpawnPest(pCity)
+						bDecline = PAE_City.doSpawnPest(pCity)
 
 				# Lepra ab 5
 				if not bDecline and pCity.getPopulation() >= 5:
@@ -5268,18 +5273,16 @@ class CvEventManager:
 						iCitySlaves = PAE_Sklaven.freeCitizen(pCity)
 						# Sklavenerhalt: Available slave (2%) - Schwaechung bei christlicher Religion
 						# Wenn Sklave ansaessig ist oder bei nem Sklavenmarkt
-						if iCitySlaves > 0 or pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")) > 0:
+						if iCitySlaves > 0 or pCity.getNumBuilding(gc.getInfoTypeForString("BUILDING_SKLAVENMARKT")) > 0:
 								PAE_Sklaven.spawnSlave(pCity, iCitySlaves)
 
 				# Gladiators
 				iCityGlads = PAE_Sklaven.freeCitizenGlad(pCity)
-				if iCityGlads > 0 and not pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")):
+				if iCityGlads > 0 and not pCity.getNumBuilding(gc.getInfoTypeForString("BUILDING_GLADIATORENSCHULE")):
 						# Gladiator Unit (nur wenn bereits keine Gladiatorenschule in der Stadt steht)
 						pTeam = gc.getTeam(pPlayer.getTeam())
-						bTeamHasGladiators = False
-						iTech = gc.getInfoTypeForString("TECH_GLADIATOR2")
-						if pTeam.isHasTech(iTech):
-								bTeamHasGladiators = True
+						bTeamHasGladiators = pTeam.isHasTech(gc.getInfoTypeForString("TECH_GLADIATOR2"))
+						if bTeamHasGladiators:
 								iCityGlads = PAE_Sklaven.spawnGlad(pCity, iCityGlads)
 								# ***TEST***
 								#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Sklave zu Gladiator (Zeile 3881)",1)), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -5291,37 +5294,44 @@ class CvEventManager:
 				if iGameTurnFounded % 3 == 1:
 						PAE_Sklaven.dyingBuildingSlave(pCity)
 
+				# PAE Provinzcheck
+				bCheckCityState = False
 				# City Rebellion
 				# bRebellion = False
 				# City Revolts / Stadt Revolten
 				if pCity.getOccupationTimer() > 0:
+						# kann Stadt nicht zerstören
 						bRevoltEnd = PAE_City.doCityCheckRevoltEnd(pCity)
 						if not bRevoltEnd and pCity.getPopulation() > 1:
+								# kann Stadt nicht zerstören
 								bCheckCityState = PAE_City.doRevoltShrink(pCity)
 				elif pCity.getPopulation() > 3:
+						# kann Stadt nicht zerstören
 						PAE_City.doTurnCityRevolt(pCity)
 
 				# Judenaufstand Judentum: 2%, ab 200 BC
 				bRevolt = False
 				if iGameTurnYear > -200:
 						if pCity.isHolyCityByType(gc.getInfoTypeForString("RELIGION_JUDAISM")):
+								# kann Stadt nicht zerstören
 								bRevolt = PAE_City.doJewRevolt(pCity)
-
-				# -------- Provinz Tributzahlung Statthalter
-				# --- Ca 3% pro Runde = PAE IV
-				iBuilding = gc.getInfoTypeForString("BUILDING_PROVINZPALAST")
-				if not bRevolt and pCity.isHasBuilding(iBuilding):
-						bRevolt = PAE_City.provinceTribute(pCity)
 
 				# PAE Provinzcheck
 				if bCheckCityState:
 						PAE_City.doCheckCityState(pCity)
 
-				# CivilWar
-				PAE_City.doCheckCivilWar(pCity)
-
 				# PAE 6.14: Allgemeine Religionskonflikte
 				PAE_Christen.removePagans(pCity)
+
+				# CivilWar
+				# kann Pointer zu Stadt zerstören! 
+				PAE_City.doCheckCivilWar(pCity)
+
+				# -------- Provinz Tributzahlung Statthalter
+				# --- Ca 3% pro Runde = PAE IV
+				if not bRevolt:
+						# kann Pointer zu Stadt zerstören! Führt gegebenenfalls doCheckCityState aus.
+						bRevolt = PAE_City.provinceTribute(pCity)
 
 				# PAE Debug Mark 10
 				#"""
@@ -5609,13 +5619,14 @@ def check_stack_attack():
 def check_show_ressources():
 	iPlayer = gc.getGame().getActivePlayer()
 	# Requires implementation of doControlWithoutWidget in DLL. Comment in after implementation.
-	# if (iPlayer != -1
-		# and gc.getPlayer(iPlayer).isOption(
-			# PlayerOptionTypes.PLAYEROPTION_MODDER_1)
-	# ):
-		# CvUtil.pyPrint('toggle resource symbols on')
-		# bResourceOn = ControlTypes.CONTROL_RESOURCE_ALL + 1001
-		# CyGame().doControlWithoutWidget(bResourceOn)  # Ctrl+r
+	if PBMod:
+		if (iPlayer != -1
+			and gc.getPlayer(iPlayer).isOption(
+				PlayerOptionTypes.PLAYEROPTION_MODDER_1)
+		):
+			CvUtil.pyPrint('toggle resource symbols on')
+			bResourceOn = ControlTypes.CONTROL_RESOURCE_ALL + 1001
+			CyGame().doControlWithoutWidget(bResourceOn)  # Ctrl+r
 
 def genEndTurnSave(iGameTurn, iPlayerTurnActive):
 	# To creates a save shortly before the turn ends

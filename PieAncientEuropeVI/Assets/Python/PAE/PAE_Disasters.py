@@ -816,7 +816,7 @@ def doErdbeben(iX, iY):
 																				iPopNeu = max(iPopNeu, 1)
 																				pCity.setPopulation(iPopNeu)
 
-																		if pCity is not None and not pCity.isNone():
+																		if pCity and not pCity.isNone():
 																				pCity.setFood(0)
 																				PAE_City.doCheckCityState(pCity)
 																				if iPlayer != -1 and gc.getPlayer(iPlayer).isHuman():

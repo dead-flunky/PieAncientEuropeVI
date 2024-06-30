@@ -224,7 +224,7 @@ def doBuildTradeRoad(pUnit, pCity):
 		#iChance = 100
 		if iRand <= iChance:
 				iRouteType = gc.getInfoTypeForString("ROUTE_TRADE_ROAD")
-				iRouteType2 = gc.getInfoTypeForString("ROUTE_RAILROAD")  # Roman Road
+				iRouteType2 = gc.getInfoTypeForString("ROUTE_ROMAN_ROAD")  # Roman Road
 				pCity2 = None
 
 				# Schiffe: Hafenstadt -> Hauptstadt
@@ -324,10 +324,10 @@ def getPlotTradingRoad(pSource, pDest):
 
 				# wenn pSource = pTarget (Haendler ueber Schiff im Hafen)
 				if iSourceX != iDestX or iSourceY != iDestY:
-						# ROUTE_RAILROAD = Roman Road
+						# ROUTE_ROMAN_ROAD = Roman Road
 						LTradeRoads = [
 								gc.getInfoTypeForString("ROUTE_TRADE_ROAD"),
-								gc.getInfoTypeForString("ROUTE_RAILROAD")
+								gc.getInfoTypeForString("ROUTE_ROMAN_ROAD")
 						]
 						bSourceGerade = False
 						bNewRoute = False
@@ -1147,7 +1147,7 @@ def getCitySaleableGoods(pCity, iBuyer):
 						if x == 0 and y == 0 or x == 4 and y == 0 or x == 4 and y == 0 or x == 4 and y == 4:
 								continue
 						pLoopPlot = gc.getMap().plot(iX + x - 2, iY + y - 2)
-						if pLoopPlot is not None and not pLoopPlot.isNone():
+						if pLoopPlot and not pLoopPlot.isNone():
 								if pLoopPlot.getTeam() != iCityOwnerTeam:
 										continue
 								# plot needs to have suitable improvement and city needs to have access to bonus (=> connection via trade route (road))
