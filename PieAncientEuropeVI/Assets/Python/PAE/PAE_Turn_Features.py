@@ -636,8 +636,8 @@ def doSeewind():
 																if pPlot2.getFeatureType() in L.LSeewind:
 																		bSet = False
 																		break
-																if not bSet:
-																		break
+														if not bSet:
+																break
 
 												if bSet:
 														loopPlot.setFeatureType(L.LSeewind[iDirection], 0)
