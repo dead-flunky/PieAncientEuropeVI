@@ -1387,12 +1387,12 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</TerrainInfo>
 		<TerrainInfo>
-			<Type>TERRAIN_LAKE</Type>
-			<Description>TXT_KEY_LAKE</Description>
-			<Civilopedia>TXT_KEY_LAKE_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_TERRAIN_LAKE</ArtDefineTag>
+			<Type>TERRAIN_RIVER</Type>
+			<Description>TXT_KEY_TERRAIN_RIVER</Description>
+			<Civilopedia>TXT_KEY_TERRAIN_RIVER_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_TERRAIN_RIVER</ArtDefineTag>
 			<Yields>
-				<iYield>3</iYield>
+				<iYield>2</iYield>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</Yields>
@@ -1403,12 +1403,12 @@
 			<bFound>0</bFound>
 			<bFoundCoast>0</bFoundCoast>
 			<bFoundFreshWater>0</bFoundFreshWater>
-			<iMovement>1</iMovement>
+			<iMovement>2</iMovement>
 			<iSeeFrom>0</iSeeFrom>
 			<iSeeThrough>0</iSeeThrough>
 			<iBuildModifier>0</iBuildModifier>
 			<iDefense>0</iDefense>
-			<Button>Art/Interface/Buttons/Lake3.dds</Button>
+			<Button>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,6,3</Button>
 			<FootstepSounds>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
@@ -1539,12 +1539,12 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</TerrainInfo>
 		<TerrainInfo>
-			<Type>TERRAIN_RIVER</Type>
-			<Description>TXT_KEY_TERRAIN_RIVER</Description>
-			<Civilopedia>TXT_KEY_TERRAIN_RIVER_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_TERRAIN_RIVER</ArtDefineTag>
+			<Type>TERRAIN_LAKE</Type>
+			<Description>TXT_KEY_LAKE</Description>
+			<Civilopedia>TXT_KEY_LAKE_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_TERRAIN_LAKE</ArtDefineTag>
 			<Yields>
-				<iYield>2</iYield>
+				<iYield>3</iYield>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</Yields>
@@ -1555,12 +1555,12 @@
 			<bFound>0</bFound>
 			<bFoundCoast>0</bFoundCoast>
 			<bFoundFreshWater>0</bFoundFreshWater>
-			<iMovement>2</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeFrom>0</iSeeFrom>
 			<iSeeThrough>0</iSeeThrough>
 			<iBuildModifier>0</iBuildModifier>
 			<iDefense>0</iDefense>
-			<Button>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,6,3</Button>
+			<Button>Art/Interface/Buttons/Lake3.dds</Button>
 			<FootstepSounds>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
