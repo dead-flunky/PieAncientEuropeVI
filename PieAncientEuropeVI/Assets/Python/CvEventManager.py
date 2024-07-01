@@ -2892,7 +2892,7 @@ class CvEventManager:
 
 
 				# PAE 6.16 Ranged Combat / Range Attack / Fernangriff
-				
+
 				#if not pPlayer.isHuman():
 				#		iRange = 1
 				#		pTeam = gc.getTeam(pPlayer.getTeam())
@@ -2945,7 +2945,7 @@ class CvEventManager:
 				#								loopUnit.finishMoves()
 				#
 				#				(loopUnit, pIter) = pPlayer.nextUnit(pIter, False)
-				
+
 
 				# PAE Debug Mark 3
 				#"""

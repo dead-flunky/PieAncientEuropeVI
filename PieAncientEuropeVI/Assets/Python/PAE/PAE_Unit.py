@@ -33,6 +33,8 @@ def onUnitMoveOnSea(pUnit):
 		if pPlot.getFeatureType() > -1:
 				iPlotWind = pPlot.getFeatureType()
 				if iPlotWind in L.LSeewind:
+						iWindIdx = L.LSeewind.index(iPlotWind)
+
 						iUnitDirection = pUnit.getFacingDirection()
 
 						# CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("direction",iUnitDirection)), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -62,7 +64,6 @@ def onUnitMoveOnSea(pUnit):
 								iSeitenWind,
 								iGegenSchraegWind,
 						]
-						iWindIdx = L.LSeewind.index(iPlotWind)
 						# CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("wind",lMoves[abs(iWindIdx-iUnitDirection)])), None, 2, None, ColorTypes(10), 0, 0, False, False)
 						pUnit.changeMoves(lMoves[abs(iWindIdx-iUnitDirection)])
 		# -- end Wind
@@ -3463,6 +3464,7 @@ def renegade(pWinner, pLoser):
 
 		#iPromoSurrender = gc.getInfoTypeForString("PROMOTION_FORM_WHITEFLAG")
 		lUnitAI = [UnitAITypes.UNITAI_ANIMAL, UnitAITypes.UNITAI_EXPLORE]
+
 		# Ausnahmen - using UnitArray from above
 		if iWinnerUnitAIType in lUnitAI:
 				bUnitRenegades = False

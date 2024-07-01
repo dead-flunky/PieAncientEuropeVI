@@ -3861,7 +3861,8 @@ def canTriggerNoWar(argsList):
 		pPlayer = gc.getPlayer(kTriggeredData.ePlayer)
 		pTeam = gc.getTeam(pPlayer.getTeam())
 		if pPlayer.getStateReligion() not in L.LMonoReligions:
-				if not pTeam.getAtWarCount(True): return True
+				if not pTeam.getAtWarCount(True):
+					return True
 		return False
 
 def canDoNO_WAR_1(argsList):
