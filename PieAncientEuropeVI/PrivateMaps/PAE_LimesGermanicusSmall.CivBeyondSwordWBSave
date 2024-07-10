@@ -11622,13 +11622,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=1
+		UnitType=UNIT_LANGBOOT, UnitOwner=1
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=1
+		UnitType=UNIT_LANGBOOT, UnitOwner=1
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -15735,13 +15735,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=12
+		UnitType=UNIT_LANGBOOT, UnitOwner=12
 		Level=1, Experience=1
 		FacingDirection=6
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=12
+		UnitType=UNIT_LANGBOOT, UnitOwner=12
 		Level=1, Experience=1
 		FacingDirection=6
 		Sleep
@@ -17638,7 +17638,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -18847,13 +18847,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=11
+		UnitType=UNIT_LANGBOOT, UnitOwner=11
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=11
+		UnitType=UNIT_LANGBOOT, UnitOwner=11
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -19083,7 +19083,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=3
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -20054,13 +20054,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=5
+		UnitType=UNIT_LANGBOOT, UnitOwner=5
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=5
+		UnitType=UNIT_LANGBOOT, UnitOwner=5
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -20317,13 +20317,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=2
+		UnitType=UNIT_LANGBOOT, UnitOwner=2
 		Level=1, Experience=1
 		FacingDirection=5
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=2
+		UnitType=UNIT_LANGBOOT, UnitOwner=2
 		Level=1, Experience=1
 		FacingDirection=5
 		Sleep
@@ -22297,13 +22297,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=6
+		UnitType=UNIT_LANGBOOT, UnitOwner=6
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=6
+		UnitType=UNIT_LANGBOOT, UnitOwner=6
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -24322,7 +24322,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -24530,13 +24530,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=3
+		UnitType=UNIT_LANGBOOT, UnitOwner=3
 		Level=1, Experience=1
 		FacingDirection=5
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=3
+		UnitType=UNIT_LANGBOOT, UnitOwner=3
 		Level=1, Experience=1
 		FacingDirection=5
 		Sleep
@@ -27416,7 +27416,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -27917,7 +27917,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -28697,13 +28697,13 @@ BeginPlot
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=4
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=4
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -29573,7 +29573,7 @@ BeginPlot
 		UnitAIType=UNITAI_PIRATE_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -29692,13 +29692,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=9
+		UnitType=UNIT_LANGBOOT, UnitOwner=9
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=9
+		UnitType=UNIT_LANGBOOT, UnitOwner=9
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -31286,13 +31286,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=7
+		UnitType=UNIT_LANGBOOT, UnitOwner=7
 		Level=1, Experience=1
 		FacingDirection=4
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=7
+		UnitType=UNIT_LANGBOOT, UnitOwner=7
 		Level=1, Experience=1
 		FacingDirection=4
 		Sleep
@@ -33336,13 +33336,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=10
+		UnitType=UNIT_LANGBOOT, UnitOwner=10
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=10
+		UnitType=UNIT_LANGBOOT, UnitOwner=10
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -34158,7 +34158,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=0
+		UnitType=UNIT_LANGBOOT, UnitOwner=0
 		Level=1, Experience=1
 		PromotionType=PROMOTION_COMBAT1
 		PromotionType=PROMOTION_NAVIGATION1
@@ -34921,7 +34921,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -35268,13 +35268,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=13
+		UnitType=UNIT_LANGBOOT, UnitOwner=13
 		Level=1, Experience=1
 		FacingDirection=5
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=13
+		UnitType=UNIT_LANGBOOT, UnitOwner=13
 		Level=1, Experience=1
 		FacingDirection=5
 		Sleep
@@ -36125,13 +36125,13 @@ BeginPlot
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=4
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=BARBARIAN
+		UnitType=UNIT_LANGBOOT, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		FacingDirection=4
 		UnitAIType=UNITAI_ASSAULT_SEA
@@ -38041,13 +38041,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=4
+		UnitType=UNIT_LANGBOOT, UnitOwner=4
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=4
+		UnitType=UNIT_LANGBOOT, UnitOwner=4
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep
@@ -38355,13 +38355,13 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_TRIREME, UnitOwner=8
+		UnitType=UNIT_LANGBOOT, UnitOwner=8
 		Level=1, Experience=1
 		FacingDirection=0
 		UnitAIType=UNITAI_ASSAULT_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BIREME, UnitOwner=8
+		UnitType=UNIT_LANGBOOT, UnitOwner=8
 		Level=1, Experience=1
 		FacingDirection=0
 		Sleep

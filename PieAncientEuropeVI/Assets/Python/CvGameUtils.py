@@ -1943,6 +1943,18 @@ class CvGameUtils:
 										return True
 
 						# Unit Rang Promo -------
+						if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT4")):
+								# LEGION zu Praetorians
+								if iUnitType in L.LUnits4Praetorians:
+										if not pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
+												if pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_PRAETORIAN")) == 0:
+														if pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_TRIBUN")):
+																if (pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_CENTURIO")) or 
+																		pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_CENTURIO2")) ):
+																		if (pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_OPTIO")) or
+																				pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_OPTIO2")) ):
+																				iNewUnit = gc.getInfoTypeForString("UNIT_PRAETORIAN")
+																				PAE_Unit.doUpgradeVeteran(pUnit, iNewUnit, True)
 						# KI: immer und kostenlos
 						iNewUnit = PAE_Unit.canUpgradeUnit(pUnit)
 						if iNewUnit != -1: # and CvUtil.getScriptData(pUnit, ["P", "t"]) == "RangPromoUp":

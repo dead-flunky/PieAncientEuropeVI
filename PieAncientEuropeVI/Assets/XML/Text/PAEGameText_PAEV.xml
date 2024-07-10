@@ -4161,14 +4161,6 @@
 		<Spanish>&#161;Nuestro combativo %s1 gan&#243; el combate aunque acab&#243; sucumbiendo a las heridas!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_UNIT_BRANDER_SUICIDE</Tag>
-		<English>Our brander was able to sink the enemy ship, but was itself completely burnt.</English>
-		<French>Notre incendiaire a r&#233;ussi &#224; couler le navire ennemi, mais il a lui-m&#234;me &#233;t&#233; compl&#232;tement br&#251;l&#233;.</French>
-		<German>Unser Brander konnten das feindlich Schiff versenken, ist aber selber komplett verbrannt.</German>
-		<Italian>I nostri pompieri riuscirono ad affondare la nave nemica, ma rimasero completamente ustionati.</Italian>
-		<Spanish>Nuestros bomberos lograron hundir el barco enemigo, pero se quemaron completamente.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_UNIT_GETS_HERO_1</Tag>
 		<English>Your general %s1 has defeated %s2 and is now hailed as a hero!</English>
 		<French>Votre g&#233;n&#233;ral %s1 aid&#233; de ses courageux soldats a vaincu %s2 et il est maintenant c&#233;l&#233;br&#233; comme un h&#233;ros !</French>
@@ -6007,6 +5999,14 @@
 		<German>Kultivierung</German>
 		<Italian>Coltivazione</Italian>
 		<Spanish>Cultivo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LANGSCHIFFE</Tag>
+		<English>Longships</English>
+		<French>Drakkars</French>
+		<German>Langschiffe</German>
+		<Italian>Draki</Italian>
+		<Spanish>Drakkaros</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_LIBRARY</Tag>

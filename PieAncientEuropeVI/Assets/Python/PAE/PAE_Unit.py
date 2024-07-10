@@ -811,6 +811,9 @@ def canUpgradeUnit(pUnit):
 								if pTeam.isHasTech(gc.getInfoTypeForString("TECH_GRENZHEER")):
 										return -1
 
+						if iUnitType == data[2]:
+								continue
+
 						if (iUnitType == data[1] 
 									or data[1] == -1 and pUnit.getUnitCombatType() in L.LMeleeCombats
 									or data[1] == -2 and pUnit.getUnitCombatType() == eMounted
@@ -839,6 +842,8 @@ def getUpgradeUnit(iPlayer, iUnitType):
 
 		for data in L.LRankUnits:
 				if iCiv == data[0]:
+						if iUnitType == data[2]:
+								continue
 						if (iUnitType == data[1] 
 									or data[1] == -1 and pUnit.getUnitCombatType() in L.LMeleeCombats
 									or data[1] == -2 and pUnit.getUnitCombatType() == iMounted

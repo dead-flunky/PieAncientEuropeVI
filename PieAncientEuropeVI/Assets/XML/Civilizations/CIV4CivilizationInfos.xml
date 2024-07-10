@@ -1369,6 +1369,14 @@
 					<UnitClassType>UNITCLASS_KAMPFHUND</UnitClassType>
 					<UnitType>UNIT_KAMPFHUND_BRITEN</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1978,6 +1986,14 @@
 					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
 					<UnitType>UNIT_HORSEMAN_CELTIC</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2218,6 +2234,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_STATTHALTER</UnitClassType>
 					<UnitType>UNIT_STATTHALTER_NORTH</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3143,6 +3167,14 @@
 					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
 					<UnitType>UNIT_HORSEMAN_CELTIC</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3500,6 +3532,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
 					<UnitType>UNIT_GERMAN_DOUBLEFIGHTER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -4494,6 +4534,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
 					<UnitType>UNIT_HORSE_ARCHER_SCYTHS</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -8453,6 +8501,14 @@
 					<UnitClassType>UNITCLASS_HEAVY_HORSEMAN</UnitClassType>
 					<UnitType>UNIT_HEAVY_HORSEMAN_HUN</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -9845,6 +9901,14 @@
 					<UnitClassType>UNITCLASS_HORSEMAN</UnitClassType>
 					<UnitType>UNIT_GERMAN_DOUBLEFIGHTER</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -10676,6 +10740,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
 					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_BIREME</UnitClassType>
+					<UnitType>UNIT_LANGBOOT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
+					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>

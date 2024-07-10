@@ -7733,6 +7733,22 @@
 		<Spanish>Soldado con Espada Corta:Soldados con Espada Corta</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_LANGBOOT</Tag>
+		<English>Longboat</English>
+		<French>Chaloupe</French>
+		<German>Langboot</German>
+		<Italian>Barca lunga</Italian>
+		<Spanish>Lancha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LANGSCHIFF</Tag>
+		<English>Longship</English>
+		<French>Drakkar</French>
+		<German>Langschiff</German>
+		<Italian>Dreki</Italian>
+		<Spanish>Drakkar</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEGION</Tag>
 		<English>Legionary</English>
 		<French>L&#233;gionnaire</French>
