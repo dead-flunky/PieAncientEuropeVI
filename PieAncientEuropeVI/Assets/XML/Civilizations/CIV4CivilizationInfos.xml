@@ -1377,6 +1377,10 @@
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1994,6 +1998,10 @@
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2242,6 +2250,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3175,6 +3187,10 @@
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3540,6 +3556,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -4542,6 +4562,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -8509,6 +8533,10 @@
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -9909,6 +9937,10 @@
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -10748,6 +10780,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_TRIREME</UnitClassType>
 					<UnitType>UNIT_LANGSCHIFF</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_QUINQUEREME</UnitClassType>
+					<UnitType>UNIT_DRACHENSCHIFF</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SPECIAL1</UnitClassType>

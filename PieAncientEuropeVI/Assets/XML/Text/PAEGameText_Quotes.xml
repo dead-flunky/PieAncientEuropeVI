@@ -953,6 +953,22 @@
 		<Spanish>El azar siempre es poderoso. Deja que tu ca&#241;a de pescar cuelgue tranquilamente; Donde menos te lo esperas, el pez nada. Ovidio</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PAE_QUOTE_207</Tag>
+		<English>Don't praise the crew before the evening ends.</English>
+		<French>Il ne faut pas f&#233;liciter l'&#233;quipage avant le soir.</French>
+		<German>Man soll die Crew nicht vor dem Abend loben.</German>
+		<Italian>Non dovresti lodare l'equipaggio prima di sera.</Italian>
+		<Spanish>No deber&#237;as elogiar a la tripulaci&#243;n antes de la noche.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PAE_QUOTE_208</Tag>
+		<English>It is not the wind but the sail that determines the direction. Chinese proverb</English>
+		<French>Ce n'est pas le vent, mais la voile qui d&#233;termine la direction. proverbe chinois</French>
+		<German>Nicht der Wind, sondern das Segel bestimmt die Richtung. Chinesisches Sprichwort</German>
+		<Italian>Non il vento, ma la vela determina la direzione. proverbio cinese</Italian>
+		<Spanish>No es el viento, sino la vela la que determina la direcci&#243;n. Proverbio chino</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_21</Tag>
 		<English>You wound, like Parthians, while you fly, and kill with a retreating eye. -Samuel Butler (in Hudibras)</English>
 		<French>"Comme les Parthes en fuyant, Vos yeux au coeur blessent l'amant ; Et, plus il presse la poursuite, Plus vous l'amorcez par la fuite." -Samuel Butler (Hudibras)</French>

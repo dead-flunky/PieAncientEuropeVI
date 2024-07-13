@@ -5761,6 +5761,14 @@
 		<Spanish>Di&#243;cesis</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TECH_DRACHENSCHIFFE</Tag>
+		<English>Dragon ships</English>
+		<French>Bateaux dragons</French>
+		<German>Drachenschiffe</German>
+		<Italian>Navi drago</Italian>
+		<Spanish>Barcos drag&#243;n</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TECH_ERDBESTATTUNG</Tag>
 		<English>Burials</English>
 		<French>Inhumations</French>
@@ -6871,6 +6879,14 @@
 		<German>Manuballistarii</German>
 		<Italian>Manuballistarii</Italian>
 		<Spanish>Manuballistarii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_DRACHENSCHIFF</Tag>
+		<English>Dragon ship</English>
+		<French>Navire-dragon</French>
+		<German>Drachenschiff</German>
+		<Italian>Nave drago</Italian>
+		<Spanish>Barco drag&#243;n</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EGYPT_CHEPESCH</Tag>
