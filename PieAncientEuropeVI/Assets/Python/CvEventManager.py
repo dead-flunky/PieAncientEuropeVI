@@ -2805,19 +2805,19 @@ class CvEventManager:
 
 
 				# TEST PIE
-				if pPlayer.isHuman():
-						iSum = 0
-						iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
-						iNumPlayers = gc.getMAX_PLAYERS()
-						for i in range(iNumPlayers):
-								loopPlayer = gc.getPlayer(i)
-								(loopCity, pIter) = loopPlayer.firstCity(False)
-								while loopCity:
-										if not loopCity.isNone() and loopCity.getOwner() == i:  # only valid cities
-												if loopCity.isHasReligion(iChristentum):
-														iSum += 1
-										(loopCity, pIter) = loopPlayer.nextCity(pIter, False)
-						CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Christliche CITIES",iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
+				#if pPlayer.isHuman():
+				#		iSum = 0
+				#		iChristentum = gc.getInfoTypeForString("RELIGION_CHRISTIANITY")
+				#		iNumPlayers = gc.getMAX_PLAYERS()
+				#		for i in range(iNumPlayers):
+				#				loopPlayer = gc.getPlayer(i)
+				#				(loopCity, pIter) = loopPlayer.firstCity(False)
+				#				while loopCity:
+				#						if not loopCity.isNone() and loopCity.getOwner() == i:  # only valid cities
+				#								if loopCity.isHasReligion(iChristentum):
+				#										iSum += 1
+				#						(loopCity, pIter) = loopPlayer.nextCity(pIter, False)
+				#		CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Christliche CITIES",iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
 
 				# PAE Debug Mark 3
