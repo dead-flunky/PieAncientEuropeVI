@@ -1257,6 +1257,14 @@
 		<Spanish>Qanat</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RIVERDOCK</Tag>
+		<English>Landing Stage</English>
+		<French>D&#233;barcad&#232;re</French>
+		<German>Anlegestelle</German>
+		<Italian>Pontile</Italian>
+		<Spanish>Embarcadero</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SAUNA</Tag>
 		<English>Sweat lodge</English>
 		<French>Hutte &#224; sudation</French>
