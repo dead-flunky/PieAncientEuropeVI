@@ -3658,7 +3658,7 @@ def doNavalOnCombatResult(pWinner, pLoser, bWinnerIsDead):
 								iRand = CvUtil.myRandom(len(lNewPlot), "Treibgut einfangen5")
 								pJumpPlot = lNewPlot[iRand]
 						else: 
-								pJumpPlot = getNearestValidPlot(pUnit)
+								pJumpPlot = getNearestValidPlot(pLoser)
 						# elif pLoser.jumpToNearestValidPlot():
 						# 		pJumpPlot = pLoser.plot()
 						if pJumpPlot:
