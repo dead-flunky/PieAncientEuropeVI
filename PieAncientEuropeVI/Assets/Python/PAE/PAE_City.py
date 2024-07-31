@@ -19,7 +19,7 @@ import PAE_Lists as L
 
 # Defines
 gc = CyGlobalContext()
-PAEMod = "PieAncientEuropeVII"
+PAEMod = "PiesAncientEurope"
 
 # PAE Stadtstatus
 iPopDorf = 3
@@ -2065,7 +2065,7 @@ def doJewRevolt(pCity):
 def provinceTribute(pCity):
 		if pCity is None or pCity.isNone():
 				return False
-		if not pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
+		if not pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_PROVINZPALAST")):
 				return False
 
 		iPlayer = pCity.getOwner()

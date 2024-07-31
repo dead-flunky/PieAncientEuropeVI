@@ -52,6 +52,10 @@ import CvAdvisorUtils
 from ScreenInput import ScreenInput
 import CvScreenEnums
 
+# Updater Mod (by Ramk, Flunky, Rob Anybody)
+#import CvModUpdaterScreen
+# Updater Mod END
+
 ### Starting points part 1 (by The_J) ###
 import StartingPointsUtil
 
@@ -96,7 +100,7 @@ import EurasiaXXXLCivs
 # Diverse Einstellungen
 # +++++++++++++++++++++
 
-PAEMod = "PieAncientEuropeVII"
+PAEMod = "PiesAncientEurope"
 
 # Modernisierungen sollen mit automatischen Pfaden erstellt werden
 # wenn deaktivert, sollte im XML BUILD_PATH bei UNIT_WORKER eingebaut werden
@@ -2182,7 +2186,16 @@ class CvEventManager:
 
 		def onWindowActivation(self, argsList):
 				'Called when the game window activates or deactivates'
-				# bActive = argsList[0]
+				#bActive = argsList[0]
+
+				# PB Mod - Mod Updater
+				#if PBMod and not hasattr(CvScreensInterface, "showModUpdaterScreen"):
+				#		CvModUpdaterScreen.integrate()
+
+				# Show ModUpdater screen after Window switch
+				#if PBMod and bActive:
+				#		CvScreensInterface.showModUpdaterScreen(True)
+				# PB Mod - Mod Updater END
 				return
 
 		def onUnInit(self, argsList):

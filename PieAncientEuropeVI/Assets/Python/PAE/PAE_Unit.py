@@ -2328,7 +2328,7 @@ def doRankPromo(pWinner):
 										if "_TRAIT_" in iPromoType:
 												break
 										if "_RANG_ROM_EQUES" in iPromoType:
-												if pWinner.isHasPromotion(iPromo):
+												if pWinner.isHasPromotion(iPromo) and iNewPromo != -1:
 														#if iPromo == gc.getInfoTypeForString("PROMOTION_RANG_ROM_EQUES_3"):
 														if canUpgradeUnit(pWinner) != -1:
 																CvUtil.addScriptData(pWinner, "P", "RangPromoUp")
@@ -3667,12 +3667,12 @@ def doNavalOnCombatResult(pWinner, pLoser, bWinnerIsDead):
 		return bUnitDone
 
 def getNearestValidPlot(pUnit):
-	pNearestCity = GC.getMap().findCity(pUnit.getX(), pUnit.getY(), pUnit.getOwner())
+	pNearestCity = gc.getMap().findCity(pUnit.getX(), pUnit.getY(), pUnit.getOwner(),-1,True,False,-1,-1,None)
 	iBestValue = MAX_INT
 	pBestPlot = None
 
-	for iI in xrange(GC.getMap().numPlots()):
-		pLoopPlot = GC.getMap().plotByIndex(iI)
+	for iI in xrange(gc.getMap().numPlots()):
+		pLoopPlot = gc.getMap().plotByIndex(iI)
 
 		if pLoopPlot.isValidDomainForLocation(pUnit):
 			if pUnit.canMoveInto(pLoopPlot, False, False, True):

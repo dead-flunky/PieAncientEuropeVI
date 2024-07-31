@@ -26,89 +26,89 @@ BeginTeam
 	Tech=TECH_MYSTICISM
 	Tech=TECH_HUNTING
 	Tech=TECH_BRUNNEN
-	Tech=TECH_METAL_SMELTING
-	Tech=TECH_TAUBENZUCHT
-	Tech=TECH_MASONRY2
-	Tech=TECH_MESSING
-	Tech=TECH_TAUBENPOST
-	Tech=TECH_GUSS
-	Tech=TECH_PIRACY
 	Tech=TECH_SCHAMANISMUS
 	Tech=TECH_FISHING
 	Tech=TECH_ANIMAL_HUSBANDRY
-	Tech=TECH_FENCES
 	Tech=TECH_AGRICULTURE
 	Tech=TECH_POLYTHEISM
 	Tech=TECH_BOOTSBAU
-	Tech=TECH_ARCHERY
+	Tech=TECH_FENCES
 	Tech=TECH_PFLUG
 	Tech=TECH_WEINBAU
-	Tech=TECH_METAL_CASTING
+	Tech=TECH_ARCHERY
 	Tech=TECH_POTTERY
 	Tech=TECH_GAERUNG
 	Tech=TECH_PRIESTHOOD
-	Tech=TECH_BEWAFFNUNG
-	Tech=TECH_SPEERSPITZEN
-	Tech=TECH_THE_WHEEL
+	Tech=TECH_METAL_CASTING
 	Tech=TECH_STEINABBAU
-	Tech=TECH_ASTRONOMIE
 	Tech=TECH_LEADERSHIP
-	Tech=TECH_MINING
-	Tech=TECH_CALENDAR
+	Tech=TECH_METAL_SMELTING
+	Tech=TECH_ASTRONOMIE
 	Tech=TECH_CEREMONIAL
-	Tech=TECH_STAATENBILDUNG
-	Tech=TECH_BRONZE_WORKING
-	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_THE_WHEEL
+	Tech=TECH_SPEERSPITZEN
 	Tech=TECH_GEOMETRIE
-	Tech=TECH_KLANGMUSIK
-	Tech=TECH_MASONRY
+	Tech=TECH_CALENDAR
+	Tech=TECH_STAATENBILDUNG
+	Tech=TECH_BEWAFFNUNG
+	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_TAUBENZUCHT
 	Tech=TECH_COLONIZATION
-	Tech=TECH_ARCHERY2
-	Tech=TECH_BEWAFFNUNG2
-	Tech=TECH_CLOSED_FORM
-	Tech=TECH_SOELDNERTUM
+	Tech=TECH_MINING
 	Tech=TECH_KULTIVIERUNG
-	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_BRONZE_WORKING
 	Tech=TECH_WARENHANDEL
-	Tech=TECH_SCHMIEDEKUNST
-	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_MASONRY
 	Tech=TECH_HOLZWEHRANLAGEN
-	Tech=TECH_KAMELZUCHT
 	Tech=TECH_THE_WHEEL2
+	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_KAMELZUCHT
 	Tech=TECH_TEMPELWIRTSCHAFT
-	Tech=TECH_CODEX
-	Tech=TECH_AGRICULTURE2
-	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_SCHMIEDEKUNST
 	Tech=TECH_PFERDEZUCHT
 	Tech=TECH_MEDICINE2
-	Tech=TECH_ASTROLOGIE
-	Tech=TECH_BUCHSTABEN
-	Tech=TECH_IRRIGATION
-	Tech=TECH_DEFENCES
+	Tech=TECH_CODEX
+	Tech=TECH_MASONRY2
+	Tech=TECH_MESSING
 	Tech=TECH_THE_WHEEL3
+	Tech=TECH_ASTROLOGIE
+	Tech=TECH_SOELDNERTUM
+	Tech=TECH_AGRICULTURE2
+	Tech=TECH_ARCHERY2
 	Tech=TECH_MANTIK
-	Tech=TECH_BEWAFFNUNG3
-	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_BUCHSTABEN
+	Tech=TECH_DEFENCES
+	Tech=TECH_IRRIGATION
+	Tech=TECH_BEWAFFNUNG2
 	Tech=TECH_HEILIGER_ORT
 	Tech=TECH_RELIGION_CELTIC
 	Tech=TECH_KRYPTOGRAPHIE
-	Tech=TECH_IRON_WORKING
-  Tech=TECH_SENSE
+	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_CLOSED_FORM
 	Tech=TECH_THEOKRATIE
+	Tech=TECH_TAUBENPOST
+	Tech=TECH_BEWAFFNUNG3
+	Tech=TECH_IRON_WORKING
 	Tech=TECH_BELAGERUNG
+	Tech=TECH_GUSS
+	Tech=TECH_SENSE
 	Tech=TECH_COLONIZATION2
-	Tech=TECH_MONOTHEISM
 	Tech=TECH_ALPHABET
 	Tech=TECH_BUENDNISSE
 	Tech=TECH_SALINEN
+	Tech=TECH_MONOTHEISM
 	Tech=TECH_GRAMMATIK
 	Tech=TECH_VASALLENTUM
+	Tech=TECH_PIRACY
 	Tech=TECH_MATHEMATICS
 	Tech=TECH_ARMOR
 	Tech=TECH_BUERGERSOLDATEN
 	Tech=TECH_BEWAFFNUNG4
 	Tech=TECH_GLADIATOR
 	Tech=TECH_TYRANNIS
+	Tech=TECH_KLANGMUSIK
 	ContactWithTeam=1
 	ContactWithTeam=2
 	AtWar=1
@@ -120,89 +120,89 @@ BeginTeam
 	Tech=TECH_MYSTICISM
 	Tech=TECH_HUNTING
 	Tech=TECH_BRUNNEN
-	Tech=TECH_METAL_SMELTING
-	Tech=TECH_TAUBENZUCHT
-	Tech=TECH_MASONRY2
-	Tech=TECH_MESSING
-	Tech=TECH_TAUBENPOST
-	Tech=TECH_GUSS
-	Tech=TECH_PIRACY
 	Tech=TECH_SCHAMANISMUS
 	Tech=TECH_FISHING
 	Tech=TECH_ANIMAL_HUSBANDRY
-	Tech=TECH_FENCES
 	Tech=TECH_AGRICULTURE
 	Tech=TECH_POLYTHEISM
 	Tech=TECH_BOOTSBAU
-	Tech=TECH_ARCHERY
+	Tech=TECH_FENCES
 	Tech=TECH_PFLUG
 	Tech=TECH_WEINBAU
-	Tech=TECH_METAL_CASTING
+	Tech=TECH_ARCHERY
 	Tech=TECH_POTTERY
 	Tech=TECH_GAERUNG
 	Tech=TECH_PRIESTHOOD
-	Tech=TECH_BEWAFFNUNG
-	Tech=TECH_SPEERSPITZEN
-	Tech=TECH_THE_WHEEL
+	Tech=TECH_METAL_CASTING
 	Tech=TECH_STEINABBAU
-	Tech=TECH_ASTRONOMIE
 	Tech=TECH_LEADERSHIP
-	Tech=TECH_MINING
-	Tech=TECH_CALENDAR
+	Tech=TECH_METAL_SMELTING
+	Tech=TECH_ASTRONOMIE
 	Tech=TECH_CEREMONIAL
-	Tech=TECH_STAATENBILDUNG
-	Tech=TECH_BRONZE_WORKING
-	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_THE_WHEEL
+	Tech=TECH_SPEERSPITZEN
 	Tech=TECH_GEOMETRIE
-	Tech=TECH_KLANGMUSIK
-	Tech=TECH_MASONRY
+	Tech=TECH_CALENDAR
+	Tech=TECH_STAATENBILDUNG
+	Tech=TECH_BEWAFFNUNG
+	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_TAUBENZUCHT
 	Tech=TECH_COLONIZATION
-	Tech=TECH_ARCHERY2
-	Tech=TECH_BEWAFFNUNG2
-	Tech=TECH_CLOSED_FORM
-	Tech=TECH_SOELDNERTUM
+	Tech=TECH_MINING
 	Tech=TECH_KULTIVIERUNG
-	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_BRONZE_WORKING
 	Tech=TECH_WARENHANDEL
-	Tech=TECH_SCHMIEDEKUNST
-	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_MASONRY
 	Tech=TECH_HOLZWEHRANLAGEN
-	Tech=TECH_KAMELZUCHT
 	Tech=TECH_THE_WHEEL2
+	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_KAMELZUCHT
 	Tech=TECH_TEMPELWIRTSCHAFT
-	Tech=TECH_CODEX
-	Tech=TECH_AGRICULTURE2
-	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_SCHMIEDEKUNST
 	Tech=TECH_PFERDEZUCHT
 	Tech=TECH_MEDICINE2
-	Tech=TECH_ASTROLOGIE
-	Tech=TECH_BUCHSTABEN
-	Tech=TECH_IRRIGATION
-	Tech=TECH_DEFENCES
+	Tech=TECH_CODEX
+	Tech=TECH_MASONRY2
+	Tech=TECH_MESSING
 	Tech=TECH_THE_WHEEL3
+	Tech=TECH_ASTROLOGIE
+	Tech=TECH_SOELDNERTUM
+	Tech=TECH_AGRICULTURE2
+	Tech=TECH_ARCHERY2
 	Tech=TECH_MANTIK
-	Tech=TECH_BEWAFFNUNG3
-	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_BUCHSTABEN
+	Tech=TECH_DEFENCES
+	Tech=TECH_IRRIGATION
+	Tech=TECH_BEWAFFNUNG2
 	Tech=TECH_HEILIGER_ORT
 	Tech=TECH_RELIGION_CELTIC
 	Tech=TECH_KRYPTOGRAPHIE
-	Tech=TECH_IRON_WORKING
-  Tech=TECH_SENSE
+	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_CLOSED_FORM
 	Tech=TECH_THEOKRATIE
+	Tech=TECH_TAUBENPOST
+	Tech=TECH_BEWAFFNUNG3
+	Tech=TECH_IRON_WORKING
 	Tech=TECH_BELAGERUNG
+	Tech=TECH_GUSS
+	Tech=TECH_SENSE
 	Tech=TECH_COLONIZATION2
-	Tech=TECH_MONOTHEISM
 	Tech=TECH_ALPHABET
 	Tech=TECH_BUENDNISSE
 	Tech=TECH_SALINEN
+	Tech=TECH_MONOTHEISM
 	Tech=TECH_GRAMMATIK
 	Tech=TECH_VASALLENTUM
+	Tech=TECH_PIRACY
 	Tech=TECH_MATHEMATICS
 	Tech=TECH_ARMOR
 	Tech=TECH_BUERGERSOLDATEN
 	Tech=TECH_BEWAFFNUNG4
 	Tech=TECH_GLADIATOR
 	Tech=TECH_TYRANNIS
+	Tech=TECH_KLANGMUSIK
 	ContactWithTeam=0
 	ContactWithTeam=2
 	AtWar=0
@@ -214,89 +214,89 @@ BeginTeam
 	Tech=TECH_MYSTICISM
 	Tech=TECH_HUNTING
 	Tech=TECH_BRUNNEN
-	Tech=TECH_METAL_SMELTING
-	Tech=TECH_TAUBENZUCHT
-	Tech=TECH_MASONRY2
-	Tech=TECH_MESSING
-	Tech=TECH_TAUBENPOST
-	Tech=TECH_GUSS
-	Tech=TECH_PIRACY
 	Tech=TECH_SCHAMANISMUS
 	Tech=TECH_FISHING
 	Tech=TECH_ANIMAL_HUSBANDRY
-	Tech=TECH_FENCES
 	Tech=TECH_AGRICULTURE
 	Tech=TECH_POLYTHEISM
 	Tech=TECH_BOOTSBAU
-	Tech=TECH_ARCHERY
+	Tech=TECH_FENCES
 	Tech=TECH_PFLUG
 	Tech=TECH_WEINBAU
-	Tech=TECH_METAL_CASTING
+	Tech=TECH_ARCHERY
 	Tech=TECH_POTTERY
 	Tech=TECH_GAERUNG
 	Tech=TECH_PRIESTHOOD
-	Tech=TECH_BEWAFFNUNG
-	Tech=TECH_SPEERSPITZEN
-	Tech=TECH_THE_WHEEL
+	Tech=TECH_METAL_CASTING
 	Tech=TECH_STEINABBAU
-	Tech=TECH_ASTRONOMIE
 	Tech=TECH_LEADERSHIP
-	Tech=TECH_MINING
-	Tech=TECH_CALENDAR
+	Tech=TECH_METAL_SMELTING
+	Tech=TECH_ASTRONOMIE
 	Tech=TECH_CEREMONIAL
-	Tech=TECH_STAATENBILDUNG
-	Tech=TECH_BRONZE_WORKING
-	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_THE_WHEEL
+	Tech=TECH_SPEERSPITZEN
 	Tech=TECH_GEOMETRIE
-	Tech=TECH_KLANGMUSIK
-	Tech=TECH_MASONRY
+	Tech=TECH_CALENDAR
+	Tech=TECH_STAATENBILDUNG
+	Tech=TECH_BEWAFFNUNG
+	Tech=TECH_FRUCHTBARKEIT
+	Tech=TECH_TAUBENZUCHT
 	Tech=TECH_COLONIZATION
-	Tech=TECH_ARCHERY2
-	Tech=TECH_BEWAFFNUNG2
-	Tech=TECH_CLOSED_FORM
-	Tech=TECH_SOELDNERTUM
+	Tech=TECH_MINING
 	Tech=TECH_KULTIVIERUNG
-	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_BRONZE_WORKING
 	Tech=TECH_WARENHANDEL
-	Tech=TECH_SCHMIEDEKUNST
-	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_MASONRY
 	Tech=TECH_HOLZWEHRANLAGEN
-	Tech=TECH_KAMELZUCHT
 	Tech=TECH_THE_WHEEL2
+	Tech=TECH_KONSERVIERUNG
+	Tech=TECH_ENSLAVEMENT
+	Tech=TECH_KAMELZUCHT
 	Tech=TECH_TEMPELWIRTSCHAFT
-	Tech=TECH_CODEX
-	Tech=TECH_AGRICULTURE2
-	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_SCHMIEDEKUNST
 	Tech=TECH_PFERDEZUCHT
 	Tech=TECH_MEDICINE2
-	Tech=TECH_ASTROLOGIE
-	Tech=TECH_BUCHSTABEN
-	Tech=TECH_IRRIGATION
-	Tech=TECH_DEFENCES
+	Tech=TECH_CODEX
+	Tech=TECH_MASONRY2
+	Tech=TECH_MESSING
 	Tech=TECH_THE_WHEEL3
+	Tech=TECH_ASTROLOGIE
+	Tech=TECH_SOELDNERTUM
+	Tech=TECH_AGRICULTURE2
+	Tech=TECH_ARCHERY2
 	Tech=TECH_MANTIK
-	Tech=TECH_BEWAFFNUNG3
-	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_BUCHSTABEN
+	Tech=TECH_DEFENCES
+	Tech=TECH_IRRIGATION
+	Tech=TECH_BEWAFFNUNG2
 	Tech=TECH_HEILIGER_ORT
 	Tech=TECH_RELIGION_CELTIC
 	Tech=TECH_KRYPTOGRAPHIE
-	Tech=TECH_IRON_WORKING
-  Tech=TECH_SENSE
+	Tech=TECH_BRANDSCHATZEN
+	Tech=TECH_SCHIFFSBAU
+	Tech=TECH_CLOSED_FORM
 	Tech=TECH_THEOKRATIE
+	Tech=TECH_TAUBENPOST
+	Tech=TECH_BEWAFFNUNG3
+	Tech=TECH_IRON_WORKING
 	Tech=TECH_BELAGERUNG
+	Tech=TECH_GUSS
+	Tech=TECH_SENSE
 	Tech=TECH_COLONIZATION2
-	Tech=TECH_MONOTHEISM
 	Tech=TECH_ALPHABET
 	Tech=TECH_BUENDNISSE
 	Tech=TECH_SALINEN
+	Tech=TECH_MONOTHEISM
 	Tech=TECH_GRAMMATIK
 	Tech=TECH_VASALLENTUM
+	Tech=TECH_PIRACY
 	Tech=TECH_MATHEMATICS
 	Tech=TECH_ARMOR
 	Tech=TECH_BUERGERSOLDATEN
 	Tech=TECH_BEWAFFNUNG4
 	Tech=TECH_GLADIATOR
 	Tech=TECH_TYRANNIS
+	Tech=TECH_KLANGMUSIK
 	ContactWithTeam=0
 	ContactWithTeam=1
 	AtWar=0
@@ -504,31 +504,31 @@ BeginTeam
 	Tech=TECH_MYSTICISM
 	Tech=TECH_HUNTING
 	Tech=TECH_BRUNNEN
+	Tech=TECH_FISHING
+	Tech=TECH_ANIMAL_HUSBANDRY
+	Tech=TECH_AGRICULTURE
+	Tech=TECH_BOOTSBAU
+	Tech=TECH_FENCES
+	Tech=TECH_PFLUG
+	Tech=TECH_ARCHERY
+	Tech=TECH_POTTERY
+	Tech=TECH_METAL_CASTING
+	Tech=TECH_STEINABBAU
+	Tech=TECH_LEADERSHIP
 	Tech=TECH_METAL_SMELTING
+	Tech=TECH_THE_WHEEL
+	Tech=TECH_SPEERSPITZEN
+	Tech=TECH_CALENDAR
+	Tech=TECH_STAATENBILDUNG
 	Tech=TECH_TAUBENZUCHT
+	Tech=TECH_MINING
+	Tech=TECH_MASONRY
 	Tech=TECH_MASONRY2
 	Tech=TECH_MESSING
 	Tech=TECH_TAUBENPOST
 	Tech=TECH_GUSS
 	Tech=TECH_PIRACY
-	Tech=TECH_FISHING
-	Tech=TECH_ANIMAL_HUSBANDRY
-	Tech=TECH_FENCES
-	Tech=TECH_AGRICULTURE
-	Tech=TECH_BOOTSBAU
-	Tech=TECH_ARCHERY
-	Tech=TECH_PFLUG
-	Tech=TECH_METAL_CASTING
-	Tech=TECH_POTTERY
-	Tech=TECH_SPEERSPITZEN
-	Tech=TECH_THE_WHEEL
-	Tech=TECH_STEINABBAU
-	Tech=TECH_LEADERSHIP
-	Tech=TECH_MINING
-	Tech=TECH_CALENDAR
-	Tech=TECH_STAATENBILDUNG
 	Tech=TECH_KLANGMUSIK
-	Tech=TECH_MASONRY
 	ContactWithTeam=0
 	ContactWithTeam=1
 	ContactWithTeam=2
@@ -652,7 +652,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=300
 	StateReligion=RELIGION_CELTIC
-	StartingEra=ERA_IRON
+	StartingEra=ERA_CLASSICAL
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_TYRANNIS
 	CivicOption=CIVICOPTION_LEGAL, Civic=CIVIC_STAMMESRAT
@@ -680,7 +680,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=300
 	StateReligion=RELIGION_CELTIC
-	StartingEra=ERA_IRON
+	StartingEra=ERA_CLASSICAL
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_TYRANNIS
 	CivicOption=CIVICOPTION_LEGAL, Civic=CIVIC_STAMMESRAT
@@ -708,7 +708,7 @@ BeginPlayer
 	MinorNationStatus=0
 	StartingGold=300
 	StateReligion=RELIGION_CELTIC
-	StartingEra=ERA_IRON
+	StartingEra=ERA_CLASSICAL
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_TYRANNIS
 	CivicOption=CIVICOPTION_LEGAL, Civic=CIVIC_STAMMESRAT
@@ -928,7 +928,7 @@ BeginPlayer
 	PlayableCiv=0
 	MinorNationStatus=0
 	StartingGold=0
-	StartingEra=ERA_ANCIENT
+	StartingEra=ERA_CLASSICAL
 	RandomStartLocation=false
 	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DESPOTISM
 	CivicOption=CIVICOPTION_LEGAL, Civic=CIVIC_BARBARISM
@@ -964,14 +964,14 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=Alertus
 		CityPopulation=1
+		BuildingType=BUILDING_POTTERY
+		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_DAMM_MARIB
 		BuildingType=BUILDING_LABYRINTH
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 	EndCity
 	TeamReveal=52,
 	Player52Culture=2
@@ -2108,6 +2108,7 @@ BeginPlot
 	BonusType=BONUS_PIG
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2359,12 +2360,12 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN30
 		CityPopulation=2
-		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -2374,6 +2375,7 @@ BeginPlot
 	BonusType=BONUS_GOLD
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -2400,6 +2402,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_BARBARENFORT
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -2570,13 +2573,18 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_ANCIENT_OBSERVATORY
 		BuildingType=BUILDING_BRAUSTAETTE
@@ -2584,11 +2592,6 @@ BeginPlot
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -2632,6 +2635,7 @@ EndPlot
 BeginPlot
 	x=7,y=10
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2660,6 +2664,7 @@ BeginPlot
 	BonusType=BONUS_COW
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2670,6 +2675,7 @@ BeginPlot
 	BonusType=BONUS_GEMS
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -2796,6 +2802,7 @@ EndPlot
 BeginPlot
 	x=8,y=3
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2808,6 +2815,7 @@ BeginPlot
 	BonusType=BONUS_ZINK
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -2853,6 +2861,7 @@ EndPlot
 BeginPlot
 	x=8,y=11
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2860,6 +2869,7 @@ EndPlot
 BeginPlot
 	x=8,y=12
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -2891,12 +2901,12 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN23
 		CityPopulation=2
-		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -2936,6 +2946,7 @@ BeginPlot
 	BonusType=BONUS_SHEEP
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3051,6 +3062,7 @@ BeginPlot
 	BonusType=BONUS_STONE
 	ImprovementType=IMPROVEMENT_QUARRY
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3117,6 +3129,7 @@ EndPlot
 BeginPlot
 	x=9,y=15
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3124,6 +3137,7 @@ EndPlot
 BeginPlot
 	x=9,y=16
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3155,12 +3169,12 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN29
 		CityPopulation=2
-		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -3170,6 +3184,7 @@ BeginPlot
 	BonusType=BONUS_SILVER
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3219,6 +3234,7 @@ BeginPlot
 	BonusType=BONUS_WALRUS
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3300,6 +3316,7 @@ BeginPlot
 	BonusType=BONUS_WALRUS
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3428,6 +3445,7 @@ BeginPlot
 	x=10,y=25
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3456,13 +3474,13 @@ BeginPlot
 		CityName=Hebriden
 		CityPopulation=2
 		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
-		BuildingType=BUILDING_SIEDLUNG
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -3530,13 +3548,18 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_ANCIENT_OBSERVATORY
 		BuildingType=BUILDING_BRAUSTAETTE
@@ -3544,11 +3567,6 @@ BeginPlot
 		BuildingType=BUILDING_PUBLIC_EXECUTION
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -3573,6 +3591,7 @@ BeginPlot
 	BonusType=BONUS_ZINN
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3703,6 +3722,7 @@ BeginPlot
 	x=11,y=26
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -3720,6 +3740,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3770,6 +3791,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3855,7 +3877,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_DICHTERWALD, FeatureVariety=0
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -3891,6 +3913,7 @@ BeginPlot
 	BonusType=BONUS_WALRUS
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4006,6 +4029,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4060,6 +4084,7 @@ BeginPlot
 	BonusType=BONUS_COAL
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4119,6 +4144,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		Sleep
 		UnitAIType=UNITAI_COUNTER
@@ -4127,6 +4153,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		Sleep
 		UnitAIType=UNITAI_COUNTER
@@ -4135,6 +4162,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		Sleep
 		UnitAIType=UNITAI_COUNTER
@@ -4143,16 +4171,16 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN32
 		CityPopulation=2
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
+		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		ReligionType=RELIGION_CELTIC
 		HolyCityReligionType=RELIGION_CELTIC
 	EndCity
@@ -4169,6 +4197,7 @@ EndPlot
 BeginPlot
 	x=13,y=16
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4199,24 +4228,24 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_BRAUSTAETTE
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -4236,6 +4265,7 @@ BeginPlot
 	x=13,y=19
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4253,6 +4283,7 @@ EndPlot
 BeginPlot
 	x=13,y=21
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4296,13 +4327,13 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_LIMES_CITY136
 		CityPopulation=2
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
-		BuildingType=BUILDING_SIEDLUNG
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -4312,6 +4343,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4389,6 +4421,7 @@ BeginPlot
 	x=14,y=5
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4487,37 +4520,52 @@ BeginPlot
 		Sleep
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_EXECUTIVE_5, UnitOwner=0
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_MISSIONARY
+	EndUnit
 	BeginCity
 		CityOwner=0
 		CityName=TXT_KEY_CITY_NAME_BRITEN9
 		CityPopulation=5
+		BuildingType=BUILDING_FENCES2
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_OPPIDUM
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_TRADEPOST
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_RIVERDOCK
+		BuildingType=BUILDING_GERBEREI
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_TAILOR
+		BuildingType=BUILDING_GUSS_COPPER
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
+		BuildingType=BUILDING_STEINKREIS
+		BuildingType=BUILDING_ANCIENT_OBSERVATORY
 		BuildingType=BUILDING_BRAUSTAETTE
+		BuildingType=BUILDING_TAUBENPOST
 		BuildingType=BUILDING_THING
+		BuildingType=BUILDING_BOGEN
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 		Player0Culture=20
@@ -4545,6 +4593,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4605,6 +4654,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4651,13 +4701,13 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN27
 		CityPopulation=2
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
+		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -4677,6 +4727,7 @@ BeginPlot
 	x=14,y=22
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -4698,6 +4749,7 @@ BeginPlot
 	BonusType=BONUS_ZINK
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4791,20 +4843,20 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN7
 		CityPopulation=3
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 	EndCity
 	TeamReveal=0,1,2,52,
@@ -4817,6 +4869,7 @@ BeginPlot
 	BonusType=BONUS_GOLD
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -4838,6 +4891,7 @@ BeginPlot
 	RiverWEDirection=3
 	BonusType=BONUS_ROGGEN
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -4930,6 +4984,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=0
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
@@ -4942,6 +4997,7 @@ BeginPlot
 	BonusType=BONUS_SHEEP
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,
@@ -4993,13 +5049,18 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_ANCIENT_OBSERVATORY
@@ -5008,11 +5069,6 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -5024,6 +5080,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5049,6 +5106,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -5065,6 +5123,7 @@ BeginPlot
 	BonusType=BONUS_GOLD
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5087,6 +5146,7 @@ BeginPlot
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5106,6 +5166,7 @@ BeginPlot
 	BonusType=BONUS_COAL
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5137,6 +5198,7 @@ BeginPlot
 	x=15,y=25
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
@@ -5206,6 +5268,7 @@ EndPlot
 BeginPlot
 	x=16,y=4
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5216,6 +5279,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5240,6 +5304,7 @@ BeginPlot
 	BonusType=BONUS_COPPER
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5276,6 +5341,7 @@ BeginPlot
 	BonusType=BONUS_SILVER
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5321,6 +5387,7 @@ BeginPlot
 	x=16,y=14
 	BonusType=BONUS_HUNDE
 	ImprovementType=IMPROVEMENT_CAMP
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5344,6 +5411,7 @@ BeginPlot
 	BonusType=BONUS_STONE
 	ImprovementType=IMPROVEMENT_QUARRY
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5360,6 +5428,7 @@ BeginPlot
 	BonusType=BONUS_ZINK
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5370,6 +5439,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5391,6 +5461,7 @@ BeginPlot
 	x=16,y=22
 	ImprovementType=IMPROVEMENT_BARBARENFORT
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
@@ -5401,14 +5472,14 @@ BeginPlot
 		UnitAIType=UNITAI_ANIMAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOAR, UnitOwner=BARBARIAN
+		UnitType=UNIT_WOLF, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		PromotionType=PROMOTION_WILDLIFE
 		FacingDirection=0
 		UnitAIType=UNITAI_ANIMAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_WOLF, UnitOwner=BARBARIAN
+		UnitType=UNIT_BOAR, UnitOwner=BARBARIAN
 		Level=1, Experience=1
 		PromotionType=PROMOTION_WILDLIFE
 		FacingDirection=0
@@ -5438,6 +5509,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5455,6 +5527,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5518,6 +5591,7 @@ BeginPlot
 	x=17,y=5
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5578,6 +5652,7 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
@@ -5608,6 +5683,7 @@ BeginPlot
 	BonusType=BONUS_COPPER
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5638,6 +5714,7 @@ BeginPlot
 	x=17,y=17
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5666,19 +5743,19 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN24
 		CityPopulation=3
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -5696,6 +5773,7 @@ BeginPlot
 	x=17,y=20
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5723,6 +5801,7 @@ EndPlot
 BeginPlot
 	x=17,y=23
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5759,15 +5838,15 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_B102
 		CityPopulation=2
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
+		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -5820,7 +5899,7 @@ EndPlot
 BeginPlot
 	x=18,y=2
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5833,7 +5912,7 @@ BeginPlot
 	BonusType=BONUS_WALRUS
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5850,6 +5929,7 @@ BeginPlot
 	x=18,y=5
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -5862,6 +5942,7 @@ BeginPlot
 	BonusType=BONUS_DEER
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5889,6 +5970,7 @@ BeginPlot
 	BonusType=BONUS_ZINK
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5920,6 +6002,7 @@ BeginPlot
 	BonusType=BONUS_COAL
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -5989,24 +6072,38 @@ BeginPlot
 		CityOwner=2
 		CityName=TXT_KEY_CITY_NAME_BRITEN3
 		CityPopulation=5
+		BuildingType=BUILDING_FENCES2
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_OPPIDUM
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_TRADEPOST
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
+		BuildingType=BUILDING_RIVERDOCK
+		BuildingType=BUILDING_GERBEREI
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_TAILOR
+		BuildingType=BUILDING_GUSS_COPPER
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
+		BuildingType=BUILDING_STEINKREIS
 		BuildingType=BUILDING_ARCHIVE
+		BuildingType=BUILDING_ANCIENT_OBSERVATORY
 		BuildingType=BUILDING_BRAUSTAETTE
+		BuildingType=BUILDING_TAUBENPOST
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_PUBLIC_EXECUTION
+		BuildingType=BUILDING_BOGEN
 		BuildingType=BUILDING_CELTIC_SHRINE
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_ORACLE2
@@ -6014,11 +6111,6 @@ BeginPlot
 		BuildingType=BUILDING_STONEHENGE
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 		Player2Culture=20
@@ -6034,6 +6126,7 @@ BeginPlot
 	isWOfRiver
 	BonusType=BONUS_ROGGEN
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -6127,6 +6220,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=2
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
@@ -6140,6 +6234,7 @@ BeginPlot
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6150,6 +6245,7 @@ BeginPlot
 	x=18,y=17
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6203,14 +6299,14 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN13
 		CityPopulation=2
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_SIEDLUNG
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
+		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -6221,6 +6317,7 @@ BeginPlot
 	RiverWEDirection=1
 	BonusType=BONUS_MAGNETIT
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -6242,6 +6339,7 @@ EndPlot
 BeginPlot
 	x=18,y=25
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6323,24 +6421,24 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_STONEHENGE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -6392,24 +6490,24 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_STONEHENGE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -6423,6 +6521,7 @@ BeginPlot
 	BonusType=BONUS_ZINN
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -6434,6 +6533,7 @@ BeginPlot
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_COTTAGE_HILL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -6442,6 +6542,7 @@ BeginPlot
 	x=19,y=9
 	BonusType=BONUS_HORSE
 	ImprovementType=IMPROVEMENT_PASTURE
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6471,6 +6572,7 @@ BeginPlot
 	x=19,y=12
 	ImprovementType=IMPROVEMENT_CAVE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -6503,6 +6605,7 @@ BeginPlot
 	BonusType=BONUS_PIG
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6550,6 +6653,7 @@ BeginPlot
 	x=19,y=21
 	BonusType=BONUS_HAFER
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6669,6 +6773,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6694,6 +6799,7 @@ EndPlot
 BeginPlot
 	x=20,y=9
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6724,20 +6830,20 @@ BeginPlot
 		CityOwner=BARBARIAN
 		CityName=TXT_KEY_CITY_NAME_BRITEN2
 		CityPopulation=3
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
+		BuildingType=BUILDING_BRUNNEN
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 	EndCity
 	TeamReveal=0,1,2,52,
@@ -6748,6 +6854,7 @@ BeginPlot
 	BonusType=BONUS_DEER
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6793,6 +6900,7 @@ BeginPlot
 	x=20,y=15
 	ImprovementType=IMPROVEMENT_COTTAGE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -6889,13 +6997,13 @@ BeginPlot
 		CityName=Orkney Ilands
 		CityPopulation=2
 		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
-		BuildingType=BUILDING_SIEDLUNG
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_SIEDLUNG
 	EndCity
 	TeamReveal=0,1,2,52,
 	Player52Culture=2
@@ -6963,6 +7071,7 @@ BeginPlot
 	BonusType=BONUS_GOLD
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -7011,6 +7120,7 @@ EndPlot
 BeginPlot
 	x=21,y=11
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7021,6 +7131,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -7059,6 +7170,7 @@ BeginPlot
 	BonusType=BONUS_ZINN
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -7206,6 +7318,7 @@ BeginPlot
 	BonusType=BONUS_FUR
 	ImprovementType=IMPROVEMENT_CAMP
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7225,6 +7338,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7254,6 +7368,7 @@ BeginPlot
 	RiverWEDirection=1
 	BonusType=BONUS_HUNDE
 	ImprovementType=IMPROVEMENT_CAMP
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7277,6 +7392,7 @@ EndPlot
 BeginPlot
 	x=22,y=13
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7307,24 +7423,24 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_BRAUSTAETTE
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -7464,6 +7580,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -7504,23 +7621,23 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_ARENA
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 	EndCity
@@ -7545,6 +7662,7 @@ BeginPlot
 	BonusType=BONUS_COW
 	ImprovementType=IMPROVEMENT_PASTURE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7557,6 +7675,7 @@ BeginPlot
 	RiverWEDirection=1
 	BonusType=BONUS_ROGGEN
 	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
@@ -7647,6 +7766,7 @@ BeginPlot
 		UnitType=UNIT_DRUIDE, UnitOwner=1
 		Level=1, Experience=1
 		PromotionType=PROMOTION_MEDIC1
+		PromotionType=PROMOTION_MEDIC2
 		FacingDirection=0
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
@@ -7789,7 +7909,7 @@ BeginPlot
 	x=24,y=0
 	BonusType=BONUS_GRAPES
 	ImprovementType=IMPROVEMENT_WINERY
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
@@ -7829,6 +7949,7 @@ BeginPlot
 	x=24,y=5
 	BonusType=BONUS_STONE
 	ImprovementType=IMPROVEMENT_QUARRY
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -7856,6 +7977,7 @@ EndPlot
 BeginPlot
 	x=24,y=8
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -7936,36 +8058,45 @@ BeginPlot
 		CityOwner=1
 		CityName=TXT_KEY_CITY_NAME_LONDON
 		CityPopulation=5
+		BuildingType=BUILDING_FENCES2
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_OPPIDUM
 		BuildingType=BUILDING_SOELDNERPOSTEN
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_TRADEPOST
+		BuildingType=BUILDING_POTTERY
 		BuildingType=BUILDING_CURINGHUT
 		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TAUBENSCHLAG
 		BuildingType=BUILDING_URNENFELDER
 		BuildingType=BUILDING_CAIRN
+		BuildingType=BUILDING_BRUNNEN
 		BuildingType=BUILDING_ZISTERNE
 		BuildingType=BUILDING_SALINE
+		BuildingType=BUILDING_RIVERDOCK
+		BuildingType=BUILDING_GERBEREI
+		BuildingType=BUILDING_SCHMIEDE1
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_FORGE_WEAPONS
+		BuildingType=BUILDING_TAILOR
+		BuildingType=BUILDING_GUSS_COPPER
 		BuildingType=BUILDING_SCHMIEDE_BRONZE
 		BuildingType=BUILDING_MONOLITH
+		BuildingType=BUILDING_STEINKREIS
 		BuildingType=BUILDING_ARCHIVE
+		BuildingType=BUILDING_ANCIENT_OBSERVATORY
 		BuildingType=BUILDING_BRAUSTAETTE
+		BuildingType=BUILDING_TAUBENPOST
 		BuildingType=BUILDING_THING
 		BuildingType=BUILDING_PUBLIC_EXECUTION
+		BuildingType=BUILDING_BOGEN
 		BuildingType=BUILDING_CELTIC_SHRINE
 		BuildingType=BUILDING_CELTIC_TEMPLE
 		BuildingType=BUILDING_ORACLE2
 		BuildingType=BUILDING_MALI_MINT
 		BuildingType=BUILDING_SKLAVENMARKT
 		BuildingType=BUILDING_SIEDLUNG
-		BuildingType=BUILDING_BRUNNEN
-		BuildingType=BUILDING_SCHMIEDE1
-		BuildingType=BUILDING_POTTERY
-		BuildingType=BUILDING_TAUBENSCHLAG
-		BuildingType=BUILDING_FORGE_WEAPONS
 		BuildingType=BUILDING_KOLONIE
 		ReligionType=RELIGION_CELTIC
 		Player1Culture=20
@@ -7980,6 +8111,7 @@ BeginPlot
 	BonusType=BONUS_COAL
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,52,
@@ -8106,7 +8238,7 @@ BeginPlot
 	x=25,y=0
 	ImprovementType=IMPROVEMENT_HAMLET
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -8190,6 +8322,7 @@ BeginPlot
 	BonusType=BONUS_COPPER
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,
@@ -8354,7 +8487,7 @@ BeginPlot
 	x=26,y=1
 	RiverNSDirection=0
 	isWOfRiver
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,52,
@@ -8543,7 +8676,7 @@ BeginPlot
 	x=27,y=0
 	BonusType=BONUS_WHEAT
 	ImprovementType=IMPROVEMENT_FARM
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,1,2,
@@ -8746,7 +8879,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	ImprovementType=IMPROVEMENT_MINE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	RouteType=ROUTE_ROAD
+	RouteType=ROUTE_PATH
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,1,2,

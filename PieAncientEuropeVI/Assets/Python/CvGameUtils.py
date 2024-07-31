@@ -757,7 +757,7 @@ class CvGameUtils:
 				if eUnit in L.LRammen:
 						iPlayer = pCity.getOwner()
 						pPlayer = gc.getPlayer(iPlayer)
-						if pPlayer.getUnitClassCountPlusMaking(eUnit) > 10:
+						if pPlayer.getUnitClassCountPlusMaking(gc.getUnitInfo(eUnit).getUnitClassType()) > 10:
 								return True
 
 				return False
