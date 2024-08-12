@@ -1770,11 +1770,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_TURM</Tag>
-		<English>Build a [LINK=IMPROVEMENT_TURM]look-out[\LINK]</English>
-		<French>Construire un [LINK=IMPROVEMENT_TURM]poste d'observation[\LINK]</French>
-		<German>[LINK=IMPROVEMENT_TURM]Sp&#228;hturm[\LINK] bauen</German>
-		<Italian>Costruisci un [LINK=IMPROVEMENT_TURM]posto d'osservazione[\LINK]</Italian>
-		<Spanish>Construir un [LINK=IMPROVEMENT_TURM]vig&#237;a[\LINK]</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Build a [LINK=IMPROVEMENT_TURM]Look-out[\LINK][COLOR_REVERT][ICON_BULLET]+10% tile defenseCost: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turn</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Construire un [LINK=IMPROVEMENT_TURM]poste d'observation[\LINK][COLOR_REVERT][ICON_BULLET]D&#233;fense de la case +10%Co&#251;t : 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] tour</French>
+		<German>[COLOR_HIGHLIGHT_TEXT][LINK=IMPROVEMENT_TURM]Sp&#228;hturm[\LINK] bauen[COLOR_REVERT][ICON_BULLET]+10% Gel&#228;ndefeld-VerteidigungKosten: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] Runde</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Costruisci un [LINK=IMPROVEMENT_TURM]posto d'osservazione[\LINK][COLOR_REVERT][ICON_BULLET]+10% difensiva della casellaCosto: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Construir un [LINK=IMPROVEMENT_TURM]vig&#237;a[\LINK][COLOR_REVERT][ICON_BULLET]+10% a la defensa de la casillaCoste: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_TURM2</Tag>
@@ -4571,7 +4571,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_EPAMINONDAS</Tag>
 		<English>Epaminondas of Thebes</English>
-		<French>&#201;paminondas de Th&#233;bes</French>
+		<French>Epaminondas de Th&#233;bes</French>
 		<German>Epameinondas von Theben</German>
 		<Italian>Epaminonda di Tebe</Italian>
 		<Spanish>Epaminondas de Tebas</Spanish>
@@ -5587,7 +5587,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_BEWAFFNUNG4</Tag>
 		<English>The Broadsword</English>
-		<French>&#201;p&#233;e large</French>
+		<French>Ep&#233;e large</French>
 		<German>Das Breitschwert</German>
 		<Italian>Spada Larga</Italian>
 		<Spanish>L'Espada Ancha</Spanish>
@@ -6283,7 +6283,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_METALL</Tag>
 		<English>Arts and Crafts</English>
-		<French>Art et Bricolages</French>
+		<French>Arts et artisanat</French>
 		<German>Handwerkskunst</German>
 		<Italian>Arti e Mestieri</Italian>
 		<Spanish>Arte y Artesan&#237;a</Spanish>
@@ -7727,7 +7727,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KURZSCHWERT</Tag>
 		<English>Shortswordsman</English>
-		<French>&#201;p&#233;iste &#224; lame courte</French>
+		<French>Ep&#233;iste &#224; lame courte</French>
 		<German>Kurzschwertk&#228;mpfer</German>
 		<Italian>Soldato con Spada Corta</Italian>
 		<Spanish>Soldado con Espada Corta:Soldados con Espada Corta</Spanish>
@@ -8307,7 +8307,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEEVOLK_WARRIOR3</Tag>
 		<English>Sherden-Swordsman</English>
-		<French>&#201;p&#233;iste shardane</French>
+		<French>Ep&#233;iste shardane</French>
 		<German>Scherden-Schwertk&#228;mpfer</German>
 		<Italian>Spadaccino shardano</Italian>
 		<Spanish>Soldado shirdano con Cimitarra:Soldados shirdanos con Cimitarra</Spanish>
@@ -8315,7 +8315,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEHER</Tag>
 		<English>Seer</English>
-		<French><Text>Voyant</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<French><Text>Devin</Text><Gender>Male</Gender><Plural>0</Plural></French>
 		<German><Text>Seher</Text><Gender>Male</Gender><Plural>0</Plural></German>
 		<Italian><Text>Veggente</Text><Gender>Male</Gender><Plural>0</Plural></Italian>
 		<Spanish><Text>Vidente</Text><Gender>Male</Gender><Plural>0</Plural></Spanish>
@@ -8491,7 +8491,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRADE_MERCHANT</Tag>
 		<English>Trade wagon</English>
-		<French>Charrette commerciale</French>
+		<French>Chariot de commerce</French>
 		<German>Handelskarren</German>
 		<Italian>Carro commerciale</Italian>
 		<Spanish>Mercader</Spanish>

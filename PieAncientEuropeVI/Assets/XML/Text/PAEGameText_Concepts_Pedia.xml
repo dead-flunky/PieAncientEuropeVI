@@ -13464,7 +13464,7 @@ Therefore, the vassal-feature in PAE has been expanded.
 
 [H1]To become a vassal[\H1]
 In PAE, it is now easier to become a vassal. You have just conquered a city of a player who has only 4 or fewer cities, it offers to be a vassal.
-Probability 1: 120% – (20x number of cities)%
+Probability 1: 120%  &#8211;  (20x number of cities)%
 Probability 2: The loser's civilization strength points (x2) are less than the winner's strength points
 This should help maintain a certain strength of the vassals. The same applies to human players. Now it is possible in PAE, as a human player to become a vassal of the AI.
 
@@ -13492,7 +13492,7 @@ Other conditions:
 			
 			[H1]Devenir un vassal[\H1]
 			Dans PAE, il est plus facile de devenir un vassal. Si vous capturez la ville d'une nation qui en compte 4 ou moins, celle-ci propose de devenir votre vassal.
-			Probabilit&#233; 1: 120% – (20x le nombre de villes)%
+			Probabilit&#233; 1: 120%  &#8211;  (20x le nombre de villes)%
 			Probabilit&#233; 2: les points de force de civilisation du perdant (x2) sont inf&#233;rieurs aux points de force du gagnant
 			Cela devrait permettre de maintenir les vassaux &#224; un certain niveau. Les m&#234;mes conditions s'appliquent aux joueurs humains. Il est donc possible &#224; un joueur humain de devenir le vassal d'un joueur IA.
 			
@@ -13519,7 +13519,7 @@ Other conditions:
 			
 			[H1]Ein Vasall werden[\H1]
 			In PAE ist es nun leichter einen Vasallen zu bekommen. Hat man soeben eine Stadt eines Spielers erobert, der nur mehr 4 oder weniger St&#228;dte besitzt, bietet er an, Vasall zu werden. 
-			Wahrscheinlichkeit 1: 120% – (20xAnzahl der St&#228;dte)%
+			Wahrscheinlichkeit 1: 120%  &#8211;  (20xAnzahl der St&#228;dte)%
 			Wahrscheinlichkeit 2: Civilizations-St&#228;rkepunkte des Verlierers (x2) sind kleiner als die St&#228;rkepunkte des Gewinners
 			Dies soll helfen, dass die Vasallen eine gewisse St&#228;rke beibehalten. Das gleiche gilt auch f&#252;r menschliche Spieler. Nun ist es in PAE m&#246;glich, auch als Mensch Vasall der KI zu werden.
 			
@@ -13548,7 +13548,7 @@ Other conditions:
 			
 			[H1] Un vassallo [\H1]
 			In PAE , ora &#232; pi&#249; facile ottenere un vassallo . Se avete appena conquistato una citt&#224; di un giocatore che ha solo 4 o meno citt&#224; , offre di diventare un vassallo .
-			Probabilit&#224; 1: 120% – (20x numero di citt&#224;)%
+			Probabilit&#224; 1: 120%  &#8211;  (20x numero di citt&#224;)%
 			Probabilit&#224; 2: i punti di forza della civilt&#224; del perdente (x2) sono inferiori ai punti di forza del vincitore
 			Ci&#242; dovrebbe contribuire a che il vassallo mantenere una certa forza . Lo stesso vale per i giocatori umani . Ora &#232; possibile in PAE essere come un essere umano vassallo del AI .
 			
@@ -13578,7 +13578,7 @@ Other conditions:
 			
 			[H1]Para convertirse en vasallo[\H1]
 			En PAE, es f&#225;cil convertirse en vasallo. Solo tienes que conquistar una ciudad de un jugador que tiene 4 ciudades o menos, entonces se ofrece a ser un vasallo.
-			Probabilidad 1: 120% – (20 veces el n&#250;mero de ciudades)%
+			Probabilidad 1: 120%  &#8211;  (20 veces el n&#250;mero de ciudades)%
 			Probabilidad 2: los puntos de fuerza de civilizaci&#243;n del perdedor (x2) son menores que los puntos de fuerza del ganador
 			Esto ayuda a que los vasallos mantengan cierta fuerza. Lo mismo se aplica a los jugadores humanos. En PAE ahora es posible, que un jugador humano se convierta en vasallo de la IA.
 			

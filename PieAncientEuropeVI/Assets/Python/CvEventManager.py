@@ -1819,8 +1819,7 @@ class CvEventManager:
 				elif iData1 == 737:
 						PAE_City.onModNetMessage(argsList)
 
-				# 738-743: Cultivation feature / Bonusverbreitung ( Cultivation / Trade / Boggy )
-				# 744-748: Automated trade routes
+				# 738-742: Cultivation feature / Bonusverbreitung ( Cultivation / Trade / Boggy )
 
 				# ~ # 738: Create popup for bonus cultivation
 				# ~ if iData1 == 738:
@@ -1883,6 +1882,9 @@ class CvEventManager:
 						iCityOwner = iData3
 						PAE_Trade.doBuyBonus(pUnit, eBonus, iCityOwner)
 
+				# 743 free
+
+				# 744-748: Automated trade routes
 				# Automated trade route: first popup (choose civ 1)
 				elif iData1 == 744:
 						pUnit = gc.getPlayer(iData4).getUnit(iData5)

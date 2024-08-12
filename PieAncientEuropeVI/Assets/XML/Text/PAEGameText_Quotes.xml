@@ -421,7 +421,7 @@
 		<English>Running water does not stink. -Chinese proverb</English>
 		<French>On ne peut flairer l'eau courante. -Proverbe chinois</French>
 		<German>Flie&#223;endes Wasser stinkt nicht. -chinesisches Sprichwort</German>
-		<Italian>L'acqua corrente non puzza. - Proverbio cinese</Italian>
+		<Italian>L'acqua corrente non puzza. &#8211; Proverbio cinese</Italian>
 		<Spanish>El agua que fluye no apesta. -Proverbio chino.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -452,7 +452,7 @@
 		<Tag>TXT_KEY_PAE_QUOTE_150</Tag>
 		<English>Obedience is the best protection of life, it must be guarded like the fortress walls. -Sophocles</English>
 		<French>La vie est au mieux garantie par l'ob&#233;issance, sur laquelle on doit veiller comme sur les murs d'une forteresse. -Sophocle</French>
-		<German>Gehorsam ist des Lebens bester Schutz, ihn mu&#223; man h&#252;ten wie der Festung Mauern. - Sophokles</German>
+		<German>Gehorsam ist des Lebens bester Schutz, ihn mu&#223; man h&#252;ten wie der Festung Mauern. &#8211; Sophokles</German>
 		<Italian>L'obbedienza &#232; la migliore protezione della vita, va custodita come le mura della fortezza. -Sofocle</Italian>
 		<Spanish>La obediencia es la mejor protecci&#243;n en esta vida, debe ser guardada como las murallas de una fortaleza. -S&#243;focles.</Spanish>
 	</TEXT>
@@ -646,7 +646,7 @@
 		<French>Le monde de Rome s'&#233;croule. -Saint J&#233;r&#244;me, 369 ap. J.-C.</French>
 		<German>Der r&#246;mische Erdkreis st&#252;rzt. -Hieronymus 396 n.Chr.</German>
 		<Italian>Il mondo romano sta crollando. -San Girolamo 396 d.C.</Italian>
-		<Spanish>El mundo romano est&#225; cayendo. - San Jer&#243;nimo, 369 d.C.</Spanish>
+		<Spanish>El mundo romano est&#225; cayendo. &#8211; San Jer&#243;nimo, 369 d.C.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_173</Tag>
@@ -654,7 +654,7 @@
 		<French>Si nous tournons toutes enti&#232;res nos perceptions vers notre Cr&#233;ateur, notre Seigneur, alors notre vigilance sera moins ais&#233;ment tromp&#233;e par de simples cr&#233;atures. -Ignace d'Antioche</French>
 		<German>Je vollst&#228;ndiger wir unsere Aufmerksamkeit auf unseren Sch&#246;pfer und Herrn richten, desto geringer ist die Chance, dass wir von Kreaturen abgelenkt werden. -Ignatius von Antiochia</German>
 		<Italian>Pi&#249; completamente concentriamo la nostra attenzione sul nostro Creatore e Signore, meno possibilit&#224; ci sono di essere distratti dalle creature. -Ignazio di Antiochia</Italian>
-		<Spanish>Cuanto m&#225;s completamente fijemos nuestra atenci&#243;n en nuestro Creador y Se&#241;or, menos oportunidades para ser distra&#237;dos por las criaturas. - Ignatius de Antioqu&#237;a.</Spanish>
+		<Spanish>Cuanto m&#225;s completamente fijemos nuestra atenci&#243;n en nuestro Creador y Se&#241;or, menos oportunidades para ser distra&#237;dos por las criaturas. &#8211; Ignatius de Antioqu&#237;a.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_174</Tag>
@@ -683,7 +683,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_177</Tag>
 		<English>Life is a gallop on a horse &#8211; there are no stirrups and no guarantee not to be thrown off at any time. -Pascal Lachenmeier</English>
-		<French>Vivre revient &#224; chevaucher une monture au galop - Sans &#233;triers, sur le point d'&#234;tre jet&#233; &#224; terre &#224; tout instant. -Pascal Lachenmeier</French>
+		<French>Vivre revient &#224; chevaucher une monture au galop &#8211; Sans &#233;triers, sur le point d'&#234;tre jet&#233; &#224; terre &#224; tout instant. -Pascal Lachenmeier</French>
 		<German>Das Leben ist ein Galopp auf einem Pferd &#8211; es gibt keine Steigb&#252;gel und keine Garantie, nicht jederzeit abgeworfen zu werden. -Pascal Lachenmeier</German>
 		<Italian>La vita &#232; un galoppo su un cavallo &#8211; non ci sono staffe e nessuna garanzia di non essere buttati gi&#249; in qualsiasi momento. -Pascal Lachenmeier</Italian>
 		<Spanish>La vida es un galope en un caballo, no hay estribos ni garant&#237;a de no ser arrojado en ning&#250;n momento. -Pascal Lachenmeier</Spanish>
@@ -730,7 +730,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_182</Tag>
-		<English>It will take several millennia of love to repay the animals of their suffering through us! - Francis of Assisi</English>
+		<English>It will take several millennia of love to repay the animals of their suffering through us! &#8211; Francis of Assisi</English>
 		<French>Il faudra plusieurs mill&#233;naires d'amour pour rembourser les animaux de leurs souffrances &#224; travers nous! -Fran&#231;ois d'Assise</French>
 		<German>Es werden mehrere Jahrtausende von Liebe n&#246;tig sein, um den Tieren ihr durch uns zugef&#252;gtes Leid heimzuzahlen! -Franz von Assisi</German>
 		<Italian>Ci vorranno diversi millenni di amore per ripagare gli animali della loro sofferenza attraverso di noi! -Francesco d'Assisi</Italian>
@@ -1642,11 +1642,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_98</Tag>
-		<English>"Only the win counts!" - Ancient Olympic principle</English>
-		<French>"Seule la victoire compte !" - Principe olympique antique</French>
-		<German>"Nur der Sieg z&#228;hlt!" - Antikes Olympisches Prinzip</German>
-		<Italian>"Conta solo la vittoria!" - Antico principio olimpico</Italian>
-		<Spanish>"&#161;Solo cuenta la victoria!" - Antiguo principio ol&#237;mpico</Spanish>
+		<English>"Only the win counts!" &#8211; Ancient Olympic principle</English>
+		<French>"Seule la victoire compte !" &#8211; Principe olympique antique</French>
+		<German>"Nur der Sieg z&#228;hlt!" &#8211; Antikes Olympisches Prinzip</German>
+		<Italian>"Conta solo la vittoria!" &#8211; Antico principio olimpico</Italian>
+		<Spanish>"&#161;Solo cuenta la victoria!" &#8211; Antiguo principio ol&#237;mpico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAE_QUOTE_99</Tag>

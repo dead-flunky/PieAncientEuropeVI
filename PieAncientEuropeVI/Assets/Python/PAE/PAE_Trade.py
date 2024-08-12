@@ -87,8 +87,6 @@ def doBuyBonus(pUnit, eBonus, iCityOwner):
 						#CyInterface().addMessage(iBuyer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Die Einheit hat bereits eine Ressource geladen.",)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 						if pUnit.plot().isCity():
 								doSellBonus(pUnit, pUnit.plot().getPlotCity())
-						else:
-								CvUtil.removeScriptData(pUnit, "b")
 
 				iPrice = int(_calculateBonusBuyingPrice(eBonus, iBuyer, iCityOwner))
 				if pBuyer.getGold() < iPrice:
@@ -180,6 +178,10 @@ def doSellBonus(pUnit, pCity):
 						CyAudioGame().Play2DSound("AS2D_COINS")
 
 				CvUtil.removeScriptData(pUnit, "b")
+				# DERTUEK
+				CvUtil.removeScriptData(pUnit, "x")
+				CvUtil.removeScriptData(pUnit, "y")
+				CvUtil.removeScriptData(pUnit, "originCiv")
 				# pUnit.finishMoves()
 				# PAE_Unit.doGoToNextUnit(pUnit)
 
@@ -1998,6 +2000,10 @@ def doMerchantRobbery(pUnit, pPlot, pOldPlot):
 
 								# PAE Trade: Einheit leeren
 								CvUtil.removeScriptData(pUnit, "b")
+								# DERTUEK
+								CvUtil.removeScriptData(pUnit, "x")
+								CvUtil.removeScriptData(pUnit, "y")
+								CvUtil.removeScriptData(pUnit, "originCiv")
 
 						# mit Begleitschutz
 						else:

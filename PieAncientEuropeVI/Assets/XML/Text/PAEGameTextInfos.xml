@@ -5757,6 +5757,14 @@
 		<Spanish>Cuando el camuflaje de un esp&#237;a &#161;fue descubierto, fue asesinado por un soldado!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MESSAGE_UNIT_BRANDER_SUICIDE</Tag>
+		<English>Our fireship was able to sink the enemy ship, but was completely burned in the process.</English>
+		<French>Notre feu gr&#233;geois a r&#233;ussi &#224; couler le navire ennemi, mais il a lui-m&#234;me &#233;t&#233; compl&#232;tement br&#251;l&#233;.</French>
+		<German>Unser Brander konnte das feindliche Schiff versenken, ist dabei aber selber komplett verbrannt.</German>
+		<Italian>Il nostro nave incendiaria &#232; riuscito ad affondare la nave nemica, ma &#232; rimasto completamente ustionato.</Italian>
+		<Spanish>Nuestro brulote logr&#243; hundir el barco enemigo, pero &#233;l mismo se quem&#243; por completo.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_UNIT_DESERTION_1</Tag>
 		<English>An enemy %s1 has defected to you and now fights on your side!</English>
 		<French>Une unit&#233; ennemie vaincue (%s1) s'est soumise &#224; votre autorit&#233; et combat d&#233;sormais &#224; vos c&#244;t&#233;s !</French>
@@ -8390,11 +8398,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM2</Tag>
-		<English>Sales value = base value + population + distance + wonder bonus + attitude + availability - corruption</English>
-		<French>Valeur des ventes = valeur de base + population + distance + bonus merveille + attitude + disponibilit&#233; - corruption</French>
-		<German>Verkaufspreis = Basiswert + Population + Distanz + Wunderbonus + Haltung + Verf&#252;gbarkeit - Korruption</German>
-		<Italian>Valore di vendita = valore base + popolazione + distanza + bonus di meraviglia + atteggiamento + disponibilit&#224; - corruzione</Italian>
-		<Spanish>Valor de ventas = valor base + poblaci&#243;n + distancia + bonificaci&#243;n de maravilla + actitud + disponibilidad - corrupci&#243;n</Spanish>
+		<English>Sales value = base value + population + distance + wonder bonus + attitude + availability &#8211; corruption</English>
+		<French>Valeur des ventes = valeur de base + population + distance + bonus merveille + attitude + disponibilit&#233; &#8211; corruption</French>
+		<German>Verkaufspreis = Basiswert + Population + Distanz + Wunderbonus + Haltung + Verf&#252;gbarkeit &#8211; Korruption</German>
+		<Italian>Valore di vendita = valore base + popolazione + distanza + bonus di meraviglia + atteggiamento + disponibilit&#224; &#8211; corruzione</Italian>
+		<Spanish>Valor de ventas = valor base + poblaci&#243;n + distancia + bonificaci&#243;n de maravilla + actitud + disponibilidad &#8211; corrupci&#243;n</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ADVISOR_BOTTOM3</Tag>

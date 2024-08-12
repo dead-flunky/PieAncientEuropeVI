@@ -312,6 +312,11 @@ def doCultivateBonus(pPlot, pUnit, eBonus):
 						pUnit.kill(True, -1)  # RAMK_CTD
 				else:
 						CvUtil.removeScriptData(pUnit, "b")
+						# DERTUEK
+						CvUtil.removeScriptData(pUnit, "x")
+						CvUtil.removeScriptData(pUnit, "y")
+						CvUtil.removeScriptData(pUnit, "originCiv")
+
 						if pPlayer.isHuman():
 								if pPlot.isCity():
 										pCity = pPlot.getPlotCity()
@@ -563,6 +568,11 @@ def doCultivation_AI(pUnit):
 				# if we didn't find a city which could use the loaded bonus, delete it and refund the AI
 				if eBonusOnBoard != -1:
 						CvUtil.removeScriptData(pUnit, "b")
+						# DERTUEK
+						CvUtil.removeScriptData(pUnit, "x")
+						CvUtil.removeScriptData(pUnit, "y")
+						CvUtil.removeScriptData(pUnit, "originCiv")
+
 						iPrice = PAE_Trade.getBonusValue(eBonusOnBoard)
 						pPlayer.changeGold(iPrice)
 
@@ -589,6 +599,11 @@ def doCollectBonus4Cultivation(pUnit):
 
 		# Bonusgut in den Karren laden
 		CvUtil.addScriptData(pUnit, "b", eBonus)
+		# Dertuek: Update the coordinates where the resource have been loaded
+		CvUtil.addScriptData(pUnit, "x", pPlot.getX())
+		CvUtil.addScriptData(pUnit, "y", pPlot.getY())
+		# Dertuek: Remove potential infos from the previous cargo
+		CvUtil.removeScriptData(pUnit, "originCiv")
 
 		iPrice = 0
 		# Bonusgut vom Plot entfernen, ausgenommen Handelsposten, um die Waren nicht "stehlen" zu können
@@ -723,6 +738,10 @@ def doBuyBonus4Cultivation(pUnit, eBonus):
 
 		pBuyer.changeGold(-iPrice)
 		CvUtil.addScriptData(pUnit, "b", eBonus)
+		# Dertuek: Update the coordinates where the resource have been loaded
+		CvUtil.addScriptData(pUnit, "x", pUnit.getX())
+		CvUtil.addScriptData(pUnit, "y", pUnit.getY())
+		CvUtil.addScriptData(pUnit, "originCiv", pUnit.plot().getOwner())
 
 		if pBuyer.isHuman():
 				CyInterface().addMessage(iBuyer, True, 5, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_COLLECT_GOODS", (gc.getBonusInfo(
