@@ -450,7 +450,7 @@
 		</GameSpeedInfo>
 		<GameSpeedInfo>
 			<Type>GAMESPEED_EURASIA_XL_52_CIVS</Type>
-			<Description>GAMESPEED_EURASIA_XL_52_CIVS</Description>
+			<Description>TXT_KEY_GAMESPEED_EURASIA_XL</Description>
 			<Help></Help>
 			<iGrowthPercent>160</iGrowthPercent>
 			<iTrainPercent>160</iTrainPercent>

@@ -3702,7 +3702,7 @@ class CvGameUtils:
 						# kultivieren wenn die Einheit auf dem korrekten Plot steht
 						if self.PAE_AI_ID2 == pUnit.getID():
 								if PAE_Cultivation._isBonusCultivationChance(pUnit.getOwner(), pUnit.plot(), eBonus, False, None):
-										PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, eBonus)
+										PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, eBonus, False)
 										pUnit.kill(True, -1)
 										return True
 
@@ -3743,7 +3743,7 @@ class CvGameUtils:
 														pUnit.getGroup().pushMoveToMission(pPlot.getX(), pPlot.getY())
 														#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, u"Schritt 4: moveTo" + pCity.getName() + u" " + str(pPlot.getX()) + u":" + str(pPlot.getY()), None, 2, None, ColorTypes(10), 0, 0, False, False)
 												else:
-														PAE_Cultivation.doCultivateBonus(pPlot, pUnit, eBonus)
+														PAE_Cultivation.doCultivateBonus(pPlot, pUnit, eBonus, False)
 														pUnit.kill(True, -1)
 														#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, u"Schritt 5: doCultivateBonus", None, 2, None, ColorTypes(10), 0, 0, False, False)
 												return True

@@ -935,7 +935,7 @@ class CvEventManager:
 						pPlayer = gc.getPlayer(iData4)
 						pUnit = pPlayer.getUnit(iData5)
 						if iData3 != -1:
-								PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, iData3)
+								PAE_Cultivation.doCultivateBonus(pUnit.plot(), pUnit, iData3, False)
 						"""
 						if iData3 == 1:
 								pCity.setNumRealBuilding(gc.getInfoTypeForString("BUILDING_ELEPHANT_STABLE"), 1)
@@ -1828,7 +1828,7 @@ class CvEventManager:
 						# ~ # iData4 = int von iIsCity
 						#~ PAE_Cultivation.doPopupChooseBonusForCultivation(pUnit, iData4)
 
-				# 738, iPlayer, iUnit, iIsCity
+				# 738, iPlayer, iUnit, iIsCity, iData5 (0 = new cultivation, 1 = replace)
 				# Cultivate bonus.
 				elif iData1 == 738:
 						pPlayer = gc.getPlayer(iData2)
@@ -1838,7 +1838,7 @@ class CvEventManager:
 								pPlot = pUnit.plot()
 								if pPlot.isCity():
 										pPlot = PAE_Cultivation.getCityCultivationPlot(pPlot.getPlotCity(), eBonus)
-								PAE_Cultivation.doCultivateBonus(pPlot, pUnit, eBonus)
+								PAE_Cultivation.doCultivateBonus(pPlot, pUnit, eBonus, iData5==1)
 
 				# Collect bonus from plot
 				elif iData1 == 739:

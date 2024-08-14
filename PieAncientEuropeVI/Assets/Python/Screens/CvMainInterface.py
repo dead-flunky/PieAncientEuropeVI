@@ -2483,18 +2483,21 @@ class CvMainInterface:
 																				screen.show("BottomButtonContainer")
 																				iCount += 1
 																elif bCity:
-																		iPrice = PAE_Trade.calculateBonusSellingPrice(pUnit, pPlot.getPlotCity(), 0)
-																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																				"INTERFACE_TRADE_SELL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 741, int(iPrice), False)
-																		screen.show("BottomButtonContainer")
-																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
-																		iCount += 1
+																		# DERTUEK (otherwise the sell button is displayed twice for all trade units)
+																		if iUnitType in L.LCultivationUnits:
+																				iPrice = PAE_Trade.calculateBonusSellingPrice(pUnit, pPlot.getPlotCity(), 0)
+																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
+																						"INTERFACE_TRADE_SELL").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 741, int(iPrice), False)
+																				screen.show("BottomButtonContainer")
+																				screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
+																				iCount += 1
 																# Wenn der Karren ein Bonusgut aufgeladen hat
-																# Bonus tauschen, nur auf eigenem Terrain
-																elif pPlot.getOwner() == iUnitOwner:
+																# Bonus ersetzen, nur auf eigenem Terrain (iData1: 738, iData2: 0 normal, 1 replace)
+																# Fix by Dertuek (message for INTERFACE_TRADE_COLLECT_IMPOSSIBLE only on plots with bonus resources)
+																elif ePlotBonus != -1 and pPlot.getOwner() == iUnitOwner:
 																		if ePlotBonus in L.LBonusCorn and eBonus in L.LBonusCorn or ePlotBonus in L.LBonusLivestock and eBonus in L.LBonusLivestock:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																						"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 738, False)
+																						"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 1, False)
 																				screen.show("BottomButtonContainer")
 																				iCount += 1
 																		else:
@@ -2503,10 +2506,10 @@ class CvMainInterface:
 																				screen.show("BottomButtonContainer")
 																				iCount += 1
 
-																# Cultivate bonus onto plot
+																# Cultivate bonus onto plot (iData1: 738, iData2: 0 normal, 1 replace)
 																if eBonus != -1 and PAE_Cultivation.isBonusCultivatable(pUnit):
 																		screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
-																				"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 738, bCity)
+																				"INTERFACE_TRADE_CULTIVATE").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 738, 0, bCity)
 																		screen.show("BottomButtonContainer")
 																		screen.enableMultiListPulse("BottomButtonContainer", True, 0, iCount)
 																		iCount += 1
@@ -7330,13 +7333,14 @@ class CvMainInterface:
 												CyMessageControl().sendModNetMessage(737, pPlot.getPlotCity().getID(), iOwner, -1, -1)
 
 										# Bonus cultivation (Boggy)
+										# Dertuek: iData2: 1 = replace enabled, 0 = replace disabled
 										elif iData1 == 738:
 												# Karren aufladen
 												if bOption:
 														iIsCity = 1
 												else:
 														iIsCity = 0
-												CyMessageControl().sendModNetMessage(738, iOwner, iUnitID, iIsCity, -1)
+												CyMessageControl().sendModNetMessage(738, iOwner, iUnitID, iIsCity, iData2)
 
 										# Collect bonus (iData2: 0 = remove, 1 = kaufen)
 										elif iData1 == 739:

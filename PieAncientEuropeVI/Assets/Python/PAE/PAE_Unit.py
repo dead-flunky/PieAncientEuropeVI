@@ -1748,7 +1748,9 @@ def doBuildHandelsposten(pUnit):
 		#    CyInterface().addMessage(iPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TRADE_COLLECT_NO_GOODS", ("",)), None, 2, "Art/Interface/PlotPicker/Warning.dds", ColorTypes(7), pUnit.getX(), pUnit.getY(), True, True)
 		#    return
 		pPlot = pUnit.plot()
-		pPlot.setRouteType(0)
+		# Fix by Dertuek
+		if pPlot.getRouteType() == -1:
+				pPlot.setRouteType(0)
 		pPlot.setImprovementType(gc.getInfoTypeForString("IMPROVEMENT_HANDELSPOSTEN"))
 		CvUtil.addScriptData(pPlot, "p", iPlayer)
 		pPlot.setCulture(iPlayer, 1, True)

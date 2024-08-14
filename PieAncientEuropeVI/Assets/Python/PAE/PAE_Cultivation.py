@@ -282,7 +282,8 @@ def canHaveBonus(pPlot, eBonus, bIgnoreLatitude):
 		return False
 
 
-def doCultivateBonus(pPlot, pUnit, eBonus):
+def doCultivateBonus(pPlot, pUnit, eBonus, replace=False):
+		# Dertuek: replace fix
 		"""Cultivates eBonus on current plot (80% chance). Unit does not need to stand on pPlot (cultivation from city)"""
 		if pPlot is None or pUnit is None or eBonus == -1:
 				return False
@@ -290,7 +291,7 @@ def doCultivateBonus(pPlot, pUnit, eBonus):
 		iPlayer = pUnit.getOwner()
 		pPlayer = gc.getPlayer(iPlayer)
 		bOnlyVisible = False
-		bCanCultivate = _isBonusCultivationChance(iPlayer, pPlot, eBonus, bOnlyVisible, None)
+		bCanCultivate = replace or _isBonusCultivationChance(iPlayer, pPlot, eBonus, bOnlyVisible, None)
 		if eBonus in L.LBonusLivestock:
 				iChance = 100
 		elif not pPlayer.hasBonus(eBonus):
@@ -523,7 +524,7 @@ def doCultivation_AI(pUnit):
 										if pUnit.atPlot(pLoopCity.plot()):
 												pPlot = getCityCultivationPlot(pLoopCity, eBonusOnBoard)
 												if pPlot != None:
-														doCultivateBonus(pPlot, pUnit, eBonusOnBoard)
+														doCultivateBonus(pPlot, pUnit, eBonusOnBoard, False)
 										else:
 												pUnit.getGroup().pushMoveToMission(pLoopCity.getX(), pLoopCity.getY())
 										return True
