@@ -680,10 +680,10 @@ EndPlayer
 BeginPlayer
 	Team=12
 	LeaderType=LEADER_BOIORIX
-	LeaderName=TXT_KEY_CIV_JUTES_LEADER
-	CivDesc=TXT_KEY_CITY_NAME_B68
-	CivShortDesc=TXT_KEY_CITY_NAME_B68
-	CivAdjective=TXT_KEY_CIV_JUTES_ADJECTIVE
+	LeaderName=TXT_KEY_CIV_CIMBRI_LEADER
+	CivDesc=TXT_KEY_CITY_NAME_B66
+	CivShortDesc=TXT_KEY_CITY_NAME_B66
+	CivAdjective=TXT_KEY_CIV_CIMBRI_ADJECTIVE
 	FlagDecal=Art/Interface/TeamColor/vBUpdate/FlagDECAL_Germanic_CrossedAxes.dds
 	WhiteFlag=0
 	CivType=CIVILIZATION_GERMANEN
@@ -1605,9 +1605,9 @@ BeginPlayer
 	Team=49
 	LeaderType=LEADER_LYSANDER
 	LeaderName=TXT_KEY_CIV_POLIS_BYZANTION1
-	CivDesc=TXT_KEY_CITY_NAME_BYZANZ
-	CivShortDesc=TXT_KEY_CITY_NAME_BYZANZ
-	CivAdjective=TXT_KEY_CITY_NAME_BYZANZ
+	CivDesc=TXT_KEY_CIV_BYZANTIUM_DESC
+	CivShortDesc=TXT_KEY_CIV_BYZANTIUM_SHORT_DESC
+	CivAdjective=TXT_KEY_CIV_BYZANTIUM_ADJECTIVE
 	FlagDecal=Art/Interface/TeamColor/vBUpdate/FlagDECAL_Briton_XSymbol.dds
 	WhiteFlag=0
 	CivType=CIVILIZATION_GREECE
@@ -1631,9 +1631,9 @@ BeginPlayer
 	Team=50
 	LeaderType=LEADER_MINOS
 	LeaderName=TXT_KEY_CIV_POLIS_KNOSSOS1
-	CivDesc=TXT_KEY_CITY_NAME_C34
-	CivShortDesc=TXT_KEY_CITY_NAME_C34
-	CivAdjective=TXT_KEY_CITY_NAME_C34
+	CivDesc=TXT_KEY_CIV_MINOER_DESC
+	CivShortDesc=TXT_KEY_CIV_MINOER_SHORT_DESC
+	CivAdjective=TXT_KEY_CIV_MINOER_ADJECTIVE
 	FlagDecal=Art/Interface/TeamColor/vBUpdate/FlagDECAL_Briton_XSymbol.dds
 	WhiteFlag=0
 	CivType=CIVILIZATION_GREECE
@@ -80990,7 +80990,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=50
-		CityName=Knossos
+		CityName=TXT_KEY_CITY_NAME_C34
 		CityPopulation=1
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_SIEDLUNG

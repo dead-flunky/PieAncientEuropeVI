@@ -4678,7 +4678,7 @@
 			<bNoCapture>0</bNoCapture>
 			<bQuickCombat>0</bQuickCombat>
 			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryHappiness>0</bMilitaryHappiness>
 			<bMilitarySupport>0</bMilitarySupport>
 			<bMilitaryProduction>0</bMilitaryProduction>
 			<bPillage>0</bPillage>
@@ -4867,7 +4867,7 @@
 			<bNoCapture>0</bNoCapture>
 			<bQuickCombat>0</bQuickCombat>
 			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryHappiness>0</bMilitaryHappiness>
 			<bMilitarySupport>0</bMilitarySupport>
 			<bMilitaryProduction>0</bMilitaryProduction>
 			<bPillage>0</bPillage>
@@ -5056,7 +5056,7 @@
 			<bNoCapture>0</bNoCapture>
 			<bQuickCombat>0</bQuickCombat>
 			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
+			<bMilitaryHappiness>0</bMilitaryHappiness>
 			<bMilitarySupport>0</bMilitarySupport>
 			<bMilitaryProduction>0</bMilitaryProduction>
 			<bPillage>0</bPillage>

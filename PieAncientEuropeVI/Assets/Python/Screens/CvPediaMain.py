@@ -730,20 +730,20 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 				screen.setTableColumnHeader(tableName, 1, "", self.W_ITEMS_PANE/3-40)
 				screen.setTableColumnHeader(tableName, 2, "", self.W_ITEMS_PANE/3-40)
 
+				CivList = []
+
 				iRow = 0
 				for item in list:
 						screen.appendTableRow(tableName)
 
-						# Rank
-						screen.setTableText(tableName, 0, iRow, u"<font=3>" + item[0] + u"</font>", gc.getPromotionInfo(item[1]).getButton(),
-																WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
-
+						iCiv = -1
 						bMelee = False
 						bMounted = False
 						lUnits = []
 						iTech = -1
 						if item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ROM_1"):
 								lUnits = [gc.getInfoTypeForString("UNIT_LEGION"), gc.getInfoTypeForString("UNIT_LEGION2"), gc.getInfoTypeForString("UNIT_AUXILIAR_ROME")]
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_ROME")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ROM_5"):
 								lUnits = [gc.getInfoTypeForString("UNIT_LEGION_OPTIO"), gc.getInfoTypeForString("UNIT_LEGION_OPTIO2")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ROM_8"):
@@ -764,6 +764,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 								lUnits = [gc.getInfoTypeForString("UNIT_ROME_COMITATENSES3"), gc.getInfoTypeForString("UNIT_ROME_SCHOLAE")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_1"):
 								lUnits = [gc.getInfoTypeForString("UNIT_HOPLIT")]
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_GREECE")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_5"):
 								lUnits = [gc.getInfoTypeForString("UNIT_HOPLIT_2")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_GREEK_8"):
@@ -772,6 +773,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 								lUnits = [gc.getInfoTypeForString("UNIT_GREEK_STRATEGOS")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_1"):
 								lUnits = [gc.getInfoTypeForString("UNIT_SPARTA_1")]
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_SPARTA")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_5"):
 								lUnits = [gc.getInfoTypeForString("UNIT_SPARTA_2")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SPARTA_8"):
@@ -779,6 +781,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_1"):
 								bMelee = True
 								iTech = gc.getInfoTypeForString("TECH_PHALANX2")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_MACEDONIA")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_5"):
 								lUnits = [gc.getInfoTypeForString("UNIT_PEZHETAIROI2")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_MACEDON_8"):
@@ -787,6 +790,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 								lUnits = [gc.getInfoTypeForString("UNIT_PEZHETAIROI4")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_1"):
 								lUnits = [gc.getInfoTypeForString("UNIT_HOPLIT_PERSIA"), gc.getInfoTypeForString("UNIT_SPEARMAN_PERSIA"), gc.getInfoTypeForString("UNIT_UNSTERBLICH")]
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_PERSIA")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_PERSIA_6"):
 								lUnits = [gc.getInfoTypeForString("UNIT_APFELTRAEGER")]
 								iTech = gc.getInfoTypeForString("TECH_LINOTHORAX")
@@ -804,6 +808,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_1"):
 								bMelee = True
 								iTech = gc.getInfoTypeForString("TECH_BEWAFFNUNG3")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_EGYPT")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_6"):
 								lUnits = [gc.getInfoTypeForString("UNIT_STATTHALTER_EGYPT")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_EGYPT_10"):
@@ -811,6 +816,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 								iTech = gc.getInfoTypeForString("TECH_THE_WHEEL3")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_1"):
 								lUnits = [gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT")]
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_CARTHAGE")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_CARTHAGE_3"):
 								lUnits = [gc.getInfoTypeForString("UNIT_CARTH_SACRED_BAND_HOPLIT2")]
 								iTech = gc.getInfoTypeForString("TECH_KETTENPANZER")
@@ -819,6 +825,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_1"):
 								bMelee = True
 								iTech = gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_ASSYRIA")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_4"):
 								lUnits = [gc.getInfoTypeForString("UNIT_ASSUR_RANG1")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_ASSUR_7"):
@@ -829,6 +836,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SUMER_1"):
 								bMelee = True
 								iTech = gc.getInfoTypeForString("TECH_BUERGERSOLDATEN")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_SUMERIA")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SUMER_5"):
 								lUnits = [gc.getInfoTypeForString("UNIT_SUMER_RANG1")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_SUMER_10"):
@@ -837,11 +845,26 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_GER_1"):
 								bMelee = True
 								iTech = gc.getInfoTypeForString("TECH_KRIEGERETHOS")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_GERMANEN")
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_GER_3"):
 								lUnits = [gc.getInfoTypeForString("UNIT_STAMMESFUERST")]
 						elif item[1] == gc.getInfoTypeForString("PROMOTION_RANG_HUN"):
 								bMounted = True
 								iTech = gc.getInfoTypeForString("TECH_KRIEGERETHOS")
+								iCiv = gc.getInfoTypeForString("CIVILIZATION_HUNNEN")
+
+						# CIV
+						if iCiv != -1:
+								CivList.append(iCiv)
+								screen.appendTableRow(tableName)
+								screen.setTableText(tableName, 1, iRow+1, u"<font=4>%s</font>" % gc.getCivilizationInfo(iCiv).getDescription().upper(), "", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+								screen.appendTableRow(tableName)
+								screen.appendTableRow(tableName)
+								iRow += 3
+
+						# Rank
+						screen.setTableText(tableName, 0, iRow, u"<font=3>" + item[0] + u"</font>", gc.getPromotionInfo(item[1]).getButton(),
+																WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, item[1], 1, CvUtil.FONT_LEFT_JUSTIFY)
 
 						# Tech
 						if iTech != -1:
