@@ -734,6 +734,7 @@ def doUpgradeVeteran(pUnit, iNewUnit, bChangeCombatPromo):
 				CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",
 								("Upgrade Veteran: Invalid New Unit Type", iNewUnit)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 				return
+
 		if pUnit is not None and not pUnit.isNone():
 				pUnitOwner = gc.getPlayer(pUnit.getOwner())
 				if pUnitOwner is not None and not pUnitOwner.isNone():
@@ -3380,7 +3381,8 @@ def unsettledSlaves(iPlayer):
 # Next Unit after NetMessage
 def doGoToNextUnit(pUnit):
 		# go to and select next Unit
-		pUnit.getGroup().pushMission(MissionTypes.MISSION_SKIP, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
+		if gc.getPlayer(pUnit.getOwner()).isHuman():
+				pUnit.getGroup().pushMission(MissionTypes.MISSION_SKIP, 0, 0, 0, False, False, MissionAITypes.NO_MISSIONAI, pUnit.plot(), pUnit)
 
 
 def copyName(NewUnit, iUnitType, sUnitName):

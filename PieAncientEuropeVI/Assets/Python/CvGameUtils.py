@@ -1955,6 +1955,7 @@ class CvGameUtils:
 																				pOwner.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_LEGION_OPTIO2")) ):
 																				iNewUnit = gc.getInfoTypeForString("UNIT_PRAETORIAN")
 																				PAE_Unit.doUpgradeVeteran(pUnit, iNewUnit, True)
+																				return True
 						# KI: immer und kostenlos
 						iNewUnit = PAE_Unit.canUpgradeUnit(pUnit)
 						if iNewUnit != -1: # and CvUtil.getScriptData(pUnit, ["P", "t"]) == "RangPromoUp":
@@ -1964,12 +1965,19 @@ class CvGameUtils:
 						# Legion Kastell
 						# KI: immer, aber mit Kosten
 						# nie hoeher als Tribun/General
-						if pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_1")) and not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_15")) or \
-										pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_1")) and not pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_10")):
+						# Romans/Etruscans only
+						if iCivType == gc.getInfoTypeForString("CIVILIZATION_ROME") or iCivType == gc.getInfoTypeForString("CIVILIZATION_ETRUSCANS"):
+								if (pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_1")) and not
+										pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_15"))
+										or
+										pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_1")) and not
+										pUnit.isHasPromotion(gc.getInfoTypeForString("PROMOTION_RANG_ROM_LATE_10"))
+										):
 
-								# Kostet 25, aber wegen Reserve
-								if pOwner.getGold() > 50:
-										PAE_Unit.doKastell(iOwner, pUnit.getID())
+										# Kostet 25, aber wegen Reserve
+										if pOwner.getGold() > 50:
+												PAE_Unit.doKastell(iOwner, pUnit.getID())
+												return True
 
 						# Terrain Promos - Ausbildner / Trainer (in City)
 						lTrainerPromotions = [
