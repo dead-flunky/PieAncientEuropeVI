@@ -100,7 +100,7 @@ import EurasiaXXXLCivs
 # Diverse Einstellungen
 # +++++++++++++++++++++
 
-PAEMod = "PiesAncientEurope"
+PAEMod = "Pie'sAncientEurope"
 
 # Modernisierungen sollen mit automatischen Pfaden erstellt werden
 # wenn deaktivert, sollte im XML BUILD_PATH bei UNIT_WORKER eingebaut werden

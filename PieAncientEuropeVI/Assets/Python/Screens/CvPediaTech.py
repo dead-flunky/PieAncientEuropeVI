@@ -17,7 +17,7 @@ import CvScreenEnums
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
-PAEMod = "PieAncientEuropeVII"
+PAEMod = "Pie'sAncientEurope"
 
 class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		"Civilopedia Screen for Techs"

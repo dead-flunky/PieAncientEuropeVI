@@ -19,7 +19,7 @@ import PAE_Lists as L
 
 # Defines
 gc = CyGlobalContext()
-PAEMod = "PiesAncientEurope"
+PAEMod = "Pie'sAncientEurope"
 
 # PAE Stadtstatus
 iPopDorf = 3
