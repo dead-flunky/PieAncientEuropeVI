@@ -12,6 +12,7 @@
 			<Description>TXT_KEY_PROJECT_SILKROAD</Description>
 			<Civilopedia>TXT_KEY_PROJECT_SILKROAD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_SILKROAD_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_SILKROAD_HELP</Help>
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<TechPrereq>TECH_WARENHANDEL</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
@@ -71,6 +72,7 @@
 			<Description>TXT_KEY_BUILDING_OLYMPIC_GAMES</Description>
 			<Civilopedia>TXT_KEY_BUILDING_OLYMPIC_GAMES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CONCEPT_OLYMPIC_GAMES_PEDIA</Strategy>
+			<Help>TXT_KEY_PROJECT_OLYMPIC_GAMES_HELP</Help>
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<TechPrereq>TECH_GLADIATOR</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
@@ -125,6 +127,7 @@
 			<Description>TXT_KEY_PROJECT_PANHELLENISM</Description>
 			<Civilopedia>TXT_KEY_TECH_HELLENISMUS2_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_PANHELLENISM_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROJECT_PANHELLENISM_HELP</Help>
 			<VictoryPrereq>NONE</VictoryPrereq>
 			<TechPrereq>TECH_HELLENISMUS2</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>

@@ -5289,7 +5289,7 @@
 			<Strategy>TXT_KEY_BUILDING_BYZANTINE_HIPPODROME_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HIPPODROME</ArtDefineTag>
-			<MovieDefineTag>NONE</MovieDefineTag>
+			<MovieDefineTag/>
 			<HolyCity>NONE</HolyCity>
 			<ReligionType>NONE</ReligionType>
 			<StateReligion>NONE</StateReligion>
@@ -33326,7 +33326,7 @@
 			<Strategy/>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPEL_ENLIL</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPEL_ENLIL</MovieDefineTag>
+			<MovieDefineTag>ART_DEF_MOVIE_TEMPEL_ENLIL2</MovieDefineTag>
 			<HolyCity>RELIGION_SUMER</HolyCity>
 			<ReligionType>RELIGION_SUMER</ReligionType>
 			<StateReligion/>
@@ -35665,7 +35665,7 @@
 			<Strategy>TXT_KEY_BUILDING_ISLAMIC_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ISLAMIC_TEMPLE</ArtDefineTag>
-			<MovieDefineTag>NONE</MovieDefineTag>
+			<MovieDefineTag/>
 			<HolyCity>NONE</HolyCity>
 			<ReligionType>RELIGION_ISLAM</ReligionType>
 			<StateReligion>NONE</StateReligion>
@@ -38974,7 +38974,7 @@
 			<Strategy/>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA2</ArtDefineTag>
-			<MovieDefineTag/>
+			<MovieDefineTag>ART_DEF_MOVIE_LUDUS_MAGNUS</MovieDefineTag>
 			<HolyCity/>
 			<ReligionType/>
 			<StateReligion/>
@@ -42408,7 +42408,7 @@
 			<Strategy>TXT_KEY_BUILDING_HEROIC_EPIC_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HEROIC_EPIC</ArtDefineTag>
-			<MovieDefineTag/>
+			<MovieDefineTag>ART_DEF_MOVIE_HEROIC_EPIC_INDIA</MovieDefineTag>
 			<HolyCity/>
 			<ReligionType/>
 			<StateReligion/>
@@ -48508,7 +48508,7 @@
 			<Strategy/>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GONDESHAPUR</ArtDefineTag>
-			<MovieDefineTag/>
+			<MovieDefineTag>ART_DEF_MOVIE_GONDESHAPUR</MovieDefineTag>
 			<HolyCity/>
 			<ReligionType/>
 			<StateReligion/>

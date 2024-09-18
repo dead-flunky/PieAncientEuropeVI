@@ -171,18 +171,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COTTAGE_HELP</Tag>
 		<English>[ICON_BULLET] Slaves and Emigrants can accelerate growth[NEWLINE][ICON_BULLET] Towns (possible from the technology General Therapeutics through emigrants and settlers) connect resources to the trade network and act as ship canals next to coasts (maximum 2 plots upcountry)</English>
-		<French>[ICON_BULLET] Les esclaves et les emigrants peuvent acc&#233;l&#233;rer la croissance[NEWLINE][ICON_BULLET] Les villes (possible &#224; partir de la technologie M&#233;decine en passant par les &#233;migr&#233;s et les colons) connectent des ressources au r&#233;seau commercial et jouent le r&#244;le de canaux de navigation le long des c&#244;tes (maximum de 2 cases vers l'int&#233;rieur des terres)</French>
+		<French>[ICON_BULLET] Les esclaves et les &#233;migrants peuvent acc&#233;l&#233;rer la croissance[NEWLINE][ICON_BULLET] Les villes (possible &#224; partir de la technologie M&#233;decine gr&#226;ce aux &#233;migrants et aux colons) connectent les ressources au r&#233;seau commercial et jouent le r&#244;le de canaux de navigation le long des c&#244;tes (maximum de 2 cases vers l'int&#233;rieur des terres)</French>
 		<German>[ICON_BULLET] Sklaven und Auswanderer k&#246;nnen den Wachstum beschleunigen[NEWLINE][ICON_BULLET] Gemeinden (ab der Technologie Allgemeine Heilkunde durch Auswanderer und Siedler m&#246;glich) verbinden Ressourcen ans Handelsnetz und wirken an K&#252;sten als Kanal f&#252;r Schiffe (max. 2 Felder landeinw&#228;rts)</German>
 		<Italian>[ICON_BULLET] Gli schiavi e emigranti possono accelerare la crescita[NEWLINE][ICON_BULLET] Le paesi (possibile dalla tecnologia Medicina attraverso emigranti e coloni) collegano le risorse alla rete commerciale e fungono da canali di navigazione lungo le coste (massimo 2 lotti verso l'alto)</Italian>
 		<Spanish>[ICON_BULLET] Los esclavos y emigrantes pueden acelerar el crecimiento[NEWLINE][ICON_BULLET] Los pueblos (posible desde la tecnolog&#237;a Terap&#233;utica General a trav&#233;s de emigrantes y colonos) conectan los recursos a la red comercial y act&#250;an como canales de barco junto a las costas (m&#225;ximo 2 parcelas en el interior del pa&#237;s)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_FORT_HELP</Tag>
-		<English>[ICON_BULLET] Connects resources to trade network and acts as ship canal on coasts (max 2 plots upcountry)</English>
-		<French>[ICON_BULLET] Connecte les ressources au r&#233;seau commercial et joue le r&#244;le de canal de navigation sur les c&#244;tes (max. 2 parcelles dans le pays)</French>
-		<German>[ICON_BULLET] Verbindet Ressourcen ans Handelsnetz und wirkt an K&#252;sten als Kanal f&#252;r Schiffe (max. 2 Felder landeinw&#228;rts)</German>
-		<Italian>[ICON_BULLET] Connette le risorse alla rete commerciale e funge da canale marittimo sulle coste (massimo 2 lotti fuori regione)</Italian>
-		<Spanish>[ICON_BULLET] Conecta los recursos a la red comercial y act&#250;a como canal de barco en las costas (m&#225;x. 2 parcelas en el pa&#237;s)</Spanish>
+		<English>[ICON_BULLET]Connects resources to trade network and acts as ship canal on coasts (max 2 plots upcountry)</English>
+		<French>[ICON_BULLET]Connecte les ressources au r&#233;seau commercial et joue le r&#244;le de canal de navigation sur les c&#244;tes (2 cases max &#224; l'int&#233;rieur des terres)</French>
+		<German>[ICON_BULLET]Verbindet Ressourcen ans Handelsnetz und wirkt an K&#252;sten als Kanal f&#252;r Schiffe (max. 2 Felder landeinw&#228;rts)</German>
+		<Italian>[ICON_BULLET]Connette le risorse alla rete commerciale e funge da canale marittimo sulle coste (massimo 2 lotti fuori regione)</Italian>
+		<Spanish>[ICON_BULLET]Conecta los recursos a la red comercial y act&#250;a como canal de barco en las costas (m&#225;x. 2 parcelas en el pa&#237;s)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HANDELSPOSTEN</Tag>
@@ -199,6 +199,22 @@
 		<German>[LINK=CONCEPT_MOVEMENT]Befestigte Stra&#223;e[\LINK] bauen</German>
 		<Italian>Costruire una [LINK=CONCEPT_MOVEMENT]Strada di pietra[\LINK]</Italian>
 		<Spanish>Construir una [LINK=CONCEPT_MOVEMENT]V&#237;a pavimentado[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_TURM</Tag>
+		<English>Build a [LINK=IMPROVEMENT_TURM]Look-out[\LINK]</English>
+		<French>Construire un [LINK=IMPROVEMENT_TURM]poste d'observation[\LINK]</French>
+		<German>[LINK=IMPROVEMENT_TURM]Sp&#228;hturm[\LINK] bauen</German>
+		<Italian>Costruisci un [LINK=IMPROVEMENT_TURM]posto d'osservazione[\LINK]</Italian>
+		<Spanish>Construir un [LINK=IMPROVEMENT_TURM]vig&#237;a[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_TURM_HELP</Tag>
+		<English>[ICON_BULLET]+10% tile defense[NEWLINE]Cost: 4 [ICON_GOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turn</English>
+		<French>[ICON_BULLET]D&#233;fense de la case +10%[NEWLINE]Co&#251;t : 4 [ICON_GOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] tour</French>
+		<German>[ICON_BULLET]+10% Gel&#228;ndefeld-Verteidigung[NEWLINE]Kosten: 4 [ICON_GOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] Runde</German>
+		<Italian>[ICON_BULLET]+10% difensiva della casella[NEWLINE]Costo: 4 [ICON_GOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Italian>
+		<Spanish>[ICON_BULLET]+10% a la defensa de la casilla[NEWLINE]Coste: 4 [ICON_GOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_BLESS_UNITS</Tag>
@@ -266,19 +282,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_DISBAND_CITY</Tag>
-		<English>Disband this city.[NEWLINE][ICON_BULLET]City gets disbanded, units stay alive</English>
-		<French>D&#233;truire la ville[NEWLINE][ICON_BULLET]La ville sera supprim&#233;e mais pas les unit&#233;s qu'elle abrite</French>
-		<German>Diese Stadt aufl&#246;sen.[NEWLINE][ICON_BULLET]Stadt wird vernichtet, Einheiten bleiben erhalten</German>
-		<Italian>Sciogli questa citt&#224;.[NEWLINE][ICON_BULLET]La citt&#224; viene sciolta, le unit&#224; rimangono in vita</Italian>
-		<Spanish>Disolver esta ciudad.[NEWLINE][ICON_BULLET]La ciudad se disuelve, las unidades se mantienen vivas</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Disband this city[COLOR_REVERT][NEWLINE]City gets disbanded, units stay alive</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]D&#233;manteler la ville[COLOR_REVERT][NEWLINE]La ville sera supprim&#233;e mais pas les unit&#233;s qu'elle abrite</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Diese Stadt aufl&#246;sen[COLOR_REVERT][NEWLINE]Stadt wird vernichtet, Einheiten bleiben erhalten</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Sciogli questa citt&#224;[COLOR_REVERT][NEWLINE]La citt&#224; viene sciolta, le unit&#224; rimangono in vita</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Disolver esta ciudad[COLOR_REVERT][NEWLINE]La ciudad se disuelve, las unidades se mantienen vivas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_EMIGRANT</Tag>
-		<English>Take up residence in this city.[NEWLINE][ICON_BULLET]+1 Population</English>
-		<French>S'&#233;tablir dans cette ville.[NEWLINE][ICON_BULLET]+1 &#224; la population</French>
-		<German>In dieser Stadt niederlassen.[NEWLINE][ICON_BULLET]+1 Stadtbev&#246;lkerung</German>
-		<Italian>Risiedi in questa citt&#224;.[NEWLINE][ICON_BULLET]+1 abitanti della citt&#224;</Italian>
-		<Spanish>Establecer residencia en esta ciudad.[NEWLINE][ICON_BULLET]+1 Poblaci&#243;n</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Take up residence in this city[COLOR_REVERT][NEWLINE]+1 Population</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]S'&#233;tablir dans cette ville[COLOR_REVERT][NEWLINE]+1 &#224; la population de la ville</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]In dieser Stadt niederlassen[COLOR_REVERT][NEWLINE]+1 Stadtbev&#246;lkerung</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Risiedi in questa citt&#224;[COLOR_REVERT][NEWLINE]+1 abitanti della citt&#224;</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Establecer residencia en esta ciudad[COLOR_REVERT][NEWLINE]+1 Poblaci&#243;n</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_GLADIATOR</Tag>
@@ -459,7 +475,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SLAVE2VILLAGE</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Join the community[COLOR_REVERT][NEWLINE]Reduces time to next level (until village).</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Rejoindre la communaut&#233;[COLOR_REVERT][NEWLINE]R&#233;duit le nombre de tours jusqu'au prochain niveau (au village).</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Rejoindre la communaut&#233;[COLOR_REVERT][NEWLINE]R&#233;duit le nombre de tours pour atteindre le prochain niveau (niveau village max).</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Der Gemeinschaft anschlie&#223;en[COLOR_REVERT][NEWLINE]Reduziert die Zeit bis zur n&#228;chsten Stufe (bis Dorf).</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Unisciti alla comunit&#224;[COLOR_REVERT][NEWLINE]Riduce il tempo del passaggio successivo (al villaggio).</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]&#218;nete a la communidad[COLOR_REVERT][NEWLINE]Reduce el tiempo para el siguiente nivel (al pueblo).</Spanish>
@@ -514,11 +530,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_TROJAN_HORSE</Tag>
-		<English>[ICON_BULLET]Set the city defense to 0!</English>
-		<French>[ICON_BULLET]R&#233;duire les d&#233;fenses de la ville &#224; 0 !</French>
-		<German>[ICON_BULLET]Die Stadtverteidigung auf 0 setzen!</German>
-		<Italian>[ICON_BULLET]Impostare la difesa della citt&#224; a 0!</Italian>
-		<Spanish>[ICON_BULLET]&#161;Establecida la defensa de la ciudad a 0!</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Set the city defense to 0![COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]R&#233;duire les d&#233;fenses de la ville &#224; 0 ![COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Die Stadtverteidigung auf 0 setzen![COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Impostare la difesa della citt&#224; a 0![COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]&#161;Establecida la defensa de la ciudad a 0![COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_VILLAGE2TOWN</Tag>
@@ -667,45 +683,45 @@
 6) It is recommended to read the concept text [LINK=CONCEPT_IMPORTANT_FACTS]Important Facts[\LINK] before playing.
 [H2]All features can be found in the civilopedia under PAE concepts.[\H2]</English>
 		<French>
-			Le soleil se l&#232;ve sur l'an %s1_year. %s3_leader, votre peuple vous a confi&#233; le pouvoir absolu et s'en remet &#224; vous pour b&#226;tir une civilisation qui r&#233;sistera &#224; l'&#233;preuve du temps !
-			1) Au cours du jeu, essayez de fonder une religion (en utilisant certaines technologies) ou de l'obtenir aupr&#232;s de voisins.
-			2) Construisez un palais d&#232;s que possible pour r&#233;duire les co&#251;ts d'entretien des autres villes (Tech. : 	
-			Principe d'autorit&#233;)
-			3) Vous ne pouvez cr&#233;er que des colons, qui peuvent fonder des villes suppl&#233;mentaires, avec une colonisation interne (technologie).
-			4) Produisez de la culture pour &#233;tendre votre zone d'influence (Religion, Palais, Cultes, Monument, etc.)
-			5) Les am&#233;nagements co&#251;tent de l'or !
-			6) Il est conseill&#233; de lire le concept [LINK=CONCEPT_IMPORTANT_FACTS]A lire ![\LINK] avant de jouer
-			[H2]Toutes les sp&#233;cificit&#233;s de ce MOD sont d&#233;crites dans la Civilop&#233;dia (Concepts du Pie's Mod)[\H2]
+Le soleil se l&#232;ve sur l'an %s1_year. %s3_leader, votre peuple vous a confi&#233; le pouvoir absolu et s'en remet &#224; vous pour b&#226;tir une civilisation qui r&#233;sistera &#224; l'&#233;preuve du temps !
+1) Au cours du jeu, essayez de fonder une religion (en utilisant certaines technologies) ou de l'obtenir aupr&#232;s de voisins.
+2) Construisez un palais d&#232;s que possible pour r&#233;duire les co&#251;ts d'entretien des autres villes (Tech. : 	
+Principe d'autorit&#233;)
+3) Vous ne pouvez cr&#233;er que des colons, qui peuvent fonder des villes suppl&#233;mentaires, avec une colonisation interne (technologie).
+4) Produisez de la culture pour &#233;tendre votre zone d'influence (Religion, Palais, Cultes, Monument, etc.)
+5) Les am&#233;nagements co&#251;tent de l'or !
+6) Il est conseill&#233; de lire le concept [LINK=CONCEPT_IMPORTANT_FACTS]A lire ![\LINK] avant de jouer
+[H2]Toutes les sp&#233;cificit&#233;s de ce MOD sont d&#233;crites dans la Civilop&#233;dia (Concepts du Pie's Mod)[\H2]
 		</French>
 		<German>
-			Die Sonne erhellt das Jahr %s1_year. %s3_leader, Euer Volk hat Euch absolute Macht verliehen und hofft, dass Euch die G&#246;tter wohlgesonnen bleiben! Versuche eine Zivilisation zu errichten, welche die Zeit &#252;berdauern wird!
-			1) Versuche im Laufe des Spiels eine Religion zu gr&#252;nden (mittels bestimmter Technologien) oder von Nachbarn zu erhalten.
-			2) Baue so bald wie m&#246;glich einen Palast (Tech: F&#252;hrerschaft). Danach kann man sich auch den Unterhalt weiterer St&#228;dte leisten.
-			3) Siedler, die weitere St&#228;dte gr&#252;nden k&#246;nnen, kannst du erst mit Binnenkolonisierung (Technologie) erstellen.
-			4) Erzeuge Kultur, um deinen Machtbereich auszudehnen (Religion, Palast, Kulte, etc.)
-			5) Modernisierungen kosten Geld!
-			6) Es wird empfohlen, vor dem Spielen [LINK=CONCEPT_IMPORTANT_FACTS]Wichtige Fakten[\LINK] in den PAE Spielkonzepten zu lesen.
-			[H2]Alle Features werden in der Zivilop&#228;die unter PAE Konzepte erkl&#228;rt.[\H2]
+Die Sonne erhellt das Jahr %s1_year. %s3_leader, Euer Volk hat Euch absolute Macht verliehen und hofft, dass Euch die G&#246;tter wohlgesonnen bleiben! Versuche eine Zivilisation zu errichten, welche die Zeit &#252;berdauern wird!
+1) Versuche im Laufe des Spiels eine Religion zu gr&#252;nden (mittels bestimmter Technologien) oder von Nachbarn zu erhalten.
+2) Baue so bald wie m&#246;glich einen Palast (Tech: F&#252;hrerschaft). Danach kann man sich auch den Unterhalt weiterer St&#228;dte leisten.
+3) Siedler, die weitere St&#228;dte gr&#252;nden k&#246;nnen, kannst du erst mit Binnenkolonisierung (Technologie) erstellen.
+4) Erzeuge Kultur, um deinen Machtbereich auszudehnen (Religion, Palast, Kulte, etc.)
+5) Modernisierungen kosten Geld!
+6) Es wird empfohlen, vor dem Spielen [LINK=CONCEPT_IMPORTANT_FACTS]Wichtige Fakten[\LINK] in den PAE Spielkonzepten zu lesen.
+[H2]Alle Features werden in der Zivilop&#228;die unter PAE Konzepte erkl&#228;rt.[\H2]
 		</German>
 		<Italian>
-			Il sole sorge sull'anno %s1_year. %s3_leader, il tuo popolo ha acquisito potere assoluto in te, sperando che la gentile grazia degli dei non ti lascer&#224; mai! Prova a costruire una civilt&#224; per resistere alla prova del tempo!
-			1) Nel corso del gioco, cerca di fondare una religione (usando determinate tecnologie) o di ottenerla dai vicini.
-			2) Costruisci un palazzo appena puoi (Tech: Comando). Successivamente, puoi permetterti i costi di manutenzione di altre citt&#224;.
-			3) Puoi solo creare coloni, che possono fondare citt&#224; aggiuntive, con colonizzazione interna (tecnologia).
-			4) Produci cultura per espandere la tua influenza (Religione, Palazzo, Culto, ecc.)
-			5) I miglioramenti costano denaro!
-			6) Si consiglia di leggere il testo del concetto [LINK=CONCEPT_IMPORTANT_FACTS] Fatti importanti [\LINK] prima di giocare.
-			[H2]Tutte le funzionalit&#224; possono essere trovate nella civilopedia sotto concetti PAE.[\H2]
+Il sole sorge sull'anno %s1_year. %s3_leader, il tuo popolo ha acquisito potere assoluto in te, sperando che la gentile grazia degli dei non ti lascer&#224; mai! Prova a costruire una civilt&#224; per resistere alla prova del tempo!
+1) Nel corso del gioco, cerca di fondare una religione (usando determinate tecnologie) o di ottenerla dai vicini.
+2) Costruisci un palazzo appena puoi (Tech: Comando). Successivamente, puoi permetterti i costi di manutenzione di altre citt&#224;.
+3) Puoi solo creare coloni, che possono fondare citt&#224; aggiuntive, con colonizzazione interna (tecnologia).
+4) Produci cultura per espandere la tua influenza (Religione, Palazzo, Culto, ecc.)
+5) I miglioramenti costano denaro!
+6) Si consiglia di leggere il testo del concetto [LINK=CONCEPT_IMPORTANT_FACTS] Fatti importanti [\LINK] prima di giocare.
+[H2]Tutte le funzionalit&#224; possono essere trovate nella civilopedia sotto concetti PAE.[\H2]
 		</Italian>
 		<Spanish>
-			El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferido poder absoluto, &#161;esperando en que la noble gracia de los dioses nunca te abandone!
-			1) En el transcurso del juego, trata de fundar una religi&#243;n (usando ciertas tecnolog&#237;as) o cons&#237;guela de los vecinos.
-			2) Construye un palacio tan pronto como puedas (Tec: Liderazgo). Despu&#233;s de eso, ser&#225;s capaz de afrontar los costes de mantenimiento de otras ciudades.
-			3) Solo puedes crear colonos, que pueden fundar ciudades adicionales, con colonizaci&#243;n interna (tecnolog&#237;a).
-			4) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)
-			5) &#161;Las mejoras cuestan dinero!
-			6) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.
-			[H2]Todas las caracter&#237;sticas pueden ser encontradas en la civilopedia sobre los conceptos del PAE.[\H2]
+El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferido poder absoluto, &#161;esperando en que la noble gracia de los dioses nunca te abandone!
+1) En el transcurso del juego, trata de fundar una religi&#243;n (usando ciertas tecnolog&#237;as) o cons&#237;guela de los vecinos.
+2) Construye un palacio tan pronto como puedas (Tec: Liderazgo). Despu&#233;s de eso, ser&#225;s capaz de afrontar los costes de mantenimiento de otras ciudades.
+3) Solo puedes crear colonos, que pueden fundar ciudades adicionales, con colonizaci&#243;n interna (tecnolog&#237;a).
+4) Produce cultura para expandir tu influencia (Religi&#243;n, Palacio, Culto, etc.)
+5) &#161;Las mejoras cuestan dinero!
+6) Es recomendado leer texto del concepto [LINK=CONCEPT_IMPORTANT_FACTS]Datos importantes[\LINK] antes de jugar.
+[H2]Todas las caracter&#237;sticas pueden ser encontradas en la civilopedia sobre los conceptos del PAE.[\H2]
 		</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1207,23 +1223,23 @@
 	<TEXT>
 		<Tag>TXT_KEY_HELP_GETREIDE_AUFNEHMEN</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Take stock[COLOR_REVERT][NEWLINE]Pick up stored foods and remove from the current city supply.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Faire le point[COLOR_REVERT][NEWLINE]Ramassez les aliments stock&#233;s et retirez-les du stock de ville actuel.</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Ravitailler[COLOR_REVERT][NEWLINE]Restaurer le ravitaillement de l'unit&#233; en puisant directement dans les r&#233;serves de la ville.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Vorrat aufnehmen[COLOR_REVERT][NEWLINE]Gelagerte Nahrungsmittel aufnehmen und vom aktuellen Stadtvorrat abziehen.</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Fare il punto[COLOR_REVERT][NEWLINE]Raccogli gli alimenti immagazzinati e rimuovi dall'attuale rifornimento di citt&#224;.</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Hacer un balance[COLOR_REVERT][NEWLINE]Recoger los alimentos almacenados y retirar de la oferta actual de la ciudad.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_LEGEND_HERO_TO_GENERAL</Tag>
-		<English>Create a Great General out of your legendary unit</English>
-		<French>Promouvoir un Grand G&#233;n&#233;ral illustre parmi votre unit&#233; l&#233;gendaire</French>
-		<German>Einen Gro&#223;en General aus Eurer legend&#228;ren Einheit erschaffen</German>
-		<Italian>Crea un grande generale dalla tua unit&#224; leggendaria</Italian>
-		<Spanish>Crear un gran general a partir de tu unidad legendaria</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Create a Great General out of your legendary unit[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Promouvoir un Grand G&#233;n&#233;ral illustre parmi votre unit&#233; l&#233;gendaire[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Einen Gro&#223;en General aus Eurer legend&#228;ren Einheit erschaffen[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Crea un grande generale dalla tua unit&#224; leggendaria[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Crear un gran general a partir de tu unidad legendaria[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_MERCENARIES_CITYBUTTON</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Hire or Commission Mercenaries[COLOR_REVERT]</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Engager or Missionner des mercenaires[COLOR_REVERT]</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Engager ou missionner des mercenaires[COLOR_REVERT]</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]S&#246;ldner anheuern oder beauftragen[COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Assumi o Commissioni mercenari[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Contratar o Encomendar mercenarios[COLOR_REVERT]</Spanish>
@@ -1246,11 +1262,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_UNIT_ESCORTE</Tag>
-		<English>Buy mercenaries as escorts for %d1 [ICON_GOLD]</English>
-		<French>Acheter une escorte de mercenaires pour %d1 [ICON_GOLD]</French>
-		<German>S&#246;ldner als Begleitschutz f&#252;r %d1 [ICON_GOLD] kaufen</German>
-		<Italian>Acquista mercenari come scorta per %d1 [ICON_GOLD]</Italian>
-		<Spanish>Compre mercenarios como escorts por %d1 [ICON_GOLD]</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Buy mercenaries as escorts[COLOR_REVERT][NEWLINE]Cost: %d1 [ICON_GOLD]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Engager une escorte de mercenaires[COLOR_REVERT][NEWLINE]Co&#251;t : %d1 [ICON_GOLD]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]S&#246;ldner als Begleitschutz[COLOR_REVERT][NEWLINE]Kosten: %d1 [ICON_GOLD] kaufen</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Acquista mercenari come scorta[COLOR_REVERT][NEWLINE]Costo: %d1 [ICON_GOLD]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Compre mercenarios como escorts[COLOR_REVERT][NEWLINE]Coste: %d1 [ICON_GOLD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HISTORY</Tag>
@@ -2663,7 +2679,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CIVIL_WAR_5</Tag>
 		<English>[ICON_STRENGTH] A civil war has broken out in %s1_city! The civil war ends when you have at least as many units as there are citizens (pop) in the city.</English>
-		<French>[ICON_STRENGTH] Une guerre civile a &#233;clat&#233; dans %s1_city ! La guerre civile se termine lorsque vous avez au moins autant d'unit&#233;s qu'il y a de citoyens (pop) dans la ville.</French>
+		<French>[ICON_STRENGTH] Une guerre civile a &#233;clat&#233; dans %s1_city ! Elle se terminera lorsque vous aurez au moins autant d'unit&#233;s qu'il y a de population dans la ville.</French>
 		<German>[ICON_STRENGTH] Ein B&#252;rgerkrieg ist in %s1_city ausgebrochen! Der B&#252;rgerkrieg wird beendet, wenn du mindestens genauso viele Einheiten wie B&#252;rger (Pop) in der Stadt stehen hast.</German>
 		<Italian>[ICON_STRENGTH] Una guerra civile &#232; scoppiata in %s1_city! La guerra civile finisce quando hai almeno tante unit&#224; quanti sono i cittadini (pop) in citt&#224;.</Italian>
 		<Spanish>[ICON_STRENGTH] &#161;Ha estallado una guerra civil en %s1_city! La guerra civil termina cuando tienes al menos tantas unidades como ciudadanos (pop) en la ciudad.</Spanish>
@@ -2671,7 +2687,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INFO_CIVIL_WAR_6</Tag>
 		<English>[ICON_STRENGTH] A civil war is still raging in %s1! %d2 [NUM2:unit defends itself:units defend themselves] against %d3 dozen citizens!</English>
-		<French>[ICON_STRENGTH] La guerre civile fait toujours rage dans %s1_city ! %d2 [NUM2:unit&#233; se d&#233;fend:unit&#233;s se d&#233;fendent] contre %d3 douzaines de citoyens !</French>
+		<French>[ICON_STRENGTH] La guerre civile fait toujours rage dans %s1_city ! %d2 [NUM2:unit&#233; se d&#233;fend:unit&#233;s se d&#233;fendent] contre %d3 dizaines de citoyens !</French>
 		<German>[ICON_STRENGTH] In %s1 tobt immer noch ein B&#252;rgerkrieg! Es [NUM2:wehrt:wehren] sich %d2 [NUM2:Einheit:Einheiten] gegen %d3 Dutzend B&#252;rger!</German>
 		<Italian>[ICON_STRENGTH] Una guerra civile &#232; ancora in corso in %s1! %d2 unit&#224; si [NUM2:difende:difendono] da %d3 dozzine di cittadini!</Italian>
 		<Spanish>[ICON_STRENGTH] &#161;Todav&#237;a hay una guerra civil en %s1! &#161;%d2 [NUM2:unidad se defiende:unidades se defienden] contra %d3 docenas de ciudadanos!</Spanish>
@@ -2823,7 +2839,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_RANGE_ATTACK_HELP</Tag>
 		<English>Order the unit to remotely attack the selected tile[ICON_BULLET]Causes costs (supplies)</English>
-		<French>Ordonner &#224; l'unit&#233; d'attaquer &#224; distance la case s&#233;lectionn&#233;e[ICON_BULLET]A un co&#251;t en or (r&#233;approvisionnement)</French>
+		<French>Ordonner &#224; l'unit&#233; d'attaquer &#224; distance la case s&#233;lectionn&#233;e[ICON_BULLET]Co&#251;te de l'or (munitions)</French>
 		<German>Die Einheit greift das ausgew&#228;hlte Gel&#228;ndefeld im Fernkampf an[ICON_BULLET]Verursacht Kosten (Nachschub)</German>
 		<Italian>Questo ordine fa in modo che l'unit&#224; attacchi da lontano la casella selezionata[ICON_BULLET]Provoca costi (riapprovvigionamento)</Italian>
 		<Spanish>Ordenar a la unidad que ataque desde lejos la casilla seleccionada.[ICON_BULLET]Causa un coste (aprovisionamiento)</Spanish>
@@ -3479,7 +3495,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_1</Tag>
 		<English>In %s1_city the %s3_building has been demolished due to the lack of %s2_resource.</English>
-		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;moli:a &#233;t&#233; d&#233;molie:ont &#233;t&#233; d&#233;molis:ont &#233;t&#233; d&#233;molies] suite &#224; une rupture d'approvisionnement en %s2_resource.</French>
+		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;mantel&#233;:a &#233;t&#233; d&#233;mantel&#233;e:ont &#233;t&#233; d&#233;mantel&#233;s:ont &#233;t&#233; d&#233;mantel&#233;es] suite &#224; une rupture d'approvisionnement en %s2_resource.</French>
 		<German>In %s1_city wurde durch das Fehlen der Bonusresource %s2_resource das Geb&#228;ude %s3_building abgebaut.</German>
 		<Italian>A %s1_city la %s3_building &#232; stata chiusa a causa della mancanza di %s2_resource.</Italian>
 		<Spanish>En %s1_city [NUM3:el:la:los:las] %s3_building [NUM3:fue:fue:fueron:fueron] [NUM3:degradado:degradada:degradados:degradadas] por la falta de %s2_resource.</Spanish>
@@ -3487,7 +3503,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_2</Tag>
 		<English>In %s1_city the %s3_building has been demolished due to the lack of Tin or Lead.</English>
-		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;moli:a &#233;t&#233; d&#233;molie:ont &#233;t&#233; d&#233;molis:ont &#233;t&#233; d&#233;molies] suite &#224; une rupture d'approvisionnement en &#233;tain ou plomb.</French>
+		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;mantel&#233;:a &#233;t&#233; d&#233;mantel&#233;e:ont &#233;t&#233; d&#233;mantel&#233;s:ont &#233;t&#233; d&#233;mantel&#233;es] suite &#224; une rupture d'approvisionnement en &#233;tain ou plomb.</French>
 		<German>In %s1_city wurde durch das Fehlen von Zinn oder Blei die %s3_building abgebaut.</German>
 		<Italian>In %s1_city %s3_building &#232; stata degradata dalla mancanza di stagno o piombo.</Italian>
 		<Spanish>En %s1_city [NUM3:el:la:los:las] %s3_building [NUM3:fue:fue:fueron:fueron] [NUM3:degradado:degradada:degradados:degradadas] por la falta de esta&#241;o o plomo.</Spanish>
@@ -3511,7 +3527,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_NOBONUSNOBUILDING_5</Tag>
 		<English>In %s1_city the %s3_building has been demolished due to the lack of the raw materials of %s2_resource.</English>
-		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;moli:a &#233;t&#233; d&#233;molie:ont &#233;t&#233; d&#233;molis:ont &#233;t&#233; d&#233;molies] suite &#224; une rupture d'approvisionnement de mati&#232;res premi&#232;res en %s2_resource.</French>
+		<French>A %s1_city, [NUM3:un:une:des:des] %s3_building [NUM3:a &#233;t&#233; d&#233;mantel&#233;:a &#233;t&#233; d&#233;mantel&#233;e:ont &#233;t&#233; d&#233;mantel&#233;s:ont &#233;t&#233; d&#233;mantel&#233;es] suite &#224; une rupture d'approvisionnement de mati&#232;res premi&#232;res en %s2_resource.</French>
 		<German>In %s1_city wurde durch das Fehlen der Rohstoffe von %s2_resource das Geb&#228;ude %s3_building abgebaut.</German>
 		<Italian>A %s1_city la %s3_building &#232; stata chiusa a causa della mancanza di materie prime di %s2_resource.</Italian>
 		<Spanish>En %s1_city [NUM3:el:la:los:las] %s3_building [NUM3:fue:fue:fueron:fueron] [NUM3:degradado:degradada:degradados:degradadas] por la falta de materias primas de %s2_resource.</Spanish>
@@ -4359,7 +4375,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_HERO_MOVE_INTO_CITY_POPUP</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Heroes[COLOR_REVERT] (through combat) and units with the Art of [COLOR_HIGHLIGHT_TEXT]Rhetoric[COLOR_REVERT] (through promotion) can reduce city riots and civil wars to just one turn.[NEWLINE]If you move normal units into such cities, the timer per unit decreases by one (at least 2 turns of riot remain).</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Des h&#233;ros[COLOR_REVERT] (par combat) et les unit&#233;s avec l'Art de la [COLOR_HIGHLIGHT_TEXT]Rh&#233;torique[COLOR_REVERT] (par promotion) peuvent r&#233;duire les &#233;meutes urbaines et les guerres civiles &#224; un seul tour.[NEWLINE]Si vous d&#233;placez des unit&#233;s normales dans de telles villes, le temps par unit&#233; diminue de un (il reste au moins 2 tours d'&#233;meute).</French>
+		<French>Des unit&#233;s avec la promotion [COLOR_HIGHLIGHT_TEXT]H&#233;ros[COLOR_REVERT] ou [COLOR_HIGHLIGHT_TEXT]Rh&#233;torique[COLOR_REVERT] peuvent r&#233;duire les &#233;meutes urbaines et les guerres civiles &#224; un seul tour.[NEWLINE]Si vous d&#233;placez des unit&#233;s normales dans de telles villes, la dur&#233;e des &#233;meutes diminue de 1 tour par unit&#233; (minimum incompressible de 2 tours).</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Helden[COLOR_REVERT] (durch Kampf) und Einheiten mit der Kunst der [COLOR_HIGHLIGHT_TEXT]Rhetorik[COLOR_REVERT] (durch Bef&#246;rderung) k&#246;nnen Unruhen und B&#252;rgerkriege von St&#228;dten auf nur eine Runde reduzieren.[NEWLINE]Bewegt man normale Einheiten in solche St&#228;dte, sinkt der Timer pro Einheit um eins (min 2 Runden Unruhe verbleiben).</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Gli eroi[COLOR_REVERT] (attraverso il combattimento) e le unit&#224; con l'Arte di [COLOR_HIGHLIGHT_TEXT]Retorica[COLOR_REVERT] (attraverso la promozione) possono ridurre le rivolte cittadine e le guerre civili a un solo turno.[NEWLINE]Se sposti unit&#224; normali in tali citt&#224;, il timer per unit&#224; diminuisce di uno (rimangono almeno 2 turni di rivolta).</Italian>
 		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]H&#233;roes[COLOR_REVERT] (a trav&#233;s del combate) y las unidades con el Arte de la [COLOR_HIGHLIGHT_TEXT]Ret&#243;rica[COLOR_REVERT] (a trav&#233;s de la promoci&#243;n) pueden reducir los disturbios de la ciudad y las guerras civiles a un solo turno.[NEWLINE]Si mueves unidades normales a tales ciudades, el tiempo por unidad se reduce en uno (quedan al menos 2 turnos de disturbios).</Spanish>
@@ -4615,7 +4631,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_MERCHANT_ROBBERY_6</Tag>
 		<English>One of your merchants was the victim of a robber attack! The escort was completely wiped out, but at least nothing happened to the goods!</English>
-		<French>Un de vos marchands a &#233;t&#233; victime d'une attaque de voleur! L'escorte a &#233;t&#233; compl&#232;tement an&#233;antie, mais au moins rien n'est arriv&#233; &#224; la marchandise!</French>
+		<French>Un de vos marchands a &#233;t&#233; victime d'une attaque de brigands ! L'escorte a &#233;t&#233; compl&#232;tement an&#233;antie, mais au moins rien n'est arriv&#233; &#224; la marchandise!</French>
 		<German>Einer Eurer H&#228;ndler wurde Opfer eines R&#228;uberangriffs! Der Begleitschutz wurde komplett aufgerieben, aber immerhin ist der Ware nichts passiert!</German>
 		<Italian>Uno dei tuoi mercanti &#232; stato vittima di un attacco di un ladro! La scorta &#232; stata completamente spazzata via, ma almeno non &#232; successo nulla alla merce!</Italian>
 		<Spanish>&#161;Uno de tus mercaderes fue v&#237;ctima de un ataque de ladrones! La escolta fue completamente aniquilada, &#161;pero al menos no le pas&#243; nada a la mercanc&#237;a!</Spanish>
@@ -5375,7 +5391,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_TECH_BY_UNIT</Tag>
 		<English>For defeating a unit of the unknown warfare "%s1", you could gain +%d2[ICON_RESEARCH] to this technology.</English>
-		<French>Pour avoir vaincu une unit&#233; de la guerre inconnue "%s1", vous pourriez gagner +%d2[ICON_RESEARCH] &#224; cette technologie.</French>
+		<French>Pour avoir vaincu une unit&#233; pratiquant une technique de guerre qui vous est inconnue (%s1), vous gagnez +%d2[ICON_RESEARCH] &#224; cette technologie.</French>
 		<German>F&#252;r den Sieg gegen eine Einheit der Euch unbekannten Kriegsf&#252;hrung "%s1", konntet Ihr +%d2[ICON_RESEARCH] zu dieser Technologie dazugewinnen.</German>
 		<Italian>Sconfiggendo un'unit&#224; della guerra sconosciuta "%s1", potresti guadagnare +%d2[ICON_RESEARCH] a questa tecnologia.</Italian>
 		<Spanish>Por derrotar a una unidad de guerra desconocida "%s1", podr&#237;as ganar +%d2[ICON_RESEARCH] para esta tecnolog&#237;a.</Spanish>
@@ -5895,7 +5911,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_UNIT_UNDO_PROMO_MERCENARY</Tag>
 		<English>As a result of the long combat experience, the unit %s1 loses its status of being "unreliable".</English>
-		<French>En raison d'une longue exp&#233;rience du combat, l'unit&#233; %s1 perd son statut "non fiable".</French>
+		<French>En raison d'une longue exp&#233;rience du combat, l'unit&#233; %s1 perd son statut "Peu fiable".</French>
 		<German>Aufgrund der langen Kampferfahrung verliert die Einheit %s1 nun ihre "Unzuverl&#228;ssigkeit".</German>
 		<Italian>A causa della lunga esperienza di combattimento, l'unit&#224; %s1 perde suo status di "inaffidabile".</Italian>
 		<Spanish>Como resultado de una gran cantidad de experiencia de combate, la unidad %s1 pierde su estatus de "poco confiable".</Spanish>
@@ -6135,7 +6151,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_AUTOMATE_MERCHANT_DONE</Tag>
 		<English>Your merchant has made %d2 [ICON_GOLD] in %s1.</English>
-		<French>Votre marchand a fait un profit de %d2[ICON_GOLD] &#224; %s1</French>
+		<French>Votre marchand a fait un profit de %d2 [ICON_GOLD] &#224; %s1</French>
 		<German>Euer H&#228;ndler hat in %s1 %d2 [ICON_GOLD] eingebracht.</German>
 		<Italian>Il vostro commerciante ha reso %d2 [ICON_GOLD] in %s1.</Italian>
 		<Spanish>Su comerciante ha ganado %d2 [ICON_GOLD] en %s1.</Spanish>
@@ -6223,7 +6239,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_NATIONAL_WONDERS</Tag>
 		<English>National Wonders</English>
-		<French>Merveilles Nationales</French>
+		<French>Merveilles nationales</French>
 		<German>Nationale Wunder</German>
 		<Italian>Meraviglie nazionali</Italian>
 		<Spanish>Maravillas nacionales</Spanish>
@@ -7878,11 +7894,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_VASSAL_15</Tag>
-		<English>[H1]A general has fallen![\H1]This war saps our strength and it is time to think about our citizens and about preventing further enslavement! For %d3 gold %s2_leader offers you to become his vassal! Do you take this offer?</English>
-		<French>[H1]Un g&#233;n&#233;ral est tomb&#233; ![\H1]La guerre nous a affaibli. Il est temps de penser &#224; nos citoyens et leur &#233;viter d'&#234;tre r&#233;duit en esclavage ! Pour %d3 [ICON_GOLD], %s2_leader vous offre de devenir son vassal ! Qu'allez-vous r&#233;pondre ?</French>
-		<German>[H1]Ein General ist gefallen![\H1]Dieser Krieg zehrt an unseren Kr&#228;ften und es wird Zeit an unsere B&#252;rger zu denken und weitere Versklavungen zu vehindern! F&#252;r %d3 Gold w&#252;rde Euch %s2_leader verschonen und Euch zu seinem Vasall machen! Geht Ihr auf dieses Angebot ein?</German>
-		<Italian>[H1]&#200; caduto un generale![\H1]Questa guerra prosciuga le nostre forze ed &#232; tempo di pensare ai nostri cittadini e a evitare che altri ancora vengano ridotti in schiavit&#249;! %s2_leader ti chiede di diventare suo vassallo per %d3 monete d'oro! Accetti questa offerta?</Italian>
-		<Spanish>[H1]&#161;Ha ca&#237;do un general![\H1]&#161;Esta guerra debilita nuestra fuerza y es el momento para pensar en nuestros ciudadanos y evitar nuestra destrucci&#243;n! &#161;Por %d3 de oro %s2_leader te ofrece convertirnos en su vasallo! &#191;La aceptamos?</Spanish>
+		<English>[H1]A general has fallen![\H1]This war saps our strength and it is time to think about our citizens and about preventing further enslavement! For %d2 gold %s1_leader offers you to become his vassal! Do you take this offer?</English>
+		<French>[H1]Un g&#233;n&#233;ral est tomb&#233; ![\H1]La guerre nous a affaibli. Il est temps de penser &#224; nos citoyens et leur &#233;viter d'&#234;tre r&#233;duit en esclavage ! Pour %d2 [ICON_GOLD], %s1_leader vous offre de devenir son vassal ! Qu'allez-vous r&#233;pondre ?</French>
+		<German>[H1]Ein General ist gefallen![\H1]Dieser Krieg zehrt an unseren Kr&#228;ften und es wird Zeit an unsere B&#252;rger zu denken und weitere Versklavungen zu vehindern! F&#252;r %d2 Gold w&#252;rde Euch %s1_leader verschonen und Euch zu seinem Vasall machen! Geht Ihr auf dieses Angebot ein?</German>
+		<Italian>[H1]&#200; caduto un generale![\H1]Questa guerra prosciuga le nostre forze ed &#232; tempo di pensare ai nostri cittadini e a evitare che altri ancora vengano ridotti in schiavit&#249;! %s1_leader ti chiede di diventare suo vassallo per %d2 monete d'oro! Accetti questa offerta?</Italian>
+		<Spanish>[H1]&#161;Ha ca&#237;do un general![\H1]&#161;Esta guerra debilita nuestra fuerza y es el momento para pensar en nuestros ciudadanos y evitar nuestra destrucci&#243;n! &#161;Por %d2 de oro %s1_leader te ofrece convertirnos en su vasallo! &#191;La aceptamos?</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_VASSAL_GETTING_TECH</Tag>
@@ -8157,9 +8173,33 @@
 		<Spanish>Riq + In + Espio</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROJECT_OLYMPIC_GAMES_HELP</Tag>
+		<English>[ICON_BULLET]Starts an [COLOR_HIGHLIGHT_TEXT]Olympiad[COLOR_REVERT] every 4 turns, where initially all cities that believe in [COLOR_HIGHLIGHT_TEXT]Greek gods[COLOR_REVERT] participate. Only one city receives the Olympian, who brings financial prosperity to the city for 4 turns. With the technology of [COLOR_HIGHLIGHT_TEXT]Imperialism[COLOR_REVERT], cities with [COLOR_HIGHLIGHT_TEXT]Roman gods[COLOR_REVERT] can also participate.</English>
+		<French>[ICON_BULLET]Tous les 4 tours, une [COLOR_HIGHLIGHT_TEXT]Olympiade[COLOR_REVERT] commence o&#249; toutes les villes croyant aux [COLOR_HIGHLIGHT_TEXT]dieux grecs[COLOR_REVERT] participent initialement. Une seule ville re&#231;oit l'Olympien, qui apporte une prosp&#233;rit&#233; financi&#232;re &#224; la ville pendant 4 tours. Avec la technologie de l'[COLOR_HIGHLIGHT_TEXT]Imp&#233;rialisme[COLOR_REVERT], les villes avec des [COLOR_HIGHLIGHT_TEXT]dieux romains[COLOR_REVERT] peuvent &#233;galement participer.</French>
+		<German>[ICON_BULLET]Startet alle 4 Runden eine [COLOR_HIGHLIGHT_TEXT]Olympiade[COLOR_REVERT], wo anfangs alle St&#228;dte teilnehmen, die an [COLOR_HIGHLIGHT_TEXT]Griechische G&#246;tter[COLOR_REVERT] glauben. Dabei bekommt nur eine Stadt den Olympioniken, der der Stadt 4 Runden lang einen finanziellen Aufschwung bringt. Mit der Technologie [COLOR_HIGHLIGHT_TEXT]Imperialismus[COLOR_REVERT] d&#252;rfen auch St&#228;dte mit [COLOR_HIGHLIGHT_TEXT]R&#246;mischen G&#246;ttern[COLOR_REVERT] teilnehmen.</German>
+		<Italian>[ICON_BULLET]Ogni 4 turni inizia un'[COLOR_HIGHLIGHT_TEXT]Olimpiade[COLOR_REVERT] in cui inizialmente partecipano tutte le citt&#224; che credono negli [COLOR_HIGHLIGHT_TEXT]dei greci[COLOR_REVERT]. Solo una citt&#224; riceve l'Olimpionico, che porta prosperit&#224; finanziaria alla citt&#224; per 4 turni. Con la tecnologia dell'[COLOR_HIGHLIGHT_TEXT]Imperialismo[COLOR_REVERT], possono partecipare anche le citt&#224; con [COLOR_HIGHLIGHT_TEXT]dei romani[COLOR_REVERT].</Italian>
+		<Spanish>[ICON_BULLET]Cada 4 rondas, comienza una [COLOR_HIGHLIGHT_TEXT]Olimpiada[COLOR_REVERT] donde inicialmente participan todas las ciudades que creen en los [COLOR_HIGHLIGHT_TEXT]dioses griegos[COLOR_REVERT]. Solo una ciudad recibe al Ol&#237;mpico, quien trae prosperidad financiera a la ciudad durante 4 rondas. Con la tecnolog&#237;a del [COLOR_HIGHLIGHT_TEXT]Imperialismo[COLOR_REVERT], tambi&#233;n pueden participar ciudades con [COLOR_HIGHLIGHT_TEXT]dioses romanos[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_PANHELLENISM_HELP</Tag>
+		<English>[ICON_BULLET]Spreads the [COLOR_HIGHLIGHT_TEXT]Hellenism cult[COLOR_REVERT] to all owned cities as well as to the cities of the vassals.</English>
+		<French>[ICON_BULLET]Propage le [COLOR_HIGHLIGHT_TEXT]culte de l'hell&#233;nisme[COLOR_REVERT] &#224; toutes les villes poss&#233;d&#233;es ainsi qu'aux villes des vassaux.</French>
+		<German>[ICON_BULLET]Verbreitet den [COLOR_HIGHLIGHT_TEXT]Hellenismus-Kult[COLOR_REVERT] in alle eigenen St&#228;dte sowie in die St&#228;dte der Vasallen.</German>
+		<Italian>[ICON_BULLET]Diffonde il [COLOR_HIGHLIGHT_TEXT]culto dell'ellenismo[COLOR_REVERT] in tutte le citt&#224; di propriet&#224; e nelle citt&#224; dei vassalli.</Italian>
+		<Spanish>[ICON_BULLET]Difunde el [COLOR_HIGHLIGHT_TEXT]culto del helenismo[COLOR_REVERT] a todas las ciudades propias, as&#237; como a las ciudades de los vasallos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_SILKROAD_HELP</Tag>
+		<English>[ICON_BULLET]Gives 3 [COLOR_HIGHLIGHT_TEXT]Trade Caravan[COLOR_REVERT] loaded with Incense, Gems and Silk</English>
+		<French>[ICON_BULLET]Donne 3 [COLOR_HIGHLIGHT_TEXT]Caravanes marchandes[COLOR_REVERT] charg&#233;es d'encens, de pierres pr&#233;cieuses et de soie</French>
+		<German>[ICON_BULLET]Erzeugt 3 [COLOR_HIGHLIGHT_TEXT]Handelskarawanen[COLOR_REVERT] beladen mit Weihrauch, Edelsteinen und Seide</German>
+		<Italian>[ICON_BULLET]Fornisce 3 [COLOR_HIGHLIGHT_TEXT]Carovana commerciale[COLOR_REVERT] carica di incenso, gemme e seta</Italian>
+		<Spanish>[ICON_BULLET]Da 3 [COLOR_HIGHLIGHT_TEXT]Caravana comercial[COLOR_REVERT] cargada con incienso, gemas y seda</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ANGST_HELP</Tag>
 		<English>Chariots, mounted units, camel riders, and war elephants cause fear in stacks of foot soldiers only. This fear is lost only when a unit in the stack wins against such anxiety-promoting units. Warlords (Generals) with the gift of rhetoric (promotion) can also reassure anxious units and restore their morale. Druids can use a slave victim to improve unit morale.</English>
-		<French>Les chars, les unit&#233;s mont&#233;es, les chameliers et les &#233;l&#233;phants de guerre ne font peur qu'aux groupes de fantassins. Cette crainte n'est perdue que lorsqu'une unit&#233; du groupe gagne contre le type d'unit&#233;s ayant favoris&#233; l'anxi&#233;t&#233;. Les seigneurs de la guerre (g&#233;n&#233;raux) avec le don de la rh&#233;torique (promotion) peuvent &#233;galement rassurer les unit&#233;s anxieuses et leur redonner le moral. Les druides peuvent utiliser une victime esclave pour am&#233;liorer le moral de l'unit&#233;.</French>
+		<French>Les chars, les unit&#233;s mont&#233;es, les chameliers et les &#233;l&#233;phants de guerre ne font peur qu'aux groupes de fantassins. Cette crainte n'est perdue que lorsqu'une unit&#233; du groupe gagne contre le type d'unit&#233;s ayant provoqu&#233; la peur. Les seigneurs de la guerre (g&#233;n&#233;raux) avec le don de la rh&#233;torique (promotion) peuvent &#233;galement rassurer les unit&#233;s effray&#233;es et leur redonner le moral. Les druides peuvent sacrifier un esclave pour am&#233;liorer le moral de l'unit&#233;.</French>
 		<German>Streitwagen, Berittene Einheiten, Kamelreiter und Kriegselefanten erzeugen bei Stacks, die nur aus Fu&#223;soldaten bestehen, Angst. Diese Angst geht erst dann verloren, wenn eine Einheit im Stack gegen eine solche angstbereitende Einheiten gewinnt. Heerf&#252;hrer (Gener&#228;le) mit der Gabe der Rhetorik (Bef&#246;rderung) k&#246;nnen ebenfalls beruhigend auf &#228;ngstliche Einheiten wirken und deren Moral wieder st&#228;rken. Druiden k&#246;nnen die Moral der Einheiten durch ein Sklavenopfer verbessern.</German>
 		<Italian>I carri, le unit&#224; montate, i cavalieri di cammelli e gli elefanti da guerra causano la paura solo in cataste di soldati a piedi. Questa paura si perde solo quando un'unit&#224; in pila vince contro tali unit&#224; che promuovono l'ansia. I signori della guerra (generali) con il dono della retorica (promozione) possono anche rassicurare le unit&#224; ansiose e ripristinare il loro morale. I druidi possono usare una vittima schiava per migliorare il morale dell'unit&#224;.</Italian>
 		<Spanish>Los carros, las unidades montadas, los jinetes de camellos y los elefantes de guerra causan miedo solo en las pilas de soldados de a pie. Este miedo se pierde solo cuando una unidad en la pila gana contra tales unidades que promueven la ansiedad. Los se&#241;ores de la guerra (generales) con el don de la ret&#243;rica (promoci&#243;n) tambi&#233;n pueden tranquilizar a las unidades ansiosas y recuperar su moral. Los druidas pueden usar una v&#237;ctima esclava para mejorar la moral de la unidad.</Spanish>
@@ -8199,7 +8239,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SCHUTZ_HELP</Tag>
 		<English>Costs 20 gold pieces and protects merchants (land unit) from robbers. Can be consumed after a raid.</English>
-		<French>Co&#251;te 20 pi&#232;ces d'or et prot&#232;ge les marchands (unit&#233; terrestre) des voleurs. Potentiellement consomm&#233;e apr&#232;s un raid.</French>
+		<French>Co&#251;te 20 pi&#232;ces d'or et prot&#232;ge les marchands (unit&#233; terrestre) des voleurs. Peut &#234;tre perdue apr&#232;s un raid.</French>
 		<German>Kostet 20 Goldst&#252;cke und sch&#252;tzt H&#228;ndler (Landeinheit) vor R&#228;ubern. Kann nach einem &#220;berfall verbraucht werden.</German>
 		<Italian>Costa 20 pezzi d'oro e protegge i mercanti (unit&#224; di terra) dai ladri. Pu&#242; essere consumato dopo un raid.</Italian>
 		<Spanish>Cuesta 20 piezas de oro y protege a los comerciantes (unidad de tierra) de los ladrones. Se puede consumir despu&#233;s de una redada.</Spanish>
@@ -8311,7 +8351,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_GAERUNG_HELP</Tag>
 		<English>[ICON_BULLET] Is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]grain resource[COLOR_REVERT] with a farm has been connected to the trade network.</English>
-		<French>[ICON_BULLET] A de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]C&#233;r&#233;ale[COLOR_REVERT] avec une ferme a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
+		<French>[ICON_BULLET] A de faibles chance d'&#234;tre d&#233;couverte spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]C&#233;r&#233;ale[COLOR_REVERT] avec une ferme a &#233;t&#233; connect&#233;e au r&#233;seau commercial.</French>
 		<German>[ICON_BULLET] Wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Getreideart[COLOR_REVERT] mit einem Bauernhof ans Handelsnetz angeschlossen wurde.</German>
 		<Italian>[ICON_BULLET] Viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa granulosa[COLOR_REVERT] con una fattoria &#232; stato collegato alla rete commerciale.</Italian>
 		<Spanish>[ICON_BULLET] Es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]tipo de grano[COLOR_REVERT] con una granja se haya conectado a la red comercial.</Spanish>
@@ -8327,7 +8367,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KAMELZUCHT_HELP</Tag>
 		<English>[ICON_BULLET] Is automatically researched (with a small chance) as soon as a [COLOR_HIGHLIGHT_TEXT]camel resource[COLOR_REVERT] with a camp has been connected to the trade network.</English>
-		<French>[ICON_BULLET] A de faibles chance d'&#233;merger spontan&#233;ment lorsqu'une [COLOR_HIGHLIGHT_TEXT]ressource chameli&#232;re[COLOR_REVERT] avec un camp a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
+		<French>[ICON_BULLET] A de faibles chance d'&#234;tre d&#233;couverte spontan&#233;ment lorsqu'un [COLOR_HIGHLIGHT_TEXT]Dromadaire[COLOR_REVERT] avec un camp a &#233;t&#233; connect&#233; au r&#233;seau commercial.</French>
 		<German>[ICON_BULLET] Wird (mit einer geringen Chance) automatisch entdeckt, sobald eine [COLOR_HIGHLIGHT_TEXT]Kamelressource[COLOR_REVERT] mit einem Lager ans Handelsnetz angeschlossen wurde.</German>
 		<Italian>[ICON_BULLET] Viene investigata automaticamente (con una piccola probabilit&#224;), non appena una [COLOR_HIGHLIGHT_TEXT]risorsa di cammelli[COLOR_REVERT] con un accampamento &#232; stato collegato alla rete commerciale.</Italian>
 		<Spanish>[ICON_BULLET] Es autom&#225;tica investigado (con una peque&#241;a probabilidad), tan pronto como un [COLOR_HIGHLIGHT_TEXT]recurso de camellos[COLOR_REVERT] con un campamento se haya conectado a la red comercial.</Spanish>
@@ -8543,18 +8583,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_TREIB2STRANDGUT</Tag>
 		<English>Flotsam has washed up on your beach.</English>
-		<French>Une &#233;pave s'est &#233;chou&#233;e sur votre plage.</French>
+		<French>Une &#233;pave s'est &#233;chou&#233;e sur votre rivage.</French>
 		<German>Treibgut wurde an Euren Strand angeschwemmt.</German>
 		<Italian>Flotsam &#232; andato a riva sulla tua spiaggia.</Italian>
 		<Spanish>Un pecio ha sido arrastrado hasta tus playas.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAMEL_HELP</Tag>
-		<English>[ICON_BULLET]Can speed production in cities[NEWLINE][ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can be distributed in cities with dry deserts (except oases and flood plains)</English>
-		<French>[ICON_BULLET]Peut acc&#233;l&#233;rer la production en ville[NEWLINE][ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Peut &#234;tre implant&#233; dans un d&#233;sert (sauf oasis et plaines inondables) pr&#232;s d'une ville</French>
-		<German>[ICON_BULLET]Kann in St&#228;dten die Produktion beschleunigen[NEWLINE][ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann in St&#228;dten mit W&#252;ste verbreitet werden (ausgenommen Oasen und Schwemmland)</German>
-		<Italian>[ICON_BULLET]Pu&#242; velocizzare la produzione nelle citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Pu&#242; essere distribuito in citt&#224; con il deserto (eccetto le oasi e le pianure alluvionali)</Italian>
-		<Spanish>[ICON_BULLET]Puede acelerar la producci&#243;n en ciudades[NEWLINE][ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]Se puede distribuir en ciudades con el desierto (excepto los oasis y llanuras aluviales)</Spanish>
+		<English>[ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can be distributed in cities with dry deserts (except oases and flood plains)</English>
+		<French>[ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Peut &#234;tre implant&#233; dans un d&#233;sert (sauf oasis et plaines inondables) pr&#232;s d'une ville</French>
+		<German>[ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann in St&#228;dten mit W&#252;ste verbreitet werden (ausgenommen Oasen und Schwemmland)</German>
+		<Italian>[ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Pu&#242; essere distribuito in citt&#224; con il deserto (eccetto le oasi e le pianure alluvionali)</Italian>
+		<Spanish>[ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]Se puede distribuir en ciudades con el desierto (excepto los oasis y llanuras aluviales)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CATAPULT_HELP</Tag>
@@ -8566,11 +8606,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ELEFANT_HELP</Tag>
-		<English>[ICON_BULLET]Can speed production in cities[NEWLINE][ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can not be distributed[NEWLINE][ICON_BULLET]Defensive only [ICON_STRENGTH]</English>
-		<French>[ICON_BULLET]Peut acc&#233;l&#233;rer la production en ville[NEWLINE][ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Ne peut pas &#234;tre implant&#233;[NEWLINE][ICON_BULLET]Ne peut que d&#233;fendre [ICON_STRENGTH]</French>
-		<German>[ICON_BULLET]Kann in St&#228;dten die Produktion beschleunigen[NEWLINE][ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann nicht verbreitet werden[NEWLINE][ICON_BULLET]Kann nur verteidigen [ICON_STRENGTH]</German>
-		<Italian>[ICON_BULLET]Pu&#242; velocizzare la produzione nelle citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Non pu&#242; essere distribuito[NEWLINE][ICON_BULLET]Pu&#242; solo difendere [ICON_STRENGTH]</Italian>
-		<Spanish>[ICON_BULLET]Puede acelerar la producci&#243;n en ciudades[NEWLINE][ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]No se puede distribuir[NEWLINE][ICON_BULLET]Solo puedo defender [ICON_STRENGTH]</Spanish>
+		<English>[ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can not be distributed[NEWLINE][ICON_BULLET]Defensive only [ICON_STRENGTH]</English>
+		<French>[ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Ne peut pas &#234;tre implant&#233;[NEWLINE][ICON_BULLET]Ne peut que d&#233;fendre [ICON_STRENGTH]</French>
+		<German>[ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann nicht verbreitet werden[NEWLINE][ICON_BULLET]Kann nur verteidigen [ICON_STRENGTH]</German>
+		<Italian>[ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Non pu&#242; essere distribuito[NEWLINE][ICON_BULLET]Pu&#242; solo difendere [ICON_STRENGTH]</Italian>
+		<Spanish>[ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]No se puede distribuir[NEWLINE][ICON_BULLET]Solo puedo defender [ICON_STRENGTH]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EROBERT</Tag>
@@ -8622,11 +8662,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HORSE_HELP</Tag>
-		<English>[ICON_BULLET]Can speed production in cities[NEWLINE][ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can be distributed in cities with flatlands. Improvements prevents the distribution.</English>
-		<French>[ICON_BULLET]Peut acc&#233;l&#233;rer la production en ville[NEWLINE][ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Peut &#234;tre implant&#233; dans une plaine/prairie non am&#233;nag&#233;e pr&#232;s d'une ville</French>
-		<German>[ICON_BULLET]Kann in St&#228;dten die Produktion beschleunigen[NEWLINE][ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann in St&#228;dten mit Flachland verbreitet werden. Modernisierungen verhindern die Verbreitung.</German>
-		<Italian>[ICON_BULLET]Pu&#242; velocizzare la produzione nelle citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Pu&#242; essere distribuito in citt&#224; con pianura. I miglioramenti impediscono la distribuzione.</Italian>
-		<Spanish>[ICON_BULLET]Puede acelerar la producci&#243;n en ciudades[NEWLINE][ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]Puede ser distribuido en ciudades con planicies. Las mejoras impiden la distribuci&#243;n.</Spanish>
+		<English>[ICON_BULLET]Can be sold in foreign cities[NEWLINE][ICON_BULLET]Can be distributed in cities with flatlands. Improvements prevents the distribution.</English>
+		<French>[ICON_BULLET]Peut &#234;tre vendu dans des villes &#233;trang&#232;res[NEWLINE][ICON_BULLET]Peut &#234;tre implant&#233; dans une plaine/prairie non am&#233;nag&#233;e pr&#232;s d'une ville</French>
+		<German>[ICON_BULLET]Kann in fremden St&#228;dten verkauft werden[NEWLINE][ICON_BULLET]Kann in St&#228;dten mit Flachland verbreitet werden. Modernisierungen verhindern die Verbreitung.</German>
+		<Italian>[ICON_BULLET]Pu&#242; essere venduto in citt&#224; straniere[NEWLINE][ICON_BULLET]Pu&#242; essere distribuito in citt&#224; con pianura. I miglioramenti impediscono la distribuzione.</Italian>
+		<Spanish>[ICON_BULLET]Se puede vender en ciudades extranjeras[NEWLINE][ICON_BULLET]Puede ser distribuido en ciudades con planicies. Las mejoras impiden la distribuci&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INSTANCE_COST_MOD</Tag>

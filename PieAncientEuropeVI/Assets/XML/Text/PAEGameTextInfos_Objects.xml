@@ -1769,14 +1769,6 @@
 		<Spanish>Construir un [LINK=CONCEPT_MOVEMENT]camino[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_TURM</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Build a [LINK=IMPROVEMENT_TURM]Look-out[\LINK][COLOR_REVERT][ICON_BULLET]+10% tile defenseCost: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turn</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Construire un [LINK=IMPROVEMENT_TURM]poste d'observation[\LINK][COLOR_REVERT][ICON_BULLET]D&#233;fense de la case +10%Co&#251;t : 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] tour</French>
-		<German>[COLOR_HIGHLIGHT_TEXT][LINK=IMPROVEMENT_TURM]Sp&#228;hturm[\LINK] bauen[COLOR_REVERT][ICON_BULLET]+10% Gel&#228;ndefeld-VerteidigungKosten: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] Runde</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Costruisci un [LINK=IMPROVEMENT_TURM]posto d'osservazione[\LINK][COLOR_REVERT][ICON_BULLET]+10% difensiva della casellaCosto: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Construir un [LINK=IMPROVEMENT_TURM]vig&#237;a[\LINK][COLOR_REVERT][ICON_BULLET]+10% a la defensa de la casillaCoste: 4 [ICON_GOLD][COLOR_HIGHLIGHT_TEXT]1[COLOR_REVERT] turno</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILD_TURM2</Tag>
 		<English>Build a [LINK=IMPROVEMENT_TURM2]watchtower[\LINK]</English>
 		<French>Construire une [LINK=IMPROVEMENT_TURM2]tour de guet[\LINK]</French>
@@ -2611,7 +2603,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ISRAEL_ADJECTIVE</Tag>
 		<English>Hebrew</English>
-		<French><Text>h&#233;breu:h&#233;bra&#239;que:h&#233;breux:h&#233;bra&#239;ques</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
+		<French><Text>h&#233;breu:h&#233;breue:h&#233;breux:h&#233;breues</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German><Text>Hebr&#228;isch:hebr&#228;ischen:hebr&#228;ische:hebr&#228;ischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian><Text>ebraico:ebraica:ebraici:ebraice</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>hebreo:hebrea:hebreos:hebreas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
@@ -2659,7 +2651,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_LOWER_EGYPT_ADJECTIVE</Tag>
 		<English>Lower Egyptian</English>
-		<French>bas-&#233;gyptien</French>
+		<French><Text>bas-&#233;gyptien:bas-&#233;gyptienne:bas-&#233;gyptiens:bas-&#233;gyptiennes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>unter&#228;gyptische</German>
 		<Italian>basso egiziano</Italian>
 		<Spanish>bajo egipcio</Spanish>
@@ -2827,7 +2819,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PERSIA_ADJECTIVE</Tag>
 		<English>Persian</English>
-		<French><Text>Persan:Persane:Persans:Persanes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
+		<French><Text>perse:perse:perses:perses</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German><Text>Persisch:persischen:persische:persischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian><Text>Persiano:Persiana:Persiani:Persiane</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>persa:persa:persas:persas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
@@ -3107,7 +3099,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_THEBAI_SHORT_DESC</Tag>
 		<English>Thebes</English>
-		<French>Th&#232;bes</French>
+		<French>Th&#233;bains</French>
 		<German>Theben</German>
 		<Italian>Tebe</Italian>
 		<Spanish>Tebas</Spanish>
@@ -3139,7 +3131,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_UPPER_EGYPT_ADJECTIVE</Tag>
 		<English>Upper Egyptian</English>
-		<French>haut-&#233;gyptien</French>
+		<French><Text>haut-&#233;gyptien:haut-&#233;gyptienne:haut-&#233;gyptiens:haut-&#233;gyptiennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>ober&#228;gyptische</German>
 		<Italian>alto egiziano</Italian>
 		<Spanish>alto egipicio</Spanish>
@@ -4691,7 +4683,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ORODES2</Tag>
 		<English>Orodes II of Parthia</English>
-		<French>Orod&#232;s II de Parthia</French>
+		<French>Orod&#232;s II de Parthie</French>
 		<German>Orodes II. von Parthien</German>
 		<Italian>Orode II di Partia</Italian>
 		<Spanish>Orodes II de Partia</Spanish>
@@ -5115,7 +5107,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MERCENARY</Tag>
 		<English>Unreliable</English>
-		<French>Non fiable</French>
+		<French>Peu fiable</French>
 		<German>Unzuverl&#228;ssig</German>
 		<Italian>Inaffidabile</Italian>
 		<Spanish>Poco confiable</Spanish>
@@ -5242,11 +5234,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SENTRY2</Tag>
-		<English>Explorer II</English>
-		<French>Eclaireur II</French>
-		<German>Kundschafter II</German>
-		<Italian>Esploratore II</Italian>
-		<Spanish>Explorador II</Spanish>
+		<English>Watchman</English>
+		<French>Gardien</French>
+		<German>W&#228;chter</German>
+		<Italian>Guardiano</Italian>
+		<Spanish>Sereno</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SHOCK1</Tag>
@@ -6203,7 +6195,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_MAGNETCOMPASS</Tag>
 		<English>Magnetic Compass</English>
-		<French>Compas magn&#233;tique</French>
+		<French>Boussole magn&#233;tique</French>
 		<German>Magnetkompass</German>
 		<Italian>Bussola Magnetica</Italian>
 		<Spanish><Text>Br&#250;jula Magn&#233;tica</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
@@ -6801,6 +6793,14 @@
 		<Spanish><Text>Sistemas de N&#250;meros</Text><Gender>Female</Gender><Plural>1</Plural></Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
+		<English>Ocean</English>
+		<French><Text>Mer</Text><Gender>Female</Gender><Plural>0</Plural></French>
+		<German><Text>Ozean</Text><Gender>Male</Gender><Plural>0</Plural></German>
+		<Italian><Text>Oceano:Oceani</Text><Gender>Male</Gender><Plural>0:1</Plural></Italian>
+		<Spanish><Text>Oc&#233;ano:Oc&#233;anos</Text><Gender>Male</Gender><Plural>0:1</Plural></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TOPCIVS_HISTORIAN10</Tag>
 		<English>Cassius Dio</English>
 		<French>Dion Cassius</French>
@@ -6853,19 +6853,19 @@
 		<English>Builder</English>
 		<French>B&#226;tisseur</French>
 		<German>
-			<Text>Bauherr:Bauherrin:baufreudiges</Text>
-			   <Gender>Male:Female:Neuter</Gender>
-			   <Plural>0:0:0</Plural>
+<Text>Bauherr:Bauherrin:baufreudiges</Text>
+   <Gender>Male:Female:Neuter</Gender>
+   <Plural>0:0:0</Plural>
 		</German>
 		<Italian>
-			<Text>Costruttore:Costruttrice</Text>
-			   <Gender>Male:Female</Gender>
-			   <Plural>0</Plural>
+<Text>Costruttore:Costruttrice</Text>
+   <Gender>Male:Female</Gender>
+   <Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Constructor:Constructora:Constructores:Constructoras</Text>
-			   <Gender>Male:Female:Male:Female</Gender>
-			   <Plural>0:0:1:1</Plural>
+<Text>Constructor:Constructora:Constructores:Constructoras</Text>
+   <Gender>Male:Female:Male:Female</Gender>
+   <Plural>0:0:1:1</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7209,9 +7209,9 @@
 		<English>Egyptian Missionary</English>
 		<French>Missionnaire h&#233;liopolitain</French>
 		<German>
-			<Text>&#196;gyptischer Missionar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>&#196;gyptischer Missionar</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>Missionario Egizio</Italian>
 		<Spanish>Misionero Egipcio:Misioneros Egipcios</Spanish>
@@ -7437,9 +7437,9 @@
 		<English>Greek Missionary</English>
 		<French>Missionnaire grec</French>
 		<German>
-			<Text>Griechischer Missionar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>Griechischer Missionar</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>Missionario Greco</Italian>
 		<Spanish>Misionero Griego:Misioneros Griegos</Spanish>
@@ -7977,9 +7977,9 @@
 		<English>Nordic Missionary</English>
 		<French>Missionnaire nordique</French>
 		<German>
-			<Text>Nordischer Missionar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>Nordischer Missionar</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>Missionario Nordico</Italian>
 		<Spanish>Misionero N&#243;rdico:Misioneros N&#243;rdicos</Spanish>

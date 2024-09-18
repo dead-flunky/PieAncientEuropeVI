@@ -3626,25 +3626,30 @@ class CvGameUtils:
 								# Lager
 								if iData2 == 1:
 										text = u"<color=155,255,255,0>%s</color> " % CyTranslator().getText("TXT_KEY_BUILD_CAMP", ())
-										text = text + CyTranslator().getText("+1[ICON_FOOD]", ())
+										text += CyTranslator().getText("+1[ICON_FOOD]", ())
 										if bOption:
-												text = text + CyTranslator().getText(", +1[ICON_COMMERCE]", ())
-										text = text + CyTranslator().getText("[NEWLINE]", ())
-										text = text + CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_DEER")).getChar()
-										text = text + CyTranslator().getText("[NEWLINE]", ())
-										text = text + CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_FUR")).getChar()
-										text = text + CyTranslator().getText("[NEWLINE]", ())
-										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
+												text += CyTranslator().getText(", +1[ICON_COMMERCE]", ())
+										text += CyTranslator().getText("[NEWLINE]", ())
+										text += CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_DEER")).getChar()
+										text += CyTranslator().getText("[NEWLINE]", ())
+										text += CyTranslator().getText("TXT_KEY_ACTION_CHANCE_DISCOVER", ()) + u"%c" % gc.getBonusInfo(gc.getInfoTypeForString("BONUS_FUR")).getChar()
+										text += CyTranslator().getText("[NEWLINE]", ())
+										text += CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
 										return text
 								# Beobachtungsturm
-								elif iData2 == 2: 
-										return CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
+								elif iData2 == 2:
+										# Dertuek
+										text = CyTranslator().getText("[COLOR_HIGHLIGHT_TEXT]", ())
+										text += CyTranslator().getText("TXT_KEY_BUILD_TURM", ())
+										text += CyTranslator().getText("[COLOR_REVERT][NEWLINE]", ())
+										text += CyTranslator().getText("TXT_KEY_BUILD_TURM_HELP", ())
+										return text
 								# Schürflager
 								elif iData2 == 3:
 										text = u"<color=155,255,255,0>%s</color> " % CyTranslator().getText("TXT_KEY_BUILD_ORE_CAMP", ())
-										text = text + CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
-										text = text + CyTranslator().getText("[NEWLINE]", ())
-										text = text + CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
+										text += CyTranslator().getText("[NEWLINE][ICON_BULLET]+1[ICON_COMMERCE]", ())
+										text += CyTranslator().getText("[NEWLINE]", ())
+										text += CyTranslator().getText("TXT_KEY_BUILD_CAMP_HUNTER", ())
 										return text
 								# Pfad / Path
 								elif iData == 4:
@@ -3663,6 +3668,12 @@ class CvGameUtils:
 				elif eWidgetType == WidgetTypes.WIDGET_HELP_PROMOTION:
 						if iData2 == 718 and iData1 == -1:
 								return u"<color=155,255,255,0>%s</color>" % CyTranslator().getText("TXT_KEY_PROMOTION_FORM_NONE", ())
+
+				# Dertuek
+				elif eWidgetType in (WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROJECT, WidgetTypes.WIDGET_CREATE):
+						sHelp = gc.getProjectInfo(iData1).getHelp()
+						if sHelp:
+								return u"\n" + sHelp
 
 				# ***TEST***
 				#CyInterface().addMessage(CyGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("X",iData1)), None, 2, None, ColorTypes(12), 0, 0, False, False)
