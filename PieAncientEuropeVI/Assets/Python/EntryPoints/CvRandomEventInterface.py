@@ -446,7 +446,8 @@ def canTriggerCityFire(argsList):
 		if city.getPopulation() < 3:
 				return False
 
-		if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
+		#if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
+		if city.isHasBuilding(gc.getInfoTypeForString("BUILDING_FEUERWEHR")):
 				if gc.getGame().getSorenRandNum(5, "very little chance for city fire with fire station") > 0:
 						return False
 
@@ -487,7 +488,7 @@ def canApplyHurricane1(argsList):
 
 		listBuildings = []
 		for iBuilding in range(gc.getNumBuildingInfos()):
-				if city.getNumRealBuilding(iBuilding) > 0 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
+				if city.isHasBuilding(iBuilding) and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
 						listBuildings.append(iBuilding)
 
 		return len(listBuildings) > 0
@@ -507,9 +508,9 @@ def applyHurricane1(argsList):
 		listCheapBuildings = []
 		listExpensiveBuildings = []
 		for iBuilding in range(gc.getNumBuildingInfos()):
-				if city.getNumRealBuilding(iBuilding) > 0 and gc.getBuildingInfo(iBuilding).getProductionCost() <= 100 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
+				if city.isHasBuilding(iBuilding) and gc.getBuildingInfo(iBuilding).getProductionCost() <= 100 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
 						listCheapBuildings.append(iBuilding)
-				if city.getNumRealBuilding(iBuilding) > 0 and gc.getBuildingInfo(iBuilding).getProductionCost() > 100 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
+				if city.isHasBuilding(iBuilding) and gc.getBuildingInfo(iBuilding).getProductionCost() > 100 and gc.getBuildingInfo(iBuilding).getProductionCost() > 0 and not isLimitedWonderClass(gc.getBuildingInfo(iBuilding).getBuildingClassType()):
 						listExpensiveBuildings.append(iBuilding)
 
 		# PAE
@@ -523,7 +524,7 @@ def applyHurricane1(argsList):
 		if listCheapBuildings:
 				for _ in range(iRange):
 						iBuilding = listCheapBuildings[gc.getGame().getSorenRandNum(len(listCheapBuildings), "Hurricane event cheap building destroyed")]
-						if city.getNumRealBuilding(iBuilding) > 0:
+						if city.isHasBuilding(iBuilding):
 								szBuffer = localText.getText("TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED", (gc.getBuildingInfo(iBuilding).getTextKey(), ))
 								CyInterface().addMessage(kTriggeredData.ePlayer, False, gc.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARDED", InterfaceMessageTypes.MESSAGE_TYPE_INFO,
 																				 gc.getBuildingInfo(iBuilding).getButton(), gc.getInfoTypeForString("COLOR_RED"), city.getX(), city.getY(), True, True)
@@ -535,7 +536,7 @@ def applyHurricane1(argsList):
 		if listExpensiveBuildings:
 				for _ in range(iRange):
 						iBuilding = listExpensiveBuildings[gc.getGame().getSorenRandNum(len(listExpensiveBuildings), "Hurricane event expensive building destroyed")]
-						if city.getNumRealBuilding(iBuilding) > 0:
+						if city.isHasBuilding(iBuilding):
 								szBuffer = localText.getText("TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED", (gc.getBuildingInfo(iBuilding).getTextKey(), ))
 								CyInterface().addMessage(kTriggeredData.ePlayer, False, gc.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BOMBARDED", InterfaceMessageTypes.MESSAGE_TYPE_INFO,
 																				 gc.getBuildingInfo(iBuilding).getButton(), gc.getInfoTypeForString("COLOR_RED"), city.getX(), city.getY(), True, True)
@@ -1694,7 +1695,8 @@ def getHelpClassicLiteratureDone3(argsList):
 		szCityName = u""
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iGreatLibrary):
+				#if loopCity.getNumRealBuilding(iGreatLibrary):
+				if loopCity.isHasBuilding(iGreatLibrary):
 						szCityName = loopCity.getNameKey()
 						break
 
@@ -1714,7 +1716,8 @@ def canApplyClassicLiteratureDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while(loopCity):
-				if (loopCity.getNumRealBuilding(iGreatLibrary)):
+				#if (loopCity.getNumRealBuilding(iGreatLibrary)):
+				if (loopCity.isHasBuilding(iGreatLibrary)):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -1732,7 +1735,8 @@ def applyClassicLiteratureDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iGreatLibrary):
+				#if loopCity.getNumRealBuilding(iGreatLibrary):
+				if loopCity.isHasBuilding(iGreatLibrary):
 						loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 						return
 
@@ -1900,7 +1904,8 @@ def canApplySportsLeagueDone3(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iZeus):
+				#if loopCity.getNumRealBuilding(iZeus):
+				if loopCity.isHasBuilding(iZeus):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -2156,7 +2161,8 @@ def getHelpWarChariotsDone2(argsList):
 		szCityName = u""
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				#if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
 						szCityName = loopCity.getNameKey()
 						break
 
@@ -2177,7 +2183,8 @@ def canApplyWarChariotsDone2(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				#if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
 						return True
 
 				(loopCity, iter) = player.nextCity(iter, False)
@@ -2196,7 +2203,8 @@ def applyWarChariotsDone2(argsList):
 
 		(loopCity, iter) = player.firstCity(False)
 		while loopCity:
-				if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				#if loopCity.getNumRealBuilding(iStall) and loopCity.getNumRealBuilding(iProvinzpalast):
+				if loopCity.isHasBuilding(iStall) and loopCity.isHasBuilding(iProvinzpalast):
 						loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 						# return # soll jede Stadt mit Provinzpalast und Stall bekommen
 
@@ -2368,7 +2376,8 @@ def canTriggerPreachingResearcherCity(argsList):
 		player = gc.getPlayer(argsList[1])
 		city = player.getCity(iCity)
 
-		if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GYMNASION")) or city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_SCHULE")):
+		#if city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_GYMNASION")) or city.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_SCHULE")):
+		if city.isHasBuilding(gc.getInfoTypeForString("BUILDING_GYMNASION")) or city.isHasBuilding(gc.getInfoTypeForString("BUILDING_SCHULE")):
 				return True
 		return False
 
@@ -3911,7 +3920,8 @@ def canTriggerBordell(argsList):
 		pPlayer = gc.getPlayer(argsList[1])
 		iCity = argsList[2]
 		pCity = pPlayer.getCity(iCity)
-		if pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_BORDELL")): return False
+		#if pCity.getNumRealBuilding(gc.getInfoTypeForString("BUILDING_BORDELL")): return False
+		if pCity.isHasBuilding(gc.getInfoTypeForString("BUILDING_BORDELL")): return False
 		# Tech Check muss sein, weil dieses Event direkt im EventManager ausgeführt wird und es sonst immer startet
 		if not gc.getTeam(pPlayer.getTeam()).isHasTech(gc.getInfoTypeForString("TECH_SYNKRETISMUS")): return False
 		return True

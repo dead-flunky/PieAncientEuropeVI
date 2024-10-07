@@ -1158,16 +1158,16 @@ def getCitySaleableGoods(pCity, iBuyer):
 								if eBonus != -1 and eBonus not in lGoods and eBonus not in L.LBonusUntradeable:
 										# if CvUtil.hasBonusIgnoreFreeBonuses(pCity, eBonus):
 										if pLoopPlot.isCity() or eImprovement != -1 and gc.getImprovementInfo(eImprovement).isImprovementBonusMakesValid(eBonus):
-												if iBuyer == -1 or _calculateBonusBuyingPrice(eBonus, iBuyer, iCityOwner) <= iMaxPrice:  # Max price
-														lGoods.append(eBonus)
+												#if iBuyer == -1 or _calculateBonusBuyingPrice(eBonus, iBuyer, iCityOwner) <= iMaxPrice:  # Max price
+												lGoods.append(eBonus)
 
 		iMaxNumBuildings = gc.getNumBuildingInfos()
 		for iBuilding in range(iMaxNumBuildings):  # check buildings
 				if pCity.isHasBuilding(iBuilding):
 						eBonus = gc.getBuildingInfo(iBuilding).getFreeBonus()
 						if eBonus != -1 and eBonus not in lGoods and eBonus not in L.LBonusUntradeable:  # and CvUtil.hasBonusIgnoreFreeBonuses(pCity, eBonus):
-								if iBuyer == -1 or _calculateBonusBuyingPrice(eBonus, iBuyer, iCityOwner) <= iMaxPrice:  # Max price
-										lGoods.append(eBonus)
+								#if iBuyer == -1 or _calculateBonusBuyingPrice(eBonus, iBuyer, iCityOwner) <= iMaxPrice:  # Max price
+								lGoods.append(eBonus)
 		return lGoods
 
 # Returns list of civs iPlayer can trade with (has met and peace with). List always includes iPlayer himself.
