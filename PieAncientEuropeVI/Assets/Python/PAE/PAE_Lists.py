@@ -35,7 +35,6 @@ LBonusLuxury = []  # List of bonuses which may create trade routes
 LBonusRarity = []  # List of bonuses which may create trade routes
 LBonus4Units = []  # List of bonus for better AI attitude
 LUnitWarAnimals = []
-LUnitDomesticated = []
 LUnitLootLessSeaUnits = []
 LUnitCanBeDomesticated = []
 LUnitWildAnimals = []
@@ -58,6 +57,7 @@ LCivPirates = []
 LCivPartherschuss = []
 LUnitPartherschuss = []
 LKeilUnits = []
+LNoSchildwallUnitClasses = []
 LNoSchildwallUnits = []
 LDrillUnits = []
 LTestudoUnits = []
@@ -143,7 +143,6 @@ def init():
 		global LBonusRarity
 		global LBonus4Units
 		global LUnitWarAnimals
-		global LUnitDomesticated
 		global LUnitLootLessSeaUnits
 		global LUnitCanBeDomesticated
 		global LUnitWildAnimals
@@ -166,6 +165,7 @@ def init():
 		global LCivPartherschuss
 		global LUnitPartherschuss
 		global LKeilUnits
+		global LNoSchildwallUnitClasses
 		global LNoSchildwallUnits
 		global LDrillUnits
 		global LTestudoUnits
@@ -261,12 +261,8 @@ def init():
 				gc.getInfoTypeForString("UNIT_KAMPFHUND_BRITEN"),
 				gc.getInfoTypeForString("UNIT_BURNING_PIGS")
 		]
-		LUnitDomesticated = [
-				gc.getInfoTypeForString("UNIT_HORSE"),
-				gc.getInfoTypeForString("UNIT_CAMEL"),
-				gc.getInfoTypeForString("UNIT_ELEFANT")
-		]
 		LUnitCanBeDomesticated = [
+				gc.getInfoTypeForString("UNIT_ESEL"),
 				gc.getInfoTypeForString("UNIT_HORSE"),
 				gc.getInfoTypeForString("UNIT_CAMEL"),
 				gc.getInfoTypeForString("UNIT_ELEFANT")
@@ -474,13 +470,17 @@ def init():
 				gc.getInfoTypeForString("UNIT_HEAVY_HORSEMAN"),
 				gc.getInfoTypeForString("UNIT_CAMEL_CATAPHRACT")
 		]
+		LNoSchildwallUnitClasses = [
+				gc.getInfoTypeForString("UNITCLASS_WARRIOR"),
+				gc.getInfoTypeForString("UNITCLASS_AXEWARRIOR"),
+				gc.getInfoTypeForString("UNITCLASS_WURFAXT"),
+				gc.getInfoTypeForString("UNITCLASS_KURZSCHWERT"),
+				gc.getInfoTypeForString("UNITCLASS_LIGHT_SPEARMAN"),
+				gc.getInfoTypeForString("UNITCLASS_BEGLEITHUND"),
+				gc.getInfoTypeForString("UNITCLASS_KAMPFHUND"),
+				gc.getInfoTypeForString("UNITCLASS_BURNING_PIGS")
+		]
 		LNoSchildwallUnits = [
-				gc.getInfoTypeForString("UNIT_WARRIOR"),
-				gc.getInfoTypeForString("UNIT_KURZSCHWERT"),
-				gc.getInfoTypeForString("UNIT_KRUMMSAEBEL"),
-				gc.getInfoTypeForString("UNIT_FALCATA_IBERIA"),
-				gc.getInfoTypeForString("UNIT_LIGHT_SPEARMAN"),
-				gc.getInfoTypeForString("UNIT_AXEWARRIOR"),
 				gc.getInfoTypeForString("UNIT_AXEMAN"),
 				gc.getInfoTypeForString("UNIT_BERSERKER_GERMAN"),
 				gc.getInfoTypeForString("UNIT_CELTIC_GALLIC_WARRIOR"),

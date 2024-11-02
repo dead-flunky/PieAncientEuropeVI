@@ -12,48 +12,48 @@
 		<Tag>TXT_KEY_AQUITANE_ADJECTIVE</Tag>
 		<English>Aquitainian</English>
 		<French>
-			<Text>aquitain:aquitaine:aquitains:aquitaines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
+<Text>aquitain:aquitaine:aquitains:aquitaines</Text>
+<Gender>Male:Female:Male:Female</Gender>
+<Plural>0:0:1:1</Plural>
 		</French>
 		<German>
-			<Text>Aquitanisch:aquitanischen:aquitanische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
+<Text>Aquitanisch:aquitanischen:aquitanische</Text>
+<Gender>Neuter:Neuter:Neuter</Gender>
+<Plural>0:0:0</Plural>
 		</German>
 		<Italian>
-			<Text>d'Aquitania</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>d'Aquitania</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>aquitano:aquitana:aquitanos:aquitanas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
+<Text>aquitano:aquitana:aquitanos:aquitanas</Text>
+<Gender>Male:Female:Male:Female</Gender>
+<Plural>0:0:1:1</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AQUITANE_SHORT_DESC</Tag>
 		<English>Aquitaine</English>
 		<French>
-			<Text>Aquitaine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Aquitaine</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Aquitanien</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
+<Text>Aquitanien</Text>
+<Gender>Neuter</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Aquitania</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Aquitania</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Aquitania</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Aquitania</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
@@ -85,7 +85,7 @@
 		<English>Created by JohnDay![NEWLINE][NEWLINE]Greece 1200 before Christ. The Mycenaean culture has been destroyed and the Greek Dark Ages begin. Isolated city-states (Polis) get formed and fight for survival against barbaric neighbor cities. Choose one of the big poleis and try to get Greece under control.</English>
 		<French>Cr&#233;e par JohnDay![NEWLINE][NEWLINE]La Gr&#232;ce, 1200 avant J.-C. La culture myc&#233;nienne s'effondre, provoquant le d&#233;but d'un &#226;ge de t&#233;n&#233;bres pour la Gr&#232;ce. Des cit&#233;s-&#233;tats isol&#233;es voient le jour et combattent leur voisines barbares pour leur survie. Choisissez une des puissantes Poleis et tentez d'asseoir votre influence sur la Gr&#232;ce.</French>
 		<German>Erstellt von JohnDay![NEWLINE][NEWLINE]Griechenland 1200 vor Christus. Die mykenische Kultur ist zerst&#246;rt und es beginnt f&#252;r Griechenland das Dunkle Zeitalter. Vereinzelte Stadtstaaten (Polis) bilden sich und ringen um das &#220;berleben gegen barbarische Nachbarst&#228;dte. W&#228;hle eine der gro&#223;en Poleis und versuche Griechenland unter deine Kontrolle zu bringen.</German>
-		<Italian>Created by JohnDay![NEWLINE][NEWLINE]Greece 1200 before Christ. The Mycenaean culture has been destroyed and the Greek Dark Ages begin. Isolated city-states (Polis) get formed and fight for survival against barbaric neighbor cities. Choose one of the big poleis and try to get Greece under control.</Italian>
+		<Italian>Creato da JohnDay![NEWLINE][NEWLINE]Grecia 1200 a.C. La cultura micenea viene distrutta e per la Grecia iniziano i secoli bui. Si formano citt&#224;-stato isolate (polis) che lottano per la sopravvivenza contro le barbare citt&#224; vicine. Scegli una delle poleis maggiori e prova a portare la Grecia sotto il tuo controllo.</Italian>
 		<Spanish>&#161;Creado por JohnDay![NEWLINE][NEWLINE]Grecia, 1200 antes de Cristo. La cultura mic&#233;nica ha sido destruida y la edad oscura griega ha comenzado. Las ciudades-estado (polis) se han formado y luchan por su supervivencia contra las ciudades vecinas b&#225;rbaras. Escoge una de las grandes polis e intenta tomar toda Grecia bajo tu control.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -108,48 +108,48 @@
 		<Tag>TXT_KEY_CALLAECIA_ADJECTIVE</Tag>
 		<English>Callaecian</English>
 		<French>
-			<Text>gallaeciain:gallaeciaine:gallaeciains:gallaeciaines</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
+<Text>gallaeciain:gallaeciaine:gallaeciains:gallaeciaines</Text>
+<Gender>Male:Female:Male:Female</Gender>
+<Plural>0:0:1:1</Plural>
 		</French>
 		<German>
-			<Text>callaecianisch:callaecianischen:callaecianische</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
+<Text>callaecianisch:callaecianischen:callaecianische</Text>
+<Gender>Neuter:Neuter:Neuter</Gender>
+<Plural>0:0:0</Plural>
 		</German>
 		<Italian>
-			<Text>d'Callaecia</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>d'Callaecia</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>gallaeciano:gallaeciana:gallaecianos:gallaecianas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
+<Text>gallaeciano:gallaeciana:gallaecianos:gallaecianas</Text>
+<Gender>Male:Female:Male:Female</Gender>
+<Plural>0:0:1:1</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CALLAECIA_SHORT_DESC</Tag>
 		<English>Callaecia</English>
 		<French>
-			<Text>Gallaecia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Gallaecia</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Galleacien</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
+<Text>Galleacien</Text>
+<Gender>Neuter</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Callaecia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Callaecia</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Gallaecia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+<Text>Gallaecia</Text>
+<Gender>Female</Gender>
+<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
@@ -211,7 +211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ABYSSINIA</Tag>
 		<English>Abyssinia</English>
-		<French>Abyssinie</French>
+		<French>Abyssins</French>
 		<German>Abyssinien</German>
 		<Italian>Abyssinia</Italian>
 		<Spanish>Abyssinia</Spanish>
@@ -219,7 +219,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ABYSSINIA_ADJECTIVE</Tag>
 		<English>Abyssinian</English>
-		<French>abyssinien</French>
+		<French><Text>abyssin:abyssine:abyssins:abyssines</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>Abyssinische</German>
 		<Italian>abbissino</Italian>
 		<Spanish>abyssinio</Spanish>
@@ -339,7 +339,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALEMANNEN_ADJECTIVE</Tag>
 		<English>Alemanni</English>
-		<French>Alamans</French>
+		<French><Text>alaman:alamane:alamans:alamanes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>Alemannen</German>
 		<Italian>Alemanni</Italian>
 		<Spanish>Alamanes</Spanish>
@@ -355,7 +355,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARMENIA_ADJECTIVE</Tag>
 		<English>Armenian</English>
-		<French>arm&#233;nien</French>
+		<French><Text>arm&#233;nien:arm&#233;nienne:arm&#233;niens:arm&#233;niennes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>armenische</German>
 		<Italian>armenio</Italian>
 		<Spanish>armenio</Spanish>
@@ -379,7 +379,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARMENIA_SHORT_DESC</Tag>
 		<English>Armenia</English>
-		<French>Arm&#233;nie</French>
+		<French>Arm&#233;niens</French>
 		<German>Armenien</German>
 		<Italian>Armenia</Italian>
 		<Spanish>Armenia</Spanish>
@@ -387,7 +387,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BACTRIA_ADJECTIVE</Tag>
 		<English>Bactrian</English>
-		<French>bactrien</French>
+		<French><Text>bactrien:bactrienne:bactriens:bactriennes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>baktrische</German>
 		<Italian>battriana</Italian>
 		<Spanish>bactriano</Spanish>
@@ -411,7 +411,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BACTRIA_SHORT_DESC</Tag>
 		<English>Bactria</English>
-		<French>Bactriane</French>
+		<French>Bactriens</French>
 		<German>Baktrien</German>
 		<Italian>Battria</Italian>
 		<Spanish>Bactria</Spanish>
@@ -419,7 +419,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BELGER</Tag>
 		<English>Belgi</English>
-		<French>Belge</French>
+		<French>Belges</French>
 		<German>Belger</German>
 		<Italian>Belgi</Italian>
 		<Spanish>Belgi</Spanish>
@@ -427,7 +427,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BELGER_ADJECTIVE</Tag>
 		<English>Belgian</English>
-		<French>belge</French>
+		<French><Text>belge:belge:belges:belges</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>belgische</German>
 		<Italian>belgi</Italian>
 		<Spanish>belgio</Spanish>
@@ -463,6 +463,22 @@
 		<German>brigantische</German>
 		<Italian>brigantino</Italian>
 		<Spanish>briganta</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CIMBRI_ADJECTIVE</Tag>
+		<English>Cimbrian</English>
+		<French><Text>cimbre:cimbre:cimbres:cimbres</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
+		<German>kimbrische</German>
+		<Italian>cimbri</Italian>
+		<Spanish>cimbri</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CIMBRI_LEADER</Tag>
+		<English>Boiorix the Cimbrian</English>
+		<French>Boiorix le Cimbre</French>
+		<German>Boiorix der Kimber</German>
+		<Italian>Boiorix il Cimbro</Italian>
+		<Spanish>Boiorix el cimbrio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CIMMERIANS_ADJECTIVE</Tag>
@@ -739,7 +755,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_JUTES_ADJECTIVE</Tag>
 		<English>Jutian</English>
-		<French>jutien</French>
+		<French><Text>jute:jute:jutes:jutes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>j&#252;tische</German>
 		<Italian>jutio</Italian>
 		<Spanish>jutio</Spanish>
@@ -747,7 +763,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_JUTES_LEADER</Tag>
 		<English>Boiorix of Jutland</English>
-		<French>Boiorix de Jutland</French>
+		<French>Boiorix des Jutes</French>
 		<German>Boiorix von J&#252;tland</German>
 		<Italian>Boiorix di Jutland</Italian>
 		<Spanish>Boiorix de Jutland</Spanish>
@@ -859,7 +875,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MARKOMANNI_ADJECTIVE</Tag>
 		<English>Marcomannian</English>
-		<French>marcomannien</French>
+		<French><Text>marcoman:marcomane:marcomans:marcomanes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>markomannische</German>
 		<Italian>marcomanno</Italian>
 		<Spanish>marcomanno</Spanish>
@@ -995,7 +1011,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PARISI_ADJECTIVE</Tag>
 		<English>Parisian</English>
-		<French>parisien</French>
+		<French><Text>parisii:parisii:parisii:parisii</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>Parisische</German>
 		<Italian>parisi</Italian>
 		<Spanish>parisi</Spanish>
@@ -1117,21 +1133,21 @@
 		<English>Pericles of Athens</English>
 		<French>P&#233;ricl&#232;s d'Ath&#232;nes</French>
 		<German>Perikles von Athen</German>
-		<Italian>Pericles of Athens</Italian>
+		<Italian>Pericle di Atene</Italian>
 		<Spanish>Pericles de Atenas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_POLIS_ATHEN2</Tag>
 		<English>Polis of Athens</English>
-		<French>Polis ath&#233;nienne</French>
+		<French>Polis d'Ath&#232;nes</French>
 		<German>Polis Athen</German>
-		<Italian>Polis of Athens</Italian>
+		<Italian>Polis di Atene</Italian>
 		<Spanish>Polis de Atenas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_POLIS_BYZANTION1</Tag>
 		<English>Byzas of Byzantion</English>
-		<French>Byzas de Byzantion</French>
+		<French>Byzas de Byzance</French>
 		<German>Byzas von Byzantion</German>
 		<Italian>Byzas di Byzantion</Italian>
 		<Spanish>Byzas de Bizantion</Spanish>
@@ -1309,13 +1325,13 @@
 		<English>Polis of Sparta</English>
 		<French>Polis spartiate</French>
 		<German>Polis Sparta</German>
-		<Italian>Polis of Sparta</Italian>
+		<Italian>Polis di Sparta</Italian>
 		<Spanish>Polis de Esparta</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_POLIS_THEBEN1</Tag>
 		<English>Epaminondas of Thebes</English>
-		<French>&#201;paminondas de Th&#232;bes</French>
+		<French>Epaminondas de Th&#232;bes</French>
 		<German>Epaminondas von Theben</German>
 		<Italian>Epaminonda di Tebe</Italian>
 		<Spanish>Epaminondas de Tebas</Spanish>
@@ -1451,7 +1467,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SUEBEN</Tag>
 		<English>Suebs</English>
-		<French>Souabes</French>
+		<French>Su&#232;ves</French>
 		<German>Sueben</German>
 		<Italian>Suebi</Italian>
 		<Spanish>Suevos</Spanish>
@@ -1459,7 +1475,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SUEBEN_ADJECTIVE</Tag>
 		<English>Suebian</English>
-		<French>souabien</French>
+		<French><Text>su&#232;ve:su&#232;ve:su&#232;ves:su&#232;ves</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>suebische</German>
 		<Italian>suebo</Italian>
 		<Spanish>suevo</Spanish>
@@ -1483,7 +1499,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SYRACUSAE_LEADER</Tag>
 		<English>Dionysios II of Syracuse</English>
-		<French>Dionysios II de Syracuse</French>
+		<French>Denys de Syracuse</French>
 		<German>Dionysios II von Syracus</German>
 		<Italian>Dionysios II di Syracusa</Italian>
 		<Spanish>Dionysios II de Siracusa</Spanish>
@@ -1491,7 +1507,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TURDETANI_ADJECTIVE</Tag>
 		<English>Turdetanic</English>
-		<French>turdetanique</French>
+		<French><Text>turd&#233;tan:turd&#233;tane:turd&#233;tans:turd&#233;tanes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>turdetanische</German>
 		<Italian>turdetano</Italian>
 		<Spanish>turdetano</Spanish>
@@ -1523,7 +1539,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VEDER_ADJECTIVE</Tag>
 		<English>Vedic</English>
-		<French>v&#233;dique</French>
+		<French><Text>veda:veda:vedas:vedas</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>vedische</German>
 		<Italian>vedico</Italian>
 		<Spanish>v&#233;dico</Spanish>
@@ -1538,18 +1554,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_300</Tag>
-		<English>The year 300 BC. A turning point in ancient history. After the death of Alexander the Great a war for his succession. has started in the East of the Mediterranean. During this war of the Diadochi whole empires will perish, but also new ones will arise. At the same time the rise of Rome begins in the West. But first it has to defend its position against the Greek colonies in southern Italy and the upcoming power of Carthage. Now it's up to you %s3_leader to stand the test of time and make your name immortal.[NEWLINE][NEWLINE]-) Play one of the five Diadochi and become the legitimate successor of Alexander the Great.[NEWLINE]-) Lead Rome to its historic size or prevent its rise with Carthage, Taranto or a northern European civilization.. </English>
-		<French>L'ann&#233;e 300 av. J.-C. est un point tournant dans l'histoire de l'antiquit&#233;. Suivant la mort d'Alexandre le Grand, une guerre pour la succession &#233;clate dans la r&#233;gion orientale de la M&#233;diterran&#233;e. Pendant ces guerres des diadoques, de nombreux empires p&#233;riront, mais &#224; l'avantage de nouveaux. Durant cette m&#234;me p&#233;riode, la mont&#233;e en puissance de la nation romaine comman&#231;ait dans l'est. N&#233;anmoins, Rome devra se d&#233;fendre contre les colonies grecques du sud de la botte italique ainsi que contre la nouvelle puissance punique. Ainsi, il est de ton devoir, %s3_leader, de maintenir la stabilit&#233; de ton empire et de faire jaillir d'humbles pr&#233;mices un tout puissant empire, ce qui imprimera dans les pens&#233;es des g&#233;n&#233;rations futures la gloire et la supr&#233;matie de ton nom. [NEWLINE][NEWLINE]-) Joue en tant qu'un diadoque et devient le successeur l&#233;gitime d'Alexandre le Grand.[NEWLINE]-) M&#232;ne Rome &#224; sa hauteur historique ou jugule Rome en tant que Carthage, Tarente ou la civilisation europ&#233;enne. </French>
+		<English>The year 300 BC. A turning point in ancient history. After the death of Alexander the Great a war for his succession. has started in the East of the Mediterranean. During this war of the Diadochi whole empires will perish, but also new ones will arise. At the same time the rise of Rome begins in the West. But first it has to defend its position against the Greek colonies in southern Italy and the upcoming power of Carthage. Now it's up to you %s3_leader to stand the test of time and make your name immortal.[NEWLINE][NEWLINE]-) Play one of the five Diadochi and become the legitimate successor of Alexander the Great.[NEWLINE]-) Lead Rome to its historic size or prevent its rise with Carthage, Taranto or a northern European civilization..</English>
+		<French>L'ann&#233;e 300 av. J.-C. est un point tournant dans l'histoire de l'antiquit&#233;. Suivant la mort d'Alexandre le Grand, une guerre pour la succession &#233;clate dans la r&#233;gion orientale de la M&#233;diterran&#233;e. Pendant ces guerres des diadoques, de nombreux empires p&#233;riront, mais &#224; l'avantage de nouveaux. Durant cette m&#234;me p&#233;riode, la mont&#233;e en puissance de la nation romaine comman&#231;ait dans l'est. N&#233;anmoins, Rome devra se d&#233;fendre contre les colonies grecques du sud de la botte italique ainsi que contre la nouvelle puissance punique. Ainsi, il est de ton devoir, %s3_leader, de maintenir la stabilit&#233; de ton empire et de faire jaillir d'humbles pr&#233;mices un tout puissant empire, ce qui imprimera dans les pens&#233;es des g&#233;n&#233;rations futures la gloire et la supr&#233;matie de ton nom. [NEWLINE][NEWLINE]-) Joue en tant qu'un diadoque et devient le successeur l&#233;gitime d'Alexandre le Grand.[NEWLINE]-) M&#232;ne Rome &#224; sa hauteur historique ou jugule Rome en tant que Carthage, Tarente ou la civilisation europ&#233;enne.</French>
 		<German>Wir schreiben das Jahr 300 v. Chr. Ein Wendepunkt in der Geschichte der Antike. Nach dem Tod Alexander des Gro&#223;en ist im Osten des Mittelmeers ein Kampf um seine Nachfolge entbrannt. W&#228;hrend der Diadochenkriege werden ganze Reiche untergehen, aber auch neue entstehen. Im Westen beginnt zeitgleich der Aufstieg Roms, das sich erstmals gegen die griechischen Kolonien in S&#252;ditalien und die aufstrebende Macht Karthagos behaupten muss. Nun ist es an euch %s3_leader, die Wirren der Zeit zu &#252;berstehen und euren Namen unsterblich zu machen.[NEWLINE][NEWLINE]-) Spiele einen von f&#252;nf Diadochen und werde der legitime Nachfolger Alexanders des Gro&#223;en.[NEWLINE]-) F&#252;hre Rom zu seiner historischen Gr&#246;&#223;e oder verhindere seinen Aufstieg mit Karthago, Tarent oder einem nordeurop&#228;ischen Volk.</German>
-		<Italian>The year 300 BC. A turning point in ancient history. After the death of Alexander the Great a war for his succession. has started in the East of the Mediterranean. During this war of the Diadochi whole empires will perish, but also new ones will arise. At the same time the rise of Rome begins in the West. But first it has to defend its position against the Greek colonies in southern Italy and the upcoming power of Carthage. Now it's up to you %s3_leader to stand the test of time and make your name immortal.[NEWLINE][NEWLINE]-) Play one of the five Diadochi and become the legitimate successor of Alexander the Great.[NEWLINE]-) Lead Rome to its historic size or prevent its rise with Carthage, Taranto or a northern European civilization.. </Italian>
-		<Spanish>A&#241;o 300 a. C. Un punto de inflexi&#243;n en la historia antigua. Despu&#233;s de la muerte de Alejandro Magno ha empezado una guerra por su sucesi&#243;n en el Este del Mediterr&#225;neo. Durante esta guerra de los Di&#225;docos imperios enteros caer&#225;n, pero otros nuevos emerger&#225;n. Al mismo tiempo el surgimiento de Roma comienza en el Oeste. Pero primero tiene que defender su posici&#243;n contra las colonias griegas en el sur de Italia y el poder emergente de Cartago. Ahora depende de ti %s3_leader resistir el paso del tiempo y hacer tu nombre inmortal.[NEWLINE][NEWLINE]-) Juega como uno de los cinco Di&#225;docos y convi&#233;rtete en el leg&#237;timo sucesor de Alejandro Magno.[NEWLINE]-) Lleva a Roma a su tama&#241;o hist&#243;rico o previene su surgimiento con Cartago, Tarento o una civilizaci&#243;n europea del norte.. </Spanish>
+		<Italian>Anno 300 a.C. Una svolta nella storia antica. Dopo la morte di Alessandro Magno, una guerra per la sua successione &#232; iniziata nell'Est del Mediterraneo. Durante questa guerra dei Diadochi, interi imperi periranno, ma ne sorgeranno anche di nuovi. Allo stesso tempo, l'ascesa di Roma inizia in Occidente. Ma prima deve difendere la sua posizione contro le colonie greche nell'Italia meridionale e l'imminente potenza di Cartagine. Ora tocca a te %s3_leader resistere alla prova del tempo e rendere immortale il tuo nome.[NEWLINE][NEWLINE]-) Gioca con uno dei cinque Diadochi e diventa il legittimo successore di Alessandro Magno.[NEWLINE]-) Guida Roma alle sue dimensioni storiche o impedisci la sua ascesa con Cartagine, Taranto o una civilt&#224; nordeuropea.</Italian>
+		<Spanish>A&#241;o 300 a. C. Un punto de inflexi&#243;n en la historia antigua. Despu&#233;s de la muerte de Alejandro Magno ha empezado una guerra por su sucesi&#243;n en el Este del Mediterr&#225;neo. Durante esta guerra de los Di&#225;docos imperios enteros caer&#225;n, pero otros nuevos emerger&#225;n. Al mismo tiempo el surgimiento de Roma comienza en el Oeste. Pero primero tiene que defender su posici&#243;n contra las colonias griegas en el sur de Italia y el poder emergente de Cartago. Ahora depende de ti %s3_leader resistir el paso del tiempo y hacer tu nombre inmortal.[NEWLINE][NEWLINE]-) Juega como uno de los cinco Di&#225;docos y convi&#233;rtete en el leg&#237;timo sucesor de Alejandro Magno.[NEWLINE]-) Lleva a Roma a su tama&#241;o hist&#243;rico o previene su surgimiento con Cartago, Tarento o una civilizaci&#243;n europea del norte..</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_480BC</Tag>
 		<English>480 BC. Persia rules the world. Only Greece defies the powerful Xerxes, who vowed to burn down Athens. It comes to the famous battle with the 300 Spartans at Thermopylae.[NEWLINE][NEWLINE]The map is very small, so everything is compressed. The ionic revolt in Asia Minor is anticipated to offer Greece a bigger base of power. [NEWLINE][NEWLINE]Will you follow the paths of history, or do you write your own. Let the adventure begin ...</English>
 		<French>480 avant JC. La Perse gouverne le monde. Seule la Gr&#232;ce d&#233;fie le puissant Xerx&#232;s, qui a jur&#233; de br&#251;ler Ath&#232;nes. La guerre commence avec la c&#233;l&#232;bre bataille des 300 spartiates aux Thermopyles.[NEWLINE][NEWLINE]La carte est tr&#232;s petite, donc tout est compress&#233;. La r&#233;volte des ioniens en Asie Mineure est une chance pour les grecs.[NEWLINE][NEWLINE]Suivrez-vous les chemins de l'Histoire, ou &#233;crirez-vous la v&#244;tre ? Que l'aventure commence ...</French>
-		<German>480 vor Christus. Persien beherrscht die Welt. Nur Griechenland trotzt dem allm&#228;chtigen Xerxes, der schwor Athen niederzubrennen. Es kommt zur ber&#252;hmten Schlacht mit den 300 Spartiaten bei den Thermophylen.[NEWLINE][NEWLINE]Die Europakarte ist sehr klein, daher ist alles stark komprimiert. Der ionische Aufstand in Kleinasien ist vorweg genommen, um Griechenland eine gr&#246;&#223;ere Machtbasis zu bieten. [NEWLINE][NEWLINE]Wirst du den Pfaden der Geschichte folgen, oder deine eigene schreiben. Lass das Abenteuer beginnen... </German>
-		<Italian>480 BC. Persia rules the world. Only Greece defies the powerful Xerxes, who vowed to burn down Athens. It comes to the famous battle with the 300 Spartans at Thermopylae.[NEWLINE][NEWLINE]The map is very small, so everything is compressed. The ionic revolt in Asia Minor is anticipated to offer Greece a bigger base of power. [NEWLINE][NEWLINE]Will you follow the paths of history, or do you write your own. Let the adventure begin ...</Italian>
+		<German>480 vor Christus. Persien beherrscht die Welt. Nur Griechenland trotzt dem allm&#228;chtigen Xerxes, der schwor Athen niederzubrennen. Es kommt zur ber&#252;hmten Schlacht mit den 300 Spartiaten bei den Thermophylen.[NEWLINE][NEWLINE]Die Europakarte ist sehr klein, daher ist alles stark komprimiert. Der ionische Aufstand in Kleinasien ist vorweg genommen, um Griechenland eine gr&#246;&#223;ere Machtbasis zu bieten. [NEWLINE][NEWLINE]Wirst du den Pfaden der Geschichte folgen, oder deine eigene schreiben. Lass das Abenteuer beginnen...</German>
+		<Italian>480 a.C. La Persia governa il mondo. Solo la Grecia sfida il potente Serse, che giur&#242; di bruciare Atene. Si arriva alla famosa battaglia con i 300 Spartani alle Termopili.[NEWLINE][NEWLINE]La mappa &#232; molto piccola, quindi tutto &#232; compresso. Si prevede che la rivolta ionica in Asia Minore offrir&#224; alla Grecia una base di potere pi&#249; grande.[NEWLINE][NEWLINE]Seguirai i sentieri della storia o ne scriverai uno tuo? Che l'avventura abbia inizio...</Italian>
 		<Spanish>480 a.C. Persia gobierna el mundo. S&#243;lo Grecia desaf&#237;a al poderoso Jerjes, quien prometi&#243; arrasar Atenas. Acontecer&#225; la famosa batalla con los 300 espartanos en las Term&#243;pilas.[NEWLINE][NEWLINE]El mapa es muy peque&#241;o, por lo que todo est&#225; comprimido. La revoluci&#243;n j&#243;nica en Asia Menor se espera que ofrezca a Grecia una mayor base de poder.[NEWLINE][NEWLINE]&#191;Seguir&#225;s el camino de las historia, o escribir&#225;s el tuyo propio? Que la aventura comience...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1557,7 +1573,7 @@
 		<English>It's the year 1200 BC. Kronus is overthrown, the Mycenean culture destroyed and for Greece the Dark Age begins. The sea peoples, this mysterious people of whom no one really knows where they come from, terrify the coasts. In this dangerous situation, seize the power of your polis (community) and lead them to real greatness.[NEWLINE]Pythia, the oracle of Delphi itself, told you and you also sacrified to Gaia (the great earthmother). Zeus looks down at you, smiling. This is the hour, this is the place. The gods themselves have made you a leader.[NEWLINE]Your loving people are at first surrounded by barbarian neighbors, who will do everything they can to sacrifice you to Ares, the god of war. Take the hand of Pallas Athena (goddess of wisdom, strategy and combat) and the sword in this difficult hour, to widen your territory. Unleash the land around you with care and cunning. First, take the cities of the barbarians around you to enlarge your empire. Be a commander, but also an architect, for not all barbarians must be compelled to comprehend the blessing to flourish under the protection of your culture. Research new knowledge, explore new techniques for war, and do not neglect peace. Combine yourself with other great Greek civilizations you are going to encounter, or lead unmerciful war against them. Therefore, even the gods of Olympus are fighting for you, will you succeed in getting Greece under your control?</English>
 		<French>Nous sommes en 1200 av. J.-C. Kronus est d&#233;tr&#244;n&#233;, la culture myc&#233;nienne an&#233;antie et une p&#233;riode sombre s'ouvre pour la Gr&#232;ce. Les myst&#233;rieux peuples de la mer, dont le secret de l'origine est ignor&#233; de tous, terrorisent les habitants des c&#244;tes. Profitez de ces menaces pour prendre le pouvoir sur votre polis (communaut&#233;) et conduisez-la &#224; la vraie grandeur.[NEWLINE]La pythie, l'oracle de Delphes elle-m&#234;me vous l'a pr&#233;dit, et vous avez sacrifi&#233; &#224; Ga&#239;a (la divine Terre-M&#232;re). Zeus en personne vous jauge avec approbation du haut de l'Olympe. En ce lieu, votre heure de gloire est arriv&#233;e, les dieux vous ayant d&#233;sign&#233; pour cette t&#226;che.[NEWLINE]Votre peuple bien-aim&#233; est cern&#233; par leurs barbares voisins qui feront tout pour vous sacrifier &#224; Ar&#232;s, le dieu de la guerre. Laissez-vous guider par la main de Pallas Ath&#233;na (d&#233;esse de la sagesse, de la strat&#233;gie et du combat) et par le glaive pour &#233;tendre votre territoire pas &#224; pas, avec adresse et clairvoyance. Emparez-vous en premier des villes barbares les plus proches pour les ajouter &#224; votre empire. Soyez un grand capitaine, mais aussi un b&#226;tisseur, car prosp&#233;rer sous l'influence de votre culture sera une b&#233;n&#233;diction dont tous les barbares n'auront pas besoin d'&#234;tre convaincu par la force. Instaurez de nouveaux savoirs, cr&#233;ez de nouvelles m&#233;thodes de guerre et ne n&#233;gligez pas la paix. Alliez-vous aux autres civilisations majeures que vous rencontrerez en Gr&#232;ce ou combattez-les sans rel&#226;che. Ainsi, les dieux m&#234;mes se battront pour vos desseins. Parviendrez-vous &#224; r&#233;gner sur l'ensemble de la Gr&#232;ce?</French>
 		<German>Wir schreiben das Jahr 1200 vor Christus. Kronus ist gest&#252;rzt, die mykenische Kultur zerst&#246;rt und es beginnt f&#252;r Griechenland das Dunkle Zeitalter. Die Seev&#246;lker, dieses Geheimnis umwobene Volk von dem niemand wirklich wei&#223; woher sie kommen, terrorisieren die K&#252;sten. Ergreife in dieser gef&#228;hrlichen Situation die Macht in deiner Polis (Gemeinschaft) und f&#252;hre sie zur wahren Gr&#246;&#223;e. [NEWLINE]Die Pythia-das Orakel von Delphi selbst weissagte dir und der Gaia (der gro&#223;en Erdmutter) hast du geopfert. Zeus selbst schaut l&#228;chelnd auf dich herab. Dies ist die Stunde, dies ist der Ort. Die G&#246;tter selbst haben dich zum Anf&#252;hrer bestimmt. [NEWLINE]Dein dich liebendes Volk ist zun&#228;chst allein von barbarischen Nachbarn umgeben, die alles daran setzen werden es Ares, dem Gott des Krieges zu opfern. Ergreife in dieser schweren Stunde die Hand der Pallas Athene (G&#246;ttin der Weisheit, der Strategie und des Kampfes) und das Schwert, um dein Staatsgebiet zun&#228;chst umsichtig zu erweitern. Erschlie&#223;e das Land um dich herum mit Bedacht und List. Nimm zuerst die St&#228;dte der Barbaren um dich herum ein, um dein Reich zu vergr&#246;&#223;ern. Sei ein Feldherr, aber auch ein Architekt, denn nicht alle Barbaren m&#252;ssen dazu gezwungen werden zu begreifen, was es f&#252;r ein Segen ist unter dem Schutz deiner Kultur zu erbl&#252;hen. Erschaffe neues Wissen, erforsche neue Techniken f&#252;r den Krieg und vernachl&#228;ssige dabei nicht den Frieden. Verb&#252;nde dich mit anderen gro&#223;en griechischen Zivilisationen auf die du treffen wirst, oder f&#252;hre unbarmherigen Krieg gegen sie. Deshalb siehe, selbst die G&#246;tter des Olymp streiten um dich, wird es dir gelingen ganz Griechenland unter deine Kontrolle zu bekommen?</German>
-		<Italian>It's the year 1200 BC. Kronus is overthrown, the Mycenean culture destroyed and for Greece the Dark Age begins. The sea peoples, this mysterious people of whom no one really knows where they come from, terrify the coasts. In this dangerous situation, seize the power of your polis (community) and lead them to real greatness.[NEWLINE]Pythia, the oracle of Delphi itself, told you and you also sacrified to Gaia (the great earthmother). Zeus looks down at you, smiling. This is the hour, this is the place. The gods themselves have made you a leader.[NEWLINE]Your loving people are at first surrounded by barbarian neighbors, who will do everything they can to sacrifice you to Ares, the god of war. Take the hand of Pallas Athena (goddess of wisdom, strategy and combat) and the sword in this difficult hour, to widen your territory. Unleash the land around you with care and cunning. First, take the cities of the barbarians around you to enlarge your empire. Be a commander, but also an architect, for not all barbarians must be compelled to comprehend the blessing to flourish under the protection of your culture. Research new knowledge, explore new techniques for war, and do not neglect peace. Combine yourself with other great Greek civilizations you are going to encounter, or lead unmerciful war against them. Therefore, even the gods of Olympus are fighting for you, will you succeed in getting Greece under your control?</Italian>
+		<Italian>L'anno &#232; il 1200 a.C. Crono viene rovesciato, la cultura micenea viene distrutta e per la Grecia iniziano i secoli bui. I Popoli del Mare, questo popolo misterioso di cui nessuno sa veramente da dove provenga, terrorizzano le coste. In questa situazione pericolosa, prendi il potere nella tua polis (comunit&#224;) e conducila verso la vera grandezza.[NEWLINE]La Pizia &#8211; l'oracolo di Delfi stesso ti ha profetizzato e tu hai sacrificato a Gaia (la grande madre terra). Zeus stesso ti guarda, sorridendo. Questa &#232; l'ora, questo &#232; il posto. Gli dei stessi ti hanno scelto come loro leader.[NEWLINE]Il tuo popolo, che ti ama, &#232; inizialmente circondato da vicini barbari che faranno tutto il possibile per sacrificarli ad Ares, il dio della guerra. In quest'ora difficile, prendi la mano di Pallade Atena (dea della saggezza, della strategia e della battaglia) e la spada per espandere prima con prudenza il tuo territorio nazionale. Sviluppa la terra intorno a te con cura e astuzia. Per prima cosa, cattura le citt&#224; barbare intorno a te per espandere il tuo impero. Sii un comandante, ma anche un architetto, perch&#233; non tutti i barbari hanno bisogno di essere costretti a capire quale benedizione sia prosperare sotto la protezione della propria cultura. Creare nuova conoscenza, ricercare nuove tecniche per la guerra e non trascurare la pace. Alleati con le altre principali civilt&#224; greche che incontrerai o intraprendi una guerra spietata contro di loro. Perci&#242; ecco che anche gli dei dell'Olimpo combattono per te. Riuscirai a tenere tutta la Grecia sotto il tuo controllo?</Italian>
 		<Spanish>Es el a&#241;o 1200 a.C. Kronos ha sido derrocado, la cultura mic&#233;nica destruida y para Grecia empieza la Edad Oscura. Los pueblos del mar, esta misteriosa gente del que nadie sabe de d&#243;nde vienen realmente, aterroriza las costas. En esta peligrosa situaci&#243;n, aprovecha el poder de tu polis (comunidad) y cond&#250;cela a la verdadera grandeza.[NEWLINE]Pythia, el propio or&#225;culo de Delfos, te lo dijo y tu tambi&#233;n sacrificaste a Gaia (la gran madre de la Tierra). Zeus te mira, sonriendo. Esta es la hora, este es el lugar. Los dioses mismo han hecho de ti un l&#237;der.[NEWLINE]Tu amado pueblo est&#225; primero rodeado por vecinos b&#225;rbaros, quienes har&#225;n cualquier cosa para sacrificaros por Ares, el dios de la guerra. Toma la mano de Pallas Athena (diosa de la sabidur&#237;a, estrategia y el combate) y la espada en esta hora dif&#237;cil, para ensanchar tu territorio. Libera la tierra que te rodea con cuidado y presteza. Primero, toma las ciudades b&#225;rbaras de tu alrededor para aumentar tu imperio. Se un comandante, pero tambi&#233;n un arquitecto, porque no todos los b&#225;rbaros deben ser obligados a comprender las bendiciones de florecer bajo la protecci&#243;n de tu cultura. Investiga nuevos conocimientos, explora nuevas t&#233;cnicas para la guerra, y no reniegues de la paz. Acuerda con las otras grandes civilizaciones griegas que te encontrar&#225;s, o desata una guerra despiadada contra ellos. Por lo tanto, incluso los dios del Olympo est&#225;n luchando para ti, &#191;tendr&#225;s &#233;xito en tomar toda Grecia bajo tu control?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1565,7 +1581,7 @@
 		<English>It is the year 5000 BC. Lead your people to the domination of the eastern Mediterranean area and create a civilization which stands the test of time!</English>
 		<French>Nous sommes en 5000 avant JC. Menez votre peuple vers la domination de la M&#233;diterran&#233;e et cr&#233;ez une civilisation qui restera dans l'histoire !</French>
 		<German>Wir schreiben das Jahr 5.000 vor Christus. F&#252;hre dein Volk zur Vorherrschaft im &#246;stlichen Mittelmeerraum und errichte eine Zivilisation, die die Zeit &#252;berdauern wird!</German>
-		<Italian>It is the year 5000 BC. Lead your people to the domination of the eastern Mediterranean area and create a civilization which stands the test of time!</Italian>
+		<Italian>L'anno &#232; il 5.000 a.C. Guida il tuo popolo al dominio nel Mediterraneo orientale e costruisci una civilt&#224; che resister&#224; alla prova del tempo!</Italian>
 		<Spanish>Es el a&#241;o 5000 a. C. Conduce a tu gente a la dominaci&#243;n de la zona del Mediterr&#225;neo oriental y &#161;crea una civilizaci&#243;n que resista el paso del tiempo!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1605,15 +1621,15 @@
 		<English>4.000 BC. The Ice Age has ended and the earth starts thawing. Your people has vested absolute power in you, hoping that you lead it through these cold times and achieve domination in this world.[NEWLINE]Every 32/40/45/52 rounds (fast/normal/epic/marathon), the following can happen:[NEWLINE]-) Ice floes in the sea disappear.[NEWLINE]-) Land tiles near the coast are flooded, claiming the lives of all units on this tile. Cities, hills, peaks and resource tiles are spared.[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains (75%) or grassland (25%).[NEWLINE]-) The seas in africa dry out slowly so the desert as we know it today arises.</English>
 		<French>4.000 av. La glaciation a fini et la terre commence &#224; d&#233;geler. Votre peuple vous a confi&#233; le pouvoir absolu esp&#233;rant que vous le dirigez par ces temps froids et arrivez &#224; la pr&#233;dominance du monde.[NEWLINE]Chaque 32/40/45/52 tours (rapide/normale/epique/marathon), les choses suivantes peuvent se passer:[NEWLINE]-) Des blocs de glace dans le mer disparaissent.[NEWLINE]-) Les r&#233;gions c&#244;ti&#232;res sont inond&#233;es en entrainant la mort de tous les units sur le terrain (des villes, collines, sommets et tuiles avec des ressources ne sont affect&#233;s).[NEWLINE]-) Glace change en toundra, toundra en plaines (75%) ou prairie (25%).[NEWLINE]-) Les lacs en Afrique ass&#232;chent lentement et le d&#233;sert que nous connaissons aujourd'hui se pose.</French>
 		<German>4.000 vor Christus. Die Eiszeit hat geendet und die Erde beginnt zu tauen. Euer Volk hat Euch die F&#252;hrung &#252;berlassen, um diese kalten Zeiten sicher zu &#252;berstehen und die Vorherrschaft zu erringen.[NEWLINE]Alle 32/40/45/52 Runden (Schnell/Normal/Episch/Marathon) kann folgendes geschehen:[NEWLINE]-) Eisschollen im Meer verschwinden.[NEWLINE]-) Landfelder an der K&#252;ste werden &#252;berflutet und rei&#223;en alle Einheiten auf diesem Feld mit in den Tod. St&#228;dte, H&#252;gel, Gipfel und Ressourcenfelder bleiben verschont.[NEWLINE]-) Eisfelder verwandeln sich in Tundra, Tundrafelder in Ebene (75%) oder Grasland (25%).[NEWLINE]-) Die Seen in Afrika trocknen langsam aus und die W&#252;ste, wie wir sie heute kennen, entsteht.</German>
-		<Italian>4.000 BC. The Ice Age has ended and the earth starts thawing. Your people has vested absolute power in you, hoping that you lead it through these cold times and achieve domination in this world.[NEWLINE]Every 32/40/45/52 rounds (fast/normal/epic/marathon), the following can happen:[NEWLINE]-) Ice floes in the sea disappear.[NEWLINE]-) Land tiles near the coast are flooded, claiming the lives of all units on this tile. Cities, hills, peaks and resource tiles are spared.[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains (75%) or grassland (25%).[NEWLINE]-) The seas in africa dry out slowly so the desert as we know it today arises.</Italian>
+		<Italian>4.000 a.C. L'era glaciale &#232; finita e la terra inizia a scongelarsi. Il tuo popolo ha investito in te il potere assoluto, sperando che tu lo guidi attraverso questi tempi freddi e ottenga il dominio in questo mondo.[NEWLINE]Ogni 32/40/45/52 round (veloce/normale/epico/maratona), pu&#242; accadere quanto segue:[NEWLINE]-) I banchi di ghiaccio nel mare scompaiono.[NEWLINE]-) Le tessere di terra vicino alla costa vengono allagate, mietendo vittime tra tutte le unit&#224; su questa tessera. Citt&#224;, colline, picchi e tessere di risorse vengono risparmiate.[NEWLINE]-) Le tessere di ghiaccio si trasformano in tundra, le tessere di tundra in pianure (75%) o praterie (25%).[NEWLINE]-) I mari in Africa si prosciugano lentamente, cos&#236; nasce il deserto come lo conosciamo oggi.</Italian>
 		<Spanish>4.000 a. C. La Edad de Hielo ha terminado y la Tierra empieza a descongelarse. Tu pueblo te ha conferido poder absoluto, esperando que los lideres a trav&#233;s de estos fr&#237;os tiempos y consigas la dominaci&#243;n en este mundo.[NEWLINE]Cada 32/40/45/52 turnos (r&#225;pido/normal/&#233;pica/marat&#243;n), puede ocurrir lo siguiente:[NEWLINE]-) Los t&#233;mpanos de hielo en el mar desaparecen.[NEWLINE]-) Las tierras cercanas a las costas son inundadas, cobr&#225;ndose las vidas de todas las unidades en esa casilla. Las ciudades, colinas, picos y las casillas de recursos son conservadas.[NEWLINE]-) Las casillas de hielo se convierten en tundra, las de tundra en llanura (75%) o pradera (25%).[NEWLINE]-) Los mares en &#193;frica se secan lentamente por lo que el desierto que conocemos hoy emerge.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DAWN_OF_MAN_ICE_AGE2</Tag>
-		<English>4.000 BC. The Ice Age has ended and the earth starts thawing. Your people has vested absolute power in you, hoping that you lead it through these cold times and achieve domination in this world.[NEWLINE]Every 32/40/45/52 rounds (fast/normal/epic/marathon), the following can happen:[NEWLINE]-) Ice floes in the sea disappear.[NEWLINE]-) Land tiles near the coast are flooded, claiming the lives of all units on this tile. Cities, hills, peaks and resource tiles are spared.[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains (75%) or grassland (25%).[NEWLINE]</English>
+		<English>4.000 BC. The Ice Age has ended and the earth starts thawing. Your people has vested absolute power in you, hoping that you lead it through these cold times and achieve domination in this world.[NEWLINE]Every 32/40/45/52 rounds (fast/normal/epic/marathon), the following can happen:[NEWLINE]-) Ice floes in the sea disappear.[NEWLINE]-) Land tiles near the coast are flooded, claiming the lives of all units on this tile. Cities, hills, peaks and resource tiles are spared.[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains (75%) or grassland (25%).</English>
 		<French>4.000 av. La glaciation a fini et la terre commence &#224; d&#233;geler. Votre peuple vous a confi&#233; le pouvoir absolu esp&#233;rant que vous le dirigez par ces temps froids et arrivez &#224; la pr&#233;dominance du monde.[NEWLINE]Chaque 32/40/45/52 tours (rapide/normale/epique/marathon), les choses suivantes peuvent se passer:[NEWLINE]-) Des blocs de glace dans le mer disparaissent.[NEWLINE]-) Les r&#233;gions c&#244;ti&#232;res sont inond&#233;es en entrainant la mort de tous les units sur le terrain (des villes, collines, sommets et tuiles avec des ressources ne sont affect&#233;s).[NEWLINE]-) Glace change en toundra, toundra en plaines (75%) ou prairie (25%).</French>
 		<German>4.000 vor Christus. Die Eiszeit hat geendet und die Erde beginnt zu tauen. Euer Volk hat Euch die F&#252;hrung &#252;berlassen, um diese kalten Zeiten sicher zu &#252;berstehen und die Vorherrschaft zu erringen.[NEWLINE]Alle 32/40/45/52 Runden (Schnell/Normal/Episch/Marathon) kann folgendes geschehen:[NEWLINE]-) Eisschollen im Meer verschwinden.[NEWLINE]-) Landfelder an der K&#252;ste werden &#252;berflutet und rei&#223;en alle Einheiten auf diesem Feld mit in den Tod. St&#228;dte, H&#252;gel, Gipfel und Ressourcenfelder bleiben verschont.[NEWLINE]-) Eisfelder verwandeln sich in Tundra, Tundrafelder in Ebene (75%) oder Grasland (25%).[NEWLINE]-) Die Seen in Afrika trocknen langsam aus und die W&#252;ste, wie wir sie heute kennen, entsteht.</German>
-		<Italian>4.000 BC. The Ice Age has ended and the earth starts thawing. Your people has vested absolute power in you, hoping that you lead it through these cold times and achieve domination in this world.[NEWLINE]Every 32/40/45/52 rounds (fast/normal/epic/marathon), the following can happen:[NEWLINE]-) Ice floes in the sea disappear.[NEWLINE]-) Land tiles near the coast are flooded, claiming the lives of all units on this tile. Cities, hills, peaks and resource tiles are spared.[NEWLINE]-) Ice tiles convert into tundra, tundra tiles into plains (75%) or grassland (25%).[NEWLINE]</Italian>
+		<Italian>4.000 a.C. L'era glaciale &#232; finita e la terra inizia a scongelarsi. Il tuo popolo ha investito in te il potere assoluto, sperando che tu lo guidi attraverso questi tempi freddi e ottenga il dominio in questo mondo.[NEWLINE]Ogni 32/40/45/52 round (veloce/normale/epico/maratona), pu&#242; accadere quanto segue:[NEWLINE]-) I banchi di ghiaccio nel mare scompaiono.[NEWLINE]-) Le tessere di terra vicino alla costa vengono allagate, mietendo vittime tra tutte le unit&#224; su questa tessera. Le citt&#224;, le colline, le vette e le tessere di risorse vengono risparmiate.[NEWLINE]-) Le tessere di ghiaccio si convertono in tundra, le tessere di tundra in pianure (75%) o praterie (25%).</Italian>
 		<Spanish>4.000 a. de C. La Edad de Hielo ha termino y la Tierra empieza a descongelarse. Tu pueblo te ha conferido poder absoluto, esperando que los lideres a trav&#233;s de estos fr&#237;os tiempos y consigas la dominaci&#243;n en este mundo.[NEWLINE]Cada 32/40/45/52 turnos (r&#225;pido/normal/&#233;pica/marat&#243;n), puede ocurrir lo siguiente:[NEWLINE]-) Los t&#233;mpanos de hielo en el mar desaparecen.[NEWLINE]-) Las tierras cercanas a las costas son inundadas, cobr&#225;ndose las vidas de todas las unidades en esa casilla. Las ciudades son conservadas.[NEWLINE]-) Las casillas de hielo se convierten en tundra, las de tundra en llanura (75%) o pradera (25%).</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1629,7 +1645,7 @@
 		<English>It's the year 5000 BC On fertile banks of the Nile the first foundations of a new civilization were set. But also on the coasts of the Eastern Mediterranean and the Aegean new civilizations are arising and in inland Anatolia another power heads to a glorious future. Now it's up to you %s3_leader to lead your subjects through the following centuries.[NEWLINE][NEWLINE]-) Egypt: Unite Upper und Lower Egypt and lead Egypt to its historical height.[NEWLINE]-) Nubians and Lybians: Descend on the Nile Valley and found your own dynasty of pharaohs.[NEWLINE]-) Hittites: Conquer Anatolia and prevent the rise of Egypt.[NEWLINE]-) Greeks and Macedonians: Become a hegemonic power in the Aegean and get ready for the campaign to Egypt.[NEWLINE]-) Phoenicians and Hebrews: Be careful not to be overrun by the neighboring Great Powers.</English>
 		<French>Nous sommes en 5000 avant JC. De nouvelles civilisations posent leurs premi&#232;res fondations sur les rives fertiles du Nil, le long des c&#244;tes de la M&#233;diterran&#233;e et en Anatolie. C'est &#224; vous %s3_leader de mener vos sujets vers la gloire &#224; travers les si&#232;cles ![NEWLINE][NEWLINE]-) Egyptiens : unissez la haute et la basse Egypte pour atteindre son extension historique[NEWLINE]-) Nubiens et libyens : prenez le contr&#244;le de la vall&#233;e du Nil et installez votre propre dynastie de pharaons[NEWLINE]-) Hittites: &#233;tendez-vous en Anatolie et limitez la puissance de l'Egypte[NEWLINE]-) Grecs et mac&#233;doniens : devenez la puissance dominante en Gr&#232;ce et pr&#233;parez-vous &#224; envahir l'Egypte[NEWLINE]-) Ph&#233;niciens et h&#233;breux : r&#233;sistez aux grandes puissances qui vous entourent</French>
 		<German>Wir schreiben das Jahr 5000 v. Chr. Am fruchtbaren Ufer des Nils wurden die ersten Grundsteine einer neuen Zivilisation gesetzt. Aber auch an den K&#252;sten des &#246;stlichen Mittelmeers und der &#196;g&#228;is entstehen neue Kulturen und im Innland Anatolien macht sich ein weiteres Volk auf den Weg in eine glorreiche Zukunft. Nun liegt es an euch %s3_leader, eure Untertanen durch die folgenden Jahrhunderte zu f&#252;hren.[NEWLINE][NEWLINE]-) &#196;gypten: Eine Ober- und Unter&#228;gypten und f&#252;hre &#196;gypten zur Hochkultur im &#246;stlichen Mittelmeerraum.[NEWLINE]-) Nubier und Libyer: Falle im Niltal ein und gr&#252;nde deine eigene Pharaonendynastie.[NEWLINE]-) Hethiter: Erobere Anatolien und mache den &#196;gyptern ihren Platz an der Sonne streitig.[NEWLINE]-) Griechen und Makedonen: Werde zur Hegemonialmacht in der &#196;g&#228;is und bereite dich auf den &#196;gyptenfeldzug vor.[NEWLINE]-) Ph&#246;nizier und Hebr&#228;er: Achte darauf nicht von den umliegenden Gro&#223;m&#228;chten &#252;berrannt zu werden.</German>
-		<Italian>It's the year 5000 BC On fertile banks of the Nile the first foundations of a new civilization were set. But also on the coasts of the Eastern Mediterranean and the Aegean new civilizations are arising and in inland Anatolia another power heads to a glorious future. Now it's up to you %s3_leader to lead your subjects through the following centuries.[NEWLINE][NEWLINE]-) Egypt: Unite Upper und Lower Egypt and lead Egypt to its historical height.[NEWLINE]-) Nubians and Lybians: Descend on the Nile Valley and found your own dynasty of pharaohs.[NEWLINE]-) Hittites: Conquer Anatolia and prevent the rise of Egypt.[NEWLINE]-) Greeks and Macedonians: Become a hegemonic power in the Aegean and get ready for the campaign to Egypt.[NEWLINE]-) Phoenicians and Hebrews: Be careful not to be overrun by the neighboring Great Powers.</Italian>
+		<Italian>L'anno &#232; il 5000 a.C. Sulle fertili rive del Nilo furono poste le prime pietre miliari di una nuova civilt&#224;. Ma nuove culture stanno emergendo anche sulle coste del Mediterraneo orientale e dell'Egeo, e nell'interno dell'Anatolia un altro popolo si sta avviando verso un futuro glorioso. Ora tocca a voi %s3_leaders guidare i vostri sudditi attraverso i secoli successivi.[NEWLINE][NEWLINE]-) Egitto: un Alto e Basso Egitto che portano l'Egitto alla civilt&#224; avanzata nel Mediterraneo orientale.[NEWLINE]-) Nubiani e Libici: invadi la valle del Nilo e fonda la tua dinastia faraonica.[NEWLINE]-) Ittiti: conquista l'Anatolia e sfida gli egiziani per il loro posto al sole.[NEWLINE]-) Greci e Macedoni: diventa la potenza egemonica nell'Egeo e preparati per la campagna d'Egitto.[NEWLINE]-) Fenici ed Ebrei: fate attenzione a non farvi sopraffare dalle grandi potenze circostanti.</Italian>
 		<Spanish>Es el a&#241;o 5000 a.C. Se han establecido en las f&#233;rtiles orillas del Nilo los primeros fundadores de una nueva civilizaci&#243;n. Pero tambi&#233;n en las costas del Mediterr&#225;neo Oriental y del Egeo est&#225;n emergiendo nuevas civilizaciones y en el interior de Anatolia otra potencia se dirige a un glorioso futuro. Ahora depende de ti %s3_leader llevar a tus s&#250;bditos a trav&#233;s de los siguientes siglos.[NEWLINE][NEWLINE]-) Egipto: Une el Bajo y el Alto Egipto y lleva a Egipto a su cumbre hist&#243;rica.[NEWLINE]-) Nubios y Libios: Invade el Valle del Nilo y funda tu propia dinast&#237;a de faraones.[NEWLINE]-) Hititas: Conquista Anatolia y previene el surgimiento de Egipto.[NEWLINE]-) Griegos y Macedonios: Convi&#233;rtete en una potencia hegem&#243;nica en el Egeo y prep&#225;rate para la campa&#241;a a Egipto.[NEWLINE]-) Fenicios y Hebreos: Ten cuidado de no ser invadidos por las Grandes Potencias vecinas.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1661,7 +1677,7 @@
 		<English>It's the year 800 BC. Your loving people are at first surrounded by barbarian neighbors, who will do everything they can to sacrifice you to Ares, the god of war. Take the hand of Pallas Athena (goddess of wisdom, strategy and combat) and the sword in this difficult hour, to widen your territory. Unleash the land around you with care and cunning. First, take the cities of the barbarians around you to enlarge your empire. Be a commander, but also an architect, for not all barbarians must be compelled to comprehend the blessing to flourish under the protection of your culture. Research new knowledge, explore new techniques for war, and do not neglect peace. Combine yourself with other great Greek civilizations you are going to encounter, or lead unmerciful war against them. Therefore, even the gods of Olympus are fighting for you, will you succeed in getting Greece under your control?</English>
 		<French>Nous sommes en 800 av. J.-C. Vos loyaux sujets n'ont pour voisins que des barbares qui feront tout pour vous sacrifier &#224; Ar&#232;s, le dieu de la guerre. Que la main de Pallas Ath&#233;na (d&#233;esse de la sagesse, de la strat&#233;gie et du combat) vous guide et que le fer vous taille un domaine en cette heure difficile. Tirez parti des terres environnantes avec discernement et finesse. Commencez par conqu&#233;rir les villes des barbares alentours pour agrandir votre empire. Commandez vos troupes, et b&#226;tissez d'impressionnants &#233;difices &#224; m&#234;me de persuader les barbares de s'&#233;panouir sous la protection de votre culture. Cr&#233;ez de nouvelles connaissances, recherchez de nouvelles techniques de guerre, sans pourtant n&#233;gligez la paix. Alliez-vous &#224; d'autres grandes civilisations grecques ou menez des guerres impitoyables. Alors les dieux eux-m&#234;mes se battront pour vous. R&#233;ussirez-vous &#224; gagner le contr&#244;le de toute la Gr&#232;ce?</French>
 		<German>Wir schreiben das Jahr 800 vor Christus. Dein dich liebendes Volk ist zun&#228;chst allein von barbarischen Nachbarn umgeben, die alles daran setzen werden es Ares, dem Gott des Krieges zu opfern. Ergreife in dieser schweren Stunde die Hand der Pallas Athene (G&#246;ttin der Weisheit, der Strategie und des Kampfes) und das Schwert, um dein Staatsgebiet zun&#228;chst umsichtig zu erweitern. Erschlie&#223;e das Land um dich herum mit Bedacht und List. Nimm zuerst die St&#228;dte der Barbaren um dich herum ein, um dein Reich zu vergr&#246;&#223;ern. Sei ein Feldherr, aber auch ein Architekt, denn nicht alle Barbaren m&#252;ssen dazu gezwungen werden zu begreifen, was es f&#252;r ein Segen ist unter dem Schutz deiner Kultur zu erbl&#252;hen. Erschaffe neues Wissen, erforsche neue Techniken f&#252;r den Krieg und vernachl&#228;ssige dabei nicht den Frieden. Verb&#252;nde dich mit anderen gro&#223;en griechischen Zivilisationen auf die du treffen wirst, oder f&#252;hre unbarmherigen Krieg gegen sie. Deshalb siehe, selbst die G&#246;tter des Olymp streiten um dich, wird es dir gelingen ganz Griechenland unter deine Kontrolle zu bekommen?</German>
-		<Italian>It's the year 800 BC. Your loving people are at first surrounded by barbarian neighbors, who will do everything they can to sacrifice you to Ares, the god of war. Take the hand of Pallas Athena (goddess of wisdom, strategy and combat) and the sword in this difficult hour, to widen your territory. Unleash the land around you with care and cunning. First, take the cities of the barbarians around you to enlarge your empire. Be a commander, but also an architect, for not all barbarians must be compelled to comprehend the blessing to flourish under the protection of your culture. Research new knowledge, explore new techniques for war, and do not neglect peace. Combine yourself with other great Greek civilizations you are going to encounter, or lead unmerciful war against them. Therefore, even the gods of Olympus are fighting for you, will you succeed in getting Greece under your control?</Italian>
+		<Italian>&#200; l'anno 800 a.C. Il tuo popolo amorevole &#232; inizialmente circondato da vicini barbari, che faranno di tutto per sacrificarti ad Ares, il dio della guerra. Prendi la mano di Pallade Atena (dea della saggezza, della strategia e del combattimento) e la spada in quest'ora difficile, per ampliare il tuo territorio. Scatena la terra intorno a te con cura e astuzia. Per prima cosa, prendi le citt&#224; dei barbari intorno a te per ampliare il tuo impero. Sii un comandante, ma anche un architetto, perch&#233; non tutti i barbari devono essere costretti a comprendere la benedizione di prosperare sotto la protezione della tua cultura. Ricerca nuove conoscenze, esplora nuove tecniche per la guerra e non trascurare la pace. Unisciti ad altre grandi civilt&#224; greche che incontrerai o conduci una guerra spietata contro di loro. Pertanto, anche gli dei dell'Olimpo stanno combattendo per te, riuscirai a mettere la Grecia sotto il tuo controllo?</Italian>
 		<Spanish>Es el a&#241;o 800 a.C. Tu amado pueblo est&#225; primero rodeado por vecinos b&#225;rbaros, quienes har&#225;n cualquier cosa para sacrificaros por Ares, el dios de la guerra. Toma la mano de Pallas Athena (diosa de la sabidur&#237;a, estrategia y el combate) y la espada en esta hora dif&#237;cil, para ensanchar tu territorio. Libera la tierra que te rodea con cuidado y presteza. Primero, toma las ciudades b&#225;rbaras de tu alrededor para aumentar tu imperio. Se un comandante, pero tambi&#233;n un arquitecto, porque no todos los b&#225;rbaros deben ser obligados a comprender las bendiciones de florecer bajo la protecci&#243;n de tu cultura. Investiga nuevos conocimientos, explora nuevas t&#233;cnicas para la guerra, y no reniegues de la paz. Acuerda con las otras grandes civilizaciones griegas que te encontrar&#225;s, o desata una guerra despiadada contra ellos. Por lo tanto, incluso los dios del Olympo est&#225;n luchando para ti, &#191;tendr&#225;s &#233;xito en tomar toda Grecia bajo tu control?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1677,7 +1693,7 @@
 		<English>PAE-Europa in the year 480 BC.</English>
 		<French>PAE-Europe en 480 avant JC.</French>
 		<German>PAE-Europa um das Jahr 480 vor Christus.</German>
-		<Italian>PAE-Europa in the year 480 BC.</Italian>
+		<Italian>PAE-Europa intorno all'anno 480 a.C.</Italian>
 		<Spanish>PAE-Europa en el a&#241;o 480 a.C.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1693,7 +1709,7 @@
 		<English>Pie's Ancient Europe-The Eastern Mediterranean</English>
 		<French>Pie's Ancient Europe-La M&#233;diterran&#233;e orientale</French>
 		<German>Pie's Ancient Europe-Das &#214;stliche Mittelmeer</German>
-		<Italian>Pie's Ancient Europe-The Eastern Mediterranean</Italian>
+		<Italian>Pie's Ancient Europe-Il Mediterraneo orientale</Italian>
 		<Spanish>Pie's Ancient Europe-El Mediterr&#225;neo oriental</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1757,7 +1773,7 @@
 		<English>Pie's Ancient Europe-The Peloponnesian War</English>
 		<French>Pie's Ancient Europe-La Guerre du P&#233;loponn&#232;se</French>
 		<German>Pie's Ancient Europe-Der Peloponnesische Krieg</German>
-		<Italian>Pie's Ancient Europe-The Peloponnesian War</Italian>
+		<Italian>Pie's Ancient Europe-La guerra del Peloponneso</Italian>
 		<Spanish>Pie's Ancient Europe-La guerra del Peloponeso</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1821,7 +1837,7 @@
 		<English>Since 233, the Hermunduri use a weak phase of the Romans for looting and destruction. The Emperor Severus Alexander and his mother, who sought a cowardly negotiated solution with the Germans, are swept out of the way. The officer, who was responsible for the training of new excavated troops for a campaign against the Germans, Maximinus Thrax, has now been proclaimed by the troops to the new Roman Emperor. He promises an increase in salae, gratuities (donations) and an amnesty for all disciplinary sanctions. The Legionaries by contrast hoping prey, retribution and an easy victory over the Germans. In the summer of 235 AD, a campaign of retaliation begins, deep into the Germanic settlements.[NEWLINE][NEWLINE]Lead the Romans and subdue all Germania... or be in charge of one of the Germanic tribes to stop Rome.</English>
 		<French>Profitant de la faiblesse romaine , les Hermondures pillent et saccagent depuis 233. L'empereur S&#233;v&#232;re Alexandre et sa m&#232;re, qui se d&#233;menaient l&#226;chement &#224; la recherche d'une solution diplomatique, ont &#233;t&#233; &#233;cart&#233;s. L'officier Maximin le Thrace, responsable de l'entra&#238;nement des troupes fra&#238;ches en vue de la campagne contre les Germains, a &#233;t&#233; couronn&#233; Maximin Ier par les soldats. Il promit une augmentation de la solde, davantage de gratifications sous forme de Donativa et une suspension des peines disciplinaires. Les l&#233;gionnaires esp&#233;raient pour leur part davantage de parts de butin, de repr&#233;sailles, et des victoires ais&#233;es sur les Germains. En 235 d&#233;buta la campagne de riposte, jusqu'aux coeurs des territoires peupl&#233;s par les Germains.[NEWLINE][NEWLINE]Soumettez la Germanie avec les Romains... ou optez pour leur barrer le chemin en commandant les tribus des Germains.</French>
 		<German>Seit 233 nutzen die Hermunduren eine schwache Phase der R&#246;mer f&#252;r Pl&#252;nderungen und Zerst&#246;rungen. Der Kaiser Severus Alexander und seine Mutter, die mit den Germanen eine feige Verhandlungsl&#246;sung anstrebten, sind aus dem Weg ger&#228;umt. Der Offizier, der f&#252;r die Ausbildung der neu ausgehobenen Truppen f&#252;r einen Feldzug gegen die Germanen zust&#228;ndig war, Maximinus Thrax, ist von den Truppen zum neuen r&#246;mischen Kaiser ausgerufen worden. Er verspricht eine Erh&#246;hung des Solds, Sonderzuwendungen (Donativen) und eine Amnestie bei allen Disziplinarstrafen. Die Legion&#228;re hingegen erhoffen sich Beute, Vergeltung und einen leichten Sieg &#252;ber die Germanen. Im Sommer 235 nach Christus beginnt nun ein Vergeltungsfeldzug, bis tief in die germanischen Siedlungsgebiete hinein.[NEWLINE][NEWLINE]F&#252;hre die R&#246;mer und unterwerfe ganz Germanien... oder bestimme &#252;ber einen der germanischen St&#228;mme, um Rom daran zu hindern.</German>
-		<Italian>Since 233, the Hermunduri use a weak phase of the Romans for looting and destruction. The Emperor Severus Alexander and his mother, who sought a cowardly negotiated solution with the Germans, are swept out of the way. The officer, who was responsible for the training of new excavated troops for a campaign against the Germans, Maximinus Thrax, has now been proclaimed by the troops to the new Roman Emperor. He promises an increase in salae, gratuities (donations) and an amnesty for all disciplinary sanctions. The Legionaries by contrast hoping prey, retribution and an easy victory over the Germans. In the summer of 235 AD, a campaign of retaliation begins, deep into the Germanic settlements.[NEWLINE][NEWLINE]Lead the Romans and subdue all Germania... or be in charge of one of the Germanic tribes to stop Rome.</Italian>
+		<Italian>Dal 233, gli Ermunduri sfruttano una fase debole dei Romani per saccheggi e distruzioni. L'imperatore Severo Alessandro e sua madre, che cercavano una soluzione negoziata e codarda con i Germani, vengono spazzati via. L'ufficiale, che era responsabile dell'addestramento delle nuove truppe dissotterrate per una campagna contro i Germani, Massimino Trace, &#232; stato ora proclamato dalle truppe nuovo imperatore romano. Promette un aumento di salae, gratifiche (donazioni) e un'amnistia per tutte le sanzioni disciplinari. I Legionari al contrario sperano in prede, punizioni e una facile vittoria sui Germani. Nell'estate del 235 d.C., inizia una campagna di rappresaglia, in profondit&#224; negli insediamenti germanici.[NEWLINE][NEWLINE]Guida i Romani e sottometti tutta la Germania... o sii a capo di una delle trib&#249; germaniche per fermare Roma.</Italian>
 		<Spanish>Desde el 233, los ermunduri utilizan una etapa d&#233;bil de los romanos para saquear y destruir. El emperador Alejandro Severo y su madre, quienes buscaron una cobarde soluci&#243;n negociado con los germanos, han sido asesinados. El oficial, quien fue el responsable del entrenamiento de nuevas tropas reclutadas para una campa&#241;a contra los germanos, Maximino el Tracio, ha sido ahora proclamado por las tropas como el nuevo emperador romano. El promete un aumento de salario, propinas (donaciones) y una amnist&#237;a para todas las sanciones disciplinarias. Los legionarios por contra desean cazar, castigar y una f&#225;cil victoria sobre los germanos. En el verano del 235 d.C., una campa&#241;a de represalia empieza, en lo m&#225;s profundo de los asentamientos germanos.[NEWLINE][NEWLINE]Lidera a los romanos y subyuga a toda Germania... o se en cambio una de las tribus germanas que parar&#225;n a Roma.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1877,7 +1893,7 @@
 		<English>Created by Inex![NEWLINE]Arranged by Keinpferd and Thorgal![NEWLINE]A really big map (WxH: 101x67) for a veritable great Imperium Romanum.</English>
 		<French>Carte cr&#233;&#233;e par Inex ![NEWLINE]Arrang&#233;e par Keinperfd et Thorgal ![NEWLINE]Une tr&#232;s grand carte (LxH : 101x67) pour un v&#233;ritable grand empire romain.</French>
 		<German>Erstellt von Inex![NEWLINE]Bearbeitet von Keinpferd und Thorgal![NEWLINE]Eine sehr gro&#223;e Karte (BxH: 101x67) f&#252;r ein wahrhaft gro&#223;es Imperium Romanum.</German>
-		<Italian>Created by Inex![NEWLINE]Arranged by Keinpferd and Thorgal![NEWLINE]A really big map (WxH: 101x67) for a veritable great Imperium Romanum.</Italian>
+		<Italian>Creato da Inex![NEWLINE]Organizzato da Keinpferd e Thorgal![NEWLINE]Una mappa davvero grande (LxA: 101x67) per un vero e proprio grande Imperium Romanum.</Italian>
 		<Spanish>&#161;Creado por Inex![NEWLINE]&#161;Adaptado por Keinpferd y Thorgal![NEWLINE]Un mapa realmente grande (Ancho por Alto: 101x67) para un Imperio Romano de verdad.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1931,7 +1947,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOTEN_ADJECTIVE</Tag>
 		<English>Gothic</English>
-		<French>gothique</French>
+		<French><Text>goth:gothe:goths:gothes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>gotische</German>
 		<Italian>gotico</Italian>
 		<Spanish>g&#243;tico</Spanish>
@@ -2035,7 +2051,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ORODES</Tag>
 		<English>Orodes of Parthia</English>
-		<French>Orod&#232;s de Parthia</French>
+		<French>Orod&#232;s de Parthie</French>
 		<German>Orodes von Parthien</German>
 		<Italian>Orode di Partia</Italian>
 		<Spanish>Orodes de Partia</Spanish>
@@ -2571,7 +2587,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LUSITAN_ADJECTIVE</Tag>
 		<English>Lusitanian</English>
-		<French>lusitanien</French>
+		<French><Text>lusitanien:lusitanienne:lusitaniens:lusitaniennes</Text><Gender>Male:Male:Female:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>lusitanische</German>
 		<Italian>lusitano</Italian>
 		<Spanish>lusitano</Spanish>
@@ -2579,7 +2595,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LUSITAN_LEADER</Tag>
 		<English>Viriathus the Lusitanian</English>
-		<French>Viriathus le lusitanien</French>
+		<French>Viriathus le Lusitanien</French>
 		<German>Viriathus der Lusitaner</German>
 		<Italian>Viriathus il Lusitan</Italian>
 		<Spanish>Viriathus el Lustian</Spanish>
@@ -2587,7 +2603,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LUSITAN_SHORT_DESC</Tag>
 		<English>Lusitania</English>
-		<French>Lusitanie</French>
+		<French>Lusitaniens</French>
 		<German>Lusitanien</German>
 		<Italian>Lusitania</Italian>
 		<Spanish>Lusitania</Spanish>
@@ -2859,7 +2875,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_OSTGOTEN_ADJECTIVE</Tag>
 		<English>Ostrogothic</English>
-		<French>ostrogothique</French>
+		<French><Text>ostrogoth:ostrogothe:ostrogoths:ostrogothes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>ostgotische</German>
 		<Italian>ostrogoto</Italian>
 		<Spanish>ostrog&#243;tico</Spanish>
@@ -2875,7 +2891,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SABA_ADJECTIVE</Tag>
 		<English>Sabaean</English>
-		<French><Text>saba&#233;:saba&#233;e:saba&#233;s:saba&#233;es</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
+		<French><Text>sab&#233;en:sab&#233;enne:sab&#233;ens:sab&#233;ennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German><Text>sab&#228;isch:sab&#228;ischen:sab&#228;ische:sab&#228;ischer</Text><Gender>Neuter:Neuter:Neuter:Male</Gender><Plural>0:0:0:0</Plural></German>
 		<Italian><Text>sabeo:sabea:sabei:sabee</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Italian>
 		<Spanish><Text>sabeo:sabea:sabeos:sabeas</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></Spanish>
@@ -2899,7 +2915,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SABA_SHORT_DESC</Tag>
 		<English>Sheba</English>
-		<French><Text>Saba</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<French>Sab&#233;ens</French>
 		<German><Text>Saba</Text><Gender>Neuter</Gender><Plural>0</Plural></German>
 		<Italian><Text>Saba</Text><Gender>Female</Gender><Plural>0</Plural></Italian>
 		<Spanish><Text>Saba</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
@@ -2907,7 +2923,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SALLUVIER_ADJECTIVE</Tag>
 		<English>Salluvian</English>
-		<French>salluvien</French>
+		<French><Text>salyen:salyenne:salyens:salyennes</Text><Gender>Male:Female:Male:Female</Gender><Plural>0:0:1:1</Plural></French>
 		<German>salluvische</German>
 		<Italian>salluvico</Italian>
 		<Spanish>salluvico</Spanish>
@@ -2915,7 +2931,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SALLUVIER_SHORT_DESC</Tag>
 		<English>Salluvians</English>
-		<French>Salluviens</French>
+		<French>Salyens</French>
 		<German>Salluvier</German>
 		<Italian>Salluvi</Italian>
 		<Spanish>Salluvios</Spanish>
@@ -4011,7 +4027,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_ARSALES</Tag>
 		<English>Arsaces I of Parthia</English>
-		<French>Arscace I de Parthia</French>
+		<French>Arscace I de Parthie</French>
 		<German>Arsakes I von Parthien</German>
 		<Italian>Arsace I di Partia</Italian>
 		<Spanish>Arsaces I de Partia</Spanish>
@@ -4089,6 +4105,14 @@
 		<Spanish>Xenokleides de Chalkis</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_SCEN_LEADER_CHANDRAGUPTA</Tag>
+		<English>Chandragupta of Maurya</English>
+		<French><Text>Chandragupta de Maurya</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<German>Chandragupta von Maurya</German>
+		<Italian>Chandragupta di Maurya</Italian>
+		<Spanish>Chandragupta de Maurya</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_CHIOS</Tag>
 		<English>Amphiklos of Chios</English>
 		<French>Amphiklos de Chios</French>
@@ -4107,7 +4131,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_COMMIUS</Tag>
 		<English>Commius of the Parisians</English>
-		<French>Commius des Parisiens</French>
+		<French>Commius des Parisii</French>
 		<German>Commius der Parisier</German>
 		<Italian>Commio dei Parigini</Italian>
 		<Spanish>Commio de los Parisios</Spanish>
@@ -4427,7 +4451,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCEN_LEADER_TAXILES</Tag>
 		<English>Taxiles of the Veda</English>
-		<French><Text>Taxil&#232;s le V&#233;da</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<French><Text>Taxil&#232;s le Veda</Text><Gender>Male</Gender><Plural>0</Plural></French>
 		<German>Taxiles der Veder</German>
 		<Italian>Taxili dei Veda</Italian>
 		<Spanish>Taxiles del Veda</Spanish>

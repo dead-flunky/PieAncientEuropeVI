@@ -67,7 +67,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_DECIMATIO_1</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Decimate unit[COLOR_REVERT][NEWLINE]Decimate your troops either to get rid of their status of being "unreliable" or quit their war weariness.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]D&#233;cimer l'unit&#233;[COLOR_REVERT][NEWLINE]Punir l'unit&#233; pour vous d&#233;barrasser de leur statut "peu fiable" ou de leur fatigue de guerre.</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]D&#233;cimer l'unit&#233;[COLOR_REVERT][NEWLINE]Punir l'unit&#233; pour vous d&#233;barrasser de leur statut "Peu fiable" ou de leur fatigue de guerre.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Einheit dezimieren[COLOR_REVERT][NEWLINE]Dezimiert Eure Truppen um ihren "unverl&#228;sslichen" Status oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Decima l'unit&#224;[COLOR_REVERT][NEWLINE]Decima le tue truppe per sbarazzarti del loro stato di "inaffidabilit&#224;" o della fatica della guerra.</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Diezmar la unidad[COLOR_REVERT][NEWLINE]Diezma a tus tropas para deshacerte de su estado "poco confiable" o fatiga de guerra.</Spanish>
@@ -75,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_DECIMATIO_2</Tag>
 		<English>[H1]Decimation[\H1][NEWLINE]Do you want to decimate your unit? The unit takes damage by 10%. The decimation raises the morale of your soldiers or even removes the status of being "unreliable". But beware, "unreliable" soldiers could thereby become a deserter!</English>
-		<French>[H1]D&#233;cimation[\H1][NEWLINE]Voulez-vous d&#233;cimer votre unit&#233; ? L'unit&#233; subira 10% de pertes mais pourra r&#233;duire sa lassitude de guerre ou annuler son statut "non fiable". Mais attention, des soldats "peu fiables" pourraient devenir des voyous !</French>
+		<French>[H1]D&#233;cimation[\H1][NEWLINE]Voulez-vous d&#233;cimer votre unit&#233; ? L'unit&#233; subira 10% de pertes mais pourra r&#233;duire sa lassitude de guerre ou annuler son statut "Peu fiable". Mais attention, des soldats "peu fiables" pourraient choisir de d&#233;serter !</French>
 		<German>[H1]Dezimierung[\H1][NEWLINE]M&#246;chtet Ihr Eure Einheit dezimieren? Die Einheit nimmt dadurch 10% Schaden. Die Dezimierung hebt die Moral Eurer Soldaten oder entfernt sogar den Status "Unzuverl&#228;ssig". Aber Vorsicht, "unzuverl&#228;ssige" Soldaten k&#246;nnten dabei abtr&#252;nnig werden!</German>
 		<Italian>[H1]Decimazione[\H1][NEWLINE]Vuoi decimare la tua unit&#224;? L'unit&#224; subisce il 10% di danno. La decimazione aumenter&#224; il morale dei tuoi soldati o addirittura rimuover&#224; il loro stato Inaffidabile. Ma attenzione, i soldati "inaffidabili" potrebbero diventare dei ladri!</Italian>
 		<Spanish>[H1]Diezmar[\H1][NEWLINE]&#191;Quieres diezmar tu unidad? La unidad recibir&#225; un da&#241;o del 10%. Diezmar aumenta la moral de tus soldados o incluso quita la promoci&#243;n "poco confiable". Pero ten cuidado, &#161;los soldados "poco confiables" podr&#237;an volverse rebeldes!</Spanish>
@@ -85,7 +85,7 @@
 		<English>Your cruelty has sparked anger in your soldiers! They leave your army and fight by their own now.</English>
 		<French>Votre cruaut&#233; a provoqu&#233; la col&#232;re de vos hommes qui se sont rebell&#233;s contre vous.</French>
 		<German>Eure Grausamkeit hat bei Euren Soldaten Zorn entfacht! Sie verlassen Eure Armee und k&#228;mpfen nun selbst&#228;ndig.</German>
-		<Italian>Your cruelty has sparked anger in your soldiers! They leave your army and fight by their own now.</Italian>
+		<Italian>La tua crudelt&#224; ha acceso la rabbia tra i tuoi soldati! Lasciano il tuo esercito e ora combattono in modo indipendente.</Italian>
 		<Spanish>&#161;Tu crueldad ha desatado la ira de los soldados! Abandonan tu ej&#233;rcito y luchan por su propia cuenta.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -93,7 +93,7 @@
 		<English>Your decimation let your soldiers unimpressed.</English>
 		<French>Votre d&#233;cimation laisse vos hommes de marbre.</French>
 		<German>Eure Dezimierung lie&#223; Eure Soldaten unbeeindruckt.</German>
-		<Italian>Your decimation let your soldiers unimpressed.</Italian>
+		<Italian>La tua decimazione ha lasciato i tuoi soldati impassibili.</Italian>
 		<Spanish>Tu crueldad no caus&#243; impresi&#243;n en los soldados.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -101,7 +101,7 @@
 		<English>No, rather not.</English>
 		<French>Non, surtout pas.</French>
 		<German>Nein, lieber nicht.</German>
-		<Italian>No, rather not.</Italian>
+		<Italian>No, preferirei di no.</Italian>
 		<Spanish>No, m&#225;s bien no.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -109,7 +109,7 @@
 		<English>Your cruelty caused the soldiers to disappear and they broke up in all directions.</English>
 		<French>Votre cruaut&#233; a provoqu&#233; une d&#233;sertion massive qui a abouti &#224; la dissolution de votre unit&#233;.</French>
 		<German>Eure Grausamkeit veranlasste die Soldaten zu verschwinden und l&#246;sten sich in alle Himmelsrichtungen auf.</German>
-		<Italian>Your cruelty caused the soldiers to disappear and they broke up in all directions.</Italian>
+		<Italian>La tua crudelt&#224; ha fatto sparire i soldati e disperderli in tutte le direzioni.</Italian>
 		<Spanish>Tu crueldad caus&#243; que los soldados desapareciesen y disolviesen en todas las direcciones.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -117,7 +117,7 @@
 		<English>Your decimation had success! The units have lost following moral: %s1</English>
 		<French>Votre d&#233;cimation est un succ&#232;s ! Votre unit&#233; a perdu le statut : %s1</French>
 		<German>Eure Dezimierung hatte Erfolg! Die Einheiten haben folgende Moral verloren: %s1</German>
-		<Italian>Your decimation had success! The units have lost following moral: %s1</Italian>
+		<Italian>La tua decimazione ha avuto successo! Le unit&#224; hanno perso il seguente morale: %s1</Italian>
 		<Spanish>&#161;Tu diezmo tuvo &#233;xito! Las unidades perdieron la siguiente moral: %s1</Spanish>
 	</TEXT>
 	<TEXT>
@@ -125,7 +125,7 @@
 		<English>Get going!</English>
 		<French>Allez-y !</French>
 		<German>Legt los!</German>
-		<Italian>Get going!</Italian>
+		<Italian>Inizia!</Italian>
 		<Spanish>Vamos a hacerlo!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -139,7 +139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SALAE_1</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Pay an extra salary[COLOR_REVERT][NEWLINE]Pay the unit extra pay to get rid of its "unreliable" status or its war fatigue.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Verser une gratification[COLOR_REVERT][NEWLINE]Payez une prime suppl&#233;mentaire &#224; l'unit&#233; pour se d&#233;barrasser de son statut "non fiable" ou de sa fatigue de guerre.</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Verser une gratification[COLOR_REVERT][NEWLINE]Payez une prime suppl&#233;mentaire &#224; l'unit&#233; pour se d&#233;barrasser de son statut "Peu fiable" ou "Lassitude de guerre".</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Einheit extra besolden[COLOR_REVERT][NEWLINE]Zahle der Einheit einen Extra-Sold, um ihren "unzuverl&#228;ssigen" Status oder ihre Kriegsm&#252;digkeit loszuwerden.</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Paga un extra per l'unit&#224;[COLOR_REVERT][NEWLINE]Paga un extra per l'unit&#224; per liberarti del suo stato "inaffidabile" o della fatica di guerra.</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Pagar un salario extra[COLOR_REVERT][NEWLINE]Pague a la unidad un pago extra para deshacerse de su estado "poco confiable" o fatiga de guerra.</Spanish>
@@ -147,7 +147,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SALAE_2</Tag>
 		<English>[H1]Extra salary![\H1][NEWLINE]Do you want to give your unit an extra salary? In this case, their morale can increase again or it loses the status: "Unreliable"[NEWLINE][NEWLINE]Costs. %d1[ICON_GOLD] (-25% with salt: %d2)</English>
-		<French>[H1]Gratification ![\H1][NEWLINE]Voulez-vous verser une prime &#224; votre unit&#233; afin d'am&#233;liorer son moral ? Il en r&#233;sulterait une r&#233;duction de sa lassitude de guerre ou l'annulation de son status "Non fiable".[NEWLINE][NEWLINE]Co&#251;t : %d1[ICON_GOLD] (-25% avec du Sel: %d2)</French>
+		<French>[H1]Gratification ![\H1][NEWLINE]Voulez-vous verser une prime &#224; votre unit&#233; afin d'am&#233;liorer son moral ? Il en r&#233;sulterait une r&#233;duction de sa lassitude de guerre ou l'annulation de son statut "Peu fiable".[NEWLINE][NEWLINE]Co&#251;t : %d1[ICON_GOLD] (-25% avec du Sel: %d2)</French>
 		<German>[H1]Extra Sal&#228;r![\H1][NEWLINE]M&#246;chtet Ihr der Einheit einen extra Sold zukommen lassen? Dabei kann ihre Kampfmoral wieder gesteigert werden oder sie verliert den Status: "Unzuverl&#228;ssig".[NEWLINE][NEWLINE]Kosten: %d1[ICON_GOLD] (-25% mit Salz: %d2)</German>
 		<Italian>[H1]Stipendio extra![\H1][NEWLINE]Vuoi dare alla tua unit&#224; uno stipendio extra? In tal caso, il tuo morale potrebbe aumentare o perdere la promozione: "Inaffidabile".[NEWLINE][NEWLINE]Costa: %d1 [ICON_GOLD] (-25% con sale: %d2)</Italian>
 		<Spanish>[H1]&#161;Salario extra![\H1][NEWLINE]&#191;Quieres dar un salario extra a tu unidad? En ese caso, su moral puede aumentar o perder la promoci&#243;n: "Poco confiable"[NEWLINE][NEWLINE]Cuesta. %d1[ICON_GOLD] (-25% con sal: %d2)</Spanish>
@@ -165,7 +165,7 @@
 		<English>No, perhaps next time.</English>
 		<French>Non, la prochaine fois peut-&#234;tre.</French>
 		<German>Nein, vielleicht das n&#228;chste Mal.</German>
-		<Italian>No, perhaps next time.</Italian>
+		<Italian>No, forse la prossima volta.</Italian>
 		<Spanish>No, quiz&#225;s en otro momento.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -173,7 +173,7 @@
 		<English>Your unit has adopted its extra salary with thanks and lost the status: %s1</English>
 		<French>Votre unit&#233; accepte votre gratification avec reconnaissance et perd son statut : %s1</French>
 		<German>Eure Einheit hat ihren Extrasold mit Dank angenommen und verlor den Status: %s1</German>
-		<Italian>Your unit has adopted its extra salary with thanks and lost the status: %s1</Italian>
+		<Italian>La tua unit&#224; ha accettato il pagamento extra con ringraziamenti e ha perso lo stato: %s1</Italian>
 		<Spanish>Tu unidad ha recibido el salario extra con agradecimientos y pierden un status: %s1</Spanish>
 	</TEXT>
 	<TEXT>
@@ -181,7 +181,7 @@
 		<English>Yes, do it!</English>
 		<French>Oui, faites-le !</French>
 		<German>Ja, tut es!</German>
-		<Italian>Yes, do it!</Italian>
+		<Italian>S&#236;, lo fa!</Italian>
 		<Spanish>S&#237;, hazlo.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -387,7 +387,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BANK</Tag>
 		<English>House of Money</English>
-		<French><Text>Maison d'Argent</Text><Gender>Female</Gender><Plural>0</Plural></French>
+		<French><Text>Maison de la monnaie</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Geldstube</German>
 		<Italian>Casa dei soldi</Italian>
 		<Spanish>Casa de dinero</Spanish>
@@ -411,7 +411,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BOGEN</Tag>
 		<English>Bowmaker</English>
-		<French>Archetier</French>
+		<French>Faiseur d'arc</French>
 		<German>Bogenmacher</German>
 		<Italian>Archettaio</Italian>
 		<Spanish>Fabricante de arcos</Spanish>
@@ -627,7 +627,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FENCES</Tag>
 		<English>Thorn hedge</English>
-		<French>Haie d'&#233;pines</French>
+		<French><Text>Haie d'&#233;pines</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Dornenhecke</German>
 		<Italian>Siepe di spine</Italian>
 		<Spanish>Seto de espinas</Spanish>
@@ -635,7 +635,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FENCES2</Tag>
 		<English>Blackberry hedge</English>
-		<French>Haie de m&#251;res</French>
+		<French><Text>Haie de ronces</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Brombeerhecke</German>
 		<Italian>Siepe di mora</Italian>
 		<Spanish>Seto de mora</Spanish>
@@ -675,7 +675,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GARUM</Tag>
 		<English>Garum manufactory</English>
-		<French>Manufacture de garum</French>
+		<French><Text>Manufacture de garum</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Garum-Manufaktur</German>
 		<Italian>Manifatture di garum</Italian>
 		<Spanish>Manufactura de garum</Spanish>
@@ -683,7 +683,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GERBEREI</Tag>
 		<English>Tannery</English>
-		<French>Tannerie</French>
+		<French><Text>Tannerie</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Gerber</German>
 		<Italian>Conceria</Italian>
 		<Spanish>Curtidur&#237;a</Spanish>
@@ -731,7 +731,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GREAT_WALL_GORGAN</Tag>
 		<English>Great Wall of Gorgan</English>
-		<French>Grand Mur de Gorgan</French>
+		<French><Text>Muraille de Gorgan</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Gro&#223;e Mauer von Gorgan</German>
 		<Italian><Text>Grande Muraglia di Gorgan</Text><Gender>Female</Gender><Plural>0</Plural></Italian>
 		<Spanish><Text>Gran Muralla de Gorgan</Text><Gender>Female</Gender><Plural>0</Plural></Spanish>
@@ -811,7 +811,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HANGING_GARDEN</Tag>
 		<English>Hanging Gardens of Babylon</English>
-		<French><Text>Jardins Suspendus de Babylon</Text><Gender>Male</Gender><Plural>1</Plural></French>
+		<French><Text>Jardins Suspendus de Babylone</Text><Gender>Male</Gender><Plural>1</Plural></French>
 		<German><Text>H&#228;ngenden G&#228;rten von Babylon</Text><Gender>Male</Gender><Plural>1</Plural></German>
 		<Italian><Text>Giardini Pensili di Babylon</Text><Gender>Male</Gender><Plural>1</Plural></Italian>
 		<Spanish><Text>Jardines Colgantes de Babylon</Text><Gender>Male</Gender><Plural>1</Plural></Spanish>
@@ -1123,7 +1123,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NECROPOLIS</Tag>
 		<English>Necropolis</English>
-		<French>N&#233;cropole</French>
+		<French><Text>N&#233;cropole</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Nekropole</German>
 		<Italian>Necropoli</Italian>
 		<Spanish>Necr&#243;polis</Spanish>
@@ -1131,7 +1131,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NECROPOLIS_EGYPT</Tag>
 		<English>City of the dead</English>
-		<French>Cit&#233; des morts</French>
+		<French><Text>Cit&#233; des morts</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Totenstadt</German>
 		<Italian>Citt&#224; dei morti</Italian>
 		<Spanish>Ciudad de la muerte</Spanish>
@@ -1299,7 +1299,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SCHULE_ASSUR</Tag>
 		<English>Assyrian Academy</English>
-		<French>Acad&#233;mie Assyrienne</French>
+		<French>Acad&#233;mie assyrienne</French>
 		<German>Assyrische Akademie</German>
 		<Italian>Accademia Assira</Italian>
 		<Spanish>Academia Asiria</Spanish>
@@ -1403,7 +1403,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR</Tag>
 		<English>Armor Tailor</English>
-		<French>Tailleur d'armure</French>
+		<French>Tailleur d'armure en cuir</French>
 		<German>R&#252;stungsschneider</German>
 		<Italian>Sarto d'Armature</Italian>
 		<Spanish>Armadura a Medida</Spanish>
@@ -1411,7 +1411,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAUBENPOST</Tag>
 		<English>Pigeon mail</English>
-		<French>Courrier de pigeon</French>
+		<French>Pigeon voyageur</French>
 		<German>Taubenpost</German>
 		<Italian>Posta di piccione</Italian>
 		<Spanish>Correo de paloma</Spanish>
@@ -1419,7 +1419,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAUBENSCHLAG</Tag>
 		<English>Dovecote</English>
-		<French>Colombier</French>
+		<French>Pigeonnier</French>
 		<German>Taubenschlag</German>
 		<Italian>Colombaia</Italian>
 		<Spanish>Palomar</Spanish>
@@ -1427,7 +1427,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEICH</Tag>
 		<English>Fish pond</English>
-		<French>&#201;tang &#224; poissons</French>
+		<French>Vivier</French>
 		<German>Fischteich</German>
 		<Italian>Stagno dei pesci</Italian>
 		<Spanish>Estanque de peces</Spanish>
@@ -1435,7 +1435,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THING_CITY</Tag>
 		<English>Thing meetings</English>
-		<French>Rencontres de Thing</French>
+		<French><Text>Assembl&#233;e du Thing</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Thing Tagungen</German>
 		<Italian>Riunioni di Thing</Italian>
 		<Spanish>Reuniones de Thing</Spanish>
@@ -1443,7 +1443,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THING_CITY_HELP</Tag>
 		<English>[ICON_BULLET]This building automatically switches to a city with a Thingstead every 5 turns.</English>
-		<French>[ICON_BULLET]Ce b&#226;timent bascule automatiquement vers une ville avec un Thing tous les 5 tours.</French>
+		<French>[ICON_BULLET]Ce b&#226;timent est automatiquement d&#233;plac&#233; vers une ville avec un Thing tous les 5 tours.</French>
 		<German>[ICON_BULLET]Diese Geb&#228;ude wechselt automatisch alle 5 Runden in eine Stadt mit Thingst&#228;tte.</German>
 		<Italian>[ICON_BULLET]Questo edificio passa automaticamente a una citt&#224; con Thing ogni 5 turni.</Italian>
 		<Spanish>[ICON_BULLET]Este edificio cambia autom&#225;ticamente a una ciudad Thing cada 5 turnos.</Spanish>
@@ -1451,7 +1451,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THOLOS</Tag>
 		<English>Tholos Tomb</English>
-		<French>Tombeau de Tholos</French>
+		<French><Text>Tholos</Text><Gender>Female</Gender><Plural>0</Plural></French>
 		<German>Tholosgrab</German>
 		<Italian>Tomba a Tholos</Italian>
 		<Spanish>Tumba de Tholos</Spanish>
@@ -1539,7 +1539,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WINDOFEN</Tag>
 		<English>Wind kiln site</English>
-		<French>Site du four &#233;olien</French>
+		<French>Four &#224; vent</French>
 		<German>Windofenst&#228;tte</German>
 		<Italian>Sito del forno eolico</Italian>
 		<Spanish>Sitio del horno de viento</Spanish>
@@ -1595,7 +1595,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PERSIAN_ROAD</Tag>
 		<English>Build a [LINK=CONCEPT_MOVEMENT]Royal Road[\LINK]</English>
-		<French>Construire une [LINK=CONCEPT_MOVEMENT]Route royale[\LINK]</French>
+		<French>Construire une [LINK=CONCEPT_MOVEMENT]route royale[\LINK]</French>
 		<German>[LINK=CONCEPT_MOVEMENT]K&#246;nigsstra&#223;e[\LINK] bauen</German>
 		<Italian>Costruire una [LINK=CONCEPT_MOVEMENT]Royal Road[\LINK]</Italian>
 		<Spanish>Construir un [LINK=CONCEPT_MOVEMENT]Camino Real[\LINK]</Spanish>
@@ -1642,16 +1642,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_BUY_KOMPASS</Tag>
-		<English>Equip your ship with a [COLOR_HIGHLIGHT_TEXT]Magnetic Compass[COLOR_REVERT] for 20[ICON_GOLD].[NEWLINE][ICON_BULLET] No movement penalty on ocean and deep sea</English>
-		<French>&#201;quipez votre vaisseau d'une [COLOR_HIGHLIGHT_TEXT]Boussole Magn&#233;tique[COLOR_REVERT] pour 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Aucune p&#233;nalit&#233; de mouvement sur l'oc&#233;an et la mer profonde</French>
-		<German>R&#252;ste dein Schiff f&#252;r 20[ICON_GOLD] mit einem [COLOR_HIGHLIGHT_TEXT]Magnetkompass[COLOR_REVERT] aus.[NEWLINE][ICON_BULLET] Kein Bewegungsmalus auf Ozean und Tiefsee</German>
-		<Italian>Equipaggia la tua nave con una [COLOR_HIGHLIGHT_TEXT]Bussola Magnetica[COLOR_REVERT] per 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Nessuna penalit&#224; di movimento su oceano e mare profondo</Italian>
-		<Spanish>Equipa tu barco con una [COLOR_HIGHLIGHT_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT] por 20[ICON_GOLD].[NEWLINE][ICON_BULLET] Sin penalizaci&#243;n de movimiento en el oc&#233;ano y en aguas profundas</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Equip your ship with a [COLOR_BUILDING_TEXT]Magnetic Compass[COLOR_REVERT][NEWLINE][ICON_BULLET]No movement penalty on ocean and deep sea[NEWLINE]Cost : 20 [ICON_GOLD]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]&#201;quiper votre navire d'une [COLOR_BUILDING_TEXT]Boussole magn&#233;tique[COLOR_REVERT][NEWLINE][ICON_BULLET]Double le mouvement en mer et haute mer[NEWLINE]Co&#251;t : 20 [ICON_GOLD]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]R&#252;ste dein Schiff mit einem [COLOR_BUILDING_TEXT]Magnetkompass[COLOR_HIGHLIGHT_TEXT] aus[COLOR_REVERT][NEWLINE][ICON_BULLET]Kein Bewegungsmalus auf Ozean und Tiefsee[NEWLINE]Kosten: 20 [ICON_GOLD]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Equipaggia la tua nave con una [COLOR_BUILDING_TEXT]Bussola Magnetica[COLOR_REVERT][NEWLINE][ICON_BULLET]Nessuna penalit&#224; di movimento su oceano e mare profondo[NEWLINE]Costo: 20 [ICON_GOLD]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Equipa tu barco con una [COLOR_BUILDING_TEXT]Br&#250;jula Magn&#233;tica[COLOR_REVERT][NEWLINE][ICON_BULLET]Sin penalizaci&#243;n de movimiento en el oc&#233;ano y en aguas profundas[NEWLINE]Coste: 20 [ICON_GOLD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_COLLECT_BONUS</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Collect goods[COLOR_REVERT][NEWLINE]Will remove the bonus resource (excluding trading posts and foreign territory).</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Ramasser la ressource[COLOR_REVERT][NEWLINE]Supprimera la ressource bonus de la case (hors comptoirs et territoire &#233;tranger).</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Ramasser la ressource[COLOR_REVERT][NEWLINE]Supprimera la ressource bonus de la case (sauf sur un comptoir ou en territoire &#233;tranger).</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Sammle Bonusgut auf[COLOR_REVERT][NEWLINE]Wird das Bonusgut vom Feld entfernen (ausgenommen Handelsposten und fremdes Territorium).</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Raccogli le merci[COLOR_REVERT][NEWLINE]Rimuover&#224; la risorsa bonus (escluse le postazioni commerciali e il territorio estero).</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Recoger la mercanc&#237;a[COLOR_REVERT][NEWLINE]Quitar&#225; el recurso de la casilla (excluyendo puestos comerciales y territorio extranjero).</Spanish>
@@ -1659,18 +1659,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_COLLECT_BONUS2</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Charge goods[COLOR_REVERT]</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Chargez les ressources[COLOR_REVERT]</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Charger les ressources[COLOR_REVERT]</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Lade Bonusgut auf[COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Carica merci[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cargar mercanc&#237;a[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_COLLECT_BONUS3</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Steal and charge goods[COLOR_REVERT][NEWLINE]-100[ICON_ESPIONAGE]</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Volez et chargez les ressources[COLOR_REVERT][NEWLINE]-100[ICON_ESPIONAGE]</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Stehle und lade Bonusgut auf[COLOR_REVERT][NEWLINE]-100[ICON_ESPIONAGE]</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Ruba et carica merci[COLOR_REVERT][NEWLINE]-100[ICON_ESPIONAGE]</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Robar y cargar mercanc&#237;a[COLOR_REVERT][NEWLINE]-100[ICON_ESPIONAGE]</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Steal and charge goods[COLOR_REVERT]-100[ICON_ESPIONAGE]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Voler et charger les ressources[COLOR_REVERT]-100[ICON_ESPIONAGE]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Stehle und lade Bonusgut auf[COLOR_REVERT]-100[ICON_ESPIONAGE]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Ruba et carica merci[COLOR_REVERT]-100[ICON_ESPIONAGE]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Robar y cargar mercanc&#237;a[COLOR_REVERT]-100[ICON_ESPIONAGE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_COLLECT_BONUS_CITY</Tag>
@@ -1682,11 +1682,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_COLLECT_BONUS_IMPOSSIBLE</Tag>
-		<English>Only an empty wagon can load goods.</English>
-		<French>Seul un chariot vide peut charger des marchandises.</French>
-		<German>Nur ein leerer Karren kann G&#252;ter aufladen.</German>
-		<Italian>Solo un vagone vuoto pu&#242; caricare merci.</Italian>
-		<Spanish>S&#243;lo una caravana vac&#237;a puede cargar mercanc&#237;a.</Spanish>
+		<English>[COLOR_WARNING_TEXT]Only an empty wagon can load goods.[COLOR_REVERT]</English>
+		<French>[COLOR_WARNING_TEXT]Seul un chariot vide peut charger des marchandises.[COLOR_REVERT]</French>
+		<German>[COLOR_WARNING_TEXT]Nur ein leerer Karren kann G&#252;ter aufladen.[COLOR_REVERT]</German>
+		<Italian>[COLOR_WARNING_TEXT]Solo un vagone vuoto pu&#242; caricare merci.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]S&#243;lo una caravana vac&#237;a puede cargar mercanc&#237;a.[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_CONTACT_STATTHALTER</Tag>
@@ -1698,24 +1698,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_CULTIVATE_BONUS</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Cultivate bonus resource[COLOR_REVERT][NEWLINE]Creates a bonus resource on this plot.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Implanter la ressource[COLOR_REVERT][NEWLINE]Cr&#233;e une ressource sur la case.</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Kultiviere Bonusgut[COLOR_REVERT][NEWLINE]Erzeugt auf diesem Feld eine Bonusresource.</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Coltiva la risorsa bonus[COLOR_REVERT][NEWLINE]Crea una risorsa bonus in questa casella.</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cultivar recurso[COLOR_REVERT][NEWLINE]Crea un recurso en esta casilla.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Cultivate bonus resource[COLOR_REVERT][NEWLINE]Creates this bonus resource on this plot.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Implanter la ressource[COLOR_REVERT][NEWLINE]Cr&#233;e cette ressource sur la case.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Kultiviere Bonusgut[COLOR_REVERT][NEWLINE]Erzeugt auf diesem Feld diese Bonusressource.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Coltiva la risorsa bonus[COLOR_REVERT][NEWLINE]Crea questa risorsa bonus in questa casella.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cultivar recurso[COLOR_REVERT][NEWLINE]Crea este recurso en esta casilla.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_CULTIVATE_BONUS_FROM_CITY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Cultivate bonus[COLOR_REVERT][NEWLINE]Creates a bonus resource on one of the surrounding plots.</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Implanter la ressource[COLOR_REVERT][NEWLINE]Cr&#233;e une ressource bonus sur une case avoisinante.</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Kultiviere Bonusgut[COLOR_REVERT][NEWLINE]Erzeugt ein Bonusgut auf einem der umliegenden Felder.</German>
-		<Italian>[COLOR_HIGHLIGHT_TEXT]Coltiva bonus[COLOR_REVERT][NEWLINE]Crea una risorsa bonus su uno degli appezzamenti circostanti.</Italian>
-		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cultivar recurso[COLOR_REVERT][NEWLINE]Crea un recurso en una de las casillas de alrededor.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Cultivate bonus[COLOR_REVERT][NEWLINE]Creates this bonus resource on one of the surrounding plots.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Implanter la ressource[COLOR_REVERT][NEWLINE]Cr&#233;e cette ressource bonus sur une case avoisinante.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Kultiviere Bonusgut[COLOR_REVERT][NEWLINE]Erzeugt dieses Bonusgut auf einem der umliegenden Felder.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Coltiva bonus[COLOR_REVERT][NEWLINE]Crea questa risorsa bonus su uno degli appezzamenti circostanti.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cultivar recurso[COLOR_REVERT][NEWLINE]Crea este recurso en una de las casillas de alrededor.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_DISBAND_CITY2</Tag>
 		<English>Requirements for settlement disband:[NEWLINE][ICON_BULLET]Maximum population of 3[NEWLINE][ICON_BULLET]Minimum number of two cities[NEWLINE][ICON_BULLET]Cannot disband the capital</English>
-		<French>Requis pour d&#233;truire une ville :[NEWLINE][ICON_BULLET]Population maximum de 3[NEWLINE][ICON_BULLET]Avoir au moins 2 villes[NEWLINE][ICON_BULLET]La ville ne doit pas &#234;tre la capitale</French>
+		<French>Requis pour d&#233;manteler une ville :[NEWLINE][ICON_BULLET]Population maximum de 3[NEWLINE][ICON_BULLET]Avoir au moins 2 villes[NEWLINE][ICON_BULLET]La ville ne doit pas &#234;tre la capitale</French>
 		<German>Voraussetzungen f&#252;r das Aufl&#246;sen einer Siedlung:[NEWLINE][ICON_BULLET]Maximalbev&#246;lkerung von 3[NEWLINE][ICON_BULLET]Mindestanzahl von 2 St&#228;dten[NEWLINE][ICON_BULLET]Kann keine Hauptstadt aufl&#246;sen</German>
 		<Italian>Requisiti per abbandonare l'insediamento:[NEWLINE][ICON_BULLET]Popolazione massima di 3[NEWLINE][ICON_BULLET]Numero minimo di 2 citt&#224;[NEWLINE][ICON_BULLET]Non &#232; possibile abbandonare la capitale</Italian>
 		<Spanish>Requerimientos para abandonar un asentamiento:[NEWLINE][ICON_BULLET]M&#225;ximo 3 de poblaci&#243;n[NEWLINE][ICON_BULLET]N&#250;mero m&#237;nimo de 2 ciudades[NEWLINE][ICON_BULLET]No se puede abandonar la capital</Spanish>
@@ -1829,7 +1829,7 @@
 		<English>Use slave as [COLOR_HIGHLIGHT_TEXT]library slave[COLOR_REVERT].[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] for a library. Max. 5 slaves possible. This will remove the unit.</English>
 		<French>Affecter &#224; la [COLOR_HIGHLIGHT_TEXT]biblioth&#232;que[COLOR_REVERT][NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] pour la biblioth&#232;que. 5 esclaves maximum. L'unit&#233; sera supprim&#233;e.</French>
 		<German>Sklave als [COLOR_HIGHLIGHT_TEXT]Bibliothekssklave[COLOR_REVERT] einstellen.[NEWLINE][ICON_BULLET]+2[ICON_RESEARCH] f&#252;r die Bibliothek. Bis zu 5 Sklaven m&#246;glich. Die Einheit wird dabei verbraucht.</German>
-		<Italian>Use slave as [COLOR_HIGHLIGHT_TEXT]library slave[COLOR_REVERT].[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] for a library. Max. 5 slaves possible. This will remove the unit.</Italian>
+		<Italian>Imposta lo slave come [COLOR_HIGHLIGHT_TEXT]Slave della libreria[COLOR_REVERT].[NEWLINE][ICON_BULLET]+2[ICON_RESEARCH] per la libreria. Sono possibili fino a 5 slave. L'unit&#224; viene consumata nel processo.</Italian>
 		<Spanish>Usar esclavo como [COLOR_HIGHLIGHT_TEXT]esclavo bibliotecario[COLOR_REVERT].[NEWLINE][ICON_BULLET]+2 [ICON_RESEARCH] para una biblioteca. M&#225;ximo de 5 esclavos posibles. Esto eliminar&#225; la unidad.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1882,11 +1882,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CANCEL_TRADE_ROUTE</Tag>
-		<English>Cancel automated trade route.</English>
-		<French>Annuler la route commerciale automatis&#233;e</French>
-		<German>Automatische Handelsroute abbrechen.</German>
-		<Italian>Annulla la rotta commerciale automatizzata.</Italian>
-		<Spanish>Cancelar ruta comercial automatizada.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Cancel automated trade route[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Annuler la route commerciale automatis&#233;e[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Automatische Handelsroute abbrechen[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Annulla la rotta commerciale automatizzata[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Cancelar ruta comercial automatizada[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BUERGERRECHT_HELP</Tag>
@@ -2114,11 +2114,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREATE_TRADE_ROUTE</Tag>
-		<English>Create automated trade route.</English>
-		<French>&#201;tablir une route commerciale r&#233;guli&#232;re.</French>
-		<German>Automatische Handelsroute einrichten.</German>
-		<Italian>Crea una rotta commerciale automatizzata.</Italian>
-		<Spanish>Crear ruta comercial automatizada.</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Create automated trade route[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Cr&#233;er une route commerciale automatis&#233;e[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Automatische Handelsroute einrichten[COLOR_REVERT]</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Crea una rotta commerciale automatizzata[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Crear ruta comercial automatizada[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTIVATE_BONUS</Tag>
@@ -2181,8 +2181,8 @@
 		<English>The flight can be selected as soon as the unit has suffered more than 70% damage.</English>
 		<French>La fuite peut &#234;tre activ&#233;e d&#232;s que l'unit&#233; a subi plus de 70% de d&#233;g&#226;ts.</French>
 		<German>Die Flucht kann dann ausgew&#228;hlt werden, sobald die Einheit mehr als 70% Schaden erlitten hat.</German>
-		<Italian>The flight can be selected as soon as the unit has suffered more than 70% damage.</Italian>
-		<Spanish>La huida se puede seleccionar tan pronto como la unidad ha sufrido m&#225;s del 70% de da&#241;o. </Spanish>
+		<Italian>Il volo pu&#242; essere selezionato non appena l'unit&#224; ha subito pi&#249; del 70% di danni.</Italian>
+		<Spanish>La huida se puede seleccionar tan pronto como la unidad ha sufrido m&#225;s del 70% de da&#241;o.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FORMATION_INFO_HELP</Tag>
@@ -2197,7 +2197,7 @@
 		<English>Once a unit has less than 15% of its combat strength, it will surrender in a defeat and defect to the enemy by 100%.[NEWLINE]The possibility of surrender arises automatically and disappears as soon as the unit has regained more than 15% of its combat strength again.</English>
 		<French>Quand une unit&#233; a perdu plus de 85% de sa puissance, elle se rend automatiquement si elle est vaincue au combat.[NEWLINE]Cette reddition automatique dispara&#238;t d&#232;s que la sant&#233; de l'unit&#233; repasse au-dessus de 15%.</French>
 		<German>Sobald eine Einheit weniger als 15% ihrer Kampfkraft besitzt, wird sie bei einer Niederlage kapitulieren und zu 100% &#252;berlaufen.[NEWLINE]Die M&#246;glichkeit der Kapitulation entsteht automatisch und verschwindet sobald die Einheit wieder mehr als 15% ihrer Kampfkraft zur&#252;ckgewonnen hat.</German>
-		<Italian>Once a unit has less than 15% of its combat strength, it will surrender in a defeat and defect to the enemy by 100%.[NEWLINE]The possibility of surrender arises automatically and disappears as soon as the unit has regained more than 15% of its combat strength again.</Italian>
+		<Italian>Una volta che un'unit&#224; ha meno del 15% della sua forza di combattimento, si arrender&#224; in caso di sconfitta e diserter&#224; al nemico del 100%. La possibilit&#224; di resa sorge automaticamente e scompare non appena l'unit&#224; ha riacquistato pi&#249; del 15% della sua forza di combattimento.</Italian>
 		<Spanish>Una vez que una unidad tenga menos del 15% de su fuerza de combate, se rendir&#225; en una derrota y desertar&#225; al enemigo en el 100%. [NEWLINE]La posibilidad de rendirse surgir&#225; autom&#225;ticamente y desaparecer&#225; autom&#225;ticamente tan pronto como la unidad haya recobrado mas del 15% de su fuerza de combate otra vez.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2221,7 +2221,7 @@
 		<English>Natural disasters gets disabled.</English>
 		<French>Les catastrophes naturelles sont d&#233;sactiv&#233;es.</French>
 		<German>Naturkatastrophen werden deaktiviert.</German>
-		<Italian>Natural disasters gets disabled.</Italian>
+		<Italian>I disastri naturali vengono disattivati.</Italian>
 		<Spanish>Los desastres naturales son desactivados.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2253,7 +2253,7 @@
 		<English>This city is suitable for elephant breeding! The unit will be disbanded during construction of the Elephant farm.</English>
 		<French>Vous pouvez &#233;lever des &#233;l&#233;phants dans cette ville ! L'unit&#233; sera d&#233;truite pour construire l'&#233;levage d'&#233;l&#233;phants.</French>
 		<German>Diese Stadt eignet sich f&#252;r eine Elefantenzucht! Beim Bau der Elefantenfarm wird die Einheit aufgel&#246;st.</German>
-		<Italian>This city is suitable for elephant breeding! The unit will be disbanded during construction of the Elephant farm.</Italian>
+		<Italian>Questa citt&#224; &#232; adatta all'allevamento di elefanti! Quando viene costruita la fattoria degli elefanti, l'unit&#224; viene sciolta.</Italian>
 		<Spanish>&#161;Esta ciudad es apropiada para la cr&#237;a de elefantes! La unidad ser&#225; disuelta durante la construcci&#243;n del establo de elefantes.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2283,7 +2283,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HELP_GO2PIRATE</Tag>
 		<English>Terrorize the seas as a pirate...</English>
-		<French>Hissez le pavillon noir !</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Hisser le pavillon noir[COLOR_REVERT]</French>
 		<German>Die Meere als Pirat unsicher machen...</German>
 		<Italian>Rendere insecuro il mare come un pirata...</Italian>
 		<Spanish>Izar la bandera pirata para aterrorizar los mares</Spanish>
@@ -2291,7 +2291,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HELP_GO2PIRATE2</Tag>
 		<English>Sail under your banner again...</English>
-		<French>Hissez nos couleurs !</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Hisser nos couleurs[COLOR_REVERT]</French>
 		<German>Wieder unter Eurem Banner segeln...</German>
 		<Italian>Vela di nuovo sotto il tuo banner ...</Italian>
 		<Spanish>Navegar bajo tu bandera de nuevo...</Spanish>
@@ -2314,11 +2314,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_GOLDKARREN2GOVCENTER</Tag>
-		<English>Move gold cart to the nearest government center (capital/provincial palace).</English>
-		<French>D&#233;placer la charrette d'or vers le si&#232;ge gouvernemental le plus proche (capitale / palais provincial).</French>
-		<German>Goldkarren zum n&#228;chstgelegenen Regierungssitz (Hauptstadt/Provinzpalast) bringen.</German>
-		<Italian>Spostare le carrozze d'oro al pi&#249; vicino centro di governo (capitale / palazzo provinciale).</Italian>
-		<Spanish>Mueve los cargamentos de oro al centro gubernamental m&#225;s cercano (capital / palacio provincial).</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Move gold cart to the nearest government center[COLOR_REVERT][NEWLINE](capital/provincial palace)</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]D&#233;placer le chariot de butin vers le si&#232;ge gouvernemental le plus proche[COLOR_REVERT][NEWLINE](capitale/palais provincial)</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Goldkarren zum n&#228;chstgelegenen Regierungssitz bringen[COLOR_REVERT][NEWLINE](Hauptstadt/Provinzpalast)</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Spostare le carrozze d'oro al pi&#249; vicino centro di governo[COLOR_REVERT][NEWLINE](capitale / palazzo provinciale)</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Mueve los cargamentos de oro al centro gubernamental m&#225;s cercano[COLOR_REVERT][NEWLINE](capital / palacio provincial)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_KAMELSTALL1</Tag>
@@ -2363,7 +2363,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HELP_RESERVIST_TO_VETERAN</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Mobilize our reservists![COLOR_REVERT][NEWLINE]Mobilize these war veterans, to lead them into battle again</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]Mobilisez nos r&#233;servistes ![COLOR_REVERT][NEWLINE]Fa&#238;tes appel &#224; ces v&#233;t&#233;rans pour les mener &#224; nouveau au combat</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Mobiliser nos r&#233;servistes[COLOR_REVERT][NEWLINE]Fa&#238;tes appel &#224; ces v&#233;t&#233;rans pour les mener de nouveau au combat</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Mobilisiert unsere Reservisten![COLOR_REVERT][NEWLINE]Mobilisiere diese Kriegsveteranen, um sie nochmals in die Schlacht zu f&#252;hren</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Mobilita i nostri riservisti![COLOR_REVERT][NEWLINE]Mobilita questi veterani di guerra, per ricondurli in battaglia</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]&#161;Movilizar nuestros reservistas![COLOR_REVERT][NEWLINE]Movilizar estos veteranos de guerra, para conducirlos a la batalla otra vez</Spanish>
@@ -2371,7 +2371,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HELP_TRADE_UNITS</Tag>
 		<English>Special abilities:[NEWLINE][ICON_BULLET]Can trade goods from A to B (goods that the city does not own, distance and city size affect profit)[NEWLINE][ICON_BULLET]Can create off-limits bonus resources to make them available on the trading network[NEWLINE][ICON_BULLET]The number of buildable units corresponds to the number of trading posts in the empire (max 9 merchants)</English>
-		<French>Capacit&#233;s sp&#233;ciales :[NEWLINE][ICON_BULLET]Peut &#233;changer des marchandises de A &#224; B (Impact sur le profit : distance et taille de la ville, est-ce que B poss&#232;de d&#233;j&#224; la marchandise vendue)[NEWLINE][ICON_BULLET]Peut cr&#233;er des postes de traite sur des ressources hors-fronti&#232;res pour les rendre disponibles sur le r&#233;seau commercial[NEWLINE][ICON_BULLET]Le nombre d'unit&#233;s &#224; construire correspond au nombre de comptoirs de l'empire (max 9 commer&#231;ants)</French>
+		<French>Capacit&#233;s sp&#233;ciales :[NEWLINE][ICON_BULLET]Peut &#233;changer des marchandises de A &#224; B (Impact sur le profit : distance et taille de la ville, est-ce que B poss&#232;de d&#233;j&#224; la marchandise vendue)[NEWLINE][ICON_BULLET]Peut cr&#233;er des postes de traite sur des ressources hors-fronti&#232;res pour les rendre disponibles sur le r&#233;seau commercial[NEWLINE][ICON_BULLET]Vous ne pouvez construire plus de marchands que vous n'avez de comptoirs (max 9)</French>
 		<German>Spezialf&#228;higkeiten:[NEWLINE][ICON_BULLET]Kann G&#252;ter von A nach B handeln (G&#252;ter, die die Stadt nicht besitzt, Reichweite und Stadtgr&#246;&#223;e beeinflussen den Gewinn)[NEWLINE][ICON_BULLET]Kann auf Bonusressourcen ausserhalb der Grenzen Handelsposten erstellen, um diese im Handelsnetz verf&#252;gbar zu machen[NEWLINE][ICON_BULLET]Die Anzahl baubarer Einheiten entspricht der Anzahl der Handelsposten im Reich (max 9 H&#228;ndler)</German>
 		<Italian>Abilit&#224; speciali:[NEWLINE][ICON_BULLET]Pu&#242; scambiare merci da A a B (beni che la citt&#224; non possiede, la distanza e le dimensioni della citt&#224; influiscono sul profitto)[NEWLINE][ICON_BULLET]Pu&#242; creare stazioni di scambio su risorse bonus al di fuori dei confini per renderle disponibili nella rete commerciale[NEWLINE][ICON_BULLET]Il numero di unit&#224; costruibili corrisponde al numero di stazioni commerciali nell'impero (massimo 9 commercianti)</Italian>
 		<Spanish>Habilidades especiales:[NEWLINE][ICON_BULLET]Puede comerciar bienes desde A hacia B (bienes que la ciudad no posee, la distancia y el tama&#241;o de &#233;sta afectan al beneficio)[NEWLINE][ICON_BULLET]Puede crear bonus de recursos limitados en el tiempo haci&#233;ndolos disponibles en la red comercial[NEWLINE][ICON_BULLET]El n&#250;mero de unidades construibles corresponde al n&#250;mero de puestos comerciales en el imperio (m&#225;ximo 9 comerciantes)</Spanish>
@@ -2573,7 +2573,7 @@
 		<English>You are not able to spread cults with your current form of government.</English>
 		<French>Vous ne pouvez pas r&#233;pandre de cultes avec vos doctrines actuelles.</French>
 		<German>Mit deiner aktuellen Staatsform k&#246;nnen keine Kulte verbreitet werden.</German>
-		<Italian>You are not able to spread cults with your current form of government.</Italian>
+		<Italian>Con la vostra attuale forma di governo, le sette non possono essere diffuse.</Italian>
 		<Spanish>No es posible propagar cultos con la actual forma de gobierno.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2586,11 +2586,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_IMPROVEMENT_LATIFUNDIEN</Tag>
-		<English>[ICON_BULLET] A Villa Rustica can only be build by a [LINK=UNIT_PRAETORIAN]Praetorian[\LINK][NEWLINE][ICON_BULLET] Only [LINK=UNIT_SLAVE]Slaves[\LINK] can upgrade to the next level (until Latifundium III)[NEWLINE][ICON_BULLET] Latifundia shrink per level (without adding slaves)</English>
-		<French>[ICON_BULLET] La Villa Rustica ne peut &#234;tre cr&#233;&#233;e que par un [LINK=UNIT_PRAETORIAN]Pr&#233;torien[\LINK][NEWLINE][ICON_BULLET] Seuls les [LINK=UNIT_SLAVE]Esclaves[\LINK] peuvent passer &#224; un niveau sup&#233;rieur (&#224; Latifundium III)[NEWLINE][ICON_BULLET] Latifundia r&#233;tr&#233;cit par niveau (sans ajout d'esclaves)</French>
-		<German>[ICON_BULLET] Eine Villa Rustica kann nur von einem [LINK=UNIT_PRAETORIAN]Pr&#228;torianer[\LINK] erstellt werden[NEWLINE][ICON_BULLET] Nur [LINK=UNIT_SLAVE]Sklaven[\LINK] k&#246;nnen auf eine h&#246;here Stufe verbessern (bis Latifundium III)[NEWLINE][ICON_BULLET] Latifundien schrumpfen pro Stufe (ohne Zuf&#252;gen von Sklaven)</German>
-		<Italian>[ICON_BULLET] La Villa Rustica pu&#242; essere creata solo da un [LINK=UNIT_PRAETORIAN]Pretoriano[\LINK][NEWLINE][ICON_BULLET] Solo gli [LINK=UNIT_SLAVE]Slave[\LINK] possono migliorare a un livello superiore (a Latifundium III)[NEWLINE][ICON_BULLET] Latifundia si restringe per livello (senza aggiungere schiavi)</Italian>
-		<Spanish>[ICON_BULLET] La Villa Rustica solo puede ser creada por un [LINK=UNIT_PRAETORIAN]Pretoriano[\LINK][NEWLINE][ICON_BULLET] Solo los [LINK=UNIT_SLAVE]Esclavos[\LINK] pueden mejorar a un nivel superior (a Latifundio III)[NEWLINE][ICON_BULLET] Latifundia encoge por nivel (sin agregar esclavos)</Spanish>
+		<English>[ICON_BULLET]A Villa Rustica can only be build by a [LINK=UNIT_PRAETORIAN]Praetorian[\LINK][NEWLINE][ICON_BULLET]Only [LINK=UNIT_SLAVE]Slaves[\LINK] can upgrade to the next level (until Latifundium III)[NEWLINE][ICON_BULLET]Latifundia shrink per level (without adding slaves)</English>
+		<French>[ICON_BULLET]La Villa Rustica ne peut &#234;tre cr&#233;&#233;e que par un [LINK=UNIT_PRAETORIAN]Pr&#233;torien[\LINK][NEWLINE][ICON_BULLET]Seuls les [LINK=UNIT_SLAVE]Esclaves[\LINK] peuvent les faire &#233;voluer au niveau sup&#233;rieur[NEWLINE][ICON_BULLET]Finit pas revenir au niveau inf&#233;rieur sans ajout r&#233;gulier d'esclaves</French>
+		<German>[ICON_BULLET]Eine Villa Rustica kann nur von einem [LINK=UNIT_PRAETORIAN]Pr&#228;torianer[\LINK] erstellt werden[NEWLINE][ICON_BULLET]Nur [LINK=UNIT_SLAVE]Sklaven[\LINK] k&#246;nnen auf eine h&#246;here Stufe verbessern (bis Latifundium III)[NEWLINE][ICON_BULLET]Latifundien schrumpfen pro Stufe (ohne Zuf&#252;gen von Sklaven)</German>
+		<Italian>[ICON_BULLET]La Villa Rustica pu&#242; essere creata solo da un [LINK=UNIT_PRAETORIAN]Pretoriano[\LINK][NEWLINE][ICON_BULLET]Solo gli [LINK=UNIT_SLAVE]Slave[\LINK] possono migliorare a un livello superiore (a Latifundium III)[NEWLINE][ICON_BULLET]Latifundia si restringe per livello (senza aggiungere schiavi)</Italian>
+		<Spanish>[ICON_BULLET]La Villa Rustica solo puede ser creada por un [LINK=UNIT_PRAETORIAN]Pretoriano[\LINK][NEWLINE][ICON_BULLET]Solo los [LINK=UNIT_SLAVE]Esclavos[\LINK] pueden mejorar a un nivel superior (a Latifundio III)[NEWLINE][ICON_BULLET]Latifundia encoge por nivel (sin agregar esclavos)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_THING_CITY_1</Tag>
@@ -2611,7 +2611,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INFO_THING_CITY_3</Tag>
 		<English>The Thing in %s1_city (%s2_civ_desc) is attended by a promising seer. A number of tribal leaders and citizens will make use of them in the years to come.</English>
-		<French>La Thing &#224; %s1_city (%s2_civ_desc) est suivie par un voyant prometteur. Un certain nombre de chefs tribaux et de citoyens les utiliseront dans les ann&#233;es &#224; venir.</French>
+		<French>Un devin prometteur assiste au Thing &#224; %s1_city (%s2_civ_desc). Un certain nombre de chefs tribaux et de citoyens pourront utiliser ses services dans les ann&#233;es &#224; venir.</French>
 		<German>Dem Thing in %s1_city (%s2_civ_desc) wohnt ein vielversprechender Seher bei. Etliche Stammesf&#252;hrer und B&#252;rger werden sich diesen in den kommenden Jahren zu nutzen machen.</German>
 		<Italian>Il Thing in %s1_city (%s2_civ_desc) &#232; assistito da un promettente veggente. Un certo numero di leader tribali e cittadini ne faranno uso negli anni a venire.</Italian>
 		<Spanish>El Thing en %s1_city (%s2_civ_desc) es atendido por un vidente prometedor. Varios l&#237;deres tribales y ciudadanos har&#225;n uso de ellos en los pr&#243;ximos a&#241;os.</Spanish>
@@ -2659,7 +2659,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AENEAS</Tag>
 		<English>Aeneas the Etruscan</English>
-		<French><Text>&#201;n&#233;e d'&#201;trurie</Text><Gender>Male</Gender><Plural>0</Plural></French>
+		<French><Text>En&#233;e l'Etrusque</Text><Gender>Male</Gender><Plural>0</Plural></French>
 		<German>Aeneas der Etrusker</German>
 		<Italian>Enea di Etruschi</Italian>
 		<Spanish>Eneas el etrusco</Spanish>
@@ -2771,7 +2771,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ARSAKES</Tag>
 		<English>Arsaces I of Parthia</English>
-		<French>Arsace I de Parthia</French>
+		<French>Arsace I de Parthie</French>
 		<German>Arsakes I. von Parthien</German>
 		<Italian>Arsace I di Partia</Italian>
 		<Spanish>Arsaces I de Partia</Spanish>
@@ -2843,7 +2843,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_BOCCHUS</Tag>
 		<English>Bocchus the Berber</English>
-		<French>Bocchus de Maur&#233;tanie</French>
+		<French>Bocchus le Berb&#232;re</French>
 		<German>Bocchus der Berber</German>
 		<Italian>Bocco il berbero</Italian>
 		<Spanish>Boco el bereber</Spanish>
@@ -2931,7 +2931,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_COMMIUS</Tag>
 		<English>Commius the Gaul</English>
-		<French>Commios le Gaule</French>
+		<French>Commios le Gaulois</French>
 		<German>Commius der Gallier</German>
 		<Italian>Commio il Gallico</Italian>
 		<Spanish>Comio el Galo</Spanish>
@@ -3331,7 +3331,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MITHRIDATES2</Tag>
 		<English>Mithridates II of Parthia</English>
-		<French>Mithridate II de Parthia</French>
+		<French>Mithridate II de Parthie</French>
 		<German>Mithridates II. von Parthien</German>
 		<Italian>Mitridate II di Partia</Italian>
 		<Spanish>Mitr&#237;dates II de Partia</Spanish>
@@ -3877,7 +3877,7 @@
 		<English>A reservist in %s1 died after a long and glorious life.</English>
 		<French>Un r&#233;serviste &#224; %s1 est mort apr&#232;s une vie longue et pleine de gloire.</French>
 		<German>Ein Reservist in %s1 verstarb nach einem langen und glorreichen Leben.</German>
-		<Italian>A reservist in %s1 died after a long and glorious life.</Italian>
+		<Italian>Un riservista del %s1 &#232; morto dopo una lunga e gloriosa vita.</Italian>
 		<Spanish>Un reservista en %s1 muri&#243; despu&#233;s de una vida larga y gloriosa.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3885,7 +3885,7 @@
 		<English>A reservist in %s1 died of age after 80 years of loyal service.</English>
 		<French>Un r&#233;serviste &#224; %s1 est mort de vieillesse apr&#232;s 80 ans de bons et loyaux services.</French>
 		<German>Ein Reservist starb in %s1 im Alter von 80 Jahren an Altersschw&#228;che.</German>
-		<Italian>A reservist in %s1 died of age after 80 years of loyal service.</Italian>
+		<Italian>Un riservista del %s1 &#232; morto di vecchiaia dopo 80 anni di fedele servizio.</Italian>
 		<Spanish>Un reservista en %s1 muri&#243; de vejez despu&#233;s de 80 a&#241;os de servicio leal.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3893,7 +3893,7 @@
 		<English>Land ownership was the motive of a jealous neighbour in %s1 who slew a honorable reservist.</English>
 		<French>Une querelle de propri&#233;t&#233; a pouss&#233; un voisin jaloux &#224; tuer un honorable r&#233;serviste &#224; %s1.</French>
 		<German>Landbesitz war das Motiv eines eifers&#252;chtigen Nachbars in %s1, der einen ehrw&#252;rdigen Reservisten erschlug.</German>
-		<Italian>Land ownership was the motive of a jealous neighbour in %s1 who slew a honorable reservist.</Italian>
+		<Italian>La propriet&#224; terriera fu il movente di un vicino geloso nel %s1 che uccise un onorevole riservista.</Italian>
 		<Spanish>La propiedad de unas tierras fue el motivo de un vecino celoso en %s1 para matar a un reservista honorable.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3909,7 +3909,7 @@
 		<English>A reservist in %s1 did not manage to get over his wartime experience and ended in suicide.</English>
 		<French>Un r&#233;serviste &#224; %s1 n'a pas pu vivre avec ses souvenirs de la guerre et s'est suicid&#233;.</French>
 		<German>Ein Reservist in %s1 kam von seinen Kriegserlebnissen nicht hinweg und beging schlie&#223;lich Selbstmord.</German>
-		<Italian>A reservist in %s1 did not manage to get over his wartime experience and ended in suicide.</Italian>
+		<Italian>Un riservista del %s1 non riusc&#236; a superare l'esperienza della guerra e fin&#236; suicida.</Italian>
 		<Spanish>Un reservista en %s1 no logr&#243; superar sus experiencias en la guerra y termin&#243; en suicidio.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3917,7 +3917,7 @@
 		<English>A reservist in %s1 did not want to be conscripted in case of emergency anymore and disappeared without a trace.</English>
 		<French>Un r&#233;serviste &#224; %s1 ne voulait plus &#234;tre appel&#233; en cas de besoin et a disparu sans laisser de trace.</French>
 		<German>Ein Reservist in %s1 wollte nicht mehr im Notfall eingezogen werden und verschwand spurlos.</German>
-		<Italian>A reservist in %s1 did not want to be conscripted in case of emergency anymore and disappeared without a trace.</Italian>
+		<Italian>Un riservista in %s1 non ha pi&#249; voluto essere richiamato in caso di emergenza ed &#232; scomparso senza lasciare traccia.</Italian>
 		<Spanish>Un reservista en %s1 no ha querido ser reclutado en un caso de emergencia y ha desaparecido sin dejar rastro.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3925,7 +3925,7 @@
 		<English>Gambling debts were the fate of a reservist who was found dead in the alleys of %s1.</English>
 		<French>Des dettes de jeu ont forc&#233; le destin d'un r&#233;serviste, retrouv&#233; mort dans une all&#233;e sombre &#224; %s1.</French>
 		<German>Spielschulden waren wohl das Los eines Reservisten, der heute in den Gassen von %s1 tot aufgefunden wurde.</German>
-		<Italian>Gambling debts were the fate of a reservist who was found dead in the alleys of %s1.</Italian>
+		<Italian>I debiti di gioco furono il destino di un riservista trovato morto nei vicoli di %s1.</Italian>
 		<Spanish>Las deudas por juego fueron la causa de que un reservista fuera encontrado muerto en los callejones de %s1.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3933,7 +3933,7 @@
 		<English>"Hail the king" were the dying words of a honorable reservist in %s1.</English>
 		<French>"Vive le roi" ont &#233;t&#233; les derniers mots d'un honorable r&#233;serviste &#224; %s1.</French>
 		<German>"Hail dem K&#246;nig" waren die letzten Worte eines ehrenw&#252;rdigen Reservisten in %s1.</German>
-		<Italian>"Hail the king" were the dying words of a honorable reservist in %s1.</Italian>
+		<Italian>"Salute al re" furono le ultime parole di un onorevole riservista in %s1.</Italian>
 		<Spanish>"Viva el rey" fueron las moribundas palabras de un reservista honorable en %s1.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3941,7 +3941,7 @@
 		<English>A reservist in %s1 was buried after a long and honorable life.</English>
 		<French>Un r&#233;serviste &#224; %s1 a &#233;t&#233; enterr&#233; apr&#232;s une vie longue et honorable.</French>
 		<German>Ein Reservist in %s1 wurde nach langem Dasein ehrenvoll bestattet.</German>
-		<Italian>A reservist in %s1 was buried after a long and honorable life.</Italian>
+		<Italian>Un riservista in %s1 ha ricevuto una sepoltura onorevole dopo una lunga esistenza.</Italian>
 		<Spanish>Un reservista en %s1 fue enterrado despu&#233;s de una vida larga y honorable.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4069,7 +4069,7 @@
 		<English>[H1]The Dark Age[\H1][NEWLINE]The polytheistic cults and religions of the rich were now supplanted by the monotheistic faiths of the poor. Occult rituals which in the meanwhile only served for the purpose of someone own power needs were overshadowed by charity, equality of men and a paradisiacal afterlife. This new faith is beginning to destroy the balance based on absolute power and will cause confusion. The Dark Age begins ...</English>
 		<French>[H1]L'&#226;ge sombre[\H1][NEWLINE]Les cultes polyth&#233;istes des riches sont supplant&#233;s par les religions monoth&#233;istes des pauvres. La charit&#233;, l'&#233;galit&#233; et l'attente d'une vie paradisiaque apr&#232;s la mort remplacent les rites occultes qui assuraient le contr&#244;le de la population par les puissants. Cette nouvelle foi est en train de d&#233;truire l'&#233;quilibre de la soci&#233;t&#233;. L'&#226;ge sombre commence ...</French>
 		<German>[H1]Das Dunkle Zeitalter[\H1][NEWLINE]Die polytheistischen Kulte und Religionen der Reichen wurden nun von der monotheistischen Glaubensrichtung der &#196;rmeren verdr&#228;ngt. Okkulte Rituale die mittlerweile nur mehr dem Zweck eigener Machtbed&#252;rfnisse dienten wurden von N&#228;chstenliebe, Gleichheit der Menschen und einem paradiesischem Leben nach dem Tod &#252;berschattet. Diese neue Glaubensrichtung wird anfangs das auf absolute Macht basierende Gleichgewicht zerst&#246;ren und f&#252;r Verwirrung sorgen. Das Dunkle Zeitalter beginnt...</German>
-		<Italian>[H1]The Dark Age[\H1][NEWLINE]The polytheistic cults and religions of the rich were now supplanted by the monotheistic faiths of the poor. Occult rituals which in the meanwhile only served for the purpose of someone own power needs were overshadowed by charity, equality of men and a paradisiacal afterlife. This new faith is beginning to destroy the balance based on absolute power and will cause confusion. The Dark Age begins ...</Italian>
+		<Italian>[H1]L'et&#224; oscura[\H1][NEWLINE]I culti e le religioni politeistiche dei ricchi furono ora soppiantati dalle fedi monoteistiche dei poveri. I rituali occulti che nel frattempo servivano solo allo scopo di soddisfare i bisogni di potere di qualcuno furono oscurati dalla carit&#224;, dall'uguaglianza degli uomini e da un aldil&#224; paradisiaco. Questa nuova fede sta iniziando a distruggere l'equilibrio basato sul potere assoluto e causer&#224; confusione. L'et&#224; oscura inizia...</Italian>
 		<Spanish>[H1]La Edad Oscura[\H1][NEWLINE]Los cultos y religiones polite&#237;stas de los ricos ahora fueron reemplazados por las creencias monote&#237;stas de los pobres. Rituales ocultos que mientras tanto solo sirvieron para aumentar el propio poder que alguien necesita fue ensombrecido por la caridad, la igualdad de los hombres y una vida despu&#233;s de la muerte paradis&#237;aca. Esta nueva fe est&#225; empezando a destruir el balance basado en el poder absoluto y causar&#225; confusi&#243;n. La Edad Oscura comienza ...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4245,7 +4245,7 @@
 		<English>The ranged attack has cost %d1 [ICON_GOLD].</English>
 		<French>L'attaque &#224; distance a co&#251;t&#233; %d1 [ICON_GOLD]</French>
 		<German>Der Fernangriff hat Euch %d1 [ICON_GOLD] gekostet.</German>
-		<Italian>The ranged attack has cost %d1 [ICON_GOLD].</Italian>
+		<Italian>L'attacco a distanza ti costa %d1 [ICON_GOLD].</Italian>
 		<Spanish>El ataque a distancia tiene un coste de %d1 [ICON_GOLD].</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4267,7 +4267,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONUMENT_INFO_2</Tag>
 		<English>Conquered cities now receive a victory temple (monument). Monuments can be mined with supply wagons and rebuilt in other cities.</English>
-		<French>Les villes conquises re&#231;oivent maintenant un temple de la victoire (monument). Les monuments peuvent &#234;tre d&#233;mont&#233;s avec un chariot de ravitaillement et reconstruits dans d'autres villes.</French>
+		<French>Les villes conquises re&#231;oivent d&#233;sormais un temple de la victoire (monument). Les monuments peuvent &#234;tre d&#233;mantel&#233;s avec un chariot de ravitaillement et reconstruits dans d'autres villes.</French>
 		<German>Eroberte St&#228;dte bekommen nun einen Siegestempel (Monument). Monumente k&#246;nnen mit einem Versorgungskarren abgebaut und in anderen St&#228;dten wieder aufgebaut werden.</German>
 		<Italian>Le citt&#224; conquistate ora ricevono un tempio della vittoria (monumento). I monumenti possono essere estratti con un carrello di rifornimento e ricostruiti in altre citt&#224;.</Italian>
 		<Spanish>Las ciudades conquistadas ahora reciben un templo de la victoria (monumento). Los monumentos se pueden extraer con un carro de suministros y reconstruirse en otras ciudades.</Spanish>
@@ -4301,7 +4301,7 @@
 		<English>Which bonus resource do you want to distribute?</English>
 		<French>Quelle ressource voulez-vous implanter ?</French>
 		<German>Welches Bonusgut m&#246;chtet Ihr verbreiten?</German>
-		<Italian>Which bonus resource do you want to distribute?</Italian>
+		<Italian>Quale risorsa bonus vuoi distribuire?</Italian>
 		<Spanish>&#191;Qu&#233; recurso quieres distribuir?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4309,7 +4309,7 @@
 		<English>Cereals or rice</English>
 		<French>C&#233;r&#233;ales ou riz</French>
 		<German>Getreide oder Reis</German>
-		<Italian>Cereals or rice</Italian>
+		<Italian>Grano o riso</Italian>
 		<Spanish>Cereales o arroz</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4317,7 +4317,7 @@
 		<English>Cows, pigs or sheeps</English>
 		<French>Bovins, cochons ou moutons</French>
 		<German>K&#252;he, Schweine oder Schafe</German>
-		<Italian>Cows, pigs or sheeps</Italian>
+		<Italian>Mucche, maiali o pecore</Italian>
 		<Spanish>Reses, cerdos o ovejas</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4397,7 +4397,7 @@
 		<English>(not possible)</English>
 		<French>(impossible)</French>
 		<German>(nicht m&#246;glich)</German>
-		<Italian>(not possible)</Italian>
+		<Italian>(non possibile)</Italian>
 		<Spanish>(no es posible)</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4405,7 +4405,7 @@
 		<English>As a thank-you you receive from the govenor the unit: %s1_unit</English>
 		<French>Pour vous remercier, le gouverneur a mis &#224; votre disposition [NUM1:un:une:des:des] %s1_unit</French>
 		<German>Als Dankesch&#246;n erh&#228;lt Ihr vom Statthalter die Einheit: %s1_unit</German>
-		<Italian>As a thank-you you receive from the govenor the unit: %s1_unit</Italian>
+		<Italian>Come ringraziamento riceverai l'unit&#224; dal governatore: %s1_unit</Italian>
 		<Spanish>Como agradecimiento, recibes de tu gobernador la unidad: %s1_unit</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4517,7 +4517,7 @@
 		<English>What do you intend to do in %s1_city?</English>
 		<French>Que comptez-vous faire &#224; %s1_city ?</French>
 		<German>Was gedenkt Ihr in %s1_city zu tun?</German>
-		<Italian>What do you intend to do in %s1_city?</Italian>
+		<Italian>Cosa pensi di fare a %s1_city?</Italian>
 		<Spanish>&#191;Qu&#233; es lo que quieres hacer en %s1_city?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4525,7 +4525,7 @@
 		<English>Improve influence</English>
 		<French>Am&#233;liorer votre influence</French>
 		<German>Einfluss verbessern</German>
-		<Italian>Improve influence</Italian>
+		<Italian>Migliora l'influenza</Italian>
 		<Spanish>Mejorar la influencia</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4533,7 +4533,7 @@
 		<English>Take a toll</English>
 		<French>R&#233;clamer un tribut</French>
 		<German>Tribut fordern</German>
-		<Italian>Take a toll</Italian>
+		<Italian>Pretendere un tributo</Italian>
 		<Spanish>Reclamar un tributo</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4557,7 +4557,7 @@
 		<English>Organize triumphal procession: -%d1 gold, +%d2 [ICON_HAPPY]</English>
 		<French>Organiser une parade triomphale : -%d1 [ICON_GOLD], +%d2 [ICON_HAPPY]</French>
 		<German>Triumpfzug organisieren: -%d1 Gold, +%d2 [ICON_HAPPY]</German>
-		<Italian>Organize triumphal procession: -%d1 gold, +%d2 [ICON_HAPPY]</Italian>
+		<Italian>Organizza corteo trionfale: -%d1 Oro, +%d2 [ICON HAPPY]</Italian>
 		<Spanish>Organiza una procesi&#243;n triunfal: -%d1 oro, +%d2 [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4565,7 +4565,7 @@
 		<English>Arrange a multi-day festival: -%d1 gold, +%d2 [ICON_HAPPY]</English>
 		<French>Pr&#233;parer une semaine de festivit&#233;s : -%d1 [ICON_GOLD], +%d2 [ICON_HAPPY]</French>
 		<German>Mehrt&#228;giges Fest veranstalten: -%d1 Gold, +%d2 [ICON_HAPPY]</German>
-		<Italian>Arrange a multi-day festival: -%d1 gold, +%d2 [ICON_HAPPY]</Italian>
+		<Italian>Ospita un festival di pi&#249; giorni: -%d1 Oro, +%d2 [ICON_HAPPY]</Italian>
 		<Spanish>Ordena m&#250;ltiples d&#237;as festivos: -%d1 oro, +%d2 [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4573,7 +4573,7 @@
 		<English>Attitude of the Governor</English>
 		<French>Attitude du gouverneur</French>
 		<German>Haltung des Statthalters</German>
-		<Italian>Attitude of the Governor</Italian>
+		<Italian>Atteggiamento del Governatore</Italian>
 		<Spanish>Actitud del Gobernador</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4581,7 +4581,7 @@
 		<English>Take a toll (%s1): +%d2 [ICON_UNHAPPY]</English>
 		<French>De l'or (%s1) : +%d2 [ICON_UNHAPPY]</French>
 		<German>Tribut fordern (%s1): +%d2 [ICON_UNHAPPY]</German>
-		<Italian>Take a toll (%s1): +%d2 [ICON_UNHAPPY]</Italian>
+		<Italian>Richiedi tributo (%s1): +%d2 [ICON_UNHAPPY]</Italian>
 		<Spanish>Recauda un impuesto (%s1): +%d2 [ICON_UNHAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4589,7 +4589,7 @@
 		<English>Conscript troops (%s1): +%d2 [ICON_UNHAPPY]</English>
 		<French>Conscription (%s1) : +%d2 [ICON_UNHAPPY]</French>
 		<German>Truppen ausheben (%s1): +%d2 [ICON_UNHAPPY]</German>
-		<Italian>Conscript troops (%s1): +%d2 [ICON_UNHAPPY]</Italian>
+		<Italian>Raduna truppe (%s1): +%d2 [ICON_UNHAPPY]</Italian>
 		<Spanish>Recluta tropas (%s1): +%d2 [ICON_UNHAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4597,7 +4597,7 @@
 		<English>Food recover (%s1): +%d2 [ICON_UNHAPPY]</English>
 		<French>Nourriture (%s1) : +%d2 [ICON_UNHAPPY]</French>
 		<German>Nahrung eintreiben (%s1): +%d2 [ICON_UNHAPPY]</German>
-		<Italian>Food recover (%s1): +%d2 [ICON_UNHAPPY]</Italian>
+		<Italian>Raccogli cibo (%s1): +%d2 [ICON_UNHAPPY]</Italian>
 		<Spanish>Consigue alimentos (%s1): +%d2 [ICON_UNHAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4605,7 +4605,7 @@
 		<English>Get manpower (%s1): +%d2 [ICON_UNHAPPY]</English>
 		<French>Main d'oeuvre (%s1) : +%d2 [ICON_UNHAPPY]</French>
 		<German>Arbeitskr&#228;fte holen (%s1): +%d2 [ICON_UNHAPPY]</German>
-		<Italian>Get manpower (%s1): +%d2 [ICON_UNHAPPY]</Italian>
+		<Italian>Ottieni lavoratori (%s1): +%d2 [ICON_UNHAPPY]</Italian>
 		<Spanish>Consigue mano de obra (%s1): +%d2 [ICON_UNHAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
@@ -4731,7 +4731,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ANGST</Tag>
 		<English>Fear</English>
-		<French>P&#233;toche</French>
+		<French>Effray&#233;</French>
 		<German>Angst</German>
 		<Italian>Terrore</Italian>
 		<Spanish>Temor</Spanish>
@@ -4995,7 +4995,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_LEADER_POSITION</Tag>
 		<English>Overview position</English>
-		<French>Poste d'aper&#231;u</French>
+		<French>Point de vue panoramique</French>
 		<German>&#220;berblicksposition</German>
 		<Italian>Posizione panoramica</Italian>
 		<Spanish>Posici&#243;n panor&#225;mica</Spanish>
@@ -5003,7 +5003,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORM_LEADER_POSITION_HELP</Tag>
 		<English>[ICON_BULLET]Prevents the defense of the General in a stack [NEWLINE][ICON_BULLET]100% escape on defense[NEWLINE][ICON_BULLET]Disappears after the first fight[NEWLINE][ICON_BULLET]Can only be selected when more than 75% health</English>
-		<French>[ICON_BULLET]Emp&#234;che le d&#233;fendre dans une pile d'unit&#233;s[NEWLINE][ICON_BULLET]100% de fuite en d&#233;fense[NEWLINE][ICON_BULLET]Dispara&#238;t apr&#232;s le premier combat[NEWLINE][ICON_BULLET]Ne peut &#234;tre s&#233;lectionn&#233; que lorsque sant&#233; &#62; 75% du total</French>
+		<French>[ICON_BULLET]Emp&#234;che le g&#233;n&#233;ral de d&#233;fendre la pile d'unit&#233;s[NEWLINE][ICON_BULLET]100% de fuite en d&#233;fense[NEWLINE][ICON_BULLET]Dispara&#238;t apr&#232;s le premier combat[NEWLINE][ICON_BULLET]Ne peut &#234;tre s&#233;lectionn&#233; que lorsque sant&#233; &#62; 75% du total</French>
 		<German>[ICON_BULLET]Verhindert die Verteidigung des Generals in einem Stack[NEWLINE][ICON_BULLET]100% Flucht bei Verteidigung[NEWLINE][ICON_BULLET]Verschwindet nach dem ersten Kampf[NEWLINE][ICON_BULLET]Kann nur bei mehr als 75% Gesundheit ausgew&#228;hlt werden</German>
 		<Italian>[ICON_BULLET]Impedisce al Generale di essere difeso in pila[NEWLINE][ICON_BULLET]Fuga al 100% in difesa [NEWLINE][ICON_BULLET]Scompare dopo il primo combattimento[NEWLINE][ICON_BULLET]Pu&#242; essere selezionato solo se la salute &#232; superiore al 75%</Italian>
 		<Spanish>[ICON_BULLET]Evita que el general sea defendido en una pila[NEWLINE][ICON_BULLET]100% de escape en defensa[NEWLINE][ICON_BULLET]Desaparece despu&#233;s de la primera pelea[NEWLINE][ICON_BULLET]Solo se puede seleccionar cuando hay m&#225;s del 75% de salud</Spanish>
@@ -5203,7 +5203,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_KOMPASS</Tag>
 		<English>Magnetic Compass</English>
-		<French>Compas Magn&#233;tique</French>
+		<French>Boussole magn&#233;tique</French>
 		<German>Magnetkompass</German>
 		<Italian>Bussola Magnetica</Italian>
 		<Spanish>Br&#250;jula</Spanish>
@@ -5211,7 +5211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_KOMPASS_HELP</Tag>
 		<English>[ICON_BULLET]Can be purchased in a port city with access to Magnetite.[NEWLINE][ICON_BULLET]Cost: 20 [ICON_GOLD]</English>
-		<French>[ICON_BULLET]Peut &#234;tre achet&#233; dans une ville portuaire avec acc&#232;s &#224; la Magn&#233;tite.[NEWLINE][ICON_BULLET]Co&#251;t : 20 [ICON_GOLD]</French>
+		<French>[ICON_BULLET]Peut &#234;tre achet&#233; dans une ville portuaire avec acc&#232;s &#224; la Magn&#233;tite[NEWLINE][ICON_BULLET]Co&#251;t : 20 [ICON_GOLD]</French>
 		<German>[ICON_BULLET]Kann in einer Hafenstadt mit Zugang zu Magnetit erworben werden.[NEWLINE][ICON_BULLET]Kosten: 20 [ICON_GOLD]</German>
 		<Italian>[ICON_BULLET]Pu&#242; essere acquistato in una citt&#224; portuale con accesso a Magnetite.[NEWLINE][ICON_BULLET]Costo: 20 [ICON_GOLD]</Italian>
 		<Spanish>[ICON_BULLET]Se puede comprar en una ciudad portuaria con acceso a Magnetita.[NEWLINE][ICON_BULLET]Costo: 20 [ICON_GOLD]</Spanish>
@@ -5675,7 +5675,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_BISCHOFSTUM</Tag>
 		<English>Bishopric</English>
-		<French>&#201;piscopat</French>
+		<French>Episcopat</French>
 		<German>Bischofstum</German>
 		<Italian>Episcopato</Italian>
 		<Spanish>Obispado</Spanish>
@@ -5963,7 +5963,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL1</Tag>
 		<English>1. Ecumenical Council</English>
-		<French>1. Concile &#338;cum&#233;nique</French>
+		<French>1er Concile oecum&#233;nique</French>
 		<German>1. &#214;kumenisches Konzil</German>
 		<Italian>1. Consiglio ecumenico</Italian>
 		<Spanish>1. Concilio ecum&#233;nico</Spanish>
@@ -5971,7 +5971,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL2</Tag>
 		<English>2. Ecumenical Council</English>
-		<French>2. Concile &#338;cum&#233;nique</French>
+		<French>2&#232;me Concile oecum&#233;nique</French>
 		<German>2. &#214;kumenisches Konzil</German>
 		<Italian>2. Consiglio ecumenico</Italian>
 		<Spanish>2. Concilio Ecum&#233;nico</Spanish>
@@ -5979,7 +5979,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL3</Tag>
 		<English>3. Ecumenical Council</English>
-		<French>3. Concile &#338;cum&#233;nique</French>
+		<French>3&#232;me Concile oecum&#233;nique</French>
 		<German>3. &#214;kumenisches Konzil</German>
 		<Italian>3. Consiglio ecumenico</Italian>
 		<Spanish>3. Concilio Ecum&#233;nico</Spanish>
@@ -5987,7 +5987,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL4</Tag>
 		<English>4. Ecumenical Council</English>
-		<French>4. Concile &#338;cum&#233;nique</French>
+		<French>4&#232;me Concile oecum&#233;nique</French>
 		<German>4. &#214;kumenisches Konzil</German>
 		<Italian>4. Consiglio ecumenico</Italian>
 		<Spanish>4. Concilio Ecum&#233;nico</Spanish>
@@ -5995,7 +5995,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_KONZIL5</Tag>
 		<English>5. Ecumenical Council</English>
-		<French>5. Concile &#338;cum&#233;nique</French>
+		<French>5&#232;me Concile oecum&#233;nique</French>
 		<German>5. &#214;kumenisches Konzil</German>
 		<Italian>5. Consiglio ecumenico</Italian>
 		<Spanish>5. Concilio Ecum&#233;nico</Spanish>
@@ -6275,7 +6275,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_ROMAN_ROADS</Tag>
 		<English>Roman Military Roads</English>
-		<French>Voies Militaires Romaines</French>
+		<French>Voies militaires romaines</French>
 		<German>R&#246;mische Heerstra&#223;en</German>
 		<Italian>Strade Militari Romane</Italian>
 		<Spanish>V&#237;as Militares Romanas</Spanish>
@@ -6339,7 +6339,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TAUBENPOST</Tag>
 		<English>Carrier Pigeons</English>
-		<French>Pigeons Voyageurs</French>
+		<French>Pigeons voyageurs</French>
 		<German>Brieftauben</German>
 		<Italian>Piccioni Viaggiatori</Italian>
 		<Spanish>Palomas Mensajeras</Spanish>
@@ -6347,7 +6347,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TAUBENZUCHT</Tag>
 		<English>Pigeon Breeding</English>
-		<French>Elevage de Pigeons</French>
+		<French>Elevage de pigeons</French>
 		<German>Taubenzucht</German>
 		<Italian>Allevamento di Piccioni</Italian>
 		<Spanish>Cria de Palomas</Spanish>
@@ -6371,7 +6371,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TOLERANZ</Tag>
 		<English>Edict of Toleration</English>
-		<French>&#201;dit de tol&#233;rance</French>
+		<French>Edit de tol&#233;rance</French>
 		<German>Toleranzedikt</German>
 		<Italian>Editto di Serdica</Italian>
 		<Spanish>Edicto de Tolerancia</Spanish>
@@ -6419,7 +6419,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_DEEP_OCEAN</Tag>
 		<English>Deep sea</English>
-		<French>Grands fonds</French>
+		<French>Haute mer</French>
 		<German>Tiefsee</German>
 		<Italian>Oceano profondo</Italian>
 		<Spanish>Oc&#233;ano profundo</Spanish>
@@ -6453,7 +6453,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Enemy units renegade more often, own units less often</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Les unit&#233;s ennemies se rendent plus souvent et les v&#244;tres moins souvent</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gegnerische Einheiten laufen h&#228;ufiger &#252;ber, eigene weniger h&#228;ufig</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Enemy units renegade more often, own units less often</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Le unit&#224; nemiche disertano pi&#249; spesso, le tue unit&#224; disertano meno spesso</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Las unidades enemigas desertar&#225;n con m&#225;s facilidad, mientras que las propias lo har&#225;n con menos frecuencia</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6461,7 +6461,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Slaves settled down in temples yield +3[ICON_CULTURE] (instead of +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Can employ one additional artist specialist in each city (from the tech alphabet)[NEWLINE][SPACE][SPACE][ICON_BULLET]+50% length of golden ages</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Les esclaves affect&#233;s aux temples produisent +3[ICON_CULTURE] (au lieu de +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Peut transformer un citoyen suppl&#233;mentaire en Artiste par ville (N&#233;cessite l'Alphabet)[NEWLINE][SPACE][SPACE][ICON_BULLET]Longueur de l'&#226;ge d'or +50%</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]In Tempeln angesiedelte Sklaven bringen +3[ICON_CULTURE] (statt +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Kann in jeder Stadt einen zus&#228;tzlichen K&#252;nstler einstellen (ab der Tech Alphabet)[NEWLINE][SPACE][SPACE][ICON_BULLET]+50% L&#228;nge von Goldenen Zeitaltern</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Slaves settled down in temples yield +3[ICON_CULTURE] (instead of +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Can employ one additional artist specialist in each city (from the tech alphabet)[NEWLINE][SPACE][SPACE][ICON_BULLET]+50% length of golden ages</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Gli schiavi stabiliti nei templi portano +3[ICON_CULTURE] (invece di +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Puoi assumere un artista aggiuntivo in ogni citt&#224; (da Alfabeto tecnologico)[NEWLINE][SPACE][SPACE][ICON_BULLET]+50% di durata delle Et&#224; dell'Oro</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Los esclavos asentados en templos rinden +3[ICON_CULTURE] (en vez de +1)[NEWLINE][SPACE][SPACE][ICON_BULLET]Puede asignar un artista especialista adicional en cada ciudad (a partir de la tecnolog&#237;a alfabeto)[NEWLINE][SPACE][SPACE][ICON_BULLET]+50% a la duraci&#243;n de las edades de oro</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6517,7 +6517,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]-15% production cost of buildings[NEWLINE][SPACE][SPACE][ICON_BULLET]-25% production cost of wonders</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Co&#251;t de production des b&#226;timents -15%[NEWLINE][SPACE][SPACE][ICON_BULLET]Co&#251;t de production des merveilles -25%</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]-15% Produktionskosten f&#252;r Geb&#228;ude[NEWLINE][SPACE][SPACE][ICON_BULLET]-25% Produktionskosten f&#252;r Wunder</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]-15% production cost of buildings[NEWLINE][SPACE][SPACE][ICON_BULLET]-25% production cost of wonders</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]-15% sui costi di produzione degli edifici[NEWLINE][SPACE][SPACE][ICON_BULLET]-25% sui costi di produzione delle meraviglie</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]-15% al coste de producci&#243;n de edificios[NEWLINE][SPACE][SPACE][ICON_BULLET]-25% al coste de producci&#243;n de maravillas</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6533,7 +6533,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]-50% cost of upgrading units</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Co&#251;t d'am&#233;lioration des unit&#233;s : -50%</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]-50% Kosten zum Aufstufen von Einheiten</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]-50% cost of upgrading units</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]-50% sul costo per potenziare le unit&#224;</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]-50% al coste de modernizar unidades</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6549,7 +6549,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET]Own cities never renegade to the enemy [LINK=CONCEPT_CITIES]due to siege[\LINK][NEWLINE][SPACE][SPACE][ICON_BULLET]Units receiving the City Garrison promotion in combat will be healed completely</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Vos villes ne se rendent jamais &#224; l'ennemi [LINK=CONCEPT_CITIES]au cours d'un si&#232;ge[\LINK][NEWLINE][SPACE][SPACE][ICON_BULLET]Les unit&#233;s sont compl&#232;tement soign&#233;es quand elles gagnent la promotion Garnison au combat</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET]Eigene St&#228;dte laufen niemals [LINK=CONCEPT_CITIES]durch Belagerung[\LINK] zum Gegner &#252;ber[NEWLINE][SPACE][SPACE][ICON_BULLET]Einheiten, die im Kampf die Garnison-Bef&#246;rderung erhalten, werden vollst&#228;ndig geheilt</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Own cities never renegade to the enemy [LINK=CONCEPT_CITIES]due to siege[\LINK][NEWLINE][SPACE][SPACE][ICON_BULLET]Units receiving the City Garrison promotion in combat will be healed completely</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET]Le proprie citt&#224; non passano mai al nemico [LINK=CONCEPT_CITIES]attraverso l'assedio[\LINK][NEWLINE][SPACE][SPACE][ICON_BULLET]Unit&#224; che distruggono la guarnigione in combattimento Ricevere la promozione sar&#224; completamente guarito</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]La ciudades propias no se rinden al enemigo[LINK=CONCEPT_CITIES] debido al asedio[\LINK][NEWLINE][SPACE][SPACE][ICON_BULLET]Las unidades que reciben el ascenso guarnici&#243;n de ciudad en combate ser&#225; curada completamente</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6565,7 +6565,7 @@
 		<English>[NEWLINE][SPACE][SPACE][ICON_BULLET][LINK=CONCEPT_PAE_SUPPLY]Supply units[\LINK] have +50% capacity</English>
 		<French>[NEWLINE][SPACE][SPACE][ICON_BULLET]Capacit&#233; des [LINK=CONCEPT_PAE_SUPPLY]Unit&#233;s de ravitaillement[\LINK] am&#233;lior&#233;e de 50%</French>
 		<German>[NEWLINE][SPACE][SPACE][ICON_BULLET][LINK=CONCEPT_PAE_SUPPLY]Versorgungseinheiten[\LINK] haben +50% Kapazit&#228;t</German>
-		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET][LINK=CONCEPT_PAE_SUPPLY]Supply units[\LINK] have +50% capacity</Italian>
+		<Italian>[NEWLINE][SPACE][SPACE][ICON_BULLET][LINK=CONCEPT_PAE_SUPPLY]Le unit&#224; di rifornimento[\LINK] hanno una capacit&#224; pari a +50%</Italian>
 		<Spanish>[NEWLINE][SPACE][SPACE][ICON_BULLET]Las [LINK=CONCEPT_PAE_SUPPLY]unidades de abastecimiento[\LINK] tienen +50% de capacidad</Spanish>
 	</TEXT>
 	<TEXT>
@@ -6795,7 +6795,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVAN_HELP</Tag>
 		<English>[ICON_BULLET]Double movement on desert[NEWLINE][ICON_BULLET]Can establish external trading posts[NEWLINE][ICON_BULLET]The number of buildable units corresponds to the number of trading posts in the empire (max 9 merchants)</English>
-		<French>[ICON_BULLET]Mouvement doubl&#233; dans le d&#233;sert[NEWLINE][ICON_BULLET]Peut &#233;tablir des postes de traite &#233;trangers[NEWLINE][ICON_BULLET]Le nombre d'unit&#233;s &#224; construire correspond au nombre de comptoirs de l'empire (max 9 commer&#231;ants)</French>
+		<French>[ICON_BULLET]Mouvement doubl&#233; dans le d&#233;sert[NEWLINE][ICON_BULLET]Peut &#233;tablir des postes de traite &#233;trangers[NEWLINE][ICON_BULLET]Vous ne pouvez construire plus de marchands que vous n'avez de comptoirs (max 9)</French>
 		<German>[ICON_BULLET]Doppelte Fortbewegung auf W&#252;ste[NEWLINE][ICON_BULLET]Kann externe Handelsposten errichten[NEWLINE][ICON_BULLET]Die Anzahl baubarer Einheiten entspricht der Anzahl der Handelsposten im Reich (max 9 H&#228;ndler)</German>
 		<Italian>[ICON_BULLET]Doppio movimento nel deserto[NEWLINE][ICON_BULLET]Pu&#242; stabilire postazioni di trading esterne[NEWLINE][ICON_BULLET]Il numero di unit&#224; costruibili corrisponde al numero di stazioni commerciali nell'impero (massimo 9 commercianti)</Italian>
 		<Spanish>[ICON_BULLET]Dobles movimientos en los desiertos[NEWLINE][ICON_BULLET]Puede crear puestos de comercio exterior[NEWLINE][ICON_BULLET]El n&#250;mero de unidades construibles corresponde al n&#250;mero de puestos comerciales en el imperio (m&#225;ximo 9 comerciantes)</Spanish>
@@ -6851,7 +6851,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CELTIC_GALLIC_WARRIOR</Tag>
 		<English>Celt warrior</English>
-		<French>Guerrier &#224; celt</French>
+		<French>Guerrier celte</French>
 		<German>Celt-Krieger</German>
 		<Italian>Guerriero celtico</Italian>
 		<Spanish>Guerrero celta</Spanish>
@@ -6962,8 +6962,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EMIGRANT_HELP</Tag>
-		<English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy (from Pop 6)[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop max 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villagesat no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)[NEWLINE][ICON_BULLET]Can upgrade a village to a town (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) with General Therapeutics (Tech)</English>
-		<French>[ICON_BULLET]Constructible si la ville est malheureuse ou malsaine (de la Pop 6)[NEWLINE][ICON_BULLET]Impossible de trouver des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut dissoudre une ville (pop. max. &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des villages sans frais[NEWLINE][ICON_BULLET]Peut rejoindre des villages (acc&#233;l&#232;re leur croissance)[NEWLINE][ICON_BULLET]Peut am&#233;liorer un village en ville (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) avec la M&#233;decine (technologie)</French>
+		<English>[ICON_BULLET]Buildable if the city is unhappy or unhealthy (from Pop 6)[NEWLINE][ICON_BULLET]Cannot found cities[NEWLINE][ICON_BULLET]Can join a city (+1 pop) and distribute its culture[NEWLINE][ICON_BULLET]Can disband a city (pop max 3)[NEWLINE][ICON_BULLET]When built: city pop -1, clears food storage[NEWLINE][ICON_BULLET]Can construct Villages at no cost[NEWLINE][ICON_BULLET]Can join villages (speeds up their growth)[NEWLINE][ICON_BULLET]Can upgrade a village to a town (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) with General Therapeutics (Tech)</English>
+		<French>[ICON_BULLET]Recrutable si la ville est malheureuse ou malsaine (Pop 6 min)[NEWLINE][ICON_BULLET]Ne peut pas fonder des villes[NEWLINE][ICON_BULLET]Peut rejoindre une ville (+1 pop) et diffuser sa culture[NEWLINE][ICON_BULLET]Peut d&#233;manteler une ville (pop. max. &#224; 3)[NEWLINE][ICON_BULLET]A la construction : -1 pop. dans la ville, vide le stockage de nourriture[NEWLINE][ICON_BULLET]Peut construire des cottages sans co&#251;t[NEWLINE][ICON_BULLET]Peut rejoindre des cottages (acc&#233;l&#232;re leur croissance)[NEWLINE][ICON_BULLET]Peut am&#233;liorer un village en ville (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) avec la M&#233;decine (technologie)</French>
 		<German>[ICON_BULLET]Baubar, wenn die Stadt ungl&#252;cklich oder ungesund ist (ab Pop 6)[NEWLINE][ICON_BULLET]Kann keine St&#228;dte gr&#252;nden[NEWLINE][ICON_BULLET]Kann sich einer Stadt anschlie&#223;en (+1 Pop) und dessen Kultur verbreiten[NEWLINE][ICON_BULLET]Kann eine Stadt aufl&#246;sen (Pop max 3)[NEWLINE][ICON_BULLET]Beim Bau: Stadtbev&#246;lkerung -1, leert den Nahrungsspeicher[NEWLINE][ICON_BULLET]Kann ohne Kosten H&#252;tten errichten[NEWLINE][ICON_BULLET]Kann sich H&#252;tten anschlie&#223;en (beschleunigt deren Wachstum)[NEWLINE][ICON_BULLET]Kann ab Allgemeine Heilkunde (Tech) ein Dorf zu einer Gemeinde (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) verbessern</German>
 		<Italian>[ICON_BULLET]Costruibile se la citt&#224; &#232; infelice o malata (dalla Pop 6)[NEWLINE][ICON_BULLET]Impossibile trovare le citt&#224;[NEWLINE][ICON_BULLET]Pu&#242; entrare in una citt&#224; (+1 pop) e diffondere la sua cultura[NEWLINE][ICON_BULLET]Pu&#242; sciogliere una citt&#224; (pop pi&#249; max 3)[NEWLINE][ICON_BULLET]Quando costruito: pop -1, svuota la riserva di cibo[NEWLINE][ICON_BULLET]Pu&#242; costruire villaggi gratuitamente[NEWLINE][ICON_BULLET]Pu&#242; unirti a villaggi (accelerer&#224; la loro crescita)[NEWLINE][ICON_BULLET]Pu&#242; trasformare un villaggio in una paese (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) con Medicina (tecnologia)</Italian>
 		<Spanish>[ICON_BULLET]Construible si la ciudad es infeliz o insalubre (de la Pop 6)[NEWLINE][ICON_BULLET]No se pueden encontrar ciudades[NEWLINE][ICON_BULLET]Puede unirse a una ciudad (+1 hab.) y distribuir su cultura[NEWLINE][ICON_BULLET]Puede disolver una ciudad (pop m&#225;s max 3)[NEWLINE][ICON_BULLET]Cuando se construye: pop -1, borra el almacenamiento de alimentos[NEWLINE][ICON_BULLET]Puede construir aldeas sin costo alguno.[NEWLINE][ICON_BULLET]Puede unirse a pueblos (acelera su crecimiento)[NEWLINE][ICON_BULLET]Puede convertir una aldea en un pueblo (+1[ICON_PRODUCTION], +1[ICON_COMMERCE]) con Terap&#233;utica General (tecnolog&#237;a)</Spanish>
@@ -7683,7 +7683,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPEARMAN_GERMAN</Tag>
 		<English>Frame-Man</English>
-		<French>Guerrier framea</French>
+		<French>Guerrier avec framea</French>
 		<German>Frame-Krieger</German>
 		<Italian>Guerriero con framea</Italian>
 		<Spanish>Guerrero framea</Spanish>
@@ -7779,7 +7779,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STRANDGUT</Tag>
 		<English>Stranded goods</English>
-		<French>&#201;pave</French>
+		<French>Epave</French>
 		<German>Strandgut</German>
 		<Italian>Carico naufragato</Italian>
 		<Spanish>Cargamento varado</Spanish>
@@ -7843,7 +7843,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TO_PIRATE_HELP</Tag>
 		<English>[ICON_BULLET]Can switch to a pirate ship on the open sea and on plots not visible to the opponent.</English>
-		<French>[ICON_BULLET]Peut passer &#224; un bateau pirate en haute mer et sur des parcelles non visibles par l'adversaire.</French>
+		<French>Permet de devenir un pirate sur une case de mer non visible par l'adversaire.</French>
 		<German>[ICON_BULLET]Der Wechsel zu einem Piratenschiff ist nur auf offener See und auf f&#252;r den Gegner nicht sichtbaren Feldern m&#246;glich.</German>
 		<Italian>[ICON_BULLET]Pu&#242; passare a una nave pirata in mare aperto e in zone non visibili all'avversario.</Italian>
 		<Spanish>[ICON_BULLET]Puede cambiar a un barco pirata en mar abierto y en parcelas no visibles para el oponente.</Spanish>
@@ -7851,7 +7851,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRADE_MERCHANT_HELP</Tag>
 		<English>[ICON_BULLET]Can establish external trading posts[NEWLINE][ICON_BULLET]The number of buildable units corresponds to the number of trading posts in the empire (max 9 merchants)</English>
-		<French>[ICON_BULLET]Peut &#233;tablir des postes de traite &#233;trangers[NEWLINE][ICON_BULLET]Le nombre d'unit&#233;s &#224; construire correspond au nombre de comptoirs de l'empire (max 9 commer&#231;ants)</French>
+		<French>[ICON_BULLET]Peut &#233;tablir des postes de traite &#233;trangers[NEWLINE][ICON_BULLET]Vous ne pouvez construire plus de marchands que vous n'avez de comptoirs (max 9)</French>
 		<German>[ICON_BULLET]Kann externe Handelsposten errichten[NEWLINE][ICON_BULLET]Die Anzahl baubarer Einheiten entspricht der Anzahl der Handelsposten im Reich (max 9 H&#228;ndler)</German>
 		<Italian>[ICON_BULLET]Pu&#242; stabilire postazioni di trading esterne[NEWLINE][ICON_BULLET]Il numero di unit&#224; costruibili corrisponde al numero di stazioni commerciali nell'impero (massimo 9 commercianti)</Italian>
 		<Spanish>[ICON_BULLET]Puede crear puestos de comercio exterior[NEWLINE][ICON_BULLET]El n&#250;mero de unidades construibles corresponde al n&#250;mero de puestos comerciales en el imperio (m&#225;ximo 9 comerciantes)</Spanish>
@@ -7867,7 +7867,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TREIBGUT</Tag>
 		<English>Flotsam</English>
-		<French>Bris</French>
+		<French>D&#233;bris</French>
 		<German>Treibgut</German>
 		<Italian>Relitti</Italian>
 		<Spanish>Pecio</Spanish>
@@ -7877,7 +7877,7 @@
 		<English>Your crew is pretty awkward in collecting the flotsam today...</English>
 		<French>Votre &#233;quipage a des difficult&#233;s &#224; r&#233;cup&#233;rer les d&#233;bris aujourd'hui...</French>
 		<German>Eure M&#228;nner stellen sich heute aber ganz ungeschickt an, das Treibgut einzufangen.</German>
-		<Italian>Your crew is pretty awkward in collecting the flotsam today...</Italian>
+		<Italian>I tuoi uomini stanno facendo un lavoro molto goffo nel recuperare i relitti oggi.</Italian>
 		<Spanish>Tu tripulaci&#243;n est&#225; muy torpe al recolectar hoy los pecios...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7885,7 +7885,7 @@
 		<English>At the attempt of collecting the flotsam, your crew needed to be pulled from the water tediously at first.</English>
 		<French>Il a fallu rep&#234;cher des membres de votre &#233;quipage tomb&#233;s &#224; l'eau en essayant de r&#233;cup&#233;rer des d&#233;bris flottants.</French>
 		<German>Beim Versuch, das Treibgut einzufangen, musste zuerst wieder Eure Mannschaft m&#252;hsam aus dem Wasser gezogen werden.</German>
-		<Italian>At the attempt of collecting the flotsam, your crew needed to be pulled from the water tediously at first.</Italian>
+		<Italian>Nel tentativo di catturare i relitti, l'equipaggio ha dovuto prima essere faticosamente tirato fuori dall'acqua.</Italian>
 		<Spanish>En el intento de recolectar el pecio, tu tripulaci&#243;n necesit&#243; tirar primero desde el agua tedi&#243;samente.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7893,7 +7893,7 @@
 		<English>You should have given your crew a swimming lesson before forcing it to collect flotsam!</English>
 		<French>Vous devriez apprendre &#224; nager &#224; votre &#233;quipage avant de les forcer &#224; r&#233;cup&#233;rer des d&#233;bris flottants !</French>
 		<German>Gebt Eurer Mannschaft doch besser Schwimmunterricht, bevor Ihr sie dazu n&#246;tigt, Treibgut einzusammeln!</German>
-		<Italian>You should have given your crew a swimming lesson before forcing it to collect flotsam!</Italian>
+		<Italian>&#200; meglio dare lezioni di nuoto alla tua squadra prima di costringerla a raccogliere relitti!</Italian>
 		<Spanish>&#161;Ten&#237;as que haber dado a tu tripulaci&#243;n unas lecciones de nataci&#243;n antes de forzarlos a recolectar pecios!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7901,7 +7901,7 @@
 		<English>Unfortunately, the sea was too high to get ahold of all the flotsam...</English>
 		<French>Malheureusement la mer &#233;tait trop houleuse pour r&#233;cup&#233;rer tous les d&#233;bris.</French>
 		<German>Der Wellengang war leider zu hoch, um an all das Treibgut ranzukommen...</German>
-		<Italian>Unfortunately, the sea was too high to get ahold of all the flotsam...</Italian>
+		<Italian>Sfortunatamente le onde erano troppo alte per raggiungere tutti i relitti...</Italian>
 		<Spanish>Desafortunadamente, la mar estaba demasiada alta para conseguir todos los pecios...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7917,7 +7917,7 @@
 		<English>The heavy wind prevented you from collecting the flotsam!</English>
 		<French>Un vent violent vous ont emp&#234;cher de r&#233;cup&#233;rer les d&#233;bris !</French>
 		<German>Der starke Wind machte das Einsammeln des Treibguts unm&#246;glich!</German>
-		<Italian>The heavy wind prevented you from collecting the flotsam!</Italian>
+		<Italian>Il forte vento ha reso impossibile la raccolta dei relitti!</Italian>
 		<Spanish>&#161;El viento fuerte te ha impedido de recolectar los pecios!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7925,7 +7925,7 @@
 		<English>For how long will you actually keep on trying to collect the flotsam?</English>
 		<French>Pendant combien de temps encore allez-vous essayer de r&#233;cup&#233;rer ces d&#233;bris ?</French>
 		<German>Wie oft wollt Ihr eigentlich noch versuchen, das Treibgut einzufangen?</German>
-		<Italian>For how long will you actually keep on trying to collect the flotsam?</Italian>
+		<Italian>Quanto spesso vuoi provare a catturare i relitti?</Italian>
 		<Spanish>&#191;Por cu&#225;nto tiempo seguir&#225;s intentar recolectar los pecios?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7933,7 +7933,7 @@
 		<English>I have heard of a crew which succeeded in collecting the flotsam at the first attempt...</English>
 		<French>J'ai entendu parler d'un &#233;quipage qui a r&#233;ussi &#224; r&#233;cup&#233;rer des d&#233;bris du premier coup...</French>
 		<German>Ich habe mal davon geh&#246;rt, dass es einer Mannschaft gleich beim ersten Mal gelungen ist, Treibgut einzusammeln...</German>
-		<Italian>I have heard of a crew which succeeded in collecting the flotsam at the first attempt...</Italian>
+		<Italian>Una volta ho sentito che una squadra &#232; riuscita a raccogliere dei rottami la prima volta...</Italian>
 		<Spanish>He escuchado de un tripulante que tuvo &#233;xito en recolectar el pecio en el primer intento...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7941,7 +7941,7 @@
 		<English>Well, the maneuver did not look bad, but you will not get the flotsam that easily...</English>
 		<French>Et bien, la manoeuvre semblait prometteuse mais vous n'aurez pas ces d&#233;bris si facilement...</French>
 		<German>Auch wenn das Man&#246;ver ganz gut aussah, das Treibgut wollte sich einfach nicht so leicht einfangen lassen...</German>
-		<Italian>Well, the maneuver did not look bad, but you will not get the flotsam that easily...</Italian>
+		<Italian>Anche se la manovra sembrava abbastanza buona, i relitti non sarebbero stati catturati cos&#236; facilmente...</Italian>
 		<Spanish>Bueno, la maniobra no parec&#237;a mala, pero no obtendr&#225;s el pecio tan f&#225;cilmente...</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7949,7 +7949,7 @@
 		<English>You could bring valuable goods on board!</English>
 		<French>Vous avez r&#233;ussi &#224; ramener des biens pr&#233;cieux &#224; bord !</French>
 		<German>Ihr konntet wertvolle Waren an Bord holen!</German>
-		<Italian>You could bring valuable goods on board!</Italian>
+		<Italian>Potresti portare a bordo beni di valore!</Italian>
 		<Spanish>&#161;Trajiste mercanc&#237;as valiosas a bordo!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7957,7 +7957,7 @@
 		<English>On this ship there is no room left to accommodate the flotsam!</English>
 		<French>Vous n'avez pas la place pour stocker les d&#233;bris !</French>
 		<German>Auf diesem Schiff bietet sich kein Platz mehr, um das Treibgut aufzunehmen!</German>
-		<Italian>On this ship there is no room left to accommodate the flotsam!</Italian>
+		<Italian>Non c'&#232; pi&#249; spazio su questa nave per portare i relitti!</Italian>
 		<Spanish>&#161;En este barco no queda espacio para alojar el pecio!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7965,7 +7965,7 @@
 		<English>You could bring a group of shipwrecked on board, that are well suited as slaves!</English>
 		<French>Vous pouvez prendre un groupe de naufrag&#233;s &#224; bord, ils feraient de tr&#232;s bons esclaves !</French>
 		<German>Ihr konntet eine Gruppe Schiffbr&#252;chiger an Bord holen, die sich gut als Sklaven eignen werden!</German>
-		<Italian>You could bring a group of shipwrecked on board, that are well suited as slaves!</Italian>
+		<Italian>Potresti portare a bordo un gruppo di naufraghi, perfetti come schiavi!</Italian>
 		<Spanish>&#161;Trajiste un grupo de n&#225;ufragos a bordo, que son adecuados como esclavos!</Spanish>
 	</TEXT>
 	<TEXT>

@@ -627,10 +627,10 @@ def doInquisitorPersecution2(iPlayer, iCity, iButton, iReligion, iUnit):
 				iReligion = lCityReligions[iButton]
 
 		if iReligion != -1:
-				if iReligion != iStateReligion:
+				if iReligion == iStateReligion:
 						iHC = -25
 				else:
-						iHC = 15
+						iHC = 25
 				pUnit = pPlayer.getUnit(iUnit)
 				if pUnit is not None and not pUnit.isNone():
 						# pUnit.doCommand(CommandTypes.COMMAND_DELETE, -1, -1)
@@ -638,7 +638,7 @@ def doInquisitorPersecution2(iPlayer, iCity, iButton, iReligion, iUnit):
 
 				# Does Persecution succeed
 				iRandom = CvUtil.myRandom(100, "pers_success")
-				if iRandom < 95 - (len(lCityReligions) * 5) + iHC:
+				if iRandom < 60 + (len(lCityReligions) * 5) + iHC:
 						pCity.setHasReligion(iReligion, 0, 0, 0)
 						if pPlayer.isHuman():
 								CyInterface().addMessage(iPlayer, True, 15, CyTranslator().getText("TXT_KEY_MESSAGE_INQUISITION", (pCity.getName(),)), "AS2D_PLAGUE", 2, szButton, ColorTypes(8), pCity.getX(), pCity.getY(), True, True)

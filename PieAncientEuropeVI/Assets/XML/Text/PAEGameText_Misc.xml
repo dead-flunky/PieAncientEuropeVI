@@ -163,7 +163,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_FOREST_RAM</Tag>
 		<English>Use the forest to construct a [COLOR_HIGHLIGHT_TEXT]battering ram[COLOR_REVERT].</English>
-		<French>Utilise la for&#234;t pour construire un [COLOR_HIGHLIGHT_TEXT]b&#233;lier[COLOR_REVERT].</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Construire un[COLOR_REVERT] b&#233;lier[NEWLINE]Utilise le bois de la for&#234;t sans la raser.</French>
 		<German>Nutzt den Wald f&#252;r den Bau eines [COLOR_HIGHLIGHT_TEXT]Rammbocks[COLOR_REVERT].</German>
 		<Italian>Usa la foresta per costruire un [COLOR_HIGHLIGHT_TEXT]ariete[COLOR_REVERT].</Italian>
 		<Spanish>Usa el bosque para construir un [COLOR_HIGHLIGHT_TEXT]ariete[COLOR_REVERT].</Spanish>
@@ -435,18 +435,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_GREAT_PROPHET_HOLY_CITY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Relocation of the Holy City[COLOR_REVERT][NEWLINE]Rename this city to the Holy City of</English>
-		<French>[COLOR_HIGHLIGHT_TEXT]D&#233;localisation de la Ville Sainte[COLOR_REVERT][NEWLINE]Renomme cette ville en Ville Sainte de</French>
+		<French>[COLOR_HIGHLIGHT_TEXT]Transfert de la ville sainte[COLOR_REVERT][NEWLINE]Cette ville deviendra la nouvelle ville sainte de</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Verlagerung der Heiligen Stadt[COLOR_REVERT][NEWLINE]Benennt diese Stadt zur Heiligen Stadt von</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Trasferimento della Citt&#224; Santa[COLOR_REVERT][NEWLINE]Rinomina questa citt&#224; in Citt&#224; Santa di</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Reubicaci&#243;n de la Ciudad Santa[COLOR_REVERT][NEWLINE]Cambie el nombre de esta ciudad a la Ciudad Santa de</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_LEGION2RANG</Tag>
-		<English>Train legionnaire for 25 gold</English>
-		<French>Entra&#238;ner l&#233;gionnaire pour 25 or</French>
-		<German>Legion&#228;r f&#252;r 25 Gold ausbilden lassen</German>
-		<Italian>Train legionnaire for 25 gold</Italian>
-		<Spanish>Entrena al legionario por 25 de oro.</Spanish>
+		<English>Train legionnaire for 25[ICON_GOLD]</English>
+		<French>Entra&#238;ner l&#233;gionnaire pour 25[ICON_GOLD]</French>
+		<German>Legion&#228;r f&#252;r 25[ICON_GOLD] ausbilden lassen</German>
+		<Italian>Addestra il legionario per 25[ICON_GOLD]</Italian>
+		<Spanish>Entrena al legionario por 25[ICON_GOLD]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_MORALE_UNIT</Tag>
@@ -954,11 +954,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_FEATURE_HUNTING</Tag>
-		<English>Units can deliver killed animals as food to a nearby city[NEWLINE][ICON_BULLET]Range of 4[NEWLINE][ICON_BULLET]Cities marked with a green circle can be served[NEWLINE][ICON_BULLET]Red marked ones are out of range</English>
-		<French>L'unit&#233; peut livrer des animaux tu&#233;s comme nourriture &#224; une ville voisine[NEWLINE][ICON_BULLET]Port&#233;e de 4[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle vert peuvent &#234;tre desservies[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle rouge sont hors limites</French>
-		<German>Einheiten k&#246;nnen erlegte Tiere als Nahrung in eine nahegelegene Stadt liefern[NEWLINE][ICON_BULLET]Umkreis von 4[NEWLINE][ICON_BULLET]Mit einem gr&#252;nen Kreis markierte St&#228;dte k&#246;nnen beliefert werden[NEWLINE][ICON_BULLET]Rot markierte sind au&#223;erhalb der Reichweite</German>
-		<Italian>Unit&#224; possono consegnare animali uccisi come cibo in una citt&#224; vicina[NEWLINE][ICON_BULLET]Raggio di 4[NEWLINE][ICON_BULLET]Le citt&#224; contrassegnate da un cerchio verde possono essere servite[NEWLINE][ICON_BULLET]Le marcate rosse sono fuori portata</Italian>
-		<Spanish>Unidades pueden entregar animales muertos como comida a una ciudad cercana[NEWLINE][ICON_BULLET]Rango de 4[NEWLINE][ICON_BULLET]Las ciudades marcadas con un c&#237;rculo verde se pueden servir[NEWLINE][ICON_BULLET]Las rojas marcadas est&#225;n fuera de rango</Spanish>
+		<English>Units can deliver killed animals as food to a nearby city[NEWLINE][ICON_BULLET]Within 4 plots to a city[NEWLINE][ICON_BULLET]Cities marked with a green circle can be served[NEWLINE][ICON_BULLET]Red marked ones are out of range</English>
+		<French>L'unit&#233; peut livrer des animaux tu&#233;s comme nourriture &#224; une ville voisine[NEWLINE][ICON_BULLET]Dans les 4 parcelles d'une ville[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle vert peuvent &#234;tre desservies[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle rouge sont hors limites</French>
+		<German>Einheiten k&#246;nnen erlegte Tiere als Nahrung in eine nahegelegene Stadt liefern[NEWLINE][ICON_BULLET]Innerhalb von 4 Feldern zur Stadt[NEWLINE][ICON_BULLET]Mit einem gr&#252;nen Kreis markierte St&#228;dte k&#246;nnen beliefert werden[NEWLINE][ICON_BULLET]Rot markierte sind au&#223;erhalb der Reichweite</German>
+		<Italian>Unit&#224; possono consegnare animali uccisi come cibo in una citt&#224; vicina[NEWLINE][ICON_BULLET]Entro 4 lotti per citt&#224;[NEWLINE][ICON_BULLET]Le citt&#224; contrassegnate da un cerchio verde possono essere servite[NEWLINE][ICON_BULLET]Le marcate rosse sono fuori portata</Italian>
+		<Spanish>Unidades pueden entregar animales muertos como comida a una ciudad cercana[NEWLINE][ICON_BULLET]Dentro de 4 parcelas a una ciudad[NEWLINE][ICON_BULLET]Las ciudades marcadas con un c&#237;rculo verde se pueden servir[NEWLINE][ICON_BULLET]Las rojas marcadas est&#225;n fuera de rango</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_NOCAMPUNIT</Tag>
@@ -1099,7 +1099,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_DYING_GENERAL2_4</Tag>
 		<English>The fears of your residents are slowly fading away!</English>
-		<French>Les craintes de vos r&#233;sidents commencent &#224; s'estomper !</French>
+		<French>Les craintes de vos citoyens commencent &#224; s'estomper !</French>
 		<German>Die &#196;ngste Eurer Einwohner schwinden allm&#228;hlich dahin!</German>
 		<Italian>Le paure dei tuoi residenti stanno cominciando a svanire!</Italian>
 		<Spanish>&#161;Los temores de sus residentes comienzan a desvanecerse!</Spanish>
@@ -1243,7 +1243,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_GREAT_PROPHET_HOLY_CITY</Tag>
 		<English>The city %s1 has been declared to the Holy City of the religion "%s2".</English>
-		<French>La ville %s1 a &#233;t&#233; d&#233;clar&#233;e la Ville Sainte pour la religion "%s2".</French>
+		<French>La ville de %s1 est devenue la nouvelle ville sainte de la religion "%s2".</French>
 		<German>Die Stadt %s1 wurde f&#252;r die Religion "%s2" zur Heiligen Stadt ernannt.</German>
 		<Italian>La citt&#224; %s1 &#232; stata dichiarata Citt&#224; Santa per la religione "%s2".</Italian>
 		<Spanish>La ciudad %s1 ha sido declarada Ciudad Santa para la religi&#243;n "%s2".</Spanish>
@@ -1386,11 +1386,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_3</Tag>
-		<English>After a heavy siege, the city %s1_city (%s2_civ) passed to %s3_civ2 without a fight.</English>
-		<French>Apr&#232;s un lourd si&#232;ge, la ville %s1_city (%s2_civ) est pass&#233;e &#224; %s3_civ2 sans combat.</French>
-		<German>Nach heftiger Belagerung ging die Stadt %s1_city (%s2_civ) kampflos an %s3_civ2.</German>
-		<Italian>Dopo un pesante assedio, la citt&#224; %s1_city (%s2_civ) pass&#242; a %s3_civ2 senza combattere.</Italian>
-		<Spanish>Despu&#233;s de un fuerte asedio, la ciudad %s1_city (%s2_civ) pas&#243; a %s3_civ2 sin luchar.</Spanish>
+		<English>After a heavy siege, the city %s1_city (%s2_civ_desc) passed to %s3_civ2_short_desc without a fight.</English>
+		<French>Apr&#232;s un si&#232;ge &#233;prouvant, la ville de %s1_city (%s2_civ_desc) s'est rendue aux %s3_civ2_short_desc sans combattre.</French>
+		<German>Nach heftiger Belagerung ging die Stadt %s1_city (%s2_civ_desc) kampflos an %s3_civ2_short_desc.</German>
+		<Italian>Dopo un pesante assedio, la citt&#224; %s1_city (%s2_civ_desc) pass&#242; a %s3_civ2_short_desc senza combattere.</Italian>
+		<Spanish>Despu&#233;s de un fuerte asedio, la ciudad %s1_city (%s2_civ_desc) pas&#243; a %s3_civ2_short_desc sin luchar.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_RENEGADE_CITY_B_4</Tag>
@@ -1415,6 +1415,14 @@
 		<German>Die %s1:3_CivAdj Zivilisation wurde vernichtet!!!</German>
 		<Italian>La civilt&#224; %s1:4_CivAdj &#232; stata distrutta!</Italian>
 		<Spanish>&#161;La civilizaci&#243;n %s1:2_CivAdj ha sido destruida!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_PAE_VERSION</Tag>
+		<English>Pie's Ancient Europe VII (7.0)</English>
+		<French>Pie's Ancient Europe VII (7.0)</French>
+		<German>Pie's Ancient Europe VII (7.0)</German>
+		<Italian>Pie's Ancient Europe VII (7.0)</Italian>
+		<Spanish>Pie's Ancient Europe VII (7.0)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PROGRESS_TOWARDS_TECH</Tag>
@@ -1605,7 +1613,7 @@
 		<English>With this bar, it is possible to vary the viewing distance to the surface of the earth. Requires game reload.</English>
 		<French>Cette barre permet de modifier le zoom sur la surface de la Terre. N&#233;cessite le red&#233;marrage du jeu.</French>
 		<German>Mithilfe dieses Balkens ist es m&#246;glich die Sichtdistanz zur Erdoberfl&#228;che zu variieren. Neustart des Spiels erforderlich.</German>
-		<Italian>With this bar, it is possible to vary the viewing distance to the surface of the earth. Requires game reload.</Italian>
+		<Italian>Utilizzando questa barra &#232; possibile variare la distanza visiva dalla superficie terrestre. &#200; necessario riavviare il gioco.</Italian>
 		<Spanish>Con esta barra es posible variar la distancia de visi&#243;n de la superficie de la Tierra. Requiere recargar el juego.</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2085,7 +2093,7 @@
 		<English>Khagan (Army Leader)</English>
 		<French>Khagan (chef d'arm&#233;e)</French>
 		<German>Khagan (Heerf&#252;hrer)</German>
-		<Italian>Khagan (Army Leader)</Italian>
+		<Italian>Khagan (Capo militare)</Italian>
 		<Spanish>Khagan (L&#237;der del ej&#233;rcito)</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3029,19 +3037,19 @@
 		<English>Cavalry</English>
 		<French>Cavalier lourd</French>
 		<German>
-			<Text>Kavallerie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
+<Text>Kavallerie</Text>
+<Gender>Male</Gender>
+<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Cavalleria</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
+<Text>Cavalleria</Text>
+<Gender>Female</Gender>
+<Plural>0:1</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Caballer&#237;a:Caballer&#237;as</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
+<Text>Caballer&#237;a:Caballer&#237;as</Text>
+<Gender>Female</Gender>
+<Plural>0:1</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3086,11 +3094,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUPPLY_FOOD_HELP</Tag>
-		<English>[ICON_BULLET]Can supply cities with food[NEWLINE][ICON_BULLET]Can transport ships over land[NEWLINE][ICON_BULLET]Can spread cultivable goods</English>
+		<English>[ICON_BULLET]Can supply cities with food[NEWLINE][ICON_BULLET]Can transport ships over land[NEWLINE][ICON_BULLET]Can spread cultivable bonus resources</English>
 		<French>[ICON_BULLET]Peut fournir de la nourriture aux villes[NEWLINE][ICON_BULLET]Peut transporter des navires par voie terrestre[NEWLINE][ICON_BULLET]Peut implanter des ressources cultivables</French>
-		<German>[ICON_BULLET]Kann St&#228;dte mit Nahrung beliefern[NEWLINE][ICON_BULLET]Kann Schiffe &#252;ber Land transportieren[NEWLINE][ICON_BULLET]Kann kultivierbare G&#252;ter verbreiten</German>
-		<Italian>[ICON_BULLET]Pu&#242; fornire alle citt&#224; cibo[NEWLINE][ICON_BULLET]Pu&#242; trasportare navi via terra[NEWLINE][ICON_BULLET]Pu&#242; diffondere beni coltivabili</Italian>
-		<Spanish>[ICON_BULLET]Puede suministrar ciudades con alimentos[NEWLINE][ICON_BULLET]Puede transportar barcos por tierra[NEWLINE][ICON_BULLET]Puede propagar productos cultivables</Spanish>
+		<German>[ICON_BULLET]Kann St&#228;dte mit Nahrung beliefern[NEWLINE][ICON_BULLET]Kann Schiffe &#252;ber Land transportieren[NEWLINE][ICON_BULLET]Kann kultivierbare Bonusressourcen verbreiten</German>
+		<Italian>[ICON_BULLET]Pu&#242; fornire alle citt&#224; cibo[NEWLINE][ICON_BULLET]Pu&#242; trasportare navi via terra[NEWLINE][ICON_BULLET]Pu&#242; diffondere risorse bonus coltivabili</Italian>
+		<Spanish>[ICON_BULLET]Puede suministrar ciudades con alimentos[NEWLINE][ICON_BULLET]Puede transportar barcos por tierra[NEWLINE][ICON_BULLET]Puede distribuir recursos de bonificaci&#243;n cultivables</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUPPLY_WAGON_HELP</Tag>

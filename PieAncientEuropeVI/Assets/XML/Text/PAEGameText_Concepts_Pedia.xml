@@ -1028,12 +1028,7 @@ When a city gets razed, another neighbour city will revolt.
 This excludes the capital and the second government city with the Basilica (forbidden palace).
 
 [ICON_BULLET] Taxes
-If the taxes over 50% are not used for research, culture or espionage, the citizens of a city can revolt
-at 60% taxes: 2% (chance of a revolt) and 1 turn city revolt (does not apply to the AI)
-at 70% taxes: 4% and 2 turns city revolt
-at 80% taxes: 6% and 3 turns city revolt
-at 90% taxes: 8% and 4 turns city revolt
-at 100% taxes: 10% and 5 turns city revolt
+If taxes (depending on the form of government) exceed 50% or 75% and are no longer used for research, culture or espionage, the citizens of a city can revolt (AI is not affected).
 
 Excess happy citizens reduce the risk by 1%. Unhappy ones increase it.
 
@@ -1143,12 +1138,7 @@ Quand une ville est d&#233;truite, une ville voisine suppl&#233;mentaire se r&#2
 Les capitales et villes avec un palais provincial ne sont pas touch&#233;es par ce type de r&#233;volte.
 
 [ICON_BULLET] Taxes
-A partir d'un certain niveau de taxes, chaque ville peut se r&#233;volter &#224; chaque tour (ne s'applique pas &#224; l'IA) :
-60% de taxes : probabilit&#233; de r&#233;volte de 2% (pendant 1 tour)
-70% de taxes : probabilit&#233; de r&#233;volte de 4% (pendant 2 tours)
-80% de taxes : probabilit&#233; de r&#233;volte de 6% (pendant 3 tours)
-90% de taxes : probabilit&#233; de r&#233;volte de 8% (pendant 4 tours)
-100% de taxes : probabilit&#233; de r&#233;volte de 10% (pendant 5 tours)
+Si les imp&#244;ts (selon la forme de gouvernement) d&#233;passent 50 % ou 75 % et ne sont plus utilis&#233;s pour la recherche, la culture ou l'espionnage, les citoyens d'une ville peuvent se r&#233;volter (l'IA n'en est pas affect&#233;e).
 
 Le bonheur exc&#233;dentaire r&#233;duit ce risque de 1% par [ICON_HAPPY]. Le risque est augment&#233; de 1% par [ICON_UNHAPPY].
 
@@ -1261,12 +1251,7 @@ Wird diese Stadt niedergebrannt, revoltiert auf jeden Fall (noch) eine Nachbarst
 Ausgenommen sind die Hauptstadt und Provinzhauptst&#228;dte.
 
 [ICON_BULLET] Steuern
-Wenn die Steuern &#252;ber 50% nicht mehr f&#252;r Forschung, Kultur oder Spionage eingesetzt werden, k&#246;nnen die B&#252;rger einer Stadt revoltieren (KI ist nicht davon betroffen)
-bei 60% Steuern: 2% (Chance pro Runde) und 1 Runde Revolte
-bei 70% Steuern: 4% und 2 Runden Revolte
-bei 80% Steuern: 6% und 3 Runden Revolte
-bei 90% Steuern: 8% und 4 Runden Revolte
-bei 100% Steuern: 10% und 5 Runden Revolte
+Wenn die Steuern (je nach Staatsform) &#252;ber 50% oder 75% nicht mehr f&#252;r Forschung, Kultur oder Spionage eingesetzt werden, k&#246;nnen die B&#252;rger einer Stadt revoltieren (KI ist nicht davon betroffen).
 
 &#220;bersch&#252;ssige gl&#252;ckliche B&#252;rger senken das Risiko jeweils um 1%. Ungl&#252;ckliche steigern es.
 
@@ -1380,12 +1365,7 @@ Se questa citt&#224; bruciata , non si ribellarono sicuramente ( ancora) una cit
 Fatta eccezione per la capitale e capoluoghi di provincia .
 
 [ICON_BULLET] Imposte
-Se si usano le tasse sul 50 % non &#232; pi&#249; per la ricerca , la cultura o lo spionaggio , i cittadini di una citt&#224; possono ribellarsi (AI non viene influenzata )
-60 % IVA : 2 % ( possibilit&#224; per round ) e 1 giro di rivolta
-al 70 % IVA : 4 % e 2 giri rivolta
-80% Tasse: 6 % e 3 turni rivolta
-90 % IVA : 8 % e 4 turni rivolta
-al 100 % delle imposte : 10 % e 5 round rivolta
+Se le tasse (a seconda della forma di governo) superano il 50% o il 75% e non vengono pi&#249; utilizzate per la ricerca, la cultura o lo spionaggio, i cittadini di una citt&#224; possono ribellarsi (l'IA non ne &#232; influenzata).
 
 Cittadini felici in eccesso riducono il rischio dell'1% . Infelice aumentarla .
 
@@ -1498,12 +1478,7 @@ Cuando una ciudad es arrasada, una ciudad vecina entra en revuelta.
 Esto excluye a la capital y a la segunda ciudad gubernamental con la Bas&#237;lica (palacio prohibido).
 
 [ICON_BULLET] Impuestos
-Si el 50% de los impuestos no se usan para la investigaci&#243;n, cultura o espionaje, los ciudadanos de una ciudad pueden entrar en una revuelta.
-al 60% de impuestos: 2% (probabilidad de revuelta) y un turno de revuelta (no se aplica a la IA)
-al 70% de impuestos: 4% y 2 turnos de revuelta
-al 80% de impuestos: 6% y 3 turnos de revuelta
-al 90% de impuestos: 8% y 4 turnos de revuelta
-al 100% de impuestos: 10% y 5 turnos de revuelta
+Si los impuestos (seg&#250;n la forma de gobierno) superan el 50% o el 75% y ya no se utilizan para la investigaci&#243;n, la cultura o el espionaje, los ciudadanos de una ciudad pueden rebelarse (la IA no se ve afectada por esto).
 
 Los ciudadanos felices adicionales reducen el riesgo en 1%. Los infelices lo aumentan.
 
@@ -5401,7 +5376,7 @@ Weitere Informationen:
 [ICON_BULLET]F&#252;r Festung gilt 5% Wahrscheinlichkeit
 [ICON_BULLET]Belagerungseinheiten (Katapulte) erh&#246;hen die Chance der Zerst&#246;rung eines Forts auf 20%
 [ICON_BULLET]H&#252;tten und die daraus entstehenden Modernisierungen werden schrittweise zerst&#246;rt und zerst&#246;rte H&#252;tten und Festungen werden zu Stadtruinen
-[ICON_BULLET]Stammesd&#246;rfer und Stadtruinen sind von der Zerst&#246;rung ausgeschlossen
+[ICON_BULLET]Stammesd&#246;rfer und Stadtruinen sind von Zerst&#246;rungen ausgeschlossen
 [ICON_BULLET]Auf See k&#246;nnen Fischerboote auf die gleiche Weise zerst&#246;rt werden
 		</German>
 		<Italian>
@@ -5437,7 +5412,7 @@ I seguenti aggiornamenti possono essere costruite nella foresta :
 [ICON_BULLET] cuscinetto
 [ICON_BULLET] falegnameria
 [ICON_BULLET] mulino ad acqua
-[ICON_BULLET] Fortress
+[ICON_BULLET] fortezza
 
 Per alcuni di bosco sopra deve essere abgerodet ( dalla lavorazione del ferro possibile ) :
 [ICON_BULLET] Farm
@@ -5459,10 +5434,10 @@ Per maggiori informazioni :
 [H2] distruzione di modernizzazione sul campo di battaglia [\H2]
 
 [ICON_BULLET] L'ammodernamento del campo di battaglia ( sul terreno , &#232; stato aggredito a ) possono essere distrutti (probabilit&#224; 10 % )
-[ICON_BULLET] Per Fortress probabilit&#224; del 5 %
-[ICON_BULLET] unit&#224; d'assedio ( catapulte ) aumentano il rischio di distruzione di una fortezza al 20 %
-[ICON_BULLET] capanne e la modernizzazione risultante viene rifugi e forti gradualmente distrutta e distrutta per le rovine della citt&#224;
-[ICON_BULLET] villaggi tribali e le rovine della citt&#224; sono esclusi dal Zerst&#246;ung
+[ICON_BULLET] Per fortezza probabilit&#224; del 5 %
+[ICON_BULLET] Unit&#224; d'assedio ( catapulte ) aumentano il rischio di distruzione di una fortezza al 20 %
+[ICON_BULLET] Capanne e la modernizzazione risultante viene rifugi e forti gradualmente distrutta e distrutta per le rovine della citt&#224;
+[ICON_BULLET] I villaggi tribali e le rovine delle citt&#224; sono esclusi dalla distruzione
 [ICON_BULLET] Barche da pesca possono essere distrutti nello stesso modo in mare
 		</Italian>
 		<Spanish>
@@ -5960,25 +5935,25 @@ Dieses Ereignis wird verhindert, wenn eine medizinische Technologie erforscht wu
 		<Italian>
 Le epidemie si sono verificate in tempi antichi spesso in citt&#224; , dove molte persone avevano vissuto in un piccolo spazio .
 
-[H1] lebbra [\H1]
+[H1]Lebbra[\H1]
 
 Focolaio di infezione lebbra in una citt&#224; (probabilit&#224; di 1 % per i cittadini malati ) :
-[ICON_BULLET] malsano Citt&#224;
+[ICON_BULLET] malsano citt&#224;
 [ICON_BULLET] la dimensione della citt&#224; dal 5
 
-seguire :
+Seguire:
 [ICON_BULLET] La popolazione della citt&#224; potrebbe cadere a met&#224;!
 
 Immobile:
 [ICON_BULLET] Una colonia di lebbrosi riduce sempre la popolazione urbana solo circa 1
 
-[H1] peste [\H1]
+[H1]Peste[\H1]
 
 Possibile epidemia di peste in una citt&#224; (probabilit&#224; del 2 % per i cittadini malati ) :
-[ICON_BULLET] malsano Citt&#224;
+[ICON_BULLET] malsano citt&#224;
 [ICON_BULLET] la dimensione della citt&#224; dal 9
 
-seguire :
+Seguire :
 [ICON_BULLET] Un Pestgeb&#228;ude &#232; in citt&#224; creato ( +5 [ICON_UNHAPPY] +5 [ICON_UNHEALTHY] )
 
 Durante un ulteriore 5 turni:
@@ -5996,7 +5971,7 @@ Come ci si pu&#242; proteggere contro la peste ?
 [ICON_BULLET] cappelli collegamento stradale o collegare via dei limiti della diplomazia ( senza frontiere aperte )
 [ICON_BULLET] Passare alla forma di centralizzazione di governo ( nessun aeree commercio estero )
 
-[H1] Influenza [\H1]
+[H1]Influenza[\H1]
 
 Questo &#232; un evento (Event CIV ) , che pu&#242; verificarsi da una popolazione di citt&#224; 6 .
 Questo evento &#232; inibita se una tecnologia medica &#232; stato ricercato .
@@ -6096,15 +6071,16 @@ La probabilit&#233; qu'une unit&#233; passe &#224; l'ennemi apr&#232;s une d&#23
 [ICON_BULLET] Winner is Charismatic: +10%
 [ICON_BULLET] Loser is Charismatic: -10%
 
-Si l'unit&#233; passe &#224; l'ennemi, le vainqueur obtient :
-[ICON_BULLET]L'unit&#233; vaincue avec toutes ses promotions (50%)
-ou
-[ICON_BULLET] Un esclave (50%)
-Si l'unit&#233; passe &#224; l'ennemi :
-[ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]All&#233;geance[COLOR_REVERT]
-[ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]Agressif[COLOR_REVERT] (si le dirigeant du vainqueur n'a pas le trait [COLOR_POSITIVE_TEXT]Agressif[COLOR_REVERT])
-[ICON_BULLET]Elle perdra la promotion [COLOR_HIGHLIGHT_TEXT]Protecteur[COLOR_REVERT] (si le dirigeant du vainqueur n'a pas le trait [COLOR_POSITIVE_TEXT]Protecteur[COLOR_REVERT])
-[ICON_BULLET]Elle gagnera la promotion [COLOR_HIGHLIGHT_TEXT]Peu fiable[COLOR_REVERT]
+Exemples :
+[ICON_BULLET] Une unit&#233; g&#233;n&#233;rale bat une unit&#233; normale : 40 %
+[ICON_BULLET] Une unit&#233; avec charismatique et h&#233;ro&#239;que bat une unit&#233; "peu fiable" : 50 %
+[ICON_BULLET] Une unit&#233; avec charismatique bat une unit&#233; avec charismatique : 20 %
+[ICON_BULLET] Une unit&#233; sans charismatique bat une unit&#233; avec charismatique : 10 %
+
+Si l'unit&#233; perdante est captur&#233;e, le vainqueur gagne soit
+[ICON_BULLET] l'unit&#233; vaincue avec toutes ses promotions soit
+[ICON_BULLET] un esclave
+La probabilit&#233; est de 50 : 50. Si l'unit&#233; fait d&#233;fection, elle perdra les promotions All&#233;geance et Agressif et obtiendra la promotion "Peu fiable".
 		</French>
 		<German>
 [H1]Loyalit&#228;t[\H1]
@@ -6150,7 +6126,7 @@ La possibilit&#224; che l'avversario trabocca dopo lotta recuperato &#232; 20 % 
 
 [ICON_BULLET] vincitore &#232; un'unit&#224; generale : +20 % 
 [ICON_BULLET] vincitore ha il promozione della eroe: +10 % 
-[ICON_BULLET] vincitore ha il promozione di leadership : +10 % 
+[ICON_BULLET] vincitore ha il promozione di General: +10 % 
 [ICON_BULLET] vincitore ha nessuna di queste promozioni : +10 % 
 
 Esempi:
@@ -6161,7 +6137,7 @@ Esempi:
 Se il perdente viene catturato , il vincitore ottiene sia
 [ICON_BULLET] l'unit&#224; sconfitto con tutte le sue promozioni o
 [ICON_BULLET] uno schiavo
-L'opportunit&#224; ecco 50:50 . Fa l'unit&#224; , perde se ha questo , le promozioni fedelt&#224; , aggressivo e protettivo (uno &#232; anche aggressivo o protettivo, ottenere unit&#224; versato tale trasporto non &#232; ) , e di ottenere " Inaffidabile".
+L'opportunit&#224; ecco 50:50 . Fa l'unit&#224; , perde se ha questo , le promozioni fedelt&#224; , aggressivo e protettivo (uno &#232; anche aggressivo o protettivo, ottenere unit&#224; versato tale trasporto non &#232; ) , e di ottenere "Inaffidabile".
 		</Italian>
 		<Spanish>
 [H1]La Lealtad[\H1]

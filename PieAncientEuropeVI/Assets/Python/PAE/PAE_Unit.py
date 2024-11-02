@@ -1127,7 +1127,7 @@ def canDoFormation(pUnit, iFormation):
 				# Schildwall
 				if iFormation == gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL"):
 						if pTeam.isHasTech(gc.getInfoTypeForString("TECH_ARMOR")):
-								if iUnitType not in L.LNoSchildwallUnits:
+								if iUnitType not in L.LNoSchildwallUnits and pUnit.getUnitClassType() not in L.LNoSchildwallUnitClasses:
 										return True
 
 				# Drill: Manipel, Phalanx, ...
@@ -3482,7 +3482,6 @@ def renegade(pWinner, pLoser):
 		elif iLoserUnitAIType in lUnitAI:
 				bUnitRenegades = False
 		elif(iLoserUnitType in L.LUnitWarAnimals or
-				 iLoserUnitType in L.LUnitDomesticated or
 				 iLoserUnitType in L.LUnitLootLessSeaUnits or
 				 iLoserUnitType in L.LUnitCanBeDomesticated or
 				 iLoserUnitType in L.LTradeUnits or

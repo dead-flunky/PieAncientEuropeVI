@@ -2477,7 +2477,7 @@ class CvMainInterface:
 																										"INTERFACE_TRADE_COLLECT_SPY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 3, True)
 																								screen.show("BottomButtonContainer")
 																								iCount += 1
-																		if bCity:
+																		if bCity and iUnitType in L.LCultivationUnits:
 																				screen.appendMultiListButton("BottomButtonContainer", ArtFileMgr.getInterfaceArtInfo(
 																						"INTERFACE_TRADE_BUY").getPath(), 0, WidgetTypes.WIDGET_GENERAL, 739, 1, True)
 																				screen.show("BottomButtonContainer")
@@ -3187,7 +3187,6 @@ class CvMainInterface:
 																if iImp in L.LImprFort:
 																		# Besitzerabfrage
 																		if pPlot.getOwner() == iUnitOwner or pPlot.getOwner() == -1:
-																				# Nur Melee
 																				if pUnit.getUnitCombatType() in L.LMeleeCombats or pUnit.getUnitCombatType() in L.LArcherCombats:
 																						# Festungsformation
 																						if PyInfo.UnitInfo(pUnit.getUnitType()).getMoves() == 1:
@@ -3313,10 +3312,9 @@ class CvMainInterface:
 
 																		# Melee and Spear
 																		elif pUnit.getUnitCombatType() in L.LMeleeCombats:
-																				if pTeam.isHasTech(gc.getInfoTypeForString("TECH_BEWAFFNUNG4")):
-																						# Schildwall
-																						if pUnit.getUnitType() not in L.LNoSchildwallUnits:
-																								iFormation = gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL")
+																				# Schildwall
+																				iFormation = gc.getInfoTypeForString("PROMOTION_FORM_SCHILDWALL")
+																				if PAE_Unit.canDoFormation(pUnit, iFormation):
 																								if pUnit.isHasPromotion(iFormation):
 																										screen.appendMultiListButton("BottomButtonContainer", "Art/Interface/Buttons/Formations/button_formation_wall_gr.dds",
 																																								 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, iFormation, -1, False)
