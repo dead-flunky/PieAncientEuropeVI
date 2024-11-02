@@ -3058,13 +3058,11 @@ class CvEventManager:
 				bWinnerAnimal = (pWinner.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL or
 												 iWinnerUnitType in L.LUnitCanBeDomesticated or
 												 iWinnerUnitType in L.LUnitWildAnimals or
-												 iWinnerUnitType in L.LUnitWarAnimals or
-												 iWinnerUnitType in L.LUnitDomesticated)
+												 iWinnerUnitType in L.LUnitWarAnimals)
 				bLoserAnimal = (pLoser.getUnitAIType() == UnitAITypes.UNITAI_ANIMAL or
 												iLoserUnitType in L.LUnitCanBeDomesticated or
 												iLoserUnitType in L.LUnitWildAnimals or
-												iLoserUnitType in L.LUnitWarAnimals or
-												iLoserUnitType in L.LUnitDomesticated)
+												iLoserUnitType in L.LUnitWarAnimals)
 
 				sScenarioName = CvUtil.getScriptData(CyMap().plot(0, 0), ["S", "t"])
 				if sScenarioName == "FirstPunicWar":
