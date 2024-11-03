@@ -2062,12 +2062,12 @@ class CvMainInterface:
 										iUnitOwner = pUnit.getOwner()
 										pUnitOwner = gc.getPlayer(iUnitOwner)
 										pTeam = gc.getTeam(pUnitOwner.getTeam())
+										pPlot = pUnit.plot()
 
 										# isTurnActive wohl wegen PBEM
 										if pUnitOwner.isTurnActive() or CyGame().isNetworkMultiPlayer():
 												bCapital = False
 												bCity = False
-												pPlot = pUnit.plot()
 												if pPlot.isCity():
 														bCity = True
 														pCity = pPlot.getPlotCity()

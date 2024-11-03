@@ -12716,7 +12716,7 @@
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
-			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
 				<BuildingClass>BUILDINGCLASS_STABLE</BuildingClass>
 			</BuildingsRequired>

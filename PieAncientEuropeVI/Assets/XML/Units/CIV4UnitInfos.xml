@@ -19,6 +19,7 @@
 			<Description>TXT_KEY_UNIT_LION2</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_ANIMALS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_LION_HELP</Help>
 			<Advisor>NONE</Advisor>
 			<bAnimal>1</bAnimal>
 			<bFood>0</bFood>
@@ -585,6 +586,10 @@
 			<iHillsDefense>0</iHillsDefense>
 			<TerrainNatives/>
 			<FeatureNatives>
+				<FeatureNative>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
 				<FeatureNative>
 					<FeatureType>FEATURE_DICHTERWALD</FeatureType>
 					<bFeatureNative>1</bFeatureNative>
@@ -2945,7 +2950,7 @@
 			<Strategy/>
 			<Help>TXT_KEY_UNIT_HORSE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<bAnimal>1</bAnimal>
+			<bAnimal>0</bAnimal>
 			<bFood>0</bFood>
 			<bNoBadGoodies>0</bNoBadGoodies>
 			<bOnlyDefensive>1</bOnlyDefensive>
@@ -3073,7 +3078,12 @@
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
 			<iHillsDefense>0</iHillsDefense>
-			<TerrainNatives/>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
 			<FeatureNatives/>
 			<TerrainAttacks/>
 			<TerrainDefenses/>
@@ -3137,7 +3147,7 @@
 			<Strategy>TXT_KEY_UNIT_HORSE_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_HORSE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<bAnimal>1</bAnimal>
+			<bAnimal>0</bAnimal>
 			<bFood>0</bFood>
 			<bNoBadGoodies>0</bNoBadGoodies>
 			<bOnlyDefensive>1</bOnlyDefensive>
@@ -3329,7 +3339,7 @@
 			<Strategy>TXT_KEY_UNIT_CAMEL_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_CAMEL_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<bAnimal>1</bAnimal>
+			<bAnimal>0</bAnimal>
 			<bFood>0</bFood>
 			<bNoBadGoodies>0</bNoBadGoodies>
 			<bOnlyDefensive>0</bOnlyDefensive>
@@ -3457,7 +3467,12 @@
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
 			<iHillsDefense>0</iHillsDefense>
-			<TerrainNatives/>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
 			<FeatureNatives/>
 			<TerrainAttacks/>
 			<TerrainDefenses/>
@@ -3525,7 +3540,7 @@
 			<Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_ELEFANT_HELP</Help>
 			<Advisor>NONE</Advisor>
-			<bAnimal>1</bAnimal>
+			<bAnimal>0</bAnimal>
 			<bFood>0</bFood>
 			<bNoBadGoodies>0</bNoBadGoodies>
 			<bOnlyDefensive>1</bOnlyDefensive>
