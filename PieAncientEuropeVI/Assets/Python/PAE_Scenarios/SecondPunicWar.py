@@ -34,7 +34,7 @@ def onEndGameTurn(iGameTurn):
 				popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_2NDPUNICWAR_1", ("",)))
 				popupInfo.addPopup(gc.getGame().getActivePlayer())
 
-		# Konsul Lucius Postumius Albinus fällt im Kampf gegen Boier
+		# Konsul Lucius Postumius Albinus fällt im Kampf gegen Boier
 		if iGameTurn == 40:
 				iBoier = 7
 				if not gc.getTeam(gc.getPlayer(iBoier).getTeam()).isAtWar(gc.getPlayer(iRome).getTeam()):
@@ -204,6 +204,17 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 						]
 						Schiffsplot = getRandomPlot(lPlots)
 
+
+						# Meldung an den Spieler
+						popupInfo = CyPopupInfo()
+						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
+						popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_2NDPUNICWAR_3", ("",)))
+						popupInfo.addPopup(iPlayer)
+						CyCamera().JustLookAtPlot(Schiffsplot)
+						
+						# Karthago Gold geben, damit die KI die Schiffe nicht gleich auflöst
+						gc.getPlayer(iCarthago).changeGold(300)
+
 						# Schiffe erstellen
 						LNewUnits = [
 								gc.getInfoTypeForString("UNIT_QUADRIREME")
@@ -215,12 +226,6 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT1"), True)
 										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT2"), True)
 
-						# Meldung an den Spieler
-						popupInfo = CyPopupInfo()
-						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_TEXT)
-						popupInfo.setText(CyTranslator().getText("TXT_KEY_MESSAGE_2NDPUNICWAR_3", ("",)))
-						popupInfo.addPopup(iPlayer)
-						CyCamera().JustLookAtPlot(Schiffsplot)
 
 		# Schlacht von Cissa, Römer landen in Iberien
 		if iGameTurn == 23:
@@ -420,7 +425,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 						]
 						for i in LNewUnits:
 								for _ in range(2):
-										pUnit = gc.getPlayer(iRome).initUnit(i, Schiffsplot.getX(), Schiffsplot.getY(), UnitAITypes.UNITAI_ASSAULT_SEA, DirectionTypes.DIRECTION_SOUTH)
+										pUnit = gc.getPlayer(iCarthago).initUnit(i, Schiffsplot.getX(), Schiffsplot.getY(), UnitAITypes.UNITAI_ASSAULT_SEA, DirectionTypes.DIRECTION_SOUTH)
 										pUnit.setExperience(2, -1)
 										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT1"), True)
 										pUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_COMBAT2"), True)
@@ -436,7 +441,7 @@ def onEndPlayerTurn(iPlayer, iGameTurn):
 								gc.getInfoTypeForString("UNIT_SKIRMISHER")
 						]
 						for i in LNewUnits:
-								pUnit = gc.getPlayer(iRome).initUnit(i, Landungsplot.getX(), Landungsplot.getY(), UnitAITypes.UNITAI_ATTACK, DirectionTypes.DIRECTION_SOUTH)
+								pUnit = gc.getPlayer(iCarthago).initUnit(i, Landungsplot.getX(), Landungsplot.getY(), UnitAITypes.UNITAI_ATTACK, DirectionTypes.DIRECTION_SOUTH)
 								pUnit.setExperience(2, -1)
 
 						# Meldung an den Spieler

@@ -3326,10 +3326,10 @@ EndPlayer
 BeginPlayer
 	Team=7
 	LeaderType=LEADER_BRENNUS
-	LeaderName=TXT_KEY_SCEN_LEADER_BOIORIX
+	LeaderName=TXT_KEY_SCEN_CIV_BOIER_LEADER
 	CivDesc=TXT_KEY_CIV_BOII_DESC
 	CivShortDesc=TXT_KEY_CIV_BOII_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_BOII_ADJECTIVE
+	CivAdjective=TXT_KEY_SCEN_CIV_BOIER_ADJ
 	FlagDecal=Art/Interface/TeamColor/vBUpdate/FlagDECAL_Celt_Knotwork.dds
 	WhiteFlag=0
 	CivType=CIVILIZATION_CELT

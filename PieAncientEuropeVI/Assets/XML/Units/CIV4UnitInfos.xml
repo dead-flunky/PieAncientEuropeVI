@@ -22920,8 +22920,8 @@
 			<iCollateralDamage>100</iCollateralDamage>
 			<iCollateralDamageLimit>80</iCollateralDamageLimit>
 			<iCollateralDamageMaxUnits>3</iCollateralDamageMaxUnits>
-			<iCityAttack>-50</iCityAttack>
-			<iCityDefense>-50</iCityDefense>
+			<iCityAttack>-45</iCityAttack>
+			<iCityDefense>-45</iCityDefense>
 			<iAnimalCombat>0</iAnimalCombat>
 			<iHillsAttack>0</iHillsAttack>
 			<iHillsDefense>0</iHillsDefense>

@@ -3778,14 +3778,10 @@ def huntingResult(pLoser, pWinner):
 		iJagd = gc.getInfoTypeForString("TECH_HUNTING")
 		team = gc.getTeam(pWinnerPlayer.getTeam())
 		if team.isHasTech(iJagd):
-				CityArray = []
-				(loopCity, pIter) = pWinnerPlayer.firstCity(False)
-				while loopCity:
-						if huntingDistance(loopCity.plot(), pWinner.plot()) or huntingDistance(loopCity.plot(), pLoser.plot()):
-								CityArray.append(loopCity)
-						(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
-
-				if CityArray:
+				
+				# Bestimmte Stadt (im Umkreis)
+				pHunterCityPlot = huntingCity(pWinner)
+				if pHunterCityPlot:
 						iFoodMin, iFoodRand = L.DJagd.get(iLoserUnitType, L.DJagd[None])
 
 						iFoodAdd = iFoodMin + CvUtil.myRandom(iFoodRand, "Hunt")
@@ -3794,11 +3790,30 @@ def huntingResult(pLoser, pWinner):
 						if iWinnerUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
 								iFoodAdd *= 2
 
-						iCity = CvUtil.myRandom(len(CityArray), "HuntCity")
-						CityArray[iCity].changeFood(iFoodAdd)
+						pHunterCity = pHunterCityPlot.getPlotCity()
+						pHunterCity.changeFood(iFoodAdd)
 						if pWinnerPlayer.isHuman():
 								CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_ADD_FOOD", (pWinner.getName(),
-								CityArray[iCity].getName(), iFoodAdd)), None, 2, pLoser.getButton(), ColorTypes(13), pLoser.getX(), pLoser.getY(), True, True)
+								pHunterCity.getName(), iFoodAdd)), None, 2, pLoser.getButton(), ColorTypes(13), pLoser.getX(), pLoser.getY(), True, True)
+
+				# Irgendeine Stadt im Umkreis (bis PAE 6.18)
+				#CityArray = []
+				#(loopCity, pIter) = pWinnerPlayer.firstCity(False)
+				#while loopCity:
+				#		if huntingDistance(loopCity.plot(), pWinner.plot()) or huntingDistance(loopCity.plot(), pLoser.plot()):
+				#				CityArray.append(loopCity)
+				#		(loopCity, pIter) = pWinnerPlayer.nextCity(pIter, False)
+				#if CityArray:
+				#		iFoodMin, iFoodRand = L.DJagd.get(iLoserUnitType, L.DJagd[None])
+				#		iFoodAdd = iFoodMin + CvUtil.myRandom(iFoodRand, "Hunt")
+				#		# Hunter gets double bonus
+				#		if iWinnerUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+				#				iFoodAdd *= 2
+				#		iCity = CvUtil.myRandom(len(CityArray), "HuntCity")
+				#		CityArray[iCity].changeFood(iFoodAdd)
+				#		if pWinnerPlayer.isHuman():
+				#				CyInterface().addMessage(iWinnerPlayer, True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_ADD_FOOD", (pWinner.getName(),
+				#				CityArray[iCity].getName(), iFoodAdd)), None, 2, pLoser.getButton(), ColorTypes(13), pLoser.getX(), pLoser.getY(), True, True)
 
 
 def huntingDistance(pPlot1, pPlot2):
@@ -3811,6 +3826,25 @@ def huntingDistance(pPlot1, pPlot2):
 								return True
 		return False
 
+def huntingCity(pUnit):
+		iX = pUnit.getX()
+		iY = pUnit.getY()
+		iUnitOwner = pUnit.getOwner()
+		iCityPop = 0
+		iCityDist = 0
+		pPlot = ""
+		for x in range(-4,4):
+				for y in range(-4,4):
+						loopPlot = gc.getMap().plot(iX+x, iY+y)
+						if loopPlot is not None and not loopPlot.isNone():
+								if iUnitOwner == loopPlot.getOwner() and loopPlot.isCity():
+										iPopCheck = loopPlot.getPlotCity().getPopulation()
+										iDist = plotDistance(loopPlot.getX(), loopPlot.getY(), iX, iY)
+										if iCityPop == 0 or (iCityPop > iPopCheck or iCityDist > iDist):
+												pPlot = loopPlot
+												iCityPop = iPopCheck
+												iCityDist = iDist
+		return pPlot
 
 def convertToPirate(city, unit):
 		"""unused due to possible OOS with to many pirates"""

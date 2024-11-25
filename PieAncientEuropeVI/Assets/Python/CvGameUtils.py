@@ -211,15 +211,19 @@ class CvGameUtils:
 
 								# Hunter
 								if iUnitType == gc.getInfoTypeForString("UNIT_HUNTER"):
+										loopPlot = PAE_Unit.huntingCity(pHeadSelectedUnit)
+										if loopPlot:
+												CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
+
 										# Cities im Jagdradius
-										(loopCity, pIter) = pPlayer.firstCity(False)
-										while loopCity:
-												loopPlot = loopCity.plot()
-												if PAE_Unit.huntingDistance(loopPlot, pHeadSelectedUnit.plot()):
-														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
-												else:
-														CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_RED", 1)
-												(loopCity, pIter) = pPlayer.nextCity(pIter, False)
+										#(loopCity, pIter) = pPlayer.firstCity(False)
+										#while loopCity:
+										#		loopPlot = loopCity.plot()
+										#		if PAE_Unit.huntingDistance(loopPlot, pHeadSelectedUnit.plot()):
+										#				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_GREEN", 1)
+										#		else:
+										#				CyEngine().addColoredPlotAlt(loopPlot.getX(), loopPlot.getY(), PlotStyles.PLOT_STYLE_CIRCLE, PlotLandscapeLayers.PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS, "COLOR_RED", 1)
+										#		(loopCity, pIter) = pPlayer.nextCity(pIter, False)
 
 										# Wälder ohne Lager (nur bei Deer und Fur)
 										#iMapW = gc.getMap().getGridWidth()
