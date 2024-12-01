@@ -1129,7 +1129,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The amphitheatre in %s1 was a gladiator's doom!</English>
 		<French>L'amphith&#233;&#226;tre de %s1 a vu la fin d'un gladiateur !</French>
 		<German>Das Amphitheater in %s1 wurde einem Gladiator zum Verh&#228;ngnis!</German>
-		<Italian>The amphitheatre in %s1 was a gladiator's doom!</Italian>
+		<Italian>L'anfiteatro in %s1 &#232; stato fatale per un gladiatore!</Italian>
 		<Spanish>&#161;El anfiteatro en %s1 fue la perdici&#243;n del gladiador!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1145,7 +1145,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>In the amphitheatre in %s1, a gladiator was mauled by a lion!</English>
 		<French>Un gladiateur a &#233;t&#233; d&#233;chiquet&#233; par un lion dans l'amphith&#233;&#226;tre de %s1 !</French>
 		<German>Im Amphitheater in %s1 wurde ein Gladiator von einem L&#246;wen zerfleischt!</German>
-		<Italian>In the amphitheatre in %s1, a gladiator was mauled by a lion!</Italian>
+		<Italian>Nell'anfiteatro in %s1, un gladiatore &#232; stato sbranato da un leone!</Italian>
 		<Spanish>&#161;En el anfiteatro de %s1, un gladiador fue devorado por un le&#243;n!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1153,7 +1153,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The amphitheatre in %s1 ended a gladiator's life!</English>
 		<French>L'amphith&#233;&#226;tre de %s1 a vu s'achev&#233; la vie d'un gladiateur !</French>
 		<German>Das Amphitheater in %s1 beendete einem Gladiator das Leben!</German>
-		<Italian>The amphitheatre in %s1 ended a gladiator's life!</Italian>
+		<Italian>L'anfiteatro di %s1 ha posto fine alla vita di un gladiatore!</Italian>
 		<Spanish>&#161;En el anfiteatro de %s1 acab&#243; la vida de un gladiador!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -1161,7 +1161,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>In the amphitheatre in %s1 ended up a gladiator as lion's muck!</English>
 		<French>Un gladiateur a fini en p&#226;t&#233; pour lion dans l'amphith&#233;&#226;tre de %s1 !</French>
 		<German>Im Amphitheater in %s1 endete ein Gladiator als L&#246;wenfra&#223;!</German>
-		<Italian>In the amphitheatre in %s1 ended up a gladiator as lion's muck!</Italian>
+		<Italian>Nell'anfiteatro in %s1, un gladiatore &#232; stato mangiato dai leoni!</Italian>
 		<Spanish>&#161;En el anfiteatro de %s1 termin&#243; un galdiador como despojos de le&#243;n!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -3360,9 +3360,9 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<Tag>TXT_KEY_MESSAGE_CITY_ADD_FOOD</Tag>
 		<English>Your %s1 has hunted a prey from %d3[ICON_FOOD] for %s2.</English>
 		<French>[NUM1:Votre:Votre:Vos:Vos] %s1 [NUM1:a:a:ont:ont] chass&#233; une proie de %d3[ICON_FOOD] pour %s2.</French>
-		<German>Eure Einheit %s1 konnte f&#252;r die Stadt %s2 eine Beute von %d3 Nahrung erjagen.</German>
-		<Italian>La tua unit&#224; %s1 ha cacciato una preda da %d3 cibo per %s2.</Italian>
-		<Spanish>Tu unidad %s1 caz&#243; una presa de %d3 de comida para %s2.</Spanish>
+		<German>Eure Einheit %s1 konnte f&#252;r die Stadt %s2 eine Beute von %d3[ICON_FOOD] erjagen.</German>
+		<Italian>La tua unit&#224; %s1 ha cacciato una preda da %d3[ICON_FOOD] per %s2.</Italian>
+		<Spanish>Tu unidad %s1 caz&#243; una presa de %d3[ICON_FOOD] para %s2.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_CITY_CIVIC_BARRACKS</Tag>
@@ -6022,11 +6022,11 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CONTACT_LEADER</Tag>
-		<English>Contact %s1_PlyrName of the %s2_CivName</English>
-		<French>Contacter %s1_PlyrName des %s2_CivName</French>
-		<German>%s1_PlyrName von der Zivilisation der %s2_CivName kontaktieren</German>
-		<Italian>Contatta il giocatore %s1_PlyrName della civilt&#224; %s2:2_CivName</Italian>
-		<Spanish>Contactar con %s1_PlyrName [NUM2:del:de la:de los:de las] %s2_CivName</Spanish>
+		<English>Contact %s1_PlyrName of %s2_CivName</English>
+		<French>Contacter %s1_PlyrName de %s2_CivName</French>
+		<German>%s1_PlyrName von der Zivilisation von %s2_CivName kontaktieren</German>
+		<Italian>Contatta il giocatore %s1_PlyrName della civilt&#224; di %s2:2_CivName</Italian>
+		<Spanish>Contactar con %s1_PlyrName de %s2_CivName</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CORPORATION_FOUNDED</Tag>
@@ -7105,7 +7105,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 requires %d2 gold tribute to his loyalty! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 r&#233;clame un tribut de %d2 [ICON_GOLD] pour conserver de sa loyaut&#233;. Comment allez-vous r&#233;agir ?</French>
 		<German>Der Statthalter der Provinz von %s1 verlangt %d2 Gold Tribut f&#252;r seine Loyalit&#228;t! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 requires %d2 gold tribute to his loyalty! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 richiede %d2 tributi d'oro per la sua lealt&#224;! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 pide un tributo de %d2 de Oro por su lealtad! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7121,7 +7121,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 requires %d2 gold to properly rebuild his on his command burnt down city! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 requiert %d2 [ICON_GOLD] pour reconstruire un village incendi&#233; sur son ordre. Allez-vous c&#233;der &#224; ses revendications ?</French>
 		<German>Der Statthalter der Provinz von %s1 ben&#246;tigt %d2 Gold, um die auf seinem Befehl hin niedergebrannte Stadt wieder ordentlich aufzubauen! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 requires %d2 gold to properly rebuild his on his command burnt down city! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 ha bisogno di %d2 oro per ricostruire adeguatamente la citt&#224; che &#232; stata bruciata per suo ordine! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 pide %d2 de Oro para reconstruir correctamente su centro de comando quemado en la ciudad! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7129,7 +7129,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 would like to have %d2 gold in order to buy fashionable golden sandals! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 vous r&#233;clame %d2 [ICON_GOLD] afin de pouvoir s'acheter les derni&#232;res sandales plaqu&#233;es or &#224; la mode. Allez-vous c&#233;der &#224; ses revendications ?</French>
 		<German>Der Statthalter der Provinz von %s1 h&#228;tte gerne %d2 Gold, um sich modische goldene Sandalen zu kaufen! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 would like to have %d2 gold in order to buy fashionable golden sandals! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 vorrebbe %d2 oro per acquistare sandali dorati alla moda! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 le gustar&#237;a tener %d2 de Oro para comprar sandalias doradas de moda! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7137,7 +7137,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 would like to have %d2 gold to finance the murder of an opponent by hitmen! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 souhaiterait une aide de %d2 [ICON_GOLD] pour financer l'assassinat d'un opposant. Comment allez-vous r&#233;agir ?</French>
 		<German>Der Statthalter der Provinz von %s1 h&#228;tte gerne %d2 Gold, um den Mord eines Gegenspielers mittels Auftragsm&#246;rdern zu finanzieren! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 would like to have %d2 gold to finance the murder of an opponent by hitmen! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 vorrebbe %d2 oro per finanziare l'omicidio di un avversario tramite sicari a contratto! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 le gustar&#237;a tener %d2 de Oro para financiar el asesinato de un oponente con sicarios! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7153,7 +7153,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 needs only %d2 gold, to finish his in ivory ornaments decorated latrine! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 a besoin d'&#224; peine %d2 [ICON_GOLD] pour finir les d&#233;corations en ivoire de ses latrines. Allez-vous c&#233;der &#224; ses revendications ?</French>
 		<German>Dem Statthalter der Provinz von %s1 fehlt nur noch %d2 Gold, um seine mit Elfenbein verzierte Latrine fertigstellen zu k&#246;nnen! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 needs only %d2 gold, to finish his in ivory ornaments decorated latrine! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 ha bisogno solo di %d2 oro per completare la sua latrina decorata in avorio! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 solo necesita %d2 de Oro, para finalizar su letrina decorada con adornos de marfil! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7161,7 +7161,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The recently appointed governor of the province of %s1 has had enough and will remain faithful with %d2 gold only! How you'd like to meet his wishes?</English>
 		<French>Le nouveau gouverneur de la province de %s1 en a assez mais il accepte de continuer &#224; supporter le lourd poids des responsabilit&#233;s moyennant %d2 [ICON_GOLD]. Allez-vous c&#233;der &#224; ses revendications ?</French>
 		<German>Der k&#252;rzlich neu ernannte Statthalter der Provinz von %s1 hat die Nase voll und bleibt Euch nur mit %d2 Gold treu! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The recently appointed governor of the province of %s1 has had enough and will remain faithful with %d2 gold only! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 recentemente nominato ne ha avuto abbastanza e ti rimarr&#224; fedele solo con %d2 oro! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El reci&#233;n nombrado gobernador de la provincia de %s1 ha tenido suficiente y se mantendr&#225; fiel con s&#243;lo %d2 de Oro! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7177,7 +7177,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 demands %d2 gold compensation for that he must grapple with disaffected province farmers daily! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 demande %d2 [ICON_GOLD] pour l'aider &#224; supporter les dol&#233;ances quotidiennes du peuple. Allez-vous c&#233;der &#224; ses revendications ?</French>
 		<German>Der Statthalter der Provinz von %s1 verlangt %d2 Gold Entsch&#228;digung daf&#252;r, dass er sich t&#228;glich mit unzufriedenen Provinzbauern herumschlagen muss! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 demands %d2 gold compensation for that he must grapple with disaffected province farmers daily! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 richiede un risarcimento in oro di %d2 per aver a che fare quotidianamente con gli agricoltori provinciali insoddisfatti! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 demanda una compensaci&#243;n de %d2 de Oro para que pueda lidiar con los agricultores de la provincia descontentos diariamente! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7185,7 +7185,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The governor of the province of %s1 requires %d2 gold for a national execution campaign! How you'd like to meet his wishes?</English>
 		<French>Le gouverneur de la province de %s1 requiert %d2 [ICON_GOLD] pour organiser une grande campagne d'ex&#233;cutions publiques ? Comment allez-vous r&#233;agir ?</French>
 		<German>Der Statthalter der Provinz von %s1 ben&#246;tigt %d2 Gold f&#252;r eine landesweite Hinrichtungskampagne! Wie m&#246;chtet Ihr seinem Wunsch entgegenkommen?</German>
-		<Italian>The governor of the province of %s1 requires %d2 gold for a national execution campaign! How you'd like to meet his wishes?</Italian>
+		<Italian>Il governatore della provincia di %s1 ha bisogno di %d2 oro per una campagna di esecuzioni a livello nazionale! Come vorresti esaudire il suo desiderio?</Italian>
 		<Spanish>&#161;El gobernador de la provincia de %s1 pide %d2 de Oro para una campa&#241;a de ejecuci&#243;n nacional! &#191;C&#243;mo deseas satisfacer sus deseos?</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7193,7 +7193,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>The province of %s1 has detached from your empire!</English>
 		<French>La province de %s1 fait s&#233;cession !</French>
 		<German>Die Provinz von %s1 hat sich von Eurem Reich losgel&#246;st!</German>
-		<Italian>The province of %s1 has detached from your empire!</Italian>
+		<Italian>La provincia di %s1 si &#232; staccata dal tuo impero!</Italian>
 		<Spanish>&#161;La provincia de %s1 se ha separado de tu imperio!</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7209,7 +7209,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that you stay healthy and go all your wishes come true!"</English>
 		<French>"Puissent la sant&#233; et la fortune vous sourire &#233;ternellement !"</French>
 		<German>"Auf dass Ihr gesund bleibt und all Eure W&#252;nsche in Erf&#252;llung gehen!"</German>
-		<Italian>"On that you stay healthy and go all your wishes come true!"</Italian>
+		<Italian>"Che tu possa rimanere in salute e che tutti i tuoi desideri diventino realt&#224;!"</Italian>
 		<Spanish>"&#161;Que le acompa&#241;e la salud y que sus deseos se hagan realidad!"</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7233,7 +7233,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that happiness and blessings accompany you forever."</English>
 		<French>"Puissent la joie et la f&#233;licit&#233; vous accompagner pour toujours."</French>
 		<German>"Auf dass Euch Gl&#252;ck und Segen auf immer begleitet."</German>
-		<Italian>"On that happiness and blessings accompany you forever."</Italian>
+		<Italian>"Possano felicit&#224; e benedizioni accompagnarti per sempre."</Italian>
 		<Spanish>"Que la felicidad y las bendiciones os acompa&#241;en siempre."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7241,7 +7241,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that he likes to welcome you as his guest."</English>
 		<French>"Puiss&#233;-je un jour avoir le plaisir de vous acceuillir en mon humble demeure."</French>
 		<German>"Auf dass er Euch gern einmal als seinen Gast begr&#252;&#223;en darf."</German>
-		<Italian>"On that he likes to welcome you as his guest."</Italian>
+		<Italian>"Che sia felice di accoglierti come suo ospite."</Italian>
 		<Spanish>"El que le gusta darle la bienvenida como su invitado."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7249,23 +7249,23 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that you may visit him in his palace ... once a time."</English>
 		<French>"Puissiez-vous me rendre visite ... un jour."</French>
 		<German>"Auf dass Ihr ihn in seinem Palast besuchen d&#252;rft... einmal."</German>
-		<Italian>"On that you may visit him in his palace ... once a time."</Italian>
+		<Italian>"Cos&#236; potrai fargli visita nel suo palazzo... una volta."</Italian>
 		<Spanish>"El que puede visitarlo en su palacio ... alguna vez."</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_PROVINZHAUPTSTADT_THX_15</Tag>
-		<English>"On that you like to .... him once ... you already know..."</English>
-		<French>"Puissions-nous un jour ... enfin, vous et moi ... hem, vous voyez..."</French>
-		<German>"Auf dass Ihr ihn gern einmal ... Ihr wisst schon...."</German>
-		<Italian>"On that you like to .... him once ... you already know..."</Italian>
-		<Spanish>"Que le gusta a .... &#233;l alguna vez ... ya sabe..."</Spanish>
+		<English>"On that you like to... him once... you already know..."</English>
+		<French>"Puissions-nous un jour... enfin, vous et moi... hem, vous voyez..."</French>
+		<German>"Auf dass Ihr ihn gern einmal... Ihr wisst schon..."</German>
+		<Italian>"Quindi ti piacerebbe vederlo... sai..."</Italian>
+		<Spanish>"Que le gusta a... &#233;l alguna vez... ya sabe..."</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_PROVINZHAUPTSTADT_THX_16</Tag>
 		<English>"On that he thinks of you at the next beheading of sacrificial lambs."</English>
 		<French>"Puissiez-vous venir assister avec moi &#224; la prochaine ex&#233;cution."</French>
 		<German>"Auf dass er bei der n&#228;chsten K&#246;pfung des Opferlammes an Euch denkt."</German>
-		<Italian>"On that he thinks of you at the next beheading of sacrificial lambs."</Italian>
+		<Italian>"Cos&#236; penser&#224; a te la prossima volta che decapiter&#224; l'agnello sacrificale."</Italian>
 		<Spanish>"El que piensa de usted como la pr&#243;xima decapitaci&#243;n de chivos expiatorios."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7273,15 +7273,15 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that the next natural disaster he does not push on you."</English>
 		<French>"Puissiez-vous &#234;tre &#233;pargn&#233; par la prochaine catastrophe naturelle."</French>
 		<German>"Auf dass er die n&#228;chste Naturkatastrophe nicht auf Euch schiebt."</German>
-		<Italian>"On that the next natural disaster he does not push on you."</Italian>
+		<Italian>"In modo che non ti attribuisca la colpa del prossimo disastro naturale."</Italian>
 		<Spanish>"Que el pr&#243;ximo desastre natural que &#233;l haga no le pille."</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_PROVINZHAUPTSTADT_THX_18</Tag>
 		<English>"On that the next natural disaster does not apply to your palace."</English>
 		<French>"Puisse votre palais &#234;tre &#233;pargn&#233; par les caprices de la nature."</French>
-		<German>"Auf dass die n&#228;chste Naturkatastrophe nicht auf Euren Palast trifft."</German>
-		<Italian>"On that the next natural disaster does not apply to your palace."</Italian>
+		<German>"Auf dass die n&#228;chste Naturkatastrophe nicht Euren Palast trifft."</German>
+		<Italian>"In modo che il prossimo disastro naturale non colpisca il tuo palazzo."</Italian>
 		<Spanish>"Que el pr&#243;ximo desastre narural no se cebe con tu palacio."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7289,7 +7289,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that these benefits may happen every round."</English>
 		<French>"Puissiez-vous faire preuve d'une telle g&#233;n&#233;rosit&#233; plus souvent."</French>
 		<German>"Auf dass diese Wohltaten jede Runde geschehen m&#246;gen."</German>
-		<Italian>"On that these benefits may happen every round."</Italian>
+		<Italian>"Possano queste benedizioni essere fatte ad ogni round."</Italian>
 		<Spanish>"Que esos beneficios pueden pasar cada ronda."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7297,7 +7297,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"He would have almost doubted your support."</English>
 		<French>"J'ai failli douter de votre soutien."</French>
 		<German>"Er h&#228;tte schon beinah an Eure Unterst&#252;tzung gezweifelt."</German>
-		<Italian>"He would have almost doubted your support."</Italian>
+		<Italian>"Dubitava quasi del tuo sostegno."</Italian>
 		<Spanish>"&#201;l casi dudaba de su apoyo."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7305,7 +7305,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that you don't need to have worry that once the premises of the Treasury should be too small."</English>
 		<French>"Puisse la modicit&#233; de votre don ne pas vous tourmenter."</French>
 		<German>"Auf dass Ihr keine Sorgen haben braucht, dass einmal die R&#228;umlichkeiten der Staatskasse zu klein werden sollten."</German>
-		<Italian>"On that you don't need to have worry that once the premises of the Treasury should be too small."</Italian>
+		<Italian>"In modo da non dover temere che i locali della tesoreria statale diventino troppo piccoli."</Italian>
 		<Spanish>"Que no necesita preocuparse mas de una vez de que las instalaciones del Tesoro sean demasiado peque&#241;as."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7321,7 +7321,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that his women may follow him again into his quarters."</English>
 		<French>"Puisse votre g&#233;n&#233;rosit&#233; me rendre l'affection de ma femme."</French>
 		<German>"Auf dass seine Frauen wieder mit ihm ins Gem&#228;ch folgen."</German>
-		<Italian>"On that his women may follow him again into his quarters."</Italian>
+		<Italian>"Affinch&#233; le sue donne possano seguirlo di nuovo nei suoi alloggi."</Italian>
 		<Spanish>"Que sus mujeres pueden seguirlo otra vez a sus cuartos."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7329,7 +7329,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that you're invited to one of his solemnities."</English>
 		<French>"Puissiez-vous venir participer &#224; l'une de mes c&#233;r&#233;monies."</French>
 		<German>"Auf dass Ihr bei einer seiner Feierlichkeiten eingeladen seid."</German>
-		<Italian>"On that you're invited to one of his solemnities."</Italian>
+		<Italian>"Che tu possa essere invitato a una delle sue celebrazioni."</Italian>
 		<Spanish>"Que est&#225; invitado a una de sus solemnidades."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7337,7 +7337,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that your harem doubled overnight, if you have one."</English>
 		<French>"Puisse votre harem doubler dans la nuit ... si vous en avez un."</French>
 		<German>"Auf dass Euer Harem sich &#252;ber Nacht verdoppelt, sofern Ihr einen habt."</German>
-		<Italian>"On that your harem doubled overnight, if you have one."</Italian>
+		<Italian>"Possa il tuo harem raddoppiare da un giorno all'altro, se ne hai uno."</Italian>
 		<Spanish>"Que su har&#233;n se duplique durante la noche, si tiene uno."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7345,7 +7345,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"On that the land is exempt of natural disasters from your omnipotence."</English>
 		<French>"Puissent vos terres &#234;tre &#233;pargn&#233;es par les d&#233;sastres."</French>
 		<German>"Auf dass das Land von Eurer Allmacht von Naturkatastrophen verschont bleibt."</German>
-		<Italian>"On that the land is exempt of natural disasters from your omnipotence."</Italian>
+		<Italian>"Affinch&#233; il Paese della tua onnipotenza sia risparmiato dalle catastrofi naturali."</Italian>
 		<Spanish>"En esta tierra que esta exenta de desastres naturales por su omnipotencia."</Spanish>
 	</TEXT>
 	<TEXT>
@@ -7353,7 +7353,7 @@ El sol se alza en el a&#241;o %s1_year. %s3_leader, vuestro pueblo os ha conferi
 		<English>"At that the kingdom flourishes and prospers of your kindness."</English>
 		<French>"Puisse le royaume prosp&#233;rer par votre g&#233;n&#233;rosit&#233;."</French>
 		<German>"Auf dass das Reich von Eurer G&#252;te bl&#252;ht und gedeiht."</German>
-		<Italian>"At that the kingdom flourishes and prospers of your kindness."</Italian>
+		<Italian>"Affinch&#233; il regno della tua bont&#224; possa fiorire e prosperare."</Italian>
 		<Spanish>"En que el reino florece y prospera de su bondad."</Spanish>
 	</TEXT>
 	<TEXT>

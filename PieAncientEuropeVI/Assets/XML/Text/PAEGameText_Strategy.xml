@@ -123,7 +123,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GLADIATORENSCHULE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Gladiator Schools[COLOR_REVERT] can only be created by [COLOR_UNIT_TEXT]Gladiators[COLOR_REVERT] who have lost the unreliable status (promotion) in battle.</English>
-		<French>Les [COLOR_BUILDING_TEXT]Les &#233;coles de gladiateurs[COLOR_REVERT] ne peuvent &#234;tre cr&#233;&#233;es que par les [COLOR_UNIT_TEXT]Gladiateurs[COLOR_REVERT] qui ont perdu le statut peu fiable (promotion) au combat.</French>
+		<French>Les [COLOR_BUILDING_TEXT]Les &#233;coles de gladiateurs[COLOR_REVERT] ne peuvent &#234;tre cr&#233;&#233;es que par les [COLOR_UNIT_TEXT]Gladiateurs[COLOR_REVERT] qui ont perdu le statut "Peu fiable" (promotion) au combat.</French>
 		<German>[COLOR_BUILDING_TEXT]Gladiatorenschulen[COLOR_REVERT] k&#246;nnen nur von [COLOR_UNIT_TEXT]Gladiatoren[COLOR_REVERT] erstellt werden, die den Status "unzuverl&#228;ssig" (Bef&#246;rderung) im Kampf verloren haben.</German>
 		<Italian>Le [COLOR_BUILDING_TEXT]Scuole dei gladiatori[COLOR_REVERT] possono essere create solo dai [COLOR_UNIT_TEXT]Gladiatori[COLOR_REVERT] che hanno perso lo stato inaffidabile (promozione) in battaglia.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Escuelas de gladiadores[COLOR_REVERT] solo pueden ser creadas por [COLOR_UNIT_TEXT]Gladiadores[COLOR_REVERT] que hayan perdido el estado no confiable (ascenso) en la batalla.</Spanish>
@@ -275,7 +275,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_SILKROAD_STRATEGY</Tag>
 		<English>With the [COLOR_BUILDING_TEXT]Silk Road[COLOR_REVERT] you will have your first trade routes with its unlocked trading post. The constructor of the Silk Road will receive 3 fully loaded caravans.</English>
-		<French>Avec la [COLOR_BUILDING_TEXT] Route de la Soie [COLOR_REVERT] les premi&#232;res routes commerciales peuvent &#234;tre d&#233;velopp&#233;es au travers des postes de traite qui lui sont li&#233;s. Le fondateur de la Route de la Soie recevra 3 caravanes &#224; pleine charge.</French>
+		<French>Avec la [COLOR_BUILDING_TEXT]Route de la Soie[COLOR_REVERT], les premi&#232;res routes commerciales peuvent &#234;tre d&#233;velopp&#233;es au travers des postes de traite. Le fondateur de la Route de la Soie recevra 3 caravanes charg&#233;es de marchandises pr&#233;cieuses.</French>
 		<German>Mit der [COLOR_BUILDING_TEXT]Seidenstra&#223;e[COLOR_REVERT] k&#246;nnen durch die damit freigeschalteten Handelsposten, die ersten Handelsrouten erschlossen werden. Der Erschaffer der Seidenstra&#223;e erh&#228;lt 3 voll beladene Karawanen.</German>
 		<Italian>Con il [COLOR_BUILDING_TEXT]Silk Road[COLOR_REVERT] le prime rotte commerciali possono essere sviluppati dal post trading cos&#236; eccitato. Il costruttore di Silk Road ricever&#224; 3 roulotte a pieno carico.</Italian>
 		<Spanish>Con la [COLOR_BUILDING_TEXT]Ruta de la Seda[COLOR_REVERT] tendr&#225;s tus primeras rutas comerciales con sus puestos comerciales desbloqueados. El constructor de la Ruta de la Seda recibir&#225; 3 caravanas totalmente cargadas.</Spanish>
@@ -514,11 +514,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUNTER_STRATEGY</Tag>
-		<English>A [COLOR_HIGHLIGHT_TEXT]Hunter[COLOR_REVERT] can deliver food from killed animals to nearby cities.</English>
-		<French>Un [COLOR_HIGHLIGHT_TEXT]chasseur[COLOR_REVERT] peut livrer de la nourriture des animaux tu&#233;s aux villes voisines.</French>
-		<German>Ein [COLOR_HIGHLIGHT_TEXT]J&#228;ger[COLOR_REVERT] kann aus erlegten Tieren Nahrung an nahegelegene St&#228;dte liefern.</German>
-		<Italian>Un [COLOR_HIGHLIGHT_TEXT]cacciatore[COLOR_REVERT] pu&#242; consegnare cibo da animali uccisi alle citt&#224; vicine.</Italian>
-		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]cazador[COLOR_REVERT] puede entregar comida de animales muertos a ciudades cercanas.</Spanish>
+		<English>A [COLOR_HIGHLIGHT_TEXT]Hunter[COLOR_REVERT] can automatically deliver food from killed animals to nearby cities.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]chasseur[COLOR_REVERT] peut automatiquement livrer de la nourriture des animaux tu&#233;s aux villes voisines.</French>
+		<German>Ein [COLOR_HIGHLIGHT_TEXT]J&#228;ger[COLOR_REVERT] kann aus erlegten Tieren Nahrung automatisch an nahegelegene St&#228;dte liefern.</German>
+		<Italian>Un [COLOR_HIGHLIGHT_TEXT]cacciatore[COLOR_REVERT] pu&#242; consegnare automaticamente cibo da animali uccisi alle citt&#224; vicine.</Italian>
+		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]cazador[COLOR_REVERT] puede entregar autom&#225;ticamente comida de animales muertos a ciudades cercanas.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INQUISITOR_STRATEGY</Tag>

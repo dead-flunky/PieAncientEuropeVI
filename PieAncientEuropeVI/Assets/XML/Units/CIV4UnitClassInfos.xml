@@ -121,7 +121,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iInstanceCostModifier>10</iInstanceCostModifier>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_STATTHALTER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -130,7 +130,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<iInstanceCostModifier>10</iInstanceCostModifier>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_SEHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -975,8 +975,8 @@
 			<Description>TXT_KEY_UNIT_RAM</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>5</iInstanceCostModifier>
+			<iMaxPlayerInstances>10</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_RAM</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -984,8 +984,8 @@
 			<Description>TXT_KEY_UNIT_BATTERING_RAM</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>5</iInstanceCostModifier>
+			<iMaxPlayerInstances>10</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_BATTERING_RAM</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -993,8 +993,8 @@
 			<Description>TXT_KEY_UNIT_BATTERING_RAM2</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iInstanceCostModifier>5</iInstanceCostModifier>
+			<iMaxPlayerInstances>10</iMaxPlayerInstances>
+			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_BATTERING_RAM2</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
@@ -1506,7 +1506,7 @@
 			<Description>TXT_KEY_UNIT_JEWISH_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iInstanceCostModifier>0</iInstanceCostModifier>
 			<DefaultUnit>UNIT_JEWISH_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>

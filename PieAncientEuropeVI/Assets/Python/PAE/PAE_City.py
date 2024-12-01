@@ -9,7 +9,6 @@ from CvPythonExtensions import (CyGlobalContext, CyInterface,
 																isNationalWonderClass, InterfaceMessageTypes)
 # import CvEventInterface
 import CvUtil
-import random
 
 import PAE_Sklaven
 import PAE_Unit
@@ -1805,7 +1804,6 @@ def doUnitSupply(pCity, iPlayer):
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iCityUnits",iCityUnits)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 		#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("iMaintainUnits",iMaintainUnits)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
-		# ab PAE5 Patch 3: nur HI
 		# Handicap: 0 (Settler) - 8 (Deity) ; 5 = King
 		if gc.getGame().getHandicapType() < 5 or pPlayer.isHuman():
 				# choose units
@@ -1841,7 +1839,7 @@ def doUnitSupply(pCity, iPlayer):
 				#lUnitIndex = CvUtil.shuffle(numUnits, gc.getGame().getSorenRand())[:iMaintainUnits]
 
 				# Shuffle List
-				random.shuffle(lUnitsAll)
+				#random.shuffle(lUnitsAll) => verursacht OOS (checked 01.12.2024)
 
 				# while len(lUnitIndex)<iMaintainUnits and iI < 3*numUnits:
 				# iI += 1
@@ -1878,9 +1876,14 @@ def doUnitSupply(pCity, iPlayer):
 
 				# Betrifft Einheiten
 				iJumpedOut = 0
+				iRand = 0
+				lRauswurf = []
 				iMax = min(iMaintainUnits, len(lUnitsAll))
 				for iI in range(iMax):
-						pUnit = lUnitsAll[iI]
+						while iRand not in lRauswurf:
+								iRand = CvUtil.myRandom(len(lUnitsAll), "city unit supply: unit index harm")
+								lRauswurf.append(iRand)
+						pUnit = lUnitsAll[iRand]
 						# Unit nicht mehr killen (Weihnachtsbonus :D ab 7.12.2012)
 						iDamage = pUnit.getDamage()
 						if iDamage < 70:
@@ -1903,9 +1906,14 @@ def doUnitSupply(pCity, iPlayer):
 						if CvUtil.myRandom(3, "toomany1") == 1:
 								iAnzahl = max(1, CvUtil.myRandom(iMaintainUnits, "toomany2"))
 								#lUnitIndex2 = CvUtil.shuffle(iMaintainUnits, gc.getGame().getSorenRand())[:iAnzahl]
+								iRand = 0
+								lRauswurf = []
 								iAnzahl = min(iAnzahl, len(lUnitsAll))
 								for iI in range(iAnzahl):
-										pUnit = lUnitsAll[iI]
+										while iRand not in lRauswurf:
+												iRand = CvUtil.myRandom(len(lUnitsAll), "city unit supply: unit index jump")
+												lRauswurf.append(iRand)
+										pUnit = lUnitsAll[iRand]
 										pUnit.jumpToNearestValidPlot()
 										if pPlayer.isHuman():
 												CyInterface().addMessage(pCity.getOwner(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_CITY_UNITS_STARVATION_4",

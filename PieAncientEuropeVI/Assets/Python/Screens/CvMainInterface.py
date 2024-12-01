@@ -1077,12 +1077,12 @@ class CvMainInterface:
 						self.updateGlobeviewButtons()
 
 				# PAE - River tiles
-				if CvEventInterface.getEventManager().bRiverTiles_WaitOnMainInterface:
-						CvEventInterface.getEventManager().bRiverTiles_WaitOnMainInterface = False
-						CvEventInterface.getEventManager().bRiverTiles_NeedUpdate = True
-						# Force update call. (The update event would not be propagte into
-						# python as default.)
-						CvEventInterface.getEventManager().onUpdate((0.0,))
+				#if CvEventInterface.getEventManager().bRiverTiles_WaitOnMainInterface:
+				#		CvEventInterface.getEventManager().bRiverTiles_WaitOnMainInterface = False
+				#		CvEventInterface.getEventManager().bRiverTiles_NeedUpdate = True
+				#		# Force update call. (The update event would not be propagte into
+				#		# python as default.)
+				#		CvEventInterface.getEventManager().onUpdate((0.0,))
 				# PAE - River tiles end
 				"""
 				PB Mod

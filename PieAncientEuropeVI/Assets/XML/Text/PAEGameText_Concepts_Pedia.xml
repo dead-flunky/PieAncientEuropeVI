@@ -401,11 +401,13 @@ Resources on Trading Posts can be added but not removed.
 
 [H1]Conditions[\H1]
 
-Each cultivable bonus good can be cultivated once per city, provided the environment is suitable for it.
+Each city can have up to four cultivable bonus resources in its sphere of influence. The size of the city determines how many bonus goods can be distributed. A settlement (Pop 1) can have one resource. From a city (Pop 6) onwards it is two, from a provincial city (Pop 12) three and only a metropolis (Pop 20) can have four resources in its sphere of influence.
 
-If no cultivation is possible, even though a plot fulfills all conditions, then it may be that there is an undiscovered bonus resource.
+Donkeys, horses, camels, grapes, olives and dates are excluded. These can be distributed once in each city's sphere of influence, regardless of its size. This means that cities that are placed too close together sometimes have to share a resource.
 
 [H1]Climate conditions[\H1]
+
+A cultivable bonus good can only be cultivated on suitable soils. The necessary soil types are shown in the bonus resource pedia. If cultivation is not possible even though a field meets all the conditions, it may be that there is an undiscovered bonus resource underneath.
 
 [H2]Grain[\H2]
 [ICON_BULLET] All: Flatlands
@@ -492,11 +494,13 @@ Les ressources sur les postes de traite peuvent &#234;tre ajout&#233;es mais pas
 
 [H1]Conditions[\H1]
 
-Chaque bonus cultivable peut &#234;tre cultiv&#233; une fois par ville, &#224; condition que l'environnement s'y pr&#234;te.
+Chaque ville peut avoir jusqu'&#224; quatre ressources bonus cultivables au sein de sa zone d'influence. La taille de la ville d&#233;termine le nombre de biens bonus qui peuvent &#234;tre distribu&#233;s. Une colonie (Pop 1) peut avoir une seule ressource. D'une ville (Pop 6) il y en a deux, d'une ville de province (Pop 12) il y en a trois, et une seule m&#233;tropole (Pop 20) peut maintenir quatre ressources dans la zone d'influence.
 
-Si la culture est malgr&#233; tout impossible sur une case, une ressource bonus non-d&#233;couverte occupe peut-&#234;tre cette case.
+Sont exclus les &#226;nes, les chevaux, les chameaux, les raisins, les olives et les dattes. Ceux-ci peuvent &#234;tre distribu&#233;s une fois dans la zone d'influence de chaque ville, quelle que soit sa taille. Cela signifie que des villes trop rapproch&#233;es doivent parfois partager une ressource.
 
 [H1]Conditions de climat[\H1]
+
+Un bien bonus cultivable ne peut &#234;tre cultiv&#233; que sur un sol appropri&#233;. La page de ressources bonus affiche les types de sols n&#233;cessaires. Si la culture n'est pas possible m&#234;me si un champ remplit toutes les conditions, il peut y avoir une ressource bonus encore inconnue en dessous.
 
 [H2]C&#233;r&#233;ales[\H2]
 [ICON_BULLET] Tous : sur terrain plat
@@ -586,11 +590,13 @@ Bonusg&#252;ter auf Handelsposten k&#246;nnen zwar aufgenommen aber nicht entfer
 
 [H1]Bedingungen[\H1]
 
-Jedes kultivierbare Bonusgut kann pro Stadt 1x kultiviert werden, sofern die Umgebung daf&#252;r geeignet ist.
+Jede Stadt kann bis zu vier kultivierbare Bonusressourcen in ihrem Einflussbereich haben. Die Stadtgr&#246;&#223;e gibt vor, wieviel Bonusg&#252;ter verbreitet werden d&#252;rfen. Eine Siedlung (Pop 1) kann eine Ressource haben. Ab Stadt (Pop 6) sind es zwei, ab Provinzstadt (Pop 12) drei und erst eine Metropole (Pop 20) kann vier Ressourcen im Einflussgebiet unterhalten.
 
-Falls keine Kultivierung m&#246;glich ist, obwohl ein Plot alle Bedingungen erf&#252;llt, so kann es sein, dass sich darunter eine noch unentdeckte Bonusressource befindet.
+Ausgenommen sind Esel, Pferde, Kamele, Weintrauben, Oliven und Datteln. Diese k&#246;nnen bei jeder Stadt, unabh&#228;ngig von ihrer Gr&#246;&#223;e, 1x in ihrem Einflussgebiet verbreitet werden. Das bedeutet, dass zu eng gesetzte St&#228;dte sich manchmal eine Ressource teilen m&#252;ssen.
 
 [H1]Klimabedingungen[\H1]
+
+Ein kultivierbares Bonusgut kann nur auf geeigneten B&#246;den kultiviert werden. In der Bonusressource-Pedia werden die notwendigen Bodentypen angezeigt. Falls keine Kultivierung m&#246;glich ist, obwohl ein Feld alle Bedingungen erf&#252;llt, so kann es sein, dass sich darunter eine noch unentdeckte Bonusressource befindet.
 
 [H2]Getreide[\H2]
 [ICON_BULLET] Alle: Flachland
@@ -679,11 +685,13 @@ Le merci bonus sulle postazioni commerciali possono essere raccolte ma non rimos
 
 [H1]Condizioni[\H1]
 
-Ogni bene bonus coltivabile pu&#242; essere coltivato una volta per citt&#224;, a condizione che l'ambiente sia adatto.
+Ogni citt&#224; pu&#242; avere fino a quattro risorse bonus coltivabili all'interno della sua area di influenza. La dimensione della citt&#224; determina quanti beni bonus possono essere distribuiti. Un insediamento (Pop 1) pu&#242; avere una risorsa. Da una citt&#224; (Pop 6) ce ne sono due, da una citt&#224; di provincia (Pop 12) ce ne sono tre, e solo una metropoli (Pop 20) pu&#242; mantenere quattro risorse nell'area di influenza.
 
-Se la coltivazione non &#232; possibile anche se un appezzamento soddisfa tutte le condizioni, &#232; possibile che ci sia una risorsa bonus da scoprire al di sotto.
+Sono esclusi gli asini, i cavalli, i cammelli, l'uva, le olive e i datteri. Questi possono essere distribuiti una volta nell'area di influenza di ciascuna citt&#224;, indipendentemente dalla sua dimensione. Ci&#242; significa che le citt&#224; troppo vicine tra loro a volte devono condividere una risorsa.
 
-[H1]condizioni climatiche[\H1]
+[H1]Condizioni climatiche[\H1]
+
+Un bene bonus coltivabile pu&#242; essere coltivato solo su un terreno adatto. La pedia delle risorse bonus mostra i tipi di terreno necessari. Se la coltivazione non &#232; possibile anche se un campo soddisfa tutte le condizioni, sotto potrebbe esserci una risorsa bonus non ancora scoperta.
 
 [H2]grano[\H2]
 [ICON_BULLET] Tutti: Pianure
@@ -771,11 +779,13 @@ Los recursos en puesto de comercio se pueden agregar pero no eliminar.
 
 [H1]Condiciones[\H1]
 
-Cada bien de bonificaci&#243;n cultivable se puede cultivar una vez por ciudad, siempre que el entorno sea adecuado para ello.
+Cada ciudad puede tener hasta cuatro recursos extra cultivables dentro de su &#225;rea de influencia. El tama&#241;o de la ciudad determina cu&#225;ntos bienes de bonificaci&#243;n se pueden distribuir. Un asentamiento (Poblaci&#243;n 1) puede tener un recurso. De una ciudad (Pop 6) son dos, de una ciudad de provincia (Pop 12) son tres, y s&#243;lo una metr&#243;poli (Pop 20) puede mantener cuatro recursos en el &#225;rea de influencia.
 
-Si no es posible cultivar, aunque una parcela cumpla todas las condiciones, puede ser que exista un recurso adicional no descubierto.
+Quedan excluidos los burros, los caballos, los camellos, las uvas, las aceitunas y los d&#225;tiles. Estos podr&#225;n distribuirse una vez en el &#225;rea de influencia de cada ciudad, sin importar su tama&#241;o. Esto significa que las ciudades que est&#225;n demasiado juntas a veces tienen que compartir un recurso.
 
 [H1]Condiciones clim&#225;ticas[\H1]
+
+Un bien de bonificaci&#243;n cultivable s&#243;lo puede cultivarse en un suelo adecuado. La gu&#237;a de recursos adicionales muestra los tipos de suelo necesarios. Si el cultivo no es posible a pesar de que un campo cumple todas las condiciones, es posible que debajo haya un recurso adicional a&#250;n no descubierto.
 
 [H2]Grano[\H2]
 [ICON_BULLET] Todos: Terreno llano
@@ -11739,8 +11749,8 @@ Altrimenti:
 Una citt&#224; &#232; considerata un centro commerciale se pi&#249; rotte commerciali attive iniziano dalle caselle della citt&#224;. Se la citt&#224; &#232; nell'entroterra, hai bisogno di 3 rotte commerciali principali. Una citt&#224; sul mare ha bisogno solo di 2 rotte commerciali principali. Il centro commerciale stesso &#232; un edificio che viene costruito automaticamente in citt&#224; quando vengono soddisfatti i requisiti. Aumenta del 100% il guadagno d'oro sulle rotte commerciali passive.
 		</Italian>
 		<Spanish>
-[H1]Slave trading[\H1]
-Slaves, like the Great Merchant in BTS, can conduct a trade mission in a foreign city (the unit gets disbanded/sold), gaining 10-60 [ICON_GOLD]. Furthermore, slaves can also speed up the production of a city.
+[H1]Comercio de esclavos[\H1]
+Los esclavos, como el Gran Comerciante en BTS, pueden realizar una misi&#243;n comercial en una ciudad extranjera (la unidad se disuelve/vende), ganando 10-60 [ICON_GOLD]. Adem&#225;s, los esclavos tambi&#233;n pueden acelerar la producci&#243;n de una ciudad.
 
 [H1]Comercio de animales[\H1]
 Caballos, camellos y elefantes tambi&#233;n pueden realizar misiones comerciales en ciudades extranjeras.
@@ -11761,40 +11771,40 @@ Si posee menos de 9 puestos comerciales o juega un juego de OCC, puede alcanzar 
 [ICON_BULLET] Tec Cartograf&#237;a: +1
 [ICON_BULLET] Tec C&#243;digo de leyes: +1
 
-[H1]Trading[\H1]
-In PAE goods can be bought and sold. These goods remain available 3 rounds in the trading network. The dealer is not dissolved. These trade routes can be automated.
+[H1]Comercio[\H1]
+En PAE los bienes se pueden comprar y vender. Estos bienes permanecen disponibles durante 3 rondas en la red comercial. El comerciante no se disuelve. Estas rutas comerciales se pueden automatizar.
 
-[ICON_BULLET] Merchant (Spoked Wheels)
-[ICON_BULLET] Caravan (Camel domestication)
-[ICON_BULLET] Keftion (Ship building)
-[ICON_BULLET] Gaulos (Colonization)
-[ICON_BULLET] Merchantman (Trade ships)
+[ICON_BULLET] Comerciante (ruedas con radios)
+[ICON_BULLET] Caravana (Domesticaci&#243;n de camellos)
+[ICON_BULLET] Keftion (construcci&#243;n naval)
+[ICON_BULLET] Gaulos (Colonizaci&#243;n)
+[ICON_BULLET] Mercante (barcos mercantes)
 
-Buy goods in one of your cities (only regional resources possible) and sell them in your neighbor's city. Maximize the proceeds by selling goods that your trading partner does not have. And vice versa. Buy foreign goods that you do not own, sell them in one of your cities and profit from a few rounds of this new resource.
+Compra productos en una de tus ciudades (solo son posibles recursos regionales) y v&#233;ndelos en la ciudad de tu vecino. Maximice los ingresos vendiendo productos que su socio comercial no tiene. Y viceversa. Compra bienes extranjeros que no te pertenecen, v&#233;ndelos en una de tus ciudades y aprovecha algunas rondas de este nuevo recurso.
 
-[ICON_BULLET]Hint: with Bronze you can build appropriate units without having to create bronze yourself
-[ICON_BULLET]Hint: load cultivable items into a grain cart right after a trade and distribute them in your own realm
+[ICON_BULLET]Pista: con Bronce puedes construir unidades apropiadas sin tener que crear bronce t&#250; mismo
+[ICON_BULLET]Pista: carga art&#237;culos cultivables en un carro de granos justo despu&#233;s de un intercambio y distrib&#250;yelos en tu propio reino.
 
-Modifiers:
-[ICON_BULLET] +1% per population
-[ICON_BULLET] +5% per positive attitude to the civilization
-[ICON_BULLET] +5% per world wonder in the city
-[ICON_BULLET] +20% if the trading partner does not own the resource
+Modificadores:
+[ICON_BULLET] +1% por poblaci&#243;n
+[ICON_BULLET] +5% por actitud positiva hacia la civilizaci&#243;n
+[ICON_BULLET] +5% por maravilla del mundo en la ciudad
+[ICON_BULLET] +20 % si el socio comercial no es propietario del recurso
 
-Formula:
-Sum = Base value * (Modifier + 100) / 100 + Base value * Distance // (75-Base value)
-Corruption = maintenance costs of the city * 2
+F&#243;rmula:
+Suma = Valor base * (Modificador + 100) / 100 + Valor base * Distancia // (75-Valor base)
+Corrupci&#243;n = costos de mantenimiento de la ciudad * 2
 
-Proceeds = Sum-Corruption
+Ingresos = Suma de Corrupci&#243;n
 
-[ICON_BULLET] The civilization of the trading city also receives a research and gold bonus, provided that the sold goods come from another civilization.
-[ICON_BULLET] For Bronze, Iron or Horse the attitude towards the trading partner can be improved by 1 (Chance 5%)
+[ICON_BULLET] La civilizaci&#243;n de la ciudad comercial tambi&#233;n recibe una bonificaci&#243;n de investigaci&#243;n y oro, siempre que los bienes vendidos provengan de otra civilizaci&#243;n.
+[ICON_BULLET] Para Bronce, Hierro o Caballo, la actitud hacia el socio comercial se puede mejorar en 1 (posibilidad 5%)
 
 
-[H1]Trade routes[\H1]
-Players can assign merchants automatic trade routes. These are listed at the advisor menu bar (top of the main screen) under Trading Routes.
-Caution: Merchants do not get activated if barbaric units are nearby! (Reason: because otherwise land units cannot move when enemy ships or pirates are nearby)
-Automatic trade routes gets automatically deactivated if a trading city no longer provides the traded bonus resource.
+[H1]Rutas comerciales[\H1]
+Los jugadores pueden asignar a los comerciantes rutas comerciales autom&#225;ticas. Estos se enumeran en la barra de men&#250; del asesor (parte superior de la pantalla principal) en Rutas comerciales.
+Precauci&#243;n: &#161;Los comerciantes no se activan si hay unidades b&#225;rbaras cerca! (Raz&#243;n: porque de lo contrario las unidades terrestres no pueden moverse cuando hay barcos enemigos o piratas cerca)
+Las rutas comerciales autom&#225;ticas se desactivan autom&#225;ticamente si una ciudad comercial ya no proporciona el recurso de bonificaci&#243;n comercializado.
 
 
 [H1]Pedidos especiales[\H1]

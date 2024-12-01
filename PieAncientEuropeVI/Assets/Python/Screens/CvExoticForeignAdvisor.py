@@ -38,15 +38,11 @@ PyPlayer = DomPyHelpers.DomPyPlayer
 PyCity = DomPyHelpers.DomPyCity
 
 # Debugging help
-
-
 def ExoticForPrint(stuff):
 		stuff = "ExoForAdv: " + stuff
 		CvUtil.pyPrint(stuff)
 
 # this class is shared by both the resource and technology foreign advisors
-
-
 class CvExoticForeignAdvisor (CvForeignAdvisor.CvForeignAdvisor):
 		"Exotic Foreign Advisor Screen"
 
@@ -437,7 +433,7 @@ class CvExoticForeignAdvisor (CvForeignAdvisor.CvForeignAdvisor):
 
 
 #   ExoticForPrint ("# players = %d" % self.nCount)
-
+#   fixed by Xist
 				nCount = 0
 				for iLoopPlayer in range(gc.getMAX_PLAYERS()):
 						if self.ltPlayerMet[iLoopPlayer]:
@@ -452,16 +448,18 @@ class CvExoticForeignAdvisor (CvForeignAdvisor.CvForeignAdvisor):
 												screen.setState(szName, True)
 										else:
 												screen.setState(szName, False)
+
+								else:
+										if (self.bGlancePlus):
+												nButtonStyle = ButtonStyles.BUTTON_STYLE_CITY_PLUS
+										else:
+												nButtonStyle = ButtonStyles.BUTTON_STYLE_CITY_MINUS
+
+										#screen.addCheckBoxGFCAt(self.GLANCE_HEADER, self.GLANCE_BUTTON, "", "", self.X_GLANCE_OFFSET, self.Y_GLANCE_OFFSET, self.PLUS_MINUS_SIZE, self.PLUS_MINUS_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, nButtonStyle, False)
+										screen.attachLabel(self.GLANCE_HEADER, "", "   ")
+										screen.attachCheckBoxGFC(self.GLANCE_HEADER, self.GLANCE_BUTTON, "", "", self.PLUS_MINUS_SIZE, self.PLUS_MINUS_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, nButtonStyle)
+
 								nCount += 1
-
-				if (self.bGlancePlus):
-						nButtonStyle = ButtonStyles.BUTTON_STYLE_CITY_PLUS
-				else:
-						nButtonStyle = ButtonStyles.BUTTON_STYLE_CITY_MINUS
-
-				#screen.addCheckBoxGFCAt(self.GLANCE_HEADER, self.GLANCE_BUTTON, "", "", self.X_GLANCE_OFFSET, self.Y_GLANCE_OFFSET, self.PLUS_MINUS_SIZE, self.PLUS_MINUS_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, nButtonStyle, False)
-				screen.attachLabel(self.GLANCE_HEADER, "", "   ")
-				screen.attachCheckBoxGFC(self.GLANCE_HEADER, self.GLANCE_BUTTON, "", "", self.PLUS_MINUS_SIZE, self.PLUS_MINUS_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, nButtonStyle)
 
 				self.drawGlanceRows(screen, mainPanelName, self.iSelectedLeader != self.iActiveLeader, self.iSelectedLeader)
 
@@ -573,8 +571,9 @@ class CvExoticForeignAdvisor (CvForeignAdvisor.CvForeignAdvisor):
 				screen = self.getScreen()
 
 				if (self.RES_SHOW_ACTIVE_TRADE):
-						columns = (IconGrid.GRID_ICON_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN,
-											 IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_TEXT_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_TEXT_COLUMN)
+						columns = (IconGrid.GRID_ICON_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN,
+									IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_TEXT_COLUMN,
+									IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_TEXT_COLUMN)
 				else:
 						columns = (IconGrid.GRID_ICON_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN,
 											 IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_MULTI_LIST_COLUMN, IconGrid.GRID_TEXT_COLUMN)

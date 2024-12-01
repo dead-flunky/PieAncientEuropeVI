@@ -954,11 +954,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_FEATURE_HUNTING</Tag>
-		<English>Units can deliver killed animals as food to a nearby city[NEWLINE][ICON_BULLET]Within 4 plots to a city[NEWLINE][ICON_BULLET]Cities marked with a green circle can be served[NEWLINE][ICON_BULLET]Red marked ones are out of range</English>
-		<French>L'unit&#233; peut livrer des animaux tu&#233;s comme nourriture &#224; une ville voisine[NEWLINE][ICON_BULLET]Dans les 4 parcelles d'une ville[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle vert peuvent &#234;tre desservies[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle rouge sont hors limites</French>
-		<German>Einheiten k&#246;nnen erlegte Tiere als Nahrung in eine nahegelegene Stadt liefern[NEWLINE][ICON_BULLET]Innerhalb von 4 Feldern zur Stadt[NEWLINE][ICON_BULLET]Mit einem gr&#252;nen Kreis markierte St&#228;dte k&#246;nnen beliefert werden[NEWLINE][ICON_BULLET]Rot markierte sind au&#223;erhalb der Reichweite</German>
-		<Italian>Unit&#224; possono consegnare animali uccisi come cibo in una citt&#224; vicina[NEWLINE][ICON_BULLET]Entro 4 lotti per citt&#224;[NEWLINE][ICON_BULLET]Le citt&#224; contrassegnate da un cerchio verde possono essere servite[NEWLINE][ICON_BULLET]Le marcate rosse sono fuori portata</Italian>
-		<Spanish>Unidades pueden entregar animales muertos como comida a una ciudad cercana[NEWLINE][ICON_BULLET]Dentro de 4 parcelas a una ciudad[NEWLINE][ICON_BULLET]Las ciudades marcadas con un c&#237;rculo verde se pueden servir[NEWLINE][ICON_BULLET]Las rojas marcadas est&#225;n fuera de rango</Spanish>
+		<English>[COLOR_HIGHLIGHT_TEXT]Units automatically deliver killed animals as food ([ICON FOOD]) to the nearest city[COLOR_REVERT][NEWLINE][ICON_BULLET]Within 4 plots to a city[NEWLINE][ICON_BULLET]Cities marked with a green circle can be served</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Les unit&#233;s livrent automatiquement les animaux chass&#233;s &#224; la ville la plus proche comme nourriture ([ICON FOOD]).[COLOR_REVERT][NEWLINE][ICON_BULLET]Dans les 4 parcelles d'une ville[NEWLINE][ICON_BULLET]Les villes marqu&#233;es d'un cercle vert peuvent &#234;tre desservies</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Einheiten liefern erlegte Tiere als Nahrung ([ICON FOOD]) automatisch in die nahegelegendste Stadt[COLOR_REVERT][NEWLINE][ICON_BULLET]Innerhalb von 4 Feldern zur Stadt[NEWLINE][ICON_BULLET]Mit einem gr&#252;nen Kreis markierte St&#228;dte k&#246;nnen beliefert werden</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Le unit&#224; consegnano automaticamente gli animali cacciati alla citt&#224; pi&#249; vicina come cibo ([ICON FOOD]).[COLOR_REVERT][NEWLINE][ICON_BULLET]Entro 4 lotti per citt&#224;[NEWLINE][ICON_BULLET]Le citt&#224; contrassegnate da un cerchio verde possono essere servite</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Las unidades entregan autom&#225;ticamente los animales cazados a la ciudad m&#225;s cercana como alimento ([ICON FOOD]).[COLOR_REVERT][NEWLINE][ICON_BULLET]Dentro de 4 parcelas a una ciudad[NEWLINE][ICON_BULLET]Las ciudades marcadas con un c&#237;rculo verde se pueden servir</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HELP_NOCAMPUNIT</Tag>

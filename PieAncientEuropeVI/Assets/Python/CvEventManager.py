@@ -2563,7 +2563,7 @@ class CvEventManager:
 				'Called at the end of the end of each turn'
 				iGameTurn = argsList[0]
 
-				# PAE Debug Mark 1
+				# PAE Debug Mark 1 begin
 				#"""
 
 				# Special Scripts for PAE Scenarios
@@ -2637,7 +2637,7 @@ class CvEventManager:
 				# Religionsverbreitung monotheistischer Religionen
 				PAE_Christen.doSpreadReligion()
 
-				# PAE Debug Mark 1
+				# PAE Debug Mark 1 end
 				#"""
 
 				## PB Mod ##
@@ -2670,7 +2670,7 @@ class CvEventManager:
 
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("MaxPlayers",gc.getMAX_PLAYERS())), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
-				# PAE Debug Mark 2
+				# PAE Debug Mark 2 begin
 				#"""
 
 				# -- Prevent BTS TECH BUG/Forschungsbug: AI chooses Tech if -1 -> 25% to push
@@ -2804,7 +2804,7 @@ class CvEventManager:
 				## PB Mod ## 
 				if PBMod and gc.getPlayer(iPlayer).isHuman():
 						self.latestPlayerEndsTurn = iPlayer
-				# PAE Debug Mark 2
+				# PAE Debug Mark 2 end
 				#"""
 
 ############################################
@@ -2835,7 +2835,7 @@ class CvEventManager:
 				#		CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Christliche CITIES",iSum)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
 
-				# PAE Debug Mark 3
+				# PAE Debug Mark 3 begin
 				#"""
 
 				# --- Automated trade routes for HI (Boggy)
@@ -2962,7 +2962,7 @@ class CvEventManager:
 				#				(loopUnit, pIter) = pPlayer.nextUnit(pIter, False)
 
 
-				# PAE Debug Mark 3
+				# PAE Debug Mark 3 end
 				#"""
 
 				# ++ Standard BTS ++
@@ -3050,7 +3050,7 @@ class CvEventManager:
 				bWinnerIsDead = False
 				bNavalUnit = pWinner.getDomainType() == DomainTypes.DOMAIN_SEA
 
-				# PAE Debug Mark 4
+				# PAE Debug Mark 4 begin
 				#"""
 				#CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("Loser "+pLoser.getName()+" "+str(pLoserPlot.getX())+"|"+str(pLoserPlot.getY()),1)), None, 2, None, ColorTypes(10), 0, 0, False, False)
 
@@ -3451,7 +3451,7 @@ class CvEventManager:
 										if not bUnitRenegades and pLoser.getUnitCombatType() in [gc.getInfoTypeForString("UNITCOMBAT_MOUNTED"), gc.getInfoTypeForString("UNITCOMBAT_CHARIOT")]:
 												PAE_Unit.doLoserLoseHorse(pLoser, iWinnerPlayer)
 
-				# PAE Debug Mark 4
+				# PAE Debug Mark 4 end
 				#"""
 
 				if not self.__LOG_COMBAT:
@@ -3645,7 +3645,7 @@ class CvEventManager:
 				pCity, iBuildingType = argsList
 				iPlayer = pCity.getOwner()
 				pPlayer = gc.getPlayer(iPlayer)
-				# PAE Debug Mark 5
+				# PAE Debug Mark 5 begin
 				#"""
 				#    #If this is a wonder...
 				#    if not gc.getGame().isNetworkMultiPlayer() and gc.getPlayer(pCity.getOwner()).isHuman() and isWorldWonderClass(gc.getBuildingInfo(iBuildingType).getBuildingClassType()):
@@ -3787,7 +3787,7 @@ class CvEventManager:
 
 				PAE_Cultivation.doBuildingCultivate(pCity, iBuildingType)
 
-				# PAE Debug Mark 5
+				# PAE Debug Mark 5 end
 				#"""
 
 				CvAdvisorUtils.buildingBuiltFeats(pCity, iBuildingType)
@@ -3946,7 +3946,7 @@ class CvEventManager:
 				'unit move'
 				pPlot, pUnit, pOldPlot = argsList
 
-				# PAE Debug mark 6
+				# PAE Debug mark 6 begin
 				#"""
 				#    if gc.getPlayer(pUnit.getOwner()).isHuman():
 				#      CyInterface().addMessage(gc.getGame().getActivePlayer(), True, 10, CyTranslator().getText("TXT_KEY_MESSAGE_TEST",("X",pPlot.getX())), None, 2, None, ColorTypes(10), 0, 0, False, False)
@@ -4165,7 +4165,7 @@ class CvEventManager:
 										CvUtil.pyPrint('Player %d Civilization %s unit %s is moving to %d, %d'
 																	 % (player.getID(), player.getCivilizationName(), unitInfo.getDescription(), pUnit.getX(), pUnit.getY()))
 
-				# PAE Debug Mark 6
+				# PAE Debug Mark 6 end
 				#"""
 
 		def onUnitSetXY(self, argsList):
@@ -4196,7 +4196,7 @@ class CvEventManager:
 				player = PyPlayer(iPlayer)
 				pPlayer = gc.getPlayer(iPlayer)
 				iUnitType = unit.getUnitType()
-				# PAE Debug Mark 7
+				# PAE Debug Mark 7 begin
 				#"""
 
 				# ++++ AI - Unit Built/Created
@@ -4296,7 +4296,7 @@ class CvEventManager:
 				# PAE 6.14: Religion: Einheiten verweigern Kriegsdienst
 				PAE_City.doRefuseUnitBuilt(city, unit)
 
-				# PAE Debug Mark 7
+				# PAE Debug Mark 7 end
 				#"""
 
 				if not self.__LOG_UNITBUILD:
@@ -4376,7 +4376,7 @@ class CvEventManager:
 				iPlotY = pUnit.getY()
 				pPlot = pUnit.plot()
 				iPlayer = pUnit.getOwner()
-				# PAE Debug Mark 8
+				# PAE Debug Mark 8 begin
 				#"""
 				if iImprovement > -1:
 						# XP nur bei enemy plots
@@ -4424,7 +4424,7 @@ class CvEventManager:
 
 						# Unit soll sich nachher nicht mehr fortbewegen koennen
 						pUnit.finishMoves()
-				# PAE Debug Mark 8
+				# PAE Debug Mark 8 end
 				#"""
 
 				if not self.__LOG_UNITPILLAGE:
@@ -4483,8 +4483,9 @@ class CvEventManager:
 				if pUnit.isNone() or pCity.isNone():
 						return
 
+				return
 				# Names for Great Generals / Feldherrenliste
-				if pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_GREAT_GENERAL"):
+				if pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_GREAT_GENERAL"): # and not (gc.getGame().isGameMultiPlayer() or gc.getGame().isNetworkMultiPlayer()):
 						if pPlayer.getCivilizationType() in L.DGGNames:
 								listNames = L.DGGNames[pPlayer.getCivilizationType()]
 						else:
@@ -4954,7 +4955,7 @@ class CvEventManager:
 				pPreviousOwner = gc.getPlayer(iPreviousOwner)
 				# pPlot = pCity.plot()
 
-				# PAE Debug Mark 9
+				# PAE Debug Mark 9 begin
 				#"""
 
 				# Trait-Gebaeude anpassen
@@ -5118,7 +5119,7 @@ class CvEventManager:
 				if pPlayer.getStateReligion() == iReligion:
 						pCity.setHasReligion(iReligion, 1, 1, 0)
 
-				# PAE Debug Mark 9
+				# PAE Debug Mark 9 end
 				#"""
 
 		def onCityAcquiredAndKept(self, argsList):
@@ -5226,7 +5227,7 @@ class CvEventManager:
 
 				CvAdvisorUtils.cityAdvise(pCity, iPlayer)
 
-				# PAE Debug Mark 10
+				# PAE Debug Mark 10 begin
 				#"""
 
 				if pCity.getOwner() == gc.getBARBARIAN_PLAYER():
@@ -5241,7 +5242,6 @@ class CvEventManager:
 				# Trade feature: Check for free bonuses aquired via trade (Boggy)
 				PAE_Trade.doCityCheckFreeBonuses(pCity)
 
-
 				# Check City: Auswirkungen Dying General
 				if pPlayer.isHuman():
 						PAE_City.doCheckDyingGeneral(pCity, False)
@@ -5250,10 +5250,9 @@ class CvEventManager:
 				else:
 						PAE_City.AI_defendAndHire(pCity, iPlayer)
 
-				# MESSAGES: city growing
-				if not gc.getGame().isHotSeat():
-						if pPlayer.isHuman():
-								PAE_City.doMessageCityGrowing(pCity)
+				# MESSAGE: city growing
+				if pPlayer.isHuman() and not gc.getGame().isHotSeat():
+						PAE_City.doMessageCityGrowing(pCity)
 
 				# PAE V: Stadtversorgung / City supply: Troubles/Starvation because of unit maintenance in city (food)
 				PAE_City.doUnitSupply(pCity, iPlayer)
@@ -5348,7 +5347,7 @@ class CvEventManager:
 						# kann Pointer zu Stadt zerstören! Führt gegebenenfalls doCheckCityState aus.
 						bRevolt = PAE_City.provinceTribute(pCity)
 
-				# PAE Debug Mark 10
+				# PAE Debug Mark 10 end
 				#"""
 
 		def onCityBuildingUnit(self, argsList):
