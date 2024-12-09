@@ -929,6 +929,22 @@
 		<Spanish>Felicidades, hab&#233;is entrenado en %s2City_Name a vuestra primera unidad de asedio, [NUM1:un:una:unos:unas] [COLOR_UNIT_TEXT]%s1Unit_Name[COLOR_REVERT]. Estas unidades pueden causar da&#241;os colaterales en las casillas que ataquen y alcanzar as&#237; a varios enemigos a la vez.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GAMEOPTION_MULTIPLE_PRODUCTION</Tag>
+		<English>Multiple production</English>
+		<French>Production multiple</French>
+		<German>Mehrfache Produktion</German>
+		<Italian>Produzione multipla</Italian>
+		<Spanish>Producci&#243;n m&#250;ltiple</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMEOPTION_MULTIPLE_PRODUCTION_HELP</Tag>
+		<English>At the end of a construction project, the excess production is added to the next construction project. If a city's production is sufficient to complete more than one order, multiple orders can be created per turn.</English>
+		<French>&#192; la fin d'un projet de construction, la production exc&#233;dentaire est dirig&#233;e vers le projet de construction suivant. Si la production d'une ville est suffisante pour ex&#233;cuter plus d'une commande, plusieurs commandes peuvent &#234;tre cr&#233;&#233;es par tour.</French>
+		<German>Am Ende eines Bauprojekts flie&#223;t die &#252;bersch&#252;ssige Produktion in das n&#228;chste Bauprojekt ein. Wenn die Produktion einer Stadt ausreicht, um mehr als einen Auftrag fertigzustellen, k&#246;nnen mehrere Auftr&#228;ge pro Runde erstellt werden.</German>
+		<Italian>Al termine di un progetto di costruzione, la produzione in eccesso confluisce nel progetto di costruzione successivo. Se la produzione di una citt&#224; &#232; sufficiente per completare pi&#249; di un ordine, &#232; possibile creare pi&#249; ordini per turno.</Italian>
+		<Spanish>Al final de un proyecto de construcci&#243;n, el exceso de producci&#243;n fluye hacia el siguiente proyecto de construcci&#243;n. Si la producci&#243;n de una ciudad es suficiente para completar m&#225;s de un pedido, se pueden crear varios pedidos por turno.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NATURKATASTROPHEN</Tag>
 		<English>No natural disasters</English>
 		<French>Pas de catastrophes naturelles</French>
@@ -1415,6 +1431,14 @@
 		<German>Die %s1:3_CivAdj Zivilisation wurde vernichtet!!!</German>
 		<Italian>La civilt&#224; %s1:4_CivAdj &#232; stata distrutta!</Italian>
 		<Spanish>&#161;La civilizaci&#243;n %s1:2_CivAdj ha sido destruida!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_LOST_PROD_CONVERTED</Tag>
+		<English>%s1_CityName cannot transfer the [ICON_PRODUCTION] surplus. The lost %d2_NumProduction[ICON_PRODUCTION] have been converted to %d3_NumGold[ICON_GOLD].</English>
+		<French>%s1_CityName ne peut pas transf&#233;rer le surplus de [ICON_PRODUCTION]. Les %d2_NumProduction[ICON_PRODUCTION] perdus ont &#233;t&#233; convertis en %d3_NumGold[ICON_GOLD].</French>
+		<German>%s1_CityName kann den [ICON_PRODUCTION]-&#220;berschuss nicht &#252;bertragen. Die verlorenen %d2_NumProduction[ICON_PRODUCTION] wurden in %d3_NumGold[ICON_GOLD] umgewandelt.</German>
+		<Italian>%s1_CityName non pu&#242; trasferire l'eccedenza di [ICON_PRODUCTION]. I %d2_NumProduction[ICON_PRODUCTION] perduti sono stati convertiti in %d3_NumGold[ICON_GOLD].</Italian>
+		<Spanish>%s1_CityName no puede transferir el excedente de [ICON_PRODUCTION]. Los %d2_NumProduction[ICON_PRODUCTION] perdidos se convirtieron en %d3_NumGold[ICON_GOLD].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PAE_VERSION</Tag>

@@ -2594,7 +2594,7 @@ class CvEventManager:
 
 				# PAE Disasters / Katastrophen
 				# Permanent Alliances entspricht = Naturkatastrophen (PAE)
-				if not (gc.getGame().isOption(GameOptionTypes.GAMEOPTION_PERMANENT_ALLIANCES) or gc.getGame().isGameMultiPlayer()):
+				if not (gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_DISASTERS) or gc.getGame().isGameMultiPlayer()):
 						PAE_Disasters.doGenerateDisaster(iGameTurn)
 
 				# Seewind / Fair wind ----

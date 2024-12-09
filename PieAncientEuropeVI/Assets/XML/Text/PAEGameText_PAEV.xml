@@ -2201,15 +2201,7 @@
 		<Spanish>Una vez que una unidad tenga menos del 15% de su fuerza de combate, se rendir&#225; en una derrota y desertar&#225; al enemigo en el 100%. [NEWLINE]La posibilidad de rendirse surgir&#225; autom&#225;ticamente y desaparecer&#225; autom&#225;ticamente tan pronto como la unidad haya recobrado mas del 15% de su fuerza de combate otra vez.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_GAMESPEED_SPECIAL</Tag>
-		<English>Special game speed</English>
-		<French>Vitesse de jeu sp&#233;ciale</French>
-		<German>Spezielle Spielgeschwingkeit</German>
-		<Italian>Special game speed</Italian>
-		<Spanish>Special game speed</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_GAME_OPTION_PERMANENT_ALLIANCES</Tag>
+		<Tag>TXT_KEY_GAMEOPTION_NO_DISASTERS</Tag>
 		<English>No natural disasters</English>
 		<French>Pas de catastrophes naturelles</French>
 		<German>Keine Naturkatastrophen</German>
@@ -2217,12 +2209,20 @@
 		<Spanish>Sin desastres naturales</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_GAME_OPTION_PERMANENT_ALLIANCES_HELP</Tag>
+		<Tag>TXT_KEY_GAMEOPTION_NO_DISASTERS_HELP</Tag>
 		<English>Natural disasters gets disabled.</English>
 		<French>Les catastrophes naturelles sont d&#233;sactiv&#233;es.</French>
 		<German>Naturkatastrophen werden deaktiviert.</German>
 		<Italian>I disastri naturali vengono disattivati.</Italian>
 		<Spanish>Los desastres naturales son desactivados.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMESPEED_SPECIAL</Tag>
+		<English>Special game speed</English>
+		<French>Vitesse de jeu sp&#233;ciale</French>
+		<German>Spezielle Spielgeschwingkeit</German>
+		<Italian>Special game speed</Italian>
+		<Spanish>Special game speed</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GREAT_PERSON_SPY_56</Tag>

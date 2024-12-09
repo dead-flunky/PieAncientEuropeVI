@@ -543,6 +543,8 @@ Type_substitutions = {
 		"GameOptionTypes.GAMEOPTION_NO_GOODY_HUTS": [GameOptionTypes.GAMEOPTION_NO_GOODY_HUTS],
 		"GameOptionTypes.GAMEOPTION_NO_EVENTS": [GameOptionTypes.GAMEOPTION_NO_EVENTS],
 		"GameOptionTypes.GAMEOPTION_NO_ESPIONAGE": [GameOptionTypes.GAMEOPTION_NO_ESPIONAGE],
+		"GameOptionTypes.GAMEOPTION_NO_DISASTERS": [GameOptionTypes.GAMEOPTION_NO_DISASTERS],
+		"GameOptionTypes.GAMEOPTION_MULTIPLE_PRODUCTION": [GameOptionTypes.GAMEOPTION_MULTIPLE_PRODUCTION],
 		"GameOptionTypes.NUM_GAMEOPTION_TYPES": [GameOptionTypes.NUM_GAMEOPTION_TYPES],
 		"MultiplayerOptionTypes.NO_MPOPTION": [MultiplayerOptionTypes.NO_MPOPTION],
 		"MultiplayerOptionTypes.MPOPTION_SIMULTANEOUS_TURNS": [MultiplayerOptionTypes.MPOPTION_SIMULTANEOUS_TURNS],
